@@ -13,21 +13,25 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="./directory.js" type="text/javascript"></script>
   <script>
+    function pageSet() {
+      var page = location.hash.split("/");
+      var hash = page.shift();
+      var name = page.shift();
+      var target = $(hash ? hash : '#directory');
+      if (hash == "#detail") {
+        var manifest = manifests[name];
+        var output = $("#provider-detail-template").mustache(manifest);
+        $("#detail").html(output);
+      }
+      target.removeAttr('hidden');
+      target.siblings().attr('hidden', 'true');
+    }
+
     $(document).ready(function($) {
       $(window).bind( 'hashchange', function(e) {
-        var page = location.hash.split("/");
-        var hash = page.shift();
-        var name = page.shift();
-        var target = $(hash ? hash : '#directory');
-        if (hash == "#detail") {
-          var manifest = manifests[name];
-          var output = $("#provider-detail-template").mustache(manifest);
-          $("#detail").html(output);
-        }
-        target.removeAttr('hidden');
-        target.siblings().attr('hidden', 'true');
+        pageSet();
       });
-
+      pageSet();
       //var output = $("#button-list").mustache(data);
       //$("#provider-list").html(output);
       var output = $("#provider-table-template").mustache(view);
