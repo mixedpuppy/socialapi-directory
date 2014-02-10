@@ -1,12 +1,74 @@
 <html>
 <head>
   <title>Demo Social Service</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href=//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=bc25b04 rel="stylesheet" />
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link id="siteicon" rel="icon" href="./firefox.png"/>
   <style>
-  body {
-    padding-top: 50px;
+
+  .carousel {
+    height: 340px;
   }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 340px;
+  }
+
+  #provider-table > .col-md-6 {
+    padding: 15px;
+  }
+
+  .provider-name {
+    font-size: x-large;
+    margin-left: 10px;
+  }
+
+  .provider-description {
+    padding-top: 10px;
+  }
+
+  .moreinfo {
+    margin: 4px;
+  }
+  
+  .navbar {
+    border-top: 2px solid #fff;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .bold-italic {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #outer-wrapper {
+    border-top: 0;
+    padding-bottom: 10px;
+  }
+  
+  .item .btn-success {
+    margin: 4px;
+  }
+  
+  .item-inner {
+    width: 600px;
+    margin: 20px auto;
+  }
+
+  #detail {
+    margin: 0 auto;
+  }
+  #detail .provider-description {
+    width: 50%;
+  }
+
   </style>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/jquery.mustache.js"></script>
@@ -14,11 +76,10 @@
   <script src="./directory.js" type="text/javascript"></script>
   <script>
     function pageSet() {
-      var page = location.hash.split("/");
-      var hash = page.shift();
+      var page = location.hash.substr(1).split("/");
       var name = page.shift();
-      var target = $(hash ? hash : '#directory');
-      if (hash == "#detail") {
+      var target = $(name ? "#detail" : '#directory');
+      if (name) {
         var manifest = manifests[name];
         var output = $("#provider-detail-template").mustache(manifest);
         $("#detail").html(output);
@@ -32,10 +93,10 @@
         pageSet();
       });
       pageSet();
-      //var output = $("#button-list").mustache(data);
-      //$("#provider-list").html(output);
       var output = $("#provider-table-template").mustache(view);
       $("#provider-table").html(output);
+
+      $("#directory-domain").text(location.origin);
     });
 
     function activateProvider(node, name) {
@@ -45,22 +106,17 @@
     }
   </script>
 </head>
-<body>
-  <div id="button-list" type="template" hidden="true">
-    {{#manifests}}
-    <button onclick="activateProvider(this, '{{key}}')" style="margin: 5px; padding: 5px 5px 5px 20px; background: url('{{iconURL}}') left center no-repeat;" title="Activate {{name}}">{{name}}</button>
-    {{/manifests}}
-  </div>
+<body class="sand">
 
   <div id="provider-table-template" hidden="true">
     {{#data}}
-    <div class="col-md-6" style="padding: 15px;">
+    <div class="col-md-6">
       <div>
-      <a class="btn btn-primary" href="#detail/{{key}}" role="button" style="float: right">View details &raquo;</a>
+      <a class="btn btn-primary" href="#{{key}}" role="button" style="float: right">View details &raquo;</a>
       <img src="{{icon64URL}}"></img>
-      <span style="font-size: x-large; margin-left: 10px;"> {{name}}</span>
+      <span class="provider-name"> {{name}}</span>
       </div>
-      <p style="padding-top: 10px">{{description}}</p>
+      <p class="provider-description">{{description}}</p>
     </div>
     {{/data}}
   </div>
@@ -71,14 +127,17 @@
         <img src="{{images.0}}" style="float: right"/>
         <h1><img src="{{icon64URL}}"/> {{name}}</h1>
         <h2>{{tagline}}</h2>              
-        <p style="padding: 10px 0">{{description}}</p>
-        <button type="button" class="btn btn-success" oncommand="activateProvider(this, '{{key}}')">Activate Now</button>
-        <br/><a href="{{moreInfo}}">find out more...</a>
+        <p class="provider-description">{{description}}</p>
+        <button type="button" class="btn btn-success" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
+        <br/><a href="{{moreInfo}}" class="moreinfo">find out more...</a>
         </div>
       </div>
   </div>
 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-inverse" role="navigation">
+    <div id="tabzilla">
+        <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
+    </div>
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -87,12 +146,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">SocialAPI</a>
+        <a class="navbar-brand" href="#">SocialAPI</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li><a data-toggle="modal" data-target="#aboutModel">About</a></li>
-          <li><a href="https://github.com/mixedpuppy/socialapi-demo">Github</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
         </ul>
       </div><!--/.nav-collapse -->
@@ -114,11 +172,11 @@
         flexibility and creativity for 3rd parties. Specific features supported
         are notifications, share, bookmarking (or save-for-later), sidebars and
         communications (e.g. chat and video).</p>
-          <p class="lead"><span style="font-style: italic; font-weight: bold">To
+          <p class="lead"><span class="bold-italic">To
         install from this directory</span> you must modify the <span
-        style="font-style: italic; font-weight: bold">social.directories</span>
+        class="bold-italic">social.directories</span>
         preference in Firefox to include the domain <span id="directory-domain"
-        style="font-style: italic; font-weight: bold"></span>, you can do that in
+        class="bold-italic"></span>, you can do that in
         about:config.</p>
         
         </div>
@@ -126,7 +184,7 @@
     </div>
   </div>
 
-  <div class="content">
+  <div id="outer-wrapper" class="content">
     <div id="directory">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -136,32 +194,32 @@
         </ol>
         <div class="carousel-inner">
           <div class="item active">
-            <div class="item-inner" style="width: 600px; margin: 20px auto;">
+            <div class="item-inner">
               <img src="images/saavn-screen.png" style="float:right"></img>
               <img src="images/saavn-logo.jpg"></img>
               <h1>Music Feed</h1>
               <p>Discover fresh music and hear more of what you love.</p>              
-              <button type="button" class="btn btn-success" oncommand="activateProvider(this, 'saavn')">Activate Now</button>
-              <br/><a href="#detail/saavn">find out more...</a>
+              <button type="button" class="btn btn-success" onclick="activateProvider(this, 'saavn')">Activate Now</button>
+              <br/><a href="#saavn" class="moreinfo">find out more...</a>
             </div>
           </div>
           <div class="item">
-            <div class="item-inner" style="width: 600px; margin: 20px auto;">
+            <div class="item-inner">
               <img src="images/delicious.png" style="float: right"/>
               <h2><img src="https://delicious.com/favicon.ico"/> Delicious</h2>
               <p>Never lose a link again.</p>              
-              <button type="button" class="btn btn-success" oncommand="activateProvider(this, 'delicious')">Activate Now</button>
-              <br/><a href="#detail/delicious">find out more...</a>
+              <button type="button" class="btn btn-success" onclick="activateProvider(this, 'delicious')">Activate Now</button>
+              <br/><a href="#delicious" class="moreinfo">find out more...</a>
             </div>
           </div>
           <div class="item">
-            <div class="item-inner" style="width: 600px; margin: 20px auto;">
+            <div class="item-inner">
               <img src="images/facebook-share.png" style="float: right"></img>
               <img src="images/FB-f-Logo__blue_58.png"></img>
               <h2>Facebook Share Demo</h2>
               <p>Stay connected</p>
-              <button type="button" class="btn btn-success" oncommand="activateProvider(this, 'facebook')">Activate Now</button>
-              <br/><a href="#detail/facebook">find out more...</a>
+              <button type="button" class="btn btn-success" onclick="activateProvider(this, 'facebook')">Activate Now</button>
+              <br/><a href="#facebook" class="moreinfo">find out more...</a>
             </div>
           </div>
         </div>
@@ -190,5 +248,40 @@
 
     <div id="detail"></div>
   </div>
+  <footer id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              <p>
+                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+              </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
+            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>
+
+      </div>
+    </div>
+  </footer>
+  <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 </body>
 </html>
