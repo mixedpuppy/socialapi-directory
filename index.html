@@ -52,7 +52,7 @@
     border-top: 0;
     padding-bottom: 10px;
   }
-  
+
   .item .btn-success {
     margin: 4px;
   }
@@ -79,10 +79,12 @@
       var page = location.hash.substr(1).split("/");
       var name = page.shift();
       var target = $(name ? "#detail" : '#directory');
+      $("#backbtn").attr("hidden", "true");
       if (name) {
         var manifest = manifests[name];
         var output = $("#provider-detail-template").mustache(manifest);
         $("#detail").html(output);
+        $("#backbtn").removeAttr("hidden");
       }
       target.removeAttr('hidden');
       target.siblings().attr('hidden', 'true');
@@ -101,6 +103,15 @@
       $("#carousel-promotions").carousel("cycle");
 
       $("#directory-domain").text(location.origin);
+      
+      // adjust the height of our directory listing so everything lines up nice
+      var boxes = $('.col-md-6');
+      var maxHeight = Math.max.apply(
+        Math, boxes.map(function() {
+          return $(this).height();
+        }).get());
+      boxes.height(maxHeight);
+
     });
 
     function activateProvider(node, name) {
@@ -157,14 +168,11 @@
     <div id="tabzilla">
         <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
     </div>
+    <a id="backbtn" class="navbar-brand left" href="javascript:history.go(-1)" hidden="true">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="#">SocialAPI</a>
       </div>
       <div class="collapse navbar-collapse">
