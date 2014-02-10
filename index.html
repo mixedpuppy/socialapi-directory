@@ -81,8 +81,8 @@
       var target = $(name ? "#detail" : '#directory');
       $("#backbtn").attr("hidden", "true");
       if (name) {
-        var manifest = manifests[name];
-        var output = $("#provider-detail-template").mustache(manifest);
+        var data = providerData[name];
+        var output = $("#provider-detail-template").mustache(data);
         $("#detail").html(output);
         $("#backbtn").removeAttr("hidden");
       }
@@ -116,7 +116,7 @@
 
     function activateProvider(node, name) {
       var event = new CustomEvent("ActivateSocialFeature");
-      node.setAttribute("data-service", JSON.stringify(manifests[name]));
+      node.setAttribute("data-service", JSON.stringify(providerData[name].manifest));
       node.dispatchEvent(event);
     }
   </script>
@@ -128,10 +128,10 @@
     <div class="col-md-6">
       <div>
       <a class="btn btn-primary" href="#{{key}}" role="button" style="float: right">View details &raquo;</a>
-      <img src="{{icon64URL}}"></img>
-      <span class="provider-name"> {{name}}</span>
+      <img src="{{manifest.icon64URL}}"></img>
+      <span class="provider-name"> {{manifest.name}}</span>
       </div>
-      <p class="provider-description">{{description}}</p>
+      <p class="provider-description">{{manifest.description}}</p>
     </div>
     {{/data}}
   </div>
@@ -140,9 +140,9 @@
       <div class="container">
         <div class="item">
         <img src="{{images.0}}" style="float: right"/>
-        <h1><img src="{{icon64URL}}"/> {{name}}</h1>
+        <h1><img src="{{manifest.icon64URL}}"/> {{manifest.name}}</h1>
         <h2>{{tagline}}</h2>              
-        <p class="provider-description">{{description}}</p>
+        <p class="provider-description">{{manifest.description}}</p>
         <button type="button" class="btn btn-success" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
         <br/><a href="{{moreInfo}}" class="moreinfo">find out more...</a>
         </div>
@@ -154,7 +154,7 @@
     <div class="item {{active}}">
       <div class="item-inner">
         <img src="{{images.0}}" style="float:right"></img>
-        <h2><img src="{{images.1}}"></img> {{name}}</h2>
+        <h2><img src="{{images.1}}"></img> {{manifest.name}}</h2>
         <h2>{{tagline}}</h2>
         <p>{{shortDescription}}</p>              
         <button type="button" class="btn btn-success" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
