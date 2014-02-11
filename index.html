@@ -66,6 +66,7 @@
     margin: 0 auto;
   }
   #detail .provider-description {
+    margin-top: 20px;
     width: 50%;
   }
 
@@ -73,6 +74,12 @@
     padding: 20px;
   }
   
+  .item-detail > div {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
   .provider-primary-image {
     margin-left: 10px;
   }
@@ -86,6 +93,7 @@
       var page = location.hash.substr(1).split("/");
       var name = page.shift();
       var target = $(name ? "#detail" : '#directory');
+
       $("#backbtn").attr("hidden", "true");
       if (name) {
         var data = providerData[name];
@@ -93,7 +101,7 @@
         $("#detail").html(output);
         $("#backbtn").removeAttr("hidden");
       }
-        
+
       target.removeAttr('hidden');
       target.siblings().attr('hidden', 'true');
 
@@ -150,19 +158,21 @@
   <div id="provider-detail-template" hidden="true">
       <div class="container">
         <div class="item-detail">
-          <div style="float: right">
-            <div>
-            <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
-            <br/><a href="{{moreInfo}}" class="moreinfo">find out more...</a>
-            </div>
-          </div>
           <div>
             <div style="float: right" class="provider-primary-image">
-              <img src="{{images.0}}"/>
+              <img src="{{images.detail}}"/>
             </div>
-            <h1><img src="{{manifest.icon64URL}}"/> {{manifest.name}}</h1>
-            <h2>{{tagline}}</h2>              
-            <p class="provider-description">{{manifest.description}}</p>
+            <div xstyle="float:left; position: absolute; top: 0; left: 0; border: 1px solid red">
+              <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
+              <h2>{{tagline}}</h2>              
+              <p class="lead">{{shortDescription}}</p>
+              <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
+              <p class="provider-description">{{manifest.description}}</p>
+              <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
+              <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
+              <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
+            </div>
+            <div style="clear: both"></div>
           </div>
         </div>
       </div>
@@ -172,10 +182,10 @@
     {{#carousel}}
     <div class="item {{active}}">
       <div class="item-inner">
-        <img src="{{images.0}}" style="float:right"></img>
-        <h2><img src="{{images.1}}"></img> {{manifest.name}}</h2>
-        <h2>{{tagline}}</h2>
-        <p>{{shortDescription}}</p>              
+        <img src="{{images.carousel}}" style="float:right"></img>
+        <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
+        <h3>{{tagline}}</h3>
+        <p>{{shortDescription}}</p>
         <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
         <br/><a href="#{{key}}" class="moreinfo">find out more...</a>
       </div>
@@ -258,13 +268,12 @@
           data-target="#aboutModel">instructions to use this site.</a></p>
   
         <div id="provider-table" class="row"></div>
-        <div id="provider-list"></div>
       </div>
     </div>
 
     <div id="detail"></div>
   </div>
-  <footer id="colophon">
+  <div id="colophon">
     <div class="container">
       <div class="row">
 
@@ -297,7 +306,7 @@
 
       </div>
     </div>
-  </footer>
+  </div>
   <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 </body>
 </html>
