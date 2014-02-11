@@ -19,7 +19,7 @@ var providerData = {
     "tagline": "Music Feed",
     "shortDescription": "Discover fresh music and hear more of what you love.",
     "moreInfo": "http://www.saavn.com/firefox/",
-    "images": ["/images/saavn-screen.png", "/images/saavn-logo.jpg"]
+    "images": ["images/saavn-screen.png", "images/saavn-logo.jpg"]
   },
   "facebook": {
     "manifest": {
@@ -35,7 +35,7 @@ var providerData = {
     },
     "tagline": "Stay connected",
     "shortDescription": "Keep up with friends wherever you go on the web.",
-    "images": ["/images/facebook-share.png", "/images/FB-f-Logo__blue_58.png"]
+    "images": ["images/facebook-share.png", "images/FB-f-Logo__blue_58.png"]
   },
   "cliqz": {
     "manifest": {
@@ -176,7 +176,7 @@ var providerData = {
       "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. ",
     },
     "tagline": "Never lose a link again.",
-    "images": ["/images/delicious.png", "https://delicious.com/favicon.ico"]
+    "images": ["images/delicious.png", "https://delicious.com/favicon.ico"]
   },
   "linkedin": {
     "manifest": {
