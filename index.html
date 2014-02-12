@@ -6,9 +6,15 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link id="siteicon" rel="icon" href="./firefox.png"/>
   <style>
-
+  body {
+    background: url('/media/img/sandstone/bg-gradient-sand.png') repeat-x scroll 0px 0px, url('/media/img/sandstone/bg-sand.png') repeat scroll 0px 0px, none repeat scroll 0% 0% #F5F1E8;
+    
+  }
   .carousel {
-    height: 340px;
+    height: 320px;
+  }
+  .carousel-indicators {
+    bottom: 10px;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -20,8 +26,8 @@
     height: 340px;
   }
 
-  #provider-table > .col-md-6 {
-    padding: 15px;
+  .col-md-6 {
+    padding: 0;
   }
 
   .provider-name {
@@ -38,9 +44,15 @@
   }
   
   .navbar {
+    background: transparent;
+    border: none;
     border-top: 2px solid #fff;
     margin-bottom: 0;
     border-radius: 0;
+  }
+  
+  .navbar-nav {
+    float: right;
   }
 
   .bold-italic {
@@ -83,7 +95,18 @@
   .provider-primary-image {
     margin-left: 10px;
   }
-  </style>
+  
+  .provider-entry-inner {
+    background-color: rgba(255,255,255,.7);
+    margin: 8px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .provider-entry:hover {
+    cursor: pointer;
+  }
+</style>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/jquery.mustache.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -107,13 +130,15 @@
 
       if (!name) {
         // adjust the height of our directory listing so everything lines up nice
-        var boxes = $('.col-md-6');
+        var boxes = $('.provider-entry-inner');
         var maxHeight = Math.max.apply(
           Math, boxes.map(function() {
             return $(this).height();
           }).get());
         boxes.height(maxHeight);
       }
+      
+      window.scrollTo(0, 0);
     }
 
     $(document).ready(function($) {
@@ -144,13 +169,12 @@
 
   <div id="provider-table-template" hidden="true">
     {{#data}}
-    <div class="col-md-6">
-      <div>
-      <a class="btn btn-primary" href="#{{key}}" role="button" style="float: right">View details &raquo;</a>
-      <img src="{{manifest.icon64URL}}"></img>
-      <span class="provider-name"> {{manifest.name}}</span>
-      </div>
+    <div class="provider-entry col-md-6" onclick="location='#{{key}}'">
+      <div class="provider-entry-inner">
+      
+      <span class="provider-name"><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</span>
       <p class="provider-description">{{manifest.description}}</p>
+      </div>
     </div>
     {{/data}}
   </div>
@@ -193,21 +217,21 @@
     {{/carousel}}
   </div>
 
-  <div class="navbar navbar-inverse" role="navigation">
-    <div id="tabzilla">
-        <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
-    </div>
+  <div class="navbar navbar-inverse sand" role="navigation">
     <a id="backbtn" class="navbar-brand left" href="javascript:history.go(-1)" hidden="true">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">SocialAPI Demo</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
+          <li><a href="#">SocialAPI Demo</a></li>
           <li><a data-toggle="modal" data-target="#aboutModel">About</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
+          <div id="tabzilla">
+              <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
+          </div>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
