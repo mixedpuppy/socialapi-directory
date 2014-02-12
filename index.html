@@ -6,10 +6,6 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link id="siteicon" rel="icon" href="./firefox.png"/>
   <style>
-  body {
-    background: url('/media/img/sandstone/bg-gradient-sand.png') repeat-x scroll 0px 0px, url('/media/img/sandstone/bg-sand.png') repeat scroll 0px 0px, none repeat scroll 0% 0% #F5F1E8;
-    
-  }
   .carousel {
     height: 320px;
   }
@@ -44,7 +40,8 @@
   }
   
   .navbar {
-    background: transparent;
+    background: url('/media/img/sandstone/bg-gradient-sand.png') repeat-x scroll 0px 0px,
+                url('/media/img/sandstone/bg-sand.png') repeat scroll 0px 0px, none repeat scroll 0% 0% #F5F1E8;
     border: none;
     border-top: 2px solid #fff;
     margin-bottom: 0;
@@ -79,10 +76,11 @@
   }
   #detail .provider-description {
     margin-top: 20px;
-    width: 50%;
+    width: 80%;
   }
 
   .item-detail:first-child > div {
+    margin-top: 20px;
     padding: 20px;
   }
   
@@ -186,7 +184,7 @@
             <div style="float: right" class="provider-primary-image">
               <img src="{{images.detail}}"/>
             </div>
-            <div xstyle="float:left; position: absolute; top: 0; left: 0; border: 1px solid red">
+            <div style="float:left; position: absolute; width: 40%;">
               <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
               <h2>{{tagline}}</h2>              
               <p class="lead">{{shortDescription}}</p>
