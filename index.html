@@ -79,15 +79,12 @@
     width: 80%;
   }
 
-  .item-detail {
-  }
-  .item-detail:first-child > div {
+  .item-detail > div:first-child {
     margin-top: 20px;
     padding: 20px;
-    min-height: 400px;
   }
   
-  .item-detail > div {
+  .item-detail {
     background-color: #fff;
     border-radius: 5px;
     margin: 10px;
@@ -187,7 +184,7 @@
             <div style="float: right" class="provider-primary-image">
               <img src="{{images.detail}}"/>
             </div>
-            <div style="float:left; position: absolute; width: 40%;">
+            <div style="float:left; width: 40%;">
               <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
               <h2>{{tagline}}</h2>              
               <p class="lead">{{shortDescription}}</p>
