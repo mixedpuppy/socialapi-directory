@@ -96,7 +96,10 @@
   .provider-primary-image {
     padding-left: 10px;
   }
-  
+
+  .provider-primary-image > img {
+    float: right;
+  }
   .provider-entry-inner {
     background-color: rgba(255,255,255,.7);
     margin: 8px;
@@ -193,7 +196,7 @@
               <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
               <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
             </div>
-            <div class="col-md-6 provider-primary-image">
+            <div class="col-md-6 provider-primary-image clearfix">
               <img src="{{images.detail}}"/>
             </div>
         </div>
