@@ -79,8 +79,7 @@
     width: 80%;
   }
 
-  .item-detail > div:first-child {
-    margin-top: 20px;
+  .item-detail > div {
     padding: 20px;
   }
   
@@ -89,9 +88,13 @@
     border-radius: 5px;
     margin: 10px;
   }
+  
+  .provider-item-detail > h1:first-child {
+    margin-top: 0;
+  }
 
   .provider-primary-image {
-    margin-left: 10px;
+    padding-left: 10px;
   }
   
   .provider-entry-inner {
@@ -179,12 +182,8 @@
 
   <div id="provider-detail-template" hidden="true">
       <div class="container">
-        <div class="item-detail">
-          <div>
-            <div style="float: right" class="provider-primary-image">
-              <img src="{{images.detail}}"/>
-            </div>
-            <div style="width: 40%;">
+        <div class="row item-detail">
+            <div class="col-md-6 provider-item-detail">
               <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
               <h2>{{tagline}}</h2>              
               <p class="lead">{{shortDescription}}</p>
@@ -194,8 +193,9 @@
               <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
               <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
             </div>
-            <div style="clear: both"></div>
-          </div>
+            <div class="col-md-6 provider-primary-image">
+              <img src="{{images.detail}}"/>
+            </div>
         </div>
       </div>
   </div>
