@@ -1,16 +1,25 @@
 <html>
 <head>
   <title>Demo Social Services</title>
-  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
-  <link href=//mozorg.cdn.mozilla.net/media/css/responsive-min.css?build=bc25b04 rel="stylesheet" />
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" />
   <link id="siteicon" rel="icon" href="./firefox.png"/>
   <style>
+
   .carousel {
-    height: 320px;
+    margin: 0;
+    padding: 25px;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow:inset 0 3px 5px rgba(0,0,0,.2);
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 30px;
   }
+
   .carousel-indicators {
-    bottom: 10px;
+    bottom: 0px;
   }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
@@ -19,7 +28,21 @@
   
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 340px;
+    height: 300px;
+  }
+
+  .carousel-control.left,
+  .carousel-control.right {
+    background-image: none;
+  }
+
+  .carousel-indicators li.active,
+  .carousel-indicators li {
+    background-color: #CAE1F4;
+  }
+  .carousel-indicators li:hover {
+    background-color: #0095DD;
+    
   }
 
   .col-md-6 {
@@ -38,28 +61,10 @@
   .moreinfo {
     margin: 4px;
   }
-  
-  .navbar {
-    background: url('/media/img/sandstone/bg-gradient-sand.png') repeat-x scroll 0px 0px,
-                url('/media/img/sandstone/bg-sand.png') repeat scroll 0px 0px, none repeat scroll 0% 0% #F5F1E8;
-    border: none;
-    border-top: 2px solid #fff;
-    margin-bottom: 0;
-    border-radius: 0;
-  }
-  
-  .navbar-nav {
-    float: right;
-  }
 
   .bold-italic {
     font-style: italic;
     font-weight: bold;
-  }
-
-  #outer-wrapper {
-    border-top: 0;
-    padding-bottom: 10px;
   }
 
   .item .btn-success {
@@ -84,8 +89,8 @@
   }
   
   .item-detail {
+    border: 1px solid #d7d7d7;
     background-color: #fff;
-    border-radius: 5px;
     margin: 10px;
   }
   
@@ -101,15 +106,22 @@
     float: right;
   }
   .provider-entry-inner {
-    background-color: rgba(255,255,255,.7);
+    background-color: #fff;
     margin: 8px;
     padding: 10px;
-    border-radius: 4px;
   }
   
   .provider-entry:hover {
     cursor: pointer;
   }
+  
+  /* override firefox css */
+  #colophon {
+    margin-top: 120px;
+    text-align: inherit;
+  }
+  
+
 </style>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/jquery.mustache.js"></script>
@@ -121,12 +133,14 @@
       var name = page.shift();
       var target = $(name ? "#detail" : '#directory');
 
-      $("#backbtn").attr("hidden", "true");
+      $("#carousel-promotions").attr("hidden", "true");
       if (name) {
         var data = providerData[name];
         var output = $("#provider-detail-template").mustache(data);
         $("#detail").html(output);
-        $("#backbtn").removeAttr("hidden");
+      } else {
+        $("#carousel-promotions").removeAttr("hidden");
+        $("#carousel-promotions").carousel("cycle");
       }
 
       target.removeAttr('hidden');
@@ -151,7 +165,7 @@
 
       output = $("#provider-item-template").mustache(views);
       $(".carousel-inner").html(output);
-      $("#carousel-promotions").carousel("cycle");
+
 
       $("#directory-domain").text(location.origin);
       
@@ -169,76 +183,26 @@
     }
   </script>
 </head>
-<body class="sand">
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
 
-  <div id="provider-table-template" hidden="true">
-    {{#data}}
-    <div class="provider-entry col-md-6" onclick="location='#{{key}}'">
-      <div class="provider-entry-inner">
-      
-      <span class="provider-name"><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</span>
-      <p class="provider-description">{{manifest.description}}</p>
-      </div>
-    </div>
-    {{/data}}
-  </div>
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
 
-  <div id="provider-detail-template" hidden="true">
-      <div class="container">
-        <div class="row item-detail">
-            <div class="col-md-6 provider-item-detail">
-              <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
-              <h2>{{tagline}}</h2>              
-              <p class="lead">{{shortDescription}}</p>
-              <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
-              <p class="provider-description">{{manifest.description}}</p>
-              <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
-              <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
-              <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
-            </div>
-            <div class="col-md-6 provider-primary-image clearfix">
-              <img src="{{images.detail}}"/>
-            </div>
-        </div>
-      </div>
-  </div>
-  
-  <div id="provider-item-template" hidden="true">
-    {{#carousel}}
-    <div class="item {{active}}">
-      <div class="item-inner">
-        <img src="{{images.carousel}}" style="float:right"></img>
-        <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
-        <h3>{{tagline}}</h3>
-        <p>{{shortDescription}}</p>
-        <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
-        <br/><a href="#{{key}}" class="moreinfo">find out more...</a>
-      </div>
-    </div>    
-    {{/carousel}}
-  </div>
-
-  <div class="navbar navbar-inverse sand" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <a id="backbtn" class="navbar-brand left" href="javascript:history.go(-1)" hidden="true">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
           <li><a href="#">SocialAPI Demo</a></li>
           <li><a data-toggle="modal" data-target="#aboutModel">About</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
-          <div id="tabzilla">
-              <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
-          </div>
         </ul>
-      </div><!--/.nav-collapse -->
-    </div>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop"></h2>
+    </header>
   </div>
-  
-  <div class="modal fade" id="aboutModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+  <div class="modal fade" id="aboutModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -265,35 +229,34 @@
     </div>
   </div>
 
-  <div id="outer-wrapper" class="content">
+  <div id="carousel-promotions" class="carousel slide">
+    <div class="carousel-inner"></div>
+    <a class="carousel-control left" href="#carousel-promotions" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="carousel-control right" href="#carousel-promotions" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-promotions" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-promotions" data-slide-to="1"></li>
+      <li data-target="#carousel-promotions" data-slide-to="2"></li>
+    </ol>
+  </div>
+
+  <div id="wrapper" class="content">
     <div id="directory">
-      <div id="carousel-promotions" class="carousel slide" xxxdata-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-promotions" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-promotions" data-slide-to="1"></li>
-          <li data-target="#carousel-promotions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner"></div>
-        <a class="left carousel-control" href="#carousel-promotions" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-promotions" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-      </div>
   
-      <div class="container">
-        <h3>More SocialAPI Demo Providers</h3>
-        <p class="lead">These are useful as examples and UI testing. Many of
-          these will not work in several ways. In most cases they are not provided
-          by the website linked to.  Some of the demos use the mobile websites,
-          you may need to install a <a
-          href="https://addons.mozilla.org/en-US/firefox/addon/wmlbrowser/">WML
-          extension for Firefox.</a> You should also read the <a data-toggle="modal"
-          data-target="#aboutModel">instructions to use this site.</a></p>
+      <h3>More SocialAPI Demo Providers</h3>
+      <p class="lead">These are useful as examples and UI testing. Many of
+        these will not work in several ways. In most cases they are not provided
+        by the website linked to.  Some of the demos use the mobile websites,
+        you may need to install a <a
+        href="https://addons.mozilla.org/en-US/firefox/addon/wmlbrowser/">WML
+        extension for Firefox.</a> You should also read the <a data-toggle="modal"
+        data-target="#aboutModel">instructions to use this site.</a></p>
   
-        <div id="provider-table" class="row"></div>
-      </div>
+      <div id="provider-table" class="row"></div>
     </div>
 
     <div id="detail"></div>
@@ -332,6 +295,55 @@
       </div>
     </div>
   </div>
+  </div>
+  
+  <div role="templates" hidden="true">
+    <div id="provider-table-template" hidden="true">
+      {{#data}}
+      <div class="provider-entry col-md-6" onclick="location='#{{key}}'">
+        <div class="provider-entry-inner">
+        
+        <span class="provider-name"><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</span>
+        <p class="provider-description">{{manifest.description}}</p>
+        </div>
+      </div>
+      {{/data}}
+    </div>
+  
+    <div id="provider-detail-template" hidden="true">
+      <div class="row item-detail">
+          <div class="col-md-6 provider-item-detail">
+            <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
+            <h2>{{tagline}}</h2>              
+            <p class="lead">{{shortDescription}}</p>
+            <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
+            <p class="provider-description">{{manifest.description}}</p>
+            <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
+            <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
+            <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
+          </div>
+          <div class="col-md-6 provider-primary-image clearfix">
+            <img src="{{images.detail}}"/>
+          </div>
+      </div>
+    </div>
+    
+    <div id="provider-item-template" hidden="true">
+      {{#carousel}}
+      <div class="item {{active}}">
+        <div class="item-inner">
+          <img src="{{images.carousel}}" style="float:right"></img>
+          <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
+          <h3>{{tagline}}</h3>
+          <p>{{shortDescription}}</p>
+          <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
+          <br/><a href="#{{key}}" class="moreinfo">find out more...</a>
+        </div>
+      </div>    
+      {{/carousel}}
+    </div>    
+  </div>
+
   <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 </body>
 </html>
