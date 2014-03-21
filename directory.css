@@ -1,0 +1,266 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.carousel {
+  padding: 0;
+  margin: 0 0 25px;
+  background: none;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  z-index: 1;
+}
+
+.carousel-wrapper {
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,.2), inset 0 3px 5px rgba(0,0,0,.2);
+  padding: 25px 0 0 0;
+  position: relative;
+  background-color: rgb(255,255,255);
+  z-index: 1;
+}
+
+.carousel .item {
+  background-color: rgb(255,255,255);
+  height: 250px;
+}
+#prev {
+  float: left;
+  text-align: right;
+}
+#next {
+  float: right;
+}
+#prev, #next {
+  line-height: 250px;
+  width: 100px;
+  padding: auto;
+}
+
+.cycle-pager { 
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+.cycle-pager span {
+  margin: 2px;
+  font-family: arial;
+  font-size: 4em;
+  line-height: .75;
+  color: #ddd;
+  cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active {
+  color: #CAE1F4;
+}
+.cycle-pager span:hover {
+  color: #0095DD;
+}
+.cycle-pager > * { cursor: pointer;}
+
+
+.provider-name {
+  font-size: x-large;
+  margin-left: 10px;
+}
+
+.provider-description {
+  padding-top: 10px;
+}
+
+.moreinfo {
+  margin: 4px;
+}
+
+.bold-italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.item .btn-success {
+  margin: 4px;
+}
+
+.item-inner {
+  width: 600px;
+  
+}
+
+#detail {
+  margin: 0 auto;
+}
+
+.item-detail > div {
+  padding: 20px;
+}
+
+.item-detail {
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.provider-item-detail > h1:first-child {
+  margin-top: 0;
+}
+
+.provider-primary-image {
+  padding-left: 10px;
+}
+
+.provider-primary-image > img {
+  float: right;
+}
+.provider-entry-inner {
+  background-color: #fff;
+  margin: 8px;
+  padding: 10px;
+}
+
+.provider-entry:hover {
+  cursor: pointer;
+}
+
+/* responsive grid css */
+.row:after {
+    clear: both;
+}
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: " ";
+}
+.col-md-6 {
+  padding: 0;
+  float: left;
+  position: relative;
+  padding: 0 15px;
+  margin: 0;
+  width: 50%;
+  min-height: 1px;
+  border: 0px none;
+}
+
+@media only screen and (max-width:1000px) {
+  .col-md-6 {
+    float: none;
+    position: inherit;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  #directory {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width:760px) {
+  .carousel {
+    display: none;
+  }
+  #wrapper {
+    width: auto;
+  }
+}
+
+/* override firefox css */
+#colophon {
+  margin-top: 120px;
+  text-align: inherit;
+}
+
+.sky a.button {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-bottom: 8px;
+}
+
+
+
+/* incompatibility banner borrowed from marketplace */
+#incompatibility-banner {
+  background: #4d4d4d;
+  color: #c7c7c7;
+  /*display: none;*/
+  /*margin-top: 48px;*/
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+#incompatibility-banner:after, #incompatibility-banner:before {
+  content: "";
+  display: block;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .85);
+  height: 1px;
+  position: relative;
+  top: -1px;
+  width: 100%
+}
+
+#incompatibility-banner:after {
+  bottom: -1px;
+  top: auto
+}
+
+#incompatibility-banner a {
+  display: table-cell
+}
+
+#incompatibility-banner a.close {
+  margin-top: -17px;
+  top: 50%
+}
+
+#incompatibility-banner p {
+  background: url('//mozorg.cdn.mozilla.net/media/img/styleguide/identity/firefox/usage-logo.png?2013-06') left/64px 64px no-repeat;
+  margin: 0 auto;
+  max-width: 690px;
+  min-height: 45px;
+  padding: 28px 60px 28px 110px;
+  position: relative;
+  text-align: left
+}
+
+@media (max-width:760px){
+  #incompatibility-banner p {
+    margin: 10px;
+    padding: 10px 50px 10px 80px;
+  }
+}
+
+.show-incompatibility-banner #incompatibility-banner {
+  display: block
+}
+
+.show-incompatibility-banner main {
+  padding-top: 48px
+}
+
+@media (max-width:709px){.show-incompatibility-banner main {
+      padding-top: 0
+  }
+}
+
+.close {
+    background: url(https://marketplace.cdn.mozilla.net/media/fireplace/img/pretty/close.svg?1395166211887) 50% no-repeat;
+    background-size: 18px auto;
+    height: 34px;
+    color: transparent;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px
+}

@@ -1,131 +1,17 @@
 <html>
 <head>
   <title>Demo Social Services</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" />
   <link id="siteicon" rel="icon" href="./firefox.png"/>
+  <link rel="stylesheet" media="screen,projection,tv" href="directory.css" />
   <style>
-
-  .carousel {
-    margin: 0;
-    padding: 25px;
-    background-color: #fff;
-    z-index: 1;
-    box-shadow:inset 0 3px 5px rgba(0,0,0,.2);
-    border-top: 1px solid #d7d7d7;
-    border-bottom: 1px solid #d7d7d7;
-    margin-bottom: 30px;
-  }
-
-  .carousel-indicators {
-    bottom: 0px;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    z-index: 10;
-  }
-  
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-    height: 300px;
-  }
-
-  .carousel-control.left,
-  .carousel-control.right {
-    background-image: none;
-  }
-
-  .carousel-indicators li.active,
-  .carousel-indicators li {
-    background-color: #CAE1F4;
-  }
-  .carousel-indicators li:hover {
-    background-color: #0095DD;
-    
-  }
-
-  .col-md-6 {
-    padding: 0;
-  }
-
-  .provider-name {
-    font-size: x-large;
-    margin-left: 10px;
-  }
-
-  .provider-description {
-    padding-top: 10px;
-  }
-
-  .moreinfo {
-    margin: 4px;
-  }
-
-  .bold-italic {
-    font-style: italic;
-    font-weight: bold;
-  }
-
-  .item .btn-success {
-    margin: 4px;
-  }
-  
-  .item-inner {
-    width: 600px;
-    margin: 20px auto;
-  }
-
-  #detail {
-    margin: 0 auto;
-  }
-  #detail .provider-description {
-    margin-top: 20px;
-    width: 80%;
-  }
-
-  .item-detail > div {
-    padding: 20px;
-  }
-  
-  .item-detail {
-    border: 1px solid #d7d7d7;
-    background-color: #fff;
-    margin: 10px;
-  }
-  
-  .provider-item-detail > h1:first-child {
-    margin-top: 0;
-  }
-
-  .provider-primary-image {
-    padding-left: 10px;
-  }
-
-  .provider-primary-image > img {
-    float: right;
-  }
-  .provider-entry-inner {
-    background-color: #fff;
-    margin: 8px;
-    padding: 10px;
-  }
-  
-  .provider-entry:hover {
-    cursor: pointer;
-  }
-  
-  /* override firefox css */
-  #colophon {
-    margin-top: 120px;
-    text-align: inherit;
-  }
-  
 
 </style>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/jquery.mustache.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.cycle2.min.js"></script>
+  <script src="js/jquery.cycle2.center.js"></script>
   <script src="./directory.js" type="text/javascript"></script>
   <script>
     function pageSet() {
@@ -133,14 +19,17 @@
       var name = page.shift();
       var target = $(name ? "#detail" : '#directory');
 
-      $("#carousel-promotions").attr("hidden", "true");
+      $(".carousel").attr("hidden", "true");
+      $('.cycle-slideshow').cycle('pause');
       if (name) {
         var data = providerData[name];
         var output = $("#provider-detail-template").mustache(data);
         $("#detail").html(output);
       } else {
-        $("#carousel-promotions").removeAttr("hidden");
-        $("#carousel-promotions").carousel("cycle");
+        output = $("#provider-item-template").mustache(views);
+        $(".carousel-inner").html(output);
+        $(".carousel").removeAttr("hidden");
+        $('.cycle-slideshow').cycle('reinit');
       }
 
       target.removeAttr('hidden');
@@ -162,10 +51,6 @@
     $(document).ready(function($) {
       var output = $("#provider-table-template").mustache(views);
       $("#provider-table").html(output);
-
-      output = $("#provider-item-template").mustache(views);
-      $(".carousel-inner").html(output);
-
 
       $("#directory-domain").text(location.origin);
       
@@ -206,7 +91,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <a class="button close" data-dismiss="modal" aria-hidden="true">&times;</a>
           <h4 class="modal-title" id="myModalLabel">Firefox SocialAPI Integrations</h4>
         </div>
         <div class="modal-body">
@@ -229,19 +114,26 @@
     </div>
   </div>
 
-  <div id="carousel-promotions" class="carousel slide">
-    <div class="carousel-inner"></div>
-    <a class="carousel-control left" href="#carousel-promotions" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="carousel-control right" href="#carousel-promotions" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-promotions" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-promotions" data-slide-to="1"></li>
-      <li data-target="#carousel-promotions" data-slide-to="2"></li>
-    </ol>
+  <aside id="incompatibility-banner"><p>You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  <a href="#" class="close" title="Close">Close</a>
+  </p></aside>
+
+  <div id="carousel-promotions" class="carousel" hidden="true">
+    <div class="carousel-wrapper">
+<!--    <span id="prev" style="float: left;">&lt;&lt;</span>
+    <span id="next" style="float: right;">&gt;&gt;</span>-->
+    <div class="cycle-slideshow carousel-inner"
+      data-cycle-prev="#prev"
+      data-cycle-next="#next"
+      data-cycle-center-horz=true
+      data-cycle-center-vert=true
+      data-cycle-pager=".cycle-pager"
+      data-cycle-fx="scrollHorz"
+      data-cycle-timeout="5000"
+      data-cycle-slides="&gt; div">
+    </div>
+    <div class="cycle-pager center"></div>
+    </div>
   </div>
 
   <div id="wrapper" class="content">
@@ -301,7 +193,7 @@
     <div id="provider-table-template" hidden="true">
       {{#data}}
       <div class="provider-entry col-md-6" onclick="location='#{{key}}'">
-        <div class="provider-entry-inner">
+        <div class="provider-entry-inner  clearfix">
         
         <span class="provider-name"><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</span>
         <p class="provider-description">{{manifest.description}}</p>
@@ -316,7 +208,7 @@
             <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
             <h2>{{tagline}}</h2>              
             <p class="lead">{{shortDescription}}</p>
-            <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate Now</a>
             <p class="provider-description">{{manifest.description}}</p>
             <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
             <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
@@ -330,13 +222,13 @@
     
     <div id="provider-item-template" hidden="true">
       {{#carousel}}
-      <div class="item {{active}}">
+      <div class="item">
         <div class="item-inner">
           <img src="{{images.carousel}}" style="float:right"></img>
           <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
           <h3>{{tagline}}</h3>
           <p>{{shortDescription}}</p>
-          <button type="button" class="btn btn-success btn-lg" onclick="activateProvider(this, '{{key}}')">Activate Now</button>
+          <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{key}}')">Activate Now</a>
           <br/><a href="#{{key}}" class="moreinfo">find out more...</a>
         </div>
       </div>    
