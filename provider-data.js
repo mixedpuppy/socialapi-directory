@@ -127,7 +127,7 @@ var providerData = {
   "pocket": {
     "manifest": {
       "name": "Pocket",
-      "iconURL": "https://getpocket.com/firefox/social/Icons/16px/PKT_FF_SocialAPI_Icons_16_icon.png",
+      "iconURL": "https://getpocket.com/firefox/social/Icons/32px/PKT_FF_SocialAPI_Icons_32_icon.png",
       "icon32URL": "https://getpocket.com/firefox/social/Icons/32px/PKT_FF_SocialAPI_Icons_32_icon.png",
       "icon64URL": "https://getpocket.com/firefox/social/Icons/64px/PKT_FF_SocialAPI_Icons_64_icon.png",
       "workerURL": "https://getpocket.com/firefox/social/worker.js",
