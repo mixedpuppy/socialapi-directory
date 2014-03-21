@@ -4,8 +4,11 @@
   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" />
   <link id="siteicon" rel="icon" href="./firefox.png"/>
+  <link href="css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
   <link rel="stylesheet" media="screen,projection,tv" href="directory.css" />
+
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery.mustache.js"></script>
   <script src="js/jquery.cycle2.min.js"></script>
   <script src="js/jquery.cycle2.center.js"></script>
@@ -50,7 +53,10 @@
       $("#provider-table").html(output);
 
       $("#directory-domain").text(location.origin);
-      
+      if (!(/Firefox/.test(navigator.userAgent))) {
+        $("#incompatibility-banner").removeAttr("hidden");
+      }
+
       $(window).bind( 'hashchange', function(e) {
         pageSet();
       });
@@ -75,7 +81,7 @@
       <nav id="nav-main" role="navigation">
         <ul id="nav-main-menu">
           <li><a href="#">SocialAPI Demo</a></li>
-          <li><a data-toggle="modal" data-target="#aboutModel">About</a></li>
+          <li><a id="about" href="#" data-featherlight="#aboutModel">About</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
         </ul>
       </nav>
@@ -84,36 +90,20 @@
     </header>
   </div>
 
-  <div class="modal fade" id="aboutModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <a class="button close" data-dismiss="modal" aria-hidden="true">&times;</a>
-          <h4 class="modal-title" id="myModalLabel">Firefox SocialAPI Integrations</h4>
-        </div>
-        <div class="modal-body">
-          <p class="lead">SocialAPI is an architecture that allows simple 3rd party
-        integrations into Firefox Browser using the web as the as the developer
-        API. It supports specific vertical use cases centered around social
-        interactions, but does not tightly constrain those use cases, allowing
-        flexibility and creativity for 3rd parties. Specific features supported
-        are notifications, share, bookmarking (or save-for-later), sidebars and
-        communications (e.g. chat and video).</p>
-          <p class="lead"><span class="bold-italic">To
-        install from this directory</span> you must modify the <span
-        class="bold-italic">social.directories</span>
-        preference in Firefox to include the domain <span id="directory-domain"
-        class="bold-italic"></span>, you can do that in
-        about:config.</p>
-        
-        </div>
-      </div>
+  <div id="aboutModel" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" hidden="true">
+    <h4 id="myModalLabel">Firefox SocialAPI Demo Instructions</h4>
+    <div>
+      <p class="lead"><span class="bold-italic">To
+    install from this directory</span> you must modify the <span
+    class="bold-italic">social.directories</span>
+    preference in Firefox to include the domain <span id="directory-domain"
+    class="bold-italic"></span>, you can do that in
+    about:config.</p>
     </div>
   </div>
 
-  <aside id="incompatibility-banner"><p>You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
-  <a href="#" class="close" title="Close">Close</a>
-  </p></aside>
+  <div id="incompatibility-banner" hidden="true"><p>You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  </p></div>
 
   <div id="carousel-promotions" class="carousel" hidden="true">
     <div class="carousel-wrapper">
