@@ -23,13 +23,14 @@
       $('.cycle-slideshow').cycle('pause');
       if (name) {
         var data = providerData[name];
-        var output = $("#provider-detail-template").mustache(data);
+        var output = $("#detail-template").mustache(data);
         $("#detail").html(output);
       } else {
-        output = $("#provider-item-template").mustache(views);
+        output = $("#carousel-template").mustache(views);
         $(".carousel-inner").html(output);
         $(".carousel").removeAttr("hidden");
         $('.cycle-slideshow').cycle('reinit');
+      //$('.cycle-slideshow').cycle('pause'); 
       }
 
       target.removeAttr('hidden');
@@ -49,8 +50,8 @@
     }
 
     $(document).ready(function($) {
-      var output = $("#provider-table-template").mustache(views);
-      $("#provider-table").html(output);
+      var output = $("#directory-template").mustache(views);
+      $("#directory-grid").html(output);
 
       $("#directory-domain").text(location.origin);
       if (!(/Firefox/.test(navigator.userAgent))) {
@@ -109,11 +110,7 @@
 
   <div id="carousel-promotions" class="carousel" hidden="true">
     <div class="carousel-wrapper">
-<!--    <span id="prev" style="float: left;">&lt;&lt;</span>
-    <span id="next" style="float: right;">&gt;&gt;</span>-->
     <div class="cycle-slideshow carousel-inner"
-      data-cycle-prev="#prev"
-      data-cycle-next="#next"
       data-cycle-center-horz=true
       data-cycle-center-vert=true
       data-cycle-pager=".cycle-pager"
@@ -127,7 +124,7 @@
 
   <div id="wrapper" class="content">
     <div id="directory">
-  
+      <div class="directory-header">
       <h3>More SocialAPI Demo Providers</h3>
       <p class="lead">These are useful as examples and UI testing. Many of
         these will not work in several ways. In most cases they are not provided
@@ -136,8 +133,8 @@
         href="https://addons.mozilla.org/en-US/firefox/addon/wmlbrowser/">WML
         extension for Firefox.</a> You should also read the <a data-toggle="modal"
         data-target="#aboutModel">instructions to use this site.</a></p>
-  
-      <div id="provider-table" class="row"></div>
+      </div>
+      <div id="directory-grid" class="row"></div>
     </div>
 
     <div id="detail"></div>
@@ -179,26 +176,48 @@
   </div>
   
   <div role="templates" hidden="true">
-    <div id="provider-table-template" hidden="true">
+    <div id="carousel-template" hidden="true">
+      <span class="cycle-prev">&lsaquo;</span>
+      <span class="cycle-next">&rsaquo;</span>
+      {{#carousel}}
+      <div class="item">
+        <div class="item-inner">
+          <img src="{{images.carousel}}" style="float:right"></img>
+          <div>
+          <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
+          <h3 class="tagline">{{tagline}}</h3>
+          <p class="description">{{shortDescription}}</p>
+          </div>
+          <div class="activation">
+          <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
+          <br/><a href="#{{key}}" class="moreinfo">find out more...</a>
+          </div>
+        </div>
+      </div>    
+      {{/carousel}}
+    </div>    
+
+    <div id="directory-template" hidden="true">
       {{#data}}
       <div class="provider-entry col-md-6" onclick="location='#{{key}}'">
-        <div class="provider-entry-inner  clearfix">
+        <div class="provider-entry-inner clearfix">
         
-        <span class="provider-name"><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</span>
-        <p class="provider-description">{{manifest.description}}</p>
+        <h2><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</h2>
+        <h3 class="tagline">{{tagline}}</h3>
+        <p class="provider-description">{{shortDescription}}</p>
         </div>
       </div>
       {{/data}}
     </div>
-  
-    <div id="provider-detail-template" hidden="true">
+
+    <div id="detail-template" hidden="true">
       <div class="row item-detail">
           <div class="col-md-6 provider-item-detail">
             <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
-            <h2>{{tagline}}</h2>              
+            <h3 class="tagline">{{tagline}}</h3>
             <p class="lead">{{shortDescription}}</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate Now</a>
             <p class="provider-description">{{manifest.description}}</p>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
             <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
             <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
             <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
@@ -208,21 +227,6 @@
           </div>
       </div>
     </div>
-    
-    <div id="provider-item-template" hidden="true">
-      {{#carousel}}
-      <div class="item">
-        <div class="item-inner">
-          <img src="{{images.carousel}}" style="float:right"></img>
-          <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
-          <h3>{{tagline}}</h3>
-          <p>{{shortDescription}}</p>
-          <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{key}}')">Activate Now</a>
-          <br/><a href="#{{key}}" class="moreinfo">find out more...</a>
-        </div>
-      </div>    
-      {{/carousel}}
-    </div>    
   </div>
 
   <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
