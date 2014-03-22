@@ -212,12 +212,14 @@
 
     <div id="detail-template" hidden="true">
       <div class="row item-detail">
+        <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
+      </div>
+      <div class="row item-detail">
           <div class="col-md-6 provider-item-detail">
-            <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
             <h3 class="tagline">{{tagline}}</h3>
             <p class="lead">{{shortDescription}}</p>
-            <p class="provider-description">{{manifest.description}}</p>
             <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
+            <p class="provider-description">{{manifest.description}}</p>
             <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
             <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
             <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>

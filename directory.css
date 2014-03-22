@@ -178,13 +178,14 @@
 }
 
 .item-detail > div {
-  padding: 20px;
+  padding: 5px;
 }
 
-.item-detail {
+#detail {
   border: 1px solid #d7d7d7;
   background-color: #fff;
   margin: 10px;
+  padding: 20px;
 }
 
 .provider-item-detail > h1:first-child {
@@ -211,9 +212,6 @@
 #detail .lead {
   font-size: 1.5em;
   font-weight: normal;
-}
-#detail .item-detail {
-  padding: 25px;
 }
 
 .provider-primary-image > img {
