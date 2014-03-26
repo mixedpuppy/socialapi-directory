@@ -15,28 +15,52 @@
   <script src="./provider-data.js" type="text/javascript"></script>
   <script>
     function pageSet() {
+      initViewData();
       var page = location.hash.substr(1).split("/");
-      var name = page.shift();
-      var target = $(name ? "#detail" : '#directory');
-
-      $(".carousel").attr("hidden", "true");
-      $('.cycle-slideshow').cycle('pause');
+      var [locale, name] = page;
+      if (!name) {
+        name = locale;
+      }
+      var data, output;
       if (name) {
-        var data = providerData[name];
-        var output = $("#detail-template").mustache(data);
+        data = views.source[name];
+      }
+      if (!data) {
+        page = location.href.split("/");
+        name = page.pop();
+        if (name) {
+          data = views.source[name];
+        }
+      }
+      var target = $(data ? "#detail" : '#directory');
+
+      $("#carousel-promotions").attr("hidden", "true");
+      $('.cycle-slideshow').cycle('pause');
+      if (data) {
+        output = $("#detail-template").mustache(data);
         $("#detail").html(output);
+        var c = $("#carousel-details");
+        if (c) {
+          $("#carousel-details").attr("hidden", "true");
+          output = $("#detail-carousel-template").mustache(data);
+          $("#carousel-details .carousel-inner").html(output);
+          $("#carousel-details").removeAttr("hidden");
+          $("#carousel-details .cycle-slideshow").cycle('reinit');
+        }
       } else {
+        output = $("#directory-template").mustache(views);
+        $("#directory-grid").html(output);
         output = $("#carousel-template").mustache(views);
-        $(".carousel-inner").html(output);
-        $(".carousel").removeAttr("hidden");
-        $('.cycle-slideshow').cycle('reinit');
+        $("#carousel-promo").html(output);
+        $("#carousel-promotions").removeAttr("hidden");
+        $('#carousel-promo').cycle('reinit');
       //$('.cycle-slideshow').cycle('pause'); 
       }
 
       target.removeAttr('hidden');
       target.siblings().attr('hidden', 'true');
 
-      if (!name) {
+      if (!data) {
         // adjust the height of our directory listing so everything lines up nice
         var boxes = $('.provider-entry-inner');
         var maxHeight = Math.max.apply(
@@ -50,8 +74,6 @@
     }
 
     $(document).ready(function($) {
-      var output = $("#directory-template").mustache(views);
-      $("#directory-grid").html(output);
 
       $("#directory-domain").text(location.origin);
       if (!(/Firefox/.test(navigator.userAgent))) {
@@ -69,7 +91,7 @@
 
     function activateProvider(node, name) {
       var event = new CustomEvent("ActivateSocialFeature");
-      node.setAttribute("data-service", JSON.stringify(providerData[name].manifest));
+      node.setAttribute("data-service", JSON.stringify(views.source[name].manifest));
       node.dispatchEvent(event);
     }
   </script>
@@ -83,7 +105,7 @@
 
       <nav id="nav-main" role="navigation">
         <ul id="nav-main-menu">
-          <li><a href="#">SocialAPI Demo</a></li>
+          <li><a href="">SocialAPI Demo</a></li>
           <li><a id="about" href="#" data-featherlight="#aboutModel">About</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
         </ul>
@@ -110,7 +132,7 @@
 
   <div id="carousel-promotions" class="carousel" hidden="true">
     <div class="carousel-wrapper">
-    <div class="cycle-slideshow carousel-inner"
+    <div id="carousel-promo" class="cycle-slideshow carousel-inner"
       data-cycle-center-horz=true
       data-cycle-center-vert=true
       data-cycle-pager=".cycle-pager"
@@ -123,7 +145,7 @@
   </div>
 
   <div id="wrapper" class="content">
-    <div id="directory">
+    <div id="directory" hidden="true">
       <div class="directory-header">
       <h3>More SocialAPI Demo Providers</h3>
       <p class="lead">These are useful as examples and UI testing. Many of
@@ -137,7 +159,7 @@
       <div id="directory-grid" class="row"></div>
     </div>
 
-    <div id="detail"></div>
+    <div id="detail" hidden="true"></div>
   </div>
   <div id="colophon">
     <div class="container">
@@ -182,11 +204,18 @@
       {{#carousel}}
       <div class="item">
         <div class="item-inner">
-          <img src="{{images.carousel}}" style="float:right"></img>
+          <div style="float:right; width: 50%">
+          <img src="{{lang.default.images.carousel}}"></img>
+          </div>
           <div>
-          <h2><img src="{{images.logo}}"></img> {{manifest.name}}</h2>
-          <h3 class="tagline">{{tagline}}</h3>
-          <p class="description">{{shortDescription}}</p>
+          {{#lang.default.images.fulllogo}}
+          <h2><img src="{{lang.default.images.fulllogo}}"></img></h2>
+          {{/lang.default.images.fulllogo}}
+          {{^lang.default.images.fulllogo}}
+          <h2><img src="{{lang.default.images.logo}}"></img> {{manifest.name}}</h2>
+          {{/lang.default.images.fulllogo}}
+          <h3 class="tagline">{{lang.default.tagline}}</h3>
+          <p class="description">{{lang.default.shortDescription}}</p>
           </div>
           <div class="activation">
           <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
@@ -201,34 +230,62 @@
       {{#data}}
       <div class="provider-entry col-2 clearfix" onclick="location='#{{key}}'">
         <div class="provider-entry-inner clearfix">
-          <h2><img src="{{manifest.icon64URL}}"></img> {{manifest.name}}</h2>
-          <h3 class="tagline">{{tagline}}</h3>
-          <p class="provider-description">{{shortDescription}}</p>
+          {{#lang.default.images.fulllogo}}
+          <h2><img src="{{lang.default.images.fulllogo}}"></img></h2>
+          {{/lang.default.images.fulllogo}}
+          {{^lang.default.images.fulllogo}}
+          <h2><img src="{{lang.default.images.logo}}"></img> {{manifest.name}}</h2>
+          {{/lang.default.images.fulllogo}}
+          <h3 class="tagline">{{lang.default.tagline}}</h3>
+          <p class="provider-description">{{lang.default.shortDescription}}</p>
         </div>
       </div>
       {{/data}}
     </div>
 
+    <div id="detail-carousel-template">
+      {{#lang.default.images.details}}
+        <div><img src="{{.}}"></img></div>
+      {{/lang.default.images.details}}
+    </div>
+
     <div id="detail-template" hidden="true">
       <div class="row">
         <div class="provider-item-detail">
-          <h1><img src="{{images.logo}}"/> {{manifest.name}}</h1>
+          {{#lang.default.images.fulllogo}}
+          <h1><img src="{{lang.default.images.fulllogo}}"></img></h1>
+          {{/lang.default.images.fulllogo}}
+          {{^lang.default.images.fulllogo}}
+          <h1><img src="{{lang.default.images.logo}}"></img> {{manifest.name}}</h1>
+          {{/lang.default.images.fulllogo}}
         </div>
       </div>
       <div class="row">
         <div class="col-2">
           <div class="provider-item-detail">
-            <h3 class="tagline">{{tagline}}</h3>
-            <p class="lead">{{shortDescription}}</p>
+            <h3 class="tagline">{{lang.default.tagline}}</h3>
+            <p class="lead">{{lang.default.shortDescription}}</p>
             <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
-            <p class="provider-description">{{manifest.description}}</p>
-            <br/><a href="{{links.learnmore}}" class="moreinfo">Learn More</a>
-            <br/><a href="{{links.tos}}" class="moreinfo">Terms of Service</a>
-            <br/><a href="{{links.privacy}}" class="moreinfo">Privacy</a>
+            <p class="provider-description">{{{lang.default.description}}}</p>
+            <br/><a href="{{lang.default.links.learnmore}}" class="moreinfo">Learn More</a>
+            <br/><a href="{{lang.default.links.tos}}" class="moreinfo">Terms of Service</a>
+            <br/><a href="{{lang.default.links.privacy}}" class="moreinfo">Privacy</a>
           </div>
         </div>
         <div class="col-2 clearfix">
-          <img src="{{images.detail}}" class="provider-primary-image"/>
+          {{#lang.default.images.detail}}
+          <img src="{{lang.default.images.detail}}" class="provider-primary-image" />
+          {{/lang.default.images.detail}}
+          {{^lang.default.images.detail}}
+          <div id="carousel-details">
+            <div class="cycle-slideshow carousel-inner"
+              data-cycle-pager="#detail-pager"
+              data-cycle-pager-template="&lt;a href='#' &gt;&lt;img src='{{src}}' width='40' height='40'&gt;&lt;/a&gt;"
+              data-cycle-slides="&gt; div">
+            </div>
+            <div id="detail-pager" class="center"></div>
+          </div>
+          {{/lang.default.images.detail}}
         </div>
       </div>
     </div>

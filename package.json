@@ -3,26 +3,16 @@
   "name": "MozillaDemoSocialDirectory",
   "description": "A really simple demo social provider directory",
   "version": "0.0.1",
-  "main": "lib/server",
+  "main": "app.js",
   "private": "true",
   "engines": {
     "node": ">=0.4.7"
   },
   "dependencies": {
-    "websocket":"",
     "express":"",
-    "bytes":"",
-    "mime":"",
-    "qs":""
+    "mustache":""
   },
   "devDependencies": {
-    "awsbox": "0.4.x",
-    "mocha": "1.8.x",
-    "chai": "1.5.x",
-    "request": "2.16.x",
-    "jshint": "1.1.x",
-    "selenium-webdriver": "2.32.x",
-    "sinon": "1.6.x"
   },
   "scripts": {
     "test": "make test"
