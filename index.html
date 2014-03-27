@@ -248,7 +248,7 @@
     <script id="detail-template" type="text/html">
       <div class="detail-header clearfix">
         <div>
-        <a href="">Home</a>
+        <a href="#">{{lang.default.strings.home}}</a>
         </div>
         <div>
         <span>{{manifest.name}}</span>
@@ -266,7 +266,7 @@
           {{/lang.default.images.fulllogo}}
             <h3 class="tagline">{{lang.default.tagline}}</h3>
             <p class="lead">{{lang.default.shortDescription}}</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">{{lang.default.strings.activatenow}} <span>&raquo;</span></a>
             <p class="provider-description">{{{lang.default.description}}}</p>
             <br/><a href="{{lang.default.links.learnmore}}" class="moreinfo">Learn More</a>
           </div>

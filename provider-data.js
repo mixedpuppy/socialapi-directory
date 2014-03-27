@@ -5,6 +5,38 @@ var promotedLang = {
   "en_IN": ["saavn", "pocket", "facebook"]
 };
 
+var locale = {
+  "en_US": {
+    "activatenow": "Activate now",
+    "home": "Home"
+  },
+  "jp_JP": {
+    "activatenow": "今すぐアクティベート",
+    "home": "原産地"
+  }
+}
+
+
+function getLocale() {
+  var lang = /^\/?.*?\/(\w{2}_\w{2})\/?.*/.exec(location.href);
+  // support hash tags for static github site
+  if (lang) {
+    lang = lang ? lang[1] : "en_US";
+  } else {
+    var page = location.hash.substr(1).split("/");
+    lang = page.shift() || "en_US";
+  }
+  return lang;
+}
+
+function _(tag) {
+  var lang = getLocale();
+  if (locale[lang] && local[lang][tag]) {
+    return locale[lang][tag];
+  }
+  return locale["en_US"][tag];
+}
+
 var views = { "source": {
   "saavn": {
     // manifest information that is given to Firefox
@@ -442,15 +474,7 @@ var views = { "source": {
 };
 
 function initViewData() {
-  var lang = /^\/?.*?\/(\w{2}_\w{2})\/?.*/.exec(location.href);
-  // support hash tags for static github site
-  if (lang) {
-    lang = lang ? lang[1] : "en_US";
-  } else {
-    var page = location.hash.substr(1).split("/");
-    lang = page.shift() || "en_US";
-  }
-  
+  var lang = getLocale();
   views.data = [];
   for (var name in views.source) {
     var entry = views.source[name];
@@ -470,6 +494,12 @@ function initViewData() {
       d.images.logo = entry.manifest.icon64URL || entry.manifest.icon32URL;
     if (!d.description)
       d.description = entry.manifest.description;
+    // add localized strings
+    if (lang && locale[lang]) {
+      d.strings = locale[lang];
+    } else {
+      d.strings = locale["en_US"];
+    }
   }
   
   promoted = promotedLang[lang] || promotedLang["default"];

@@ -1,5 +1,14 @@
 = Instructions for data needed from providers to add an entry to the directory.
 
+- you can view a working example of the directory page at
+  http://mixedpuppy.github.io/socialapi-directory
+
+- you can view localized pages at this time using
+  http://mixedpuppy.github.io/socialapi-directory/#jp_JP/mixi and if the
+  provider has a localized page, you can change the jp_JP/mixi with the
+  apropriage locale and provider name. At the time of this writting, mixi is not
+  completely or correctly localized.
+
 - all images may be localized if necessary
 
 * directory page images
@@ -32,6 +41,9 @@
 * provider data
 
   * manifest: we will need a copy of the manifest used for the service
+  * if you provide localized versions of your pages, it would also help us if
+    you localize other text on the page for us, especially the "Activate now"
+    button and the "Home" link.
   * view data example (UTF-8 only), further documentation is in comments below:
   
 {
@@ -92,7 +104,9 @@
           // we have not evaluated the use of video sites other than youtube, we
           // will do that on an as-need basis.
           // To find the youtube link, go to the video page and select "share".
-          "youtube": ["http://youtu.be/asdflakjshdf", "http://youtu.be/asdflakjshdf", "http://youtu.be/asdflakjshdf"]
+          // Copy the path from the url. If the url looks like
+          // "http://youtu.be/asdflakjshdf", copy "asdflakjshdf".
+          "youtube": ["asdflakjshdf", "luhoiuhlhlkj", "zxcviiuzxiuvh"]
         },
         "links": {
           // link to your own activation page, or a page with more information
