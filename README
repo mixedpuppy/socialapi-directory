@@ -1,0 +1,104 @@
+= Instructions for data needed from providers to add an entry to the directory.
+
+- all images may be localized if necessary
+
+* directory page images
+
+  if promoted in slider/carousel
+    - same logo images as detail page below
+    - first display image from detail page will be used
+
+  directory tiles
+    - same logo images as detail page below
+
+* detail page images
+
+  logo images
+    - height should be around 64px, not a hard limit
+    - with name in logo, width 300px
+    - with icon logo only, width 64px, if name is long it may wrap, font will be
+    the site font
+
+  display image
+    up to 3 images in slider/carousel
+    max width is 560px
+    min width is 460px
+
+  videos:
+    - only tested with youtube videos, other delivery systems may not work
+    - up to 3 videos can be linked to
+    - provide links to video
+
+* provider data
+
+  * manifest: we will need a copy of the manifest used for the service
+  * view data example (UTF-8 only), further documentation is in comments below:
+  
+{
+    // manifest information that is given to Firefox, it is documented at
+    // https://developer.mozilla.org/en-US/docs/Social_API/Manifest
+    "manifest": {
+      "name": "example",
+      "origin": "http://www.example.com",
+      "iconURL": "http://www.example.com/_i/firefox/firefox16.png",
+      "icon32URL": "http://www.example.com/_i/firefox/firefox32.png",
+      "icon64URL": "http://www.example.com/_i/firefox/firefox64.png",
+      "workerURL": "http://www.example.com/_s/firefox/worker.js",
+      "sidebarURL": "http://www.example.com/firefox/sidebar.php",
+      "description": "This is an example provider.  This description will appear in the Add-ons manager in Firefox.",
+      "author": "Example",
+      "homepageURL": "http://www.example.com",
+      "version": 1,
+    },
+    // localized information for the website, we use some data from manifest if
+    // not present here. Every entry MUST have en_US for the default, and may
+    // add additional locales. At this time the directory site is not localized,
+    // only the provider content will get localized. Localized content will only
+    // be linked to from snippet promotions in Firefox until the directory site
+    // is fully localized. At that time, if the user is browsing a locale not
+    // included here, en_US will be used as the fallback or default.
+    "lang": {
+      // this example only shows the en_US locale, you may have multiple
+      // locales. More information on locale codes is at
+      // https://wiki.mozilla.org/L10n:Locale_Codes though the directory does
+      // not support dialect at this time.
+      "en_US": {
+        "tagline": "Example is awesome!",
+        "shortDescription": "Discover amazing things with this example, you'll have a great time!",
+        // description may contain html markup, it will be verified before going live
+        "description": "This example description is used on the providers detail page, and may be fairly long.  You can also do <b>simple html markup</b>, creating lists, etc.  Any markup will be reviewed prior to adding to the directory.",
+        "images": {
+          // fulllogo max width is 300px, suggested height is 64px
+          "fulllogo": "images/examplelogomark.jpg",
+          // logo icon should be 64px X 64px
+          "logo": "http://www.example.com/_i/firefox/firefox64.png",
+          // all images should width between 460px and 560px, height is flexible
+          // but within reason. suggested hight between 460px and 1000px. The
+          // "carousel" image will work better at smaller heights, a roughly
+          // square image would be good.
+          "carousel": "images/example-screen.png",
+          // you may have one or more images. If one image, use "detail", for
+          // more than one image we'll render a slider, use an array of images
+          // in "details". If you use more than one image, they should all have
+          // the same dimensions.
+          //"detail": "images/example-large.png",
+          "details": [
+            "images/example-large.png",
+            "images/example-large.png",
+            "images/example-large.png"
+          ]
+        },
+        "videos": {
+          // we have not evaluated the use of video sites other than youtube, we
+          // will do that on an as-need basis.
+          // To find the youtube link, go to the video page and select "share".
+          "youtube": ["http://youtu.be/asdflakjshdf", "http://youtu.be/asdflakjshdf", "http://youtu.be/asdflakjshdf"]
+        },
+        "links": {
+          // link to your own activation page, or a page with more information
+          // about your service.
+          "learnmore": "http://www.example.com/firefox/"
+        },
+      }
+    }
+  }
