@@ -176,11 +176,19 @@
 }
 
 #detail {
+  border: 1px solid rgba(0, 0, 0, .2);
   background-color: #fff;
-  margin: 0 auto;
-  padding: 30px;
+  margin: 0 25px;
 }
 
+.detail-content {
+  margin: 0 auto;
+  padding: 50px 70px;
+}
+
+.provider-item-detail {
+  margin-bottom: 40px;
+}
 .provider-item-detail > :first-child {
   margin-top: 0;
 }
@@ -204,6 +212,26 @@
   font-weight: normal;
 }
 
+.detail-header {
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, .05);
+  text-align: right;
+  color: #484848;
+}
+
+.detail-header :first-child {
+  float: left;
+  text-align: left;
+}
+.detail-header :last-child {
+  float: right;
+  text-align: right;
+}
+.detail-header a,
+.detail-header a:link,
+.detail-header a:visited {
+  color: #484848;
+}
 .provider-entry-inner {
   background-color: #fff;
   padding: 15px;
@@ -229,13 +257,23 @@
 #detail-pager {
   margin: 10px;
 }
-#detail-pager img {
-  margin: 10px;
+
+#detail-videos {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  margin-top: 20px;
+  padding-top: 20px;
 }
+
 #detail-videos img {
-  width: 25%;
-  margin: 10px;
+  width: 30%;
+  margin-left: 4%;
 }
+
+#detail-videos > :first-child > img {
+  margin-left: 0;
+}
+
+
 /* override sandstone css */
 p {
   font-family: 'Open Sans Light','Droid Arabic Naskh','Mplus Fulah Light',sans-serif;

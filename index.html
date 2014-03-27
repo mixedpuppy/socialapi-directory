@@ -246,19 +246,24 @@
     </script>
 
     <script id="detail-template" type="text/html">
+      <div class="detail-header clearfix">
+        <div>
+        <a href="">Home</a>
+        </div>
+        <div>
+        <span>{{manifest.name}}</span>
+        </div>
+      </div>
+      <div class="detail-content">
       <div class="row">
-        <div class="provider-item-detail">
+        <div class="col-2">
+          <div class="provider-item-detail">
           {{#lang.default.images.fulllogo}}
           <h1><img src="{{lang.default.images.fulllogo}}"></img></h1>
           {{/lang.default.images.fulllogo}}
           {{^lang.default.images.fulllogo}}
           <h1><img src="{{lang.default.images.logo}}"></img> {{manifest.name}}</h1>
           {{/lang.default.images.fulllogo}}
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2">
-          <div class="provider-item-detail">
             <h3 class="tagline">{{lang.default.tagline}}</h3>
             <p class="lead">{{lang.default.shortDescription}}</p>
             <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
@@ -276,10 +281,10 @@
             <div class="cycle-slideshow carousel-inner"
               data-cycle-pager="#detail-pager">
               {{#details}}
-                <img src="{{.}}" data-cycle-pager-template="&lt;a href='#' &gt;&lt;img src='{{.}}' width='40' height='40' /&gt;&lt;/a&gt;"/>
+                <img src="{{.}}"/>
               {{/details}}
             </div>
-            <div id="detail-pager" class="center external"></div>
+            <div id="detail-pager" class="cycle-pager center external"></div>
           </div>
           {{/detail}}
         {{/lang.default.images}}
@@ -291,6 +296,7 @@
         </div>
         {{/lang.default.videos}}
         </div>
+      </div>
       </div>
     </script>
 
