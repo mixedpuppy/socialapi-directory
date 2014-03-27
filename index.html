@@ -17,7 +17,7 @@
     function pageSet() {
       initViewData();
       var page = location.hash.substr(1).split("/");
-      var [locale, name] = page;
+      var locale = page.shift(), name = page = page.shift();
       if (!name) {
         name = locale;
       }
@@ -68,9 +68,6 @@
       }
       
       window.scrollTo(0, 0);
-    }
-
-    $(document).ready(function($) {
 
       $("#directory-domain").text(location.origin);
       if (!(/Firefox/.test(navigator.userAgent))) {
@@ -78,6 +75,10 @@
         $(".button").addClass("insensitive");
         $(".button").removeAttr("onclick");
       }
+
+    }
+
+    $(document).ready(function($) {
 
       $(window).bind( 'hashchange', function(e) {
         pageSet();
