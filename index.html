@@ -251,7 +251,7 @@
         <a href="#">{{lang.default.strings.home}}</a>
         </div>
         <div>
-        <span>{{manifest.name}}</span>
+        <span>{{lang.default.name}}</span>
         </div>
       </div>
       <div class="detail-content">
@@ -262,13 +262,13 @@
           <h1><img src="{{lang.default.images.fulllogo}}"></img></h1>
           {{/lang.default.images.fulllogo}}
           {{^lang.default.images.fulllogo}}
-          <h1><img src="{{lang.default.images.logo}}"></img> {{manifest.name}}</h1>
+          <h1><img src="{{lang.default.images.logo}}"></img> {{lang.default.name}}</h1>
           {{/lang.default.images.fulllogo}}
             <h3 class="tagline">{{lang.default.tagline}}</h3>
             <p class="lead">{{lang.default.shortDescription}}</p>
             <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">{{lang.default.strings.activatenow}} <span>&raquo;</span></a>
             <p class="provider-description">{{{lang.default.description}}}</p>
-            <br/><a href="{{lang.default.links.learnmore}}" class="moreinfo">Learn More</a>
+            <br/><a href="{{lang.default.links.learnmore}}" class="moreinfo">{{lang.default.strings.learnmore}}</a>
           </div>
         </div>
         <div class="col-2 clearfix">
