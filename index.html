@@ -41,11 +41,8 @@
         $("#detail").html(output);
         var c = $("#carousel-details");
         if (c) {
-          $("#carousel-details").attr("hidden", "true");
-          output = $("#detail-carousel-template").mustache(data);
-          $("#carousel-details .carousel-inner").html(output);
           $("#carousel-details").removeAttr("hidden");
-          $("#carousel-details .cycle-slideshow").cycle('reinit');
+          $("#carousel-details .cycle-slideshow").cycle();
         }
       } else {
         output = $("#directory-template").mustache(views);
@@ -197,8 +194,7 @@
   </div>
   </div>
   
-  <div role="templates" hidden="true">
-    <div id="carousel-template" hidden="true">
+    <script id="carousel-template" type="text/html">
       <span class="cycle-prev">&lsaquo;</span>
       <span class="cycle-next">&rsaquo;</span>
       {{#carousel}}
@@ -224,9 +220,9 @@
         </div>
       </div>    
       {{/carousel}}
-    </div>    
+    </script>    
 
-    <div id="directory-template" hidden="true">
+    <script id="directory-template" type="text/html">
       {{#data}}
       <div class="provider-entry col-2 clearfix" onclick="location='#{{key}}'">
         <div class="provider-entry-inner clearfix">
@@ -241,15 +237,15 @@
         </div>
       </div>
       {{/data}}
-    </div>
+    </script>
 
-    <div id="detail-carousel-template">
+    <script id="detail-carousel-template" type="text/html">
       {{#lang.default.images.details}}
         <div><img src="{{.}}"></img></div>
       {{/lang.default.images.details}}
-    </div>
+    </script>
 
-    <div id="detail-template" hidden="true">
+    <script id="detail-template" type="text/html">
       <div class="row">
         <div class="provider-item-detail">
           {{#lang.default.images.fulllogo}}
@@ -268,28 +264,28 @@
             <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')">Activate now <span>&raquo;</span></a>
             <p class="provider-description">{{{lang.default.description}}}</p>
             <br/><a href="{{lang.default.links.learnmore}}" class="moreinfo">Learn More</a>
-            <br/><a href="{{lang.default.links.tos}}" class="moreinfo">Terms of Service</a>
-            <br/><a href="{{lang.default.links.privacy}}" class="moreinfo">Privacy</a>
           </div>
         </div>
+        {{#lang.default.images}}
         <div class="col-2 clearfix">
-          {{#lang.default.images.detail}}
-          <img src="{{lang.default.images.detail}}" class="provider-primary-image" />
-          {{/lang.default.images.detail}}
-          {{^lang.default.images.detail}}
-          <div id="carousel-details">
+          {{#detail}}
+          <img src="{{images.detail}}" class="provider-primary-image" />
+          {{/detail}}
+          {{^detail}}
+          <div id="carousel-details" hidden="true">
             <div class="cycle-slideshow carousel-inner"
-              data-cycle-pager="#detail-pager"
-              data-cycle-pager-template="&lt;a href='#' &gt;&lt;img src='{{src}}' width='40' height='40'&gt;&lt;/a&gt;"
-              data-cycle-slides="&gt; div">
+              data-cycle-pager="#detail-pager">
+              {{#details}}
+                <img src="{{.}}" data-cycle-pager-template="&lt;a href='#' &gt;&lt;img src='{{.}}' width='40' height='40' /&gt;&lt;/a&gt;"/>
+              {{/details}}
             </div>
-            <div id="detail-pager" class="center"></div>
+            <div id="detail-pager" class="center external"></div>
           </div>
-          {{/lang.default.images.detail}}
+          {{/detail}}
         </div>
+        {{/lang.default.images}}
       </div>
-    </div>
-  </div>
+    </script>
 
   <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 </body>

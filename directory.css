@@ -226,6 +226,13 @@
   }
 }
 
+#detail-pager {
+  margin: 10px;
+}
+#detail-pager img {
+  margin: 10px;
+}
+
 /* override sandstone css */
 p {
   font-family: 'Open Sans Light','Droid Arabic Naskh','Mplus Fulah Light',sans-serif;

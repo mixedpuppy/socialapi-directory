@@ -36,12 +36,12 @@ var views = { "source": {
           // you may have one or more images. If one image, use "detail", for
           // more than one image we'll render a slider, use an array of images
           // in "details"
-          "detail": "images/saavn-large.png",
-          //"details": [
-          //  "images/saavn-large.png",
-          //  "images/saavn-large.png",
-          //  "images/saavn-large.png"
-          //]
+          //"detail": "images/saavn-large.png",
+          "details": [
+            "images/saavn-large.png",
+            "images/saavn-large.png",
+            "images/saavn-large.png"
+          ]
         },
         "links": {
           "tos": "http://www.saavn.com/corporate/terms.php",
@@ -204,6 +204,7 @@ var views = { "source": {
         "images": {
           "carousel": "images/pocket.png",
           "detail": "images/pocket.png",
+          "fulllogo": "http://getpocket.com/i/v3/pocket_logo.png",
           "logo": "https://getpocket.com/firefox/social/Icons/64px/PKT_FF_SocialAPI_Icons_64_icon.png"
         },
         "links": {
