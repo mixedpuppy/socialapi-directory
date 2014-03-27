@@ -42,8 +42,10 @@
 
   * manifest: we will need a copy of the manifest used for the service
   * if you provide localized versions of your pages, it would also help us if
-    you localize other text on the page for us, especially the "Activate now"
-    button and the "Home" link.
+    you localize other text on the page for us, especially:
+    - Activate now
+    - Home
+    - Learn More
   * view data example (UTF-8 only), further documentation is in comments below:
   
 {
