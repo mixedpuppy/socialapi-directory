@@ -266,10 +266,10 @@
             <br/><a href="{{lang.default.links.learnmore}}" class="moreinfo">Learn More</a>
           </div>
         </div>
-        {{#lang.default.images}}
         <div class="col-2 clearfix">
+        {{#lang.default.images}}
           {{#detail}}
-          <img src="{{images.detail}}" class="provider-primary-image" />
+          <img src="{{detail}}" class="provider-primary-image" />
           {{/detail}}
           {{^detail}}
           <div id="carousel-details" hidden="true">
@@ -282,8 +282,15 @@
             <div id="detail-pager" class="center external"></div>
           </div>
           {{/detail}}
-        </div>
         {{/lang.default.images}}
+        {{#lang.default.videos}}
+        <div id="detail-videos" class="center">
+          {{#youtube}}
+          <a href="http://www.youtube.com/watch?v={{.}}"><img src="//i1.ytimg.com/vi/{{.}}/mqdefault.jpg"/></a>
+          {{/youtube}}
+        </div>
+        {{/lang.default.videos}}
+        </div>
       </div>
     </script>
 

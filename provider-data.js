@@ -43,11 +43,14 @@ var views = { "source": {
             "images/saavn-large.png"
           ]
         },
+        "videos": {
+          "youtube": ["byLmQUtXeUc", "B6HgDm_yFXc", "N2G3oKQU0gA"]
+        },
         "links": {
           "tos": "http://www.saavn.com/corporate/terms.php",
           "privacy": "http://www.saavn.com/corporate/privacy.php",
           "learnmore": "http://www.saavn.com/firefox/"
-        }
+        },
       }
     }
   },
