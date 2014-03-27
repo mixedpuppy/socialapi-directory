@@ -17,7 +17,7 @@
     function pageSet() {
       initViewData();
       var page = location.hash.substr(1).split("/");
-      var [locale, name] = page;
+      var locale = page.shift(), name = page = page.shift();
       if (!name) {
         name = locale;
       }
