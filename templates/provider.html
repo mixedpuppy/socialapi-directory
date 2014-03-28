@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href="#">{{strings['home']}}</a>
+        </div>
+        <div>
+        <span>{{lang['default']['name']}}</span>
+        </div>
+      </div>
+      <div class="detail-content">
+      <div class="row">
+        <div class="col-2">
+          <div class="provider-item-detail">
+          {% if 'fulllogo' in lang['default']['images'] %}
+          <h1><img src="{{lang['default']['images']['fulllogo']}}"></img></h1>
+          {% else %}
+          <h1><img src="{{lang['default']['images']['logo']}}"></img> {{lang['default']['name']}}</h1>
+          {% endif %}
+            <h3 class="tagline">{{lang['default']['tagline']}}</h3>
+            <p class="lead">{{lang['default']['shortDescription']}}</p>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifest}}">{{strings['activatenow']}} <span>&raquo;</span></a>
+            <p class="provider-description">{{lang['default']['description']}}</p>
+          {% if 'links' in lang['default'] %}
+            <br/><a href="{{lang['default']['links']['learnmore']}}" class="moreinfo">{{strings['learnmore']}}</a>
+          {% endif %}
+          </div>
+        </div>
+        <div class="col-2 clearfix">
+          {% if 'detail' in lang['default']['images'] %}<img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" />{% else %}
+          <div id="carousel-details">
+            <div class="cycle-slideshow carousel-inner"
+              data-cycle-pager="#detail-pager">
+              {% for image in lang['default']['images']['details'] %}<img src="{{image}}"/>{% endfor %}
+            </div>
+            <div id="detail-pager" class="cycle-pager center external"></div>
+          </div>
+          {% endif %}
+        {% if 'videos' in lang['default'] %}
+        <div id="detail-videos" class="center">
+          {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
+        </div>
+        {% endif %}
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div id="carousel-promotions" class="carousel">
+    <div class="carousel-wrapper">
+    <div id="carousel-promo" class="cycle-slideshow carousel-inner"
+      data-cycle-center-horz=true
+      data-cycle-center-vert=true
+      data-cycle-pager=".cycle-pager"
+      data-cycle-fx="scrollHorz"
+      data-cycle-timeout="5000"
+      data-cycle-slides="&gt; div">
+      <span class="cycle-prev">&lsaquo;</span>
+      <span class="cycle-next">&rsaquo;</span>
+      {% if carousel %}
+      {% for p in slider %}
+      <div class="item">
+        <div class="item-inner">
+          <div style="float:right; width: 50%">
+          <img src="{{p['lang']['default']['images']['carousel']}}"></img>
+          </div>
+          <div>
+          {% if p['lang']['default']['images']['fulllogo'] %}
+          <h2><img src="{{p['lang']['default']['images']['fulllogo']}}"></img></h2>
+          {% else %}
+          <h2><img src="{{p['lang']['default']['images']['logo']}}"></img> {{p['lang']['default']['name']}}</h2>
+          {% endif %}
+          <h3 class="tagline">{{p['lang']['default']['tagline']}}</h3>
+          <p class="description">{{p['lang']['default']['shortDescription']}}</p>
+          </div>
+          <div class="activation">
+          <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifest']}}">Activate now <span>&raquo;</span></a>
+          <br/><a href="{{p['key']}}" class="moreinfo">find out more...</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="cycle-pager center"></div>
+    </div>
+  </div>
+
+  <div id="wrapper" class="content">
+    <div id="directory">
+      <div class="directory-header">
+      <h3>More SocialAPI Demo Providers</h3>
+      <p class="lead">These are useful as examples and UI testing. Many of
+        these will not work in several ways. In most cases they are not provided
+        by the website linked to.  Some of the demos use the mobile websites,
+        you may need to install a <a
+        href="https://addons.mozilla.org/en-US/firefox/addon/wmlbrowser/">WML
+        extension for Firefox.</a> You should also read the <a data-toggle="modal"
+        data-target="#aboutModel">instructions to use this site.</a></p>
+      </div>
+      <div id="directory-grid" class="row">
+      {% for p in source.itervalues() %}
+      <div class="provider-entry col-2 clearfix" onclick="location='{{p['key']}}'">
+        <div class="provider-entry-inner clearfix">
+          {% if p['lang']['default']['images']['fulllogo'] %}
+          <h2><img src="{{p['lang']['default']['images']['fulllogo']}}"></img></h2>
+          {% else %}
+          <h2><img src="{{p['lang']['default']['images']['logo']}}"></img> {{p['lang']['default']['name']}}</h2>
+          {% endif %}
+          <h3 class="tagline">{{p['lang']['default']['tagline']}}</h3>
+          <p class="provider-description">{{p['lang']['default']['shortDescription']}}</p>
+        </div>
+      </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
