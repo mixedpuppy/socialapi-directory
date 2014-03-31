@@ -7,7 +7,7 @@ if __name__ == '__main__':
   app = createapp()
   freezer = Freezer(app)
 
-  data = json.load(app.open_resource('static/js/data.json'), object_pairs_hook=collections.OrderedDict)
+  data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
 
   @freezer.register_generator
   def product_url_generator():
