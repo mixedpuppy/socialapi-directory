@@ -29,7 +29,7 @@
           </div>
           <div class="activation">
           <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifest']}}">Activate now <span>&raquo;</span></a>
-          <br/><a href="{{p['key']}}" class="moreinfo">find out more...</a>
+          <br/><a href="{{p['key']}}.html" class="moreinfo">find out more...</a>
           </div>
         </div>
       </div>
@@ -54,7 +54,8 @@
       </div>
       <div id="directory-grid" class="row">
       {% for p in source.itervalues() %}
-      <div class="provider-entry col-2 clearfix" onclick="location='{{p['key']}}'">
+      <div class="provider-entry col-2 clearfix">
+        <a href="{{p['key']}}.html">
         <div class="provider-entry-inner clearfix">
           {% if p['lang']['default']['images']['fulllogo'] %}
           <h2><img src="{{p['lang']['default']['images']['fulllogo']}}"></img></h2>
@@ -64,6 +65,7 @@
           <h3 class="tagline">{{p['lang']['default']['tagline']}}</h3>
           <p class="provider-description">{{p['lang']['default']['shortDescription']}}</p>
         </div>
+        </a>
       </div>
       {% endfor %}
       </div>

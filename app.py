@@ -10,12 +10,12 @@ class RegexConverter(BaseConverter):
         self.regex = items[0]
 
 def createapp():
-  app = Flask(__name__, static_folder='')
+  app = Flask(__name__)
   app.debug = True
 
   app.url_map.converters['regex'] = RegexConverter
 
-  data = json.load(app.open_resource('js/data.json'), object_pairs_hook=collections.OrderedDict)
+  data = json.load(app.open_resource('static/js/data.json'), object_pairs_hook=collections.OrderedDict)
 
   def dataFixup(k, p, locale):
     p['key'] = k
@@ -44,6 +44,8 @@ def createapp():
     else:
       data['strings'] = data['strings']["en_US"]
 
+    if path:
+      path = os.path.splitext(path)[0]
     if path and path in data["source"]:
       d = dataFixup(path, data["source"][path], locale)
       d['strings'] = data['strings']
