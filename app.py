@@ -2,6 +2,7 @@ import re, os, sys
 from flask import Flask, Blueprint, request, json, render_template, redirect, url_for
 from werkzeug.routing import BaseConverter
 from pystache.renderer import Renderer
+import copy
 import collections
 
 class RegexConverter(BaseConverter):
@@ -90,7 +91,8 @@ def createapp():
       template = path
     else:
       template = path and "provider.html" or "index.html"
-    return renderTemplate(template, dict(data), locale, path, base)
+    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    return renderTemplate(template, appData, locale, path, base)
 
   @app.route('/<regex("\w{2}-\w{2}"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):
@@ -107,7 +109,8 @@ def createapp():
   @bp.route('/<regex("\w{2}-\w{2}"):locale>/')
   def index(base, locale):
     # if root is locale, capture that, but use the same local file paths
-    return renderTemplate('index.html', dict(data), locale, base=base)
+    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    return renderTemplate('index.html', appData, locale, base=base)
 
   @app.route('/<regex("\w{2}-\w{2}"):locale>/')
   def app_index(locale):
@@ -121,7 +124,6 @@ def createapp():
     # level index page.  We use that here to ensure that works as well.
     return app.send_static_file("index.html")
 
-  data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
   app.register_blueprint(bp, url_prefix="/<path:base>")
 
 
