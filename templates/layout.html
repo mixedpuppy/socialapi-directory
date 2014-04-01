@@ -14,6 +14,7 @@
   <script src="../js/jquery.cycle2.center.js"></script>
   <script>
     $(document).ready(function($) {
+{% if source %}
       // adjust the height of our directory listing so everything lines up nice
       var boxes = $('.provider-entry-inner');
       var maxHeight = Math.max.apply(
@@ -21,11 +22,15 @@
           return $(this).height();
         }).get());
       boxes.height(maxHeight);
+{% endif %}
 
       window.scrollTo(0, 0);
 
+{% if not production %}
       $("#directory-domain").text(location.origin);
+{% endif %}
       if (!(/Firefox/.test(navigator.userAgent))) {
+        // cannot activate from non-firefox browsers
         $("#incompatibility-banner").removeAttr("hidden");
         $(".button").addClass("insensitive");
         $(".button").removeAttr("onclick");
