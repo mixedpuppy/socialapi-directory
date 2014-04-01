@@ -23,7 +23,7 @@ def createapp():
     if locale in p["lang"]:
       p["lang"]["default"] = p["lang"][locale]
     else:
-      p["lang"]["default"] = p["lang"]["en_US"]
+      p["lang"]["default"] = p["lang"]["en-US"]
 
     # for demo site purposes, massage the data
     # various lang pack fixups, use manifest entries for missing lang entries
@@ -38,6 +38,7 @@ def createapp():
     return p
   
   def renderTemplate(template, data, locale, path=None, base="/"):
+    print template, locale, path, base
     basehref = ""
     if base:
       basehref = base + '/' + locale + '/'
@@ -48,7 +49,7 @@ def createapp():
     if locale in data['strings']:
       data['strings'] = data['strings'][locale]
     else:
-      data['strings'] = data['strings']["en_US"]
+      data['strings'] = data['strings']["en-US"]
 
     if path:
       path = os.path.splitext(path)[0]
@@ -66,7 +67,7 @@ def createapp():
       if locale in data["carousel"]:
         names = data["carousel"][locale]
       else:
-        names = data["carousel"]["en_US"]
+        names = data["carousel"]["en-US"]
       data["slider"] = []
       for name in names:
         data["slider"].append(data["source"][name])
@@ -74,8 +75,9 @@ def createapp():
       data["basehref"] = basehref
       return render_template(template, **data)
   
-  @bp.route('/<regex("\w{2}_\w{2}"):locale>/<path:path>')
+  @bp.route('/<regex("\w{2}-\w{2}"):locale>/<path:path>')
   def static_proxy(base, locale=None, path=None):
+    print base, locale, path
     # if root is locale, capture that, but use the same local file paths
     try:
       root, path = path.split('/', 2)
@@ -90,7 +92,7 @@ def createapp():
       template = path and "provider.html" or "index.html"
     return renderTemplate(template, dict(data), locale, path, base)
 
-  @app.route('/<regex("\w{2}_\w{2}"):locale>/<path>')
+  @app.route('/<regex("\w{2}-\w{2}"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):
     return static_proxy(None, locale, path)
 
@@ -102,12 +104,12 @@ def createapp():
       path = base + "/" + path
     return app.send_static_file(path)
 
-  @bp.route('/<regex("\w{2}_\w{2}"):locale>/')
+  @bp.route('/<regex("\w{2}-\w{2}"):locale>/')
   def index(base, locale):
     # if root is locale, capture that, but use the same local file paths
     return renderTemplate('index.html', dict(data), locale, base=base)
 
-  @app.route('/<regex("\w{2}_\w{2}"):locale>/')
+  @app.route('/<regex("\w{2}-\w{2}"):locale>/')
   def app_index(locale):
     return index(None, locale)
 

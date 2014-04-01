@@ -76,7 +76,7 @@
       // locales. More information on locale codes is at
       // https://wiki.mozilla.org/L10n:Locale_Codes though the directory does
       // not support dialect at this time.
-      "en_US": {
+      "en-US": {
         "name": "Example",
         "tagline": "Example is awesome!",
         "shortDescription": "Discover amazing things with this example, you'll have a great time!",
