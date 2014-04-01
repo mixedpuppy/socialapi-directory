@@ -1,5 +1,5 @@
 import re, os, sys
-from flask import Flask, request, json, render_template, redirect
+from flask import Flask, Blueprint, request, json, render_template, redirect, url_for
 from werkzeug.routing import BaseConverter
 from pystache.renderer import Renderer
 import collections
@@ -10,12 +10,13 @@ class RegexConverter(BaseConverter):
         self.regex = items[0]
 
 def createapp():
+  #app.config["APPLICATION_ROOT"] = "/socialapi-directory"
   app = Flask(__name__)
   app.debug = True
 
   app.url_map.converters['regex'] = RegexConverter
 
-  data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+  bp = Blueprint('bp', __name__)
 
   def dataFixup(k, p, locale):
     p['key'] = k
@@ -36,7 +37,12 @@ def createapp():
     p['manifest'] = json.dumps(p['manifest'])
     return p
   
-  def renderTemplate(template, data, locale, path=None):
+  def renderTemplate(template, data, locale, path=None, base="/"):
+    basehref = ""
+    if base:
+      basehref = base + '/' + locale + '/'
+    elif locale:
+      basehref = locale + '/'
     # add localized strings
     data["locale"] = locale
     if locale in data['strings']:
@@ -50,6 +56,7 @@ def createapp():
       d = dataFixup(path, data["source"][path], locale)
       d['strings'] = data['strings']
       d['locale'] = data['locale']
+      d["basehref"] = basehref
       #print >> sys.stdout, json.dumps(d)
       return render_template(template, **d)
     else:
@@ -64,20 +71,16 @@ def createapp():
       for name in names:
         data["slider"].append(data["source"][name])
   
+      data["basehref"] = basehref
       return render_template(template, **data)
   
-  @app.route('/<regex("\w{2}_\w{2}"):locale>/<path>')
-  def static_proxy(locale, path):
+  @bp.route('/<regex("\w{2}_\w{2}"):locale>/<path:path>')
+  def static_proxy(base, locale=None, path=None):
     # if root is locale, capture that, but use the same local file paths
-    print "root in ", locale
-    print "path in ", path
     try:
       root, path = path.split('/', 2)
     except ValueError, e:
       root = None
-    print "locale is ", locale
-    print "root is ", root
-    print "path is ", path
     # send_static_file will guess the correct MIME type
     if root in ["css", "images", "fonts", "js"]:
       return app.send_static_file(os.path.join(root, path))
@@ -85,26 +88,39 @@ def createapp():
       template = path
     else:
       template = path and "provider.html" or "index.html"
-    print "template is ", template
-    return renderTemplate(template, dict(data), locale, path)
+    return renderTemplate(template, dict(data), locale, path, base)
 
-  @app.route('/<regex("\w{2}_\w{2}"):locale>/<path:path>')
-  def static_files(locale, path):
+  @app.route('/<regex("\w{2}_\w{2}"):locale>/<path>')
+  def app_static_proxy(locale=None, path=None):
+    return static_proxy(None, locale, path)
+
+  @bp.route('/<path:path>')
+  def static_files(base=None, path=None):
+    if base and not path:
+      return index(None, locale)
+    if base in ["css", "images", "fonts", "js"]:
+      path = base + "/" + path
     return app.send_static_file(path)
-  
+
+  @bp.route('/<regex("\w{2}_\w{2}"):locale>/')
+  def index(base, locale):
+    # if root is locale, capture that, but use the same local file paths
+    return renderTemplate('index.html', dict(data), locale, base=base)
 
   @app.route('/<regex("\w{2}_\w{2}"):locale>/')
-  def rootname(locale):
-    print "rendering ", locale
-    # if root is locale, capture that, but use the same local file paths
-    return renderTemplate('index.html', dict(data), root)
+  def app_index(locale):
+    return index(None, locale)
 
-  @app.route('/')
-  def root():
+  @bp.route("/")
+  @app.route("/")
+  def root(base=None):
     # the server should handle a redirect. Since the frozen static pages will be
     # served on github pages for testing, we have a redirect located in the top
     # level index page.  We use that here to ensure that works as well.
     return app.send_static_file("index.html")
+
+  data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+  app.register_blueprint(bp, url_prefix="/<path:base>")
 
 
   return app
