@@ -234,13 +234,18 @@
 }
 .provider-entry-inner {
   background-color: #fff;
+  color: #333;
   padding: 15px;
   margin: 10px;
 }
 .provider-entry-inner > h3 {
   font-size: 1.5em;
 }
-.provider-entry:hover {
+.provider-entry > a {
+  text-decoration: none;
+  cursor: default;
+}
+.provider-entry-inner:hover {
   cursor: pointer;
 }
 
