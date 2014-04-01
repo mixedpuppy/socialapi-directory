@@ -14,11 +14,10 @@ if __name__ == '__main__':
       # Return a list. (Any iterable type will do.)
       paths = [
           '/',
-          '/en_US/'
+          '/en-US/'
       ]
       for k, p in data["source"].iteritems():
         for lang in p['lang']:
-          paths.append('/'+lang+'/images')
           paths.append('/'+lang+'/'+k+'.html')
       print paths
       return paths
