@@ -441,7 +441,7 @@
   "data": [],
   "carousel": {
     "en-US": ["pocket", "saavn", "facebook"],
-    "en_IN": ["saavn", "pocket", "facebook"]
+    "en-IN": ["saavn", "pocket", "facebook"]
   },
   "strings": {
     "en-US": {
@@ -449,7 +449,7 @@
       "home": "Home",
       "learnmore": "Learn More"
     },
-    "jp_JP": {
+    "jp-JP": {
       "activatenow": "今すぐアクティベート",
       "home": "原産地",
       "learnmore": "詳細はこちら"
