@@ -20,13 +20,13 @@
         "shortDescription": "Discover fresh music and hear more of what you love.",
         "description": "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and 100% free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.",
         "images": {
-          "fulllogo": "images/saavnlogomark.jpg",
+          "fulllogo": "images/saavn/saavnlogomark.jpg",
           "logo": "http://www.saavn.com/_i/firefox/firefox64.png",
-          "carousel": "images/saavn-screen.png",
+          "carousel": "images/saavn/saavn-screen.png",
           "details": [
-            "images/saavn-large.png",
-            "images/saavn-large.png",
-            "images/saavn-large.png"
+            "images/saavn/saavn-large.png",
+            "images/saavn/saavn-large.png",
+            "images/saavn/saavn-large.png"
           ]
         },
         "videos": {
@@ -36,6 +36,36 @@
           "tos": "http://www.saavn.com/corporate/terms.php",
           "privacy": "http://www.saavn.com/corporate/privacy.php",
           "learnmore": "http://www.saavn.com/firefox/"
+        }
+      }
+    }
+  },
+  "sphere": {
+    "manifest": {
+      "name": "Sphere",
+      "iconURL": "https://firefox.sphere.com/images/outbrain.png",
+      "icon32URL": "https://firefox.sphere.com/images/outbrain_32x32.png",
+      "icon64URL": "https://firefox.sphere.com/images/outbrain_64x64.png",
+      "sidebarURL": "https://firefox.sphere.com/sidebar.html",
+      "description": "Sphere - Best of the web, tailored to you.",
+      "author": "Outbrain",
+      "homepageURL": "https://www.sphere.com",
+      "version": "1.0",
+      "origin": "https://www.sphere.com"
+    },
+    "lang": {
+      "en-US": {
+        "name": "Sphere",
+        "tagline": "a discovery experience",
+        "description": "a new way to discover the most interesting content that is relevant to your interests",
+        "images": {
+          "fulllogo": "images/sphere/sphere-logo-258x74.jpg",
+          "carousel": "images/sphere/sphere-slide.jpg",
+          "detail": "images/sphere/sphere-slide.jpg",
+          "logo": "https://firefox.sphere.com/images/outbrain_64x64.png"
+        },
+        "links": {
+          "learnmore": "https://www.sphere.com/"
         }
       }
     }
