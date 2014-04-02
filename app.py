@@ -39,7 +39,6 @@ def createapp():
     return p
   
   def renderTemplate(template, data, locale, path=None, base="/"):
-    print template, locale, path, base
     basehref = ""
     if base:
       basehref = base + '/' + locale + '/'
@@ -78,10 +77,9 @@ def createapp():
   
   @bp.route('/<regex("\w{2}-\w{2}"):locale>/<path:path>')
   def static_proxy(base, locale=None, path=None):
-    print base, locale, path
     # if root is locale, capture that, but use the same local file paths
     try:
-      root, path = path.split('/', 2)
+      root, path = path.split('/', 1)
     except ValueError, e:
       root = None
     # send_static_file will guess the correct MIME type
