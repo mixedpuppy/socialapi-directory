@@ -86,7 +86,7 @@
         "shortDescription": "Share any web page, anywhere, anytime.",
         "images": {
           "carousel": "images/facebook-share.png",
-          "logo": "images/FB-f-Logo__blue_58.png",
+          "fulllogo": "images/FB_Facebook-320.png",
           "detail": "images/facebook-share.png"
         }
       }
