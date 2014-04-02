@@ -30,7 +30,7 @@
           </div>
         </div>
         <div class="col-2 clearfix">
-          {% if 'detail' in lang['default']['images'] %}<img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" />{% else %}
+          {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
           <div id="carousel-details">
             <div class="cycle-slideshow carousel-inner"
               data-cycle-pager="#detail-pager">
