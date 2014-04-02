@@ -43,7 +43,11 @@
   <div id="wrapper" class="content">
     <div id="directory">
       <div class="directory-header">
-      <h3>More SocialAPI Demo Providers</h3>
+      <h3>Firefox SocialAPI Directory</h3>
+      <p class="lead">The Social API is an architecture that makes it easier for
+      web browsers to integrate with social media services, using standard web
+      technologies as the API.</p>
+{% if not production %}
       <p class="lead">These are useful as examples and UI testing. Many of
         these will not work in several ways. In most cases they are not provided
         by the website linked to.  Some of the demos use the mobile websites,
@@ -52,6 +56,7 @@
         extension for Firefox.</a> You should also read the
         <a href="#" data-featherlight="#aboutModel">instructions to use this
         site.</a></p>
+{% endif %}
       </div>
       <div id="directory-grid" class="row">
       {% for p in source.itervalues() %}
