@@ -39,6 +39,8 @@ def createapp():
     return p
   
   def renderTemplate(template, data, locale, path=None, base="/"):
+    for k, p in data["demo"].iteritems():
+      data["source"][k] = p
     basehref = ""
     if base:
       basehref = base + '/' + locale + '/'
