@@ -206,7 +206,7 @@
           "description": "Stay informed of what your friends are up to.",
           "images": {
             "fulllogo": "images/mixi/logo-large.png",
-            "detail": "images/mixi/detail.png"
+            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"]
           },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
@@ -215,10 +215,10 @@
         "jp-JP": {
           "name": "mixi",
           "tagline": "好きなWebサイトを見ながらmixiをチェック",
-          "description": "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます",
+          "description": "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます 。 ",
           "images": {
             "fulllogo": "images/mixi/logo-large.png",
-            "detail": "images/mixi/detail.png"
+            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"]
           },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
