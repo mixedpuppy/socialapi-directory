@@ -11,6 +11,7 @@ class RegexConverter(BaseConverter):
         self.regex = items[0]
 
 def createapp():
+  demo = '-d' in sys.argv
   #app.config["APPLICATION_ROOT"] = "/socialapi-directory"
   app = Flask(__name__)
   app.debug = True
@@ -39,8 +40,11 @@ def createapp():
     return p
   
   def renderTemplate(template, data, locale, path=None, base="/"):
-    for k, p in data["demo"].iteritems():
-      data["source"][k] = p
+    if demo:
+        # add any mockup providers to our directory
+        for k, p in data["demo"].iteritems():
+          data["source"][k] = p
+    data["production"] = not demo
     basehref = ""
     if base:
       basehref = base + '/' + locale + '/'
@@ -56,9 +60,11 @@ def createapp():
     if path:
       path = os.path.splitext(path)[0]
     if path and path in data["source"]:
+      # on a detail page, just copy the specific data we need
       d = dataFixup(path, data["source"][path], locale)
       d['strings'] = data['strings']
       d['locale'] = data['locale']
+      d['production'] = data['production']
       d["basehref"] = basehref
       #print >> sys.stdout, json.dumps(d)
       return render_template(template, **d)
