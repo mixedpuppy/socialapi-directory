@@ -1,0 +1,151 @@
+<html>
+<head>
+  <base href="/en-US/"/>
+  <title>Firefox SocialAPI Services</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link href="../images/firefox-black64.png" id="siteicon" rel="icon" />
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.cycle2.min.js"></script>
+  <script src="../js/jquery.cycle2.center.js"></script>
+  <script>
+    $(document).ready(function($) {
+
+
+      window.scrollTo(0, 0);
+
+
+      if (!(/Firefox/.test(navigator.userAgent))) {
+        // cannot activate from non-firefox browsers
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").addClass("insensitive");
+        $(".button").removeAttr("onclick");
+      }
+    });
+
+    function activateProvider(node, name) {
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+    }
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.org');
+    ga('send', 'pageview');
+  
+  </script>
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+          <li><a href=".">SocialAPI</a></li>
+          
+          <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p>You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  </p></div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Home</a>
+        </div>
+        <div>
+        <span>saavn</span>
+        </div>
+      </div>
+      <div class="detail-content">
+      <div class="row">
+        <div class="col-2">
+          <div class="provider-item-detail">
+          
+          <h1><img src="images/saavn/saavnlogomark.jpg"></img></h1>
+          
+            <h3 class="tagline">Music Feed</h3>
+            <p class="lead">Discover fresh music and hear more of what you love.</p>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'saavn')" data-service="{&#34;author&#34;: &#34;Saavn&#34;, &#34;description&#34;: &#34;Saavn is the best Bollywood and Indian music listening experience, online and on the go. It&#39;s a simple, beautiful, and 100% free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.&#34;, &#34;homepageURL&#34;: &#34;http://www.saavn.com&#34;, &#34;icon32URL&#34;: &#34;http://www.saavn.com/_i/firefox/firefox32.png&#34;, &#34;icon64URL&#34;: &#34;http://www.saavn.com/_i/firefox/firefox64.png&#34;, &#34;iconURL&#34;: &#34;http://www.saavn.com/_i/firefox/firefox16.png&#34;, &#34;name&#34;: &#34;saavn&#34;, &#34;origin&#34;: &#34;http://www.saavn.com&#34;, &#34;sidebarURL&#34;: &#34;http://www.saavn.com/firefox/sidebar.php&#34;, &#34;version&#34;: 1, &#34;workerURL&#34;: &#34;http://www.saavn.com/_s/firefox/worker.js&#34;}">Activate now <span>&raquo;</span></a>
+            <p class="provider-description">Saavn is the best Bollywood and Indian music listening experience, online and on the go. It&#39;s a simple, beautiful, and 100% free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.</p>
+          
+            <br/><a href="http://www.saavn.com/firefox/" class="moreinfo">Learn More</a>
+          
+          </div>
+        </div>
+        <div class="col-2 clearfix">
+          <div class="clearfix"><img src="images/saavn/saavn-large.png" class="provider-primary-image" /></div>
+        
+        <div id="detail-videos" class="center"><div>
+          <a href="http://www.youtube.com/watch?v=byLmQUtXeUc"><img src="//i1.ytimg.com/vi/byLmQUtXeUc/mqdefault.jpg"/></a><a href="http://www.youtube.com/watch?v=B6HgDm_yFXc"><img src="//i1.ytimg.com/vi/B6HgDm_yFXc/mqdefault.jpg"/></a><a href="http://www.youtube.com/watch?v=N2G3oKQU0gA"><img src="//i1.ytimg.com/vi/N2G3oKQU0gA/mqdefault.jpg"/></a>
+        </div></div>
+        
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              <p>
+                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+              </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
+            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+</body>
+</html>
