@@ -56,7 +56,7 @@
       "lang": {
         "en-US": {
           "name": "Pocket",
-          "tagline": "A convenient, beautiful place to save content you want to view later.",
+          "shortDescription": "A convenient, beautiful place to save content you want to view later.",
           "images": {
             "carousel": "images/pocket/pocket.png",
             "detail": "images/pocket/pocket.png",
