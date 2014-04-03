@@ -40,9 +40,9 @@
           </div>
           {% endif %}
         {% if 'videos' in lang['default'] %}
-        <div id="detail-videos" class="center">
+        <div id="detail-videos" class="center"><div>
           {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
-        </div>
+        </div></div>
         {% endif %}
         </div>
       </div>
