@@ -1,0 +1,170 @@
+<html>
+<head>
+  <base href="/socialapi-directory/en-US/"/>
+  <title>Firefox SocialAPI Services</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link href="../images/firefox-black64.png" id="siteicon" rel="icon" />
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="../js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/jquery.cycle2.min.js"></script>
+  <script src="../js/jquery.cycle2.center.js"></script>
+  <script>
+    $(document).ready(function($) {
+
+
+      window.scrollTo(0, 0);
+
+
+      $("#directory-domain").text(location.origin);
+
+      if (!(/Firefox/.test(navigator.userAgent))) {
+        // cannot activate from non-firefox browsers
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").addClass("insensitive");
+        $(".button").removeAttr("onclick");
+      }
+    });
+
+    function activateProvider(node, name) {
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+    }
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.org');
+    ga('send', 'pageview');
+  
+  </script>
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+          <li><a href="">SocialAPI Demo</a></li>
+          <li><a id="about" href="#" data-featherlight="#aboutModel">About</a></li>
+          
+          <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">Documentation</a></li>
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop"></h2>
+    </header>
+  </div>
+
+  
+  <div id="aboutModel" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" hidden="true">
+    <h4 id="myModalLabel">Firefox SocialAPI Demo Instructions</h4>
+    <div>
+      <p class="lead"><span class="bold-italic">To
+    install from this directory</span> you must modify the <span
+    class="bold-italic">social.directories</span>
+    preference in Firefox to include the domain <span id="directory-domain"
+    class="bold-italic"></span>, you can do that in
+    about:config.</p>
+    </div>
+  </div>
+  
+
+  <div id="incompatibility-banner" hidden="true"><p>You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  </p></div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Home</a>
+        </div>
+        <div>
+        <span>StumbleUpon</span>
+        </div>
+      </div>
+      <div class="detail-content">
+      <div class="row">
+        <div class="col-2">
+          <div class="provider-item-detail">
+          
+          <h1><img src="images/stumbleupon/stumbleupon-logo.png"></img></h1>
+          
+            <h3 class="tagline"></h3>
+            <p class="lead">We help you easily discover new and interesting stuff on the Web.</p>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'stumbleupon')" data-service="{&#34;description&#34;: &#34;StumbleUpon is the easiest way to find cool new websites, videos, photos and images from across the Web. We make the best recommendations just for you.&#34;, &#34;homepageURL&#34;: &#34;https://www.stumbleupon.com&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC7mlDQ1BJQ0MgUHJvZmlsZQAAOBGFVM9rE0EU/jZuqdAiCFprDrJ4kCJJWatoRdQ2/RFiawzbH7ZFkGQzSdZuNuvuJrWliOTi0SreRe2hB/+AHnrwZC9KhVpFKN6rKGKhFy3xzW5MtqXqwM5+8943731vdt8ADXLSNPWABOQNx1KiEWlsfEJq/IgAjqIJQTQlVdvsTiQGQYNz+Xvn2HoPgVtWw3v7d7J3rZrStpoHhP1A4Eea2Sqw7xdxClkSAog836Epx3QI3+PY8uyPOU55eMG1Dys9xFkifEA1Lc5/TbhTzSXTQINIOJT1cVI+nNeLlNcdB2luZsbIEL1PkKa7zO6rYqGcTvYOkL2d9H5Os94+wiHCCxmtP0a4jZ71jNU/4mHhpObEhj0cGDX0+GAVtxqp+DXCFF8QTSeiVHHZLg3xmK79VvJKgnCQOMpkYYBzWkhP10xu+LqHBX0m1xOv4ndWUeF5jxNn3tTd70XaAq8wDh0MGgyaDUhQEEUEYZiwUECGPBoxNLJyPyOrBhuTezJ1JGq7dGJEsUF7Ntw9t1Gk3Tz+KCJxlEO1CJL8Qf4qr8lP5Xn5y1yw2Fb3lK2bmrry4DvF5Zm5Gh7X08jjc01efJXUdpNXR5aseXq8muwaP+xXlzHmgjWPxHOw+/EtX5XMlymMFMXjVfPqS4R1WjE3359sfzs94i7PLrXWc62JizdWm5dn/WpI++6qvJPmVflPXvXx/GfNxGPiKTEmdornIYmXxS7xkthLqwviYG3HCJ2VhinSbZH6JNVgYJq89S9dP1t4vUZ/DPVRlBnM0lSJ93/CKmQ0nbkOb/qP28f8F+T3iuefKAIvbODImbptU3HvEKFlpW5zrgIXv9F98LZua6N+OPwEWDyrFq1SNZ8gvAEcdod6HugpmNOWls05Uocsn5O66cpiUsxQ20NSUtcl12VLFrOZVWLpdtiZ0x1uHKE5QvfEp0plk/qv8RGw/bBS+fmsUtl+ThrWgZf6b8C8/UVQuLh9AAAACXBIWXMAAC4jAAAuIwF4pT92AAAEJGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MTwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPHRpZmY6Q29tcHJlc3Npb24+NTwvdGlmZjpDb21wcmVzc2lvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+MzAwPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj4zMDA8L3RpZmY6WVJlc29sdXRpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWERpbWVuc2lvbj4zMjwvZXhpZjpQaXhlbFhEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+MTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAgICA8ZXhpZjpQaXhlbFlEaW1lbnNpb24+MzI8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICAgICA8ZGM6c3ViamVjdD4KICAgICAgICAgICAgPHJkZjpCYWcvPgogICAgICAgICA8L2RjOnN1YmplY3Q+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0ZT4yMDE0LTA0LTAzVDE2OjA0OjUyPC94bXA6TW9kaWZ5RGF0ZT4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5QaXhlbG1hdG9yIDMuMTwveG1wOkNyZWF0b3JUb29sPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4KHvqRggAABTFJREFUWAmtl0lslVUUx/+3tGUKyGBf8UGHRI1TiCYkDCZKajRilGBcqMGamGDCRsQ6xyFWEOPChRFZaOIOUDDRIC5aJAoYDBgTdeHKjVQsQhUpM7Rw/J37vff6hq/vUeQk3/u+e+///M+555w7vKAxiCnbKl2cz3M/aosVrC2qWzjAe49kX0kNPwT1910qbagFNBilprul8JiCOsBnEx1GSqRA1S/TtzizSRrYSe9QCaysUdAq649NU/NCPl5TuLgEB8ZBmgZL6XNauyDV9aDyVtDhfSmg2JXqAGbqpeZVhLgb1NRLN1xuBnrTcZyH5/B6WsMpiNIuU/sE6fR7hHvl5Rsu5cQBp/pQauwKOnimeJSZjggzJ99X2rjzwxzCStl5/1qFO4W6qBsx71/NT13ZmRezuxMe1cyq4l6cSYSCW0DOe/H2qnxf1Td8LMcchHkUmKpqMRgGZeFeCnO/I2METLc0Yrib9iUaJ4L11FPbDKllujSOb6uoL+dPE2xYd2Iz5wDrtYPZs9bjtNKURvrIoxbMlbZ+LO3blTyfUF+3XY86YzXFU+G2jtzl0BAzo8xGQri8pgPGzBdi/Ist0qxrSk31HZCWPSz9/BusJbVdiost8mXajBOdpCDbgvGOmsZdcTx70esvjRi/QNj9cWltk159Ia6jpKPab5w2NrMtODDE3q7mavA4ZhRc80xp3rwEep5wP0lRr+6iFnPFuIiNMwPGsbUFm0PziVV4AGwsxuo6eO2wcUTB5eQJqXePNBGKY/9KMzDsfVEcW1MgC0s9WXeOGn6rRkQeJ0ySfv9DevBRqX2O9P2P7LjH4C07NoBWinOHxfWUYVvlID0ekynjefPhjgyW7KCJihN7tL/by+O1wC4e0PEgjWfQx133DI+leBGsNb1cPYcZzqDNLLVmUnXurNS5glCfhLFIhjnwrstKKzqlP/+S5t7M2fk2BUnfB+8m6Tp0iPHV0t+ncajSiXo86yMK7UW0yWc9vt14ExU/K6n0iczsKAdbsbijkydKzz/HxsQxcvQfqfsdIjeZ5Xp7gjxIihp8nkQhhqSIANse6N0VAxGDQn6JDRPeCxjztqckL855kR9fES7+HvKH/cJ1XPw7dYOL0diNa36NCo+DKmJm8CQ5HxyUZs8hn+T2lRel40RgGluvywm+zxLWQRw7dUqaxKxnXi29/CxRyxCRXHad4xS48tnH6rHt+JZtNWX6LTRZyaMpZuvW2aiyYQP4qWYN08w+2zoqzNaupQzhquDHpt8xCSDbcWaThUwZaKbZ9Nlmn26pJN/Ra5a9FmIwmm52w61mv/xUiftym9mMFnjBlTiALbeJ7ZgIU9MSIrSdOOXi5jFG/Fo3ieJ66D6p4w5GWV9790lbgA4S1vye72fEnCbpiUekRYuohXPSzm+kjZ8nyzePS1j9d5iZLw0a6Mk54MfxwDacWFJRMPgKI4+/88KKKF9ScfsF14DDrhOLMAXntWDq4aa9LOjX89EBpx3zhSTvS/nb/Sywlg96O+VCErv9hmJaU0M7jbG0r7pxn+ma/G3IFYuWnjePrAfA7aIqiwMvQ+A0fRRtFGmXOACEamrsuvJORONMrPGZxMaIB7QrhTSyGjJPM/IGweBQKC7ASvzoPdGw799vMvP3aeW2xxGNVAfyw//7r5nV9cK1dsx/zfIO+Ju5s66a7qEulhONDrqyyXh5VApz8T+nu9DcxNL+ml4/DEaVgtaoiKKB5O/50AKc8VvUYoy0JsOcqPFQq+Ncqds/lr/n/wFmwyVArLigIQAAAABJRU5ErkJggg==&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC7mlDQ1BJQ0MgUHJvZmlsZQAAOBGFVM9rE0EU/jZuqdAiCFprDrJ4kCJJWatoRdQ2/RFiawzbH7ZFkGQzSdZuNuvuJrWliOTi0SreRe2hB/+AHnrwZC9KhVpFKN6rKGKhFy3xzW5MtqXqwM5+8943731vdt8ADXLSNPWABOQNx1KiEWlsfEJq/IgAjqIJQTQlVdvsTiQGQYNz+Xvn2HoPgVtWw3v7d7J3rZrStpoHhP1A4Eea2Sqw7xdxClkSAog836Epx3QI3+PY8uyPOU55eMG1Dys9xFkifEA1Lc5/TbhTzSXTQINIOJT1cVI+nNeLlNcdB2luZsbIEL1PkKa7zO6rYqGcTvYOkL2d9H5Os94+wiHCCxmtP0a4jZ71jNU/4mHhpObEhj0cGDX0+GAVtxqp+DXCFF8QTSeiVHHZLg3xmK79VvJKgnCQOMpkYYBzWkhP10xu+LqHBX0m1xOv4ndWUeF5jxNn3tTd70XaAq8wDh0MGgyaDUhQEEUEYZiwUECGPBoxNLJyPyOrBhuTezJ1JGq7dGJEsUF7Ntw9t1Gk3Tz+KCJxlEO1CJL8Qf4qr8lP5Xn5y1yw2Fb3lK2bmrry4DvF5Zm5Gh7X08jjc01efJXUdpNXR5aseXq8muwaP+xXlzHmgjWPxHOw+/EtX5XMlymMFMXjVfPqS4R1WjE3359sfzs94i7PLrXWc62JizdWm5dn/WpI++6qvJPmVflPXvXx/GfNxGPiKTEmdornIYmXxS7xkthLqwviYG3HCJ2VhinSbZH6JNVgYJq89S9dP1t4vUZ/DPVRlBnM0lSJ93/CKmQ0nbkOb/qP28f8F+T3iuefKAIvbODImbptU3HvEKFlpW5zrgIXv9F98LZua6N+OPwEWDyrFq1SNZ8gvAEcdod6HugpmNOWls05Uocsn5O66cpiUsxQ20NSUtcl12VLFrOZVWLpdtiZ0x1uHKE5QvfEp0plk/qv8RGw/bBS+fmsUtl+ThrWgZf6b8C8/UVQuLh9AAAACXBIWXMAAC4jAAAuIwF4pT92AAAEJGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MTwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPHRpZmY6Q29tcHJlc3Npb24+NTwvdGlmZjpDb21wcmVzc2lvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+MzAwPC90aWZmOlhSZXNvbHV0aW9uPgogICAgICAgICA8dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPgogICAgICAgICA8dGlmZjpZUmVzb2x1dGlvbj4zMDA8L3RpZmY6WVJlc29sdXRpb24+CiAgICAgICAgIDxleGlmOlBpeGVsWERpbWVuc2lvbj42NDwvZXhpZjpQaXhlbFhEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+MTwvZXhpZjpDb2xvclNwYWNlPgogICAgICAgICA8ZXhpZjpQaXhlbFlEaW1lbnNpb24+NjQ8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICAgICA8ZGM6c3ViamVjdD4KICAgICAgICAgICAgPHJkZjpCYWcvPgogICAgICAgICA8L2RjOnN1YmplY3Q+CiAgICAgICAgIDx4bXA6TW9kaWZ5RGF0ZT4yMDE0LTA0LTAzVDE2OjA0OjQ3PC94bXA6TW9kaWZ5RGF0ZT4KICAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5Q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&#34;, &#34;iconURL&#34;: &#34;https://nb9-stumbleupon.netdna-ssl.com/-G-ChSR8MQAl3Skvq8oNZg&#34;, &#34;name&#34;: &#34;StumbleUpon&#34;, &#34;origin&#34;: &#34;https://www.stumbleupon.com&#34;, &#34;shareURL&#34;: &#34;https://www.stumbleupon.com/submit?url=%{url}&amp;title=%{title}&amp;description=%{description}&#34;, &#34;version&#34;: 1}">Activate now <span>&raquo;</span></a>
+            <p class="provider-description">StumbleUpon is the easiest way to find cool new websites, videos, photos and images from across the Web. We make the best recommendations just for you.</p>
+          
+            <br/><a href="http://www.stumbleupon.com/about" class="moreinfo">Learn More</a>
+          
+          </div>
+        </div>
+        <div class="col-2 clearfix">
+          
+          <div id="carousel-details">
+            <div class="cycle-slideshow carousel-inner"
+              data-cycle-pager="#detail-pager">
+              
+            </div>
+            <div id="detail-pager" class="cycle-pager center external"></div>
+          </div>
+          
+        
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              <p>
+                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+              </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
+            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+</body>
+</html>
