@@ -280,6 +280,10 @@
   margin: 10px;
 }
 
+.provider-entry-inner > h2 > img {
+  max-width: 220px;
+}
+
 .provider-entry > a {
   text-decoration: none;
   cursor: default;

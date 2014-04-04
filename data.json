@@ -21,13 +21,15 @@
           "shortDescription": "Discover fresh music and hear more of what you love.",
           "description": "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and 100% free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.",
           "images": {
-            "fulllogo": "images/saavn/saavnlogomark.jpg",
+            "fulllogo": "images/saavn/logomark.png",
             "logo": "http://www.saavn.com/_i/firefox/firefox64.png",
             "carousel": "images/saavn/saavn-screen.png",
-            "detail": "images/saavn/saavn-large.png"
+            "details": ["images/saavn/firefox-sidebar-screenshot-1.png",
+                        "images/saavn/firefox-sidebar-screenshot-2.png",
+                        "images/saavn/firefox-sidebar-screenshot-3.png"]
           },
           "videos": {
-            "youtube": ["byLmQUtXeUc", "B6HgDm_yFXc", "N2G3oKQU0gA"]
+            "youtube": ["A8Kignry0p8", "l8VlUiQ2IkQ", "aF0LyLeHk6w"]
           },
           "links": {
             "tos": "http://www.saavn.com/corporate/terms.php",
