@@ -25,7 +25,7 @@
             <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifest}}">{{strings['activatenow']}} <span>&raquo;</span></a>
             <p class="provider-description">{{lang['default']['description']}}</p>
           {% if 'links' in lang['default'] %}
-            <br/><a href="{{lang['default']['links']['learnmore']}}" class="moreinfo">{{strings['learnmore']}}</a>
+            <br/><a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{strings['learnmore']}}</a>
           {% endif %}
           </div>
         </div>
@@ -43,7 +43,7 @@
           {% endif %}
         {% if 'videos' in lang['default'] %}
         <div id="detail-videos" class="center"><div>
-          {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
+          {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}" target="_blank"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
         </div></div>
         {% endif %}
         </div>
