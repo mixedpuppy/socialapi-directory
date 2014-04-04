@@ -235,12 +235,14 @@
 
 
 #detail h1 {
-  font-size: 5.5em;
+  font-size: 28pt;
+  line-height: 28pt;
   width: 320px;
 }
 
 #detail h1 > img {
   max-width: 320px;
+  vertical-align: middle;
 }
 
 #detail h2 {
@@ -282,6 +284,7 @@
 
 .provider-entry-inner > h2 > img {
   max-width: 220px;
+  vertical-align: middle;
 }
 
 .provider-entry > a {
@@ -290,6 +293,12 @@
 }
 .provider-entry-inner:hover {
   cursor: pointer;
+}
+
+.provider-entry .tagline {
+  font-size: 18pt;
+  line-height: 20pt;
+  font-weight: bold;
 }
 
 #detail-pager {
