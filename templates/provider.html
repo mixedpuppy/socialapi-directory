@@ -33,7 +33,9 @@
           {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
           <div id="carousel-details">
             <div class="cycle-slideshow carousel-inner"
-              data-cycle-pager="#detail-pager">
+                data-cycle-center-horz=true
+                data-cycle-center-vert=true
+                data-cycle-pager="#detail-pager">
               {% for image in lang['default']['images']['details'] %}<img src="{{image}}"/>{% endfor %}
             </div>
             <div id="detail-pager" class="cycle-pager center external"></div>
