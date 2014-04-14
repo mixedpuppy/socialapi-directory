@@ -282,8 +282,11 @@
   margin: 10px;
 }
 
+.provider-entry-inner > h2 {
+  height: 64px;
+}
 .provider-entry-inner > h2 > img {
-  max-width: 220px;
+  height: 64px;
   vertical-align: middle;
 }
 

@@ -86,7 +86,7 @@
         "en-US": {
           "name": "Sphere",
           "tagline": "a discovery experience",
-          "description": "a new way to discover the most interesting content that is relevant to your interests",
+          "description": "a new way to discover the most interesting content relevant to your interests",
           "images": {
             "fulllogo": "images/sphere/sphere-logo-258x74.jpg",
             "carousel": "images/sphere/sphere-slide.jpg",
@@ -94,7 +94,7 @@
             "logo": "images/sphere/icon64.png"
           },
           "links": {
-            "learnmore": "https://www.sphere.com/"
+            "learnmore": "https://www.sphere.com/account/activate.html"
           }
         }
       }
@@ -149,7 +149,7 @@
           "shortDescription": "Share any web page, anywhere, anytime.",
           "images": {
             "carousel": "images/facebook/facebook-share.png",
-            "fulllogo": "images/facebook/FB_Facebook-320.png",
+            "logo": "images/facebook/FB-f-Logo__blue_58.png",
             "detail": "images/facebook/facebook-share.png"
           }
         }
