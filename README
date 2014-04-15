@@ -4,39 +4,48 @@
   http://mixedpuppy.github.io/socialapi-directory
 
 - you can view localized pages at this time using
-  http://mixedpuppy.github.io/socialapi-directory/#jp_JP/mixi and if the
+  http://mixedpuppy.github.io/socialapi-directory/jp_JP/mixi and if the
   provider has a localized page, you can change the jp_JP/mixi with the
-  apropriage locale and provider name. At the time of this writting, mixi is not
-  completely or correctly localized.
+  appropriate locale and provider name.
 
-- all images may be localized if necessary
+- text and images may be localized if necessary
 
-* directory page images
+* Text Assets
 
-  if promoted in slider/carousel
-    - same logo images as detail page below
-    - first display image from detail page will be used
+  Two text assets are used across the directory site, while the third is used
+  only on the providers detail page
 
-  directory tiles
-    - same logo images as detail page below
+  - Headline/Tagline, 8 word-count
+  - Short Description, 10 word-count
+  - Long Description, no hard limit on word-count, but within reason (we suggest
+    70 word-count).  This entry may contain limited html for formatting.
 
-* detail page images
+* Image Assets
 
-  logo images
-    - height should be around 64px, not a hard limit
-    - with name in logo, width 300px
-    - with icon logo only, width 64px, if name is long it may wrap, font will be
-    the site font
+  Logos:  There are two options for the logo, you may choose one or the other.
+    The logo image will be used across the directory website.
 
-  display image
-    up to 3 images in slider/carousel
-    max width is 560px
-    min width is 460px
+    - square icon: 60px W X 60px H, the name of the provider will appear to the
+      right of the icon as text rendered using the style of the directory site.
+      The provider name should be limited to 2 or 3 words depending on length.
+    - horizontal icon: 60px H X 220px W.  This format is large enough to contain
+      the name of the provider
 
-  videos:
+  Detail images: These show the actual functionality of the provider, whether
+    a sidebar, share or bookmarks panel, etc., and are used in the promotional
+    slider on the main page and/or on the providers detail page.
+
+    - up to 3 images may be provided, specify which should be used in the
+      promotional slider if your provider appears there.
+    - 460px W and a flexible but reasonable limit on height
+    - slider image cropped to 300px high
+
+  Videos:  These will appear at the bottom of the providers detail page
+
     - only tested with youtube videos, other delivery systems may not work
     - up to 3 videos can be linked to
     - provide links to video
+
 
 * provider data
 
@@ -54,11 +63,11 @@
     "manifest": {
       "name": "example",
       "origin": "http://www.example.com",
-      "iconURL": "http://www.example.com/_i/firefox/firefox16.png",
-      "icon32URL": "http://www.example.com/_i/firefox/firefox32.png",
-      "icon64URL": "http://www.example.com/_i/firefox/firefox64.png",
-      "workerURL": "http://www.example.com/_s/firefox/worker.js",
-      "sidebarURL": "http://www.example.com/firefox/sidebar.php",
+      "iconURL": "http://www.example.com/_i/Firefox/firefox16.png",
+      "icon32URL": "http://www.example.com/_i/Firefox/firefox32.png",
+      "icon64URL": "http://www.example.com/_i/Firefox/firefox64.png",
+      "workerURL": "http://www.example.com/_s/Firefox/worker.js",
+      "sidebarURL": "http://www.example.com/Firefox/sidebar.php",
       "description": "This is an example provider.  This description will appear in the Add-ons manager in Firefox.",
       "author": "Example",
       "homepageURL": "http://www.example.com",
