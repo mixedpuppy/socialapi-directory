@@ -172,17 +172,18 @@
 .tagline {
   margin: 20px 0;
   font-weight: bolder;
-  font-size: 24pt;
-  line-height: 26pt;
+  font-size: 20pt;
+  line-height: 22pt;
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: 18pt;
+  line-height: 20pt;
 }
 
 .provider-description {
   padding-top: 5px;
-  font-size: 1.2em;  
+  font-size: 1.2em;
 }
 
 .item .provider-description {
@@ -241,7 +242,8 @@
 }
 
 #detail h1 > img {
-  max-width: 320px;
+  height: 60px;
+  max-width: 220px;
   vertical-align: middle;
 }
 
@@ -250,9 +252,9 @@
   font-weight: bold;
 }
 #detail .lead {
-  font-size: 22pt;
+  font-size: 18pt;
   font-weight: normal;
-  line-height: 26pt;
+  line-height: 22pt;
 }
 
 .detail-header {
@@ -282,11 +284,13 @@
   margin: 10px;
 }
 
+.item-inner h2,
 .provider-entry-inner > h2 {
-  height: 64px;
+  height: 60px;
 }
+.item-inner h2 > img,
 .provider-entry-inner > h2 > img {
-  height: 64px;
+  height: 60px;
   vertical-align: middle;
 }
 
@@ -299,8 +303,8 @@
 }
 
 .provider-entry .tagline {
-  font-size: 18pt;
-  line-height: 20pt;
+  font-size: 20pt;
+  line-height: 22pt;
   font-weight: bold;
 }
 
