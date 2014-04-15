@@ -47,6 +47,7 @@
         "markURL": "https://getpocket.com/firefox/social/cdn/index?url=%{url}&title=%{title}&firefoxsave=1",
         "unmarkedIcon": "https://getpocket.com/firefox/social/Icons/32px/PKT_FF_SocialAPI_Icons_32_unmarked.png",
         "markedIcon": "https://getpocket.com/firefox/social/Icons/32px/PKT_FF_SocialAPI_Icons_32_marked.png",
+        "postActivationURL": "http://getpocket.com/installed?firefoxsave=1",
         "description": "Pocket Extension for Firefox - The best way to save articles, videos and more",
         "author": "Read It Later Inc.",
         "homepageURL": "https://getpocket.com/firefox",
@@ -56,6 +57,7 @@
       "lang": {
         "en-US": {
           "name": "Pocket",
+          "tagline": "Save it for later",
           "shortDescription": "A convenient, beautiful place to save content you want to view later.",
           "images": {
             "carousel": "images/pocket/pocket.png",
