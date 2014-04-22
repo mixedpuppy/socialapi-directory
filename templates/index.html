@@ -15,9 +15,6 @@
       {% for p in slider %}
       <div class="item">
         <div class="item-inner">
-          <div style="float:right;">
-          <img src="{{p['lang']['default']['images']['carousel']}}" style="float:right;"></img>
-          </div>
           <div>
           {% if p['lang']['default']['images']['fulllogo'] %}
           <h2><img src="{{p['lang']['default']['images']['fulllogo']}}"></img></h2>
@@ -30,6 +27,9 @@
           <div class="activation">
           <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifest']}}">Activate now <span>&raquo;</span></a>
           <br/><a href="{{p['key']}}.html" class="moreinfo">find out more...</a>
+          </div>
+          <div>
+          <img src="{{p['lang']['default']['images']['carousel']}}" style="float:right;"></img>
           </div>
         </div>
       </div>
@@ -71,7 +71,6 @@
           {% else %}
           <h2><img src="{{p['lang']['default']['images']['logo']}}"></img> {{p['lang']['default']['name']}}</h2>
           {% endif %}
-          <h3 class="tagline">{{p['lang']['default']['tagline']}}</h3>
           <p class="provider-description">{{p['lang']['default']['shortDescription']}}</p>
         </div>
         </a>
