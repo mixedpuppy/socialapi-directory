@@ -399,7 +399,7 @@
         "workerURL": "",
         "sidebarURL": "https://touch.www.linkedin.com/",
         "origin": "https://www.linkedin.com",
-        "shareURL": "https://www.linkedin.com/cws/share?url=%{url}",
+        "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}",
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. "
       },
       "lang": {
