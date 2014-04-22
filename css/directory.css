@@ -27,12 +27,14 @@
 }
 
 .item-inner div:first-child {
-  width: 460px;
-  margin-left: 10px;
-}
-.item-inner div:last-child {
+  float: left;
   width: 300px;
   margin-right: 10px;
+}
+.item-inner div:last-child {
+  float: left;
+  width: 460px;
+  margin-left: 10px;
 }
 
 #detail .col-2:first-child {
@@ -158,31 +160,33 @@
 }
 
 .directory-header h3 {
-  font-size: 32pt;
-  line-height: 32pt;
+  font-size: 24pt;
+  line-height: 28pt;
   letter-spacing: normal;
   margin-bottom: 30px;
 }
 
 .directory-header .lead {
-  font-size: 22pt;
-  line-height: 28pt;
+  font-size: 16pt;
+  line-height: 20pt;
 }
 
 .tagline {
   margin: 20px 0;
-  font-weight: bolder;
-  font-size: 24pt;
-  line-height: 26pt;
+  /*text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);*/
+  font-weight: bold;
+  font-size: 16pt;
+  line-height: 18pt;
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: 14pt;
+  line-height: 18pt;
 }
 
 .provider-description {
   padding-top: 5px;
-  font-size: 1.2em;  
+  font-size: 1.2em;
 }
 
 .item .provider-description {
@@ -241,7 +245,8 @@
 }
 
 #detail h1 > img {
-  max-width: 320px;
+  max-height: 60px;
+  max-width: 220px;
   vertical-align: middle;
 }
 
@@ -250,9 +255,9 @@
   font-weight: bold;
 }
 #detail .lead {
-  font-size: 22pt;
+  font-size: 18pt;
   font-weight: normal;
-  line-height: 26pt;
+  line-height: 22pt;
 }
 
 .detail-header {
@@ -282,9 +287,23 @@
   margin: 10px;
 }
 
+.item-inner h2,
+.provider-entry-inner > h2 {
+  height: 60px;
+  font-size: 18pt;
+  line-height: 20pt;
+}
+.item-inner h2 > img,
 .provider-entry-inner > h2 > img {
+  max-height: 60px;
+  margin-right: 18px;
+  vertical-align: text-bottom
+}
+.item-inner h2 > img {
   max-width: 220px;
-  vertical-align: middle;
+}
+.provider-entry-inner > h2 > img {
+  max-width: 200px;
 }
 
 .provider-entry > a {
@@ -294,13 +313,13 @@
 .provider-entry-inner:hover {
   cursor: pointer;
 }
-
+/*
 .provider-entry .tagline {
-  font-size: 18pt;
-  line-height: 20pt;
+  font-size: 20pt;
+  line-height: 22pt;
   font-weight: bold;
 }
-
+*/
 #detail-pager {
   margin: 10px;
 }
