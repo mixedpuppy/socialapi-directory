@@ -36,7 +36,7 @@ def createapp():
       d['images']['logo'] = p['manifest']['icon64URL'] or p['manifest']['icon32URL']
     if 'description' not in d:
       d['description'] = p['manifest']['description'];
-    p['manifest'] = json.dumps(p['manifest'])
+    p['manifestData'] = json.dumps(p['manifest'])
     return p
   
   def renderTemplate(template, data, locale, path=None, base="/"):

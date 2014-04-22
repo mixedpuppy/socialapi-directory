@@ -22,12 +22,19 @@
           {% endif %}
             <h3 class="tagline">{{lang['default']['tagline']}}</h3>
             <p class="lead">{{lang['default']['shortDescription']}}</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifest}}">{{strings['activatenow']}} <span>&raquo;</span></a>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifestData}}">{{strings['activatenow']}} <span>&raquo;</span></a>
             <p class="provider-description">{{lang['default']['description']}}</p>
+
           {% if 'links' in lang['default'] %}
-            <br/><a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{strings['learnmore']}}</a>
+            <a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{strings['learnmore']}}</a>
           {% endif %}
           </div>
+          {% if manifest %}
+          <span class="features"><span {% if manifest['shareURL'] %}class="supported"{% endif %} title="This service supports sharing content">share</span> 
+          <span {% if manifest['markURL'] %}class="supported"{% endif %} title="This service provides bookmarking functionality">bookmarking</span> 
+          <span {% if manifest['sidebarURL'] %}class="supported"{% endif %} title="This service adds a sidebar to Firefox">sidebar</span> 
+          <span {% if manifest['statusURL'] %}class="supported"{% endif %} title="This service adds a toolbar button to Firefox that may have notifications">notifications</span></span>
+          {% endif %}
         </div>
         <div class="col-2 clearfix">
           {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
