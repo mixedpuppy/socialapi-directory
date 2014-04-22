@@ -376,7 +376,6 @@ p {
 .sky a.button {
   font-family: 'Open Sans Light','Droid Arabic Naskh','Mplus Fulah Light',sans-serif;
   color: white;
-  text-align: center;
   font-size: 1.5em;
   line-height: 1.6em;
   margin-bottom: 8px;
@@ -385,10 +384,15 @@ p {
   padding-right: 30px;
 }
 
+.button, .button:link, .button:visited {
+  text-align: left;
+}
+
 a.button > span {
   font-weight: normal;
   font-size: 1.5em;
   padding-left: 10px;
+  text-align: left;
 }
 
 @media only screen and (max-width:760px) {
@@ -460,4 +464,11 @@ a.button > span {
   .show-incompatibility-banner main {
     padding-top: 0
   }
+}
+
+a.button > span.smaller {
+  text-align: left;
+  font-size: 10pt;
+  line-height: normal;
+  padding: 0;
 }
