@@ -29,11 +29,26 @@
 {% if not production %}
       $("#directory-domain").text(location.origin);
 {% endif %}
-      if (!(/Firefox/.test(navigator.userAgent))) {
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
         // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
         $("#incompatibility-banner").removeAttr("hidden");
-        $(".button").addClass("insensitive");
+        $(".button").html("Get Firefox <span>&raquo;</span>");
         $(".button").removeAttr("onclick");
+        $(".button").attr("href", "http://www.mozilla.org/products/download.html?product=firefox");
+      } else
+      if (ffVersion < 30) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Upgrade Firefox <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "http://www.mozilla.org/products/download.html?product=firefox");
       }
     });
 
@@ -90,7 +105,8 @@
   </div>
   {% endif %}
 
-  <div id="incompatibility-banner" hidden="true"><p>You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  </p><p id="upgrade-required" hidden="true">Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
   </p></div>
 
   {% block content %}{% endblock %}
