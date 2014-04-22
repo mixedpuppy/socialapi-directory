@@ -187,6 +187,7 @@
 .provider-description {
   padding-top: 5px;
   font-size: 1.2em;
+  padding-bottom: 25px;
 }
 
 .item .provider-description {
@@ -313,13 +314,25 @@
 .provider-entry-inner:hover {
   cursor: pointer;
 }
-/*
-.provider-entry .tagline {
-  font-size: 20pt;
-  line-height: 22pt;
-  font-weight: bold;
+
+.provider-features {
+  position: absolute;
+  bottom: 25px;
 }
-*/
+.features > span,
+.provider-features > span {
+  text-align: center;
+  font-size: 9pt;
+  font-weight: normal;
+  padding: 3px 7px;
+  color: #ddd;
+  border: 1px solid #ddd;
+}
+span.supported {
+  color: #333;
+  border: 1px solid #333;
+}
+
 #detail-pager {
   margin: 10px;
 }
