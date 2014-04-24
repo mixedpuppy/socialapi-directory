@@ -36,6 +36,12 @@ def createapp():
       d['images']['logo'] = p['manifest']['icon64URL'] or p['manifest']['icon32URL']
     if 'description' not in d:
       d['description'] = p['manifest']['description'];
+    
+    # aid activated providers in knowing what locale a user installed from
+    for n,v in p['manifest'].iteritems():
+        if isinstance(v, (str, unicode)):
+            p['manifest'][n] = v.replace('__T_LOCALE__', locale)
+
     p['manifestData'] = json.dumps(p['manifest'])
     return p
   
