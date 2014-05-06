@@ -146,7 +146,7 @@
         "homepageURL": "https://www.facebook.com",
         "version": 2,
         "pageSize": {
-          "social-share-panel": [500, 380]
+          "share": { "width": 500, "height": 380 }
         }
       },
       "lang": {
@@ -275,7 +275,7 @@
         "shareURL": "https://pinterest.com/pin/create/button/?url=%{url}&description=%{title}&is_video=%{medium}&media=%{previews}",
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. ",
         "pageSize": {
-          "social-share-panel": [755, 320]
+          "share": { "width": 755, "height": 320 }
         }
       },
       "lang": {
@@ -294,10 +294,12 @@
         "statusURL": "https://plus.google.com/app/basic/",
         "origin": "https://plus.google.com",
         "workerURL": "",
+        "markURL": "https://plus.google.com/share?url=%{url}",
         "shareURL": "https://plus.google.com/share?url=%{url}",
         "pageSize": {
-          "social-share-panel": [550, 550],
-          "social-notification-panel": [330, 386]
+          "share": { "width": 550, "height": 550 },
+          "marks": { "width": 550, "height": 550 },
+          "status": { "width": 330, "height": 386}
         },
         "description": "a design mockup showing what this service could look like."
       },
@@ -317,7 +319,7 @@
         "origin": "https://mail.google.com",
         "shareURL": "https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&body=%{body}&su=%{title}",
         "pageSize": {
-          "social-share-panel": [500, 500]
+          "share": { "width": 500, "height": 500 }
         },
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. "
       },
@@ -337,7 +339,7 @@
         "shareURL": "https://twitter.com/intent/tweet?url=%{url}&text=%{text}&via=Firefox",
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. ",
         "pageSize": {
-          "social-share-panel": [550, 260]
+          "share": { "width": 550, "height": 260 }
         }
       },
       "lang": {
@@ -359,7 +361,7 @@
         "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}",
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. ",
         "pageSize": {
-          "social-share-panel": [500, 530]
+          "share": { "width": 500, "height": 530 }
         }
       },
       "lang": {
@@ -383,7 +385,7 @@
   
         "version": 1,
         "pageSize": {
-          "social-share-panel": [550, 430]
+          "share": { "width": 550, "height": 430 }
         }
       },
       "lang": {
@@ -416,7 +418,7 @@
   
         "version": 1,
         "pageSize": {
-          "social-share-panel": [465, 590]
+          "share": { "width": 465, "height": 590 }
         }
       },
       "lang": {
@@ -449,7 +451,7 @@
   
         "version": 1,
         "pageSize": {
-          "social-share-panel": [800, 540]
+          "share": { "width": 800, "height": 540 }
         }
       },
       "lang": {
