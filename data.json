@@ -247,7 +247,11 @@
         "origin": "http://m.weibo.cn",
         "sidebarURL": "http://m.weibo.cn/sidebar/",
         "version": "0.1",
-        "workerURL": "http://m.weibo.cn/js/social/worker.js"
+        "workerURL": "http://m.weibo.cn/js/social/worker.js",
+        "shareURL": "http://service.weibo.com/share/share.php?url=%{url}&title=%{title}&pic=%{previews}",
+        "pageSize": {
+          "share": { "width": 620, "height": 500 }
+        }
       },
       "lang": {
         "en-US": {
