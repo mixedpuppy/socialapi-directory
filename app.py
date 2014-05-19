@@ -45,7 +45,7 @@ def createapp():
     p['manifestData'] = json.dumps(p['manifest'])
     return p
   
-  def renderTemplate(template, data, locale, path=None, base="/"):
+  def renderTemplate(template, data, locale, path=None, base=""):
     if demo:
         # add any mockup providers to our directory
         for k, p in data["demo"].iteritems():
@@ -53,7 +53,7 @@ def createapp():
     data["production"] = not demo
     basehref = ""
     if base:
-      basehref = base + '/' + locale + '/'
+      basehref = "/".join([base, locale]) + '/'
     elif locale:
       basehref = locale + '/'
     # add localized strings
@@ -105,6 +105,16 @@ def createapp():
       template = path and "provider.html" or "index.html"
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate(template, appData, locale, path, base)
+
+  @bp.route('/<regex("\w{2}-\w{2}"):locale>/sharePanel.html')
+  def bp_sharePanel(base, locale=None):
+    # if root is locale, capture that, but use the same local file paths
+    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    return renderTemplate('sharePanel.html', appData, locale, base=base)
+  @app.route('/<regex("\w{2}-\w{2}"):locale>/sharePanel.html')
+  def app_sharePanel(locale=None):
+    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    return renderTemplate('sharePanel.html', appData, locale)
 
   @app.route('/<regex("\w{2}-\w{2}"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):

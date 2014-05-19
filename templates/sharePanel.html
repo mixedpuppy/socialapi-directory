@@ -1,0 +1,72 @@
+<html>
+<head>
+  <base href="/{{basehref}}"/>
+  <title>Firefox SocialAPI Services</title>
+  <style>
+
+  body {
+    background: transparent;
+  }
+  #share-directory > h2 {
+    text-align: center;
+    font-family: "Open Sans Light","Droid Arabic Naskh","Mplus Fulah Light",sans-serif;
+    font-weight: normal;
+    display: block;
+    margin: 0px 0px 12px;
+    line-height: 100%;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+    color: #484848;
+  }
+  #share-directory-grid img {
+    max-height: 64px;
+    max-width: 64px;
+    margin: 10px;
+  }
+  #share-directory-grid > a {
+    height: 64px;
+    width: 64px;
+    text-decoration: none;
+    cursor: default;
+  }
+  #share-directory-grid img:hover {
+    cursor: pointer;
+  }
+    
+  </style>
+  <script src="../js/jquery-1.11.0.min.js"></script>
+  <script>
+    function activateProvider(node, name) {
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+    }
+  </script>
+</head>
+
+<body class="html-ltr sky">
+  <div id="wrapper" class="content">
+    <div id="share-directory">
+      <h2>Share Services</h2>
+      <div id="share-directory-grid" class="row">
+      {% for p in source.itervalues() %}
+        {% if p['manifest']['shareURL'] %}
+        <a onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+        <img src="{{p['manifest']['icon64URL']}}"></img>
+        </a>
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.org');
+    ga('send', 'pageview');
+  
+  </script>
+
+</body>
+</html>
