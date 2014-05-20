@@ -185,13 +185,9 @@
 }
 
 .provider-description {
-  padding-top: 5px;
+  padding-top: 10px;
   font-size: 1.2em;
   padding-bottom: 25px;
-}
-
-.item .provider-description {
-  padding-top: 10px;
 }
 
 .moreinfo {
