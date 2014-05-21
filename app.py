@@ -1,4 +1,5 @@
 import re, os, sys
+import flask
 from flask import Flask, Blueprint, request, json, render_template, redirect, url_for
 from werkzeug.routing import BaseConverter
 from pystache.renderer import Renderer
@@ -41,6 +42,7 @@ def createapp():
     for n,v in p['manifest'].iteritems():
         if isinstance(v, (str, unicode)):
             p['manifest'][n] = v.replace('__T_LOCALE__', locale)
+            p['manifest'][n] = v.replace('_T__BASEURL__', os.path.dirname(flask.request.base_url))
 
     p['manifestData'] = json.dumps(p['manifest'])
     return p
@@ -105,6 +107,16 @@ def createapp():
       template = path and "provider.html" or "index.html"
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate(template, appData, locale, path, base)
+
+  @bp.route('/<regex("\w{2}-\w{2}"):locale>/activated.html')
+  def bp_activated(base, locale=None):
+    # if root is locale, capture that, but use the same local file paths
+    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    return renderTemplate('activated.html', appData, locale, base=base)
+  @app.route('/<regex("\w{2}-\w{2}"):locale>/activated.html')
+  def app_activated(locale=None):
+    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    return renderTemplate('activated.html', appData, locale)
 
   @bp.route('/<regex("\w{2}-\w{2}"):locale>/sharePanel.html')
   def bp_sharePanel(base, locale=None):
