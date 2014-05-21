@@ -653,7 +653,22 @@
           "share": { "width": 620, "height": 500 }
         }
       },
-      "demo": {
+      "lang": {
+        "en-US": {
+          "name": "Weibo",
+          "shortDescription": "Share your interesting news anytime, anywhere.",
+          "description": "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when receiving new messages.",
+          "images": {
+            "fulllogo": "images/weibo/logo-large.png",
+            "details": ["images/weibo/detail1.png", "images/weibo/detail2.png"]
+          },
+          "links": {
+            "learnmore": "https://www.weibo.com/"
+          }
+        }
+      }
+    },
+    "demo": {
       "manifest": {
         "origin": "http://mixedpuppy.github.io",
         "name": "Demo Social Service",
