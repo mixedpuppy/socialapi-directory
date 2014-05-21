@@ -55,17 +55,8 @@
     function activateProvider(node, name) {
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', 'action', name);
     }
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-35433268-59', 'mozilla.org');
-    ga('send', 'pageview');
-  
   </script>
 </head>
 <body class="html-ltr sky">
@@ -334,7 +325,7 @@
           
           <p class="provider-description">Share your interesting news anytime, anywhere.</p>
           
-          <span class="provider-features"><span class="supported" title="This service supports sharing content">share</span> 
+          <span class="provider-features"><span  title="This service supports sharing content">share</span> 
           <span  title="This service provides bookmarking functionality">bookmarking</span> 
           <span class="supported" title="This service adds a sidebar to Firefox">sidebar</span> 
           <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span></span>
@@ -582,6 +573,23 @@
       </div>
       
       <div class="provider-entry col-2 clearfix">
+        <a href="weiboshare.html">
+        <div class="provider-entry-inner clearfix">
+          
+          <h2><img src="images/weibo/logo-large.png"></img></h2>
+          
+          <p class="provider-description">Share your interesting news anytime, anywhere.</p>
+          
+          <span class="provider-features"><span class="supported" title="This service supports sharing content">share</span> 
+          <span  title="This service provides bookmarking functionality">bookmarking</span> 
+          <span class="supported" title="This service adds a sidebar to Firefox">sidebar</span> 
+          <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span></span>
+          
+        </div>
+        </a>
+      </div>
+      
+      <div class="provider-entry col-2 clearfix">
         <a href="demo.html">
         <div class="provider-entry-inner clearfix">
           
@@ -640,5 +648,15 @@
   </div>
 
   <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
 </body>
 </html>
