@@ -185,13 +185,9 @@
 }
 
 .provider-description {
-  padding-top: 5px;
+  padding-top: 10px;
   font-size: 1.2em;
   padding-bottom: 25px;
-}
-
-.item .provider-description {
-  padding-top: 10px;
 }
 
 .moreinfo {
@@ -484,4 +480,15 @@ a.button > span.smaller {
   font-size: 10pt;
   line-height: normal;
   padding: 0;
+}
+
+.section {
+  margin: 40px 0;
+  padding-top: 20px;
+}
+
+.section > h4 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #C1C5C8;
 }
