@@ -55,7 +55,7 @@
     function activateProvider(node, name) {
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
-      ga('send', 'event', 'click', 'activation', 'action', name);
+      ga('send', 'event', 'click', 'activation', name);
     }
   </script>
 </head>
