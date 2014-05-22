@@ -58,7 +58,7 @@
       if (!data.postActivationURL) {
         var loc = location.href;
         var baseurl = loc.substring(0,loc.lastIndexOf('/'));
-        data.postActivationURL = baseurl + "/activated.html";
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
         node.setAttribute("data-service", JSON.stringify(data));
       }
       var event = new CustomEvent("ActivateSocialFeature");
