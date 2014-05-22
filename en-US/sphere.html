@@ -45,6 +45,14 @@
     });
 
     function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      if (!data.postActivationURL) {
+        var loc = location.href;
+        var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+        data.postActivationURL = baseurl + "/activated.html";
+        node.setAttribute("data-service", JSON.stringify(data));
+      }
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
       ga('send', 'event', 'click', 'activation', name);
@@ -111,7 +119,7 @@
           
             <h3 class="tagline">a discovery experience</h3>
             <p class="lead">A new way to discover the most interesting content relevant to your interests.</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'sphere')" data-service="{&#34;author&#34;: &#34;Outbrain&#34;, &#34;description&#34;: &#34;A new way to discover the most interesting content relevant to your interests.&#34;, &#34;homepageURL&#34;: &#34;https://www.sphere.com&#34;, &#34;icon32URL&#34;: &#34;https://firefox.sphere.com/images/outbrain_32x32.png&#34;, &#34;icon64URL&#34;: &#34;https://firefox.sphere.com/images/outbrain_64x64.png&#34;, &#34;iconURL&#34;: &#34;https://firefox.sphere.com/images/outbrain.png&#34;, &#34;name&#34;: &#34;Sphere&#34;, &#34;origin&#34;: &#34;https://www.sphere.com&#34;, &#34;postActivationURL&#34;: &#34;http://localhost:8888/socialapi-directory/en-US/activated.html&#34;, &#34;sidebarURL&#34;: &#34;https://firefox.sphere.com/sidebar.html&#34;, &#34;version&#34;: &#34;1.0&#34;}">Activate now <span>&raquo;</span></a>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'sphere')" data-service="{&#34;author&#34;: &#34;Outbrain&#34;, &#34;description&#34;: &#34;A new way to discover the most interesting content relevant to your interests.&#34;, &#34;homepageURL&#34;: &#34;https://www.sphere.com&#34;, &#34;icon32URL&#34;: &#34;https://firefox.sphere.com/images/outbrain_32x32.png&#34;, &#34;icon64URL&#34;: &#34;https://firefox.sphere.com/images/outbrain_64x64.png&#34;, &#34;iconURL&#34;: &#34;https://firefox.sphere.com/images/outbrain.png&#34;, &#34;name&#34;: &#34;Sphere&#34;, &#34;origin&#34;: &#34;https://www.sphere.com&#34;, &#34;sidebarURL&#34;: &#34;https://firefox.sphere.com/sidebar.html&#34;, &#34;version&#34;: &#34;1.0&#34;}">Activate now <span>&raquo;</span></a>
             <div class="provider-description"></div>
 
           

@@ -45,6 +45,14 @@
     });
 
     function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      if (!data.postActivationURL) {
+        var loc = location.href;
+        var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+        data.postActivationURL = baseurl + "/activated.html";
+        node.setAttribute("data-service", JSON.stringify(data));
+      }
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
       ga('send', 'event', 'click', 'activation', name);
@@ -111,7 +119,7 @@
           
             <h3 class="tagline"></h3>
             <p class="lead">a design mockup showing what this service could look like.</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'google')" data-service="{&#34;description&#34;: &#34;a design mockup showing what this service could look like.&#34;, &#34;icon32URL&#34;: &#34;https://www.gstatic.com/images/icons/gplus-32.png&#34;, &#34;icon64URL&#34;: &#34;https://www.gstatic.com/images/icons/gplus-64.png&#34;, &#34;iconURL&#34;: &#34;https://www.gstatic.com/images/icons/gplus-16.png&#34;, &#34;markURL&#34;: &#34;https://plus.google.com/share?url=%{url}&#34;, &#34;name&#34;: &#34;Google Plus&#34;, &#34;origin&#34;: &#34;https://plus.google.com&#34;, &#34;pageSize&#34;: {&#34;marks&#34;: {&#34;height&#34;: 550, &#34;width&#34;: 550}, &#34;share&#34;: {&#34;height&#34;: 550, &#34;width&#34;: 550}, &#34;status&#34;: {&#34;height&#34;: 386, &#34;width&#34;: 330}}, &#34;postActivationURL&#34;: &#34;http://localhost:8888/socialapi-directory/en-US/activated.html&#34;, &#34;shareURL&#34;: &#34;https://plus.google.com/share?url=%{url}&#34;, &#34;statusURL&#34;: &#34;https://plus.google.com/app/basic/&#34;, &#34;workerURL&#34;: &#34;&#34;}">Activate now <span>&raquo;</span></a>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'google')" data-service="{&#34;description&#34;: &#34;a design mockup showing what this service could look like.&#34;, &#34;icon32URL&#34;: &#34;https://www.gstatic.com/images/icons/gplus-32.png&#34;, &#34;icon64URL&#34;: &#34;https://www.gstatic.com/images/icons/gplus-64.png&#34;, &#34;iconURL&#34;: &#34;https://www.gstatic.com/images/icons/gplus-16.png&#34;, &#34;markURL&#34;: &#34;https://plus.google.com/share?url=%{url}&#34;, &#34;name&#34;: &#34;Google Plus&#34;, &#34;origin&#34;: &#34;https://plus.google.com&#34;, &#34;pageSize&#34;: {&#34;marks&#34;: {&#34;height&#34;: 550, &#34;width&#34;: 550}, &#34;share&#34;: {&#34;height&#34;: 550, &#34;width&#34;: 550}, &#34;status&#34;: {&#34;height&#34;: 386, &#34;width&#34;: 330}}, &#34;shareURL&#34;: &#34;https://plus.google.com/share?url=%{url}&#34;, &#34;statusURL&#34;: &#34;https://plus.google.com/app/basic/&#34;, &#34;workerURL&#34;: &#34;&#34;}">Activate now <span>&raquo;</span></a>
             <div class="provider-description">a design mockup showing what this service could look like.</div>
 
           
