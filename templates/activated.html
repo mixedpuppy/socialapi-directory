@@ -12,51 +12,55 @@
     </div>
 
     <div class="detail-content">
+    {% if 'detaillogo' in lang['default']['images'] %}
+    <h1><img src="{{lang['default']['images']['detaillogo']}}"></img></h1>
+    {% elif 'fulllogo' in lang['default']['images'] %}
+    <h1><img src="{{lang['default']['images']['fulllogo']}}"></img></h1>
+    {% else %}
+    <h1><img src="{{lang['default']['images']['logo']}}"></img> {{lang['default']['name']}}</h1>
+    {% endif %}
 
-    <h3>Congratulations, You've just added new functionality to Firefox!</h3>
-    <p class="lead">Services on this site help you to keep up with friends, see
-    the stories people are talking about and more. Keep on reading to find out
-    more about how these features work.</p>
-    <p class="lead">These services support one or more of the following features.</p>
+    <div class="section clearfix">
+    <h3>Congratulations, <strong>{{manifest['name']}}</strong> is now activated in Firefox!</h3>
+    <p class="lead">Services like <strong>{{manifest['name']}}</strong> help you to keep up with
+    friends, see the stories people are talking about and more. Keep on reading
+    to find out more about how these features work.
+{% if manifest['homepageURL'] %}
+    Visit <a href="{{manifest['homepageURL']}}">{{manifest['name']}}</a> to learn more about their service.
+{% endif %}
+    </p>
+    </div>
 
-    
+{% if manifest['shareURL'] %}
     <div class="section clearfix">
       <h4>Share content you like</h4>
       <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">With the click of a button, you can Share interesting
-      content on any website with the rest of the world, using the services you
-      like.</p>
       <p class="lead"><img src="../images/sharebutton.png"
-      alt="[share button image]"/> Just click on the share button and choose the service you want to use.</p>
+      alt="[share button image]"/> With the click of a button, you can Share interesting
+      content on any website with your social network through <strong>{{manifest['name']}}</strong>.</p>
     </div>
-
+{% endif %}
+{% if manifest['markURL'] %}
     <div class="section clearfix">
       <h4>Save content for later</h4>
       <img src="../images/bookmarking.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
       <p class="lead">With the click of a button, you can save interesting
-      content on any website to the cloud with services like Pocket and Delicious.</p>
+      content on any website to <strong>{{manifest['name']}}</strong>.</p>
     </div>
-
+{% endif %}
+{% if manifest['statusURL'] %}
     <div class="section clearfix">
-      <h4>Keep an eye on news, trending music and more</h4>
+      <h4>Keep an eye on the latest from <strong>{{manifest['name']}}</strong></h4>
       <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">With the click of a button, you can Share interesting
-      content on any website with the rest of the world, using the services you
-      like.</p>
-      <p class="lead"><img src="../images/sharebutton.png"
-      alt="[share button image]"/> Just click on the share button and choose the service you want to use.</p>
+      <p class="lead"><strong>{{manifest['name']}}</strong> will provide you with the latest from their service, just click on their icon in the toolbar.</p>
     </div>
-
+{% endif %}
+{% if manifest['sidebarURL'] %}
     <div class="section clearfix">
-      <h4>Managing your services</h4>
-
-      
-      <div class="clearfix">
-      <p class="lead">All of the toolbar buttons are customizable (some only in
-      upcomming versions of Firefox) using the new <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">Customizability of Firefox</a>.
-      Add, move or remove buttons to make Firefox exactly the way you want
-      it.</p>
-      </div>
+      <h4>Sidebar</h4>
+      <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <p class="lead"><strong>{{manifest['name']}}</strong> provides updated content in a sidebar in Firefox.</p>
+    </div>
 
       <div class="section clearfix">
       <img src="../images/sidebarselect.png"
@@ -76,6 +80,10 @@
       button in the
       <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">customization palette</a>.</p>
       </div>
+{% endif %}
+
+    <div class="section clearfix">
+      <h4>Managing your services</h4>
 
       <div class="section clearfix">
       <img src="../images/addonsmanager.png" alt="Add-ons Manager" style="float: right; max-width: 400px; margin-left: 20px;"/>

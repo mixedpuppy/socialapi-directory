@@ -54,6 +54,9 @@ def createapp():
           data["source"][k] = p
     data["production"] = not demo
     basehref = ""
+    if path:
+        baseurl = os.path.dirname(path)
+        print baseurl
     if base:
       basehref = "/".join([base, locale]) + '/'
     elif locale:
@@ -108,15 +111,21 @@ def createapp():
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate(template, appData, locale, path, base)
 
-  @bp.route('/<regex("\w{2}-\w{2}"):locale>/activated.html')
-  def bp_activated(base, locale=None):
+  @bp.route('/<regex("\w{2}-\w{2}"):locale>/activated/')
+  @bp.route('/<regex("\w{2}-\w{2}"):locale>/activated/<path:path>')
+  def bp_activated(base, locale=None, path=None):
+    print base, locale, path
     # if root is locale, capture that, but use the same local file paths
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('activated.html', appData, locale, base=base)
-  @app.route('/<regex("\w{2}-\w{2}"):locale>/activated.html')
-  def app_activated(locale=None):
+    template = path and "activated.html" or "activatedIndex.html"
+    return renderTemplate(template, appData, locale, path, base=base)
+  @app.route('/<regex("\w{2}-\w{2}"):locale>/activated/')
+  @app.route('/<regex("\w{2}-\w{2}"):locale>/activated/<path:path>')
+  def app_activated(locale=None, path=None):
+    print locale, path
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('activated.html', appData, locale)
+    template = path and "activated.html" or "activatedIndex.html"
+    return renderTemplate(template, appData, locale, path)
 
   @bp.route('/<regex("\w{2}-\w{2}"):locale>/sharePanel.html')
   def bp_sharePanel(base, locale=None):

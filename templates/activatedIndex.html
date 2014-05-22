@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">{{strings['home']}}</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+
+{% for p in source.itervalues() %}
+  <li><a href="/{{basehref}}activated/{{p['key']}}.html">{{p['lang']['default']['name']}}</a></li>
+{% endfor %}
+
+
+    </div>
+
+  </div>
+  </div>
+{% endblock %}
