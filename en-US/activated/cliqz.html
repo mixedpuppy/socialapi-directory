@@ -15,14 +15,6 @@
   <script>
     $(document).ready(function($) {
 
-      // adjust the height of our directory listing so everything lines up nice
-      var boxes = $('.provider-entry-inner');
-      var maxHeight = Math.max.apply(
-        Math, boxes.map(function() {
-          return $(this).height();
-        }).get());
-      boxes.height(maxHeight);
-
 
       window.scrollTo(0, 0);
 
@@ -56,7 +48,7 @@
       if (!data.postActivationURL) {
         var loc = location.href;
         var baseurl = loc.substring(0,loc.lastIndexOf('/'));
-        data.postActivationURL = baseurl + "/activated.html";
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
         node.setAttribute("data-service", JSON.stringify(data));
       }
       var event = new CustomEvent("ActivateSocialFeature");
@@ -104,51 +96,38 @@
     </div>
 
     <div class="detail-content">
-
-    <h3>Congratulations, You've just added new functionality to Firefox!</h3>
-    <p class="lead">Services on this site help you to keep up with friends, see
-    the stories people are talking about and more. Keep on reading to find out
-    more about how these features work.</p>
-    <p class="lead">These services support one or more of the following features.</p>
-
     
+    <h1><img src="images/cliqz/cliqz-logo.png"></img></h1>
+    
+
+    <div class="section clearfix">
+    <h3>Congratulations, <strong>Cliqz</strong> is now activated in Firefox!</h3>
+    <p class="lead">Services like <strong>Cliqz</strong> help you to keep up with
+    friends, see the stories people are talking about and more. Keep on reading
+    to find out more about how these features work.
+
+    Visit <a href="https://mozsocial.cliqz.com/">Cliqz</a> to learn more about their service.
+
+    </p>
+    </div>
+
+
     <div class="section clearfix">
       <h4>Share content you like</h4>
       <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">With the click of a button, you can Share interesting
-      content on any website with the rest of the world, using the services you
-      like.</p>
       <p class="lead"><img src="../images/sharebutton.png"
-      alt="[share button image]"/> Just click on the share button and choose the service you want to use.</p>
+      alt="[share button image]"/> With the click of a button, you can Share interesting
+      content on any website with your social network through <strong>Cliqz</strong>.</p>
     </div>
 
-    <div class="section clearfix">
-      <h4>Save content for later</h4>
-      <img src="../images/bookmarking.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">With the click of a button, you can save interesting
-      content on any website to the cloud with services like Pocket and Delicious.</p>
-    </div>
+
+
 
     <div class="section clearfix">
-      <h4>Keep an eye on news, trending music and more</h4>
+      <h4>Sidebar</h4>
       <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">With the click of a button, you can Share interesting
-      content on any website with the rest of the world, using the services you
-      like.</p>
-      <p class="lead"><img src="../images/sharebutton.png"
-      alt="[share button image]"/> Just click on the share button and choose the service you want to use.</p>
+      <p class="lead"><strong>Cliqz</strong> provides updated content in a sidebar in Firefox.</p>
     </div>
-
-    <div class="section clearfix">
-      <h4>Managing your services</h4>
-
-      
-      <div class="clearfix">
-      <p class="lead">All of the toolbar buttons are customizable (some only in
-      upcomming versions of Firefox) using the new <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">Customizability of Firefox</a>.
-      Add, move or remove buttons to make Firefox exactly the way you want
-      it.</p>
-      </div>
 
       <div class="section clearfix">
       <img src="../images/sidebarselect.png"
@@ -168,6 +147,10 @@
       button in the
       <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">customization palette</a>.</p>
       </div>
+
+
+    <div class="section clearfix">
+      <h4>Managing your services</h4>
 
       <div class="section clearfix">
       <img src="../images/addonsmanager.png" alt="Add-ons Manager" style="float: right; max-width: 400px; margin-left: 20px;"/>
