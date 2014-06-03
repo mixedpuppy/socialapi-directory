@@ -3,57 +3,118 @@
   <base href="/{{basehref}}"/>
   <title>Firefox SocialAPI Services</title>
   <style>
-
-  body {
-    background: transparent;
-  }
-  #share-directory > h2 {
-    text-align: center;
+  * {
     font-family: "Open Sans Light","Droid Arabic Naskh","Mplus Fulah Light",sans-serif;
     font-weight: normal;
-    display: block;
-    margin: 0px 0px 12px;
-    line-height: 100%;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
     color: #484848;
   }
-  #share-directory-grid img {
-    max-height: 64px;
-    max-width: 64px;
-    margin: 10px;
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, rgba(247,247,247,.99), rgba(247,247,247,.95));
+    width: 340px;
+    height: 280px;
+    border: none;
+    overflow: hidden;
   }
-  #share-directory-grid > a {
-    height: 64px;
+  .content {
+    margin: 0;
+    padding: 18px 0 0 0;
+  }
+  span {
+    margin :0px;
+    text-align: center;
+    display: block;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+  }
+  #share-directory-grid {
+    height: 220px;
+    overflow: scroll;
+    padding: 0 10px;
+  }
+
+  .button {
     width: 64px;
-    text-decoration: none;
-    cursor: default;
+    height: 64px;
+    margin: 10px;
+    padding: 11px;
   }
-  #share-directory-grid img:hover {
+  .button:hover {
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #b5b5b8;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #d9d9d9, #e3e3e3);
     cursor: pointer;
   }
-    
+  .button img {
+    max-height: 64px;
+    max-width: 64px;
+    margin: auto;  
+    position: absolute;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .col {
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+  
+  .clearfix:after {
+      clear: both;
+  }
+  .clearfix:before, .clearfix:after {
+      display: table;
+      content: " ";
+  }
+  .viewmore {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: .8em;
+    color: blue;
+  }
+  .bottom {
+    text-align: center;
+  }
   </style>
   <script src="../js/jquery-1.11.0.min.js"></script>
   <script>
     function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      if (!data.postActivationURL) {
+        var loc = location.href;
+        var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+        node.setAttribute("data-service", JSON.stringify(data));
+      }
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
     }
   </script>
 </head>
 
 <body class="html-ltr sky">
   <div id="wrapper" class="content">
+    <span>Click on a service to add it to Firefox.</span>
     <div id="share-directory">
-      <h2>Share Services</h2>
-      <div id="share-directory-grid" class="row">
+      <div id="share-directory-grid" class="row clearfix">
       {% for p in source.itervalues() %}
         {% if p['manifest']['shareURL'] %}
-        <a onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+        <div class="button col clearfix" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
         <img src="{{p['manifest']['icon64URL']}}"></img>
-        </a>
+        </div>
         {% endif %}
       {% endfor %}
+      </div>
+      <div class="bottom row clearfix">
+        <a href="/" target="_blank" class="viewmore">View more</a>
       </div>
     </div>
   </div>
@@ -63,7 +124,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   
-    ga('create', 'UA-35433268-59', 'mozilla.org');
+    ga('create', 'UA-35433268-59', 'mozilla.net');
     ga('send', 'pageview');
   
   </script>
