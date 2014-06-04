@@ -48,6 +48,7 @@ def createapp():
     return p
   
   def renderTemplate(template, data, locale, path=None, base=""):
+    print "locale: ", locale
     if demo:
         # add any mockup providers to our directory
         for k, p in data["demo"].iteritems():
@@ -67,7 +68,7 @@ def createapp():
       data['strings'] = data['strings'][locale]
     else:
       data['strings'] = data['strings']["en-US"]
-
+    print "strings: ", data['strings']
     if path:
       path = os.path.splitext(path)[0]
     if path and path in data["source"]:
@@ -94,13 +95,13 @@ def createapp():
       data["basehref"] = basehref
       return render_template(template, **data)
   
-  @bp.route('/<regex("\w{2}-\w{2}"):locale>/<path:path>')
+  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
   def static_proxy(base, locale=None, path=None):
     # if root is locale, capture that, but use the same local file paths
     try:
       root, path = path.split('/', 1)
     except ValueError, e:
-      root = None
+      root = locale
     # send_static_file will guess the correct MIME type
     if root in ["css", "images", "fonts", "js"]:
       return app.send_static_file(os.path.join(root, path))
@@ -111,33 +112,33 @@ def createapp():
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate(template, appData, locale, path, base)
 
-  @bp.route('/<regex("\w{2}-\w{2}"):locale>/activated/')
-  @bp.route('/<regex("\w{2}-\w{2}"):locale>/activated/<path:path>')
+  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
+  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def bp_activated(base, locale=None, path=None):
     print base, locale, path
     # if root is locale, capture that, but use the same local file paths
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
     return renderTemplate(template, appData, locale, path, base=base)
-  @app.route('/<regex("\w{2}-\w{2}"):locale>/activated/')
-  @app.route('/<regex("\w{2}-\w{2}"):locale>/activated/<path:path>')
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def app_activated(locale=None, path=None):
     print locale, path
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
     return renderTemplate(template, appData, locale, path)
 
-  @bp.route('/<regex("\w{2}-\w{2}"):locale>/sharePanel.html')
+  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def bp_sharePanel(base, locale=None):
     # if root is locale, capture that, but use the same local file paths
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate('sharePanel.html', appData, locale, base=base)
-  @app.route('/<regex("\w{2}-\w{2}"):locale>/sharePanel.html')
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def app_sharePanel(locale=None):
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate('sharePanel.html', appData, locale)
 
-  @app.route('/<regex("\w{2}-\w{2}"):locale>/<path>')
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):
     return static_proxy(None, locale, path)
 
@@ -149,13 +150,13 @@ def createapp():
       path = base + "/" + path
     return app.send_static_file(path)
 
-  @bp.route('/<regex("\w{2}-\w{2}"):locale>/')
+  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def index(base, locale):
     # if root is locale, capture that, but use the same local file paths
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate('index.html', appData, locale, base=base)
 
-  @app.route('/<regex("\w{2}-\w{2}"):locale>/')
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def app_index(locale):
     return index(None, locale)
 
