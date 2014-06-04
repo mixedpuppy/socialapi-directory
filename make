@@ -3,6 +3,7 @@ rm -rf jp-JP/mixi.html en-US css js images index.html
 wget -nH -erobots=off -p http://localhost:8888/socialapi-directory/index.html
 wget -r -nH -erobots=off http://localhost:8888/socialapi-directory/en-US/activated/
 wget -r -nH -erobots=off http://localhost:8888/socialapi-directory/en-US/
+wget -r -nH -erobots=off http://localhost:8888/socialapi-directory/en-US/sharePanel.html
 wget -nH -erobots=off -p http://localhost:8888/socialapi-directory/jp-JP/mixi.html
 cp -rf socialapi-directory/* .
 rm -rf socialapi-directory
