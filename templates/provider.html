@@ -31,14 +31,12 @@
             <a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{strings['learnmore']}}</a>
           {% endif %}
           </div>
-{% if locale.startswith("en") %}
-          {% if manifest %}
+          {% if manifest and locale.startswith("en") %}
           <span class="features"><span {% if manifest['shareURL'] %}class="supported"{% endif %} title="This service supports sharing content">share</span> 
           <span {% if manifest['markURL'] %}class="supported"{% endif %} title="This service provides bookmarking functionality">bookmarking</span> 
           <span {% if manifest['sidebarURL'] %}class="supported"{% endif %} title="This service adds a sidebar to Firefox">sidebar</span> 
           <span {% if manifest['statusURL'] %}class="supported"{% endif %} title="This service adds a toolbar button to Firefox that may have notifications">notifications</span></span>
           {% endif %}
-{% endif %}
         </div>
         <div class="col-2 clearfix">
           {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
