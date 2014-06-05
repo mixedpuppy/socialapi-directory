@@ -24,9 +24,9 @@
             "fulllogo": "images/saavn/logomark.png",
             "logo": "images/saavn/icon64.png",
             "carousel": "images/saavn/saavn-screen.png",
-            "details": ["images/saavn/firefox-sidebar-screenshot-1.png",
-                        "images/saavn/firefox-sidebar-screenshot-2.png",
-                        "images/saavn/firefox-sidebar-screenshot-3.png"]
+            "details": ["images/saavn/firefox-sidebar-screenshot-1.jpg",
+                        "images/saavn/firefox-sidebar-screenshot-2.jpg",
+                        "images/saavn/firefox-sidebar-screenshot-3.jpg"]
           },
           "videos": {
             "youtube": ["A8Kignry0p8", "l8VlUiQ2IkQ", "aF0LyLeHk6w"]
