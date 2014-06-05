@@ -14,6 +14,14 @@
   <script>
     $(document).ready(function($) {
 
+      // adjust the height of our directory listing so everything lines up nice
+      var boxes = $('.provider-entry-inner');
+      var maxHeight = Math.max.apply(
+        Math, boxes.map(function() {
+          return $(this).height();
+        }).get());
+      boxes.height(maxHeight);
+
 
       window.scrollTo(0, 0);
 
@@ -81,6 +89,7 @@
 
   
 
+
   <div id="wrapper" class="content">
   <div id="detail">
     <div class="detail-header clearfix">
@@ -92,67 +101,24 @@
     </div>
 
     <div class="detail-content">
-    
-    <h1><img src="images/cliqz/cliqz-logo.png"></img></h1>
-    
-
-    <div class="section clearfix">
-    <h3>Congratulations, <strong>Cliqz</strong> is now activated in Firefox!</h3>
-    <p class="lead">Services like <strong>Cliqz</strong> help you to keep up with
-    friends, see the stories people are talking about and more. Keep on reading
-    to find out more about how these features work.
-
-    Visit <a href="https://mozsocial.cliqz.com/">Cliqz</a> to learn more about their service.
-
-    </p>
-    </div>
 
 
-    <div class="section clearfix">
-      <h4>Share content you like</h4>
-      <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead"><img src="../images/sharebutton.png"
-      alt="[share button image]"/> With the click of a button, you can Share interesting
-      content on any website with your social network through <strong>Cliqz</strong>.</p>
-    </div>
+  <li><a href="/en-US/activated/saavn.html">saavn</a></li>
 
+  <li><a href="/en-US/activated/pocket.html">Pocket</a></li>
 
+  <li><a href="/en-US/activated/sphere.html">Sphere</a></li>
 
+  <li><a href="/en-US/activated/delicious.html">delicious</a></li>
 
-    <div class="section clearfix">
-      <h4>Sidebar</h4>
-      <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead"><strong>Cliqz</strong> provides updated content in a sidebar in Firefox.</p>
-    </div>
+  <li><a href="/en-US/activated/facebook.html">Facebook Share</a></li>
 
-      <div class="section clearfix">
-      <img src="../images/sidebarselect.png"
-      alt="[share button image]" style="float: right; max-width: 400px;
-      margin-left: 20px;"/>
-      <p class="lead">You can easily change the service in your sidebar, or
-      hide the sidebar, from the sidebar itself. You can also use the
-      <strong>View->Toolbars menu</strong> in Firefox.</p>
-      </div>
-      
-      <div class="section clearfix">
-      <img src="../images/sidebarbutton.png"
-      alt="[share button image]" style="float: right; max-width: 400px;
-      margin-left: 20px;"/>
-      <p class="lead">Starting with Firefox 30, You can also manage your
-      sidebars using the sidebar toolbarbutton. You can find the sidebar toolbar
-      button in the
-      <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">customization palette</a>.</p>
-      </div>
+  <li><a href="/en-US/activated/cliqz.html">Cliqz</a></li>
 
+  <li><a href="/en-US/activated/mixi.html">mixi</a></li>
 
-    <div class="section clearfix">
-      <h4>Managing your services</h4>
+  <li><a href="/en-US/activated/weibo.html">Weibo</a></li>
 
-      <div class="section clearfix">
-      <img src="../images/addonsmanager.png" alt="Add-ons Manager" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">You can easily manage your services, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.</p>
-      </div>
-    </div>
 
 
     </div>
