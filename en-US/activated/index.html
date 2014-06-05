@@ -50,6 +50,7 @@
     });
 
     function activateProvider(node, name) {
+
       // fixup the service data with a postActivationURL if one doesn't exist.
       var data = JSON.parse(node.getAttribute("data-service"));
       if (!data.postActivationURL) {
@@ -58,6 +59,7 @@
         data.postActivationURL = baseurl + "/activated/"+name+".html";
         node.setAttribute("data-service", JSON.stringify(data));
       }
+
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
       ga('send', 'event', 'click', 'activation', name);
