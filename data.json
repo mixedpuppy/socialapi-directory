@@ -605,7 +605,7 @@
         "sidebarURL": "http://www.goal.com/mozilla-sidebar",
         "description": "The definitive source for football news from around the world.",
         "homepageURL": "http://www.goal.com",
-        "postActivationURL": "http://www.goal.com/?firefoxsidebar=1"
+        "postActivationURL": "http://www.goal.com"
       },
       "lang": {
         "en-US": {

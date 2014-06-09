@@ -160,6 +160,14 @@ def createapp():
   def app_index(locale):
     return index(None, locale)
 
+  @bp.route("/redirect.html")
+  @app.route("/redirect.html")
+  def redirectpage(base=None):
+    # the server should handle a redirect. Since the frozen static pages will be
+    # served on github pages for testing, we have a redirect located in the top
+    # level index page.  We use that here to ensure that works as well.
+    return app.send_static_file("redirect.html")
+
   @bp.route("/")
   @app.route("/")
   def root(base=None):
