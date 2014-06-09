@@ -54,7 +54,8 @@
       var loc = location.href;
       var baseurl = loc.substring(0,loc.lastIndexOf('/'));
       if (data.postActivationURL) {
-        data.postActivationURL = location.origin + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
       }
 {% if locale.startswith("en") %}
       else {
