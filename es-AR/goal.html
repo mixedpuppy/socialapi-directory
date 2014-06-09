@@ -48,7 +48,6 @@
       if (data.postActivationURL) {
         var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
         data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
-        alert(data.postActivationURL);
       }
 
       node.setAttribute("data-service", JSON.stringify(data));
