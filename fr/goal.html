@@ -46,7 +46,9 @@
       var loc = location.href;
       var baseurl = loc.substring(0,loc.lastIndexOf('/'));
       if (data.postActivationURL) {
-        data.postActivationURL = location.origin + "/socialapi-directory/fr//../redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+        alert(data.postActivationURL);
       }
 
       node.setAttribute("data-service", JSON.stringify(data));
