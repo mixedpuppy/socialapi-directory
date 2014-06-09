@@ -1,0 +1,215 @@
+<html>
+<head>
+  <base href="/en-US/"/>
+  <title>GOAL for Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    $(document).ready(function($) {
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Get Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "http://www.mozilla.org/products/download.html?product=firefox");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Upgrade Firefox <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "http://www.mozilla.org/products/download.html?product=firefox");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox for desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">You must use Firefox to install Social services.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  </p><p id="upgrade-required" hidden="true">Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now.<a href="http://www.mozilla.org/products/download.html?product=firefox" class="firefox-download">Download.</a>
+  </p></div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Home</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,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TUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MTwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPHRpZmY6Q29tcHJlc3Npb24+NTwvdGlmZjpDb21wcmVzc2lvbj4KICAgICAgICAgPHRpZmY6WFJlc29sdXRpb24+NzI8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgICAgIDx0aWZmOllSZXNvbHV0aW9uPjcyPC90aWZmOllSZXNvbHV0aW9uPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+ODc8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpDb2xvclNwYWNlPjE8L2V4aWY6Q29sb3JTcGFjZT4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjYwPC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgICAgPGRjOnN1YmplY3Q+CiAgICAgICAgICAgIDxyZGY6QmFnLz4KICAgICAgICAgPC9kYzpzdWJqZWN0PgogICAgICAgICA8eG1wOk1v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"></img></h1>
+    
+
+    <div class="section clearfix">
+    <h3>Congratulations, <strong>GOAL</strong> is now activated in Firefox!</h3>
+    <p class="lead">Services like <strong>GOAL</strong> help you to keep up with
+    friends, see the stories people are talking about and more. Keep on reading
+    to find out more about how these features work.
+    <h3>Next Steps</h3>
+    <dl>
+      <li><a href="activated/goal.html#documentation">Learn more about what this service adds to Firefox</a>.</li>
+
+      <li><a href="http://www.goal.com">Learn more</a> about what <a href="http://www.goal.com">GOAL</a> provides.</li>
+
+      <li><a href=".">Explore and find more services</a> you can add to Firefox.</li>
+    </dl>
+    </p>
+    </div>
+
+    <a id="documentation"></a>
+
+
+
+
+    <div class="section clearfix">
+      <h4>Sidebar</h4>
+      <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <p class="lead"><strong>GOAL</strong> provides updated content in a sidebar in Firefox.</p>
+    </div>
+
+      <div class="section clearfix">
+      <img src="../images/sidebarselect.png"
+      alt="[share button image]" style="float: right; max-width: 400px;
+      margin-left: 20px;"/>
+      <p class="lead">You can easily change the service in your sidebar, or
+      hide the sidebar, from the sidebar itself. You can also use the
+      <strong>View->Toolbars menu</strong> in Firefox.</p>
+      </div>
+      
+      <div class="section clearfix">
+      <img src="../images/sidebarbutton.png"
+      alt="[share button image]" style="float: right; max-width: 400px;
+      margin-left: 20px;"/>
+      <p class="lead">Starting with Firefox 30, You can also manage your
+      sidebars using the sidebar toolbarbutton. You can find the sidebar toolbar
+      button in the
+      <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">customization palette</a>.</p>
+      </div>
+
+
+    <div class="section clearfix">
+      <h4>Managing your services</h4>
+
+      <div class="section clearfix">
+      <img src="../images/addonsmanager.png" alt="Add-ons Manager" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <p class="lead">You can easily manage your services, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.</p>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              <p>
+                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+              </p>
+          </div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
+            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
+            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
+            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
+            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
+            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">SocialAPI for Developers</a></li>
+          </ul>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

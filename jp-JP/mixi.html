@@ -39,7 +39,16 @@
     });
 
     function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
 
+      node.setAttribute("data-service", JSON.stringify(data));
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
       ga('send', 'event', 'click', 'activation', name);
