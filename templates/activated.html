@@ -19,28 +19,42 @@
     {% else %}
     <h1><img src="{{lang['default']['images']['logo']}}"></img> {{lang['default']['name']}}</h1>
     {% endif %}
-
-    <div class="section clearfix">
     <h3>Congratulations, <strong>{{manifest['name']}}</strong> is now activated in Firefox!</h3>
     <p class="lead">Services like <strong>{{manifest['name']}}</strong> help you to keep up with
     friends, see the stories people are talking about and more. Keep on reading
-    to find out more about how these features work.
-    <h3>Next Steps</h3>
-    <dl>
-      <li><a href="activated/{{key}}.html#documentation">Learn more about what this service adds to Firefox</a>.</li>
-{% if manifest['homepageURL'] %}
-      <li><a href="{{manifest['homepageURL']}}">Learn more</a> about what <a href="{{manifest['homepageURL']}}">{{manifest['name']}}</a> provides.</li>
-{% endif %}
-      <li><a href=".">Explore and find more services</a> you can add to Firefox.</li>
-    </dl>
-    </p>
-    </div>
+    to find out more about how these features work.</p>
 
     <a id="documentation"></a>
+{% if manifest['sidebarURL'] %}
+
+      <div class="section clearfix">
+      <h4>Get the most out of your {{manifest['name']}} sidebar</h4>
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../{{lang['default']['images']['sidebarmenu'] or "../images/sidebarselect.png"}}"
+      alt="[sidebar selection image]" style="float: right;"/>
+      </div>
+      <p class="lead">You can easily change the service in your sidebar, or
+      hide the sidebar, from the sidebar itself. You can also use the
+      <strong>View->Toolbars menu</strong> in Firefox.</p>
+      </div>
+      
+      <div class="section clearfix">
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../{{lang['default']['images']['sidebarbutton'] or "../images/sidebarbutton.png"}}"
+      alt="[sidebar button image]" style="float: right;"/>
+      </div>
+      <p class="lead">Starting with Firefox 30, You can also manage your
+      sidebars using the sidebar toolbarbutton. You can find the sidebar toolbar
+      button in the
+      <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">customization palette</a>.</p>
+      </div>
+{% endif %}
 {% if manifest['shareURL'] %}
     <div class="section clearfix">
-      <h4>Share content you like</h4>
-      <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <h4>Share content you like through {{manifest['name']}}</h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../{{lang['default']['images']['share'] or "../images/share.png"}}" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
       <p class="lead"><img src="../images/sharebutton.png"
       alt="[share button image]"/> With the click of a button, you can Share interesting
       content on any website with your social network through <strong>{{manifest['name']}}</strong>.</p>
@@ -49,7 +63,7 @@
 {% if manifest['markURL'] %}
     <div class="section clearfix">
       <h4>Save content for later</h4>
-      <img src="../images/bookmarking.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <img src="../{{lang['default']['images']['bookmark'] or "../images/bookmark.png"}}" alt="Bookmarking" style="float: right; max-width: 400px; margin-left: 20px;"/>
       <p class="lead">With the click of a button, you can save interesting
       content on any website to <strong>{{manifest['name']}}</strong>.</p>
     </div>
@@ -57,44 +71,31 @@
 {% if manifest['statusURL'] %}
     <div class="section clearfix">
       <h4>Keep an eye on the latest from <strong>{{manifest['name']}}</strong></h4>
-      <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <img src="../{{lang['default']['images']['status'] or "../images/status.png"}}" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
       <p class="lead"><strong>{{manifest['name']}}</strong> will provide you with the latest from their service, just click on their icon in the toolbar.</p>
     </div>
 {% endif %}
-{% if manifest['sidebarURL'] %}
-    <div class="section clearfix">
-      <h4>Sidebar</h4>
-      <img src="../images/sidebar.png" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead"><strong>{{manifest['name']}}</strong> provides updated content in a sidebar in Firefox.</p>
-    </div>
-
-      <div class="section clearfix">
-      <img src="../images/sidebarselect.png"
-      alt="[share button image]" style="float: right; max-width: 400px;
-      margin-left: 20px;"/>
-      <p class="lead">You can easily change the service in your sidebar, or
-      hide the sidebar, from the sidebar itself. You can also use the
-      <strong>View->Toolbars menu</strong> in Firefox.</p>
-      </div>
-      
-      <div class="section clearfix">
-      <img src="../images/sidebarbutton.png"
-      alt="[share button image]" style="float: right; max-width: 400px;
-      margin-left: 20px;"/>
-      <p class="lead">Starting with Firefox 30, You can also manage your
-      sidebars using the sidebar toolbarbutton. You can find the sidebar toolbar
-      button in the
-      <a href="http://www.mozilla.org/en-US/firefox/desktop/customize/">customization palette</a>.</p>
-      </div>
-{% endif %}
 
     <div class="section clearfix">
-      <h4>Managing your services</h4>
+      <h4>Change Settings from the Add-on Manager</h4>
 
       <div class="section clearfix">
-      <img src="../images/addonsmanager.png" alt="Add-ons Manager" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.png" alt="Add-ons Manager" style="float: right;"/>
+      </div>
       <p class="lead">You can easily manage your services, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.</p>
       </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4>Next Steps</h4>
+    <dl>
+      <li><a href="activated/{{key}}.html#documentation">Learn more about what this service adds to Firefox</a>.</li>
+{% if manifest['homepageURL'] %}
+      <li><a href="{{manifest['homepageURL']}}">Learn more</a> about what <a href="{{manifest['homepageURL']}}">{{manifest['name']}}</a> provides.</li>
+{% endif %}
+      <li><a href=".">Explore and find more services</a> you can add to Firefox.</li>
+    </dl>
     </div>
 
     </div>
