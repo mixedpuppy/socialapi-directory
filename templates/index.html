@@ -85,4 +85,10 @@
       </div>
     </div>
   </div>
+{% if not production %}
+  <script>
+    $.featherlight("#aboutModel");
+  </script>
+{% endif %}
+
 {% endblock %}
