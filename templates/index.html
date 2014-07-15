@@ -87,6 +87,7 @@
   </div>
 {% if not production %}
   <script>
+    $("#directory-domain").text(location.origin);
     $.featherlight("#aboutModel");
   </script>
 {% endif %}
