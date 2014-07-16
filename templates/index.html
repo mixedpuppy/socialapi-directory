@@ -1,4 +1,17 @@
 {% extends "layout.html" %}
+{% block head %}
+  <script>
+    $(document).ready(function($) {
+      // adjust the height of our directory listing so everything lines up nice
+      var boxes = $('.provider-entry-inner');
+      var maxHeight = Math.max.apply(
+        Math, boxes.map(function() {
+          return $(this).height();
+        }).get());
+      boxes.height(maxHeight);
+    });
+  </script>
+{% endblock %}
 {% block content %}
   <div id="carousel-promotions" class="carousel">
     <div class="carousel-wrapper">
@@ -54,15 +67,13 @@
       site includes both live services and design mockups that we have created.
       These are useful as examples and UI testing. Several of these will not work
       in several ways. In most cases they are not provided by the website linked
-      to.  Some of the demos use the mobile websites, you may need to install a <a
-      href="https://addons.mozilla.org/en-US/firefox/addon/wmlbrowser/">WML
-      extension for Firefox.</a> You should also read the
+      to. You should also read the
       <a href="#" data-featherlight="#aboutModel">instructions to use this
       site.</a></p>
 {% endif %}
       </div>
       <div id="directory-grid" class="row">
-      {% for p in source.itervalues() %}
+      {% for p in source %}
       <div class="provider-entry col-2 clearfix">
         <a href="{{p['key']}}.html">
         <div class="provider-entry-inner clearfix">
@@ -73,10 +84,18 @@
           {% endif %}
           <p class="provider-description">{{p['lang']['default']['shortDescription']}}</p>
           {% if p['manifest'] %}
-          <span class="provider-features"><span {% if p['manifest']['shareURL'] %}class="supported"{% endif %} title="This service supports sharing content">share</span> 
-          <span {% if p['manifest']['markURL'] %}class="supported"{% endif %} title="This service provides bookmarking functionality">bookmarking</span> 
-          <span {% if p['manifest']['sidebarURL'] %}class="supported"{% endif %} title="This service adds a sidebar to Firefox">sidebar</span> 
-          <span {% if p['manifest']['statusURL'] %}class="supported"{% endif %} title="This service adds a toolbar button to Firefox that may have notifications">notifications</span></span>
+          <span class="provider-features">
+          <span {% if p['manifest']['shareURL'] %}class="supported" title="This service supports sharing content"{% endif %}>share</span> 
+          <span {% if p['manifest']['markURL'] %}class="supported" title="This service provides bookmarking functionality"{% endif %}>bookmarking</span> 
+          <span {% if p['manifest']['sidebarURL'] %}class="supported" title="This service adds a sidebar to Firefox"{% endif %}>sidebar</span> 
+          <span {% if p['manifest']['statusURL'] %}class="supported" title="This service adds a toolbar button to Firefox that may have notifications"{% endif %}>notifications</span>
+          {% if p['minver'] and p['minver'] > releases[0] %}
+          <span class="supported" title="This service requires an unreleased version of Firefox">beta</span>
+          {% endif %}
+          {% if p['demo'] %}
+          <span class="supported" title="This is a demo service">demo</span>
+          {% endif %}
+          </span>
           {% endif %}
         </div>
         </a>

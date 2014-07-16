@@ -47,11 +47,22 @@ def createapp():
     p['manifestData'] = json.dumps(p['manifest'])
     return p
   
+  def firefoxReleases(schedule):
+    from datetime import datetime
+    today = datetime.today()
+    last = []
+    for d, a in schedule.iteritems():
+        last = a
+        if today > datetime.strptime(d, "%Y-%m-%d"):
+            return a
+    return last
+
   def renderTemplate(template, data, locale, path=None, base=""):
     print "locale: ", locale
     if demo:
         # add any mockup providers to our directory
         for k, p in data["demo"].iteritems():
+          p["demo"] = True
           data["source"][k] = p
     data["production"] = not demo
     basehref = ""
@@ -79,11 +90,11 @@ def createapp():
       d['production'] = data['production']
       d["basehref"] = basehref
       #print >> sys.stdout, json.dumps(d)
+      d["releases"] = firefoxReleases(data["firefox-releases"])
       return render_template(template, **d)
     else:
       for k, p in data["source"].iteritems():
         dataFixup(k, p, locale)
-
       if locale in data["carousel"]:
         names = data["carousel"][locale]
       else:
@@ -91,8 +102,13 @@ def createapp():
       data["slider"] = []
       for name in names:
         data["slider"].append(data["source"][name])
-  
+
+      keys = data["source"].keys()
+      keys.sort()
+      data["source"] = [data["source"][key] for key in keys]
+
       data["basehref"] = basehref
+      data["releases"] = firefoxReleases(data["firefox-releases"])
       return render_template(template, **data)
   
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
