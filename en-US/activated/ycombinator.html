@@ -1,7 +1,7 @@
 <html>
 <head>
   <base href="/en-US/"/>
-  <title>delicious for Firefox</title>
+  <title>Y Combinator for Firefox</title>
   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
   <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
@@ -59,45 +59,6 @@
     }
   </script>
   
-  <script>
-    var releases = [30, 31, 32, 33];
-    var minver = ;
-    $(document).ready(function($) {
-      // check the minver of this provider against firefox
-      // requires firefox 29 to activate
-      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
-        ffVersion = 1; // we're only doing minver compare
-      if (uMatch && uMatch.length > 1) {
-        ffVersion = parseInt(uMatch[1]);
-      }
-      if (ffVersion < minver) {
-        if (minver > releases[0]) {
-          $("#beta-required").removeAttr("hidden");
-          $("#incompatibility-banner").removeAttr("hidden");
-        }
-        $(".button").removeAttr("onclick");
-        switch (releases.indexOf(minver)) {
-          case 1:
-            $(".button").html("Install Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
-            break;
-          case 2:
-            $(".button").html("Install Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
-            break;
-          case 3:
-            $(".button").html("Install Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
-            break;
-          default:
-            $(".button").html("Upgrade Firefox <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
-            break;
-        }
-      }
-    });
-  </script>
-
 </head>
 <body class="html-ltr sky">
   <div id="outer-wrapper">
@@ -126,51 +87,71 @@
   
 
   <div id="wrapper" class="content">
-    <div id="detail">
-      <div class="detail-header clearfix">
-        <div>
-        <a href=".">Home</a>
-        </div>
-        <div>
-        <span>delicious</span>
-        </div>
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Home</a>
       </div>
-      <div class="detail-content">
-
-
-      <div class="row">
-        <div class="col-2">
-          <div class="provider-item-detail">
-          
-          <h1><img src="images/delicious/delicious-logo.png"></img></h1>
-          
-            <h3 class="tagline">Never lose a link again.</h3>
-            <p class="lead">Delicious remembers so you don&#39;t have to.</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'delicious')" data-service="{&#34;activities&#34;: {&#34;share&#34;: {&#34;disposition&#34;: &#34;inline&#34;, &#34;filters&#34;: {&#34;type&#34;: [&#34;*&#34;]}, &#34;href&#34;: &#34;https://mozsocial.cliqz.com/share-panel?url=%{url}&amp;title=%{title}&amp;version=2&#34;, &#34;returnValue&#34;: false}}, &#34;author&#34;: &#34;AVOS Systems, Inc.&#34;, &#34;description&#34;: &#34;Delicious is a free service designed with care to be the best place to save what you love on the web.&#34;, &#34;homepageURL&#34;: &#34;https://delicious.com&#34;, &#34;icon32URL&#34;: &#34;https://delicious.com/img/logo.png&#34;, &#34;icon64URL&#34;: &#34;https://delicious.com/img/logo.png&#34;, &#34;iconURL&#34;: &#34;https://delicious.com/img/logo-16.png&#34;, &#34;name&#34;: &#34;Delicious&#34;, &#34;origin&#34;: &#34;https://delicious.com&#34;, &#34;shareURL&#34;: &#34;https://delicious.com/save?url=%{url}&amp;title=%{title}&amp;note=%{text}&amp;source=firefox&#34;, &#34;sidebarURL&#34;: &#34;https://delicious.com/?mozsidebar=1&#34;, &#34;version&#34;: &#34;1.0.0&#34;}">Activate now <span>&raquo;</span></a>
-            <div class="provider-description">Delicious is a free service designed with care to be the best place to save what you love on the web.</div>
-
-          
-            <a href="https://delicious.com/about" class="moreinfo" target="_blank">Learn More</a>
-          
-          </div>
-
-        </div>
-        <div class="col-2 clearfix">
-          <div class="clearfix"><img src="images/delicious/delicious.png" class="provider-primary-image" /></div>
-        
-        </div>
-      </div>
-        
-        <span class="features"><span class="supported" title="This service supports sharing content">share</span> 
-        <span  title="This service provides bookmarking functionality">bookmarking</span> 
-        <span class="supported" title="This service adds a sidebar to Firefox">sidebar</span> 
-        <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span>
-        
-        
-        </span>
-        
+      <div>
       </div>
     </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="images/ycombinator/yc200.png"></img></h1>
+    
+    <h3>Congratulations, <strong>Y Combinator</strong> is now activated in Firefox!</h3>
+    <a id="documentation"></a>
+    <ol>
+      <div class="section clearfix">
+      <h4><li>Get the most from the Y Combinator service</li></h4>
+      <p class="lead"><img src="../images/bookmarked.png"
+      alt="[bookmark button image]" style="vertical-align: text-bottom"/> Bookmark this page</p>
+      <p class="lead">If you're new to this service, bookmark this page, it
+    contains useful information and links to further help using and customizing
+    Firefox.  Keep reading to learn more about how the Y Combinator service
+    works in Firefox.</p>
+      </div>
+
+
+    <div class="section clearfix">
+      <h4><li>Share content you like through Y Combinator</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> With the click of a button, you can Share interesting
+      content on any website with your social network through <strong>Y Combinator</strong>.</p>
+    </div>
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Change Settings from the Add-on Manager</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Add-ons Manager" style="float: right;"/>
+      </div>
+      <p class="lead">You can easily <a href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Next Steps</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/en-US/kb/add-social-features-firefox-sidebar">Learn more about what this service adds to Firefox</a>.</li>
+
+      <li><a href="https://news.ycombinator.com/">Learn more</a> about what <a href="https://news.ycombinator.com/">Y Combinator</a> provides.</li>
+
+      <li><a href=".">Explore and find more services</a> you can add to Firefox.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
   </div>
 
 

@@ -1,7 +1,7 @@
 <html>
 <head>
   <base href="/en-US/"/>
-  <title>delicious for Firefox</title>
+  <title>Soundcloud for Firefox</title>
   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
   <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
@@ -59,45 +59,6 @@
     }
   </script>
   
-  <script>
-    var releases = [30, 31, 32, 33];
-    var minver = ;
-    $(document).ready(function($) {
-      // check the minver of this provider against firefox
-      // requires firefox 29 to activate
-      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
-        ffVersion = 1; // we're only doing minver compare
-      if (uMatch && uMatch.length > 1) {
-        ffVersion = parseInt(uMatch[1]);
-      }
-      if (ffVersion < minver) {
-        if (minver > releases[0]) {
-          $("#beta-required").removeAttr("hidden");
-          $("#incompatibility-banner").removeAttr("hidden");
-        }
-        $(".button").removeAttr("onclick");
-        switch (releases.indexOf(minver)) {
-          case 1:
-            $(".button").html("Install Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
-            break;
-          case 2:
-            $(".button").html("Install Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
-            break;
-          case 3:
-            $(".button").html("Install Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
-            break;
-          default:
-            $(".button").html("Upgrade Firefox <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
-            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
-            break;
-        }
-      }
-    });
-  </script>
-
 </head>
 <body class="html-ltr sky">
   <div id="outer-wrapper">
@@ -126,51 +87,82 @@
   
 
   <div id="wrapper" class="content">
-    <div id="detail">
-      <div class="detail-header clearfix">
-        <div>
-        <a href=".">Home</a>
-        </div>
-        <div>
-        <span>delicious</span>
-        </div>
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Home</a>
       </div>
-      <div class="detail-content">
-
-
-      <div class="row">
-        <div class="col-2">
-          <div class="provider-item-detail">
-          
-          <h1><img src="images/delicious/delicious-logo.png"></img></h1>
-          
-            <h3 class="tagline">Never lose a link again.</h3>
-            <p class="lead">Delicious remembers so you don&#39;t have to.</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'delicious')" data-service="{&#34;activities&#34;: {&#34;share&#34;: {&#34;disposition&#34;: &#34;inline&#34;, &#34;filters&#34;: {&#34;type&#34;: [&#34;*&#34;]}, &#34;href&#34;: &#34;https://mozsocial.cliqz.com/share-panel?url=%{url}&amp;title=%{title}&amp;version=2&#34;, &#34;returnValue&#34;: false}}, &#34;author&#34;: &#34;AVOS Systems, Inc.&#34;, &#34;description&#34;: &#34;Delicious is a free service designed with care to be the best place to save what you love on the web.&#34;, &#34;homepageURL&#34;: &#34;https://delicious.com&#34;, &#34;icon32URL&#34;: &#34;https://delicious.com/img/logo.png&#34;, &#34;icon64URL&#34;: &#34;https://delicious.com/img/logo.png&#34;, &#34;iconURL&#34;: &#34;https://delicious.com/img/logo-16.png&#34;, &#34;name&#34;: &#34;Delicious&#34;, &#34;origin&#34;: &#34;https://delicious.com&#34;, &#34;shareURL&#34;: &#34;https://delicious.com/save?url=%{url}&amp;title=%{title}&amp;note=%{text}&amp;source=firefox&#34;, &#34;sidebarURL&#34;: &#34;https://delicious.com/?mozsidebar=1&#34;, &#34;version&#34;: &#34;1.0.0&#34;}">Activate now <span>&raquo;</span></a>
-            <div class="provider-description">Delicious is a free service designed with care to be the best place to save what you love on the web.</div>
-
-          
-            <a href="https://delicious.com/about" class="moreinfo" target="_blank">Learn More</a>
-          
-          </div>
-
-        </div>
-        <div class="col-2 clearfix">
-          <div class="clearfix"><img src="images/delicious/delicious.png" class="provider-primary-image" /></div>
-        
-        </div>
-      </div>
-        
-        <span class="features"><span class="supported" title="This service supports sharing content">share</span> 
-        <span  title="This service provides bookmarking functionality">bookmarking</span> 
-        <span class="supported" title="This service adds a sidebar to Firefox">sidebar</span> 
-        <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span>
-        
-        
-        </span>
-        
+      <div>
       </div>
     </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0QUYwOTFEQzM3MjA2ODExODA4M0NFNkVDMjIxNUJBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjBFQTlEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjA3MEJEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjAyRjcwMEEyNzIwNjgxMTgwODNFODYzNzgwNTM4MEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEFGMDkxREMzNzIwNjgxMTgwODNDRTZFQzIyMTVCQUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz719pF8AAAEsUlEQVR42uxbXWwUVRT+Zn+62539tSzblRahaEpbwk/BSNKE+IA2CpYYI7ESYgKJD/rSmKgJiTwQicYHw0MTX4wmBhN/Ai9KYjQx+iAPGmlFxFLaIv2hQouFUunSlh3POTPurmVKutPZGpp7s5l8vXP37vnu951z7+ymmnEkgXu/+TA5tgRoeLAkmg+GoqFoKBqKhqKhaCga9yiNrFJD0VCmUqZSplpKagQiePgF1D2J9HroFcjexvgwRnvQ+x06PsHYxQVOrxltpedQvwOtHyKctL9LlDo/xZcHFkLGw2qU4gUNjXssvO/4nBw4BC8an8frv2JTq+OP83BulOKV3oi9R/lK2Fs2L9ft/Rjb2px9XMnUiFdzcJX1ReSepuHpd7Fp9/+hhjeIl7/m66x+XVyUWFVcJSQmre8jVr0oamg+NB9g9xOuWIO1j6GygXEwhoNdCEQZx+7nsOJVRVfCYAQtby2KGjVNaDmMVEN+1UMVkg/rkapF9WbGoWXcT5ntYF/a8lyxgjhSI5LiD4umGYfuk3CXizKrGS+vZUybA+Sug32Jatfm3aVXw1xpIpMVHajpyxgnVjJOPsi4PGY5xNkpYe32ItW4y21/GPuPUhYzDqdw6Cx8IcEFhjE3BItGlahUKTTiUkbDDmnUb0f7BN7L4GAnWg7xwjk31aot2LqH7U64ZivSdajaUGCkpGD5XSEUZ2xSiojBTDXKdIeHHY8PAR2+AKo34Kk38HYvGp8p0lRrmrD6EQaRSqvaZCUTcthcaV3S2qRBPTzepJHMmwpw5+hZHsVLnzOTItR44lU0vyJF0wx9RR4npICGhAYRmIVJB6Ynae31yT7gce3oSVvK/g8sqeelRmKF5W+z2pg5YK40kckpoCcK1IiKAtF8WpOdFpLic2nyeNu8U5wyOCIpZa50NFVAqaDfTF8rByT1g2E5+5f9J3R3n2c27rSlYfe8EYqxJThlJfSApKlekMpl5fl+f5Cx1y+7eCTfb1ICXH6eSdfaTmj39Efaebz5VTeNoUt1IgKEqYBQ8wvOhT5LAZqBp4q4rMbMlO2EdjToOUYTs2leazmzYhWzDmYl28y9NvdezWtvJJrKXRqX+2wntKtUo/248geDCfmR9tZNxjevM57KML4+wjgzwXg6w3hynDFdISMNuZsb42I7dcK2Utmp0f8bpia5f3yU/6SgCV+7wph6CN+4ypiu2X+pTt+yMBmSqBLO/M3pce2ym2rQMn1xZA5T3blaH72G2zPcPzYsOl5g/NclxnQlTMHl8NUhPEQCDjIe6UfyARaTxw8hnmIPuKWGYaB9n7WaNqa6s34NdmNYLHiph4f0/cJ4ZICx2U/hQu4SHpYxf/bK+G7Gg12CzzPu7WBMi7JQHW7gnWfxwzFHZ6qTx3F4F87/xHjoHE838LtgCbf/LOOBLsY9pxhfOM24+0fGfR2Mz3zP+EQ7DEfeImfSPJ+9iRdrcPLYXULVjJ3zPgusbMDFM+JEP9Y9itPfciHyB9DYjJ+/4lJI1WzdNg59ZhpBHXVN6PyGzVD6phk71Jef6qtopYb6fUOZSqmhTKXUUDQUDUVD0VA0FA1FYxHbEvnHh38EGAA0eV7Yr/i+2wAAAABJRU5ErkJggg=="></img> Soundcloud</h1>
+    
+    <h3>Congratulations, <strong>Soundcloud</strong> is now activated in Firefox!</h3>
+    <a id="documentation"></a>
+    <ol>
+      <div class="section clearfix">
+      <h4><li>Get the most from the Soundcloud service</li></h4>
+      <p class="lead"><img src="../images/bookmarked.png"
+      alt="[bookmark button image]" style="vertical-align: text-bottom"/> Bookmark this page</p>
+      <p class="lead">If you're new to this service, bookmark this page, it
+    contains useful information and links to further help using and customizing
+    Firefox.  Keep reading to learn more about how the Soundcloud service
+    works in Firefox.</p>
+      </div>
+
+      <div class="section clearfix">
+      <h4><li>Add the Sidebars button to your toolbar</li></h4>
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarbutton.png"
+      alt="[sidebar button image]" style="float: right;"/>
+      </div>
+      <p class="lead">Starting with Firefox 30, you can manage your sidebars
+      using the Sidebars toolbar button. The Sidebars button is located in the
+      <a href="https://support.mozilla.org/en-US/kb/use-firefox-sidebar-access-bookmarks-history-and-s">
+        customization palette</a>, just drag the button to your toolbar for fast
+        switching between sidebars.</p>
+      </div>
+
+      <div class="section clearfix">
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarselect.png"
+      alt="[sidebar selection image]" style="float: right;"/>
+      </div>
+      <p class="lead">Additionally, you can easily change the service in your
+      sidebar, or hide the sidebar, from the sidebar itself. You can also use
+      the <strong>View->Toolbars</strong> menu in Firefox.</p>
+      </div>
+
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Change Settings from the Add-on Manager</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Add-ons Manager" style="float: right;"/>
+      </div>
+      <p class="lead">You can easily <a href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Next Steps</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/en-US/kb/add-social-features-firefox-sidebar">Learn more about what this service adds to Firefox</a>.</li>
+
+      <li><a href=".">Explore and find more services</a> you can add to Firefox.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
   </div>
 
 

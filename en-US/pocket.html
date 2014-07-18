@@ -58,6 +58,46 @@
       ga('send', 'event', 'click', 'activation', name);
     }
   </script>
+  
+  <script>
+    var releases = [30, 31, 32, 33];
+    var minver = ;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Install Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Install Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Install Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Upgrade Firefox <span>&raquo;</span><br/><span class=\"smaller\">requires Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
 </head>
 <body class="html-ltr sky">
   <div id="outer-wrapper">
@@ -80,7 +120,8 @@
 
   <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">You must use Firefox to install Social services.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Download.</a>
   </p><p id="upgrade-required" hidden="true">Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Download.</a>
-  </p></div>
+  </p><p id="beta-required" hidden="true">This service requires an unreleased version of Firefox.</p>
+  </div>
 
   
 
@@ -95,6 +136,8 @@
         </div>
       </div>
       <div class="detail-content">
+
+
       <div class="row">
         <div class="col-2">
           <div class="provider-item-detail">
@@ -110,18 +153,22 @@
             <a href="https://getpocket.com/firefox" class="moreinfo" target="_blank">Learn More</a>
           
           </div>
-          
-          <span class="features"><span  title="This service supports sharing content">share</span> 
-          <span class="supported" title="This service provides bookmarking functionality">bookmarking</span> 
-          <span  title="This service adds a sidebar to Firefox">sidebar</span> 
-          <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span></span>
-          
+
         </div>
         <div class="col-2 clearfix">
           <div class="clearfix"><img src="images/pocket/pocket.png" class="provider-primary-image" /></div>
         
         </div>
       </div>
+        
+        <span class="features"><span  title="This service supports sharing content">share</span> 
+        <span class="supported" title="This service provides bookmarking functionality">bookmarking</span> 
+        <span  title="This service adds a sidebar to Firefox">sidebar</span> 
+        <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span>
+        
+        
+        </span>
+        
       </div>
     </div>
   </div>
