@@ -456,10 +456,9 @@
           }
         }
       }
-    }
-  },
-  "demo": {
+    },
     "google": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "name": "Google Plus",
@@ -482,6 +481,7 @@
       }
     },
     "gmail": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "name": "GMail",
@@ -503,6 +503,7 @@
       }
     },
     "twitter": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "name": "Twitter",
@@ -523,6 +524,7 @@
       }
     },
     "linkedin": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "name": "LinkedIn",
@@ -546,6 +548,7 @@
       }
     },
     "tumblr": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "origin": "https://www.tumblr.com",
@@ -578,6 +581,7 @@
       }
     },
     "vkontakte": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "origin": "https://vk.com",
@@ -613,6 +617,7 @@
       }
     },
     "pinterest": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "name": "Pinterest",
@@ -647,6 +652,7 @@
       }
     },
     "stumbleupon": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "origin": "https://www.stumbleupon.com",
@@ -681,6 +687,7 @@
     },
     
     "ycombinator": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "origin": "https://news.ycombinator.com/",
@@ -714,6 +721,7 @@
       }
     },
     "reddit": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "origin": "http://www.reddit.com",
@@ -747,6 +755,7 @@
       }
     },
     "digg": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "name": "Digg",
@@ -767,6 +776,7 @@
       }
     },
     "soundcloud": {
+      "demo": true,
       "manifest": {
         "name": "Soundcloud",
         "iconURL": "http://soundcloud.com/favicon.ico",
@@ -783,6 +793,7 @@
       }
     },
     "odnoklassniki": {
+      "demo": true,
       "manifest": {
         "origin": "http://www.odnoklassniki.ru/",
         "name": "Odnoklassniki",
@@ -813,6 +824,7 @@
       }
     },
     "weiboshare": {
+      "demo": true,
       "minver": 32,
       "manifest": {
         "author": "SINA Corporation",
@@ -847,6 +859,7 @@
       }
     },
     "demo": {
+      "demo": true,
       "manifest": {
         "origin": "https://socialapi-demo.paas.allizom.org",
         "name": "Demo Social Service",

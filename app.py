@@ -59,11 +59,6 @@ def createapp():
 
   def renderTemplate(template, data, locale, path=None, base=""):
     print "locale: ", locale
-    if demo:
-        # add any mockup providers to our directory
-        for k, p in data["demo"].iteritems():
-          p["demo"] = True
-          data["source"][k] = p
     data["production"] = not demo
     basehref = ""
     if path:

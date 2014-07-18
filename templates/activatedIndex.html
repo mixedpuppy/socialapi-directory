@@ -14,7 +14,7 @@
 
     <div class="detail-content">
 
-{% for p in source.itervalues() %}
+{% for p in source %}
   <li><a href="/{{basehref}}activated/{{p['key']}}.html">{{p['lang']['default']['name']}}</a></li>
 {% endfor %}
 
