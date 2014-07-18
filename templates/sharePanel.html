@@ -105,7 +105,7 @@
     <span>Click on a service to add it to Firefox.</span>
     <div id="share-directory">
       <div id="share-directory-grid" class="row clearfix">
-      {% for p in source.itervalues() %}
+      {% for p in source %}
         {% if p['manifest']['shareURL'] %}
         <div class="button col clearfix" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
         <img src="{{p['manifest']['icon64URL']}}"></img>
