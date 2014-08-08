@@ -1,8 +1,8 @@
 import re, os, sys
 import flask
 from flask import Flask, Blueprint, request, json, render_template, redirect, url_for
+from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
-from pystache.renderer import Renderer
 import copy
 import collections
 
@@ -16,10 +16,24 @@ def createapp():
   #app.config["APPLICATION_ROOT"] = "/socialapi-directory"
   app = Flask(__name__)
   app.debug = True
+  #app.config.from_pyfile('babel.cfg')
+  babel = Babel(app)
 
   app.url_map.converters['regex'] = RegexConverter
 
   bp = Blueprint('bp', __name__)
+
+
+  @babel.localeselector
+  def get_locale():
+    lang = request.path[1:].split('/', 1)[0].replace('-', '_')
+    print "locale is ", lang
+    langs = [str(b) for b in babel.list_translations()]
+    print langs
+    if lang in langs:
+      return lang
+    else:
+      return 'en_US'
 
   def dataFixup(k, p, locale):
     p['key'] = k
