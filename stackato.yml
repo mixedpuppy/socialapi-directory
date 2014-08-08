@@ -7,4 +7,5 @@ processes:
 requirements:
   pip:
     - flask
-    - babel
+    - flask-babel
+    - pystache
