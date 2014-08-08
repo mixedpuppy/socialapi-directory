@@ -98,6 +98,14 @@ def createapp():
       for name in names:
         data["slider"].append(data["source"][name])
 
+      data["shareProviders"] = []
+      if locale in data["sharePanel"]:
+        names = data["sharePanel"][locale]
+      else:
+        names = data["sharePanel"]["en-US"]
+      for name in names:
+        data["shareProviders"].append(data["source"][name])
+
       keys = data["source"].keys()
       keys.sort()
       data["source"] = [data["source"][key] for key in keys]
@@ -164,14 +172,14 @@ def createapp():
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def index(base, locale):
     # if root is locale, capture that, but use the same local file paths
-    if locale != "en-US":
+    if not demo and locale != "en-US":
         return app.send_static_file("redir.html")
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate('index.html', appData, locale, base=base)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def app_index(locale):
-    if locale != "en-US":
+    if not demo and locale != "en-US":
         return app.send_static_file("redir.html")
     return index(None, locale)
 

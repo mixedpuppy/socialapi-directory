@@ -102,10 +102,10 @@
 
 <body class="html-ltr sky">
   <div id="wrapper" class="content">
-    <span>Click on a service to add it to Firefox.</span>
+    <span>{{strings['share-activate-message']}}</span>
     <div id="share-directory">
       <div id="share-directory-grid" class="row clearfix">
-      {% for p in source %}
+      {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
         <div class="button col clearfix" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
         <img src="{{p['manifest']['icon64URL']}}"></img>
@@ -114,7 +114,7 @@
       {% endfor %}
       </div>
       <div class="bottom row clearfix">
-        <a href="/" target="_blank" class="viewmore">View more</a>
+        <a href="/" target="_blank" class="viewmore">{{strings['share-viewmore']}}</a>
       </div>
     </div>
   </div>
