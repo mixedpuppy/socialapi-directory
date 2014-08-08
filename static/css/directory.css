@@ -383,6 +383,39 @@ p {
   text-align: inherit;
 }
 
+#colophon li{
+	margin:0;
+	list-style-type:none
+}
+
+#colophon .links-social li ul{
+	display:inline;
+	margin:0
+}
+
+#colophon .links-social li li{
+	display:inline
+}
+
+#colophon .links-social li li:before{
+	content:"\00B7\00A0"
+}
+
+#colophon .links-social li li:first-child:before{
+	content:""
+}
+
+#colophon .links-social li li span{
+	position:absolute!important;
+	height:1px;
+	width:1px;
+	margin:-1px;
+	overflow:hidden;
+	clip:rect(0 0 0 0);
+	padding:0;
+	border:0
+}
+
 .sky a.button {
   font-family: 'Open Sans Light','Droid Arabic Naskh','Mplus Fulah Light',sans-serif;
   color: white;

@@ -23,6 +23,12 @@ def createapp():
 
   bp = Blueprint('bp', __name__)
 
+  def get_supported_locales():
+    langs = {}
+    langs["en-US"] = "English (US)"
+    for b in babel.list_translations():
+      langs[str(b).replace('_', '-')] = b.display_name
+    return langs
 
   @babel.localeselector
   def get_locale():
@@ -84,6 +90,7 @@ def createapp():
       basehref = locale + '/'
     # add localized strings
     data["locale"] = locale
+
     if locale in data['strings']:
       data['strings'] = data['strings'][locale]
     else:
@@ -94,6 +101,7 @@ def createapp():
     if path and path in data["source"]:
       # on a detail page, just copy the specific data we need
       d = dataFixup(path, data["source"][path], locale)
+      d['translations'] = get_supported_locales()
       d['strings'] = data['strings']
       d['locale'] = data['locale']
       d['production'] = data['production']
@@ -126,6 +134,7 @@ def createapp():
 
       data["basehref"] = basehref
       data["releases"] = firefoxReleases(data["firefox-releases"])
+      data['translations'] = get_supported_locales()
       return render_template(template, **data)
   
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')

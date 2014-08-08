@@ -1,0 +1,61 @@
+
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/{{ locale }}/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              {% trans url="http://www.mozilla.org/en-US/foundation/licensing/website-content/" %}
+              Portions of this content are ©1998–{{ current_year }} by individual
+              mozilla.org contributors. Content available under
+              a <a href="{{ url }}">Creative Commons license</a>.
+              {% endtrans %}
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/{{ locale }}/contribute/page/">{{ _('Contribute to this page') }}</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/{{ locale }}/contact/spaces/">{{ _('Contact Us') }}</a></li>
+            <li><a href="http://www.mozilla.org/{{ locale }}/about/partnerships/">{{ _('Partner with Us') }}</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">{{ _('Donate') }}</a></li>
+            <li><a href="http://www.mozilla.org/{{ locale }}/privacy/">{{ _('Privacy Policy') }}</a></li>
+            <li><a href="http://www.mozilla.org/{{ locale }}/about/legal.html">{{ _('Legal Notices') }}</a></li>
+            <li><a href="http://www.mozilla.org/{{ locale }}/legal/fraud-report/index.html">{{ _('Report Trademark Abuse') }}</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/{{ locale }}/docs/Social_API">{{ _('SocialAPI for Developers') }}</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              {% include 'lang_switcher.html' %}
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
