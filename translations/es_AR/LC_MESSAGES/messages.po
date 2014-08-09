@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-08 13:36-0700\n"
+"POT-Creation-Date: 2014-08-08 16:55-0700\n"
 "PO-Revision-Date: 2014-08-08 14:04-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es_AR <LL@li.org>\n"
@@ -65,6 +65,11 @@ msgid ""
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
 
+#: templates/activated.html:51
+#, python-format
+msgid "Share content you like through %(name)s"
+msgstr ""
+
 #: templates/activated.html:56
 #, python-format
 msgid ""
@@ -81,6 +86,11 @@ msgstr ""
 msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
+msgstr ""
+
+#: templates/activated.html:68
+#, python-format
+msgid "Keep an eye on the latest from %(name)s"
 msgstr ""
 
 #: templates/activated.html:70
@@ -122,19 +132,62 @@ msgstr ""
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
 
-#: templates/index.html:41 templates/provider.html:71
+#: templates/footer.html:12
+#, python-format
+msgid ""
+"\n"
+"              Portions of this content are ©1998–%(current_year)s by "
+"individual\n"
+"              mozilla.org contributors. Content available under\n"
+"              a <a href=\"%(url)s\">Creative Commons license</a>.\n"
+"              "
+msgstr ""
+
+#: templates/footer.html:19
+msgid "Contribute to this page"
+msgstr ""
+
+#: templates/footer.html:24
+msgid "Contact Us"
+msgstr ""
+
+#: templates/footer.html:25
+msgid "Partner with Us"
+msgstr ""
+
+#: templates/footer.html:26
+msgid "Donate"
+msgstr ""
+
+#: templates/footer.html:27
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/footer.html:28
+msgid "Legal Notices"
+msgstr ""
+
+#: templates/footer.html:29
+msgid "Report Trademark Abuse"
+msgstr ""
+
+#: templates/footer.html:34
+msgid "SocialAPI for Developers"
+msgstr ""
+
+#: templates/index.html:40 templates/provider.html:71
 msgid "Activate Now"
 msgstr "Activar ahora"
 
-#: templates/index.html:42 templates/provider.html:75
+#: templates/index.html:41 templates/provider.html:75
 msgid "Learn More..."
 msgstr ""
 
-#: templates/index.html:59
+#: templates/index.html:58
 msgid "Enhance your Firefox experience, Get more out of the Web"
 msgstr ""
 
-#: templates/index.html:60
+#: templates/index.html:59
 msgid ""
 "Easy to use, no software or Add-ons to download and install, just click "
 "Activate and new functionality is delivered to you from the Web.  "
@@ -143,89 +196,97 @@ msgid ""
 " of the web."
 msgstr ""
 
-#: templates/index.html:87 templates/provider.html:101
+#: templates/index.html:86 templates/provider.html:101
 msgid "This service supports sharing content"
 msgstr ""
 
-#: templates/index.html:87 templates/provider.html:101
+#: templates/index.html:86 templates/provider.html:101
 msgid "share"
 msgstr ""
 
-#: templates/index.html:88 templates/provider.html:102
+#: templates/index.html:87 templates/provider.html:102
 msgid "This service provides bookmarking functionality"
 msgstr ""
 
-#: templates/index.html:88 templates/provider.html:102
+#: templates/index.html:87 templates/provider.html:102
 msgid "bookmarking"
 msgstr ""
 
-#: templates/index.html:89 templates/provider.html:103
+#: templates/index.html:88 templates/provider.html:103
 msgid "This service adds a sidebar to Firefox"
 msgstr ""
 
-#: templates/index.html:89 templates/provider.html:103
+#: templates/index.html:88 templates/provider.html:103
 msgid "sidebar"
 msgstr ""
 
-#: templates/index.html:90 templates/provider.html:104
+#: templates/index.html:89 templates/provider.html:104
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
 
-#: templates/index.html:90 templates/provider.html:104
+#: templates/index.html:89 templates/provider.html:104
 msgid "notifications"
 msgstr ""
 
-#: templates/index.html:92 templates/provider.html:106
+#: templates/index.html:91 templates/provider.html:106
 msgid "This service requires an unreleased version of Firefox"
 msgstr ""
 
-#: templates/index.html:92 templates/provider.html:106
+#: templates/index.html:91 templates/provider.html:106
 msgid "beta"
 msgstr ""
 
-#: templates/index.html:95 templates/provider.html:109
+#: templates/index.html:94 templates/provider.html:109
 msgid "This is a demo service"
 msgstr ""
 
-#: templates/index.html:95 templates/provider.html:109
+#: templates/index.html:94 templates/provider.html:109
 msgid "demo"
 msgstr ""
 
-#: templates/layout.html:38
-msgid "Get Firefox"
+#: templates/lang_switcher.html:6
+msgid "Other languages:"
 msgstr ""
 
-#: templates/layout.html:45 templates/provider.html:34
-msgid "Upgrade Firefox"
+#: templates/lang_switcher.html:15
+msgid "Go"
 msgstr ""
 
 #: templates/layout.html:45
+msgid "Get Firefox"
+msgstr ""
+
+#: templates/layout.html:52 templates/provider.html:34
+msgid "Upgrade Firefox"
+msgstr ""
+
+#: templates/layout.html:52
 msgid "requires Firefox 29"
 msgstr ""
 
-#: templates/layout.html:83
+#: templates/layout.html:90
 msgid "SocialAPI Demo"
 msgstr ""
 
-#: templates/layout.html:88
+#: templates/layout.html:95
 msgid "Firefox for desktop"
 msgstr ""
 
-#: templates/layout.html:106
+#: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
 msgstr ""
 
-#: templates/layout.html:106 templates/layout.html:107
+#: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
 msgstr ""
 
-#: templates/layout.html:107
+#: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
 
-#: templates/layout.html:108
+#: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
 msgstr ""
 

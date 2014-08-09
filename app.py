@@ -33,9 +33,7 @@ def createapp():
   @babel.localeselector
   def get_locale():
     lang = request.path[1:].split('/', 1)[0].replace('-', '_')
-    print "locale is ", lang
     langs = [str(b) for b in babel.list_translations()]
-    print langs
     if lang in langs:
       return lang
     else:
@@ -78,12 +76,10 @@ def createapp():
     return last
 
   def renderTemplate(template, data, locale, path=None, base=""):
-    print "locale: ", locale
     data["production"] = not demo
     basehref = ""
     if path:
         baseurl = os.path.dirname(path)
-        print baseurl
     if base:
       basehref = "/".join([base, locale]) + '/'
     elif locale:
@@ -91,18 +87,12 @@ def createapp():
     # add localized strings
     data["locale"] = locale
 
-    if locale in data['strings']:
-      data['strings'] = data['strings'][locale]
-    else:
-      data['strings'] = data['strings']["en-US"]
-    print "strings: ", data['strings']
     if path:
       path = os.path.splitext(path)[0]
     if path and path in data["source"]:
       # on a detail page, just copy the specific data we need
       d = dataFixup(path, data["source"][path], locale)
       d['translations'] = get_supported_locales()
-      d['strings'] = data['strings']
       d['locale'] = data['locale']
       d['production'] = data['production']
       d["basehref"] = basehref
@@ -157,7 +147,6 @@ def createapp():
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def bp_activated(base, locale=None, path=None):
-    print base, locale, path
     # if root is locale, capture that, but use the same local file paths
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
@@ -165,7 +154,6 @@ def createapp():
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def app_activated(locale=None, path=None):
-    print locale, path
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
     return renderTemplate(template, appData, locale, path)
