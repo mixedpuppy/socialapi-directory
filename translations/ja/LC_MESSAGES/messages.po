@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-08 16:55-0700\n"
+"POT-Creation-Date: 2014-08-09 10:27-0700\n"
 "PO-Revision-Date: 2014-08-08 13:42-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
@@ -53,9 +53,8 @@ msgstr ""
 msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars"
 " toolbar button. The Sidebars button is located in the <a "
-"href=\"https://support.mozilla.org/en-US/kb/use-firefox-sidebar-access-"
-"bookmarks-history-and-s\">customization palette</a>, just drag the button"
-" to your toolbar for fast switching between sidebars."
+"href=\"%(url)\">customization palette</a>, just drag the button to your "
+"toolbar for fast switching between sidebars."
 msgstr ""
 
 #: templates/activated.html:46
@@ -106,9 +105,9 @@ msgstr ""
 
 #: templates/activated.html:81
 msgid ""
-"You can easily <a href=\"https://support.mozilla.org/en-US/kb/disable-or-"
-"remove-add-ons\">manage your services</a>, disabling them temporarily or "
-"removing them, by viewing the Add-ons Manager in Firefox."
+"You can easily <a href=\"%(url)\">manage your services</a>, disabling "
+"them temporarily or removing them, by viewing the Add-ons Manager in "
+"Firefox."
 msgstr ""
 
 #: templates/activated.html:86
@@ -116,9 +115,7 @@ msgid "Next Steps"
 msgstr ""
 
 #: templates/activated.html:88
-msgid ""
-"<a href=\"https://support.mozilla.org/en-US/kb/add-social-features-"
-"firefox-sidebar\">Learn more about what this service adds to Firefox</a>."
+msgid "<a href=\"%(url)\">Learn more about what this service adds to Firefox</a>."
 msgstr ""
 
 #: templates/activated.html:90
@@ -135,43 +132,40 @@ msgstr ""
 #: templates/footer.html:12
 #, python-format
 msgid ""
-"\n"
-"              Portions of this content are ©1998–%(current_year)s by "
-"individual\n"
-"              mozilla.org contributors. Content available under\n"
-"              a <a href=\"%(url)s\">Creative Commons license</a>.\n"
-"              "
+"Portions of this content are ©1998–%(current_year)s by individual "
+"mozilla.org contributors. Content available under a <a "
+"href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
 
-#: templates/footer.html:19
+#: templates/footer.html:15
 msgid "Contribute to this page"
 msgstr ""
 
-#: templates/footer.html:24
+#: templates/footer.html:20
 msgid "Contact Us"
 msgstr ""
 
-#: templates/footer.html:25
+#: templates/footer.html:21
 msgid "Partner with Us"
 msgstr ""
 
-#: templates/footer.html:26
+#: templates/footer.html:22
 msgid "Donate"
 msgstr ""
 
-#: templates/footer.html:27
+#: templates/footer.html:23
 msgid "Privacy Policy"
 msgstr ""
 
-#: templates/footer.html:28
+#: templates/footer.html:24
 msgid "Legal Notices"
 msgstr ""
 
-#: templates/footer.html:29
+#: templates/footer.html:25
 msgid "Report Trademark Abuse"
 msgstr ""
 
-#: templates/footer.html:34
+#: templates/footer.html:30
 msgid "SocialAPI for Developers"
 msgstr ""
 
@@ -320,4 +314,41 @@ msgstr ""
 #: templates/sharePanel.html:117
 msgid "View more"
 msgstr ""
+
+#~ msgid ""
+#~ "Starting with Firefox 30, you can "
+#~ "manage your sidebars using the Sidebars"
+#~ " toolbar button. The Sidebars button "
+#~ "is located in the <a "
+#~ "href=\"https://support.mozilla.org/en-US/kb/use-"
+#~ "firefox-sidebar-access-bookmarks-history-"
+#~ "and-s\">customization palette</a>, just drag "
+#~ "the button to your toolbar for "
+#~ "fast switching between sidebars."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can easily <a "
+#~ "href=\"https://support.mozilla.org/en-US/kb/disable-or-"
+#~ "remove-add-ons\">manage your services</a>, "
+#~ "disabling them temporarily or removing "
+#~ "them, by viewing the Add-ons "
+#~ "Manager in Firefox."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "<a href=\"https://support.mozilla.org/en-US/kb/add-"
+#~ "social-features-firefox-sidebar\">Learn more "
+#~ "about what this service adds to "
+#~ "Firefox</a>."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "              Portions of this content "
+#~ "are ©1998–%(current_year)s by individual\n"
+#~ "              mozilla.org contributors. Content available under\n"
+#~ "              a <a href=\"%(url)s\">Creative Commons license</a>.\n"
+#~ "              "
+#~ msgstr ""
 
