@@ -657,7 +657,7 @@
             "learnmore": "https://vk.com/about"
           }
         },
-        "ru-RU": {
+        "ru": {
           "name": "ВКонтакте",
           "shortDescription": "ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек.",
           "description": "",
@@ -881,7 +881,7 @@
             "share": "images/odnoklassniki/share.png"
           }
         },
-        "ru-RU": {
+        "ru": {
           "name": "Одноклассники",
           "shortDescription": "Поиск одноклассников, бывших выпускников, сокурсников, сослуживцев, старых и новых друзей.",
           "description": "",
@@ -941,13 +941,13 @@
     "en-US": ["facebook", "twitter", "google", "tumblr", "gmail", "delicious"],
     "jp-JP": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "ja": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
-    "ru-RU": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
+    "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
   },
   "carousel": {
     "en-US": ["pocket", "delicious", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
-    "ru-RU": ["odnoklassniki", "vkontakte", "saavn"]
+    "ru": ["odnoklassniki", "vkontakte", "saavn"]
   }
 }
