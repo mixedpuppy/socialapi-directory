@@ -35,7 +35,7 @@
       <img src="../{{lang['default']['images']['sidebarbutton'] or "images/sidebarbutton.png"}}"
       alt="[sidebar button image]" style="float: right;"/>
       </div>
-      <p class="lead">{% trans url="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s" %}Starting with Firefox 30, you can manage your sidebars using the Sidebars toolbar button. The Sidebars button is located in the <a href="%(url)">customization palette</a>, just drag the button to your toolbar for fast switching between sidebars.{% endtrans %}</p>
+      <p class="lead">{% trans url="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s" %}Starting with Firefox 30, you can manage your sidebars using the Sidebars toolbar button. The Sidebars button is located in the <a href="%(url)s">customization palette</a>, just drag the button to your toolbar for fast switching between sidebars.{% endtrans %}</p>
       </div>
 
       <div class="section clearfix">
@@ -78,14 +78,14 @@
       <div style="width:50%; float: right; margin-left: 20px;">
       <img src="../images/addonsmanager.jpg" alt="Add-ons Manager" style="float: right;"/>
       </div>
-      <p class="lead">{{ _('You can easily <a href="%(url)">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.', url="https://support.mozilla.org/kb/disable-or-remove-add-ons") }}</p>
+      <p class="lead">{{ _('You can easily <a href="%(url)s">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox.', url='https://support.mozilla.org/kb/disable-or-remove-add-ons') }}</p>
       </div>
     </div>
 
     <div class="section clearfix">
     <h4><li>{{ _('Next Steps') }}</li></h4>
     <ul>
-      <li>{{ _('<a href="%(url)">Learn more about what this service adds to Firefox</a>.', url="https://support.mozilla.org/kb/add-social-features-firefox-sidebar") }}</li>
+      <li>{{ _('<a href="%(url)s">Learn more about what this service adds to Firefox</a>.', url='https://support.mozilla.org/kb/add-social-features-firefox-sidebar') }}</li>
 {% if manifest['homepageURL'] %}
       <li>{{ _('<a href="%(url)s">Learn more</a> about what <a href="%(url)s">%(name)s</a> provides.', name=manifest['name'], url=manifest['homepageURL']) }}</li>
 {% endif %}
