@@ -9,7 +9,14 @@
   <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
   <script src="../js/bundled.js"></script>
   <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
     $(document).ready(function($) {
+      init_lang_switcher();
 
 
       window.scrollTo(0, 0);
@@ -146,11 +153,11 @@
           
             <h3 class="tagline">a discovery experience</h3>
             <p class="lead">A new way to discover the most interesting content relevant to your interests.</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'sphere')" data-service="{&#34;author&#34;: &#34;Outbrain&#34;, &#34;description&#34;: &#34;A new way to discover the most interesting content relevant to your interests.&#34;, &#34;homepageURL&#34;: &#34;https://www.sphere.com&#34;, &#34;icon32URL&#34;: &#34;https://firefox.sphere.com/images/outbrain_32x32.png&#34;, &#34;icon64URL&#34;: &#34;https://firefox.sphere.com/images/outbrain_64x64.png&#34;, &#34;iconURL&#34;: &#34;https://firefox.sphere.com/images/outbrain.png&#34;, &#34;name&#34;: &#34;Sphere&#34;, &#34;origin&#34;: &#34;https://www.sphere.com&#34;, &#34;sidebarURL&#34;: &#34;https://firefox.sphere.com/sidebar.html&#34;, &#34;version&#34;: &#34;1.0&#34;}">Activate now <span>&raquo;</span></a>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'sphere')" data-service="{&#34;author&#34;: &#34;Outbrain&#34;, &#34;description&#34;: &#34;A new way to discover the most interesting content relevant to your interests.&#34;, &#34;homepageURL&#34;: &#34;https://www.sphere.com&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACrklEQVR42r3XS0gUcRzA8UIrchWKxMBDFgRJDx8kSRlC1MGKXofKSyUhlnXIkizIHkZRiXUIEpNFq6OlEglZRCGalqUWhQeVNHuRFpRYkmW/vgOzMPxo1tlxdeHDHn7/32Meu/+ZSU4/A2fnehCPTJzDTVSgCqXIRxpinNYMpPk07EA5nuA9xGIAnbiDM4gLVuNZyEMPJACDqELKWJqvRwdkjEoRGWjz45AgeoFYp81PQMZBH+JGa54DGUdvEGnXPAEyAartBmiCTJANuvlmyARqxGTrADUQF4bQ4jI3DSFG8zkYdFFgANvgQbWL/BLEGgNscpFchgR1GbPQDXHoJfYbicccLB5GOwqQ6OdnPBtbcRufIX58R4mRdB1iowGXkOTir3wGstEMsXHLWHjNJnhBFcxAGYqwVMVCscuMX0SyJTYF7yDQWu0G+AmPWSAcjRBlj2WrrocouZYhTkOgvbYb4CtO4oCleTESsQZv8QcLUQCB14yvRifEbHwQlRBoNcYA5yGjaFKnfIuKN6r4Ooc39g1j8W6I0o58y874VDVYBUE3RlCv4st8g5s1vP87/cgxFi+BKHWWYo8gyMRMxKABgmRcgWCvGY/GA1/crBEPUSqxwncHP1fBb4g2kxehD+L7Nl014zH4AkE/fkPgtRzEUYiSiXDfgmyIstFSYB4K0YZaZCBExYvQgvvYp+KPVe1PCNNPvV1q0d0gPdimQpQjRszJlrw9CAPUQd98U+0Wl6rFH2xfNNw/Xy73lxCKhyqhB4tdND8MUdKdJE5HBfTOlY0wB/nzUa7yf2FnoEdwCiOq0DMcQiqiEIYIs2k6ijGkctqQ4vYaJqEWw6roX/SiA13ohyi9yIMnGD+llbiMZvyA2PiIGuQiIthvyAuQBS9a8Uq5h0KsRZTTuv8ALeGOtty/vNQAAAAASUVORK5CYII=&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,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&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLklEQVR42p3SwSuEQRjHcZdt1R6Um3J5N/+DlPa6V6UctOQgSa5uWltrHZaLSFtbKDe1uQiRrMOuWNpE7quUtbVyIqnxfeuZepq83njrU+8z83vmnXmbDvd5W/SiSGEDRzjBNmbQ6+bd5mk8wwT4wnJQc1EFw9QQ0c0LMH90bps9mH9K+Qus/hI4xRheAuav/AXunMEPFDDo/KNhlJ3skz/RUgOjEh5BUjUnMCTvPWhKvq0XeEc/MihhH1lM4gI72MUA6nYBfYQGDmHUlz9h0C31Pa5R0UdYk+JBQks4wB7SmMIlNnEsmZy9D34RhxF9EphHRu1kAnlEpX6V/LgNZGFwQxl23VckW3UntuwNQ1dIcx2dPwVmYcQZckijpMbXw7YYwxyqeEQDt8jDc/PfmKe6ofQrtaEAAAAASUVORK5CYII=&#34;, &#34;name&#34;: &#34;Sphere&#34;, &#34;origin&#34;: &#34;https://www.sphere.com&#34;, &#34;sidebarURL&#34;: &#34;https://firefox.sphere.com/sidebar.html&#34;, &#34;version&#34;: &#34;1.0&#34;}">Activate Now <span>&raquo;</span></a>
             <div class="provider-description"></div>
 
           
-            <a href="https://www.sphere.com/account/activate.html" class="moreinfo" target="_blank">Learn More</a>
+            <a href="https://www.sphere.com/about/" class="moreinfo" target="_blank">Learn More...</a>
           
           </div>
 
@@ -174,43 +181,104 @@
   </div>
 
 
+  
   <div id="colophon">
     <div class="container">
       <div class="row">
 
           <div class="footer-logo">
-              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
 
           <div class="footer-license">
               <p>
-                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              Portions of this content are ©1998– by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.
+              </p>
               <p>
-                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+                <a href="http://www.mozilla.org/contribute/page/">Contribute to this page</a>
               </p>
           </div>
+          <div>
           <ul class="footer-nav">
-            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
-            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partner with Us</a></li>
             <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
-            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
-            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
-            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
           </ul>
-          <ul class="footer-nav">
-            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
-            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
-            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
-            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
-          </ul>
-          <ul class="footer-nav">
-            <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">SocialAPI for Developers</a></li>
-          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI for Developers</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Other languages:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" selected>English (US)</option>
+
+
+<option lang="es-AR" value="es-AR" >español (Argentina)</option>
+
+
+<option lang="es-ES" value="es-ES" >español (España)</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="id" value="id" >Bahasa Indonesia</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+</select>
+<noscript>
+<button type="submit">Go</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
 
       </div>
     </div>
   </div>
+
   </div>
 
   <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>

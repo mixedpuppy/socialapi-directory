@@ -9,7 +9,14 @@
   <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
   <script src="../js/bundled.js"></script>
   <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
     $(document).ready(function($) {
+      init_lang_switcher();
 
 
       window.scrollTo(0, 0);
@@ -146,7 +153,7 @@
           
             <h3 class="tagline">We live and breathe football - everywhere, 24/7</h3>
             <p class="lead">The definitive source for football news from around the world.</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'goal')" data-service="{&#34;description&#34;: &#34;The definitive source for football news from around the world.&#34;, &#34;homepageURL&#34;: &#34;http://www.goal.com&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRTQ1QzA3OUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRTQ1QzA3QUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDc3RTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDc4RTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+H/UuLwAAAIVJREFUeNpiZJfXYaAlYGKgMRi1YNSCUQuGgwUsaPxPt8+xsbKSbdyv37/5VI3wWQAx/dHTZ2SYLicthek4Fkx1Hz9/UbN2JyGUmZksjQ3u3H90ad9mfl4ewhaQCni5uPQ11b98/U5UHJABgD6etnD5aD4YvBYwjlb6oxaMWjBqAWEAEGAA3Rgbbp30Dx8AAAAASUVORK5CYII=&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNTRCQTk4MEU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNTRCQTk4MUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDdGRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDgwRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+IJlt7wAAAPRJREFUeNrs2c0KAVEAhuEZM8IViIkh7NwARSlKFjbKFdi6OwtCpBF7K2QljGzlZ2GGlaUkQ4f3W506m+/p/HTqyB49KYkclyR4AAAAAAAAAAAAAAAAAAAAAACCRn08vRh1tID/i/1Wm20slX99Bb7b/pkCv76F7rlcrGZvYNn2J86lLBdzWUVxvROwMs1Kre50dZ/Xczydb4PZsBXWgu8EfKB6tVxarjduVW31DfGu0XhE3x8OhUw6EdUdOQNOZzKd6yGta4zN3U5IgGTbjXaPpwQAAAAAAPg3gMxHNwAAAAAAAAAAAAAAAAAAAAAAwCu5CjAAGVkwvltcM+wAAAAASUVORK5CYII=&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRTQ1QzA3REU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRTQ1QzA3RUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDdCRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDdDRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+63Y8FwAAAbZJREFUeNoskkFuFUEMRG13T/QPEIkdZANISMkNWHI7tpyAK7FgywVQws9XEDO2edU/I83IPW2Xy1X207uHtjbT6753D2s359hhxMmN+01Henu3zfIi24rYwzZCDy4OJ9+6OXinV1SXlfuI5G/4dBJbpdxblFCrdBVd1ItEEXbOrUdllo1YpESt9vBBQ35lHXY9eAwa9FArDofB3bIPQYWolL78hBijeIIO8TgCjowTpFaMmAoLCBhRAAS1Dm2PxZeh28ZN5uXXD5DdVpaSfTEUPLjX4HT3QPU0OzIkyIfPX57+PItldwYSShR0ePvm9tPH99+/fYX21j3BXcL64+Pl/HxhBkeLWOoA7P7z5Xz5u6PtRJJAZkkoH8gpDQabMZGeaSRkVtrv85P4L4OZoel7xOg6BrjSRh8ycIsOmiIBQF2rbD/d3dNjWh+aFDpIOfZl6tBeLC9pzWQWcxkpGv9soqQ2Qd6R4mNR7euOGZuEGZY4gWvIDJhWTqrTv0Yd7ayTCMmowe7lGi/kNIsUFCytTBlSXT74Wtv1bK+B6rGrdzxeTX0xqNiy49U0kiJeeBnR7L8AAwCeQCzvpwm6jQAAAABJRU5ErkJggg==&#34;, &#34;name&#34;: &#34;GOAL.com&#34;, &#34;origin&#34;: &#34;http://www.goal.com&#34;, &#34;sidebarURL&#34;: &#34;http://www.goal.com/mozilla-sidebar&#34;}">Activate now <span>&raquo;</span></a>
+            <a class="button gutter-bottom-12" onclick="activateProvider(this, 'goal')" data-service="{&#34;description&#34;: &#34;The definitive source for football news from around the world.&#34;, &#34;homepageURL&#34;: &#34;http://www.goal.com&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRTQ1QzA3OUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRTQ1QzA3QUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDc3RTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDc4RTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+H/UuLwAAAIVJREFUeNpiZJfXYaAlYGKgMRi1YNSCUQuGgwUsaPxPt8+xsbKSbdyv37/5VI3wWQAx/dHTZ2SYLicthek4Fkx1Hz9/UbN2JyGUmZksjQ3u3H90ad9mfl4ewhaQCni5uPQ11b98/U5UHJABgD6etnD5aD4YvBYwjlb6oxaMWjBqAWEAEGAA3Rgbbp30Dx8AAAAASUVORK5CYII=&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNTRCQTk4MEU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNTRCQTk4MUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDdGRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDgwRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+IJlt7wAAAPRJREFUeNrs2c0KAVEAhuEZM8IViIkh7NwARSlKFjbKFdi6OwtCpBF7K2QljGzlZ2GGlaUkQ4f3W506m+/p/HTqyB49KYkclyR4AAAAAAAAAAAAAAAAAAAAAACCRn08vRh1tID/i/1Wm20slX99Bb7b/pkCv76F7rlcrGZvYNn2J86lLBdzWUVxvROwMs1Kre50dZ/Xczydb4PZsBXWgu8EfKB6tVxarjduVW31DfGu0XhE3x8OhUw6EdUdOQNOZzKd6yGta4zN3U5IgGTbjXaPpwQAAAAAAPg3gMxHNwAAAAAAAAAAAAAAAAAAAAAAwCu5CjAAGVkwvltcM+wAAAAASUVORK5CYII=&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRTQ1QzA3REU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRTQ1QzA3RUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDdCRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDdDRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+63Y8FwAAAbZJREFUeNoskkFuFUEMRG13T/QPEIkdZANISMkNWHI7tpyAK7FgywVQws9XEDO2edU/I83IPW2Xy1X207uHtjbT6753D2s359hhxMmN+01Henu3zfIi24rYwzZCDy4OJ9+6OXinV1SXlfuI5G/4dBJbpdxblFCrdBVd1ItEEXbOrUdllo1YpESt9vBBQ35lHXY9eAwa9FArDofB3bIPQYWolL78hBijeIIO8TgCjowTpFaMmAoLCBhRAAS1Dm2PxZeh28ZN5uXXD5DdVpaSfTEUPLjX4HT3QPU0OzIkyIfPX57+PItldwYSShR0ePvm9tPH99+/fYX21j3BXcL64+Pl/HxhBkeLWOoA7P7z5Xz5u6PtRJJAZkkoH8gpDQabMZGeaSRkVtrv85P4L4OZoel7xOg6BrjSRh8ycIsOmiIBQF2rbD/d3dNjWh+aFDpIOfZl6tBeLC9pzWQWcxkpGv9soqQ2Qd6R4mNR7euOGZuEGZY4gWvIDJhWTqrTv0Yd7ayTCMmowe7lGi/kNIsUFCytTBlSXT74Wtv1bK+B6rGrdzxeTX0xqNiy49U0kiJeeBnR7L8AAwCeQCzvpwm6jQAAAABJRU5ErkJggg==&#34;, &#34;name&#34;: &#34;GOAL.com&#34;, &#34;origin&#34;: &#34;http://www.goal.com&#34;, &#34;sidebarURL&#34;: &#34;http://www.goal.com/mozilla-sidebar&#34;}">Activate Now <span>&raquo;</span></a>
             <div class="provider-description"><p>Football, soccer, futbol, calcio, futebol - whatever you call it and whoever you support, we are your definitive football source.</p><p>We have over 530 reporters on the ground in 50+ countries, getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to keep them ahead of the game.</div>
 
           
@@ -183,43 +190,104 @@
   </div>
 
 
+  
   <div id="colophon">
     <div class="container">
       <div class="row">
 
           <div class="footer-logo">
-              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
 
           <div class="footer-license">
               <p>
-                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              Portions of this content are ©1998– by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.
+              </p>
               <p>
-                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+                <a href="http://www.mozilla.org/contribute/page/">Contribute to this page</a>
               </p>
           </div>
+          <div>
           <ul class="footer-nav">
-            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
-            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partner with Us</a></li>
             <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
-            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
-            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
-            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
           </ul>
-          <ul class="footer-nav">
-            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
-            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
-            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
-            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
-          </ul>
-          <ul class="footer-nav">
-            <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">SocialAPI for Developers</a></li>
-          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI for Developers</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Other languages:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" selected>English (US)</option>
+
+
+<option lang="es-AR" value="es-AR" >español (Argentina)</option>
+
+
+<option lang="es-ES" value="es-ES" >español (España)</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="id" value="id" >Bahasa Indonesia</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+</select>
+<noscript>
+<button type="submit">Go</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
 
       </div>
     </div>
   </div>
+
   </div>
 
   <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>

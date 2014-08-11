@@ -9,7 +9,14 @@
   <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
   <script src="../js/bundled.js"></script>
   <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
     $(document).ready(function($) {
+      init_lang_switcher();
 
 
       window.scrollTo(0, 0);
@@ -100,7 +107,7 @@
 
   <div id="wrapper" class="shadow">
     <header id="masthead">
-      <a href="/en-US/" id="tabzilla" data-infobar="translation">Mozilla</a>
+      <a href="/ja/" id="tabzilla" data-infobar="translation">Mozilla</a>
 
       <nav id="nav-main" role="navigation">
         <ul id="nav-main-menu">
@@ -125,7 +132,7 @@
     <div id="detail">
       <div class="detail-header clearfix">
         <div>
-        <a href=".">Home</a>
+        <a href=".">原産地</a>
         </div>
         <div>
         <span>GOAL.com</span>
@@ -166,51 +173,120 @@
         </div>
       </div>
         
+        <span class="features"><span  title="This service supports sharing content">share</span> 
+        <span  title="This service provides bookmarking functionality">bookmarking</span> 
+        <span class="supported" title="This service adds a sidebar to Firefox">sidebar</span> 
+        <span  title="This service adds a toolbar button to Firefox that may have notifications">notifications</span>
+        
+        
+        </span>
+        
       </div>
     </div>
   </div>
 
 
+  
   <div id="colophon">
     <div class="container">
       <div class="row">
 
           <div class="footer-logo">
-              <a href="http://www.mozilla.org/en-US/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
           </div>
 
           <div class="footer-license">
               <p>
-                Portions of this content are &copy;1998&dash;2014 by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/en-US/foundation/licensing/website-content/">Creative Commons license</a>.              </p>
+              Portions of this content are ©1998– by individual mozilla.org contributors. Content available under a <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons license</a>.
+              </p>
               <p>
-                <a href="http://www.mozilla.org/en-US/contribute/page/">Contribute to this page</a>
+                <a href="http://www.mozilla.org/contribute/page/">Contribute to this page</a>
               </p>
           </div>
+          <div>
           <ul class="footer-nav">
-            <li><a href="http://www.mozilla.org/en-US/contact/spaces/">Contact Us</a></li>
-            <li><a href="http://www.mozilla.org/en-US/about/partnerships/">Partner with Us</a></li>
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contact Us</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partner with Us</a></li>
             <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donate</a></li>
-            <li><a href="http://www.mozilla.org/en-US/privacy/">Privacy Policy</a></li>
-            <li><a href="http://www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
-            <li><a href="http://www.mozilla.org/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Privacy Policy</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Legal Notices</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Report Trademark Abuse</a></li>
           </ul>
-          <ul class="footer-nav">
-            <li><a href="https://twitter.com/mozilla">Mozilla on Twitter</a></li>
-            <li><a href="https://twitter.com/firefox">Firefox on Twitter</a></li>
-            <li><a href="https://www.facebook.com/mozilla">Mozilla on Facebook</a></li>
-            <li><a href="https://www.facebook.com/Firefox">Firefox on Facebook</a></li>
-            <li><a href="https://affiliates.mozilla.org/">Firefox Affiliates</a></li>
-          </ul>
-          <ul class="footer-nav">
-            <li><a href="https://developer.mozilla.org/en-US/docs/Social_API">SocialAPI for Developers</a></li>
-          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI for Developers</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Other languages:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (US)</option>
+
+
+<option lang="es-AR" value="es-AR" >español (Argentina)</option>
+
+
+<option lang="es-ES" value="es-ES" >español (España)</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="id" value="id" >Bahasa Indonesia</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" selected>日本語</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+</select>
+<noscript>
+<button type="submit">Go</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
 
       </div>
     </div>
   </div>
+
   </div>
 
-  <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
+  <script src="//mozorg.cdn.mozilla.net/ja/tabzilla/tabzilla.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
