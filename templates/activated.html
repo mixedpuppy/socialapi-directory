@@ -32,7 +32,7 @@
       <div class="section clearfix">
       <h4><li>{{ _('Add the Sidebars button to your toolbar') }}</li></h4>
       <div style="width:40%; float: right; margin-left: 20px;">
-      <img src="../{{lang['default']['images']['sidebarbutton'] or "images/sidebarbutton.png"}}"
+      <img src="{{lang['default']['images']['sidebarbutton'] or "../images/sidebarbutton.png"}}"
       alt="[sidebar button image]" style="float: right;"/>
       </div>
       <p class="lead">{% trans url="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s" %}Starting with Firefox 30, you can manage your sidebars using the Sidebars toolbar button. The Sidebars button is located in the <a href="%(url)s">customization palette</a>, just drag the button to your toolbar for fast switching between sidebars.{% endtrans %}</p>
@@ -40,7 +40,7 @@
 
       <div class="section clearfix">
       <div style="width:40%; float: right; margin-left: 20px;">
-      <img src="../{{lang['default']['images']['sidebarmenu'] or "images/sidebarselect.png"}}"
+      <img src="{{lang['default']['images']['sidebarmenu'] or "../images/sidebarselect.png"}}"
       alt="[sidebar selection image]" style="float: right;"/>
       </div>
       <p class="lead">{% trans %}Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox.{% endtrans %}</p>
@@ -50,7 +50,7 @@
     <div class="section clearfix">
       <h4><li>{{ _('Share content you like through %(name)s', name=manifest['name']) }}</li></h4>
       <div style="width:50%; float: right; margin-left: 20px;">
-      <img src="../{{lang['default']['images']['share'] or "images/share.png"}}" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <img src="{{lang['default']['images']['share'] or "../images/share.png"}}" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
       </div>
       <p class="lead"><img src="../images/sharebutton.png"
       alt="[share button image]"/> {{ _('With the click of a button, you can Share interesting content on any website with your social network through <strong>%(name)s</strong>.', name=manifest['name']) }}</p>
@@ -59,14 +59,14 @@
 {% if manifest['markURL'] %}
     <div class="section clearfix">
       <h4><li>{{ _('Save content for later') }}</li></h4>
-      <img src="../{{lang['default']['images']['bookmark'] or "images/bookmark.png"}}" alt="Bookmarking" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <img src="{{lang['default']['images']['bookmark'] or "../images/bookmark.png"}}" alt="Bookmarking" style="float: right; max-width: 400px; margin-left: 20px;"/>
       <p class="lead"> {{ _('With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>.', name=manifest['name']) }}</p>
     </div>
 {% endif %}
 {% if manifest['statusURL'] %}
     <div class="section clearfix">
       <h4><li>{{ _('Keep an eye on the latest from %(name)s', name=manifest['name']) }}</li></h4>
-      <img src="../{{lang['default']['images']['status'] or "images/status.png"}}" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      <img src="{{lang['default']['images']['status'] or "../images/status.png"}}" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
       <p class="lead">{{ _('<strong>%(name)s</strong> will provide you with the latest from their service, just click on their icon in the toolbar.', name=manifest['name']) }}</p>
     </div>
 {% endif %}
