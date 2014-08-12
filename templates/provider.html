@@ -53,63 +53,65 @@
       </div>
       <div class="detail-content">
 {% if demo %}
-    <p id="demo-service" style="font-weight: bold; font-style: italic; color: red">{{ _("This service is for demonstration purposes only and may not work as expected.") }}</p>
+        <p id="demo-service" style="font-weight: bold; font-style: italic; color: red">{{ _("This service is for demonstration purposes only and may not work as expected.") }}</p>
 {% endif %}
 
-      <div class="row">
-        <div class="col-2">
-          <div class="provider-item-detail">
-          {% if 'detaillogo' in lang['default']['images'] %}
-          <h1><img src="{{lang['default']['images']['detaillogo']}}"></img></h1>
-          {% elif 'fulllogo' in lang['default']['images'] %}
-          <h1><img src="{{lang['default']['images']['fulllogo']}}"></img></h1>
-          {% else %}
-          <h1><img src="{{lang['default']['images']['logo']}}"></img> {{lang['default']['name']}}</h1>
-          {% endif %}
-            <h3 class="tagline">{{lang['default']['tagline']}}</h3>
-            <p class="lead">{{lang['default']['shortDescription']}}</p>
-            <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifestData}}">{{ _('Activate Now') }} <span>&raquo;</span></a>
-            <div class="provider-description">{{lang['default']['description']|safe}}</div>
-
-          {% if 'links' in lang['default'] %}
-            <a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{ _('Learn More...') }}</a>
-          {% endif %}
-          </div>
-
-        </div>
-        <div class="col-2 clearfix">
-          {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
-          <div id="carousel-details">
-            <div class="cycle-slideshow carousel-inner"
-                data-cycle-loader="true"
-                data-cycle-center-horz="true"
-                data-cycle-center-vert="true"
-                data-cycle-pager="#detail-pager">
-              {% for image in lang['default']['images']['details'] %}<img src="{{image}}"/>{% endfor %}
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+{% if 'detaillogo' in lang['default']['images'] %}
+            <h1><img src="{{lang['default']['images']['detaillogo']}}"></img></h1>
+{% elif 'fulllogo' in lang['default']['images'] %}
+            <h1><img src="{{lang['default']['images']['fulllogo']}}"></img></h1>
+{% else %}
+            <h1><img src="{{lang['default']['images']['logo']}}"></img> {{lang['default']['name']}}</h1>
+{% endif %}
+              <h3 class="tagline">{{lang['default']['tagline']}}</h3>
+              <p class="lead">{{lang['default']['shortDescription']}}</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifestData}}">{{ _('Activate Now') }} <span>&raquo;</span></a>
+              <div class="provider-description">{{lang['default']['description']|safe}}</div>
+{% if 'links' in lang['default'] %}
+              <a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{ _('Learn More...') }}</a>
+{% endif %}
             </div>
-            <div id="detail-pager" class="cycle-pager center external"></div>
+  
           </div>
-          {% endif %}
-        {% if 'videos' in lang['default'] %}
-        <div id="detail-videos" class="center"><div>
-          {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}" target="_blank"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
-        </div></div>
-        {% endif %}
+          <div class="col-2 clearfix">
+            {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
+            <div id="carousel-details">
+              <div class="cycle-slideshow carousel-inner"
+                  data-cycle-loader="true"
+                  data-cycle-center-horz="true"
+                  data-cycle-center-vert="true"
+                  data-cycle-pager="#detail-pager">
+                {% for image in lang['default']['images']['details'] %}<img src="{{image}}"/>{% endfor %}
+              </div>
+              <div id="detail-pager" class="cycle-pager center external"></div>
+            </div>
+{% endif %}
+{% if 'videos' in lang['default'] %}
+            <div id="detail-videos" class="center"><div>
+              {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}" target="_blank"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
+            </div></div>
+{% endif %}
+          </div>
+  
         </div>
-      </div>
-        {% if manifest %}
-        <span class="features"><span {% if manifest['shareURL'] %}class="supported"{% endif %} title="{{ _('This service supports sharing content') }}">{{ _('share') }}</span> 
-        <span {% if manifest['markURL'] %}class="supported"{% endif %} title="{{ _('This service provides bookmarking functionality') }}">{{ _('bookmarking') }}</span> 
-        <span {% if manifest['sidebarURL'] %}class="supported"{% endif %} title="{{ _('This service adds a sidebar to Firefox') }}">{{ _('sidebar') }}</span> 
-        <span {% if manifest['statusURL'] %}class="supported"{% endif %} title="{{ _('This service adds a toolbar button to Firefox that may have notifications') }}">{{ _('notifications') }}</span>
-        {% if minver and minver > releases[0] %}
-        <span class="supported" title="{{ _('This service requires an unreleased version of Firefox') }}">{{ _('beta') }}</span>
-        {% endif %}
-        {% if demo %}
-        <span class="supported" title="{{ _('This is a demo service') }}">{{ _('demo') }}</span>
-        {% endif %}
-        </span>
-        {% endif %}
+
+{% if manifest %}
+        <div class="features col-2 clearfix">
+          <span {% if manifest['shareURL'] %}class="supported"{% endif %} title="{{ _('This service supports sharing content') }}">{{ _('share') }}</span> 
+          <span {% if manifest['markURL'] %}class="supported"{% endif %} title="{{ _('This service provides bookmarking functionality') }}">{{ _('bookmarking') }}</span> 
+          <span {% if manifest['sidebarURL'] %}class="supported"{% endif %} title="{{ _('This service adds a sidebar to Firefox') }}">{{ _('sidebar') }}</span> 
+          <span {% if manifest['statusURL'] %}class="supported"{% endif %} title="{{ _('This service adds a toolbar button to Firefox that may have notifications') }}">{{ _('notifications') }}</span>
+{% if minver and minver > releases[0] %}
+          <span class="supported" title="{{ _('This service requires an unreleased version of Firefox') }}">{{ _('beta') }}</span>
+{% endif %}
+{% if demo %}
+          <span class="supported" title="{{ _('This is a demo service') }}">{{ _('demo') }}</span>
+{% endif %}
+        </div>
+{% endif %}
       </div>
     </div>
   </div>

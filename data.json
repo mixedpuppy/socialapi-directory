@@ -483,12 +483,12 @@
         "pageSize": {
           "share": { "width": 580, "height": 750 }
         },
-        "description": "Quickly share content you discover across the web into your Google+ account.  Sites that share into your Google+ account can be seen by specific people in your circles that you select by name, or you can share to all your followers."
+        "description": "Quickly share content you discover across the web on Google+. Sites can be shared with your Google+ account to your circles or publicly."
       },
       "lang": {
         "en-US": {
           "name": "Google+",
-          "tagline": "Share the web with your friends on Google+.",
+          "tagline": "",
           "shortDescription": "Share the web with your friends on Google+.",
           "images": {
             "detail": "images/google/share.png",

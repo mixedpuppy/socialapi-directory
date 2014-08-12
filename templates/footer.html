@@ -47,9 +47,11 @@
               </li>
             </ul>
 
+{% if not production %}
             <div class="lang-switcher">
               {% include 'lang_switcher.html' %}
             </div>
+{% endif %}
           </div>
 
       </div>
