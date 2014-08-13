@@ -2,7 +2,7 @@
 {% block head %}
   <script>
     var releases = {{releases}};
-    var minver = {{minver}};
+    var minver = {{minver or 29}};
     $(document).ready(function($) {
       // check the minver of this provider against firefox
       // requires firefox 29 to activate
