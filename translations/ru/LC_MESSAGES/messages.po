@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-14 15:46-0700\n"
+"POT-Creation-Date: 2014-08-14 15:58-0700\n"
 "PO-Revision-Date: 2014-08-09 11:39-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -275,6 +275,15 @@ msgstr ""
 #: templates/lang_switcher.html:15
 msgid "Go"
 msgstr ""
+
+#: templates/layout.html:4
+#, python-format
+msgid "%(name)s for Firefox"
+msgstr "%(name)s для Firefox"
+
+#: templates/layout.html:4
+msgid "Services for Firefox"
+msgstr "Услуги для Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
