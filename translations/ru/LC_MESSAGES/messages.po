@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-13 10:35-0700\n"
+"POT-Creation-Date: 2014-08-14 15:46-0700\n"
 "PO-Revision-Date: 2014-08-09 11:39-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
@@ -22,23 +22,23 @@ msgstr ""
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr ""
+msgstr "Каталог"
 
 #: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "Поздравляем, <strong>%(name)s</strong> функция активируется в Firefox!"
 
-#: templates/activated.html:26
+#: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "Получите максимум от %(name)s"
 
-#: templates/activated.html:28
+#: templates/activated.html:29
 msgid "Bookmark this page"
 msgstr ""
 
-#: templates/activated.html:29
+#: templates/activated.html:30
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
@@ -46,11 +46,48 @@ msgid ""
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
 
-#: templates/activated.html:33
-msgid "Add the Sidebars button to your toolbar"
+#: templates/activated.html:35
+#, python-format
+msgid "Share content you like through %(name)s"
+msgstr "Доля контент вы любите через %(name)s"
+
+#: templates/activated.html:40
+#, python-format
+msgid ""
+"With the click of a button, you can Share interesting content on any "
+"website with your social network through <strong>%(name)s</strong>."
+msgstr ""
+"С нажатием кнопки, вы можете поделиться интересный контент на любой "
+"веб-сайт с вашей социальной сети через <strong>%(name)s</strong>."
+
+#: templates/activated.html:45
+msgid "Save content for later"
+msgstr "Сохранить содержимое для последующего"
+
+#: templates/activated.html:47
+#, python-format
+msgid ""
+"With the click of a button, you can save interesting content on any "
+"website to <strong>%(name)s</strong>."
 msgstr ""
 
-#: templates/activated.html:38
+#: templates/activated.html:52
+#, python-format
+msgid "Keep an eye on the latest from %(name)s"
+msgstr ""
+
+#: templates/activated.html:54
+#, python-format
+msgid ""
+"<strong>%(name)s</strong> will provide you with the latest from their "
+"service, just click on their icon in the toolbar."
+msgstr ""
+
+#: templates/activated.html:59
+msgid "Add the Sidebars button to your toolbar"
+msgstr "Добавить кнопку боковые панели на панель инструментов"
+
+#: templates/activated.html:64
 #, python-format
 msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars"
@@ -58,82 +95,62 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"Начиная с Firefox 30, вы можете управлять боковые панели с помощью кнопки"
+" на панели инструментов боковые. Кнопка Sidebars находится в <a "
+"href=\"%(url)s\"> настройки палитры </a>, просто перетащите кнопку на "
+"панель инструментов для быстрого переключения между боковых панелей."
 
-#: templates/activated.html:46
+#: templates/activated.html:72
 msgid ""
 "Additionally, you can easily change the service in your sidebar, or hide "
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Кроме этого, вы можете легко изменить службу на боковой панели, или "
+"скрыть боковую панель, от самого боковой панели. Вы также можете "
+"использовать <strong>Вид-> Панели инструментов</strong> меню в Firefox."
 
-#: templates/activated.html:51
-#, python-format
-msgid "Share content you like through %(name)s"
-msgstr ""
-
-#: templates/activated.html:56
-#, python-format
-msgid ""
-"With the click of a button, you can Share interesting content on any "
-"website with your social network through <strong>%(name)s</strong>."
-msgstr ""
-
-#: templates/activated.html:61
-msgid "Save content for later"
-msgstr ""
-
-#: templates/activated.html:63
-#, python-format
-msgid ""
-"With the click of a button, you can save interesting content on any "
-"website to <strong>%(name)s</strong>."
-msgstr ""
-
-#: templates/activated.html:68
-#, python-format
-msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
-
-#: templates/activated.html:70
-#, python-format
-msgid ""
-"<strong>%(name)s</strong> will provide you with the latest from their "
-"service, just click on their icon in the toolbar."
-msgstr ""
-
-#: templates/activated.html:77
+#: templates/activated.html:79
 msgid "Change Settings from the Add-on Manager"
-msgstr ""
+msgstr "Изменить настройки от диспетчера дополнительных"
 
-#: templates/activated.html:81
+#: templates/activated.html:83
 #, python-format
 msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
 msgstr ""
-
-#: templates/activated.html:86
-msgid "Next Steps"
-msgstr ""
+"Вы можете легко <a href=\"%(url)s\">управлять услуги</a>, отключить их "
+"временно или удаляя их, просмотрев менеджер дополнений в Firefox."
 
 #: templates/activated.html:88
+msgid "Next Steps"
+msgstr "Следующие шаги"
+
+#: templates/activated.html:90
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr ""
+"<a href=\"%(url)s\">Узнайте больше о том, что эта услуга добавляет к "
+"Firefox</a>."
 
-#: templates/activated.html:90
+#: templates/activated.html:92
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
+"<a href=\"%(url)s\">Подробнее</a> о том, что <a "
+"href=\"%(url)s\">%(name)s</a> обеспечивает."
 
-#: templates/activated.html:92
+#: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
+"<a href=\".\">Узнать и найти больше услуг</a> вы можете добавить в "
+"Firefox."
 
 #: templates/footer.html:12
 #, python-format
@@ -177,15 +194,15 @@ msgstr ""
 
 #: templates/index.html:40 templates/provider.html:71
 msgid "Activate Now"
-msgstr ""
+msgstr "Активируйте Теперь"
 
 #: templates/index.html:41 templates/provider.html:74
 msgid "Learn More..."
-msgstr ""
+msgstr "Узнать больше"
 
 #: templates/index.html:58
 msgid "Enhance your Firefox experience, Get more out of the Web"
-msgstr ""
+msgstr "Повысьте эффективность использования Firefox, Получить более из Интернета"
 
 #: templates/index.html:59
 msgid ""
@@ -195,54 +212,61 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
+"Простота в использовании, нет программного обеспечения или дополнения, "
+"чтобы загрузить и установить, как раз не нажмите Активировать и новая "
+"функциональность, которая вам из Интернета. Все, начиная от социальных "
+"медиа-услуг, облачных закладок, музыки и персонализированных новостей, "
+"добавив эти услуги Firefox позволяет получить больше от сети."
 
-#: templates/index.html:86 templates/provider.html:103
+#: templates/index_entry.html:13 templates/provider.html:103
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Эта услуга поддерживает содержание совместного"
 
-#: templates/index.html:86 templates/provider.html:103
+#: templates/index_entry.html:13 templates/provider.html:103
 msgid "share"
-msgstr ""
+msgstr "доля"
 
-#: templates/index.html:87 templates/provider.html:104
+#: templates/index_entry.html:14 templates/provider.html:104
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Эта услуга обеспечивает функциональность закладок"
 
-#: templates/index.html:87 templates/provider.html:104
+#: templates/index_entry.html:14 templates/provider.html:104
 msgid "bookmarking"
-msgstr ""
+msgstr "закладки"
 
-#: templates/index.html:88 templates/provider.html:105
+#: templates/index_entry.html:15 templates/provider.html:105
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Эта услуга добавляет боковую панель к Firefox"
 
-#: templates/index.html:88 templates/provider.html:105
+#: templates/index_entry.html:15 templates/provider.html:105
 msgid "sidebar"
-msgstr ""
+msgstr "Боковая панель"
 
-#: templates/index.html:89 templates/provider.html:106
+#: templates/index_entry.html:16 templates/provider.html:106
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
+"Эта услуга добавляет кнопку на панели инструментов, чтобы Firefox, "
+"которые могут иметь уведомления"
 
-#: templates/index.html:89 templates/provider.html:106
+#: templates/index_entry.html:16 templates/provider.html:106
 msgid "notifications"
-msgstr ""
+msgstr "уведомления"
 
-#: templates/index.html:91 templates/provider.html:108
+#: templates/index_entry.html:18 templates/provider.html:108
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Эта служба требует не выпущенную версию Firefox"
 
-#: templates/index.html:91 templates/provider.html:108
+#: templates/index_entry.html:18 templates/provider.html:108
 msgid "beta"
-msgstr ""
+msgstr "бета"
 
-#: templates/index.html:94 templates/provider.html:111
+#: templates/index_entry.html:21 templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Это демо-служба"
 
-#: templates/index.html:94 templates/provider.html:111
+#: templates/index_entry.html:21 templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "демо"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -325,34 +349,5 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ""
-#~ "If you're new to this service, "
-#~ "bookmark this page, it contains useful"
-#~ " information and links to further "
-#~ "help using and customizing Firefox.  "
-#~ "Keep reading to learn more about "
-#~ "how the %(name)s service works in "
-#~ "Firefox."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Starting with Firefox 30, you can "
-#~ "manage your sidebars using the Sidebars"
-#~ " toolbar button. The Sidebars button "
-#~ "is located in the <a "
-#~ "href=\"%(url)\">customization palette</a>, just drag"
-#~ " the button to your toolbar for "
-#~ "fast switching between sidebars."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "You can easily <a href=\"%(url)\">manage "
-#~ "your services</a>, disabling them temporarily"
-#~ " or removing them, by viewing the "
-#~ "Add-ons Manager in Firefox."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "<a href=\"%(url)\">Learn more about what "
-#~ "this service adds to Firefox</a>."
 #~ msgstr ""
 
