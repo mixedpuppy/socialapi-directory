@@ -70,35 +70,18 @@
       </div>
       <div id="directory-grid" class="row">
       {% for p in source %}
-{% if not production or (not p['demo'] and (not p['minver'] or p['minver'] <= releases[0])) %}
-      <div class="provider-entry col-2 clearfix">
-        <a href="{{p['key']}}.html">
-        <div class="provider-entry-inner clearfix">
-          {% if p['lang']['default']['images']['fulllogo'] %}
-          <h2><img src="{{p['lang']['default']['images']['fulllogo']}}"></img></h2>
-          {% else %}
-          <h2><img src="{{p['lang']['default']['images']['logo']}}"></img> {{p['lang']['default']['name']}}</h2>
-          {% endif %}
-          <p class="provider-description">{{p['lang']['default']['shortDescription'] or p['lang']['default']['tagline']}}</p>
-
-          {% if p['manifest'] %}
-          <span class="provider-features">
-          <span {% if p['manifest']['shareURL'] %}class="supported"{% endif %} title="{{ _('This service supports sharing content') }}">{{ _('share') }}</span> 
-          <span {% if p['manifest']['markURL'] %}class="supported"{% endif %} title="{{ _('This service provides bookmarking functionality') }}">{{ _('bookmarking') }}</span> 
-          <span {% if p['manifest']['sidebarURL'] %}class="supported"{% endif %} title="{{ _('This service adds a sidebar to Firefox') }}">{{ _('sidebar') }}</span> 
-          <span {% if p['manifest']['statusURL'] %}class="supported"{% endif %} title="{{ _('This service adds a toolbar button to Firefox that may have notifications') }}">{{ _('notifications') }}</span>
-          {% if p['minver'] and p['minver'] > releases[0] %}
-          <span class="supported" title="{{ _('This service requires an unreleased version of Firefox') }}">{{ _('beta') }}</span>
-          {% endif %}
-          {% if p['demo'] %}
-          <span class="supported" title="{{ _('This is a demo service') }}">{{ _('demo') }}</span>
-          {% endif %}
-          </span>
-          {% endif %}
-        </div>
-        </a>
-      </div>
-{% endif %}
+      {% if p['lang'][locale] %}
+      {% if not production or (not p['demo'] and (not p['minver'] or p['minver'] <= releases[0])) %}
+        {% include 'index_entry.html' %}
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+      {% for p in source %}
+      {% if not p['lang'][locale] %}
+      {% if not production or (not p['demo'] and (not p['minver'] or p['minver'] <= releases[0])) %}
+        {% include 'index_entry.html' %}
+      {% endif %}
+      {% endif %}
       {% endfor %}
       </div>
     </div>

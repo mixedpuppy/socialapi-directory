@@ -949,6 +949,6 @@
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
-    "ru": ["odnoklassniki", "vkontakte", "saavn"]
+    "ru": ["odnoklassniki", "vkontakte", "twitter"]
   }
 }
