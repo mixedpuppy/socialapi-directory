@@ -626,6 +626,20 @@
           "links": {
             "learnmore": "https://about.twitter.com/"
           }
+        },
+        "ja": {
+          "name": "",
+          "tagline": "",
+          "shortDescription": "Twitterを使用すると、バリアなくアイディアや情報を瞬時に作成し、共有できるようになります。",
+          "description": "",
+          "images": {
+            "detail": "images/twitter/share.png",
+            "carousel": "images/twitter/share.png",
+            "share": "images/twitter/share.png"
+          },
+          "links": {
+            "learnmore": "https://about.twitter.com/ja"
+          }
         }
       }
     },
@@ -649,6 +663,7 @@
           "name": "LinkedIn",
           "shortDescription": "Share the web with your professional network.",
           "images": {
+            "carousel": "images/linkedin/share.png",
             "detail": "images/linkedin/share.png",
             "share": "images/linkedin/share.png"
           },
@@ -1050,13 +1065,13 @@
     "2015-03-31": [37,38,39,40]
   },
   "sharePanel": {
-    "en-US": ["facebook", "twitter", "google", "tumblr", "gmail", "delicious"],
+    "en-US": ["facebook", "twitter", "google", "tumblr", "linkedin", "delicious"],
     "jp-JP": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "ja": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
   },
   "carousel": {
-    "en-US": ["pocket", "delicious", "facebook"],
+    "en-US": ["linkedin", "pocket", "delicious", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],

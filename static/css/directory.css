@@ -100,6 +100,11 @@
   max-width: 220px;
 }
 
+.carousel-image {
+  overflow: hidden;
+  max-height: 280px;
+}
+
 .cycle-prev {
   left: 0;
 }
