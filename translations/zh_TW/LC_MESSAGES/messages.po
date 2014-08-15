@@ -1,4 +1,4 @@
-# German translations for PROJECT.
+# Chinese (Traditional, Taiwan) translations for PROJECT.
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-15 15:12-0700\n"
-"PO-Revision-Date: 2014-08-08 14:05-0700\n"
+"PO-Revision-Date: 2014-08-15 15:12-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: de <LL@li.org>\n"
+"Language-Team: zh_Hant_TW <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr "Startseite"
+msgstr ""
 
 #: templates/activated.html:22
 #, python-format
@@ -176,7 +176,7 @@ msgstr ""
 
 #: templates/index.html:40 templates/provider.html:74
 msgid "Activate Now"
-msgstr "Jetzt aktivieren"
+msgstr ""
 
 #: templates/index.html:41 templates/provider.html:77
 msgid "Learn More..."
@@ -334,10 +334,4 @@ msgstr ""
 #: templates/sharePanel.html:117
 msgid "View more"
 msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Get the most from the %(name)s service"
-#~ msgstr ""
 

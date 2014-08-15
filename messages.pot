@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-14 15:58-0700\n"
+"POT-Creation-Date: 2014-08-15 15:12-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,11 +173,11 @@ msgstr ""
 msgid "SocialAPI for Developers"
 msgstr ""
 
-#: templates/index.html:40 templates/provider.html:71
+#: templates/index.html:40 templates/provider.html:74
 msgid "Activate Now"
 msgstr ""
 
-#: templates/index.html:41 templates/provider.html:74
+#: templates/index.html:41 templates/provider.html:77
 msgid "Learn More..."
 msgstr ""
 
@@ -194,51 +194,51 @@ msgid ""
 " of the web."
 msgstr ""
 
-#: templates/index_entry.html:13 templates/provider.html:103
+#: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
 msgstr ""
 
-#: templates/index_entry.html:13 templates/provider.html:103
+#: templates/index_entry.html:13 templates/provider.html:106
 msgid "share"
 msgstr ""
 
-#: templates/index_entry.html:14 templates/provider.html:104
+#: templates/index_entry.html:14 templates/provider.html:107
 msgid "This service provides bookmarking functionality"
 msgstr ""
 
-#: templates/index_entry.html:14 templates/provider.html:104
+#: templates/index_entry.html:14 templates/provider.html:107
 msgid "bookmarking"
 msgstr ""
 
-#: templates/index_entry.html:15 templates/provider.html:105
+#: templates/index_entry.html:15 templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
 msgstr ""
 
-#: templates/index_entry.html:15 templates/provider.html:105
+#: templates/index_entry.html:15 templates/provider.html:108
 msgid "sidebar"
 msgstr ""
 
-#: templates/index_entry.html:16 templates/provider.html:106
+#: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
 
-#: templates/index_entry.html:16 templates/provider.html:106
+#: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
 msgstr ""
 
-#: templates/index_entry.html:18 templates/provider.html:108
+#: templates/index_entry.html:18 templates/provider.html:111
 msgid "This service requires an unreleased version of Firefox"
 msgstr ""
 
-#: templates/index_entry.html:18 templates/provider.html:108
+#: templates/index_entry.html:18 templates/provider.html:111
 msgid "beta"
 msgstr ""
 
-#: templates/index_entry.html:21 templates/provider.html:111
+#: templates/index_entry.html:21 templates/provider.html:114
 msgid "This is a demo service"
 msgstr ""
 
-#: templates/index_entry.html:21 templates/provider.html:111
+#: templates/index_entry.html:21 templates/provider.html:114
 msgid "demo"
 msgstr ""
 
@@ -315,6 +315,12 @@ msgid "Install Firefox Nightly"
 msgstr ""
 
 #: templates/provider.html:56
+msgid ""
+"This service is in beta testing, some functionality may not work as "
+"expected.."
+msgstr ""
+
+#: templates/provider.html:59
 msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
