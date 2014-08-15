@@ -1,0 +1,13 @@
+#!/bin/sh
+pybabel extract -F babel.cfg -o messages.pot .
+pybabel update -i messages.pot -d translations -l zh_TW
+pybabel update -i messages.pot -d translations -l ja
+pybabel update -i messages.pot -d translations -l it
+pybabel update -i messages.pot -d translations -l ru
+pybabel update -i messages.pot -d translations -l de
+pybabel update -i messages.pot -d translations -l fr
+pybabel update -i messages.pot -d translations -l id
+pybabel update -i messages.pot -d translations -l pt_BR
+pybabel update -i messages.pot -d translations -l es_ES
+pybabel update -i messages.pot -d translations -l es_AR
+pybabel compile -f -d translations
