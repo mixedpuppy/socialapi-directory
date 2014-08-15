@@ -107,11 +107,10 @@
           <span {% if manifest['markURL'] %}class="supported"{% endif %} title="{{ _('This service provides bookmarking functionality') }}">{{ _('bookmarking') }}</span> 
           <span {% if manifest['sidebarURL'] %}class="supported"{% endif %} title="{{ _('This service adds a sidebar to Firefox') }}">{{ _('sidebar') }}</span> 
           <span {% if manifest['statusURL'] %}class="supported"{% endif %} title="{{ _('This service adds a toolbar button to Firefox that may have notifications') }}">{{ _('notifications') }}</span>
-{% if minver and minver > releases[0] %}
-          <span class="supported" title="{{ _('This service requires an unreleased version of Firefox') }}">{{ _('beta') }}</span>
-{% endif %}
-{% if demo %}
+{% if status == "demo" %}
           <span class="supported" title="{{ _('This is a demo service') }}">{{ _('demo') }}</span>
+{% elif minver and minver > releases[0] or status == "beta" %}
+          <span class="supported" title="{{ _('This service requires an unreleased version of Firefox') }}">{{ _('beta') }}</span>
 {% endif %}
         </div>
 {% endif %}

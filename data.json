@@ -794,7 +794,7 @@
       }
     },
     "pinterest": {
-      "status": "demo",
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "name": "Pinterest",
