@@ -1,6 +1,7 @@
 {
   "source": {
     "goal": {
+      "status": "release",
       "manifest": {
         "name": "GOAL.com",
         "iconURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyRTQ1QzA3REU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyRTQ1QzA3RUU1QTMxMUUzODg4QUM1MDk2QTRENUNEQiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjJFNDVDMDdCRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJFNDVDMDdDRTVBMzExRTM4ODhBQzUwOTZBNEQ1Q0RCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+63Y8FwAAAbZJREFUeNoskkFuFUEMRG13T/QPEIkdZANISMkNWHI7tpyAK7FgywVQws9XEDO2edU/I83IPW2Xy1X207uHtjbT6753D2s359hhxMmN+01Henu3zfIi24rYwzZCDy4OJ9+6OXinV1SXlfuI5G/4dBJbpdxblFCrdBVd1ItEEXbOrUdllo1YpESt9vBBQ35lHXY9eAwa9FArDofB3bIPQYWolL78hBijeIIO8TgCjowTpFaMmAoLCBhRAAS1Dm2PxZeh28ZN5uXXD5DdVpaSfTEUPLjX4HT3QPU0OzIkyIfPX57+PItldwYSShR0ePvm9tPH99+/fYX21j3BXcL64+Pl/HxhBkeLWOoA7P7z5Xz5u6PtRJJAZkkoH8gpDQabMZGeaSRkVtrv85P4L4OZoel7xOg6BrjSRh8ycIsOmiIBQF2rbD/d3dNjWh+aFDpIOfZl6tBeLC9pzWQWcxkpGv9soqQ2Qd6R4mNR7euOGZuEGZY4gWvIDJhWTqrTv0Yd7ayTCMmowe7lGi/kNIsUFCytTBlSXT74Wtv1bK+B6rGrdzxeTX0xqNiy49U0kiJeeBnR7L8AAwCeQCzvpwm6jQAAAABJRU5ErkJggg==",
@@ -145,6 +146,7 @@
       }
     },
     "saavn": {
+      "status": "release",
       "manifest": {
         "name": "saavn",
         "origin": "http://www.saavn.com",
@@ -184,6 +186,7 @@
       }
     },
     "pocket": {
+      "status": "release",
       "manifest": {
         "name": "Pocket",
         "iconURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVR42q1Tu0oDQRQdxE4EsRH8E7WZh49OU2RmdgVBLBSsRFAsU/kLIgiijYWFhWVAQf0HbbSxUSS7mzUvlRjvWZmEISEoeuGQy7nnnJnMTdifKxZ2IRG2WBb2JhbmR4AWnliZHKOmXldhq6aCXwEeCntjlIamjaTTA31n8DKPkFnYZ0UGXWZwmJHG45knkPowVXqixE2xocK2KOu5uUhlMBkLfQBtV0CVyETorexheW4kkeYMxsZ0iODz8pwezWYyv1H1AqRpuuun0iaRCBYhfJpdGiLuhIJO76bmh8GVhDGkid3XgBdbuHVESp+v0jbocdZhuOR8sMULg+gjnl+jq9egcQfCyxJpd6qqcyUIKtJ+RMJsw/h9st0k87szA/DAy15mgnFazyMJvPUQR7D7CTd7dFozFdbbCDzwMlQk9Co9DIzezmsqBNB74dDCw1y1CoUBEu0i2d2kF9wcWnh6/C/MCg0f8DMFahkC9AAe7h4a1q8qKhyLuV4m4VHE9VXEzXUs7DG4Z5qx/64v/nHUkcS/En4AAAAASUVORK5CYII=",
@@ -235,6 +238,7 @@
       }
     },
     "sphere": {
+      "status": "release",
       "manifest": {
         "name": "Sphere",
         "iconURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLklEQVR42p3SwSuEQRjHcZdt1R6Um3J5N/+DlPa6V6UctOQgSa5uWltrHZaLSFtbKDe1uQiRrMOuWNpE7quUtbVyIqnxfeuZepq83njrU+8z83vmnXmbDvd5W/SiSGEDRzjBNmbQ6+bd5mk8wwT4wnJQc1EFw9QQ0c0LMH90bps9mH9K+Qus/hI4xRheAuav/AXunMEPFDDo/KNhlJ3skz/RUgOjEh5BUjUnMCTvPWhKvq0XeEc/MihhH1lM4gI72MUA6nYBfYQGDmHUlz9h0C31Pa5R0UdYk+JBQks4wB7SmMIlNnEsmZy9D34RhxF9EphHRu1kAnlEpX6V/LgNZGFwQxl23VckW3UntuwNQ1dIcx2dPwVmYcQZckijpMbXw7YYwxyqeEQDt8jDc/PfmKe6ofQrtaEAAAAASUVORK5CYII=",
@@ -268,6 +272,7 @@
       }
     },
     "delicious": {
+      "status": "release",
       "manifest": {
         "name": "Delicious",
         "iconURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAgElEQVQokd1QMQ4CMQxzogLTceVL/QQvYmPhHzytUjYQQ20GthTBflYmJ05imyRM6A+c74gn3HLL5+nf2IKgfF/joDCEOcHSe0+UAfHyul8dZlOs1lpLFMlaT5frbTmuJPOFiEjUGMPMlh3rQWR+qrhn35LcncKnsr3J1R9sQfAGe+guZr/ElBMAAAAASUVORK5CYII=",
@@ -326,6 +331,7 @@
       }
     },
     "facebook": {
+      "status": "release",
       "manifest": {
         "origin": "https://www.facebook.com",
         "name": "Facebook Share",
@@ -376,6 +382,7 @@
       }
     },
     "cliqz": {
+      "status": "release",
       "manifest": {
         "origin": "https://mozsocial.cliqz.com",
         "name": "Cliqz",
@@ -416,6 +423,7 @@
       }
     },
     "mixi": {
+      "status": "release",
       "manifest": {
         "version": "1.1",
         "name": "mixi",
@@ -479,6 +487,7 @@
       }
     },
     "weibo": {
+      "status": "release",
       "manifest": {
         "author": "SINA Corporation",
         "description": "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯",
@@ -513,7 +522,7 @@
       }
     },
     "google": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "name": "Google+",
@@ -557,7 +566,7 @@
       }
     },
     "gmail": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "name": "Gmail",
@@ -599,7 +608,7 @@
       }
     },
     "twitter": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "name": "Twitter",
@@ -644,7 +653,7 @@
       }
     },
     "linkedin": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "name": "LinkedIn",
@@ -686,7 +695,7 @@
       }
     },
     "tumblr": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "origin": "https://www.tumblr.com",
@@ -735,7 +744,7 @@
       }
     },
     "vkontakte": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "origin": "https://vk.com",
@@ -785,7 +794,7 @@
       }
     },
     "pinterest": {
-      "demo": true,
+      "status": "demo",
       "minver": 32,
       "manifest": {
         "name": "Pinterest",
@@ -838,7 +847,7 @@
       }
     },
     "stumbleupon": {
-      "demo": true,
+      "status": "demo",
       "minver": 32,
       "manifest": {
         "origin": "https://www.stumbleupon.com",
@@ -873,7 +882,7 @@
     },
     
     "ycombinator": {
-      "demo": true,
+      "status": "demo",
       "minver": 32,
       "manifest": {
         "origin": "https://news.ycombinator.com/",
@@ -907,7 +916,7 @@
       }
     },
     "reddit": {
-      "demo": true,
+      "status": "demo",
       "minver": 32,
       "manifest": {
         "origin": "http://www.reddit.com",
@@ -941,7 +950,7 @@
       }
     },
     "digg": {
-      "demo": true,
+      "status": "demo",
       "minver": 32,
       "manifest": {
         "name": "Digg",
@@ -962,7 +971,7 @@
       }
     },
     "soundcloud": {
-      "demo": true,
+      "status": "demo",
       "manifest": {
         "name": "Soundcloud",
         "iconURL": "http://soundcloud.com/favicon.ico",
@@ -979,7 +988,7 @@
       }
     },
     "odnoklassniki": {
-      "demo": true,
+      "status": "beta",
       "minver": 32,
       "manifest": {
         "origin": "http://www.odnoklassniki.ru/",
@@ -1022,7 +1031,7 @@
       }
     },
     "demo": {
-      "demo": true,
+      "status": "demo",
       "manifest": {
         "origin": "https://socialapi-demo.paas.allizom.org",
         "name": "Demo Social Service",
@@ -1065,15 +1074,17 @@
     "2015-03-31": [37,38,39,40]
   },
   "sharePanel": {
-    "en-US": ["facebook", "twitter", "google", "tumblr", "linkedin", "delicious"],
+    "en-US": ["delicious", "facebook", "google", "linkedin", "tumblr", "twitter"],
     "jp-JP": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "ja": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
+    "tw": ["twitter", "google", "facebook", "tumblr", "gmail"],
     "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
   },
   "carousel": {
     "en-US": ["linkedin", "pocket", "delicious", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
+    "tw": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
     "ru": ["odnoklassniki", "vkontakte", "twitter"]
   }

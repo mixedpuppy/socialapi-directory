@@ -52,7 +52,10 @@
         </div>
       </div>
       <div class="detail-content">
-{% if demo %}
+{% if status == "beta" %}
+        <p id="beta-service" style="font-weight: bold; font-style: italic; color: black">{{ _("This service is in beta testing, some functionality may not work as expected..") }}</p>
+{% endif %}
+{% if status == "demo" %}
         <p id="demo-service" style="font-weight: bold; font-style: italic; color: red">{{ _("This service is for demonstration purposes only and may not work as expected.") }}</p>
 {% endif %}
 
