@@ -27,7 +27,10 @@ def createapp():
     langs = {}
     langs["en-US"] = "English (US)"
     for b in babel.list_translations():
-      langs[str(b).replace('_', '-')] = b.display_name
+      if b.territory:
+        langs["%s-%s" % (b.language, b.territory)] = b.display_name
+      else:
+        langs[b.language] = b.display_name
     return langs
 
   @babel.localeselector
