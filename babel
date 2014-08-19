@@ -1,6 +1,7 @@
 #!/bin/sh
 pybabel extract -F babel.cfg -o messages.pot .
 pybabel update -i messages.pot -d translations -l zh_TW
+pybabel update -i messages.pot -d translations -l pl
 pybabel update -i messages.pot -d translations -l ja
 pybabel update -i messages.pot -d translations -l it
 pybabel update -i messages.pot -d translations -l ru

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-15 15:12-0700\n"
+"POT-Creation-Date: 2014-08-19 10:28-0700\n"
 "PO-Revision-Date: 2014-08-08 14:04-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es_AR <LL@li.org>\n"
@@ -101,7 +101,11 @@ msgid ""
 msgstr ""
 
 #: templates/activated.html:79
-msgid "Change Settings from the Add-on Manager"
+msgid "Change Settings from the Add-ons Manager"
+msgstr ""
+
+#: templates/activated.html:81
+msgid "Add-ons Manager"
 msgstr ""
 
 #: templates/activated.html:83
@@ -179,11 +183,11 @@ msgid "Activate Now"
 msgstr "Activar ahora"
 
 #: templates/index.html:41 templates/provider.html:77
-msgid "Learn More..."
+msgid "Learn More&hellip;"
 msgstr ""
 
 #: templates/index.html:58
-msgid "Enhance your Firefox experience, Get more out of the Web"
+msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr ""
 
 #: templates/index.html:59
@@ -228,19 +232,19 @@ msgid "notifications"
 msgstr ""
 
 #: templates/index_entry.html:18 templates/provider.html:111
-msgid "This service requires an unreleased version of Firefox"
-msgstr ""
-
-#: templates/index_entry.html:18 templates/provider.html:111
-msgid "beta"
-msgstr ""
-
-#: templates/index_entry.html:21 templates/provider.html:114
 msgid "This is a demo service"
 msgstr ""
 
-#: templates/index_entry.html:21 templates/provider.html:114
+#: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
+msgstr ""
+
+#: templates/index_entry.html:20 templates/provider.html:113
+msgid "This service requires an unreleased version of Firefox"
+msgstr ""
+
+#: templates/index_entry.html:20 templates/provider.html:113
+msgid "beta"
 msgstr ""
 
 #: templates/lang_switcher.html:6
@@ -339,5 +343,14 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Get the most from the %(name)s service"
+#~ msgstr ""
+
+#~ msgid "Change Settings from the Add-on Manager"
+#~ msgstr ""
+
+#~ msgid "Learn More..."
+#~ msgstr ""
+
+#~ msgid "Enhance your Firefox experience, Get more out of the Web"
 #~ msgstr ""
 
