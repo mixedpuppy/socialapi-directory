@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-19 10:28-0700\n"
+"POT-Creation-Date: 2014-08-19 10:30-0700\n"
 "PO-Revision-Date: 2014-08-08 14:04-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -322,7 +322,7 @@ msgstr ""
 #: templates/provider.html:56
 msgid ""
 "This service is in beta testing, some functionality may not work as "
-"expected.."
+"expected."
 msgstr ""
 
 #: templates/provider.html:59
@@ -352,5 +352,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Enhance your Firefox experience, Get more out of the Web"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This service is in beta testing, "
+#~ "some functionality may not work as "
+#~ "expected.."
 #~ msgstr ""
 
