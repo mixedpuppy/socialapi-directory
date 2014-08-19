@@ -10,6 +10,6 @@ pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translation
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l fr
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l id
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l pt_BR
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l es_ES
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l es
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l es_AR
 pybabel compile -f -d translations
