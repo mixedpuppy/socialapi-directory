@@ -3,20 +3,22 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-08-08 14:05-0700\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-19 18:40+0000\n"
+"Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1408473628.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -27,15 +29,17 @@ msgstr "Startseite"
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr ""
+"Herzlichen Glückwunsch, <strong>%(name)s</strong> ist jetzt in Firefox "
+"aktiviert!"
 
 #: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "Holen Sie das Meiste aus %(name)s heraus"
 
 #: templates/activated.html:29
 msgid "Bookmark this page"
-msgstr ""
+msgstr "Lesezeichen für diese Seite setzen"
 
 #: templates/activated.html:30
 #, python-format
@@ -44,11 +48,15 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
+"Wenn Ihnen dieser Dienst neu ist, setzen Sie ein Lesezeichen für diese "
+"Seite, denn sie enthält nützliche Informationen und Links zu weiteren "
+"Anleitungen zur Nutzung und Anpassung von Firefox. Lesen Sie weiter, um mehr "
+"darüber zu erfahren, wie %(name)s in Firefox funktioniert."
 
 #: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Teilen Sie Inhalte, die Sie mögen, über %(name)s."
 
 #: templates/activated.html:40
 #, python-format
@@ -56,10 +64,12 @@ msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
+"Mit einem Klick können Sie über <strong>%(name)s</strong> interessante "
+"Inhalte auf einer beliebigen Website mit Ihrem sozialen Netzwerk teilen."
 
 #: templates/activated.html:45
 msgid "Save content for later"
-msgstr ""
+msgstr "Inhalt für später speichern"
 
 #: templates/activated.html:47
 #, python-format
@@ -67,11 +77,13 @@ msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
 msgstr ""
+"Mit einem Klick können Sie interessante Inhalte auf einer beliebigen Website "
+"auf <strong>%(name)s</strong> speichern."
 
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "Behalten Sie das Neuste von %(name)s im Blick"
 
 #: templates/activated.html:54
 #, python-format
@@ -79,10 +91,12 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
+"<strong>%(name)s</strong> bietet Ihnen das Neuste von seinem Dienst – "
+"klicken Sie einfach auf das Symbol in der Symbolleiste."
 
 #: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "Fügen Sie Ihrer Symbolleiste die Sidebar-Schaltflächen hinzu"
 
 #: templates/activated.html:64
 #, python-format
@@ -92,6 +106,10 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"Ab Firefox 30 können Sie mit der Sidebars-Schaltfläche in der Symbolleiste "
+"Ihre Sidebars verwalten. Die Sidebars-Schaltfläche befindet sich im <a "
+"href=\"%(url)s\">Anpassen-Bereich</a>, ziehen Sie einfach die Schaltfläche in "
+"Ihre Symbolleiste, um schnell zwischen Sidebars zu wechseln."
 
 #: templates/activated.html:72
 msgid ""
@@ -99,14 +117,17 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Außerdem können Sie von der Sidebar selbst einfach den Dienst in Ihrer "
+"Sidebar wechseln oder die Sidebar ausblenden. Sie können auch das Menü "
+"<strong>Ansicht → Symbolleisten</strong> in Firefox verwenden."
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Einstellungen über den Add-ons-Manager ändern"
 
 #: templates/activated.html:81
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Add-ons-Manager"
 
 #: templates/activated.html:83
 #, python-format
@@ -115,10 +136,13 @@ msgid ""
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
 msgstr ""
+"Sie können einfach <a href=\"%(url)s\">Ihre Dienste verwalten</a>, sie "
+"temporär deaktivieren oder entfernen, in dem Sie den Add-ons-Manager in "
+"Firefox aufrufen."
 
 #: templates/activated.html:88
 msgid "Next Steps"
-msgstr ""
+msgstr "Nächste Schritte"
 
 #: templates/activated.html:90
 #, python-format
@@ -126,6 +150,8 @@ msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr ""
+"<a href=\"%(url)s\">Erfahren Sie mehr darüber, was dieser Dienst zu Firefox "
+"hinzufügt</a>."
 
 #: templates/activated.html:92
 #, python-format
@@ -133,10 +159,14 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
+"<a href=\"%(url)s\">Erfahren Sie mehr</a> darüber, was <a href=\"%(url)s\">%"
+"(name)s</a> anbietet."
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
+"<a href=\".\">Entdecken und finden Sie weitere Dienste</a>, die Sie zu Firefox "
+"hinzufügen können."
 
 #: templates/footer.html:12
 #, python-format
@@ -145,38 +175,41 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
+"Teile dieses Inhalts stehen unter einem ©1998–%(current_year)s von einzelnen "
+"Mitwirkenden an mozilla.org. Der Inhalt steht unter einer <a href=\"%(url)s"
+"\">Creative-Commons-Lizenz</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Zu dieser Seite beitragen"
 
 #: templates/footer.html:20
 msgid "Contact Us"
-msgstr ""
+msgstr "Kontakt"
 
 #: templates/footer.html:21
 msgid "Partner with Us"
-msgstr ""
+msgstr "Werden Sie Partner"
 
 #: templates/footer.html:22
 msgid "Donate"
-msgstr ""
+msgstr "Spenden"
 
 #: templates/footer.html:23
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Datenschutzrichtlinie"
 
 #: templates/footer.html:24
 msgid "Legal Notices"
-msgstr ""
+msgstr "Rechtliche Hinweise"
 
 #: templates/footer.html:25
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Markenrechtsverletzung melden"
 
 #: templates/footer.html:30
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI für Entwickler"
 
 #: templates/index.html:40 templates/provider.html:74
 msgid "Activate Now"
@@ -184,11 +217,12 @@ msgstr "Jetzt aktivieren"
 
 #: templates/index.html:41 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "Erfahren Sie mehr&hellip;"
 
 #: templates/index.html:58
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr ""
+"Verbessern Sie Ihr Firefox-Erlebnis, holen Sie mehr aus dem Internet heraus"
 
 #: templates/index.html:59
 msgid ""
@@ -198,146 +232,161 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
+"Einfach zu verwenden, keine Software oder Add-ons, die heruntergeladen und "
+"installiert werden müssen – klicken Sie einfach auf „Aktivieren“ und Sie "
+"erhalten neue Funktionen direkt aus dem Internet. Alles, von Diensten "
+"sozialer Medien bis zu Lesezeichen in der Cloud, Musik und personalisierten "
+"Nachrichten, wenn Sie diese Dienste zu Firefox hinzufügen, haben Sie mehr "
+"vom Internet."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Dieser Dienst unterstützt das Teilen von Inhalten"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "Teilen"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Dieser Dienst bietet eine Funktion für Lesezeichen"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "Lesezeichen"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Dieser Dienst fügt Firefox eine Sidebar hinzu"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "Sidebar"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
+"Dieser Dienst fügt eine Schaltfläche zur Symbolleiste von Firefox hinzu, die "
+"Benachrichtigungen anzeigen kann"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "Benachrichtigungen"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Dies ist ein Demo-Dienst"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "Demo"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Dieser Dienst erfordert eine noch nicht veröffentlichte Firefox-Version"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "Beta"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Andere Sprachen:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Los"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s für Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Dienste für Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Holen Sie sich Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Firefox aktualisieren"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "Erfordert Firefox 29"
 
 #: templates/layout.html:90
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "Demo zur SocialAPI"
 
 #: templates/layout.html:95
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox für Desktop"
 
 #: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Sie müssen Firefox verwenden, um soziale Dienste zu installieren."
 
 #: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
-msgstr ""
+msgstr "Herunterladen"
 
 #: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
+"Installation von sozialen Diensten erfordert mindestens die Firefox-Version "
+"29. Aktualisieren Sie jetzt Ihren Firefox."
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
 msgstr ""
+"Dieser Dienst erfordert eine noch nicht veröffentlichte Firefox-Version."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Firefox Beta installieren"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "Erfordert Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Firefox Aurora installieren"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Firefox Nightly installieren"
 
 #: templates/provider.html:56
 msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
+"Dieser Dienst befindet sich im Beta-Zustand, einige Funktionen arbeiten "
+"möglicherweise nicht wie erwartet."
 
 #: templates/provider.html:59
 msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
 msgstr ""
+"Dieser Dienst existiert nur zu Demonstrationszwecken und funktioniert "
+"möglicherweise nicht wie erwartet."
 
 #: templates/sharePanel.html:105
 msgid "Click on a service to add it to Firefox."
-msgstr ""
+msgstr "Klicken Sie auf einen Dienst, um ihn zu Firefox hinzuzufügen."
 
 #: templates/sharePanel.html:117
 msgid "View more"
-msgstr ""
+msgstr "Mehr anzeigen"
 
 #~ msgid ""
 #~ msgstr ""
@@ -353,4 +402,3 @@ msgstr ""
 
 #~ msgid "Enhance your Firefox experience, Get more out of the Web"
 #~ msgstr ""
-
