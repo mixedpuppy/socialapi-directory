@@ -394,18 +394,3 @@ msgstr "Cliquez sur un service pour l'ajouter à Firefox."
 #: templates/sharePanel.html:117
 msgid "View more"
 msgstr "Afficher davantage"
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Get the most from the %(name)s service"
-#~ msgstr ""
-
-#~ msgid "Change Settings from the Add-on Manager"
-#~ msgstr ""
-
-#~ msgid "Learn More..."
-#~ msgstr ""
-
-#~ msgid "Enhance your Firefox experience, Get more out of the Web"
-#~ msgstr ""
