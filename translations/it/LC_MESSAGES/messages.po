@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-08-19 22:02+0100\n"
+"PO-Revision-Date: 2014-08-20 09:34+0100\n"
 "Last-Translator: Francesco Lodolo [:flod] <flod@lodolo.net>\n"
 "Language-Team: it <LL@li.org>\n"
 "Language: it\n"
@@ -47,14 +47,14 @@ msgid ""
 "reading to learn more about how %(name)s works in Firefox."
 msgstr ""
 "Se è la prima volta che visiti questo sito, ti consigliamo di aggiungerlo ai "
-"segnalibri: contiene informazioni utili e collegamenti per aiutarti a "
+"segnalibri: contiene link e informazioni utili per aiutarti a utilizzare e "
 "personalizzare Firefox. Continua a leggere per scoprire in che modo %(name)s "
 "funziona in Firefox."
 
 #: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr "Condividi i contenuti che ti piacciono attraverso %(name)s"
+msgstr "Condividi i tuoi contenuti preferiti attraverso %(name)s"
 
 #: templates/activated.html:40
 #, python-format
@@ -62,8 +62,8 @@ msgid ""
 "With the click of a button, you can Share interesting content on any website "
 "with your social network through <strong>%(name)s</strong>."
 msgstr ""
-"Con un clic su un pulsante puoi condividere contenuti interessanti da "
-"qualunque sito attraverso <strong>%(name)s</strong>."
+"Con un semplice clic su un pulsante puoi condividere contenuti interessanti "
+"da qualunque sito attraverso <strong>%(name)s</strong>."
 
 #: templates/activated.html:45
 msgid "Save content for later"
@@ -75,8 +75,8 @@ msgid ""
 "With the click of a button, you can save interesting content on any website "
 "to <strong>%(name)s</strong>."
 msgstr ""
-"Con un semplice clic puoi salvare il contenuto di un sito interessante in "
-"<strong>%(name)s</strong>."
+"Con un semplice clic puoi salvare il contenuto di un sito che ritieni "
+"interessante in <strong>%(name)s</strong>."
 
 #: templates/activated.html:52
 #, python-format
@@ -104,11 +104,11 @@ msgid ""
 "\">customization palette</a>, just drag the button to your toolbar for fast "
 "switching between sidebars."
 msgstr ""
-"A partire da Firefox 30, è possibile gestire le barra laterali utilizzando "
-"il pulsante Barre laterali direttamente dalla barra degli strumenti. Il "
+"A partire da Firefox 30 è possibile gestire le barra laterali utilizzando il "
+"pulsante Barre laterali direttamente dalla barra degli strumenti. Il "
 "pulsante è disponibile nella <a href=\"%(url)s\">finestra di "
 "personalizzazione</a>: trascina il pulsante nella barra degli strumenti per "
-"avere accesso in modo rapido a tutte le barre laterali."
+"avere accesso in modo rapido a tutte le barre laterali disponibili."
 
 #: templates/activated.html:72
 msgid ""
@@ -116,9 +116,9 @@ msgid ""
 "sidebar, from the sidebar itself. You can also use the <strong>View-"
 ">Toolbars</strong> menu in Firefox."
 msgstr ""
-"Inoltre, puoi cambiare il servizio nella barra laterale, o nasconderla, "
-"direttamente dalla barra stessa. Puoi anche utilizzare il menu di Firefox  "
-"<strong>Visualizza->Barre degli strumenti</strong>."
+"Inoltre, puoi cambiare il servizio disponibile o nascondere la barra "
+"laterale direttamente dalla barra stessa. Puoi anche utilizzare il menu di "
+"Firefox  <strong>Visualizza->Barre degli strumenti</strong>."
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
@@ -201,7 +201,7 @@ msgstr "Note legali"
 
 #: templates/footer.html:25
 msgid "Report Trademark Abuse"
-msgstr "Riporta un abuso dei marchi"
+msgstr "Segnala abusi dei marchi"
 
 #: templates/footer.html:30
 msgid "SocialAPI for Developers"
@@ -277,7 +277,8 @@ msgstr "demo"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr "Questo servizio richiede una versione di Firefox non ancora rilasciata"
+msgstr ""
+"Questo servizio richiede una versione di Firefox non ancora distribuita"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
@@ -339,7 +340,7 @@ msgstr ""
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
 msgstr ""
-"Questo servizio richiedere una versione non ancora rilasciata di Firefox."
+"Questo servizio richiedere una versione non ancora distribuita di Firefox."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -369,7 +370,7 @@ msgstr ""
 msgid ""
 "This service is for demonstration purposes only and may not work as expected."
 msgstr ""
-"Questo servizio è solo per uso dimostrativo, alcune caratteristiche "
+"Questo servizio è solo a scopo dimostrativo, alcune caratteristiche "
 "potrebbero non funzionare come previsto."
 
 #: templates/sharePanel.html:105
