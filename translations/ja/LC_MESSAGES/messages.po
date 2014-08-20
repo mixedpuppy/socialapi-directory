@@ -9,9 +9,9 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-08-08 13:42-0700\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: ja <LL@li.org>\n"
+"PO-Revision-Date: 2014-08-20 07:00-0400\n"
+"Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
+"Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -21,21 +21,21 @@ msgstr ""
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr "原産地"
+msgstr "ホーム"
 
 #: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "Firefox で <strong>%(name)s</strong> が有効化されました"
 
 #: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "%(name)s を最大限に活用"
 
 #: templates/activated.html:29
 msgid "Bookmark this page"
-msgstr ""
+msgstr "このページをブックマーク"
 
 #: templates/activated.html:30
 #, python-format
@@ -44,11 +44,14 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
+"このサービスを初めてお使いになる場合は、まずこのページをブックマークしましょう。"
+"Firefox の活用とカスタマイズに関する役立つ情報やリンクが載っています。Firefox で "
+"%(name)s がどのように動作するかについてはこの続きを読んでください。"
 
 #: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "%(name)s を通じて気に入ったコンテンツを共有"
 
 #: templates/activated.html:40
 #, python-format
@@ -56,10 +59,12 @@ msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
+"ボタンをクリックするだけで、<strong>%(name)s</strong> を通じ、あなたのソーシャル"
+"ネットワーク上であらゆるサイト上の興味深いコンテンツを共有できます。"
 
 #: templates/activated.html:45
 msgid "Save content for later"
-msgstr ""
+msgstr "コンテンツを後で見るために保存"
 
 #: templates/activated.html:47
 #, python-format
@@ -67,11 +72,13 @@ msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
 msgstr ""
+"ボタンをクリックするだけで、あらゆるサイト上の興味深いコンテンツを <strong>%(name)s"
+"</strong> へ保存できます。"
 
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "%(name)s の最新情報を見逃さない"
 
 #: templates/activated.html:54
 #, python-format
@@ -79,10 +86,12 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
+"<strong>%(name)s</strong> は、そのサービスからの最新情報を提供します。使い方はツー"
+"ルバー上のアイコンをクリックするだけです。"
 
 #: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "ツールバーへサイドバーボタンを追加"
 
 #: templates/activated.html:64
 #, python-format
@@ -92,6 +101,10 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"Firefox 30 以降、「サイドバー」ツールバーボタンを使ってサイドバーを管理できるように"
+"なりました。「サイドバー」ボタンは <a href=\"%(url)s\">カスタマイズパレット</a> に"
+"含まれていて、このボタンをツールバーへドラッグして追加すれば、サイドバーが複数あって"
+"も素早く切り替えられます。"
 
 #: templates/activated.html:72
 msgid ""
@@ -99,14 +112,17 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"さらに、サイドバー自体から、サイドバー内のサービスを変更したり、サイドバーを隠したり"
+"することも簡単にできます。Firefox の <strong>表示 > ツールバー</strong> メニュー"
+"を使っても同じことができます。"
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "アドオンマネージャで設定を変更"
 
 #: templates/activated.html:81
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "アドオンマネージャ"
 
 #: templates/activated.html:83
 #, python-format
@@ -115,10 +131,12 @@ msgid ""
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
 msgstr ""
+"Firefox のアドオンマネージャを開くことで、<a href=\"%(url)s\">お使いのサービスを管"
+"理</a> したり、それらを一時的に無効化したり、削除したりできます。"
 
 #: templates/activated.html:88
 msgid "Next Steps"
-msgstr ""
+msgstr "次の手順"
 
 #: templates/activated.html:90
 #, python-format
@@ -126,6 +144,7 @@ msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr ""
+"<a href=\"%(url)s\">このサービスが Firefox へ追加する機能について説明を見る</a>"
 
 #: templates/activated.html:92
 #, python-format
@@ -133,10 +152,12 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
+"<a href=\"%(url)s\">%(name)s</a> が提供する機能についての <a href=\"%(url)s\">"
+"説明を見る</a>"
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr ""
+msgstr "Firefox へ追加できる <a href=\".\">その他のサービスを見る</a>"
 
 #: templates/footer.html:12
 #, python-format
@@ -145,50 +166,53 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
+"当サイト上のコンテンツの一部は個人から mozilla.org へ提供されたものです。©1998–"
+"%(current_year)s コンテンツは <a href=\"%(url)s\">Creative Commons ライセンス"
+"</a> で使用可能です。"
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "このページへ貢献"
 
 #: templates/footer.html:20
 msgid "Contact Us"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: templates/footer.html:21
 msgid "Partner with Us"
-msgstr ""
+msgstr "パートナーシップ"
 
 #: templates/footer.html:22
 msgid "Donate"
-msgstr ""
+msgstr "寄付"
 
 #: templates/footer.html:23
 msgid "Privacy Policy"
-msgstr ""
+msgstr "プライバシーポリシー"
 
 #: templates/footer.html:24
 msgid "Legal Notices"
-msgstr ""
+msgstr "法的通知"
 
 #: templates/footer.html:25
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "商標不正使用報告"
 
 #: templates/footer.html:30
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "開発者向け SocialAPI"
 
 #: templates/index.html:40 templates/provider.html:74
 msgid "Activate Now"
-msgstr "利用する"
+msgstr "今すぐ有効化"
 
 #: templates/index.html:41 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "より詳しく..."
 
 #: templates/index.html:58
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "あなたの Firefox 体験を深め、Web をもっと活用しましょう"
 
 #: templates/index.html:59
 msgid ""
@@ -198,143 +222,151 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
+"使いやすく、ソフトウェアやアドオンを新たにダウンロードしたりインストールしたりする必"
+"要はありません。「有効化」ボタンをクリックするだけで Web から新機能が追加されます。"
+"ソーシャルメディアから、クラウドブックマーク、音楽、パーソナライズドニュースに至るま"
+"で、あらゆるサービスを Firefox へ追加して、Web をより一層活用できます。"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "このサービスはコンテンツの共有を簡単にします"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "共有"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "このサービスはブックマーク機能を提供します"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "ブックマーク"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "このサービスはサイドバーを Firefox へ追加します"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "サイドバー"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "このサービスはツールバーボタンを Firefox へ追加し、通知を行います"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "通知"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "これはデモ用のサービスです"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "デモ"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "このサービスを使用するには Firefox の未公開版が必要です"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "ベータ"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "他の言語:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "移動"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "Firefox 向け %(name)s"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Firefox 向けサービス"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Firefox をダウンロード"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Firefox を更新"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "Firefox 29 が必要です"
 
 #: templates/layout.html:90
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI のデモ"
 
 #: templates/layout.html:95
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "デスクトップ版 Firefox"
 
 #: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "ソーシャルサービスをインストールするには Firefox を使ってください。"
 
 #: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
-msgstr ""
+msgstr "ダウンロード"
 
 #: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
+"ソーシャルサービスをインストールするにはバージョン 29 以上の Firefox が必要です。今"
+"すぐお使いの Firefox を更新しましょう。"
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "このサービスを使用するには Firefox の未公開版が必要です。"
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Firefox Beta をインストール"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "Firefox が必要です"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Firefox Aurora をインストール"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Firefox Nightly をインストール"
 
 #: templates/provider.html:56
 msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
+"このサービスはベータテスト中のため、一部の機能が期待通りに動作しない可能性があります"
+"。"
 
 #: templates/provider.html:59
 msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
-msgstr ""
+msgstr "このサービスはデモ用のため、期待通りに動作しない可能性があります。"
 
 #: templates/sharePanel.html:105
 msgid "Click on a service to add it to Firefox."
-msgstr ""
+msgstr "気に入ったサービスをクリックして Firefox へ追加"
 
 #: templates/sharePanel.html:117
 msgid "View more"
-msgstr ""
+msgstr "詳細を表示"
