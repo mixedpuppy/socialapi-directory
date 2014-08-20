@@ -365,13 +365,3 @@ msgstr ""
 #: templates/sharePanel.html:117
 msgid "View more"
 msgstr ""
-
-#~ msgid "Get the most from the %(name)s service"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Learn More..."
-#~ msgstr "Узнать больше"
-
