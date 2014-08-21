@@ -2,14 +2,12 @@
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-08-20 07:00-0400\n"
+"PO-Revision-Date: 2014-08-20 19:44-0400\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0\n"
@@ -26,7 +24,7 @@ msgstr "ホーム"
 #: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr "Firefox で <strong>%(name)s</strong> が有効化されました"
+msgstr "Firefox に <strong>%(name)s</strong> が追加されました！"
 
 #: templates/activated.html:27
 #, python-format
@@ -44,7 +42,7 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
-"このサービスを初めてお使いになる場合は、まずこのページをブックマークしましょう。"
+"このサービスを初めてお使いになる場合は、まずこのページをブックマークしてください。"
 "Firefox の活用とカスタマイズに関する役立つ情報やリンクが載っています。Firefox で "
 "%(name)s がどのように動作するかについてはこの続きを読んでください。"
 
@@ -59,8 +57,8 @@ msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
-"ボタンをクリックするだけで、<strong>%(name)s</strong> を通じ、あなたのソーシャル"
-"ネットワーク上であらゆるサイト上の興味深いコンテンツを共有できます。"
+"ボタンをクリックするだけで、<strong>%(name)s</strong> を通じ、あなたのソーシャルネット"
+"ワーク上であらゆるサイト上の興味深いコンテンツを共有できます。"
 
 #: templates/activated.html:45
 msgid "Save content for later"
@@ -86,8 +84,8 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
-"<strong>%(name)s</strong> は、そのサービスからの最新情報を提供します。使い方はツー"
-"ルバー上のアイコンをクリックするだけです。"
+"<strong>%(name)s</strong> は、そのサービスからの最新情報を提供します。使い方は簡単、"
+"ツールバー上のアイコンをクリックするだけです。"
 
 #: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
@@ -101,10 +99,10 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
-"Firefox 30 以降、「サイドバー」ツールバーボタンを使ってサイドバーを管理できるように"
-"なりました。「サイドバー」ボタンは <a href=\"%(url)s\">カスタマイズパレット</a> に"
-"含まれていて、このボタンをツールバーへドラッグして追加すれば、サイドバーが複数あって"
-"も素早く切り替えられます。"
+"Firefox 30 以降、「サイドバー」ツールバーボタンを使ってサイドバーを管理できるようになりま"
+"した。「サイドバー」ボタンは <a href=\"%(url)s\">カスタマイズパレット</a> に含まれてい"
+"て、このボタンをツールバーへドラッグして追加すれば、サイドバーが複数あっても素早く切り替え"
+"られます。"
 
 #: templates/activated.html:72
 msgid ""
@@ -112,9 +110,9 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"さらに、サイドバー自体から、サイドバー内のサービスを変更したり、サイドバーを隠したり"
-"することも簡単にできます。Firefox の <strong>表示 > ツールバー</strong> メニュー"
-"を使っても同じことができます。"
+"さらに、サイドバー自体から、サイドバー内のサービスを変更したり、サイドバーを隠したりするこ"
+"とも簡単にできます。Firefox の <strong>表示 > ツールバー</strong> メニューを使っても同"
+"じことが可能です。"
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
@@ -131,8 +129,8 @@ msgid ""
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
 msgstr ""
-"Firefox のアドオンマネージャを開くことで、<a href=\"%(url)s\">お使いのサービスを管"
-"理</a> したり、それらを一時的に無効化したり、削除したりできます。"
+"Firefox のアドオンマネージャを開けば、<a href=\"%(url)s\">お使いのサービスを管理</a> "
+"したり、一時的に無効化したり、あるいは削除したりできます。"
 
 #: templates/activated.html:88
 msgid "Next Steps"
@@ -152,8 +150,8 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
-"<a href=\"%(url)s\">%(name)s</a> が提供する機能についての <a href=\"%(url)s\">"
-"説明を見る</a>"
+"<a href=\"%(url)s\">%(name)s</a> が提供する機能についての <a href=\"%(url)s\">説明"
+"を見る</a>"
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
@@ -166,9 +164,9 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"当サイト上のコンテンツの一部は個人から mozilla.org へ提供されたものです。©1998–"
-"%(current_year)s コンテンツは <a href=\"%(url)s\">Creative Commons ライセンス"
-"</a> で使用可能です。"
+"当サイト上のコンテンツの一部は貢献者によって mozilla.org へ提供されたものです。©1998–"
+"%(current_year)s コンテンツは <a href=\"%(url)s\">Creative Commons ライセンス</a>"
+" で使用可能です。"
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
@@ -200,19 +198,19 @@ msgstr "商標不正使用報告"
 
 #: templates/footer.html:30
 msgid "SocialAPI for Developers"
-msgstr "開発者向け SocialAPI"
+msgstr "開発者向け Social API"
 
 #: templates/index.html:40 templates/provider.html:74
 msgid "Activate Now"
-msgstr "今すぐ有効化"
+msgstr "今すぐ追加"
 
 #: templates/index.html:41 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr "より詳しく..."
+msgstr "詳細..."
 
 #: templates/index.html:58
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr "あなたの Firefox 体験を深め、Web をもっと活用しましょう"
+msgstr "あなたの Firefox 体験を深め、Web をさらに活用しましょう"
 
 #: templates/index.html:59
 msgid ""
@@ -222,10 +220,11 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
-"使いやすく、ソフトウェアやアドオンを新たにダウンロードしたりインストールしたりする必"
-"要はありません。「有効化」ボタンをクリックするだけで Web から新機能が追加されます。"
-"ソーシャルメディアから、クラウドブックマーク、音楽、パーソナライズドニュースに至るま"
-"で、あらゆるサービスを Firefox へ追加して、Web をより一層活用できます。"
+"Firefox 向けの各種サービスは、使いやすく、ソフトウェアやアドオンを新たにダウンロードした"
+"りインストールしたりする必要もありません。「今すぐ追加」ボタンをクリックするだけで Web か"
+"ら Firefox へ自動的に新機能が追加されます。ソーシャルメディアから、クラウドブックマーク、"
+"音楽、パーソナライズドニュースに至るまで、あらゆるサービスを追加して、Web をより一層活用で"
+"きます。"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
@@ -269,7 +268,7 @@ msgstr "デモ"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr "このサービスを使用するには Firefox の未公開版が必要です"
+msgstr "このサービスを使用するには Firefox の開発版が必要です"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
@@ -302,11 +301,11 @@ msgstr "Firefox を更新"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr "Firefox 29 が必要です"
+msgstr "動作環境: Firefox 29"
 
 #: templates/layout.html:90
 msgid "SocialAPI Demo"
-msgstr "SocialAPI のデモ"
+msgstr "Social API のデモ"
 
 #: templates/layout.html:95
 msgid "Firefox for desktop"
@@ -325,12 +324,12 @@ msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
-"ソーシャルサービスをインストールするにはバージョン 29 以上の Firefox が必要です。今"
-"すぐお使いの Firefox を更新しましょう。"
+"ソーシャルサービスをインストールするにはバージョン 29 以上の Firefox が必要です。今すぐ"
+"お使いの Firefox を更新しましょう。"
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
-msgstr "このサービスを使用するには Firefox の未公開版が必要です。"
+msgstr "このサービスを使用するには Firefox の開発版が必要です。"
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -339,7 +338,7 @@ msgstr "Firefox Beta をインストール"
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr "Firefox が必要です"
+msgstr "動作環境: Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
@@ -354,8 +353,7 @@ msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
-"このサービスはベータテスト中のため、一部の機能が期待通りに動作しない可能性があります"
-"。"
+"このサービスはベータテスト中のため、一部の機能が期待通りに動作しない可能性があります。"
 
 #: templates/provider.html:59
 msgid ""
