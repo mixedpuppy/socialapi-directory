@@ -3,39 +3,41 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-08-15 15:12-0700\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-21 17:30+0000\n"
+"Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1408642253.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr ""
+msgstr "首頁"
 
 #: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "恭喜，已在 Firefox 當中啟用 <strong>%(name)s</strong>！"
 
 #: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "完整使用 %(name)s"
 
 #: templates/activated.html:29
 msgid "Bookmark this page"
-msgstr ""
+msgstr "將此頁加入書籤"
 
 #: templates/activated.html:30
 #, python-format
@@ -44,45 +46,47 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
+"若您剛了解此服務，請將此頁面加入書籤。本頁面包含了許多有用的資訊與鏈結，能幫助您使用與自訂 Firefox。請繼續閱讀，以了解如何在 Firefox "
+"中使用 %(name)s。"
 
 #: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "將您喜愛的內容分享至 %(name)s"
 
 #: templates/activated.html:40
 #, python-format
 msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
-msgstr ""
+msgstr "只要點一下按鈕，您就可以分享任何網站上有趣的內容到您的 <strong>%(name)s</strong> 社交網路上。"
 
 #: templates/activated.html:45
 msgid "Save content for later"
-msgstr ""
+msgstr "儲存內容稍後閱讀"
 
 #: templates/activated.html:47
 #, python-format
 msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
-msgstr ""
+msgstr "只要點一下按鈕，您就可以將任何網站上的有趣內容儲存到您的 <strong>%(name)s</strong>。"
 
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "隨時收到來自 %(name)s 的最新資訊"
 
 #: templates/activated.html:54
 #, python-format
 msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
-msgstr ""
+msgstr "您只要點下工具列的圖示，就可收到來自 <strong>%(name)s</strong> 的最新更新。"
 
 #: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "新增側邊欄按鈕至您的工具列"
 
 #: templates/activated.html:64
 #, python-format
@@ -92,6 +96,8 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"自 Firefox 30 開始，您可以使用側邊欄工具列按鈕來管理您的側邊欄。側邊欄按鈕位於 <a href=\"%(url)s\">自訂面板畫面</a> "
+"當中，您只需要將按鈕拖曳至您的工具列擊可快速切換側邊欄。"
 
 #: templates/activated.html:72
 msgid ""
@@ -99,14 +105,16 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"另外，您可以在側邊欄中簡單地變更側邊欄中的服務，或隱藏側邊欄。您也可以使用 Firefox 的 <strong>檢視 -> 工具列</strong> "
+"選單達到一樣的目的。"
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "在附加元件管理員中變更設定"
 
 #: templates/activated.html:81
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "附加元件管理員"
 
 #: templates/activated.html:83
 #, python-format
@@ -114,29 +122,29 @@ msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
-msgstr ""
+msgstr "您可以透過 Firefox 的附加元件管理員簡單地 <a href=\"%(url)s\">管理、停用或移除</a> 某個服務。"
 
 #: templates/activated.html:88
 msgid "Next Steps"
-msgstr ""
+msgstr "接下來"
 
 #: templates/activated.html:90
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">了解這個服務到底新增了什麼東西到 Firefox</a>。"
 
 #: templates/activated.html:92
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
-msgstr ""
+msgstr "<a href=\"%(url)s\">了解</a><a href=\"%(url)s\">%(name)s</a> 提供什麼。"
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr ""
+msgstr "<a href=\".\">探索您還可以新增哪些服務</a> 到 Firefox。"
 
 #: templates/footer.html:12
 #, python-format
@@ -145,50 +153,52 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
+"本頁當中的部分內容著作權係 ©1998–%(current_year)s 由各 mozilla.org 貢獻者所有，並以 <a href=\"%"
+"(url)s\">創用 CC</a> 授權條款進行授權。"
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "貢獻至此頁面"
 
 #: templates/footer.html:20
 msgid "Contact Us"
-msgstr ""
+msgstr "聯絡我們"
 
 #: templates/footer.html:21
 msgid "Partner with Us"
-msgstr ""
+msgstr "成為我們的夥伴"
 
 #: templates/footer.html:22
 msgid "Donate"
-msgstr ""
+msgstr "捐獻給我們"
 
 #: templates/footer.html:23
 msgid "Privacy Policy"
-msgstr ""
+msgstr "隱私權保護政策"
 
 #: templates/footer.html:24
 msgid "Legal Notices"
-msgstr ""
+msgstr "法律資訊"
 
 #: templates/footer.html:25
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "回報商標濫用"
 
 #: templates/footer.html:30
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI 開發資訊"
 
 #: templates/index.html:40 templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "立刻啟用"
 
 #: templates/index.html:41 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "了解更多&hellip;"
 
 #: templates/index.html:58
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "擴充您的 Firefox 使用體驗，更完美使用 Web"
 
 #: templates/index.html:59
 msgid ""
@@ -198,143 +208,145 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
+"很簡單就能使用，不需要下載安裝任何軟體或附加元件。只需要點下「啟用」就會把 Web 的新功能帶來給您。不論是社交網路、雲端書籤、音樂與個人化新聞，在 "
+"Firefox 安裝這些服務讓您能更好地使用 Web。"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "此服務支援內容分享"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "分享"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "此服務提供書籤功能"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "書籤"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "此服務會新增側邊欄至 Firefox"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "側邊欄"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "此服務會新增工具列按鈕到 Firefox，可能會有通知功能"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "通知"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "這是展示用的服務"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "demo"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "此服務需要使用測試版本的 Firefox"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "其他語言:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "前往"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s for Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Services for Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "下載 Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "升級 Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "必須使用 Firefox 29"
 
 #: templates/layout.html:90
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI Demo"
 
 #: templates/layout.html:95
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox 桌面版"
 
 #: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "您必須使用 Firefox 才能安裝社交服務。"
 
 #: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
-msgstr ""
+msgstr "下載"
 
 #: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
-msgstr ""
+msgstr "您必須使用 Firefox 29 或更新版本才能安裝社交服務。立刻升級您的 Firefox。"
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "此服務需要 Firefox 測試版。"
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "安裝 Firefox Beta 測試版"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "需要 Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "安裝 Firefox Aurora 測試版"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "安裝 Firefox Nightly 測試版"
 
 #: templates/provider.html:56
 msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
-msgstr ""
+msgstr "此服務正在測試中，某些功能可能會怪怪的。"
 
 #: templates/provider.html:59
 msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
-msgstr ""
+msgstr "此服務只是展示用，可能會怪怪的。"
 
 #: templates/sharePanel.html:105
 msgid "Click on a service to add it to Firefox."
-msgstr ""
+msgstr "點擊服務以將其新增至 Firefox。"
 
 #: templates/sharePanel.html:117
 msgid "View more"
-msgstr ""
+msgstr "檢視更多"
