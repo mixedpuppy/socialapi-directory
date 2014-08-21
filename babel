@@ -1,7 +1,7 @@
 #!/bin/sh
 pybabel extract -F babel.cfg -o translations/templates/LC_MESSAGES/messages.pot .
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l en_US
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l zh_TW
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l zh_Hant_TW
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l pl
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l ja
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l it

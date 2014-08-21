@@ -1,6 +1,6 @@
 import re, os, sys
 import flask
-from flask import Flask, Blueprint, request, json, render_template, redirect, url_for
+from flask import Flask, Blueprint, g, request, json, render_template, redirect, url_for
 from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
 import copy
@@ -35,9 +35,16 @@ def createapp():
 
   @babel.localeselector
   def get_locale():
+    print [str(b) for b in babel.list_translations()]
     lang = request.path[1:].split('/', 1)[0].replace('-', '_')
-    langs = [str(b) for b in babel.list_translations()]
-    if lang in langs:
+    langs = {}
+    for b in babel.list_translations():
+      if b.territory:
+        langs["%s_%s" % (b.language, b.territory)] = str(b)
+      else:
+        langs[b.language] = str(b)
+    print lang, langs
+    if lang in langs.keys():
       return lang
     else:
       return 'en_US'
@@ -124,7 +131,6 @@ def createapp():
       keys = data["source"].keys()
       keys.sort()
       data["source"] = [data["source"][key] for key in keys]
-
       data["basehref"] = basehref
       data["releases"] = firefoxReleases(data["firefox-releases"])
       data['translations'] = get_supported_locales()
