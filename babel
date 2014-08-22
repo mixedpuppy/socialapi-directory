@@ -1,15 +1,18 @@
 #!/bin/sh
 pybabel extract -F babel.cfg -o translations/templates/LC_MESSAGES/messages.pot .
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l en_US
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l zh_Hant_TW
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l pl
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l ja
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l it
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l ru
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l cs
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l de
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l fr
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l id
-pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l pt_BR
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l en_US
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l es
 pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l es_AR
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l fr
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l gl
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l id
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l it
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l ja
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l pl
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l pt_BR
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l ru
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l sl
+pybabel update -i translations/templates/LC_MESSAGES/messages.pot -d translations -l zh_Hant_TW
 pybabel compile -f -d translations
