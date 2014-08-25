@@ -1153,11 +1153,11 @@
     "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
   },
   "carousel": {
-    "en-US": ["linkedin", "twitter", "pocket", "facebook"],
+    "en-US": ["linkedin", "twitter", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "tw": ["twitter", "google", "tumblr"],
-    "ja": ["mixi", "twitter", "tumblr"],
+    "ja": ["mixi", "twitter", "tumblr", "google"],
     "ru": ["odnoklassniki", "vkontakte"],
     "de": ["cliqz", "goal", "twitter"]
   }
