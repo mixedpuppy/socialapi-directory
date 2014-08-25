@@ -221,6 +221,21 @@
             "learnmore": "https://getpocket.com/firefox"
           }
         },
+        "ru": {
+          "name": "Pocket",
+          "tagline": "Save it for later",
+          "shortDescription": "A convenient, beautiful place to save content you want to view later.",
+          "images": {
+            "carousel": "images/pocket/share-ru.png",
+            "detail": "images/pocket/share-ru.png",
+            "bookmark": "images/pocket/share-ru.png",
+            "fulllogo": "images/pocket/pocket_logo.png",
+            "logo": "images/pocket/icon64.png"
+          },
+          "links": {
+            "learnmore": "https://getpocket.com/firefox"
+          }
+        },
         "ja": {
           "name": "Pocket",
           "tagline": "",
@@ -368,6 +383,16 @@
             "carousel": "images/facebook/facebook-share.png",
             "logo": "images/facebook/FB-f-Logo__blue_58.png",
             "detail": "images/facebook/facebook-share.png"
+          }
+        },
+        "ru": {
+          "name": "Facebook",
+          "tagline": "Share the web",
+          "shortDescription": "Share any web page, anywhere, anytime.",
+          "images": {
+            "carousel": "images/facebook/share-ru.png",
+            "logo": "images/facebook/FB-f-Logo__blue_58.png",
+            "detail": "images/facebook/share-ru.png"
           }
         },
         "ja": {
@@ -642,6 +667,19 @@
             "learnmore": "https://about.twitter.com/"
           }
         },
+        "ru": {
+          "name": "",
+          "tagline": "Tweet to your followers",
+          "shortDescription": "Twitter Share lets you quickly tweet links to your followers.",
+          "images": {
+            "detail": "images/twitter/share-ru.png",
+            "carousel": "images/twitter/share-ru.png",
+            "share": "images/twitter/share-ru.png"
+          },
+          "links": {
+            "learnmore": "https://about.twitter.com/"
+          }
+        },
         "ja": {
           "name": "",
           "tagline": "",
@@ -682,6 +720,18 @@
             "carousel": "images/linkedin/share.png",
             "detail": "images/linkedin/share.png",
             "share": "images/linkedin/share.png"
+          },
+          "links": {
+            "learnmore": "https://www.linkedin.com/about-us"
+          }
+        },
+        "ru": {
+          "name": "LinkedIn",
+          "shortDescription": "Share the web with your professional network.",
+          "images": {
+            "carousel": "images/linkedin/share-ru.png",
+            "detail": "images/linkedin/share-ru.png",
+            "share": "images/linkedin/share-ru.png"
           },
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
@@ -791,9 +841,9 @@
           "description": "",
           "images": {
             "logo": "data:image/png;base64,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",
-            "details": ["images/vkontakte/vk-share.png", "images/vkontakte/vk-sidebar.png"],
-            "carousel": "images/vkontakte/vk-share.png",
-            "share": "images/vkontakte/vk-share.png"
+            "details": ["images/vkontakte/share-ru.png", "images/vkontakte/sidebar-ru.png"],
+            "carousel": "images/vkontakte/share-ru.png",
+            "share": "images/vkontakte/share-ru.png"
           },
           "links": {
             "learnmore": "https://vk.com/about"
@@ -1032,9 +1082,9 @@
           "description": "",
           "images": {
             "fulllogo": "images/odnoklassniki/logo-large.png",
-            "carousel": "images/odnoklassniki/share.png",
-            "detail": "images/odnoklassniki/share.png",
-            "share": "images/odnoklassniki/share.png"
+            "carousel": "images/odnoklassniki/share-ru.png",
+            "detail": "images/odnoklassniki/share-ru.png",
+            "share": "images/odnoklassniki/share-ru.png"
           }
         }
       }
@@ -1095,7 +1145,7 @@
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "tw": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
-    "ru": ["odnoklassniki", "vkontakte", "twitter"],
+    "ru": ["odnoklassniki", "vkontakte"],
     "de": ["cliqz", "goal", "twitter"]
   }
 }
