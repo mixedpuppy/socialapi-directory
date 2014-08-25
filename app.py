@@ -6,6 +6,8 @@ from werkzeug.routing import BaseConverter
 import copy
 import collections
 
+TRANSLATIONS = ['en-US', 'zh-TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
+
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
         super(RegexConverter, self).__init__(url_map)
@@ -25,8 +27,9 @@ def createapp():
 
   def get_supported_locales():
     langs = {}
-    langs["en-US"] = "English (US)"
     for b in babel.list_translations():
+      if not demo and str(b) not in TRANSLATIONS:
+        continue
       if b.territory:
         langs["%s-%s" % (b.language, b.territory)] = b.display_name
       else:
@@ -35,10 +38,12 @@ def createapp():
 
   @babel.localeselector
   def get_locale():
-    print [str(b) for b in babel.list_translations()]
+    #print [str(b) for b in babel.list_translations()]
     lang = request.path[1:].split('/', 1)[0].replace('-', '_')
     langs = {}
     for b in babel.list_translations():
+      if not demo and str(b) not in TRANSLATIONS:
+        continue
       if b.territory:
         langs["%s_%s" % (b.language, b.territory)] = str(b)
       else:
@@ -192,14 +197,14 @@ def createapp():
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def index(base, locale):
     # if root is locale, capture that, but use the same local file paths
-    if not demo and locale != "en-US":
+    if not demo and locale not in TRANSLATIONS:
         return app.send_static_file("redir.html")
     appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     return renderTemplate('index.html', appData, locale, base=base)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def app_index(locale):
-    if not demo and locale != "en-US":
+    if not demo and locale not in TRANSLATIONS:
         return app.send_static_file("redir.html")
     return index(None, locale)
 

@@ -64,7 +64,7 @@
         var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
         data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
       }
-{% if locale.startswith("en") %}
+{% if locale in translations %}
       else {
         data.postActivationURL = baseurl + "/activated/"+name+".html";
       }
