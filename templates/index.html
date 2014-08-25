@@ -71,14 +71,14 @@
       <div id="directory-grid" class="row">
       {% for p in source %}
       {% if p['lang'][locale] %}
-      {% if not production or (not p['demo'] and (not p['minver'] or p['minver'] <= releases[0])) %}
+      {% if not production or p['status'] == 'release' %}
         {% include 'index_entry.html' %}
       {% endif %}
       {% endif %}
       {% endfor %}
       {% for p in source %}
       {% if not p['lang'][locale] %}
-      {% if not production or (not p['demo'] and (not p['minver'] or p['minver'] <= releases[0])) %}
+      {% if not production or p['status'] == 'release' %}
         {% include 'index_entry.html' %}
       {% endif %}
       {% endif %}

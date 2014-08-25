@@ -1,4 +1,5 @@
 import re, os, sys
+from datetime import datetime
 import flask
 from flask import Flask, Blueprint, g, request, json, render_template, redirect, url_for
 from flask.ext.babel import Babel
@@ -6,7 +7,7 @@ from werkzeug.routing import BaseConverter
 import copy
 import collections
 
-TRANSLATIONS = ['en-US', 'zh-TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
+TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
 
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
@@ -29,6 +30,7 @@ def createapp():
     langs = {}
     for b in babel.list_translations():
       if not demo and str(b) not in TRANSLATIONS:
+        print str(b)," is not in ",TRANSLATIONS
         continue
       if b.territory:
         langs["%s-%s" % (b.language, b.territory)] = b.display_name
@@ -81,7 +83,6 @@ def createapp():
     return p
   
   def firefoxReleases(schedule):
-    from datetime import datetime
     today = datetime.today()
     last = []
     for d, a in schedule.iteritems():
@@ -113,6 +114,7 @@ def createapp():
       d["basehref"] = basehref
       #print >> sys.stdout, json.dumps(d)
       d["releases"] = firefoxReleases(data["firefox-releases"])
+      d['current_year'] = datetime.now().year
       return render_template(template, **d)
     else:
       for k, p in data["source"].iteritems():
@@ -139,6 +141,7 @@ def createapp():
       data["basehref"] = basehref
       data["releases"] = firefoxReleases(data["firefox-releases"])
       data['translations'] = get_supported_locales()
+      data['current_year'] = datetime.now().year
       return render_template(template, **data)
   
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
