@@ -1153,7 +1153,7 @@
     "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
   },
   "carousel": {
-    "en-US": ["linkedin", "pocket", "delicious", "facebook"],
+    "en-US": ["linkedin", "twitter", "pocket", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "tw": ["twitter", "google", "tumblr"],
