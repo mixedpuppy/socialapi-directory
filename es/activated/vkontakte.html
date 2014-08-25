@@ -1,0 +1,282 @@
+<html>
+<head>
+  <base href="/es/"/>
+  <title>VK para Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Consigue Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Actualiza Firefox <span>&raquo;</span><br/><span class=\"smaller\">requiere Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/es/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox para escritorio"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Debes usar Firefox para instalar los servicios sociales.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Descargar.</a>
+  </p><p id="upgrade-required" hidden="true">Instalar los servicios sociales requiere al menos la versión 29 de Firefox.  Actualiza ahora tu versión de Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Descargar.</a>
+  </p><p id="beta-required" hidden="true">Este servicio requiere una versión no publicada de Firefox.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Inicio</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,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"></img> VK</h1>
+    
+    <h3>¡Felicidades, <strong>VK</strong> ya está activado en Firefox!</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>Comparte el contenido que te gusta a través de VK</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="images/vkontakte/vk-share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> Con un clic puedes compartir contenido interesante de cualquier sitio web con tu red social a través de <strong>VK</strong>.</p>
+    </div>
+
+
+
+
+      <div class="section clearfix">
+      <h4><li>Agrega el botón Paneles laterales a tu barra de herramientas</li></h4>
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarbutton.png"
+      alt="[sidebar button image]" style="float: right;"/>
+      </div>
+      <p class="lead">A partir de Firefox 30 puedes administrar tus paneles laterales usando el botón Paneles laterales de la barra de  herramientas. Ese botón está ubicado en la <a href="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s">paleta de personalización</a>, por lo que basta con que lo arrastres a tu barra de  herramientas para cambiar rápidamente entre los distintos paneles.</p>
+      </div>
+
+      <div class="section clearfix">
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarselect.png"
+      alt="[sidebar selection image]" style="float: right;"/>
+      </div>
+      <p class="lead">Además, puedes cambiar fácilmente el servicio en tu panel lateral, u ocultar su panel del resto. También puedes usar el menú <strong>Ver->Barras de herramientas</strong> en Firefox.</p>
+      </div>
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Cambiar ajustes desde el administrador de complementos</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Administrador de complementos" style="float: right;"/>
+      </div>
+      <p class="lead">Puedes <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">administrar tus servicios</a> fácilmente, desactivándolos temporalmente o eliminándolos, accediendo al administrador de complementos de Firefox.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Siguientes pasos</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">Lee más sobre qué añade este servicio a Firefox</a>.</li>
+
+      <li><a href="https://vk.com/about">Lee más</a> sobre qué proporciona <a href="https://vk.com/about">VK</a>.</li>
+
+      <li><a href=".">Explora y encuentra más servicios</a> que puedes agregar a Firefox.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Partes de este contenido son ©1998–2014 de colaboradores individuales de mozilla.org. El contenido está disponible bajo una <a href="http://www.mozilla.org/foundation/licensing/website-content/">Licencia Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Colabora en esta página</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contacta con nosotros</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Sé nuestro socio</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Dona</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Política de privacidad</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Avisos legales</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Informa sobre uso indebido de marca</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI para desarrolladores</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Otros idiomas:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" selected>español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Ir</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/es/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

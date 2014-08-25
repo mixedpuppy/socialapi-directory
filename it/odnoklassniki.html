@@ -1,0 +1,295 @@
+<html>
+<head>
+  <base href="/it/"/>
+  <title>Odnoklassniki per Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Scarica Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Aggiorna Firefox <span>&raquo;</span><br/><span class=\"smaller\">richiede Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [30, 31, 32, 33];
+    var minver = 32;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Installa Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">richiede Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Installa Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">richiede Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Installa Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">richiede Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Aggiorna Firefox <span>&raquo;</span><br/><span class=\"smaller\">richiede Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/it/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox per desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Devi utilizzare Firefox per installare i servizi Social.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Scarica.</a>
+  </p><p id="upgrade-required" hidden="true">L’installazione dei servizi Social richiede Firefox 29 o una versione successiva. Aggiorna subito la tua versione di Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Scarica.</a>
+  </p><p id="beta-required" hidden="true">Questo servizio richiede una versione non ancora distribuita di Firefox.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Home</a>
+        </div>
+        <div>
+        <span>Odnoklassniki</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="images/odnoklassniki/logo-large.png"></img></h1>
+
+              <h3 class="tagline"></h3>
+              <p class="lead">Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'odnoklassniki')" data-service="{&#34;author&#34;: &#34;Odnoklassniki&#34;, &#34;description&#34;: &#34;Odnoklassniki (Russian: \u041e\u0434\u043d\u043e\u043a\u043b\u0430\u0441\u0441\u043d\u0438\u043a\u0438 Classmates) is a social network service for classmates and old friends.&#34;, &#34;homepageURL&#34;: &#34;http://www.odnoklassniki.ru/&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAEg0lEQVR4Aa3Wb2jdVx3H8ff3nPO7N2lTl8RkttPSueqilQotMpuskyFkC+vQBzOE+MCJz6ZSEGbTB1LrRNifJ/575pQNxiyyZGOysYE11XXF4dSpc65MJc4ltAtkq7khye+ecz5eblOo+Lt5YPs630e/P+d7f9/PfXBMEqB25ZVFlQ3j/yew2ja3dcDAANhokC/8K/3uB1o4SbmMuStqUfRw3afD/sOudydgWcrvzKXnvsDSH8zXMMcVUiaV6t8fxh61vustppR+cZg3HrFW56uoXNGNd4fR7wcaC7w1a65OFptQUipNyGQYvs7m3+rrNj/L8oLT6hLlvyVTZ5Sr1Pq5cYLhY3bgmwxNqN6r5qo2Q2tbVt8NyhnJsjBRRbnMNxwKI8d9/xBtgrh0Np+5z/7+cwt1KkkglF3GLBtSZam5lnfd5sd+vLF7m0HRPxTGHub6sdYDSB0LC04iyTJYxY9XrT+M3BfCFkFqrvDmKcxs562+2OJDtw4ez/O/sbJRkYcuLjkzAyEqKpW24yY/8FGAuBaf/4qeHNfMeHz+HsU1wN67hx03EdcRVWUtAUBQmUFMru9DAgOdf8W9/qS5OmCvz6R994T3H3CQ+3YrJXOqyMAEbDSQBFUPpaajrdgiK5TWweRrFN20WYoSUtW7QuBkdOR8XvwzSoAN7tXwverqzfVrbPjrfvDjQM4pv/0q5qli7XIbcVdyNc2/HP/5K8DMipGj7u7T4YtnwvBRMxPkVuYLv8XX6CwYIFVnAC6u6+RUvOtnvveDHnjPLtoEzXf/wcmj1izNF1SNSE4SDpBQJYQy8y+nE3c2z87kchkQqGzEs0/pxKHWLSmrAwTgwEBUUYpp5wijD7F1u6Y/Hx/+RPn4oebjd5Q/2qfpCWtdHH0g7xyRIlWEzHB0kpO2XVd89tHa8L1h8hnGn+CG2yFCdLtvt/EnwuSz9eEjxWcesZ4d5NQ5A5El/vdvqox5alsBH7rch++kVciEzIxLaj3ZClNGjstJJpEJAsAq8g1ceDM982Ud/Ia/do9xkbUXQAYtvppe+I5dmDNXVM+ITUPGPH+dzo+NNqcn49wsl4lzv4zTE/Gx23htBitUBWQOJ8NER76uxnkt/J6ua7iMuvp07hVbfptQB9GZExgdqblm1+71k0+77fuB3C7Ab9/nJ57W+/YqrrEpxyZSZOBj7nMn3MCQgwzx9P3x9IMZHPjWxbt+qsE9pEglgXCos5ztlil/affmmQc1e1ynjsUXH8pgtHp8xN18JOeoTlC4+LJRRdka5wSC+OIDzH7LvEdo9lgk+5unHLCyaMLoKMicSVbZxBV64f649Ddbe8dee8rhkNGm2W/Hc3+y7n77y7RzBblqPh7MrHlhgZ98iuW3cKHyIxTXzYzQxX8RcR2J0OH8kqO2fcB/6deWck7Pfo2Xvkdt61U+eH3ycLjju8GZcfBIPP9H5k6ZL67K0VGpya5bwy1TzuzS4bexmF76IW88p9a4r6SHRHcvu8fCga9azyBgkmgTaL1h5TIYV0C1Hqv3GBv+A387Oz9yuflrAAAAAElFTkSuQmCC&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,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&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAB3UlEQVR4AW2Pz0tVbxDGn5nzHn+EgtUqVy6CFl9vUISuXAi5CXIThCQU2KKEyj8jQmsrftvVqsCIokJob9EtNxltgjbdAhc3EFPved95mnNP17vxw8PDvPMMZ84Inbiffn1AsQMRHAqJfCA7cU6yXkmtnfR2Ht9fokSqHExwJOt2nJGL4fyy2o93/PYcEiB56VAQGBwpRQB6EPmYDyv3mmJEchlSJIJMLIYr712YWCIDUmpHFPe93wFUKQgSTtyTM3NZ7Xr6/AiQUJuLW19kYxmhH06CQFUAGpnaiibD4/4ZW1uwtdu+XIfHvdlJCVLdYG6VYD/r0jckk3d18p70HWWjDqKTEkCQqjLC0dzqK8XQyVC7BiBuPOTH/0VzqdK2KyD8h5nmOvUAu83i9Xzx5qbsNnXqPjT3iA7aG4DyCSVAmKFnIJy+CiYBKJl9fWbeZGdDNXhwACza6kxcX5KsB1lPXF+MqzPe7J4BKNEFqcDobDZ2JzbqqVHPxhZkdLZsdoGKGVyd0/XUNLc205NLLi/8CeNBSqYgR44LgUQIIIGvbsFS1toGYI8vQFUlVH9PEv3HxFp/4osb2HyKEgENjiicbk04/10O0ytCx6I1Psn+dpkdCo29gzp8VjT8Bdf/QNtzme2bAAAAAElFTkSuQmCC&#34;, &#34;name&#34;: &#34;Odnoklassniki&#34;, &#34;origin&#34;: &#34;http://www.odnoklassniki.ru/&#34;, &#34;pageSize&#34;: {&#34;share&#34;: {&#34;height&#34;: 380, &#34;width&#34;: 650}}, &#34;shareURL&#34;: &#34;http://www.odnoklassniki.ru/dk?st.cmd=addShare&amp;st.noresize=on&amp;st._surl=%{url}&#34;, &#34;sidebarURL&#34;: &#34;http://m.odnoklassniki.ru&#34;}">Attiva ora <span>&raquo;</span></a>
+              <div class="provider-description"></div>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            <div class="clearfix"><img src="images/odnoklassniki/share.png" class="provider-primary-image" /></div>
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span class="supported" title="Questo servizio supporta la condivisione di contenuti">condivisione</span> 
+          <span  title="Questo servizio aggiunge nuove funzioni alla gestione dei segnalibri">segnalibri</span> 
+          <span class="supported" title="Questo servizio aggiunge una barra laterale a Firefox">barra laterale</span> 
+          <span  title="Questo servizio aggiunge un pulsante alla barra degli strumenti di Firefox che potrebbe visualizzare delle notifiche">notifiche</span>
+
+          <span class="supported" title="Questo servizio richiede una versione di Firefox non ancora distribuita">beta</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Parte di questi contenuti sono ©1998–2014 di singoli collaboratori di mozilla.org. I contenuti sono disponibili secondo la <a href="http://www.mozilla.org/foundation/licensing/website-content/">licenza Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Collabora a questa pagina</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contattaci</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Diventa nostro partner</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Fai una donazione</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Informativa sulla privacy</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Note legali</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Segnala abusi dei marchi</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI per sviluppatori</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Altre lingue:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" selected>italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Vai</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/it/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

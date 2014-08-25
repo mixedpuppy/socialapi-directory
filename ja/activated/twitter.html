@@ -1,0 +1,263 @@
+<html>
+<head>
+  <base href="/ja/"/>
+  <title>Firefox 向け </title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Firefox をダウンロード <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Firefox を更新 <span>&raquo;</span><br/><span class=\"smaller\">動作環境: Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/ja/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="デスクトップ版 Firefox"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">ソーシャルサービスをインストールするには Firefox を使ってください。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">ダウンロード.</a>
+  </p><p id="upgrade-required" hidden="true">ソーシャルサービスをインストールするにはバージョン 29 以上の Firefox が必要です。今すぐお使いの Firefox を更新しましょう。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">ダウンロード.</a>
+  </p><p id="beta-required" hidden="true">このサービスを使用するには Firefox の開発版が必要です。</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">ホーム</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAFgElEQVR42u2Za2wUVRSApy1CFWvBYkARrMZgor9MJRgfkR/8MJEfxPjHYIBE0YTE9w9DYkIkYtQYY2I0QdFoCBV2Z3d2l+5SKC2FKg/7gLZItbS0hZY+5t47M7uz89yZ8dzdhqYJyI47UyWZk5NJNp3mnu+ce8695wzDxPAtrQFAABAABAABQAAQAAQAAcDcKoeZKGIiiD65WwgAbGURE+KZMF/JoYUxvICDn6A8wFznZUroIQB1WwnWw/+GUU2SbDiT/uSiuu+KHhnT9l7Rd/Wr637LlMcQ/JXhrplOX56fIJUNhOE8ApgXx1UNNPTuracGlbPoxdNSM28Ihu3MlgnN3jeqPXE8zYTyGCyqSZBNnfL3w2ptk0iDFi8RII4h6HVt0v5RbVWjwBzgXfoelbFo2zkZ67ZzYxmQcxs70s+dkLZfUNqQqebsb4fVymJ2UTGbpyyEdvSpsEzkqr48SairuGI3Hli/pTNDHX8zyeZsrFuF91KTxjJw3H6eSZQOEMGVcRy9qheWaZw0Hj4iQOYVxcCix5qFoWzOKVps22mZMh5tFuuahNe75RVNAhMtFQDdmSItvHFtjd+J8fRxiWFvFt8oBfhiQHHcSNqwI2P6zyPakGJ9PahUx7AHAFUpIQ8wI5cV662ebDVND8BANwrd3UncLpquAEzbKWyj+iv6ojh1gQdb6PYEgU3pzBbVcg5PGutPpmmqHZiu5bMqRohf0yqNKJbjUgDguyHtngYC3vHiHIjiChZ9c0m97mJIt3cPaevapKoERAOMRpSEmwZYfzrDQ/FxI7rlfHZRqaK+5z06iePUlBdOZaQbVxKiWw0Txvt/KE+2inAAlbG08jL7JteeEK+q7gDGNbv2iAi+9/QqwaJqDh+avMluBksvZa0W3twzpH3Qm91wSnqzWx7XXAM80AwVAnsKAEH4ZeqRJvGcVGxBNCxHNCxiWDnbcSVjKgCIs25HpSfxkkbyRo9c1yJu7syMQ1L6KefT1r1HBE8BWHRfo9Ah5rBhJ8eNgUzOVwA4KKuh/kQ93EIcvo1DUJWdOZHdI9o8uqi3ORDit3XLpu279bDC2+cVhvUcgEXLU6RdyPkNAFfr539NQw31oSMLoY0dspKz/U2AKWNJEsqGHwARXMHxO/9UND+L0K6/shBt33riKKqM4Vc6MqewiXTb8joYcAI8BZfcMO9jU18Rw4uTpK5V/GpARarHsYAWeX6Epq9vABG0uAH/OKJ1S7lOwRQNL0MwrlprqPuhA/YPgENlEfTqWdnxQb4cVMtpB+z3XCiKF8TIDyOat9afk6yHDhNI3zkZbIXRiqQQHtO9qqhYt186IxeabL8BZhhqEvjjfuWiXOrRZljOhxeUCjrVQnM7Wszv19Wt0s5+FQYWA5l/GY/6UWNRnBSmV3MIEJ8+Fujcpp5ffUw8iU3HvSQnDLjnzm4d3Wuxw2QOwZNqBBVmtPB8MEXe7cl2EBMaWbejhz3D2tJD0773F6A8DgwI/ARaFkXQbq9MkWfa0p/2K12iqbo/kHnd2tGXvSufS/5/H+DIsqPie73Zj/qV7X3Zzwe0+lG9W8xJpj3jdDdTt2O8ue6kVA6mRwpL+A6AFx4kL7dnYGHVKqXa2NBPv9Oj3J8iriqmN3MhuGDBkGzD6czey/pg1iq+5OiWPaFZMFWH8UQt5GuI5s9/8okpv/ABdEcUP35U2NyV+WlEO0PMQdmCsY9o2OnctMLWmtLs4azVK5kNEzrMyteekJYmaDtBNVqoYJ6q69IZpiWokuVrDpKVTcKzbdLG9vTWLvm1LnnrWXlThwwt1apmYWmKVHF5u8MzU8f/00c+jup0SWX5WQqEbD5HueAzawAQAAQAAUAAEAAEAAFAAPCP+jdTEm8kfrK2ewAAAABJRU5ErkJggg=="></img> </h1>
+    
+    <h3>Firefox に <strong></strong> が追加されました！</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li> を通じて気に入ったコンテンツを共有</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="images/twitter/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> ボタンをクリックするだけで、<strong></strong> を通じ、あなたのソーシャルネットワーク上であらゆるサイト上の興味深いコンテンツを共有できます。</p>
+    </div>
+
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>アドオンマネージャで設定を変更</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="アドオンマネージャ" style="float: right;"/>
+      </div>
+      <p class="lead">Firefox のアドオンマネージャを開けば、<a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">お使いのサービスを管理</a> したり、一時的に無効化したり、あるいは削除したりできます。</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>次の手順</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">このサービスが Firefox へ追加する機能について説明を見る</a></li>
+
+      <li>Firefox へ追加できる <a href=".">その他のサービスを見る</a></li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              当サイト上のコンテンツの一部は貢献者によって mozilla.org へ提供されたものです。©1998–2014 コンテンツは <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons ライセンス</a> で使用可能です。
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">このページへ貢献</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">お問い合わせ</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">パートナーシップ</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">寄付</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">プライバシーポリシー</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">法的通知</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">商標不正使用報告</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">開発者向け Social API</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">他の言語:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" selected>日本語</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">移動</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/ja/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

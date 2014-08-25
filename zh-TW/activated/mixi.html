@@ -1,0 +1,282 @@
+<html>
+<head>
+  <base href="/zh-TW/"/>
+  <title>mixi for Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("下載 Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("升級 Firefox <span>&raquo;</span><br/><span class=\"smaller\">必須使用 Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/zh-TW/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox 桌面版"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">您必須使用 Firefox 才能安裝社交服務。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">下載.</a>
+  </p><p id="upgrade-required" hidden="true">您必須使用 Firefox 29 或更新版本才能安裝社交服務。立刻升級您的 Firefox。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">下載.</a>
+  </p><p id="beta-required" hidden="true">此服務需要 Firefox 測試版。</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">首頁</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENEJDNzQ2RjkyQzExMUUyOEM1RTgyQ0UwMUE5RjI0RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENEJDNzQ3MDkyQzExMUUyOEM1RTgyQ0UwMUE5RjI0RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ0QkM3NDZEOTJDMTExRTI4QzVFODJDRTAxQTlGMjRGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ0QkM3NDZFOTJDMTExRTI4QzVFODJDRTAxQTlGMjRGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+zVczFAAACZBJREFUeNrkW3ls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"></img> mixi</h1>
+    
+    <h3>恭喜，已在 Firefox 當中啟用 <strong>mixi</strong>！</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>將您喜愛的內容分享至 mixi</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="images/mixi/FF_promo_002.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> 只要點一下按鈕，您就可以分享任何網站上有趣的內容到您的 <strong>mixi</strong> 社交網路上。</p>
+    </div>
+
+
+
+
+      <div class="section clearfix">
+      <h4><li>新增側邊欄按鈕至您的工具列</li></h4>
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarbutton.png"
+      alt="[sidebar button image]" style="float: right;"/>
+      </div>
+      <p class="lead">自 Firefox 30 開始，您可以使用側邊欄工具列按鈕來管理您的側邊欄。側邊欄按鈕位於 <a href="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s">自訂面板畫面</a> 當中，您只需要將按鈕拖曳至您的工具列擊可快速切換側邊欄。</p>
+      </div>
+
+      <div class="section clearfix">
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarselect.png"
+      alt="[sidebar selection image]" style="float: right;"/>
+      </div>
+      <p class="lead">另外，您可以在側邊欄中簡單地變更側邊欄中的服務，或隱藏側邊欄。您也可以使用 Firefox 的 <strong>檢視 -> 工具列</strong> 選單達到一樣的目的。</p>
+      </div>
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>在附加元件管理員中變更設定</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="附加元件管理員" style="float: right;"/>
+      </div>
+      <p class="lead">您可以透過 Firefox 的附加元件管理員簡單地 <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">管理、停用或移除</a> 某個服務。</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>接下來</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">了解這個服務到底新增了什麼東西到 Firefox</a>。</li>
+
+      <li><a href="https://mixi.jp/promotion.pl?id=social_sidebar">了解</a><a href="https://mixi.jp/promotion.pl?id=social_sidebar">mixi</a> 提供什麼。</li>
+
+      <li><a href=".">探索您還可以新增哪些服務</a> 到 Firefox。</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              本頁當中的部分內容著作權係 ©1998–2014 由各 mozilla.org 貢獻者所有，並以 <a href="http://www.mozilla.org/foundation/licensing/website-content/">創用 CC</a> 授權條款進行授權。
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">貢獻至此頁面</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">聯絡我們</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">成為我們的夥伴</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">捐獻給我們</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">隱私權保護政策</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">法律資訊</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">回報商標濫用</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI 開發資訊</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">其他語言:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="zh-TW" value="zh-TW" selected>中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">前往</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/zh-TW/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

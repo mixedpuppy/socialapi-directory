@@ -1,0 +1,263 @@
+<html>
+<head>
+  <base href="/fr/"/>
+  <title>Gmail pour Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Télécharger Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Mettre à jour Firefox <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/fr/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox pour ordinateurs"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Vous devez utiliser Firefox pour installer des services.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Télécharger.</a>
+  </p><p id="upgrade-required" hidden="true">Installer des services nécessite au minimum la version 29 de Firefox. Veuillez mettre Firefox à jour.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Télécharger.</a>
+  </p><p id="beta-required" hidden="true">Ce service nécessite une version de Firefox qui n'est pas encore disponible.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Accueil</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,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"></img> Gmail</h1>
+    
+    <h3>Félicitations, <strong>Gmail</strong> est à présent activé dans Firefox&nbsp;!</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>Partagez le contenu que vous appréciez via Gmail</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="images/google/gmail-share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> En cliquant simplement sur un bouton, vous pouvez partager sur votre réseau social le contenu que vous jugez intéressant, depuis n'importe quel site, et grâce à <strong>Gmail</strong>.</p>
+    </div>
+
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Vous pouvez modifier les paramètres depuis le gestionnaire de modules complémentaires</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Gestionnaire de modules complémentaires" style="float: right;"/>
+      </div>
+      <p class="lead">Vous pouvez facilement <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">gérer vos services</a>, les désactiver de façon temporaire ou les retirer, depuis le gestionnaire de modules complémentaires de Firefox.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Étapes suivantes</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">En apprendre davantage sur ce que ce service ajoute à Firefox</a>.</li>
+
+      <li><a href=".">Découvrez et trouvez plus de services</a> à ajouter à Firefox.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Certaines parties de ce contenu sont ©1998–2014 par les contributeurs individuels de mozilla.org. Le contenu est disponible sous <a href="http://www.mozilla.org/foundation/licensing/website-content/">licence Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Contribuer à cette page</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Nous contacter</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partenariats</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Faire un don</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Respect de la vie privée</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Avertissement légal</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Signaler un abus de marque déposée</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI pour les développeurs</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Autres langues&nbsp;:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" selected>français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">C'est parti&nbsp;!</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/fr/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>
