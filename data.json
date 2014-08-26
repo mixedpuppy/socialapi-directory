@@ -719,7 +719,21 @@
           "links": {
             "learnmore": "https://about.twitter.com/ja"
           }
-        }
+        },
+        "tw": {
+          "name": "",
+          "tagline": "推文給你的追蹤者",
+          "shortDescription": "Twitter Share 可讓你迅速推文給你的追蹤者。",
+          "description": "Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co 短網址功能，讓你能迅速分享縮短過的網址。",
+          "images": {
+            "detail": "images/twitter/share.png",
+            "carousel": "images/twitter/share.png",
+            "share": "images/twitter/share.png"
+          },
+          "links": {
+            "learnmore": "https://about.twitter.com/zh-hant"
+          }
+        },
       }
     },
     "linkedin": {
