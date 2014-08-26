@@ -8,9 +8,6 @@
     // navigation fully localized.
     var languages = ['en-US', 'zh-TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es'];
     var newloc;
-        dump("lang " + navigator.language+"\n");
-        dump("lang " + navigator.languages+"\n");
-        dump("lang " + navigator.languages+"\n");
     if (languages.indexOf(navigator.language) >= 0) {
       newloc = navigator.language;
     }
@@ -20,7 +17,6 @@
     }
     if (!newloc && navigator.languages) {
       for (var l in navigator.languages) {
-        dump("lang " + navigator.languages[l]+"\n");
         if (languages.indexOf(l) >= 0) {
           newloc = navigator.languages[l];
           break;
