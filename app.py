@@ -90,8 +90,8 @@ def createapp():
     for image in ["iconURL", "icon32URL", "icon64URL", "unmarkedIcon", "markedIcon"]:
       if image in p['manifest']:
         p['manifest'][image] = createDataURL(p['manifest'][image])
-      else:
-        print "WARNING: ",image,"missing from manfiest for",p['manifest']['origin']
+      #else:
+      #  print "WARNING: ",image,"missing from manfiest for",p['manifest']['origin']
 
     # for demo site purposes, massage the data
     # various lang pack fixups, use manifest entries for missing lang entries
