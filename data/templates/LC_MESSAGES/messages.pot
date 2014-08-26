@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-26 16:05-0700\n"
+"POT-Creation-Date: 2014-08-26 16:12-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,10 +151,6 @@ msgstr ""
 msgid "aF0LyLeHk6w"
 msgstr ""
 
-#: templates/data-en.json:63
-msgid "http://www.saavn.com/corporate/"
-msgstr ""
-
 #: templates/data-en.json:70 templates/data-en.json:86
 msgid "Pocket"
 msgstr ""
@@ -206,10 +202,6 @@ msgstr ""
 msgid "images/pocket/pocket_logo.png"
 msgstr ""
 
-#: templates/data-en.json:97
-msgid "https://getpocket.com/firefox"
-msgstr ""
-
 #: templates/data-en.json:104 templates/data-en.json:116
 msgid "Sphere"
 msgstr ""
@@ -256,10 +248,6 @@ msgstr ""
 msgid "images/sphere/sidebarbutton.png"
 msgstr ""
 
-#: templates/data-en.json:129
-msgid "https://www.sphere.com/about/"
-msgstr ""
-
 #: templates/data-en.json:136 templates/data-en.json:159
 msgid "Delicious"
 msgstr ""
@@ -304,10 +292,6 @@ msgstr ""
 
 #: templates/data-en.json:166
 msgid "images/delicious/delicious-logo.png"
-msgstr ""
-
-#: templates/data-en.json:170
-msgid "https://delicious.com/about"
 msgstr ""
 
 #: templates/data-en.json:178
@@ -678,247 +662,85 @@ msgstr ""
 msgid "images/vkontakte/vk-sidebar.png"
 msgstr ""
 
-#: templates/data-en.json:510 templates/data-en.json:511
-#: templates/data-en.json:524
+#: templates/data-en.json:511 templates/data-en.json:518
+#: templates/data-en.json:525
+msgid "Odnoklassniki"
+msgstr ""
+
+#: templates/data-en.json:514
+msgid "images/odnoklassniki/logo.png"
+msgstr ""
+
+#: templates/data-en.json:515
+msgid "images/odnoklassniki/logo32.png"
+msgstr ""
+
+#: templates/data-en.json:516
+msgid "images/odnoklassniki/logo64.png"
+msgstr ""
+
+#: templates/data-en.json:517 templates/data-en.json:526
+msgid ""
+"Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
+"service for classmates and old friends."
+msgstr ""
+
+#: templates/data-en.json:529
+msgid "images/odnoklassniki/logo-large.png"
+msgstr ""
+
+#: templates/data-en.json:530 templates/data-en.json:531
+#: templates/data-en.json:532
+msgid "images/odnoklassniki/share.png"
+msgstr ""
+
+#: templates/data-en.json:540 templates/data-en.json:541
+#: templates/data-en.json:554
 msgid "Pinterest"
 msgstr ""
 
-#: templates/data-en.json:512
+#: templates/data-en.json:542
 msgid "images/pinterest/logo16.png"
 msgstr ""
 
-#: templates/data-en.json:513
+#: templates/data-en.json:543
 msgid "images/pinterest/logo32.png"
 msgstr ""
 
-#: templates/data-en.json:514 templates/data-en.json:528
+#: templates/data-en.json:544 templates/data-en.json:558
 msgid "images/pinterest/logo64.png"
 msgstr ""
 
-#: templates/data-en.json:517
+#: templates/data-en.json:547
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
 
-#: templates/data-en.json:525
+#: templates/data-en.json:555
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you. "
 msgstr ""
 
-#: templates/data-en.json:527
+#: templates/data-en.json:557
 msgid "images/pinterest/logoName.png"
 msgstr ""
 
-#: templates/data-en.json:529 templates/data-en.json:530
+#: templates/data-en.json:559 templates/data-en.json:560
 msgid "images/pinterest/pinterestDetail1.png"
 msgstr ""
 
-#: templates/data-en.json:533
+#: templates/data-en.json:563
 msgid "qyYVI0ySDvk"
 msgstr ""
 
-#: templates/data-en.json:533
+#: templates/data-en.json:563
 msgid "2DHxkoXR0RM"
 msgstr ""
 
-#: templates/data-en.json:533
+#: templates/data-en.json:563
 msgid "1QkMOdW0Kyc"
-msgstr ""
-
-#: templates/data-en.json:545 templates/data-en.json:561
-msgid "StumbleUpon"
-msgstr ""
-
-#: templates/data-en.json:546
-msgid "images/stumbleupon/icon.png"
-msgstr ""
-
-#: templates/data-en.json:547
-msgid "images/stumbleupon/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:548
-msgid "images/stumbleupon/icon64.png"
-msgstr ""
-
-#: templates/data-en.json:552
-msgid ""
-"StumbleUpon is the easiest way to find cool new websites, videos, photos "
-"and images from across the Web. We make the best recommendations just for"
-" you."
-msgstr ""
-
-#: templates/data-en.json:562
-msgid "We help you easily discover new and interesting stuff on the Web."
-msgstr ""
-
-#: templates/data-en.json:564
-msgid "images/stumbleupon/stumbleupon-logo.png"
-msgstr ""
-
-#: templates/data-en.json:577 templates/data-en.json:593
-msgid "Y Combinator"
-msgstr ""
-
-#: templates/data-en.json:578
-msgid "images/ycombinator/yc16.png"
-msgstr ""
-
-#: templates/data-en.json:579
-msgid "images/ycombinator/yc32.png"
-msgstr ""
-
-#: templates/data-en.json:580
-msgid "images/ycombinator/yc64.png"
-msgstr ""
-
-#: templates/data-en.json:584 templates/data-en.json:594
-msgid "Hacker News: technology and business news from Y Combinator."
-msgstr ""
-
-#: templates/data-en.json:597
-msgid "images/ycombinator/yc200.png"
-msgstr ""
-
-#: templates/data-en.json:609 templates/data-en.json:625
-msgid "reddit"
-msgstr ""
-
-#: templates/data-en.json:610
-msgid "images/reddit/icon.png"
-msgstr ""
-
-#: templates/data-en.json:611
-msgid "images/reddit/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:612
-msgid "images/reddit/icon64.png"
-msgstr ""
-
-#: templates/data-en.json:616 templates/data-en.json:626
-msgid "we power awesome communities."
-msgstr ""
-
-#: templates/data-en.json:627
-msgid ""
-"reddit is an entertainment, social networking service and news website "
-"where registered community members can submit content, such as text posts"
-" or direct links."
-msgstr ""
-
-#: templates/data-en.json:629
-msgid "images/reddit/redditlogo.png"
-msgstr ""
-
-#: templates/data-en.json:640 templates/data-en.json:648
-msgid "Digg"
-msgstr ""
-
-#: templates/data-en.json:643
-msgid "http://digg.com/favicon.ico"
-msgstr ""
-
-#: templates/data-en.json:644 templates/data-en.json:651
-msgid "images/digg/digg64.png"
-msgstr ""
-
-#: templates/data-en.json:645
-msgid "demo mockup of digg service."
-msgstr ""
-
-#: templates/data-en.json:649 templates/data-en.json:667
-msgid "a design mockup showing what this service could look like."
-msgstr ""
-
-#: templates/data-en.json:658 templates/data-en.json:666
-msgid "Soundcloud"
-msgstr ""
-
-#: templates/data-en.json:659
-msgid "http://soundcloud.com/favicon.ico"
-msgstr ""
-
-#: templates/data-en.json:660
-msgid "images/soundcloud/icon64.png"
-msgstr ""
-
-#: templates/data-en.json:663
-msgid "demo mockup of soundcloud service."
-msgstr ""
-
-#: templates/data-en.json:675 templates/data-en.json:682
-#: templates/data-en.json:689
-msgid "Odnoklassniki"
-msgstr ""
-
-#: templates/data-en.json:678
-msgid "images/odnoklassniki/logo.png"
-msgstr ""
-
-#: templates/data-en.json:679
-msgid "images/odnoklassniki/logo32.png"
-msgstr ""
-
-#: templates/data-en.json:680
-msgid "images/odnoklassniki/logo64.png"
-msgstr ""
-
-#: templates/data-en.json:681 templates/data-en.json:690
-msgid ""
-"Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
-"service for classmates and old friends."
-msgstr ""
-
-#: templates/data-en.json:693
-msgid "images/odnoklassniki/logo-large.png"
-msgstr ""
-
-#: templates/data-en.json:694 templates/data-en.json:695
-#: templates/data-en.json:696
-msgid "images/odnoklassniki/share.png"
-msgstr ""
-
-#: templates/data-en.json:704 templates/data-en.json:725
-msgid "Demo Social Service"
-msgstr ""
-
-#: templates/data-en.json:705
-msgid "images/demo/firefox16.png"
-msgstr ""
-
-#: templates/data-en.json:706
-msgid "images/demo/firefox32.png"
-msgstr ""
-
-#: templates/data-en.json:707
-msgid "images/demo/firefox64.png"
-msgstr ""
-
-#: templates/data-en.json:715
-msgid "images/demo/checked32.png"
-msgstr ""
-
-#: templates/data-en.json:716
-msgid "images/demo/unchecked32.png"
-msgstr ""
-
-#: templates/data-en.json:718
-msgid ""
-"This is a small demonstration SocialAPI provider used primarily for "
-"manual testing and to illustrate some API usage."
-msgstr ""
-
-#: templates/data-en.json:719
-msgid "Shane Caraveo, Mozilla"
-msgstr ""
-
-#: templates/data-en.json:726
-msgid ""
-"a demo service used for manual testing and as a code example for "
-"developers."
 msgstr ""
 
