@@ -386,7 +386,7 @@
             "returnValue": false
           }
         }
-    },
+      },
       "lang": {
         "en-US": {
           "name": "Facebook",
@@ -689,8 +689,9 @@
         },
         "ru": {
           "name": "",
-          "tagline": "Tweet to your followers",
-          "shortDescription": "Twitter Share lets you quickly tweet links to your followers.",
+          "tagline": "Пошлите твит вашим читателям.",
+          "shortDescription": "Twitter Share позволяет быстро слать ссылки вашим последователям.",
+          "description": "Firefox Twitter Account позволяет быстро редактировать твиты о страницах которые вы найдете в Интернете. Для удобства обмена мы укорачиваем Интернетовские адреса с помощью t.co Link Shortener.",
           "images": {
             "detail": "images/twitter/share-ru.png",
             "carousel": "images/twitter/share-ru.png",
