@@ -87,7 +87,7 @@ def createapp():
       p["lang"]["default"] = p["lang"]["en-US"]
 
     # make manifest icons data urls
-    for image in ["iconURL", "icon32URL", "icon64URL"]:
+    for image in ["iconURL", "icon32URL", "icon64URL", "unmarkedIcon", "markedIcon"]:
       if image in p['manifest']:
         p['manifest'][image] = createDataURL(p['manifest'][image])
       else:
