@@ -2,9 +2,9 @@
   <a href="{{p['key']}}.html">
   <div class="provider-entry-inner clearfix">
     {% if p['lang']['default']['images']['fulllogo'] %}
-    <h2><img src="{{p['lang']['default']['images']['fulllogo']}}"></img></h2>
+    <h2><img src="{{createDataURL(p['lang']['default']['images']['fulllogo'])}}"></img></h2>
     {% else %}
-    <h2><img src="{{p['lang']['default']['images']['logo']}}"></img> {{p['lang']['default']['name']}}</h2>
+    <h2><img src="{{createDataURL(p['lang']['default']['images']['logo'])}}"></img> {{p['lang']['default']['name']}}</h2>
     {% endif %}
     <p class="provider-description">{{p['lang']['default']['shortDescription'] or p['lang']['default']['tagline']}}</p>
 

@@ -9,6 +9,25 @@ import collections
 
 TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
 
+# creating a data url for an image
+import base64
+_imageCache = {}
+def createDataURL(imagePath):
+  if imagePath[:5] in ["data:", "http:"] or imagePath[:6] == "https:":
+    return imagePath
+  if imagePath in _imageCache:
+    return _imageCache[imagePath]
+  print "converting", imagePath
+  with open("static/"+imagePath, "rb") as image_file:
+      encoded_string = base64.b64encode(image_file.read())
+      if imagePath[-3:] == "png":
+        _imageCache[imagePath] = "data:image/png;base64,"+encoded_string
+      elif imagePath[-3:] == "jpg":
+        _imageCache[imagePath] = "data:image/jpg;base64,"+encoded_string
+      else:
+        raise "unknown image type"
+  return _imageCache[imagePath]
+
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
         super(RegexConverter, self).__init__(url_map)
@@ -25,6 +44,10 @@ def createapp():
   app.url_map.converters['regex'] = RegexConverter
 
   bp = Blueprint('bp', __name__)
+
+  @app.context_processor
+  def utility_processor():
+    return dict(createDataURL=createDataURL)
 
   def get_supported_locales():
     langs = {}
@@ -62,6 +85,13 @@ def createapp():
       p["lang"]["default"] = p["lang"][locale]
     else:
       p["lang"]["default"] = p["lang"]["en-US"]
+
+    # make manifest icons data urls
+    for image in ["iconURL", "icon32URL", "icon64URL"]:
+      if image in p['manifest']:
+        p['manifest'][image] = createDataURL(p['manifest'][image])
+      else:
+        print "WARNING: ",image,"missing from manfiest for",p['manifest']['origin']
 
     # for demo site purposes, massage the data
     # various lang pack fixups, use manifest entries for missing lang entries
