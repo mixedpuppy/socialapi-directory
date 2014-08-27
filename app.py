@@ -45,6 +45,8 @@ def createapp():
 
   bp = Blueprint('bp', __name__)
 
+  config = json.load(app.open_resource('config.json'), object_pairs_hook=collections.OrderedDict)
+
   @app.context_processor
   def utility_processor():
     return dict(createDataURL=createDataURL)
@@ -121,7 +123,9 @@ def createapp():
             return a
     return last
 
-  def renderTemplate(template, data, locale, path=None, base=""):
+  def renderTemplate(template, locale, path=None, base=""):
+    data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+
     data["production"] = not demo
     basehref = ""
     if path:
@@ -143,25 +147,26 @@ def createapp():
       d['production'] = data['production']
       d["basehref"] = basehref
       #print >> sys.stdout, json.dumps(d)
-      d["releases"] = firefoxReleases(data["firefox-releases"])
+      d["releases"] = firefoxReleases(config["firefox-releases"])
       d['current_year'] = datetime.now().year
+      d['config'] = config
       return render_template(template, **d)
     else:
       for k, p in data["source"].iteritems():
         dataFixup(k, p, locale)
-      if locale in data["carousel"]:
-        names = data["carousel"][locale]
+      if locale in config["carousel"]:
+        names = config["carousel"][locale]
       else:
-        names = data["carousel"]["en-US"]
+        names = config["carousel"]["en-US"]
       data["slider"] = []
       for name in names:
         data["slider"].append(data["source"][name])
 
       data["shareProviders"] = []
-      if locale in data["sharePanel"]:
-        names = data["sharePanel"][locale]
+      if locale in config["sharePanel"]:
+        names = config["sharePanel"][locale]
       else:
-        names = data["sharePanel"]["en-US"]
+        names = config["sharePanel"]["en-US"]
       for name in names:
         data["shareProviders"].append(data["source"][name])
 
@@ -169,9 +174,10 @@ def createapp():
       keys.sort()
       data["source"] = [data["source"][key] for key in keys]
       data["basehref"] = basehref
-      data["releases"] = firefoxReleases(data["firefox-releases"])
+      data["releases"] = firefoxReleases(config["firefox-releases"])
       data['translations'] = get_supported_locales()
       data['current_year'] = datetime.now().year
+      data['config'] = config
       return render_template(template, **data)
   
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
@@ -188,32 +194,27 @@ def createapp():
       template = path
     else:
       template = path and "provider.html" or "index.html"
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate(template, appData, locale, path, base)
+    return renderTemplate(template, locale, path, base)
 
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def bp_activated(base, locale=None, path=None):
     # if root is locale, capture that, but use the same local file paths
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
-    return renderTemplate(template, appData, locale, path, base=base)
+    return renderTemplate(template, locale, path, base=base)
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def app_activated(locale=None, path=None):
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
-    return renderTemplate(template, appData, locale, path)
+    return renderTemplate(template, locale, path)
 
   @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def bp_sharePanel(base, locale=None):
     # if root is locale, capture that, but use the same local file paths
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('sharePanel.html', appData, locale, base=base)
+    return renderTemplate('sharePanel.html', locale, base=base)
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def app_sharePanel(locale=None):
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('sharePanel.html', appData, locale)
+    return renderTemplate('sharePanel.html', locale)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):
@@ -232,8 +233,7 @@ def createapp():
     # if root is locale, capture that, but use the same local file paths
     if not demo and locale not in TRANSLATIONS:
         return app.send_static_file("redir.html")
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('index.html', appData, locale, base=base)
+    return renderTemplate('index.html', locale, base=base)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def app_index(locale):
