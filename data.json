@@ -236,7 +236,7 @@
             "learnmore": "https://getpocket.com/firefox"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "Pocket",
           "tagline": "先存後用",
           "shortDescription": "讓你能儲存任何內容，以利稍後觀看。",
@@ -345,7 +345,7 @@
             "learnmore": "https://delicious.com/about"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "Delicious",
           "tagline": "再也不錯失任何連結",
           "shortDescription": "Delicious 為你記憶更多事。",
@@ -412,7 +412,7 @@
             "detail": "images/facebook/facebook-share.png"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "Facebook",
           "tagline": "",
           "shortDescription": "隨時、隨地分享任何網頁。",
@@ -608,7 +608,7 @@
             "learnmore": "http://www.google.com/+/learnmore/"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "Google+",
           "tagline": "",
           "shortDescription": "在 Google+ 上和朋友分享網路。",
@@ -663,7 +663,7 @@
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "Gmail",
           "shortDescription": "用 Gmail 傳送網頁與圖片給大家。",
           "description": "Gmail 是直覺且高效率的電子郵件系統。",
@@ -720,7 +720,7 @@
             "learnmore": "https://about.twitter.com/ja"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "",
           "tagline": "推文給你的追蹤者",
           "shortDescription": "Twitter Share 可讓你迅速推文給你的追蹤者。",
@@ -825,7 +825,7 @@
             "learnmore": "https://www.tumblr.com/about"
           }
         },
-        "tw": {
+        "zh-TW": {
           "name": "Tumblr",
           "shortDescription": "Tumblr 讓你輕鬆分享大小事。",
           "description": "用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影片。從顏色到自己主題的 HTML，均可自訂任何部分。",
@@ -1175,14 +1175,14 @@
     "en-US": ["delicious", "facebook", "google", "linkedin", "tumblr", "twitter"],
     "jp-JP": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "ja": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
-    "tw": ["twitter", "google", "facebook", "tumblr", "gmail"],
+    "zh-TW": ["twitter", "google", "facebook", "tumblr", "gmail"],
     "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
   },
   "carousel": {
     "en-US": ["linkedin", "pocket", "delicious", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
-    "tw": ["twitter", "google", "tumblr"],
+    "zh-TW": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
     "ru": ["odnoklassniki", "vkontakte", "twitter"],
     "de": ["cliqz", "goal", "twitter"]
