@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-26 16:12-0700\n"
+"POT-Creation-Date: 2014-08-26 17:13-0700\n"
 "PO-Revision-Date: 2014-08-26 16:12-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: de <LL@li.org>\n"
@@ -37,10 +37,14 @@ msgstr ""
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
 msgstr ""
+"Wir sorgen für Gesprächsstoff unter den Fußballbegeisterten auf der "
+"ganzen Welt."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
 msgstr ""
+"Wir leben und atmen den Fußball, überall, 24 Stunden an sieben Tagen in "
+"der Woche"
 
 #: templates/data-en.json:20
 msgid ""
@@ -51,6 +55,13 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
+"<p>Football, Soccer, Futbol, Calcio, Futebol – wie auch immer Du es "
+"nennst und wen auch immer Du unterstützt: Wir sind Deine allererste "
+"Anlaufstelle.</p><p>Mit mehr als 530 Journalisten sind wir in über 50 "
+"Ländern ganz nah am Geschehen dran. Bei uns findet Ihr exklusive "
+"Nachrichten über die wichtigsten Ligen, Teams und Spieler der "
+"Welt.</p><p>Über 52 Millionen Fußball-Fans schenken uns ihr Vertrauen. "
+"Wir danken euch dafür!</p>"
 
 #: templates/data-en.json:22
 msgid "images/goal/fulllogo.png"
@@ -58,11 +69,11 @@ msgstr ""
 
 #: templates/data-en.json:23
 msgid "images/goal/us1.jpg"
-msgstr ""
+msgstr "images/goal/de1.jpg"
 
 #: templates/data-en.json:24
 msgid "images/goal/us2.jpg"
-msgstr ""
+msgstr "images/goal/de2.jpg"
 
 #: templates/data-en.json:25
 msgid "images/goal/sidebarmenu.png"
@@ -84,7 +95,7 @@ msgstr ""
 msgid "images/saavn/icon32.png"
 msgstr ""
 
-#: templates/data-en.json:37
+#: templates/data-en.json:37 templates/data-en.json:51
 msgid "images/saavn/icon64.png"
 msgstr ""
 
@@ -109,19 +120,15 @@ msgid "Discover fresh music and hear more of what you love."
 msgstr ""
 
 #: templates/data-en.json:50
-msgid "logomark.png"
-msgstr ""
-
-#: templates/data-en.json:51
-msgid "icon64.png"
+msgid "images/saavn/logomark.png"
 msgstr ""
 
 #: templates/data-en.json:52
-msgid "saavn-screen.png"
+msgid "images/saavn/saavn-screen.png"
 msgstr ""
 
 #: templates/data-en.json:53
-msgid "firefox-sidebar-screenshot-1.jpg"
+msgid "images/saavn/firefox-sidebar-screenshot-1.jpg"
 msgstr ""
 
 #: templates/data-en.json:54
@@ -744,4 +751,16 @@ msgstr ""
 #: templates/data-en.json:563
 msgid "1QkMOdW0Kyc"
 msgstr ""
+
+#~ msgid "logomark.png"
+#~ msgstr ""
+
+#~ msgid "icon64.png"
+#~ msgstr ""
+
+#~ msgid "saavn-screen.png"
+#~ msgstr ""
+
+#~ msgid "firefox-sidebar-screenshot-1.jpg"
+#~ msgstr ""
 

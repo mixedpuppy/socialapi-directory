@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-26 16:12-0700\n"
+"POT-Creation-Date: 2014-08-26 17:13-0700\n"
 "PO-Revision-Date: 2014-08-26 16:12-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr ""
 msgid "images/saavn/icon32.png"
 msgstr ""
 
-#: templates/data-en.json:37
+#: templates/data-en.json:37 templates/data-en.json:51
 msgid "images/saavn/icon64.png"
 msgstr ""
 
@@ -109,19 +109,15 @@ msgid "Discover fresh music and hear more of what you love."
 msgstr ""
 
 #: templates/data-en.json:50
-msgid "logomark.png"
-msgstr ""
-
-#: templates/data-en.json:51
-msgid "icon64.png"
+msgid "images/saavn/logomark.png"
 msgstr ""
 
 #: templates/data-en.json:52
-msgid "saavn-screen.png"
+msgid "images/saavn/saavn-screen.png"
 msgstr ""
 
 #: templates/data-en.json:53
-msgid "firefox-sidebar-screenshot-1.jpg"
+msgid "images/saavn/firefox-sidebar-screenshot-1.jpg"
 msgstr ""
 
 #: templates/data-en.json:54
@@ -744,4 +740,16 @@ msgstr ""
 #: templates/data-en.json:563
 msgid "1QkMOdW0Kyc"
 msgstr ""
+
+#~ msgid "logomark.png"
+#~ msgstr ""
+
+#~ msgid "icon64.png"
+#~ msgstr ""
+
+#~ msgid "saavn-screen.png"
+#~ msgstr ""
+
+#~ msgid "firefox-sidebar-screenshot-1.jpg"
+#~ msgstr ""
 
