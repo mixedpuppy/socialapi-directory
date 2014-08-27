@@ -19,12 +19,12 @@
     {% else %}
     <h1><img src="{{viewData['images']['logo']}}"></img> {{viewData['name']}}</h1>
     {% endif %}
-    <h3>{{ _('Congratulations, <strong>%(name)s</strong> is now activated in Firefox!', name=viewData['name']) }}</h3>
+    <h3>{{ _('Congratulations, <strong>%(name)s</strong> is now activated in Firefox!', name=viewData['name'] or manifest['name']) }}</h3>
     <a id="documentation"></a>
     <ol>
 {% if 0 %}
       <div class="section clearfix">
-      <h4><li>{{ _('Get the most from %(name)s', name=viewData['name']) }}</li></h4>
+      <h4><li>{{ _('Get the most from %(name)s', name=viewData['name'] or manifest['name']) }}</li></h4>
       <p class="lead"><img src="../images/bookmarked.png"
       alt="[bookmark button image]" style="vertical-align: text-bottom"/> {{ _('Bookmark this page') }}</p>
       <p class="lead">{{ _('If you\'re new to this service, bookmark this page, it contains useful information and links to further help using and customizing Firefox.  Keep reading to learn more about how %(name)s works in Firefox.', name=viewData['name']) }}</p>
@@ -32,26 +32,26 @@
 {% endif %}
 {% if manifest['shareURL'] %}
     <div class="section clearfix">
-      <h4><li>{{ _('Share content you like through %(name)s', name=viewData['name']) }}</li></h4>
+      <h4><li>{{ _('Share content you like through %(name)s', name=viewData['name'] or manifest['name']) }}</li></h4>
       <div style="width:50%; float: right; margin-left: 20px;">
       <img src="{{viewData['images']['share'] or "../images/share.png"}}" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
       </div>
       <p class="lead"><img src="../images/sharebutton.png"
-      alt="[share button image]"/> {{ _('With the click of a button, you can Share interesting content on any website with your social network through <strong>%(name)s</strong>.', name=viewData['name']) }}</p>
+      alt="[share button image]"/> {{ _('With the click of a button, you can Share interesting content on any website with your social network through <strong>%(name)s</strong>.', name=viewData['name'] or manifest['name']) }}</p>
     </div>
 {% endif %}
 {% if manifest['markURL'] %}
     <div class="section clearfix">
       <h4><li>{{ _('Save content for later') }}</li></h4>
       <img src="{{viewData['images']['bookmark'] or "../images/bookmark.png"}}" alt="Bookmarking" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead"> {{ _('With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>.', name=viewData['name']) }}</p>
+      <p class="lead"> {{ _('With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>.', name=viewData['name'] or manifest['name']) }}</p>
     </div>
 {% endif %}
 {% if manifest['statusURL'] %}
     <div class="section clearfix">
-      <h4><li>{{ _('Keep an eye on the latest from %(name)s', name=viewData['name']) }}</li></h4>
+      <h4><li>{{ _('Keep an eye on the latest from %(name)s', name=viewData['name'] or manifest['name']) }}</li></h4>
       <img src="{{viewData['images']['status'] or "../images/status.png"}}" alt="Sidebar" style="float: right; max-width: 400px; margin-left: 20px;"/>
-      <p class="lead">{{ _('<strong>%(name)s</strong> will provide you with the latest from their service, just click on their icon in the toolbar.', name=viewData['name']) }}</p>
+      <p class="lead">{{ _('<strong>%(name)s</strong> will provide you with the latest from their service, just click on their icon in the toolbar.', name=viewData['name'] or manifest['name']) }}</p>
     </div>
 {% endif %}
 {% if manifest['sidebarURL'] %}
@@ -89,7 +89,7 @@
     <ul>
       <li>{{ _('<a href="%(url)s">Learn more about what this service adds to Firefox</a>.', url='https://support.mozilla.org/kb/add-social-features-firefox-sidebar') }}</li>
 {% if manifest['homepageURL'] %}
-      <li>{{ _('<a href="%(url)s">Learn more</a> about what <a href="%(url)s">%(name)s</a> provides.', name=viewData['name'], url=manifest['homepageURL']) }}</li>
+      <li>{{ _('<a href="%(url)s">Learn more</a> about what <a href="%(url)s">%(name)s</a> provides.', name=viewData['name'] or manifest['name'], url=manifest['homepageURL']) }}</li>
 {% endif %}
       <li>{{ _('<a href=".">Explore and find more services</a> you can add to Firefox.') }}</li>
     </ul>
