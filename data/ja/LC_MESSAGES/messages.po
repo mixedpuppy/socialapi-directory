@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-26 17:13-0700\n"
-"PO-Revision-Date: 2014-08-26 16:12-0700\n"
+"POT-Creation-Date: 2014-08-26 18:40-0700\n"
+"PO-Revision-Date: 2014-08-26 18:40-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ja <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0\n"
@@ -17,22 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
-
-#: templates/data-en.json:6 templates/data-en.json:14 templates/data-en.json:17
-msgid "GOAL.com"
-msgstr ""
-
-#: templates/data-en.json:7
-msgid "images/goal/icon.png"
-msgstr ""
-
-#: templates/data-en.json:8
-msgid "images/goal/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:9
-msgid "images/goal/icon64.png"
-msgstr ""
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
@@ -52,40 +36,12 @@ msgid ""
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
 
-#: templates/data-en.json:22
-msgid "images/goal/fulllogo.png"
-msgstr ""
-
 #: templates/data-en.json:23
 msgid "images/goal/us1.jpg"
 msgstr ""
 
 #: templates/data-en.json:24
 msgid "images/goal/us2.jpg"
-msgstr ""
-
-#: templates/data-en.json:25
-msgid "images/goal/sidebarmenu.png"
-msgstr ""
-
-#: templates/data-en.json:26
-msgid "images/goal/sidebarbutton.png"
-msgstr ""
-
-#: templates/data-en.json:33 templates/data-en.json:46
-msgid "saavn"
-msgstr ""
-
-#: templates/data-en.json:35
-msgid "images/saavn/icon.png"
-msgstr ""
-
-#: templates/data-en.json:36
-msgid "images/saavn/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:37 templates/data-en.json:51
-msgid "images/saavn/icon64.png"
 msgstr ""
 
 #: templates/data-en.json:40
@@ -96,20 +52,12 @@ msgid ""
 "hits to hard-to-find classics."
 msgstr ""
 
-#: templates/data-en.json:41
-msgid "Saavn"
-msgstr ""
-
 #: templates/data-en.json:47
 msgid "Music Feed"
 msgstr ""
 
 #: templates/data-en.json:48
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
-
-#: templates/data-en.json:50
-msgid "images/saavn/logomark.png"
 msgstr ""
 
 #: templates/data-en.json:52
@@ -128,58 +76,10 @@ msgstr ""
 msgid "images/saavn/firefox-sidebar-screenshot-3.jpg"
 msgstr ""
 
-#: templates/data-en.json:56
-msgid "images/saavn/sidebarmenu.png"
-msgstr ""
-
-#: templates/data-en.json:57
-msgid "images/saavn/sidebarbutton.png"
-msgstr ""
-
-#: templates/data-en.json:60
-msgid "A8Kignry0p8"
-msgstr ""
-
-#: templates/data-en.json:60
-msgid "l8VlUiQ2IkQ"
-msgstr ""
-
-#: templates/data-en.json:60
-msgid "aF0LyLeHk6w"
-msgstr ""
-
-#: templates/data-en.json:70 templates/data-en.json:86
-msgid "Pocket"
-msgstr ""
-
-#: templates/data-en.json:71
-msgid "images/pocket/icon.png"
-msgstr ""
-
-#: templates/data-en.json:72
-msgid "images/pocket/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:73 templates/data-en.json:94
-msgid "images/pocket/icon64.png"
-msgstr ""
-
-#: templates/data-en.json:76
-msgid "images/pocket/unmarkedIcon.png"
-msgstr ""
-
-#: templates/data-en.json:77
-msgid "images/pocket/markedIcon.png"
-msgstr ""
-
 #: templates/data-en.json:79
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
-msgstr ""
-
-#: templates/data-en.json:80
-msgid "Read It Later Inc."
 msgstr ""
 
 #: templates/data-en.json:87
@@ -195,80 +95,24 @@ msgstr ""
 msgid "images/pocket/pocket.png"
 msgstr ""
 
-#: templates/data-en.json:93
-msgid "images/pocket/pocket_logo.png"
-msgstr ""
-
-#: templates/data-en.json:104 templates/data-en.json:116
-msgid "Sphere"
-msgstr ""
-
-#: templates/data-en.json:105
-msgid "images/sphere/icon.png"
-msgstr ""
-
-#: templates/data-en.json:106
-msgid "images/sphere/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:107 templates/data-en.json:124
-msgid "images/sphere/icon64.png"
-msgstr ""
-
 #: templates/data-en.json:109 templates/data-en.json:119
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
 msgstr ""
 
-#: templates/data-en.json:110
-msgid "Outbrain"
-msgstr ""
-
 #: templates/data-en.json:117
 msgid "a discovery experience"
-msgstr ""
-
-#: templates/data-en.json:121
-msgid "images/sphere/sphere-logo-258x74.jpg"
 msgstr ""
 
 #: templates/data-en.json:122 templates/data-en.json:123
 msgid "images/sphere/sphere-slide.jpg"
 msgstr ""
 
-#: templates/data-en.json:125
-msgid "images/sphere/sidebarmenu.png"
-msgstr ""
-
-#: templates/data-en.json:126
-msgid "images/sphere/sidebarbutton.png"
-msgstr ""
-
-#: templates/data-en.json:136 templates/data-en.json:159
-msgid "Delicious"
-msgstr ""
-
-#: templates/data-en.json:137
-msgid "images/delicious/icon.png"
-msgstr ""
-
-#: templates/data-en.json:138
-msgid "images/delicious/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:139 templates/data-en.json:167
-msgid "images/delicious/icon64.png"
-msgstr ""
-
 #: templates/data-en.json:142
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
-msgstr ""
-
-#: templates/data-en.json:143
-msgid "AVOS Systems, Inc."
 msgstr ""
 
 #: templates/data-en.json:160
@@ -287,32 +131,8 @@ msgstr ""
 msgid "images/delicious/share.png"
 msgstr ""
 
-#: templates/data-en.json:166
-msgid "images/delicious/delicious-logo.png"
-msgstr ""
-
-#: templates/data-en.json:178
-msgid "Facebook Share"
-msgstr ""
-
-#: templates/data-en.json:180
-msgid "images/facebook/icon.png"
-msgstr ""
-
-#: templates/data-en.json:181
-msgid "images/facebook/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:182 templates/data-en.json:207
-msgid "images/facebook/icon64.png"
-msgstr ""
-
 #: templates/data-en.json:183
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
-
-#: templates/data-en.json:184 templates/data-en.json:202
-msgid "Facebook"
 msgstr ""
 
 #: templates/data-en.json:203
@@ -327,27 +147,10 @@ msgstr ""
 msgid "images/facebook/facebook-share.png"
 msgstr ""
 
-#: templates/data-en.json:216 templates/data-en.json:218
-#: templates/data-en.json:239
-msgid "Cliqz"
-msgstr ""
-
 #: templates/data-en.json:217
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
-msgstr ""
-
-#: templates/data-en.json:224
-msgid "images/cliqz/icon.png"
-msgstr ""
-
-#: templates/data-en.json:225
-msgid "images/cliqz/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:226 templates/data-en.json:242
-msgid "images/cliqz/cliqz-logo.png"
 msgstr ""
 
 #: templates/data-en.json:240
@@ -364,28 +167,8 @@ msgstr ""
 msgid "images/cliqz/share.png"
 msgstr ""
 
-#: templates/data-en.json:256 templates/data-en.json:269
-msgid "mixi"
-msgstr ""
-
-#: templates/data-en.json:257
-msgid "mixi, Inc."
-msgstr ""
-
 #: templates/data-en.json:258 templates/data-en.json:270
 msgid "The largest social network in Japan."
-msgstr ""
-
-#: templates/data-en.json:264
-msgid "images/mixi/icon.png"
-msgstr ""
-
-#: templates/data-en.json:265
-msgid "images/mixi/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:266 templates/data-en.json:274
-msgid "images/mixi/icon64.png"
 msgstr ""
 
 #: templates/data-en.json:271
@@ -410,18 +193,6 @@ msgid ""
 "Firefox allows users to post messages with 140-character limit, images, "
 "videos, etc. And it will show the notification when receiving new "
 "messages."
-msgstr ""
-
-#: templates/data-en.json:290
-msgid "images/weibo/icon.png"
-msgstr ""
-
-#: templates/data-en.json:291
-msgid "images/weibo/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:292
-msgid "images/weibo/icon64.png"
 msgstr ""
 
 #: templates/data-en.json:293
@@ -452,26 +223,6 @@ msgstr ""
 msgid "images/weibo/share.png"
 msgstr ""
 
-#: templates/data-en.json:321 templates/data-en.json:335
-msgid "Google+"
-msgstr ""
-
-#: templates/data-en.json:322 templates/data-en.json:353
-msgid "Google"
-msgstr ""
-
-#: templates/data-en.json:323
-msgid "images/google/gplus-16.png"
-msgstr ""
-
-#: templates/data-en.json:324
-msgid "images/google/gplus-32.png"
-msgstr ""
-
-#: templates/data-en.json:325
-msgid "images/google/gplus-64.png"
-msgstr ""
-
 #: templates/data-en.json:332
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
@@ -487,22 +238,6 @@ msgstr ""
 msgid "images/google/share.png"
 msgstr ""
 
-#: templates/data-en.json:352 templates/data-en.json:366
-msgid "Gmail"
-msgstr ""
-
-#: templates/data-en.json:354
-msgid "images/google/gmail-16.png"
-msgstr ""
-
-#: templates/data-en.json:355
-msgid "images/google/gmail-32.png"
-msgstr ""
-
-#: templates/data-en.json:356
-msgid "images/google/gmail-64.png"
-msgstr ""
-
 #: templates/data-en.json:363 templates/data-en.json:367
 msgid "Send web pages and images to people using Gmail."
 msgstr ""
@@ -510,26 +245,6 @@ msgstr ""
 #: templates/data-en.json:370 templates/data-en.json:371
 #: templates/data-en.json:372
 msgid "images/google/gmail-share.png"
-msgstr ""
-
-#: templates/data-en.json:383
-msgid "Twitter"
-msgstr ""
-
-#: templates/data-en.json:384
-msgid "Twitter, Inc."
-msgstr ""
-
-#: templates/data-en.json:385
-msgid "images/twitter/icon.png"
-msgstr ""
-
-#: templates/data-en.json:386
-msgid "images/twitter/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:387
-msgid "images/twitter/icon64.png"
 msgstr ""
 
 #: templates/data-en.json:391
@@ -552,26 +267,6 @@ msgstr ""
 msgid "images/twitter/share.png"
 msgstr ""
 
-#: templates/data-en.json:414 templates/data-en.json:427
-msgid "LinkedIn"
-msgstr ""
-
-#: templates/data-en.json:415
-msgid "LinkedIn Corporation"
-msgstr ""
-
-#: templates/data-en.json:416
-msgid "images/linkedin/icon.png"
-msgstr ""
-
-#: templates/data-en.json:417
-msgid "images/linkedin/icon32.png"
-msgstr ""
-
-#: templates/data-en.json:418
-msgid "images/linkedin/icon64.png"
-msgstr ""
-
 #: templates/data-en.json:421
 msgid ""
 "Manage your professional identity. Build and engage with your "
@@ -587,26 +282,6 @@ msgstr ""
 msgid "images/linkedin/share.png"
 msgstr ""
 
-#: templates/data-en.json:444 templates/data-en.json:460
-msgid "Tumblr"
-msgstr ""
-
-#: templates/data-en.json:445
-msgid "Tumblr, Inc."
-msgstr ""
-
-#: templates/data-en.json:446
-msgid "images/tumblr/tumbler_logo_blue_16.png"
-msgstr ""
-
-#: templates/data-en.json:447
-msgid "images/tumblr/tumbler_logo_blue_32.png"
-msgstr ""
-
-#: templates/data-en.json:448
-msgid "images/tumblr/tumbler_logo_blue_64.png"
-msgstr ""
-
 #: templates/data-en.json:451
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
@@ -616,10 +291,6 @@ msgstr ""
 
 #: templates/data-en.json:461
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
-
-#: templates/data-en.json:463
-msgid "images/tumblr/tumblr_logotype_blue_220.png"
 msgstr ""
 
 #: templates/data-en.json:464 templates/data-en.json:465
@@ -633,7 +304,7 @@ msgid "VK"
 msgstr ""
 
 #: templates/data-en.json:480
-msgid "images/vkontakte/icon.png"
+msgid "images/vkontakte/icon16.png"
 msgstr ""
 
 #: templates/data-en.json:481
@@ -691,23 +362,6 @@ msgstr ""
 msgid "images/odnoklassniki/share.png"
 msgstr ""
 
-#: templates/data-en.json:540 templates/data-en.json:541
-#: templates/data-en.json:554
-msgid "Pinterest"
-msgstr ""
-
-#: templates/data-en.json:542
-msgid "images/pinterest/logo16.png"
-msgstr ""
-
-#: templates/data-en.json:543
-msgid "images/pinterest/logo32.png"
-msgstr ""
-
-#: templates/data-en.json:544 templates/data-en.json:558
-msgid "images/pinterest/logo64.png"
-msgstr ""
-
 #: templates/data-en.json:547
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
@@ -721,35 +375,7 @@ msgid ""
 " like you. "
 msgstr ""
 
-#: templates/data-en.json:557
-msgid "images/pinterest/logoName.png"
-msgstr ""
-
 #: templates/data-en.json:559 templates/data-en.json:560
 msgid "images/pinterest/pinterestDetail1.png"
 msgstr ""
-
-#: templates/data-en.json:563
-msgid "qyYVI0ySDvk"
-msgstr ""
-
-#: templates/data-en.json:563
-msgid "2DHxkoXR0RM"
-msgstr ""
-
-#: templates/data-en.json:563
-msgid "1QkMOdW0Kyc"
-msgstr ""
-
-#~ msgid "logomark.png"
-#~ msgstr ""
-
-#~ msgid "icon64.png"
-#~ msgstr ""
-
-#~ msgid "saavn-screen.png"
-#~ msgstr ""
-
-#~ msgid "firefox-sidebar-screenshot-1.jpg"
-#~ msgstr ""
 
