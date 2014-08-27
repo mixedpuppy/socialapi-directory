@@ -280,7 +280,7 @@
           "links": {
             "learnmore": "https://getpocket.com/firefox"
           }
-        },
+        }
       }
     },
     "sphere": {
@@ -796,7 +796,7 @@
           "links": {
             "learnmore": "https://about.twitter.com/zh-hant"
           }
-        },
+        }
       }
     },
     "linkedin": {
