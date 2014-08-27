@@ -17,7 +17,7 @@ def createDataURL(imagePath):
     return imagePath
   if imagePath in _imageCache:
     return _imageCache[imagePath]
-  print "converting", imagePath
+  #print "converting", imagePath
   with open("static/"+imagePath, "rb") as image_file:
       encoded_string = base64.b64encode(image_file.read())
       if imagePath[-3:] == "png":
@@ -153,7 +153,6 @@ def createapp():
       d["releases"] = firefoxReleases(config["firefox-releases"])
       d['current_year'] = datetime.now().year
       d['config'] = config
-      print d
       return render_template(template, **d)
     else:
       for k, p in data["source"].iteritems():
