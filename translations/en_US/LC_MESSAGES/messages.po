@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-19 10:57-0700\n"
+"POT-Creation-Date: 2014-08-26 18:43-0700\n"
 "PO-Revision-Date: 2014-08-19 10:57-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_US <LL@li.org>\n"
@@ -138,6 +138,367 @@ msgstr ""
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
 
+#: templates/data-en.json:12 templates/data-en.json:19
+msgid "The definitive source for football news from around the world."
+msgstr ""
+
+#: templates/data-en.json:18
+msgid "We live and breathe football - everywhere, 24/7"
+msgstr ""
+
+#: templates/data-en.json:20
+msgid ""
+"<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
+"whoever you support, we are your definitive football source.</p><p>We "
+"have over 530 reporters on the ground in 50+ countries, getting closer to"
+" the action.  We create original content at source to deliver the news "
+"from the leagues, teams and players that matter.</p><p>No wonder over 52 "
+"million football fans trust us to keep them ahead of the game."
+msgstr ""
+
+#: templates/data-en.json:23
+msgid "images/goal/us1.jpg"
+msgstr ""
+
+#: templates/data-en.json:24
+msgid "images/goal/us2.jpg"
+msgstr ""
+
+#: templates/data-en.json:40
+msgid ""
+"Saavn is the best Bollywood and Indian music listening experience, online"
+" and on the go. It is a simple, beautiful, and 100 percent free way to "
+"search, discover, and listen to over a million songs, from the latest "
+"hits to hard-to-find classics."
+msgstr ""
+
+#: templates/data-en.json:47
+msgid "Music Feed"
+msgstr ""
+
+#: templates/data-en.json:48
+msgid "Discover fresh music and hear more of what you love."
+msgstr ""
+
+#: templates/data-en.json:52
+msgid "images/saavn/saavn-screen.png"
+msgstr ""
+
+#: templates/data-en.json:53
+msgid "images/saavn/firefox-sidebar-screenshot-1.jpg"
+msgstr ""
+
+#: templates/data-en.json:54
+msgid "images/saavn/firefox-sidebar-screenshot-2.jpg"
+msgstr ""
+
+#: templates/data-en.json:55
+msgid "images/saavn/firefox-sidebar-screenshot-3.jpg"
+msgstr ""
+
+#: templates/data-en.json:79
+msgid ""
+"Pocket service for Firefox - The best way to save articles, videos and "
+"more"
+msgstr ""
+
+#: templates/data-en.json:87
+msgid "Save it for later"
+msgstr ""
+
+#: templates/data-en.json:88
+msgid "A convenient, beautiful place to save content you want to view later."
+msgstr ""
+
+#: templates/data-en.json:90 templates/data-en.json:91
+#: templates/data-en.json:92
+msgid "images/pocket/pocket.png"
+msgstr ""
+
+#: templates/data-en.json:109 templates/data-en.json:119
+msgid ""
+"A new way to discover the most interesting content relevant to your "
+"interests."
+msgstr ""
+
+#: templates/data-en.json:117
+msgid "a discovery experience"
+msgstr ""
+
+#: templates/data-en.json:122 templates/data-en.json:123
+msgid "images/sphere/sphere-slide.jpg"
+msgstr ""
+
+#: templates/data-en.json:142
+msgid ""
+"Delicious is a free service designed with care to be the best place to "
+"save what you love on the web."
+msgstr ""
+
+#: templates/data-en.json:160
+msgid "Never lose a link again."
+msgstr ""
+
+#: templates/data-en.json:161
+msgid "Delicious remembers so you don't have to."
+msgstr ""
+
+#: templates/data-en.json:163 templates/data-en.json:164
+msgid "images/delicious/delicious.png"
+msgstr ""
+
+#: templates/data-en.json:165
+msgid "images/delicious/share.png"
+msgstr ""
+
+#: templates/data-en.json:183
+msgid "Keep up with friends wherever you go on the web."
+msgstr ""
+
+#: templates/data-en.json:203
+msgid "Share the web"
+msgstr ""
+
+#: templates/data-en.json:204
+msgid "Share any web page, anywhere, anytime."
+msgstr ""
+
+#: templates/data-en.json:206 templates/data-en.json:208
+msgid "images/facebook/facebook-share.png"
+msgstr ""
+
+#: templates/data-en.json:217
+msgid ""
+"Cliqz delivers a real-time stream of the most relevant articles, stories,"
+" and videos based on your interests directly to Firefox."
+msgstr ""
+
+#: templates/data-en.json:240
+msgid ""
+"Get the most relevant news based on your interests by crafting a unique "
+"information universe."
+msgstr ""
+
+#: templates/data-en.json:243 templates/data-en.json:244
+msgid "images/cliqz/cliqz-detail.png"
+msgstr ""
+
+#: templates/data-en.json:245
+msgid "images/cliqz/share.png"
+msgstr ""
+
+#: templates/data-en.json:258 templates/data-en.json:270
+msgid "The largest social network in Japan."
+msgstr ""
+
+#: templates/data-en.json:271
+msgid "Stay informed of what your friends are up to."
+msgstr ""
+
+#: templates/data-en.json:275 templates/data-en.json:276
+msgid "images/mixi/FF_promo_001.png"
+msgstr ""
+
+#: templates/data-en.json:276 templates/data-en.json:277
+msgid "images/mixi/FF_promo_002.png"
+msgstr ""
+
+#: templates/data-en.json:287
+msgid "SINA Corporation"
+msgstr ""
+
+#: templates/data-en.json:288 templates/data-en.json:306
+msgid ""
+"Sina Weibo is the most popular microblogging service in China. Weibo for "
+"Firefox allows users to post messages with 140-character limit, images, "
+"videos, etc. And it will show the notification when receiving new "
+"messages."
+msgstr ""
+
+#: templates/data-en.json:293
+msgid "Weibo.com"
+msgstr ""
+
+#: templates/data-en.json:304
+msgid "Weibo"
+msgstr ""
+
+#: templates/data-en.json:305
+msgid "Share your interesting news anytime, anywhere."
+msgstr ""
+
+#: templates/data-en.json:308
+msgid "images/weibo/logo-large.png"
+msgstr ""
+
+#: templates/data-en.json:309
+msgid "images/weibo/detail1.png"
+msgstr ""
+
+#: templates/data-en.json:309
+msgid "images/weibo/detail2.png"
+msgstr ""
+
+#: templates/data-en.json:310
+msgid "images/weibo/share.png"
+msgstr ""
+
+#: templates/data-en.json:332
+msgid ""
+"Quickly share content you discover across the web on Google+. Use your "
+"Google+ account to share sites publicly or with your Circles."
+msgstr ""
+
+#: templates/data-en.json:337
+msgid "Share the web on Google+."
+msgstr ""
+
+#: templates/data-en.json:339 templates/data-en.json:340
+#: templates/data-en.json:341
+msgid "images/google/share.png"
+msgstr ""
+
+#: templates/data-en.json:363 templates/data-en.json:367
+msgid "Send web pages and images to people using Gmail."
+msgstr ""
+
+#: templates/data-en.json:370 templates/data-en.json:371
+#: templates/data-en.json:372
+msgid "images/google/gmail-share.png"
+msgstr ""
+
+#: templates/data-en.json:391
+msgid ""
+"Use your Firefox Twitter Share to quickly author tweets about the pages "
+"you discover across the web.  We shorten URLs for quick sharing using the"
+" t.co link shortener."
+msgstr ""
+
+#: templates/data-en.json:398
+msgid "Tweet to your followers"
+msgstr ""
+
+#: templates/data-en.json:399
+msgid "Twitter Share lets you quickly tweet links to your followers."
+msgstr ""
+
+#: templates/data-en.json:401 templates/data-en.json:402
+#: templates/data-en.json:403
+msgid "images/twitter/share.png"
+msgstr ""
+
+#: templates/data-en.json:421
+msgid ""
+"Manage your professional identity. Build and engage with your "
+"professional network. Access knowledge, insights and opportunities."
+msgstr ""
+
+#: templates/data-en.json:428
+msgid "Share the web with your professional network."
+msgstr ""
+
+#: templates/data-en.json:430 templates/data-en.json:431
+#: templates/data-en.json:432
+msgid "images/linkedin/share.png"
+msgstr ""
+
+#: templates/data-en.json:451
+msgid ""
+"Post text, photos, quotes, links, music, and videos from your browser, "
+"phone, desktop, email or wherever you happen to be. You can customize "
+"everything, from colors to your theme's HTML."
+msgstr ""
+
+#: templates/data-en.json:461
+msgid "Tumblr lets you effortlessly share anything."
+msgstr ""
+
+#: templates/data-en.json:464 templates/data-en.json:465
+#: templates/data-en.json:466
+msgid "images/tumblr/share.png"
+msgstr ""
+
+#: templates/data-en.json:478 templates/data-en.json:479
+#: templates/data-en.json:493
+msgid "VK"
+msgstr ""
+
+#: templates/data-en.json:480
+msgid "images/vkontakte/icon16.png"
+msgstr ""
+
+#: templates/data-en.json:481
+msgid "images/vkontakte/icon32.png"
+msgstr ""
+
+#: templates/data-en.json:482
+msgid "images/vkontakte/icon64.png"
+msgstr ""
+
+#: templates/data-en.json:485 templates/data-en.json:494
+msgid ""
+"VK is a social network that unites people all over the world and helps "
+"them communicate comfortably and promptly."
+msgstr ""
+
+#: templates/data-en.json:497 templates/data-en.json:498
+#: templates/data-en.json:499
+msgid "images/vkontakte/vk-share.png"
+msgstr ""
+
+#: templates/data-en.json:497
+msgid "images/vkontakte/vk-sidebar.png"
+msgstr ""
+
+#: templates/data-en.json:511 templates/data-en.json:518
+#: templates/data-en.json:525
+msgid "Odnoklassniki"
+msgstr ""
+
+#: templates/data-en.json:514
+msgid "images/odnoklassniki/logo.png"
+msgstr ""
+
+#: templates/data-en.json:515
+msgid "images/odnoklassniki/logo32.png"
+msgstr ""
+
+#: templates/data-en.json:516
+msgid "images/odnoklassniki/logo64.png"
+msgstr ""
+
+#: templates/data-en.json:517 templates/data-en.json:526
+msgid ""
+"Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
+"service for classmates and old friends."
+msgstr ""
+
+#: templates/data-en.json:529
+msgid "images/odnoklassniki/logo-large.png"
+msgstr ""
+
+#: templates/data-en.json:530 templates/data-en.json:531
+#: templates/data-en.json:532
+msgid "images/odnoklassniki/share.png"
+msgstr ""
+
+#: templates/data-en.json:547
+msgid ""
+"Pinterest is a tool to help you discover and plan things you want to do. "
+"When you find something that looks interesting, just Pin it! Pins are "
+"visual bookmarks that you organize and share the way you want."
+msgstr ""
+
+#: templates/data-en.json:555
+msgid ""
+"Discover ideas for all your projects and interests, hand-picked by people"
+" like you. "
+msgstr ""
+
+#: templates/data-en.json:559 templates/data-en.json:560
+msgid "images/pinterest/pinterestDetail1.png"
+msgstr ""
+
 #: templates/footer.html:12
 #, python-format
 msgid ""
@@ -178,19 +539,19 @@ msgstr ""
 msgid "SocialAPI for Developers"
 msgstr ""
 
-#: templates/index.html:40 templates/provider.html:74
+#: templates/index.html:39 templates/provider.html:74
 msgid "Activate Now"
 msgstr ""
 
-#: templates/index.html:41 templates/provider.html:77
+#: templates/index.html:40 templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr ""
 
-#: templates/index.html:58
+#: templates/index.html:56
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr ""
 
-#: templates/index.html:59
+#: templates/index.html:57
 msgid ""
 "Easy to use, no software or Add-ons to download and install, just click "
 "Activate and new functionality is delivered to you from the Web.  "
