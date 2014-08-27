@@ -185,7 +185,7 @@
         "homepageURL": "https://www.facebook.com",
         "version": 2,
         "pageSize": {
-          "share": { "width": 500, "height": 380 }
+          "share": { "width": 700, "height": 400 }
         },
         "activities": {
           "share": {
