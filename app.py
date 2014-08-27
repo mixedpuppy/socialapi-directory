@@ -18,7 +18,7 @@ def createapp():
   demo = '-d' in sys.argv
   #app.config["APPLICATION_ROOT"] = "/socialapi-directory"
   app = Flask(__name__)
-  app.debug = True
+  #app.debug = True
   #app.config.from_pyfile('babel.cfg')
   babel = Babel(app)
 
