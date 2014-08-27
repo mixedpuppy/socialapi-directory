@@ -165,11 +165,11 @@ msgstr "<a href=\".\">Scopri nuovi servizi</a> da aggiungere a Firefox."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "Siamo il punto di riferimento mondiale per le notizie sul calcio."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Noi viviamo e respiriamo calcio - ovunque, 24/7."
 
 #: templates/data-en.json:20
 msgid ""
@@ -180,14 +180,21 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
+"<p>Calcio, football, soccer, futbol, futebol - in qualunque modo lo "
+"chiamate e chiunque supportiate, siamo la vostra meta definitiva per "
+"lo sport più amato.</p><p>Abbiamo oltre 530 giornalisti sparsi in più "
+"di 50 nazioni, sempre sul pezzo. Creiamo contenuti originali sui "
+"campionati, le squadre e i giocatori più importanti al mondo.</p><p>Non "
+"c'è da stupirsi se più di 52 milioni di appassionati di calcio si "
+"affidano a noi per restare sempre aggiornati.</p>"
 
 #: templates/data-en.json:23
 msgid "images/goal/us1.jpg"
-msgstr ""
+msgstr "images/goal/it1.jpg"
 
 #: templates/data-en.json:24
 msgid "images/goal/us2.jpg"
-msgstr ""
+msgstr "images/goal/it2.jpg"
 
 #: templates/data-en.json:40
 msgid ""

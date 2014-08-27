@@ -205,16 +205,16 @@ msgstr ""
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
-msgstr ""
+msgstr "為 Firefox 打造的 Pocket 服務，是儲存文章、影片，還有更多內容的最佳方案。"
 
 #: templates/data-en.json:87
 #, fuzzy
 msgid "Save it for later"
-msgstr "儲存內容稍後閱讀"
+msgstr "先存後用"
 
 #: templates/data-en.json:88
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "讓你能儲存任何內容，以利稍後觀看。"
 
 #: templates/data-en.json:90 templates/data-en.json:91
 #: templates/data-en.json:92
@@ -239,15 +239,15 @@ msgstr ""
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
-msgstr ""
+msgstr "精心打造的 Delicious 免費服務，可為你儲存你愛的網路內容。"
 
 #: templates/data-en.json:160
 msgid "Never lose a link again."
-msgstr ""
+msgstr "再也不錯失任何連結"
 
 #: templates/data-en.json:161
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious 為你記憶更多事。"
 
 #: templates/data-en.json:163 templates/data-en.json:164
 msgid "images/delicious/delicious.png"
@@ -259,15 +259,15 @@ msgstr ""
 
 #: templates/data-en.json:183
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "不論你在網海何處，都能掌握朋友行蹤。"
 
 #: templates/data-en.json:203
 msgid "Share the web"
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:204
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "隨時、隨地分享任何網頁。"
 
 #: templates/data-en.json:206 templates/data-en.json:208
 msgid "images/facebook/facebook-share.png"
@@ -353,11 +353,11 @@ msgstr ""
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。"
 
 #: templates/data-en.json:337
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "在 Google+ 上和朋友分享網路。"
 
 #: templates/data-en.json:339 templates/data-en.json:340
 #: templates/data-en.json:341
@@ -366,7 +366,7 @@ msgstr ""
 
 #: templates/data-en.json:363 templates/data-en.json:367
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Gmail 是直覺且高效率的電子郵件系統。"
 
 #: templates/data-en.json:370 templates/data-en.json:371
 #: templates/data-en.json:372
@@ -378,15 +378,15 @@ msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
-msgstr ""
+msgstr "Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co 短網址功能，讓你能迅速分享縮短過的網址。"
 
 #: templates/data-en.json:398
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "推文給你的追蹤者"
 
 #: templates/data-en.json:399
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Share 可讓你迅速推文給你的追蹤者。"
 
 #: templates/data-en.json:401 templates/data-en.json:402
 #: templates/data-en.json:403
@@ -413,11 +413,11 @@ msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
-msgstr ""
+msgstr "用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影片。從顏色到自己主題的 HTML，均可自訂任何部分。"
 
 #: templates/data-en.json:461
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr 讓你輕鬆分享大小事。"
 
 #: templates/data-en.json:464 templates/data-en.json:465
 #: templates/data-en.json:466

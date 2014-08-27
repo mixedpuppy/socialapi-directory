@@ -154,11 +154,11 @@ msgstr "Firefox へ追加できる <a href=\".\">その他のサービスを見�
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "世界中からあらゆるサッカーニュースが集まる場所。"
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "週 7 日、1 日 24 時間。どこにいてもサッカーを呼吸する。"
 
 #: templates/data-en.json:20
 msgid ""
@@ -169,14 +169,19 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
+"<p>フットボール、サッカー、フトボル、カルチョ、フチボウ…どんな言葉を使っていても、"
+"どのチームを応援していても、サッカーは世界の共通言語。</p><p>50 以上の国で活動する "
+"530 名以上の記者が、サッカー界の動きをすぐそばで追っています。</p>"
+"<p>気になるリーグやチーム、選手たちの最新情報をオリジナルコンテンツでお届けします。</p>"
+"<p>5,200 万人以上のサッカーファンに、最新の情報源として信頼されていることには理由があります。</p>"
 
 #: templates/data-en.json:23
 msgid "images/goal/us1.jpg"
-msgstr ""
+msgstr "images/goal/ja1.jpg"
 
 #: templates/data-en.json:24
 msgid "images/goal/us2.jpg"
-msgstr ""
+msgstr "images/goal/ja2.jpg"
 
 #: templates/data-en.json:40
 msgid ""
@@ -214,7 +219,7 @@ msgstr ""
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
-msgstr ""
+msgstr "Firefoxのためのポケットサービスは、記事、動画などを保存する最良の方法です。"
 
 #: templates/data-en.json:87
 #, fuzzy
@@ -223,7 +228,7 @@ msgstr "コンテンツを後で見るために保存"
 
 #: templates/data-en.json:88
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "後で見たいコンテンツを保存しておく便利で美しい場所。"
 
 #: templates/data-en.json:90 templates/data-en.json:91
 #: templates/data-en.json:92
@@ -248,39 +253,39 @@ msgstr ""
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
-msgstr ""
+msgstr "Deliciousは、ウェブであなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。"
 
 #: templates/data-en.json:160
 msgid "Never lose a link again."
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:161
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "あなたは思い出す必要はありません。Deliciousが思い出します。"
 
 #: templates/data-en.json:163 templates/data-en.json:164
 msgid "images/delicious/delicious.png"
-msgstr ""
+msgstr "images/delicious/share-ja.png"
 
 #: templates/data-en.json:165
 msgid "images/delicious/share.png"
-msgstr ""
+msgstr "images/delicious/share-ja.png"
 
 #: templates/data-en.json:183
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "どこに行っても、ウェブで友達と繋がっていましょう。"
 
 #: templates/data-en.json:203
 msgid "Share the web"
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:204
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "どんなウェブページも、どこでも、いつでもシェア。"
 
 #: templates/data-en.json:206 templates/data-en.json:208
 msgid "images/facebook/facebook-share.png"
-msgstr ""
+msgstr "images/facebook/share-ja.png"
 
 #: templates/data-en.json:217
 msgid ""
@@ -304,11 +309,11 @@ msgstr ""
 
 #: templates/data-en.json:258 templates/data-en.json:270
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "好きなWebサイトを見ながらmixiをチェック"
 
 #: templates/data-en.json:271
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます 。 "
 
 #: templates/data-en.json:275 templates/data-en.json:276
 msgid "images/mixi/FF_promo_001.png"
@@ -362,60 +367,60 @@ msgstr ""
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "インターネットで見つけたコンテンツをGoogle+で素早くシェア。見つけたサイトはGoogle+アカウントで仲間とシェアしたり、公開したりできます。"
 
 #: templates/data-en.json:337
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Google+で友達とウェブをシェア。"
 
 #: templates/data-en.json:339 templates/data-en.json:340
 #: templates/data-en.json:341
 msgid "images/google/share.png"
-msgstr ""
+msgstr "images/google/share-ja.png"
 
 #: templates/data-en.json:363 templates/data-en.json:367
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Gmailを使って、ウェブページや画像をみんなに送れます。"
 
 #: templates/data-en.json:370 templates/data-en.json:371
 #: templates/data-en.json:372
 msgid "images/google/gmail-share.png"
-msgstr ""
+msgstr "images/google/gmail-share-ja.png"
 
 #: templates/data-en.json:391
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:398
 msgid "Tweet to your followers"
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:399
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitterを使用すると、バリアなくアイディアや情報を瞬時に作成し、共有できるようになります。"
 
 #: templates/data-en.json:401 templates/data-en.json:402
 #: templates/data-en.json:403
 msgid "images/twitter/share.png"
-msgstr ""
+msgstr "images/twitter/share-ja.png"
 
 #: templates/data-en.json:421
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "仕事で使うIDを管理。仕事で使うネットワークを構築し、保証します。知識や深い洞察、そして好機にアクセスしましょう。"
 
 #: templates/data-en.json:428
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "仕事で使っているネットワークでウェブをシェア。"
 
 #: templates/data-en.json:430 templates/data-en.json:431
 #: templates/data-en.json:432
 msgid "images/linkedin/share.png"
-msgstr ""
+msgstr "images/linkedin/share-ja.png"
 
 #: templates/data-en.json:451
 msgid ""
@@ -423,10 +428,13 @@ msgid ""
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
+"あなたのブラウザ、電話、デスクトップ、Eメール、どこで何を使っていても、"
+"テキストや写真や引用やリンクや音楽や動画を送ることができます。"
+"色からテーマのHTMLに至るまで、あなたのTumblrの全てをカスタマイズできます。"
 
 #: templates/data-en.json:461
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblrを使えば、容易になんでもシェアできます。"
 
 #: templates/data-en.json:464 templates/data-en.json:465
 #: templates/data-en.json:466
@@ -503,12 +511,14 @@ msgid ""
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
+"Pinterestはあなたが発見し、やりたいことを計画するのを助けるツールです。"
+"興味深そうなものを見つけたら、Pinで止めるだけです！Pinは、あなた自身のやり方で整理し、シェアするためのビジュアル・ブックマークです。"
 
 #: templates/data-en.json:555
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you. "
-msgstr ""
+msgstr "あなたに似た人々によって精選されたアイディアを発見しましょう。あなたのあらゆるプロジェクトや興味のあることのために。"
 
 #: templates/data-en.json:559 templates/data-en.json:560
 msgid "images/pinterest/pinterestDetail1.png"

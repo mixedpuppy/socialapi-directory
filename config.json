@@ -19,8 +19,7 @@
   "carousel": {
     "en-US": ["linkedin", "twitter", "facebook"],
     "en-IN": ["saavn", "pocket", "facebook"],
-    "jp-JP": ["mixi", "twitter", "tumblr"],
-    "tw": ["twitter", "google", "tumblr"],
+    "zh-TW": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr", "google"],
     "ru": ["odnoklassniki", "vkontakte"],
     "de": ["cliqz", "goal", "twitter"]

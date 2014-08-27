@@ -140,11 +140,11 @@ msgstr ""
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Kami hidup dan bernafas sepakbola - di mana pun, 24 jam sehari dan 7 jam seminggu."
 
 #: templates/data-en.json:20
 msgid ""
@@ -155,14 +155,22 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
+"<p>Football, soccer, futbol, calcio, futebol, sepakbola - apa pun Anda "
+"menyebutnya dan siapa pun yang Anda dukung, kami adalah sumber utama "
+"sepakbola.</p><p>Kami memiliki lebih dari 530 reporter di lebih dari 50 "
+"negara untuk membawa Anda merasakan langsung atmosfir sepakbola dunia. Kami "
+"menciptakan konten orisinil untuk mengabarkan informasi terbaru dari liga, "
+"tim, dan pemain sesuai dengan minat Anda.</p><p>Tak heran jika lebih dari "
+"52 juta fans sepakbola mempercayai kami supaya mereka tak ketinggalan "
+"informasi apa pun tentang sepakbola.</p>"
 
 #: templates/data-en.json:23
 msgid "images/goal/us1.jpg"
-msgstr ""
+msgstr "images/goal/id1.jpg"
 
 #: templates/data-en.json:24
 msgid "images/goal/us2.jpg"
-msgstr ""
+msgstr "images/goal/id2.jpg"
 
 #: templates/data-en.json:40
 msgid ""

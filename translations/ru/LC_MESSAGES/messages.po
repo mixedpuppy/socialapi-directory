@@ -238,7 +238,7 @@ msgstr ""
 #: templates/data-en.json:90 templates/data-en.json:91
 #: templates/data-en.json:92
 msgid "images/pocket/pocket.png"
-msgstr ""
+msgstr "images/pocket/share-ru.png"
 
 #: templates/data-en.json:109 templates/data-en.json:119
 msgid ""
@@ -290,7 +290,7 @@ msgstr ""
 
 #: templates/data-en.json:206 templates/data-en.json:208
 msgid "images/facebook/facebook-share.png"
-msgstr ""
+msgstr "images/facebook/share-ru.png"
 
 #: templates/data-en.json:217
 msgid ""
@@ -398,19 +398,22 @@ msgid ""
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
 msgstr ""
+"Firefox Twitter Account позволяет быстро редактировать твиты о страницах "
+"которые вы найдете в Интернете. Для удобства обмена мы укорачиваем "
+"Интернетовские адреса с помощью t.co Link Shortener."
 
 #: templates/data-en.json:398
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Пошлите твит вашим читателям."
 
 #: templates/data-en.json:399
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Share позволяет быстро слать ссылки вашим последователям."
 
 #: templates/data-en.json:401 templates/data-en.json:402
 #: templates/data-en.json:403
 msgid "images/twitter/share.png"
-msgstr ""
+msgstr "images/twitter/share-ru.png"
 
 #: templates/data-en.json:421
 msgid ""
@@ -425,7 +428,7 @@ msgstr ""
 #: templates/data-en.json:430 templates/data-en.json:431
 #: templates/data-en.json:432
 msgid "images/linkedin/share.png"
-msgstr ""
+msgstr "images/linkedin/share-ru.png"
 
 #: templates/data-en.json:451
 msgid ""
@@ -446,39 +449,39 @@ msgstr ""
 #: templates/data-en.json:478 templates/data-en.json:479
 #: templates/data-en.json:493
 msgid "VK"
-msgstr ""
+msgstr "ВКонтакте"
 
 #: templates/data-en.json:480
 msgid "images/vkontakte/icon16.png"
-msgstr ""
+msgstr "images/vkontakte/icon16-ru.png"
 
 #: templates/data-en.json:481
 msgid "images/vkontakte/icon32.png"
-msgstr ""
+msgstr "images/vkontakte/icon32-ru.png"
 
 #: templates/data-en.json:482
 msgid "images/vkontakte/icon64.png"
-msgstr ""
+msgstr "images/vkontakte/icon64-ru.png"
 
 #: templates/data-en.json:485 templates/data-en.json:494
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
-msgstr ""
+msgstr "ВКонтакте — это социальная сеть для быстрой и удобной коммуникации между людьми по всему миру."
 
 #: templates/data-en.json:497 templates/data-en.json:498
 #: templates/data-en.json:499
 msgid "images/vkontakte/vk-share.png"
-msgstr ""
+msgstr "images/vkontakte/share-ru.png"
 
 #: templates/data-en.json:497
 msgid "images/vkontakte/vk-sidebar.png"
-msgstr ""
+msgstr "images/vkontakte/sidebar-ru.png"
 
 #: templates/data-en.json:511 templates/data-en.json:518
 #: templates/data-en.json:525
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Одноклассники"
 
 #: templates/data-en.json:514
 msgid "images/odnoklassniki/logo.png"
@@ -497,6 +500,8 @@ msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
+"Развлекательная социальная сеть для общения с друзьями, просмотра "
+"фильмов и сериалов, прослушивания музыки и многого другого."
 
 #: templates/data-en.json:529
 msgid "images/odnoklassniki/logo-large.png"
@@ -505,7 +510,7 @@ msgstr ""
 #: templates/data-en.json:530 templates/data-en.json:531
 #: templates/data-en.json:532
 msgid "images/odnoklassniki/share.png"
-msgstr ""
+msgstr "images/odnoklassniki/share-ru.png"
 
 #: templates/data-en.json:547
 msgid ""

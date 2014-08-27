@@ -140,11 +140,11 @@ msgstr ""
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr " "
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Vivimos y respiramos fútbol - en todas partes, 24/7."
 
 #: templates/data-en.json:20
 msgid ""
@@ -155,14 +155,21 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
+"<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted "
+"siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más "
+"de 530 periodistas sobre el terreno en más de 50 países, cada vez más "
+"cerca de la acción. Creamos contenido original allá donde se producen "
+"las noticias de las ligas, equipos y jugadores que importan.</p><p>No es "
+"de extrañar que más de 52 millones de aficionados al fútbol confíen en "
+"nosotros para estar al tanto de todo lo que sucede.</p>"
 
 #: templates/data-en.json:23
 msgid "images/goal/us1.jpg"
-msgstr ""
+msgstr "images/goal/es-ar1.jpg"
 
 #: templates/data-en.json:24
 msgid "images/goal/us2.jpg"
-msgstr ""
+msgstr "images/goal/es-ar2.jpg"
 
 #: templates/data-en.json:40
 msgid ""
