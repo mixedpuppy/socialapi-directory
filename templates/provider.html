@@ -48,7 +48,7 @@
         <a href=".">{{ _('Home') }}</a>
         </div>
         <div>
-        <span>{{lang['default']['name']}}</span>
+        <span>{{viewData['name']}}</span>
         </div>
       </div>
       <div class="detail-content">
@@ -62,39 +62,39 @@
         <div class="row">
           <div class="col-2">
             <div class="provider-item-detail">
-{% if 'detaillogo' in lang['default']['images'] %}
-            <h1><img src="{{createDataURL(lang['default']['images']['detaillogo'])}}"></img></h1>
-{% elif 'fulllogo' in lang['default']['images'] %}
-            <h1><img src="{{createDataURL(lang['default']['images']['fulllogo'])}}"></img></h1>
+{% if 'detaillogo' in viewData['images'] %}
+            <h1><img src="{{createDataURL(viewData['images']['detaillogo'])}}"></img></h1>
+{% elif 'fulllogo' in viewData['images'] %}
+            <h1><img src="{{createDataURL(viewData['images']['fulllogo'])}}"></img></h1>
 {% else %}
-            <h1><img src="{{createDataURL(lang['default']['images']['logo'])}}"></img> {{lang['default']['name']}}</h1>
+            <h1><img src="{{createDataURL(viewData['images']['logo'])}}"></img> {{viewData['name']}}</h1>
 {% endif %}
-              <h3 class="tagline">{{lang['default']['tagline']}}</h3>
-              <p class="lead">{{lang['default']['shortDescription']}}</p>
+              <h3 class="tagline">{{viewData['tagline']}}</h3>
+              <p class="lead">{{viewData['shortDescription']}}</p>
               <a class="button gutter-bottom-12" onclick="activateProvider(this, '{{key}}')" data-service="{{manifestData}}">{{ _('Activate Now') }} <span>&raquo;</span></a>
-              <div class="provider-description">{{lang['default']['description']|safe}}</div>
-{% if 'links' in lang['default'] %}
-              <a href="{{lang['default']['links']['learnmore']}}" class="moreinfo" target="_blank">{{ _('Learn More&hellip;') }}</a>
+              <div class="provider-description">{{viewData['description']|safe}}</div>
+{% if 'links' in viewData %}
+              <a href="{{viewData['links']['learnmore']}}" class="moreinfo" target="_blank">{{ _('Learn More&hellip;') }}</a>
 {% endif %}
             </div>
   
           </div>
           <div class="col-2 clearfix">
-            {% if 'detail' in lang['default']['images'] %}<div class="clearfix"><img src="{{lang['default']['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
+            {% if 'detail' in viewData['images'] %}<div class="clearfix"><img src="{{viewData['images']['detail']}}" class="provider-primary-image" /></div>{% else %}
             <div id="carousel-details">
               <div class="cycle-slideshow carousel-inner"
                   data-cycle-loader="true"
                   data-cycle-center-horz="true"
                   data-cycle-center-vert="true"
                   data-cycle-pager="#detail-pager">
-                {% for image in lang['default']['images']['details'] %}<img src="{{image}}"/>{% endfor %}
+                {% for image in viewData['images']['details'] %}<img src="{{image}}"/>{% endfor %}
               </div>
               <div id="detail-pager" class="cycle-pager center external"></div>
             </div>
 {% endif %}
-{% if 'videos' in lang['default'] %}
+{% if 'videos' in viewData %}
             <div id="detail-videos" class="center"><div>
-              {% for video in lang['default']['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}" target="_blank"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
+              {% for video in viewData['videos']['youtube'] %}<a href="http://www.youtube.com/watch?v={{video}}" target="_blank"><img src="//i1.ytimg.com/vi/{{video}}/mqdefault.jpg"/></a>{% endfor %}
             </div></div>
 {% endif %}
           </div>

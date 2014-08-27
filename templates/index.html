@@ -24,29 +24,27 @@
       data-cycle-slides="&gt; div">
       <span class="cycle-prev">&lsaquo;</span>
       <span class="cycle-next">&rsaquo;</span>
-      {% if carousel %}
       {% for p in slider %}
       <div class="item">
         <div class="item-inner">
           <div>
-          {% if p['lang']['default']['images']['fulllogo'] %}
-          <h2><img src="{{createDataURL(p['lang']['default']['images']['fulllogo'])}}"></img></h2>
+          {% if p['viewData']['images']['fulllogo'] %}
+          <h2><img src="{{createDataURL(p['viewData']['images']['fulllogo'])}}"></img></h2>
           {% else %}
-          <h2><img src="{{createDataURL(p['lang']['default']['images']['logo'])}}"></img> {{p['lang']['default']['name']}}</h2>
+          <h2><img src="{{createDataURL(p['viewData']['images']['logo'])}}"></img> {{p['viewData']['name']}}</h2>
           {% endif %}
-          <p class="description">{{p['lang']['default']['shortDescription']}}</p>
+          <p class="description">{{p['viewData']['shortDescription']}}</p>
           </div>
           <div class="activation">
           <a class="button gutter-bottom-24" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">{{ _('Activate Now') }} <span>&raquo;</span></a>
           <br/><a href="{{p['key']}}.html" class="moreinfo">{{ _('Learn More&hellip;') }}</a>
           </div>
           <div class="carousel-image">
-          <img src="{{p['lang']['default']['images']['carousel']}}" style="float:right;"></img>
+          <img src="{{p['viewData']['images']['carousel']}}" style="float:right;"></img>
           </div>
         </div>
       </div>
       {% endfor %}
-      {% endif %}
     </div>
     <div class="cycle-pager center"></div>
     </div>
@@ -70,17 +68,8 @@
       </div>
       <div id="directory-grid" class="row">
       {% for p in source %}
-      {% if p['lang'][locale] %}
       {% if not production or p['status'] == 'release' %}
         {% include 'index_entry.html' %}
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-      {% for p in source %}
-      {% if not p['lang'][locale] %}
-      {% if not production or p['status'] == 'release' %}
-        {% include 'index_entry.html' %}
-      {% endif %}
       {% endif %}
       {% endfor %}
       </div>

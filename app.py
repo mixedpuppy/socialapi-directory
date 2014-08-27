@@ -83,10 +83,10 @@ def createapp():
 
   def dataFixup(k, p, locale):
     p['key'] = k
-    if locale in p["lang"]:
-      p["lang"]["default"] = p["lang"][locale]
-    else:
-      p["lang"]["default"] = p["lang"]["en-US"]
+    #if locale in p["lang"]:
+    #  p["lang"]["default"] = p["lang"][locale]
+    #else:
+    #  p["lang"]["default"] = p["lang"]["en-US"]
 
     # make manifest icons data urls
     for image in ["iconURL", "icon32URL", "icon64URL", "unmarkedIcon", "markedIcon"]:
@@ -97,7 +97,8 @@ def createapp():
 
     # for demo site purposes, massage the data
     # various lang pack fixups, use manifest entries for missing lang entries
-    d = p["lang"]["default"]
+    #d = p["lang"]["default"]
+    d = p["viewData"]
     if 'images' not in d:
       d['images'] = {}
     if 'logo' not in d['images']:
@@ -124,7 +125,9 @@ def createapp():
     return last
 
   def renderTemplate(template, locale, path=None, base=""):
-    data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    out = render_template('data-en.json')
+    data = json.loads(out)
+    #data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
 
     data["production"] = not demo
     basehref = ""
@@ -150,6 +153,7 @@ def createapp():
       d["releases"] = firefoxReleases(config["firefox-releases"])
       d['current_year'] = datetime.now().year
       d['config'] = config
+      print d
       return render_template(template, **d)
     else:
       for k, p in data["source"].iteritems():
