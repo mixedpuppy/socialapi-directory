@@ -1,10 +1,9 @@
 import re, os, sys
 from datetime import datetime
 import flask
-from flask import Flask, Blueprint, g, request, json, render_template, redirect, url_for
+from flask import Flask, request, json, render_template, redirect, url_for, abort
 from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
-import copy
 import collections
 
 TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
@@ -16,15 +15,11 @@ class RegexConverter(BaseConverter):
 
 def createapp():
   demo = '-d' in sys.argv
-  #app.config["APPLICATION_ROOT"] = "/socialapi-directory"
   app = Flask(__name__)
-  #app.debug = True
-  #app.config.from_pyfile('babel.cfg')
-  babel = Babel(app)
-
+  if '--debug' in sys.argv:
+    app.debug = True
   app.url_map.converters['regex'] = RegexConverter
-
-  bp = Blueprint('bp', __name__)
+  babel = Babel(app)
 
   def get_supported_locales():
     langs = {}
@@ -91,21 +86,25 @@ def createapp():
             return a
     return last
 
-  def renderTemplate(template, data, locale, path=None, base=""):
+  def renderTemplate(template, locale, path=None):
+    locales = get_supported_locales()
+    if locale not in locales:
+      abort(404)
+
+    data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+
     data["production"] = not demo
     basehref = ""
-    if path:
-        baseurl = os.path.dirname(path)
-    if base:
-      basehref = "/".join([base, locale]) + '/'
-    elif locale:
+    if locale:
       basehref = locale + '/'
     # add localized strings
     data["locale"] = locale
 
     if path:
       path = os.path.splitext(path)[0]
-    if path and path in data["source"]:
+      if path not in data["source"]:
+        abort(404)
+    if path:
       # on a detail page, just copy the specific data we need
       d = dataFixup(path, data["source"][path], locale)
       d['translations'] = get_supported_locales()
@@ -143,9 +142,9 @@ def createapp():
       data['translations'] = get_supported_locales()
       data['current_year'] = datetime.now().year
       return render_template(template, **data)
-  
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
-  def static_proxy(base, locale=None, path=None):
+
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
+  def static_proxy(locale=None, path=None):
     # if root is locale, capture that, but use the same local file paths
     try:
       root, path = path.split('/', 1)
@@ -158,60 +157,34 @@ def createapp():
       template = path
     else:
       template = path and "provider.html" or "index.html"
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate(template, appData, locale, path, base)
+    return renderTemplate(template, locale, path)
 
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
-  def bp_activated(base, locale=None, path=None):
-    # if root is locale, capture that, but use the same local file paths
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    template = path and "activated.html" or "activatedIndex.html"
-    return renderTemplate(template, appData, locale, path, base=base)
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def app_activated(locale=None, path=None):
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
     template = path and "activated.html" or "activatedIndex.html"
-    return renderTemplate(template, appData, locale, path)
+    return renderTemplate(template, locale, path)
 
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
-  def bp_sharePanel(base, locale=None):
-    # if root is locale, capture that, but use the same local file paths
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('sharePanel.html', appData, locale, base=base)
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def app_sharePanel(locale=None):
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('sharePanel.html', appData, locale)
+    return renderTemplate('sharePanel.html', locale)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):
-    return static_proxy(None, locale, path)
+    return static_proxy(locale, path)
 
-  @bp.route('/<path:path>')
-  def static_files(base=None, path=None):
-    if base and not path:
-      return index(None, locale)
-    if base in ["css", "images", "fonts", "js"]:
-      path = base + "/" + path
+  @app.route('/<path:path>')
+  def static_files(path=None):
+    if not path:
+      return redirectpage()
     return app.send_static_file(path)
-
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
-  def index(base, locale):
-    # if root is locale, capture that, but use the same local file paths
-    if not demo and locale not in TRANSLATIONS:
-        return app.send_static_file("redir.html")
-    appData = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
-    return renderTemplate('index.html', appData, locale, base=base)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def app_index(locale):
     if not demo and locale not in TRANSLATIONS:
         return app.send_static_file("redir.html")
-    return index(None, locale)
+    return renderTemplate('index.html', locale)
 
-  @bp.route("/redirect.html")
   @app.route("/redirect.html")
   def redirectpage(base=None):
     # the server should handle a redirect. Since the frozen static pages will be
@@ -219,16 +192,12 @@ def createapp():
     # level index page.  We use that here to ensure that works as well.
     return app.send_static_file("redirect.html")
 
-  @bp.route("/")
   @app.route("/")
   def root(base=None):
     # the server should handle a redirect. Since the frozen static pages will be
     # served on github pages for testing, we have a redirect located in the top
     # level index page.  We use that here to ensure that works as well.
     return app.send_static_file("index.html")
-
-  app.register_blueprint(bp, url_prefix="/<path:base>")
-
 
   return app
 
