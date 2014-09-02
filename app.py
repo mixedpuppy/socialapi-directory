@@ -6,7 +6,7 @@ from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
 import collections
 
-TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
+TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es', 'cs']
 
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
@@ -25,7 +25,7 @@ def createapp():
     langs = {}
     for b in babel.list_translations():
       if not demo and str(b) not in TRANSLATIONS:
-        print str(b)," is not in ",TRANSLATIONS
+        #print str(b)," is not in ",TRANSLATIONS
         continue
       if b.territory:
         langs["%s-%s" % (b.language, b.territory)] = b.display_name
@@ -45,7 +45,7 @@ def createapp():
         langs["%s_%s" % (b.language, b.territory)] = str(b)
       else:
         langs[b.language] = str(b)
-    print lang, langs
+    #print lang, langs
     if lang in langs.keys():
       return lang
     else:
@@ -88,8 +88,8 @@ def createapp():
 
   def renderTemplate(template, locale, path=None):
     locales = get_supported_locales()
-    if locale not in locales:
-      abort(404)
+    #if locale not in locales:
+    #  abort(404)
 
     data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
 
