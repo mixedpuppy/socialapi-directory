@@ -3,10 +3,16 @@
   <title>Firefox SocialAPI Services</title>
   <meta http-equiv="refresh" content="1; url=en-US" />
   <script>
+    function parseUrl(url) {
+        var a = document.createElement('a');
+        a.href = url;
+        return a;
+    }
+
     // see if there is a browser language. If js is off, the meta tag above will
     // refresh, though slower. Supported languages here are those that have site
     // navigation fully localized.
-    var languages = ['en-US', 'zh-TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es'];
+    var languages = ['en-US', 'zh-TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es', 'cs'];
     var newloc;
     if (languages.indexOf(navigator.language) >= 0) {
       newloc = navigator.language;
@@ -26,7 +32,7 @@
     if (!newloc) {
       newloc = "/en-US"
     }
-    location = newloc;
+    location = newloc + parseUrl(shareData.url).path;
   </script>
 </head>
 <body class="html-ltr sky">
