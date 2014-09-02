@@ -11,15 +11,16 @@
   body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to bottom, rgba(247,247,247,.99), rgba(247,247,247,.95));
-    width: 340px;
-    height: 280px;
+    /*background: linear-gradient(to bottom, rgba(247,247,247,.99), rgba(247,247,247,.95));*/
+    background: transparent;
+    width: 310px;
+    height: 200px;
     border: none;
     overflow: hidden;
   }
   .content {
     margin: 0;
-    padding: 18px 0 0 0;
+    /*padding: 18px 0 0 0;*/
   }
   span {
     margin :0px;
@@ -36,7 +37,7 @@
   .button {
     width: 64px;
     height: 64px;
-    margin: 10px;
+    margin: 5px;
     padding: 11px;
   }
   .button:hover {
@@ -102,7 +103,6 @@
 
 <body class="html-ltr sky">
   <div id="wrapper" class="content">
-    <span>{{ _('Click on a service to add it to Firefox.') }}</span>
     <div id="share-directory">
       <div id="share-directory-grid" class="row clearfix">
       {% for p in shareProviders %}
@@ -112,9 +112,6 @@
         </div>
         {% endif %}
       {% endfor %}
-      </div>
-      <div class="bottom row clearfix">
-        <a href="/" target="_blank" class="viewmore">{{ _('View more') }}</a>
       </div>
     </div>
   </div>
