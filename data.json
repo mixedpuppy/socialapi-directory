@@ -255,9 +255,9 @@
           "shortDescription": "後で見たいコンテンツを保存しておく便利で美しい場所。",
           "description": "Firefoxのためのポケットサービスは、記事、動画などを保存する最良の方法です。",
           "images": {
-            "carousel": "images/pocket/pocket.png",
-            "detail": "images/pocket/pocket.png",
-            "bookmark": "images/pocket/pocket.png",
+            "carousel": "images/pocket/share-ja.png",
+            "detail": "images/pocket/share-ja.png",
+            "bookmark": "images/pocket/share-ja.png",
             "fulllogo": "images/pocket/pocket_logo.png",
             "logo": "images/pocket/icon64.png"
           },
@@ -982,7 +982,7 @@
         "description": "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.",
         "homepageURL": "https://pinterest.com",
         "pageSize": {
-          "share": { "width": 755, "height": 320 }
+          "share": { "width": 755, "height": 420 }
         }
       },
       "lang": {
