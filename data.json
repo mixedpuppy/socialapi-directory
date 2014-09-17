@@ -617,7 +617,7 @@
         "icon64URL": "https://www.gstatic.com/images/icons/gplus-64.png",
         "origin": "https://plus.google.com",
         "homepageURL": "https://plus.google.com",
-        "shareURL": "https://plus.google.com/share?url=%{url}",
+        "shareURL": "https://plus.google.com/share?url=%{url}&soc-app=170",
         "pageSize": {
           "share": { "width": 580, "height": 750 }
         },
@@ -657,6 +657,7 @@
           "shortDescription": "在 Google+ 上和朋友分享網路。",
           "description": "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。",
           "images": {
+            "carousel": "images/google/share.png",
             "detail": "images/google/share.png",
             "share": "images/google/share.png"
           },
