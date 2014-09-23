@@ -1232,6 +1232,32 @@
         }
       }
     },
+    "yammer": {
+      "status": "demo",
+      "manifest": {
+        "origin": "https://www.yammer.com",
+        "name": "Yammer",
+        "iconURL": "images/yammer/icon16.png",
+        "icon32URL": "images/yammer/icon32.png",
+        "icon64URL": "images/yammer/icon64.png",
+  
+        "shareURL": "https://www.yammer.com/home/bookmarklet?t=%{title}&u=%{url}",
+  
+        "description": "Yammer.",
+        "author": "Yammer",
+        "homepageURL": "https://about.yammer.com/who-we-are/",
+
+        "version": 1
+      },
+      "lang": {
+        "en-US": {
+          "name": "Yammer",
+          "images": {
+            "fulllogo": "images/yammer/largelogo.png"
+          }
+        }
+      }
+    },
     "demo": {
       "status": "demo",
       "manifest": {
@@ -1289,6 +1315,6 @@
     "zh-TW": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
     "ru": ["odnoklassniki", "vkontakte", "twitter"],
-    "de": ["cliqz", "goal", "twitter"]
+    "de": ["facebook", "twitter", "cliqz"]
   }
 }
