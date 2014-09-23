@@ -1206,6 +1206,32 @@
         }
       }
     },
+    "xing": {
+      "status": "demo",
+      "manifest": {
+        "origin": "https://www.xing.com",
+        "name": "Demo Social Service",
+        "iconURL": "images/xing/icon16.png",
+        "icon32URL": "images/xing/icon32.png",
+        "icon64URL": "images/xing/icon64.png",
+  
+        "shareURL": "https://www.xing.com/social_plugins/share/new?sc_p=xing-share&h=1&url=%{url}",
+  
+        "description": "XING is the social network for business professionals.",
+        "author": "XING",
+        "homepageURL": "https:/www.xing.com",
+
+        "version": 1
+      },
+      "lang": {
+        "en-US": {
+          "name": "XING",
+          "images": {
+            "fulllogo": "images/xing/xing_large.png"
+          }
+        }
+      }
+    },
     "demo": {
       "status": "demo",
       "manifest": {
