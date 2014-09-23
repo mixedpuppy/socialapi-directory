@@ -8,6 +8,25 @@ import collections
 
 TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es', 'cs']
 
+# creating a data url for an image
+import base64
+_imageCache = {}
+def createDataURL(imagePath):
+  if imagePath[:5] in ["data:", "http:"] or imagePath[:6] == "https:":
+    return imagePath
+  if imagePath in _imageCache:
+    return _imageCache[imagePath]
+  print "converting", imagePath
+  with open("static/"+imagePath, "rb") as image_file:
+      encoded_string = base64.b64encode(image_file.read())
+      if imagePath[-3:] == "png":
+        _imageCache[imagePath] = "data:image/png;base64,"+encoded_string
+      elif imagePath[-3:] == "jpg":
+        _imageCache[imagePath] = "data:image/jpg;base64,"+encoded_string
+      else:
+        raise "unknown image type"
+  return _imageCache[imagePath]
+
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
         super(RegexConverter, self).__init__(url_map)
@@ -67,7 +86,14 @@ def createapp():
       d['images']['logo'] = p['manifest']['icon64URL'] or p['manifest']['icon32URL']
     if 'description' not in d:
       d['description'] = p['manifest']['description'];
-    
+
+    # make manifest icons data urls
+    for image in ["iconURL", "icon32URL", "icon64URL", "unmarkedIcon", "markedIcon"]:
+      if image in p['manifest']:
+        p['manifest'][image] = createDataURL(p['manifest'][image])
+      #else:
+      #  print "WARNING: ",image,"missing from manfiest for",p['manifest']['origin']
+
     # aid activated providers in knowing what locale a user installed from
     for n,v in p['manifest'].iteritems():
         if isinstance(v, (str, unicode)):

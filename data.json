@@ -1210,7 +1210,7 @@
       "status": "demo",
       "manifest": {
         "origin": "https://www.xing.com",
-        "name": "Demo Social Service",
+        "name": "XING",
         "iconURL": "images/xing/icon16.png",
         "icon32URL": "images/xing/icon32.png",
         "icon64URL": "images/xing/icon64.png",
