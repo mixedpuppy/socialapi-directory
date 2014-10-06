@@ -853,6 +853,7 @@
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
           }
+        },
         "zh-TW": {
           "name": "LinkedIn",
           "shortDescription": "在網路上分享你所屬的專業領域與技能。",
@@ -865,7 +866,6 @@
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
           }
-        },
         }
       }
     },
