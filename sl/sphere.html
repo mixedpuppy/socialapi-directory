@@ -1,0 +1,301 @@
+<html>
+<head>
+  <base href="/sl/"/>
+  <title>Sphere za Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Prenesi Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Nadgradi Firefox <span>&raquo;</span><br/><span class=\"smaller\">zahteva Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [30, 31, 32, 33];
+    var minver = 29;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Namesti Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">zahteva Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Namesti Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">zahteva Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Namesti Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">zahteva Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Nadgradi Firefox <span>&raquo;</span><br/><span class=\"smaller\">zahteva Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/sl/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox za namizje"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Za namestitev družbenih storitev morate uporabiti Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
+  </p><p id="upgrade-required" hidden="true">Namestitev družbenih storitev zahteva najmanj Firefox različice 29. Nadgradite svojo različico Firefoxa zdaj.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
+  </p><p id="beta-required" hidden="true">Ta storitev zahteva še neizdano različico Firefoxa.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Domača stran</a>
+        </div>
+        <div>
+        <span>Sphere</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="images/sphere/sphere-logo-258x74.jpg"></img></h1>
+
+              <h3 class="tagline">a discovery experience</h3>
+              <p class="lead">A new way to discover the most interesting content relevant to your interests.</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'sphere')" data-service="{&#34;author&#34;: &#34;Outbrain&#34;, &#34;description&#34;: &#34;A new way to discover the most interesting content relevant to your interests.&#34;, &#34;homepageURL&#34;: &#34;https://www.sphere.com&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACrklEQVR42r3XS0gUcRzA8UIrchWKxMBDFgRJDx8kSRlC1MGKXofKSyUhlnXIkizIHkZRiXUIEpNFq6OlEglZRCGalqUWhQeVNHuRFpRYkmW/vgOzMPxo1tlxdeHDHn7/32Meu/+ZSU4/A2fnehCPTJzDTVSgCqXIRxpinNYMpPk07EA5nuA9xGIAnbiDM4gLVuNZyEMPJACDqELKWJqvRwdkjEoRGWjz45AgeoFYp81PQMZBH+JGa54DGUdvEGnXPAEyAartBmiCTJANuvlmyARqxGTrADUQF4bQ4jI3DSFG8zkYdFFgANvgQbWL/BLEGgNscpFchgR1GbPQDXHoJfYbicccLB5GOwqQ6OdnPBtbcRufIX58R4mRdB1iowGXkOTir3wGstEMsXHLWHjNJnhBFcxAGYqwVMVCscuMX0SyJTYF7yDQWu0G+AmPWSAcjRBlj2WrrocouZYhTkOgvbYb4CtO4oCleTESsQZv8QcLUQCB14yvRifEbHwQlRBoNcYA5yGjaFKnfIuKN6r4Ooc39g1j8W6I0o58y874VDVYBUE3RlCv4st8g5s1vP87/cgxFi+BKHWWYo8gyMRMxKABgmRcgWCvGY/GA1/crBEPUSqxwncHP1fBb4g2kxehD+L7Nl014zH4AkE/fkPgtRzEUYiSiXDfgmyIstFSYB4K0YZaZCBExYvQgvvYp+KPVe1PCNNPvV1q0d0gPdimQpQjRszJlrw9CAPUQd98U+0Wl6rFH2xfNNw/Xy73lxCKhyqhB4tdND8MUdKdJE5HBfTOlY0wB/nzUa7yf2FnoEdwCiOq0DMcQiqiEIYIs2k6ijGkctqQ4vYaJqEWw6roX/SiA13ohyi9yIMnGD+llbiMZvyA2PiIGuQiIthvyAuQBS9a8Uq5h0KsRZTTuv8ALeGOtty/vNQAAAAASUVORK5CYII=&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,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&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLklEQVR42p3SwSuEQRjHcZdt1R6Um3J5N/+DlPa6V6UctOQgSa5uWltrHZaLSFtbKDe1uQiRrMOuWNpE7quUtbVyIqnxfeuZepq83njrU+8z83vmnXmbDvd5W/SiSGEDRzjBNmbQ6+bd5mk8wwT4wnJQc1EFw9QQ0c0LMH90bps9mH9K+Qus/hI4xRheAuav/AXunMEPFDDo/KNhlJ3skz/RUgOjEh5BUjUnMCTvPWhKvq0XeEc/MihhH1lM4gI72MUA6nYBfYQGDmHUlz9h0C31Pa5R0UdYk+JBQks4wB7SmMIlNnEsmZy9D34RhxF9EphHRu1kAnlEpX6V/LgNZGFwQxl23VckW3UntuwNQ1dIcx2dPwVmYcQZckijpMbXw7YYwxyqeEQDt8jDc/PfmKe6ofQrtaEAAAAASUVORK5CYII=&#34;, &#34;name&#34;: &#34;Sphere&#34;, &#34;origin&#34;: &#34;https://www.sphere.com&#34;, &#34;sidebarURL&#34;: &#34;https://firefox.sphere.com/sidebar.html&#34;, &#34;version&#34;: &#34;1.0&#34;}">Vključi zdaj <span>&raquo;</span></a>
+              <div class="provider-description"></div>
+
+              <a href="https://www.sphere.com/about/" class="moreinfo" target="_blank">Več &hellip;</a>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            <div class="clearfix"><img src="images/sphere/sphere-slide.jpg" class="provider-primary-image" /></div>
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span  title="Ta storitev podpira deljenje vsebine">deli</span> 
+          <span  title="Ta storitev omogoča shranjevanje zaznamkov">zaznamki</span> 
+          <span class="supported" title="Ta storitev doda stransko vrstico v Firefox">stranska vrstica</span> 
+          <span  title="Ta storitev doda gumb orodne vrstice v Firefox, ki lahko prikazuje obvestila">obvestila</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Deli te vsebine so avtorsko zaščiteni v obdobju 1998–2014 s strani sodelavcev mozilla.org. Vsebina je na voljo pod dovoljenjem <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Prispevajte k tej strani</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Pišite nam</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Sodelujte z nami</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donirajte</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Politika zasebnosti</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Pravna obvestila</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Obvestite nas o zlorabi trgovske znamke</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI za razvijalce</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Drugi jeziki:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" selected>slovenščina</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Pojdi</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/sl/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>
