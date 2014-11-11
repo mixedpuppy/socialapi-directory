@@ -81,7 +81,7 @@ msgstr ""
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr "Fique de olho nas notícias de %(nome)s"
+msgstr "Fique de olho nas notícias de %(name)s"
 
 #: templates/activated.html:54
 #, python-format
