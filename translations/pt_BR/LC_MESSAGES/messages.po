@@ -172,7 +172,7 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"Partes deste conteúdo são © 1998 -% (CURRENT_YEAR) s de colaboradores "
+"Partes deste conteúdo são ©1998-%(current_year)s de colaboradores "
 "individuais da mozilla. O conteúdo está disponível sob uma <a href=\"%"
 "(url)s\">Licença Creative Commons</a>."
 
