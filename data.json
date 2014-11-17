@@ -810,7 +810,7 @@
         "icon32URL": "images/linkedin/icon32.png",
         "icon64URL": "images/linkedin/icon64.png",
         "origin": "https://www.linkedin.com",
-        "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}",
+        "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}&trk=FIREFOX_ACTIVATION",
         "description": "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
         "pageSize": {
           "share": { "width": 520, "height": 570 }
@@ -1207,7 +1207,7 @@
       }
     },
     "xing": {
-      "status": "demo",
+      "status": "beta",
       "manifest": {
         "origin": "https://www.xing.com",
         "name": "XING",
@@ -1217,7 +1217,7 @@
   
         "shareURL": "https://www.xing.com/social_plugins/share/new?sc_p=xing-share&h=1&url=%{url}",
   
-        "description": "XING is the social network for business professionals.",
+        "description": "Xing is the social network for professional networking, business marketing and career development.",
         "author": "XING",
         "homepageURL": "https:/www.xing.com",
 
@@ -1226,8 +1226,22 @@
       "lang": {
         "en-US": {
           "name": "XING",
+          "shortDescription": "Xing is the social network for professional networking, business marketing and career development.",
+          "description": "Expand your existing network with access to new contacts, jobs, events, companies, groups and Discussions.",
           "images": {
-            "fulllogo": "images/xing/xing_large.png"
+            "fulllogo": "images/xing/xing_large.png",
+            "detail": "images/xing/xing-en.png",
+            "share": "images/xing/xing-en.png"
+          }
+        },
+        "de": {
+          "name": "XING",
+          "shortDescription": "XING ist das soziale Netzwerk für Beruf, Geschäft und Karriere.",
+          "description": "Entdecken Sie alte und neue Kontakte, Jobs, Events, Unternehmen, Gruppen und Diskussionsforen. ",
+          "images": {
+            "fulllogo": "images/xing/xing_large.png",
+            "detail": "images/xing/xing-de.png",
+            "share": "images/xing/xing-de.png"
           }
         }
       }
@@ -1306,7 +1320,8 @@
     "jp-JP": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "ja": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
     "zh-TW": ["twitter", "google", "facebook", "tumblr", "gmail"],
-    "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
+    "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"],
+    "de": ["xing", "cliqz", "facebook", "twitter", "google", "tumblr"]
   },
   "carousel": {
     "en-US": ["twitter", "pocket", "facebook"],
@@ -1315,6 +1330,6 @@
     "zh-TW": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr"],
     "ru": ["odnoklassniki", "vkontakte", "twitter"],
-    "de": ["facebook", "twitter", "cliqz"]
+    "de": ["xing", "twitter", "cliqz"]
   }
 }
