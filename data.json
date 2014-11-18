@@ -396,7 +396,7 @@
       "status": "release",
       "manifest": {
         "origin": "https://www.facebook.com",
-        "name": "Facebook Share",
+        "name": "Facebook",
         "shareURL": "https://www.facebook.com/sharer/sharer.php?u=%{url}",
         "iconURL": "images/facebook/icon16.png",
         "icon32URL": "images/facebook/icon32.png",
