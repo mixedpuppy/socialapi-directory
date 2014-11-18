@@ -13,14 +13,18 @@
     margin: 0;
     /*background: linear-gradient(to bottom, rgba(247,247,247,.99), rgba(247,247,247,.95));*/
     background: transparent;
-    width: 310px;
-    height: 200px;
     border: none;
     overflow: hidden;
   }
   .content {
-    margin: 0;
     /*padding: 18px 0 0 0;*/
+  }
+  #share-directory {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
   }
   span {
     margin :0px;
@@ -29,14 +33,14 @@
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
   }
   #share-directory-grid {
-    height: 220px;
+    display: block;
     overflow: hidden;
-    padding: 0 10px;
+    width: 240px;
   }
 
   .button {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     margin: 5px;
     padding: 11px;
   }
@@ -49,8 +53,8 @@
     cursor: pointer;
   }
   .button img {
-    max-height: 64px;
-    max-width: 64px;
+    max-height: 48px;
+    max-width: 48px;
     margin: auto;  
     position: absolute;
     left:0;
@@ -82,6 +86,31 @@
   .bottom {
     text-align: center;
   }
+  [data-tooltip]:after {            
+    content: attr(data-tooltip);
+
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    background: #fefdcd;
+    padding: 2px 4px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    z-index: 100000;
+    white-space: nowrap;
+  }
+  [data-tooltip]:hover:after {        
+    opacity : 1;
+    transition-delay: 500ms;
+  }
   </style>
   <script src="../js/jquery-1.11.0.min.js"></script>
   <script>
@@ -104,10 +133,10 @@
 <body class="html-ltr sky">
   <div id="wrapper" class="content">
     <div id="share-directory">
-      <div id="share-directory-grid" class="row clearfix">
+      <div id="share-directory-grid" class="clearfix">
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
-        <div class="button col clearfix" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+        <div class="button col clearfix" data-tooltip="{{p['manifest']['name']}}" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
         <img src="{{p['manifest']['icon64URL']}}"></img>
         </div>
         {% endif %}
