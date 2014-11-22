@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-08-20 06:06+0000\n"
+"PO-Revision-Date: 2014-11-22 21:10+0000\n"
 "Last-Translator: Théo <theo.chevalier11@gmail.com>\n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1408514796.0\n"
+"X-POOTLE-MTIME: 1416690622.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -227,8 +227,7 @@ msgstr "En savoir plus&hellip;"
 
 #: templates/index.html:58
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
-"Navigation facilitée dans Firefox pour que vous tiriez le meilleur du Web"
+msgstr "Navigation facilitée dans Firefox pour accéder au meilleur du Web"
 
 #: templates/index.html:59
 msgid ""
@@ -238,12 +237,12 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
-"Facile d'utilisation, aucun logiciel ou module complémentaire à télécharger "
-"et installer, cliquez simplement sur Activer et la nouvelle fonctionnalité "
-"vous est fournie instantanément depuis le Web. Des services de réseaux "
-"sociaux, en passant par les marque-pages dans les nuages, la musique ou "
-"encore les actualités personnalisées&nbsp;; ajouter ces services à Firefox "
-"vous permet de tirer le meilleur du Web."
+"C'est facile à utiliser : aucun logiciel ni module complémentaire à "
+"télécharger et installer. Cliquez simplement sur Activer et la nouvelle "
+"fonctionnalité vous est fournie instantanément depuis le Web. Des services "
+"de réseaux sociaux, des marque-pages en ligne, de la musique ou encore des "
+"actualités personnalisées… Ajouter ces services à Firefox vous permet de "
+"tirer le meilleur parti du Web."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
