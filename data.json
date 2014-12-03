@@ -811,10 +811,7 @@
         "icon64URL": "images/linkedin/icon64.png",
         "origin": "https://www.linkedin.com",
         "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}&trk=FIREFOX_ACTIVATION",
-        "description": "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
-        "pageSize": {
-          "share": { "width": 520, "height": 570 }
-        }
+        "description": "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
       },
       "lang": {
         "en-US": {
