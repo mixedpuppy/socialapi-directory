@@ -116,7 +116,10 @@
   </style>
   <script src="../js/jquery-1.11.0.min.js"></script>
   <script>
-    function activateProvider(node, name) {
+    function activateProvider(node, name, keyEvent) {
+      if (keyEvent && !(keyEvent.charCode == " ".charCodeAt(0) || keyEvent.keyCode == KeyEvent.DOM_VK_RETURN)) {
+        return;
+      }
       // fixup the service data with a postActivationURL if one doesn't exist.
       var data = JSON.parse(node.getAttribute("data-service"));
       if (!data.postActivationURL) {
@@ -136,11 +139,13 @@
   <div id="wrapper" class="content">
     <div id="share-directory">
       <div id="share-directory-grid" class="clearfix">
+      {% set count = 1 %}
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
-        <div class="button col clearfix" data-tooltip="{{p['manifest']['name']}}" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
-        <img src="{{p['manifest']['icon64URL']}}"></img>
+        <div class="button col clearfix" tabindex="{{count}}" data-tooltip="{{p['manifest']['name']}}" onkeypress="activateProvider(this, '{{p['key']}}', event)" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+        <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
         </div>
+        {% set count = count + 1 %}
         {% endif %}
       {% endfor %}
       </div>
