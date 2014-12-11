@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 <head>
   <base href="/{{basehref}}"/>
@@ -10,13 +11,9 @@
   body {
     padding: 0;
     margin: 0;
-    /*background: linear-gradient(to bottom, rgba(247,247,247,.99), rgba(247,247,247,.95));*/
     background: transparent;
     border: none;
     overflow: hidden;
-  }
-  .content {
-    /*padding: 18px 0 0 0;*/
   }
   #share-directory {
     position: absolute;
@@ -37,39 +34,34 @@
     width: 240px;
   }
 
-  .button {
-    width: 48px;
-    height: 48px;
+  button {
+    width: 68px;
+    height: 68px;
     margin: 5px;
-    padding: 10px;
     border-radius: 3px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: background 250ms,
                 border-color 250ms;
+    background: transparent;
   }
-  .button:hover {
+  button:hover {
     background: hsla(210,4%,10%,.08) linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,.1)) padding-box;
     border-color: hsla(0,0%,0%,.2);
     box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
                 0 1px 0 hsla(0,0%,100%,.5) inset;
   }
-  .button:active {
+  button:active {
     background: hsla(0,0%,0%,.02) linear-gradient(hsla(0,0%,0%,.12), transparent) border-box;
     border-color: hsla(0,0%,0%,.3);
     box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
                 0 1px 0 hsla(0,0%,0%,.05) inset,
                 0 1px 1px hsla(0,0%,0%,.2) inset;
   }
-  .button img {
+  button img {
     max-height: 48px;
     max-width: 48px;
     margin: auto;  
-    position: absolute;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
   }
   
   .col {
@@ -123,10 +115,7 @@
   </style>
   <script src="../js/jquery-1.11.0.min.js"></script>
   <script>
-    function activateProvider(node, name, keyEvent) {
-      if (keyEvent && !(keyEvent.charCode == " ".charCodeAt(0) || keyEvent.keyCode == KeyEvent.DOM_VK_RETURN)) {
-        return;
-      }
+    function activateProvider(node, name) {
       // fixup the service data with a postActivationURL if one doesn't exist.
       var data = JSON.parse(node.getAttribute("data-service"));
       if (!data.postActivationURL) {
@@ -139,6 +128,13 @@
       node.dispatchEvent(event);
       ga('send', 'event', 'click', 'activation', name);
     }
+    function onfocus(event) {
+      if (event.target == window || event.target == document) {
+        var btn = document.getElementById("share-directory-grid").firstElementChild;
+        btn.focus();
+      }
+    }
+    window.addEventListener("focus", onfocus, true);
   </script>
 </head>
 
@@ -149,9 +145,9 @@
       {% set count = 1 %}
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
-        <div class="button col clearfix" role="button" tabindex="0" data-tooltip="{{p['manifest']['name']}}" onkeypress="activateProvider(this, '{{p['key']}}', event)" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
-        <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
-        </div>
+        <button type="button" class="col clearfix" data-tooltip="{{p['manifest']['name']}}" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+          <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
+        </button>
         {% set count = count + 1 %}
         {% endif %}
       {% endfor %}
