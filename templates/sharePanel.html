@@ -149,7 +149,7 @@
       {% set count = 1 %}
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
-        <div class="button col clearfix" tabindex="0" data-tooltip="{{p['manifest']['name']}}" onkeypress="activateProvider(this, '{{p['key']}}', event)" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+        <div class="button col clearfix" role="button" tabindex="0" data-tooltip="{{p['manifest']['name']}}" onkeypress="activateProvider(this, '{{p['key']}}', event)" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
         <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
         </div>
         {% set count = count + 1 %}
