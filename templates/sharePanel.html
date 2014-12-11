@@ -42,18 +42,24 @@
     height: 48px;
     margin: 5px;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 3px;
     border: 1px solid transparent;
     cursor: pointer;
+    transition: background 250ms,
+                border-color 250ms;
   }
   .button:hover {
-    background-color: hsla(210,4%,10%,.08);
-    border-color: hsla(210,4%,10%,.11);
+    background: hsla(210,4%,10%,.08) linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,.1)) padding-box;
+    border-color: hsla(0,0%,0%,.2);
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
+                0 1px 0 hsla(0,0%,100%,.5) inset;
   }
   .button:active {
-    background-color: hsla(210,4%,10%,.12);
-    border-color: hsla(210,4%,10%,.14);
-    box-shadow: 0 1px 0 hsla(210,4%,10%,.03) inset;
+    background: hsla(0,0%,0%,.02) linear-gradient(hsla(0,0%,0%,.12), transparent) border-box;
+    border-color: hsla(0,0%,0%,.3);
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
+                0 1px 0 hsla(0,0%,0%,.05) inset,
+                0 1px 1px hsla(0,0%,0%,.2) inset;
   }
   .button img {
     max-height: 48px;
@@ -89,7 +95,7 @@
   .bottom {
     text-align: center;
   }
-  [data-tooltip]:after {            
+  [data-tooltip]:after {
     content: attr(data-tooltip);
 
     position: absolute;
@@ -98,14 +104,15 @@
 
     pointer-events: none;
     opacity: 0;
-    transition: opacity .15s ease-in-out;
+    transition: opacity 150ms ease-in-out
+                
 
     display: block;
     line-height: 16px;
-    background: #fefdcd;
+    background: rgb(252,255,199);
     padding: 2px 4px;
     border: 1px solid #c0c0c0;
-    box-shadow: 0 0 4px hsla(210,4%,10%,.2);
+    box-shadow: 0 0 4px hsla(210,4%,10%,.4);
     z-index: 100000;
     white-space: nowrap;
   }
@@ -142,7 +149,7 @@
       {% set count = 1 %}
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
-        <div class="button col clearfix" tabindex="{{count}}" data-tooltip="{{p['manifest']['name']}}" onkeypress="activateProvider(this, '{{p['key']}}', event)" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+        <div class="button col clearfix" tabindex="0" data-tooltip="{{p['manifest']['name']}}" onkeypress="activateProvider(this, '{{p['key']}}', event)" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
         <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
         </div>
         {% set count = count + 1 %}
