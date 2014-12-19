@@ -801,7 +801,7 @@
       }
     },
     "linkedin": {
-      "status": "beta",
+      "status": "release",
       "minver": 32,
       "manifest": {
         "name": "LinkedIn",
@@ -1240,6 +1240,7 @@
           "description": "Entdecken Sie alte und neue Kontakte, Jobs, Events, Unternehmen, Gruppen und Diskussionsforen. ",
           "images": {
             "fulllogo": "images/xing/xing_large.png",
+            "carousel": "images/xing/xing-de.png",
             "detail": "images/xing/xing-de.png",
             "share": "images/xing/xing-de.png"
           }
