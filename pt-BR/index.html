@@ -1,10 +1,831 @@
 <html>
 <head>
-  <title>Firefox SocialAPI Services</title>
-  <meta http-equiv="refresh" content="0; url=../en-US" />
+  <base href="/pt-BR/"/>
+  <title>Serviços para Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+      // adjust the height of our directory listing so everything lines up nice
+      var boxes = $('.provider-entry-inner');
+      var maxHeight = Math.max.apply(
+        Math, boxes.map(function() {
+          return $(this).height();
+        }).get());
+      boxes.height(maxHeight);
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Baixe o Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Atualizar o Firefox <span>&raquo;</span><br/><span class=\"smaller\">requer Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      if (data.postActivationURL) {
+        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
+        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
+      }
+
+      else {
+        data.postActivationURL = baseurl + "/activated/"+name+".html";
+      }
+
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    $(document).ready(function($) {
+      // adjust the height of our directory listing so everything lines up nice
+      var boxes = $('.provider-entry-inner');
+      var maxHeight = Math.max.apply(
+        Math, boxes.map(function() {
+          return $(this).height();
+        }).get());
+      boxes.height(maxHeight);
+    });
+  </script>
 
 </head>
 <body class="html-ltr sky">
+  <div id="outer-wrapper">
 
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/pt-BR/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox para desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Você deve usar o Firefox para instalar serviços sociais.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Baixar.</a>
+  </p><p id="upgrade-required" hidden="true">Instalar o Serviço Social exige pelo menos o Firefox 29. Atualize o Firefox agora.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Baixar.</a>
+  </p><p id="beta-required" hidden="true">Este serviço requer uma versão ainda não lançada do Firefox.</p>
+  </div>
+
+  
+  <div id="carousel-promotions" class="carousel">
+    <div class="carousel-wrapper">
+    <div id="carousel-promo" class="cycle-slideshow carousel-inner"
+      data-cycle-center-horz=true
+      data-cycle-center-vert=true
+      data-cycle-pager=".cycle-pager"
+      data-cycle-fx="scrollHorz"
+      data-cycle-timeout="5000"
+      data-cycle-slides="&gt; div">
+      <span class="cycle-prev">&lsaquo;</span>
+      <span class="cycle-next">&rsaquo;</span>
+      
+      
+      <div class="item">
+        <div class="item-inner">
+          <div>
+          
+          <h2><img src="images/linkedin/icon64.png"></img> LinkedIn</h2>
+          
+          <p class="description">Share the web with your professional network.</p>
+          </div>
+          <div class="activation">
+          <a class="button gutter-bottom-24" onclick="activateProvider(this, 'linkedin')" data-service="{&#34;author&#34;: &#34;LinkedIn Corporation&#34;, &#34;description&#34;: &#34;Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABJFJREFUeNqsVl1oHFUU/u7M7OxfyuanadNtlGz8KYl5kASsD1oEqfgiJvimfRBUCPgkFd98UF/6VtASEMQfahERCiJCfahIKVYakuJPbWsTo92ENSaN3U2ymZ07M9dzZnY3O7OTPkRnuXtnzrn3fOfvnnPFniPPH3/m5dfe2pfLZl3Xw//16LqOxduV9UufvffqlU9OnO49cDDEFxMfXraPHupLSMelT8WkOiv6jrvw4tcx+IXrxfmT4w+N5HtyViuwYSYSiVLFgiRrBa2XLvx3XQNM/vOFtAqMUwKx63RNIJntyAkznSJCGLhsSaxu2XA9BdtVuKczjbF9OZTWLfxcWkfCB98dsCBLKpb0aFLRUBgb0sE/BE58FLozeOOJAjpM3WdO/XAL39xYQdLQdhVnQb8tCmEMLoyq7aJsOaSZg4mR/U1Qfo4UuvHFTyUknd0BM9yWdJVoeqcFmDXaqDmokuXX/t4IMW+sbIJDkUnouwLmMxKclBhgixjrBOqRfl9dX8beDhNP3teDm7erOHlxAbbnwZVqZ+FK+S4VIo5HmQ0/1O3ANccja4OjRF7B2+dv4sR3c5C0aw+5PWsaqJJXtmy3uSlNdEn7GC1L764XyNDpO5XQmjlG4pDUhIoFdshim4TYNBe6Mnjn6CHaF1hx7rcVfH1tGWP9nXhxrL+56dT3f6A/l8Irj9yLQUpIScC/Lm/gg+kiZpbKyFJoWAZH19ghSgZbaTsKm7aHrpSJFx7ON5lLZQufziyiryMZoqcoy58d3g9D2zZlqLcDTz/Yi4nTM5gulpEmy9kTptDjDIbmEbBDFrtsteOGmDU6YuwvW4bpz430hUAbD7v9+OOD4CrIMjkcnhefH5qi5FDkZsUBiSxiHsgbKmbvmdklvPT5j/h4ejFEHz2YQ2/GDHKAi1JNQkrZ7mquWJJy2vF4hBGYB85qL9w8zlFROXZm1n//iOJ6/94sHit0+d+daQOdKQPLVPkMTYNUDlnvtFvMYDaNGg0nYhofMdY6qtC3c6v+Ic0kDd9Ts5RQTUsoBIJGzQ3kun4PiTnHLruaDfItiwA36BFXc8Fh//sK0WxFcoPlcGwdQbNQKi65DDbSt4xevKjFKp5eT4AmP66oNPisWywwgwoVCFKRYq7qCrXTw8AqItqr81Uw4noEtNbGFlVe1aXE0kP7oqchZL3SY6qI0SYl0tb8vhqJkmisr4/W3AnzFDKZDH5fmHfe//LsA47rjk5OTp7P5/Orhgoh7wAgYvpdIwRKtbGFqCNzrU6msLS4qE9NTR0mxqOjo6Ol8fHxC9sW0/3ol78qOPzuxSborTtbAJXLS3+uhegLa1WSaAQK0HyKuthZ6tsNUQvU2aBp9Th7wjB0t6en+0rfgbwcHh6eC1y9rSY26TJweX615aqo8cFEuSrb6XogGHRmiwRUXGnp5RzT+k2IslqjKUFfV4eGhq4ODAzUz7vGNUQZvhBeHG36d6M3Zl34Hou7guTSZiWtS0v5lwLXr2KmaUJ7KlV6XbOtO7Gd/D89AglprR0b1N5MG8LigqJp21eofwUYABnolxra9d85AAAAAElFTkSuQmCC&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,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&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAm5JREFUeNp8U0trU0EU/mZyb9I8amrQYGq0GjdWio/iwq7qUgVduVDciRv39U+04MKNC7euRFAoisVFUKGKCwWLaNUaa8VXmia1yU3ua8ZzJknTKvRcLnfmzJzv+87jiqniwr1KwzsthRAg02ib2GLNppTGjlT0obhy543avz0h3FDBDzUICDFLYiPYRusCSFos1RxtLTt+4GnHHhqI49xIFnM/1/C0tAJLSmxlDFBr+qFVaXqouQGuju3FiT1pjObTePShjLrrQkqxOUr3JDC844WwVl3f+DnoQCaO50s1LNYcKN1lEubcpxQZz45IA8I4fqAgCpNFT0aEzRdz/TFUHR91Qk5GI5SGwBqp47NCJoFWEOJz1THpRRhB6cByfYV6I8S18QIuH8/jfbmB87df4fqZYYwNDeDxx2UMZ1MYHdyGJjHef/sLEw/eUToaESKQvh+iSSxJO2IUZJNRuLTPJGyzvnR0EAd3pkhJiDh15+KRHMb3ZVAjpT6Ry5ByC0laQF+YXDXlFpr82OZJ0aHJIk7enEW1GRjfyK5+tIiEY6VH1QoDjaBTNU2PF+j1GZj9UsXi7zpef/+D0opjfFwbRUQcK02gIhW6HWJwaN/tQqDUehe7PnOX/BwrjVP3Drv9XtfAE65NzTbPQydGmhN6+zrjm4pZZs9tZItTcbt3UrG2z4x6h9kyyDQcM/NlU7hvqy2Clbj14iuefKrgJQ0Wn7PdeFZCPt2H4kKFC2FwhZyY1opXPr1UfTNurILaxnmaYFbDRF7QZrZobwv6SFgXju2+Oz3345SK/jP4Uev/PyjW80n6n88ezs38FWAAzAg/WebH1yoAAAAASUVORK5CYII=&#34;, &#34;name&#34;: &#34;LinkedIn&#34;, &#34;origin&#34;: &#34;https://www.linkedin.com&#34;, &#34;pageSize&#34;: {&#34;share&#34;: {&#34;height&#34;: 570, &#34;width&#34;: 520}}, &#34;shareURL&#34;: &#34;https://www.linkedin.com/shareArticle?mini=true&amp;url=%{url}&amp;title=%{title}&amp;trk=FIREFOX_ACTIVATION&#34;}">Ativar agora <span>&raquo;</span></a>
+          <br/><a href="linkedin.html" class="moreinfo">Saber mais&hellip;</a>
+          </div>
+          <div class="carousel-image">
+          <img src="images/linkedin/share.png" style="float:right;"></img>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-inner">
+          <div>
+          
+          <h2><img src="images/twitter/icon64.png"></img> </h2>
+          
+          <p class="description">Twitter Share lets you quickly tweet links to your followers.</p>
+          </div>
+          <div class="activation">
+          <a class="button gutter-bottom-24" onclick="activateProvider(this, 'twitter')" data-service="{&#34;author&#34;: &#34;Twitter, Inc.&#34;, &#34;description&#34;: &#34;Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener.&#34;, &#34;homepageURL&#34;: &#34;https://twitter.com&#34;, &#34;icon32ULR&#34;: &#34;images/twitter/icon32.png&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAFgElEQVR42u2Za2wUVRSApy1CFWvBYkARrMZgor9MJRgfkR/8MJEfxPjHYIBE0YTE9w9DYkIkYtQYY2I0QdFoCBV2Z3d2l+5SKC2FKg/7gLZItbS0hZY+5t47M7uz89yZ8dzdhqYJyI47UyWZk5NJNp3mnu+ce8695wzDxPAtrQFAABAABAABQAAQAAQAAcDcKoeZKGIiiD65WwgAbGURE+KZMF/JoYUxvICDn6A8wFznZUroIQB1WwnWw/+GUU2SbDiT/uSiuu+KHhnT9l7Rd/Wr637LlMcQ/JXhrplOX56fIJUNhOE8ApgXx1UNNPTuracGlbPoxdNSM28Ihu3MlgnN3jeqPXE8zYTyGCyqSZBNnfL3w2ptk0iDFi8RII4h6HVt0v5RbVWjwBzgXfoelbFo2zkZ67ZzYxmQcxs70s+dkLZfUNqQqebsb4fVymJ2UTGbpyyEdvSpsEzkqr48SairuGI3Hli/pTNDHX8zyeZsrFuF91KTxjJw3H6eSZQOEMGVcRy9qheWaZw0Hj4iQOYVxcCix5qFoWzOKVps22mZMh5tFuuahNe75RVNAhMtFQDdmSItvHFtjd+J8fRxiWFvFt8oBfhiQHHcSNqwI2P6zyPakGJ9PahUx7AHAFUpIQ8wI5cV662ebDVND8BANwrd3UncLpquAEzbKWyj+iv6ojh1gQdb6PYEgU3pzBbVcg5PGutPpmmqHZiu5bMqRohf0yqNKJbjUgDguyHtngYC3vHiHIjiChZ9c0m97mJIt3cPaevapKoERAOMRpSEmwZYfzrDQ/FxI7rlfHZRqaK+5z06iePUlBdOZaQbVxKiWw0Txvt/KE+2inAAlbG08jL7JteeEK+q7gDGNbv2iAi+9/QqwaJqDh+avMluBksvZa0W3twzpH3Qm91wSnqzWx7XXAM80AwVAnsKAEH4ZeqRJvGcVGxBNCxHNCxiWDnbcSVjKgCIs25HpSfxkkbyRo9c1yJu7syMQ1L6KefT1r1HBE8BWHRfo9Ah5rBhJ8eNgUzOVwA4KKuh/kQ93EIcvo1DUJWdOZHdI9o8uqi3ORDit3XLpu279bDC2+cVhvUcgEXLU6RdyPkNAFfr539NQw31oSMLoY0dspKz/U2AKWNJEsqGHwARXMHxO/9UND+L0K6/shBt33riKKqM4Vc6MqewiXTb8joYcAI8BZfcMO9jU18Rw4uTpK5V/GpARarHsYAWeX6Epq9vABG0uAH/OKJ1S7lOwRQNL0MwrlprqPuhA/YPgENlEfTqWdnxQb4cVMtpB+z3XCiKF8TIDyOat9afk6yHDhNI3zkZbIXRiqQQHtO9qqhYt186IxeabL8BZhhqEvjjfuWiXOrRZljOhxeUCjrVQnM7Wszv19Wt0s5+FQYWA5l/GY/6UWNRnBSmV3MIEJ8+Fujcpp5ffUw8iU3HvSQnDLjnzm4d3Wuxw2QOwZNqBBVmtPB8MEXe7cl2EBMaWbejhz3D2tJD0773F6A8DgwI/ARaFkXQbq9MkWfa0p/2K12iqbo/kHnd2tGXvSufS/5/H+DIsqPie73Zj/qV7X3Zzwe0+lG9W8xJpj3jdDdTt2O8ue6kVA6mRwpL+A6AFx4kL7dnYGHVKqXa2NBPv9Oj3J8iriqmN3MhuGDBkGzD6czey/pg1iq+5OiWPaFZMFWH8UQt5GuI5s9/8okpv/ABdEcUP35U2NyV+WlEO0PMQdmCsY9o2OnctMLWmtLs4azVK5kNEzrMyteekJYmaDtBNVqoYJ6q69IZpiWokuVrDpKVTcKzbdLG9vTWLvm1LnnrWXlThwwt1apmYWmKVHF5u8MzU8f/00c+jup0SWX5WQqEbD5HueAzawAQAAQAAUAAEAAEAAFAAPCP+jdTEm8kfrK2ewAAAABJRU5ErkJggg==&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABEElEQVQoz2Ng2PCWNERVDevBCKcGNOl1b7k3vQMihjVvUMThqg33f5Dd8Z5h7RuI6rCTn298+gNEDde+RZ76zIyuYc2bumvfrnz8Y3/wI8Pat+wb3z769vc/DLTc+MayHk3DujeuRz7+/Pv/19//u17+mnzn+7c/UNWffv9T3PmeAV3D2jeRpz///fcfE9z/+pdvyzsMDevfCmx+t+PlL0wN8x78gHoMPZTWvsk8/+X7HxRbPvz6p7PnA7ZQ2gDyqNCmt723vsFVf/79Dxg+KMYjO8n64McVj3+8/vnvx99/L378Xfvkp8X+j+iq0SKOd/M71d3vdfZ+EN/2HhhuwNggImmsB8UalhRBm8SHDQEA5UPgBrwMoL4AAAAASUVORK5CYII=&#34;, &#34;name&#34;: &#34;Twitter&#34;, &#34;origin&#34;: &#34;https://twitter.com&#34;, &#34;pageSize&#34;: {&#34;share&#34;: {&#34;height&#34;: 300, &#34;width&#34;: 550}}, &#34;shareURL&#34;: &#34;https://twitter.com/intent/tweet?url=%{url}&amp;text=%{text}&amp;via=Firefox&#34;}">Ativar agora <span>&raquo;</span></a>
+          <br/><a href="twitter.html" class="moreinfo">Saber mais&hellip;</a>
+          </div>
+          <div class="carousel-image">
+          <img src="images/twitter/share.png" style="float:right;"></img>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="item-inner">
+          <div>
+          
+          <h2><img src="images/pocket/pocket_logo.png"></img></h2>
+          
+          <p class="description">A convenient, beautiful place to save content you want to view later.</p>
+          </div>
+          <div class="activation">
+          <a class="button gutter-bottom-24" onclick="activateProvider(this, 'pocket')" data-service="{&#34;author&#34;: &#34;Read It Later Inc.&#34;, &#34;description&#34;: &#34;Pocket service for Firefox - The best way to save articles, videos and more&#34;, &#34;homepageURL&#34;: &#34;https://getpocket.com/firefox&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyZTNkZDljYS04NjJlLTQ1MjUtYmFiNi1lMjljYzBjMGNkNjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkRGMDMxODU4MERCMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkRGMDMxODQ4MERCMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDM0NmE2ZGMtMjM0Mi00MjFmLTk2MWEtMzg4ODdjMjhlYmFkIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJlM2RkOWNhLTg2MmUtNDUyNS1iYWI2LWUyOWNjMGMwY2Q2NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpIz05MAAAIfSURBVHja7JfPK0RRFMcZUyKxMBZ+FbEhLCi/MqQkWVigSaxsUP6M2bG3sLJigdSMZhL5uVAokrEgbMyUGT8aKaOh8T06U8/z5r13p5l5ilufmXn33XvOuffcc86d9EgkkmZkM6UZ3NKfOm15+J4BAyAzRXrfwAqYMONjFthSvHBa6BAwkwv6DfRAPxlgNvIMGn4I/w341Qa8gGFQAkbAs4DcVzAKSjnEg7EGqkXANFjg3/PgAriBRUM5GdoD9vl5EZSBKdEduJc9H4EO4NWYY5Uoj7a7eFwwDnJlfeegHVwpjCfDWsGprD8bTMZjQB1YV9jya96JM0kfGdQMLmVjqc6sgUY1A15VjKCJW6BIYbWd4IANaQG3sjEFYBO0qR1WMsCvcahqwC4oV/B3NysIyN5R5OyAeg3ZfjLAoyOsKsAeqJb1BxVCrJLHVumQ6zHxYD2tmFfVoDKmlnerTKfMPTLAKZBgLOxXq8K7Jj4vhQLynFEX7AtMyuWT3Svp6+KIyReQQzo90UxoBy6ByVlgFWyDD46IDMEyYJfmAbegAV/3SVbcFYdyF+v8lojGwEMKCuAD6/qRCb18Mw4nUXmYdXhjpWIKs0EQSoLyEMve0aoFDi44vgQq97FMh95idMhJZS4ByudY1qFoNXzkWw3l82XwLujrJZ47yrKEb0TRdsy+o+rWx6FXx8UpR3IFuwEnYINzREBXLP/5f8efAgwA4PVxMNzKm6AAAAAASUVORK5CYII=&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyZTNkZDljYS04NjJlLTQ1MjUtYmFiNi1lMjljYzBjMGNkNjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzlBMkM0QzI3RkRCMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzlBMkM0QzE3RkRCMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZjczYmYzMzEtNjg4ZS00ZjY2LTg1ZDUtMzFjMTFjYWUxNTIyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJlM2RkOWNhLTg2MmUtNDUyNS1iYWI2LWUyOWNjMGMwY2Q2NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pm7oe+YAAARuSURBVHja7FtbSBVRFD1etcgeUqRgQUYPIwyqj4ryw7SMMgrsSRBpDwiK+lCojPxJovdHEfT6qJA0CHpTklaI5YcfBkkKkWJqGBSEmlZq2trdfeN2uc6dMzNn0juzYInce2Zm7zXnsc/e50YMDAwIJ8MjHA5XAKcLEPE1bZPv/3jwILgOnBqm/jaD98HjYJt/D1gEvgVzw9h5whRwH/ua6hNgEvgYnOignj+ee8IUEiAfnODA4R8LFpAAaxw8B64lARIdLEC8Gwe4ArgCuAK4ArgCuAK4ArgCuALI4x24A5wBzgR3go022PyRt7SzwengFrDW6M0oIWIkK/oSXAV+C/h8LHgXXKbI+WpwNfgl4POR4B0w044e0AtuDeI8oZONuKfA+Rfg8iDOE36C2WCHHQJUgR80vu8BN4BFFjr/kIXt1GhDwjy1Q4BPOtr84jdywQLni8H14A+LbDMtwByd7QZ4sjpmwvlL4DYednqQbIcAyTwW9eIIeMDAc06Ce7g36cF8cKldy2CxRE8gnAZ3g/062x8GD3Ev0oNEXn0i7BIgjmflBRLXXOHVI1R3prd+XOK+s8BXwmBqjwToMygCpdHLJbtdifAWXr4H+a6fBboocb95HJNMNuhDHwnQbmKSGie8NYXVEtc84vYdAUtnFnhT4j4pYIUwV89oNysAYRSPv82SQU0Gr93dHFU+kLh+BVjGL8AM2qPw5zM4zeSNonliJIOuSoS16SxgtcSzaAjd4meaxWcPb2qs2ljRRJcncU2tpPM54G2LnP+zoSOj6yyO2c+AhQr2AvvBaxZv4es8ZraSIYKf80bW5UFQAJ5TYGctCVApEW3JYB+/sUgT9yABz4JHFdhHPld6eDmqUrR/z+YxO8LAtZE8p+Qqso187vCNp1KFGZwsXvtjJK4ZwTHBLoV2lfqHwkUScboRZPC6HaujbYyBuEIW/b58hU+AFvCJUIslHLnFabSJ5cgyU7EtT9jnf5aUy0I95nLsHizwSuBekmqDHX99jQqI0SkoWaj44Unga052VHB3TOFdoB1HdarZV+8y43dMTnCio0yENzJ4Fxs0H1CueEX43yj1d36whMhesCsMne9i30JmhBolNzTDBXkiSOXKozFLloSR8yWDrXJaOyuKwmrCwPkarYhSSwDK1FDqqmEYO9/APnQbEYBAlZY0YU/V12qQzekiRLVIT3KhhaOz+mHkfD3b3Byqod7sSiu4eJgESeVsa6uexjLpJcoeU/aWihZD8ZdWZNMJcKWQyHTL5tcoi0JlKzoA0TSEnG9im/KFZHbLaIKR8vpUG6QCZu9/dLyH33oy2yQNMxlWCi2pgEnng24I4yU2IyDRr/POMl9rmVMpgA90WiRHeA8snRLeQosq0KxeyM/aLrRPquhC4HbYCkTzeNzIk2aCyfu9F96jL5Qmey4sTt1FKeqepX7b6iReluhYG5Wy6VgdpcXGgKO5DR1/oYpxGwcwFMG9AZ9Z8ZY1e4D722GHwxXA6QL8FmAA947kxCZJgFkAAAAASUVORK5CYII=&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABjklEQVR42q1Tu0oDQRQdxE4EsRH8E7WZh49OU2RmdgVBLBSsRFAsU/kLIgiijYWFhWVAQf0HbbSxUSS7mzUvlRjvWZmEISEoeuGQy7nnnJnMTdifKxZ2IRG2WBb2JhbmR4AWnliZHKOmXldhq6aCXwEeCntjlIamjaTTA31n8DKPkFnYZ0UGXWZwmJHG45knkPowVXqixE2xocK2KOu5uUhlMBkLfQBtV0CVyETorexheW4kkeYMxsZ0iODz8pwezWYyv1H1AqRpuuun0iaRCBYhfJpdGiLuhIJO76bmh8GVhDGkid3XgBdbuHVESp+v0jbocdZhuOR8sMULg+gjnl+jq9egcQfCyxJpd6qqcyUIKtJ+RMJsw/h9st0k87szA/DAy15mgnFazyMJvPUQR7D7CTd7dFozFdbbCDzwMlQk9Co9DIzezmsqBNB74dDCw1y1CoUBEu0i2d2kF9wcWnh6/C/MCg0f8DMFahkC9AAe7h4a1q8qKhyLuV4m4VHE9VXEzXUs7DG4Z5qx/64v/nHUkcS/En4AAAAASUVORK5CYII=&#34;, &#34;markURL&#34;: &#34;https://getpocket.com/firefox/social/cdn/index?url=%{url}&amp;title=%{title}&amp;firefoxsave=1&#34;, &#34;markedIcon&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyZTNkZDljYS04NjJlLTQ1MjUtYmFiNi1lMjljYzBjMGNkNjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUY0NTBBNzU3RkQzMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUY0NTBBNzQ3RkQzMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZWU0NDFjNDQtYmRjNC00MWExLTg4MTEtNjBhMzBiZTM1OWI5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJlM2RkOWNhLTg2MmUtNDUyNS1iYWI2LWUyOWNjMGMwY2Q2NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmk8GUcAAARMSURBVHja7Jd7bBRFHMdnZ/Z9vd5e78XBIddAU9ruEchFsMVqpE0qWAkpCWLQBCtETfQPH9GEGBOJaUBL6qtiCJpINBoTIEpJeNRHPVFjfIUioNUCoaXlLLalubtu9+7W3zS0WendsReU8w8n+WX3t7Mzn29mf/v7zTCGYaBCNowK3JgDFbc44PoG2Fow4QZxNbD9YA+zLMe9Nd/mWOsSJIQZ5obQ04YhXNIS63+PjQpMT83dSbcgkUIs/5CWMLBLEEmhvj+sOoMZxBQuAP8Lf8H/AtjsPeyEuH71Aa522Tn9i2+C4x923IV03VqeYElSaFp1kK9b3qt/9V1Ae/+j1cZE5rFZBZCacERsvud5uD1HyoLzmGBgYLx11wOGpsk54RynSU9sfkdouH0neL2krHSu3jdQlPrk2Mq8BESj0e6uyuruK25348mvWxhZ0hItr282YnF7xqgWhLi05dHdfO3S1o7K6vNXHv9cUb/iexdCK/OKgdETpxrhUjzlw4QX+OrwNmnrk68xxfbhGXCbPCa98FQ7wFtMcNrkkR+Pr8k7CH2ILCCEdMKt2yTiD36J2iq3PNOGS5ToNBwEydu3tPHhRdvhnYumaRwYkyNexKrZBUDAZOqwsRxSFc/NHMt1gTvbJGKYqyx7RXrp2R3Y6+6nQmxtz7XCsx3Qd8k0hYdl2c9Vxb3czvFZg5X5s3HjMBOLK9kUxpI6Ojk6dEbT9Tpwz0w9h5iQk/2DmyCXcsTvexPgMdOwAAjvrHK4youywaEZNnkEpxX7QK6gpisRUjylIscfA7fStBJxds6sXQBvvwq+QIB3FynunPDJqghsrHtdx6/1W4uEpSL8Nl6IgBs2iRinZno1JPH8lyHFfZMEwq/VKBvjxRUHreQWgRAaEyUg4jNwazO8sswmiF0g1EcFW0rDwMbe+9cdxn5vn5UBHMYo5PTYiwXxCLirTF31dl7sVB1uJ4+tVXfKnGTDEkaNFTV7LeduBtOVEJ2C1AHup2BHFUE8pDo9RVSg1UaZlD05wvHgve0kGOixXMFg61bl9DChEu8daom3vsrpJSSP7RxlUeZ0IgIlPexjG1+FVJrIp5I5eBEpYPlsaSiDsijzb5lQWhLawz+0YQ/COP3vFX+cpgzKmpGKQdFlaU3DNrF53QeIZM6O19VgTjo3ZVBWxmoIHWchw23FPs/lRNvuDUY8Yf9H9n6yNCY9vuk9vu7Wlynj6oPJjAEgYk6qb6A58eLOpuSJXxZf145HLf9JevqRfSTgfxvg/ZlORhkHgggJLg165Ns7x9/dd1vqt7PlyDCw1W9N5s87Ld7XFOFqlx6CJ4cBnsh2NMs5Fwjx08yXOn8hPPHx0YWpUz2l6YtDvvTomIKSSX66qtmLhvEszyCrLuzlG+tOk7mzf4CeCIBz1homj9OxDawcLDi5XUDICTZVbXSwEbBBug0D+5UWUkvxUejj+V8CDAAVQ1hCXRdiIQAAAABJRU5ErkJggg==&#34;, &#34;name&#34;: &#34;Pocket&#34;, &#34;origin&#34;: &#34;https://getpocket.com&#34;, &#34;postActivationURL&#34;: &#34;https://getpocket.com/installed?firefoxsave=1&#34;, &#34;unmarkedIcon&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyZTNkZDljYS04NjJlLTQ1MjUtYmFiNi1lMjljYzBjMGNkNjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDdBMTNBQ0M3RkQzMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDdBMTNBQ0I3RkQzMTFFM0JDQUFBMkJEQjdBMDdBNDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZWU0NDFjNDQtYmRjNC00MWExLTg4MTEtNjBhMzBiZTM1OWI5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjJlM2RkOWNhLTg2MmUtNDUyNS1iYWI2LWUyOWNjMGMwY2Q2NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpIBVzEAAAQRSURBVHja7FftS1NRGN+9m5vOzc3XMZ0vwXSihsnIQCkRp7WUmIUYJEqa0F8h1AcxUOwFK6KChCCUTChBbaSy+uCHIptiKFgzU1Njorg5ndnvCZWbbvOOUvvQgYd7zz0vv995znN+zz3M+vq64CALKzjgwuTl5SnwvA07B5PsE64L9gx2WSQWix9oNJpzoaGhAoZh9gUd2y6x2+3nJyYmJKLY2FgTge+r27HQsLAwAcuyJlapVAoPav+BzbD75fZ/9hT8JyDy1iAUCldycnKep6Wl2axWa4LFYil0u928dAJj3dnZ2R3p6eljw8PDmt7e3jPexnolkJycbCkoKLiCV1t0dHR8VFTUVFtb28XV1VWpzxWJRK7i4uJHer3+DqpjMTExsbOzs7KBgQGjXwQgElaDwWDdqFrNZnOtRCJxtbS0VC8vL8s9jQkICHCUlpbeh9fqMfbLxuchLOQtnka/YmBkZKQIj5DNOiacTElJqSsrK7sllUrt2/sHBgYulpeXNwG8lgNORTo0NGTyOwhDQkK02EszXiM4JGa1Wm19RUVFo1wun9lCAKHKysrGxMTEa+jzjTONAmrXjbnSvBKggPHUEBQUJEhKSjoKt/ahGs0hYY+Pj79RVVXVACX7SkSqq6vr4+LiGtD2nTNFJOKhF3NkBwcHew1Wpqamxu5yuZTeGDqdTsHo6OinlZWVPFQ/bX5HTEjn5uYuQUkDwsPD7wJ8iTNMA+JmeEQH73gNWMTUPIuVTvmKavKETqc7hM5vUE3heMIRERFxD+BN28C1yLBvsHKf4BtzT7EymezDbuca4HQs1RhgQVXPIbFMxul6GMH4GoTjiPhuhbDZhISEDj7iApeSJ8Kwnz2oHvfQ5RhW3Ic+KiLMpxA2W1RU1IXcPMFLNkUiCkzEnbwb1dOcJgNWY0ZbKBHlUwiTsFm4cCY1NfUpX+1G5AoQXIEKheIFqq9gL3HMOvFNRgT5FsIk7F86UFhY2KRSqUZ5ZzCWJRIM3J2LVRvwLiRifAthEeaWEIEJfbgJ9zn9yWTYChIsv/4lCYOwCPM3JcRKmo1GYzNW92PPcj/mJgzC2iHFYLSQlZVVl5+f/wQd3XsA7qa5CYOwPGZDNHyGwl2FxC60t7dfgELK/wY4juWiyWR6nJGRcZ0wtl9MdgwAiRjIbGVra+tZm8125E/AkTfel5SUtEE1HwL8q6ebkceBIEFSdnJwcPBUT0/PicnJSR0uFCzfvVar1R9zc3MtSM+d+NQFcKe3q5nPyUBETcqHvxp9f39/8vj4+CHcalQOh0O5trYm3sxqkF47LjjTULexzMzMj5GRke/QZAGwz1zD+HE7ppyqIwWlowyj65R4o20VNg+bpt8w+p+BLfG6JR309fynAAMAUeJOyH/F3WAAAAAASUVORK5CYII=&#34;, &#34;version&#34;: &#34;1.0&#34;, &#34;workerURL&#34;: &#34;https://getpocket.com/firefox/social/worker.js&#34;}">Ativar agora <span>&raquo;</span></a>
+          <br/><a href="pocket.html" class="moreinfo">Saber mais&hellip;</a>
+          </div>
+          <div class="carousel-image">
+          <img src="images/pocket/pocket.png" style="float:right;"></img>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="cycle-pager center"></div>
+    </div>
+  </div>
+
+  <div id="wrapper" class="content">
+    <div id="directory">
+      <div class="directory-header">
+      <h3>Melhore a sua experiência com o Firefox, tire mais proveito da Web</h3>
+      <p class="lead">Fácil de usar, nenhum software ou complemento para baixar e instalar, basta clicar em Ativar, e a nova funcionalidade é oferecida a você instantaneamente a partir da web. De serviços de redes sociais, por meio de favoritos na nuvem, música e notícias personalizadas. O Firefox adiciona esses serviços para que você possa fazer o melhor da Web.
+      </p>
+
+      </div>
+      <div id="directory-grid" class="row">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="goal.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/goal/goallogo.png"></img></h2>
+    
+    <p class="provider-description">A fonte definitiva para notícias de futebol ao redor do mundo.</p>
+
+    
+    <span class="provider-features">
+    <span  title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="cliqz.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/cliqz/cliqz-logo.png"></img></h2>
+    
+    <p class="provider-description">Get the most relevant news based on your interests by crafting a unique information universe.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="delicious.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/delicious/delicious-logo.png"></img></h2>
+    
+    <p class="provider-description">Delicious remembers so you don&#39;t have to.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="facebook.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/facebook/FB-f-Logo__blue_58.png"></img> Facebook</h2>
+    
+    <p class="provider-description">Share any web page, anywhere, anytime.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="gmail.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/google/gmail64.png"></img> Gmail</h2>
+    
+    <p class="provider-description">Send web pages and images to people using Gmail.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="google.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/google/icon64.png"></img> Google+</h2>
+    
+    <p class="provider-description">Share the web on Google+.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="linkedin.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/linkedin/icon64.png"></img> LinkedIn</h2>
+    
+    <p class="provider-description">Share the web with your professional network.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="mixi.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/mixi/icon64.png"></img> mixi</h2>
+    
+    <p class="provider-description">Stay informed of what your friends are up to.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="odnoklassniki.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/odnoklassniki/logo-large.png"></img></h2>
+    
+    <p class="provider-description">Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="pocket.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/pocket/pocket_logo.png"></img></h2>
+    
+    <p class="provider-description">A convenient, beautiful place to save content you want to view later.</p>
+
+    
+    <span class="provider-features">
+    <span  title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span class="supported" title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="saavn.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/saavn/logomark.png"></img></h2>
+    
+    <p class="provider-description">Discover fresh music and hear more of what you love.</p>
+
+    
+    <span class="provider-features">
+    <span  title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="sphere.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/sphere/sphere-logo-258x74.jpg"></img></h2>
+    
+    <p class="provider-description">A new way to discover the most interesting content relevant to your interests.</p>
+
+    
+    <span class="provider-features">
+    <span  title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="tumblr.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/tumblr/tumblr_logotype_blue_220.png"></img></h2>
+    
+    <p class="provider-description">Tumblr lets you effortlessly share anything.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="twitter.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/twitter/icon64.png"></img> </h2>
+    
+    <p class="provider-description">Twitter Share lets you quickly tweet links to your followers.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="vkontakte.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/vkontakte/icon64.png"></img> VK</h2>
+    
+    <p class="provider-description">VK is a social network that unites people all over the world and helps them communicate comfortably and promptly.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="weibo.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/weibo/logo-large.png"></img></h2>
+    
+    <p class="provider-description">Share your interesting news anytime, anywhere.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span class="supported" title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+        <div class="provider-entry col-2 clearfix">
+  <a href="xing.html">
+  <div class="provider-entry-inner clearfix">
+    
+    <h2><img src="images/xing/xing_large.png"></img></h2>
+    
+    <p class="provider-description">Xing is the social network for professional networking, business marketing and career development.</p>
+
+    
+    <span class="provider-features">
+    <span class="supported" title="Este serviço suporta compartilhamento de conteúdo">compartilhe</span> 
+    <span  title="Este serviço fornece favoritos">Favoritos</span> 
+    <span  title="Este serviço adiciona um painel no Firefox">painel</span> 
+    <span  title="Este serviço adiciona um botão para exibir notificações na barra de ferramentas do Firefox">notificações</span>
+    
+    </span>
+    
+  </div>
+  </a>
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Partes deste conteúdo são ©1998-2014 de colaboradores individuais da mozilla. O conteúdo está disponível sob uma <a href="http://www.mozilla.org/foundation/licensing/website-content/">Licença Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Contribua para esta página</a>
+              </p>
+          </div>
+          <div>
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contacte-nos</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Seja nosso parceiro</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Doar</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Política de Privacidade</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Avisos Legais</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Abuso de marca registada</a></li>
+          </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI para desenvolvedores</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Outros idiomas:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="pt-BR" value="pt-BR" selected>português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Vá</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/pt-BR/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
 </body>
 </html>
