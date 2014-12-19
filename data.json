@@ -811,7 +811,10 @@
         "icon64URL": "images/linkedin/icon64.png",
         "origin": "https://www.linkedin.com",
         "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}&trk=FIREFOX_ACTIVATION",
-        "description": "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
+        "description": "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.",
+        "pageSize": {
+          "share": { "width": 520, "height": 570 }
+        }
       },
       "lang": {
         "en-US": {
@@ -1321,7 +1324,7 @@
     "de": ["xing", "cliqz", "facebook", "twitter", "google", "tumblr"]
   },
   "carousel": {
-    "en-US": ["twitter", "pocket", "facebook"],
+    "en-US": ["linkedin", "twitter", "pocket"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "zh-TW": ["twitter", "google", "tumblr"],
