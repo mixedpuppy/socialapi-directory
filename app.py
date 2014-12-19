@@ -107,9 +107,9 @@ def createapp():
     today = datetime.today()
     last = []
     for d, a in schedule.iteritems():
-        last = a
-        if today > datetime.strptime(d, "%Y-%m-%d"):
+        if today < datetime.strptime(d, "%Y-%m-%d"):
             return a
+        last = a
     return last
 
   def renderTemplate(template, locale, path=None):

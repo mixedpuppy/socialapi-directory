@@ -1207,7 +1207,7 @@
       }
     },
     "xing": {
-      "status": "beta",
+      "status": "release",
       "manifest": {
         "origin": "https://www.xing.com",
         "name": "XING",
