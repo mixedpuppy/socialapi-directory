@@ -1226,8 +1226,8 @@
       "lang": {
         "en-US": {
           "name": "XING",
-          "shortDescription": "Xing is the social network for professional networking, business marketing and career development.",
-          "description": "Expand your existing network with access to new contacts, jobs, events, companies, groups and Discussions.",
+          "shortDescription": "XING is the professional network for a better working life.",
+          "description": "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry.",
           "images": {
             "fulllogo": "images/xing/xing_large.png",
             "detail": "images/xing/xing-en.png",
@@ -1236,8 +1236,8 @@
         },
         "de": {
           "name": "XING",
-          "shortDescription": "XING ist das soziale Netzwerk für Beruf, Geschäft und Karriere.",
-          "description": "Entdecken Sie alte und neue Kontakte, Jobs, Events, Unternehmen, Gruppen und Diskussionsforen. ",
+          "shortDescription": "XING ist das soziale Netzwerk für Beruf und Karriere.",
+          "description": "Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, Events und News aus Ihrer Branche.",
           "images": {
             "fulllogo": "images/xing/xing_large.png",
             "carousel": "images/xing/xing-de.png",
