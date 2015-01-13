@@ -736,7 +736,7 @@
         "icon64URL": "images/twitter/icon64.png",
         "origin": "https://twitter.com",
         "homepageURL": "https://twitter.com",
-        "shareURL": "https://twitter.com/intent/tweet?url=%{url}&text=%{text}&via=Firefox",
+        "shareURL": "https://twitter.com/intent/tweet?url=%{url}&text=%{text}",
         "description": "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener.",
         "pageSize": {
           "share": { "width": 550, "height": 300 }
