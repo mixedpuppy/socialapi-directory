@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2014-11-04 21:03+0000\n"
+"PO-Revision-Date: 2015-01-15 15:37+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1415135007.0\n"
+"X-POOTLE-MTIME: 1421336271.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -81,7 +81,7 @@ msgstr ""
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr "Fique de olho nas notícias de %(name)s"
+msgstr "Fique de olho nas notícias de %(nome)s"
 
 #: templates/activated.html:54
 #, python-format
@@ -172,7 +172,7 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"Partes deste conteúdo são ©1998-%(current_year)s de colaboradores "
+"Partes deste conteúdo são © 1998 -% (CURRENT_YEAR) s de colaboradores "
 "individuais da mozilla. O conteúdo está disponível sob uma <a href=\"%"
 "(url)s\">Licença Creative Commons</a>."
 
@@ -228,11 +228,11 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
-"Fácil de usar, nenhum software ou complemento para baixar e instalar, basta "
-"clicar em Ativar, e a nova funcionalidade é oferecida a você "
-"instantaneamente a partir da web. De serviços de redes sociais, por meio de "
-"favoritos na nuvem, música e notícias personalizadas. O Firefox adiciona "
-"esses serviços para que você possa fazer o melhor da Web."
+"Fácil de usar, nenhum aplicativo ou complemento para baixar e instalar, "
+"basta clicar em Ativar, essa é a nova funcionalidade oferecida "
+"instantaneamente a partir da web. Serviços de redes sociais, favoritos na "
+"nuvem, música e notícias personalizadas. O Firefox adiciona esses serviços "
+"para que você possa obter o máximo da Web."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
