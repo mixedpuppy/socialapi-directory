@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-08-19 10:57-0700\n"
-"PO-Revision-Date: 2015-01-15 19:17+0000\n"
+"PO-Revision-Date: 2015-01-15 19:22+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1421349448.0\n"
+"X-POOTLE-MTIME: 1421349749.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -261,7 +261,7 @@ msgstr "painel"
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
-"Este serviço adiciona um botão para exibir notificações na barra de "
+"Esse serviço adiciona um botão para exibir notificações na barra de "
 "ferramentas do Firefox"
 
 #: templates/index_entry.html:16 templates/provider.html:109
@@ -270,7 +270,7 @@ msgstr "notificações"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "This is a demo service"
-msgstr "Este é um serviço de demonstração"
+msgstr "Esse é um serviço de demonstração"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
@@ -278,7 +278,7 @@ msgstr "demo"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr "Este serviço requer uma versão ainda não lançada do Firefox"
+msgstr "Esse serviço requer uma versão ainda não lançada do Firefox"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
@@ -348,7 +348,7 @@ msgstr "Instale o Firefox Beta"
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr "requer Firefox"
+msgstr "requer o Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
