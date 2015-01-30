@@ -25,9 +25,9 @@
       "manifest": {
         "name": "Saavn",
         "origin": "http://www.saavn.com",
-        "iconURL": "images/saavn/icon16.png",
-        "icon32URL": "images/saavn/icon32.png",
-        "icon64URL": "images/saavn/icon64.png",
+        "iconURL": "http://www.saavn.com/_i/firefox/firefox16.png",
+        "icon32URL": "http://www.saavn.com/_i/firefox/firefox32.png",
+        "icon64URL": "http://www.saavn.com/_i/firefox/firefox64.png",
         "workerURL": "http://www.saavn.com/_s/firefox/worker.js",
         "sidebarURL": "http://www.saavn.com/firefox/sidebar.php",
         "description": "{{ _('Saavn is the best Bollywood and Indian music listening experience, online and on the go. It is a simple, beautiful, and 100 percent free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.') }}",
@@ -177,9 +177,9 @@
         "workerURL": "https://mozsocial.cliqz.com/worker?version=2",
         "sidebarURL": "https://mozsocial.cliqz.com/sidebar?version=2",
         "shareURL": "https://mozsocial.cliqz.com/share-panel?url=%{url}&title=%{title}&version=2",
-        "iconURL": "images/cliqz/icon.png",
+        "iconURL": "images/cliqz/icon16.png",
         "icon32URL": "images/cliqz/icon32.png",
-        "icon64URL": "images/cliqz/cliqz-logo.png",
+        "icon64URL": "images/cliqz/icon64.png",
         "activities": {
           "share": {
             "href": "https://mozsocial.cliqz.com/share-panel?url=%{url}&title=%{title}&version=2",
@@ -362,9 +362,9 @@
         "origin": "https://www.tumblr.com",
         "name": "Tumblr",
         "author": "Tumblr, Inc.",
-        "iconURL": "images/tumblr/tumblr_logo_blue_16.png",
-        "icon32URL": "images/tumblr/tumblr_logo_blue_32.png",
-        "icon64URL": "images/tumblr/tumblr_logo_blue_64.png",  
+        "iconURL": "images/tumblr/icon16.png",
+        "icon32URL": "images/tumblr/icon32.png",
+        "icon64URL": "images/tumblr/icon64.png",  
         "shareURL": "https://www.tumblr.com/share?v=3&u=%{url}&t=%{title}&s=%{description}",
   
         "description": "{{ _('Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme\'s HTML.') }}",
@@ -417,9 +417,9 @@
         "origin": "http://www.odnoklassniki.ru/",
         "name": "{{ _('Odnoklassniki') }}",
         "shareURL": "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.noresize=on&st._surl=%{url}",
-        "iconURL": "{{ _('images/odnoklassniki/logo.png') }}",
-        "icon32URL": "{{ _('images/odnoklassniki/logo32.png') }}",
-        "icon64URL": "{{ _('images/odnoklassniki/logo64.png') }}",
+        "iconURL": "{{ _('images/odnoklassniki/icon16.png') }}",
+        "icon32URL": "{{ _('images/odnoklassniki/icon32.png') }}",
+        "icon64URL": "{{ _('images/odnoklassniki/icon64.png') }}",
         "description": "{{ _('Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.') }}",
         "author": "{{ _('Odnoklassniki') }}",
         "homepageURL": "http://www.odnoklassniki.ru/",
@@ -439,9 +439,9 @@
       "manifest": {
         "name": "Pinterest",
         "author": "Pinterest",
-        "iconURL": "images/pinterest/logo16.png",
-        "icon32URL": "images/pinterest/logo32.png",
-        "icon64URL": "images/pinterest/logo64.png",
+        "iconURL": "images/pinterest/icon16.png",
+        "icon32URL": "images/pinterest/icon32.png",
+        "icon64URL": "images/pinterest/icon64.png",
         "origin": "https://pinterest.com",
         "shareURL": "https://pinterest.com/pin/create/button/?url=%{url}&description=%{title}&media=%{previews}",
         "description": "{{ _('Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.') }}",
@@ -467,7 +467,7 @@
       "manifest": {
         "origin": "https://www.stumbleupon.com",
         "name": "StumbleUpon",
-        "iconURL": "images/stumbleupon/icon.png",
+        "iconURL": "images/stumbleupon/icon16.png",
         "icon32URL": "images/stumbleupon/icon32.png",
         "icon64URL": "images/stumbleupon/icon64.png",
   
@@ -496,9 +496,9 @@
       "manifest": {
         "origin": "https://news.ycombinator.com/",
         "name": "Y Combinator",
-        "iconURL": "images/ycombinator/yc16.png",
-        "icon32URL": "images/ycombinator/yc32.png",
-        "icon64URL": "images/ycombinator/yc64.png",
+        "iconURL": "images/ycombinator/icon16.png",
+        "icon32URL": "images/ycombinator/icon32.png",
+        "icon64URL": "images/ycombinator/icon64.png",
   
         "shareURL": "https://news.ycombinator.com/submitlink?u=%{url}&t=%{title}",
   
@@ -525,7 +525,7 @@
       "manifest": {
         "origin": "http://www.reddit.com",
         "name": "reddit",
-        "iconURL": "images/reddit/icon.png",
+        "iconURL": "images/reddit/icon16.png",
         "icon32URL": "images/reddit/icon32.png",
         "icon64URL": "images/reddit/icon64.png",
   
@@ -556,7 +556,7 @@
         "origin": "http://digg.com",
         "shareURL": "http://digg.com/submit?url=%{url}&title=%{title}",
         "iconURL": "http://digg.com/favicon.ico",
-        "icon64URL": "images/digg/digg64.png",
+        "icon64URL": "images/digg/icon64.png",
         "description": "demo mockup of digg service."
       },
       "viewData": {
