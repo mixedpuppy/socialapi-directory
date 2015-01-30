@@ -4,9 +4,9 @@
       "status": "release",
       "manifest": {
         "name": "GOAL.com",
-        "iconURL": "images/goal/goal16.png",
-        "icon32URL": "images/goal/goal32.png",
-        "icon64URL": "images/goal/goal64x64.png",
+        "iconURL": "images/goal/icon16.png",
+        "icon32URL": "images/goal/icon32.png",
+        "icon64URL": "images/goal/icon64.png",
         "origin": "http://www.goal.com",
         "sidebarURL": "http://www.goal.com/mozilla-sidebar",
         "description": "The definitive source for football news from around the world.",
@@ -18,145 +18,67 @@
           "name": "GOAL.com",
           "tagline": "We live and breathe football - everywhere, 24/7",
           "shortDescription": "The definitive source for football news from around the world.",
-          "description": "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and whoever you support, we are your definitive football source.</p><p>We have over 530 reporters on the ground in 50+ countries, getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to keep them ahead of the game.",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/us1.jpg",
-                        "images/goal/us2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and whoever you support, we are your definitive football source.</p><p>We have over 530 reporters on the ground in 50+ countries, getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to keep them ahead of the game."
         },
         "de": {
           "name": "GOAL.com",
           "tagline": "Wir leben und atmen den Fußball, überall, 24 Stunden an sieben Tagen in der Woche",
           "shortDescription": "Wir sorgen für Gesprächsstoff unter den Fußballbegeisterten auf der ganzen Welt.",
-          "description": "<p>Football, Soccer, Futbol, Calcio, Futebol – wie auch immer Du es nennst und wen auch immer Du unterstützt: Wir sind Deine allererste Anlaufstelle.</p><p>Mit mehr als 530 Journalisten sind wir in über 50 Ländern ganz nah am Geschehen dran. Bei uns findet Ihr exklusive Nachrichten über die wichtigsten Ligen, Teams und Spieler der Welt.</p><p>Über 52 Millionen Fußball-Fans schenken uns ihr Vertrauen. Wir danken euch dafür!</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/de1.jpg",
-                        "images/goal/de2.jpg"],
-            "carousel": "images/goal/de1.jpg",
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Football, Soccer, Futbol, Calcio, Futebol – wie auch immer Du es nennst und wen auch immer Du unterstützt: Wir sind Deine allererste Anlaufstelle.</p><p>Mit mehr als 530 Journalisten sind wir in über 50 Ländern ganz nah am Geschehen dran. Bei uns findet Ihr exklusive Nachrichten über die wichtigsten Ligen, Teams und Spieler der Welt.</p><p>Über 52 Millionen Fußball-Fans schenken uns ihr Vertrauen. Wir danken euch dafür!</p>"
         },
         "fr": {
           "name": "GOAL.com",
           "tagline": "Nous vivons et respirons football tous les joueurs, 24h/24 et 7j/7.",
           "shortDescription": "",
-          "description": "<p>Football, soccer, futbol, calcio, futebol - peu importe comment vous l'appelez et qui vous supportez, nous sommes votre source pour tout ce qui concerne le football.</p><p>Nous avons 530 journalistes sur le terrain dans plus de 50 pays, au plus près de l'action. Nous créons du contenu original pour vous délivrer les dernières informations des différents championnats, équipes et joueurs.</p><p>Ce n'est pas pour rien que 52 millions de fans de football nous font confiance.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/fr1.jpg",
-                        "images/goal/fr2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Football, soccer, futbol, calcio, futebol - peu importe comment vous l'appelez et qui vous supportez, nous sommes votre source pour tout ce qui concerne le football.</p><p>Nous avons 530 journalistes sur le terrain dans plus de 50 pays, au plus près de l'action. Nous créons du contenu original pour vous délivrer les dernières informations des différents championnats, équipes et joueurs.</p><p>Ce n'est pas pour rien que 52 millions de fans de football nous font confiance.</p>"
         },
         "it": {
           "name": "GOAL.com",
           "tagline": "Noi viviamo e respiriamo calcio - ovunque, 24/7.",
           "shortDescription": "Siamo il punto di riferimento mondiale per le notizie sul calcio.",
-          "description": "<p>Calcio, football, soccer, futbol, futebol - in qualunque modo lo chiamate e chiunque supportiate, siamo la vostra meta definitiva per lo sport più amato.</p><p>Abbiamo oltre 530 giornalisti sparsi in più di 50 nazioni, sempre sul pezzo. Creiamo contenuti originali sui campionati, le squadre e i giocatori più importanti al mondo.</p><p>Non c'è da stupirsi se più di 52 milioni di appassionati di calcio si affidano a noi per restare sempre aggiornati.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/it1.jpg",
-                        "images/goal/it2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Calcio, football, soccer, futbol, futebol - in qualunque modo lo chiamate e chiunque supportiate, siamo la vostra meta definitiva per lo sport più amato.</p><p>Abbiamo oltre 530 giornalisti sparsi in più di 50 nazioni, sempre sul pezzo. Creiamo contenuti originali sui campionati, le squadre e i giocatori più importanti al mondo.</p><p>Non c'è da stupirsi se più di 52 milioni di appassionati di calcio si affidano a noi per restare sempre aggiornati.</p>"
         },
         "es": {
           "name": "GOAL.com",
           "tagline": "Vivimos y respiramos fútbol - en todas partes, 24/7.",
           "shortDescription": "",
-          "description": "<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/es1.jpg",
-                        "images/goal/es2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>"
         },
         "es-ES": {
           "name": "GOAL.com",
           "tagline": "Vivimos y respiramos fútbol - en todas partes, 24/7.",
           "shortDescription": "",
-          "description": "<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/es1.jpg",
-                        "images/goal/es2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>"
         },
         "es-AR": {
           "name": "GOAL.com",
           "tagline": "Vivimos y respiramos fútbol - en todas partes, 24/7.",
           "shortDescription": "",
-          "description": "<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/es-ar1.jpg",
-                        "images/goal/es-ar2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>"
         },
         "pt-BR": {
           "name": "GOAL.com",
           "tagline": "Vivemos e respiramos futebol - em qualquer lugar, a qualquer momento.",
           "shortDescription": "A fonte definitiva para notícias de futebol ao redor do mundo.",
-          "description": "<p>Football, soccer, fútbol, calcio, futebol - não importa como você o chama, ou para quem torce: nós somos a sua fonte definitiva sobre futebol.</p><p>Temos mais de 530 repórteres espalhados por mais de 50 países, deixando você mais perto da ação.</p><p>Criamos conteúdo original na fonte para entregar as notícias das ligas, equipes e jogadores que interessa.</p><p>Não é a toa que mais de 52 milhões de fãs nos elegeram para mantê-los atualizados sobre o jogo.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/br1.jpg",
-                        "images/goal/br2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Football, soccer, fútbol, calcio, futebol - não importa como você o chama, ou para quem torce: nós somos a sua fonte definitiva sobre futebol.</p><p>Temos mais de 530 repórteres espalhados por mais de 50 países, deixando você mais perto da ação.</p><p>Criamos conteúdo original na fonte para entregar as notícias das ligas, equipes e jogadores que interessa.</p><p>Não é a toa que mais de 52 milhões de fãs nos elegeram para mantê-los atualizados sobre o jogo.</p>"
         },
         "id": {
           "name": "GOAL.com",
           "tagline": "Kami hidup dan bernafas sepakbola - di mana pun, 24 jam sehari dan 7 jam seminggu.",
           "shortDescription": "",
-          "description": "<p>Football, soccer, futbol, calcio, futebol, sepakbola - apa pun Anda menyebutnya dan siapa pun yang Anda dukung, kami adalah sumber utama sepakbola.</p><p>Kami memiliki lebih dari 530 reporter di lebih dari 50 negara untuk membawa Anda merasakan langsung atmosfir sepakbola dunia. Kami menciptakan konten orisinil untuk mengabarkan informasi terbaru dari liga, tim, dan pemain sesuai dengan minat Anda.</p><p>Tak heran jika lebih dari 52 juta fans sepakbola mempercayai kami supaya mereka tak ketinggalan informasi apa pun tentang sepakbola.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/id1.jpg",
-                        "images/goal/id2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Football, soccer, futbol, calcio, futebol, sepakbola - apa pun Anda menyebutnya dan siapa pun yang Anda dukung, kami adalah sumber utama sepakbola.</p><p>Kami memiliki lebih dari 530 reporter di lebih dari 50 negara untuk membawa Anda merasakan langsung atmosfir sepakbola dunia. Kami menciptakan konten orisinil untuk mengabarkan informasi terbaru dari liga, tim, dan pemain sesuai dengan minat Anda.</p><p>Tak heran jika lebih dari 52 juta fans sepakbola mempercayai kami supaya mereka tak ketinggalan informasi apa pun tentang sepakbola.</p>"
         },
         "ja": {
           "name": "GOAL.com",
           "tagline": "週 7 日、1 日 24 時間。どこにいてもサッカーを呼吸する。",
           "shortDescription": "世界中からあらゆるサッカーニュースが集まる場所。",
-          "description": "<p>フットボール、サッカー、フトボル、カルチョ、フチボウ…どんな言葉を使っていても、どのチームを応援していても、サッカーは世界の共通言語。</p><p>50 以上の国で活動する 530 名以上の記者が、サッカー界の動きをすぐそばで追っています。</p><p>気になるリーグやチーム、選手たちの最新情報をオリジナルコンテンツでお届けします。</p><p>5,200 万人以上のサッカーファンに、最新の情報源として信頼されていることには理由があります。</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/ja1.jpg",
-                        "images/goal/ja2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>フットボール、サッカー、フトボル、カルチョ、フチボウ…どんな言葉を使っていても、どのチームを応援していても、サッカーは世界の共通言語。</p><p>50 以上の国で活動する 530 名以上の記者が、サッカー界の動きをすぐそばで追っています。</p><p>気になるリーグやチーム、選手たちの最新情報をオリジナルコンテンツでお届けします。</p><p>5,200 万人以上のサッカーファンに、最新の情報源として信頼されていることには理由があります。</p>"
         },
         "nl": {
           "name": "GOAL.com",
           "tagline": "We leven en ademen voetbal - overal, 24/7",
           "shortDescription": "",
-          "description": "<p>Voetbal, soccer, futbol, calcio, futebol - hoe je het ook noemt en welk team je ook support, wij zijn de absolute bron voor voetbal. </p><p>We beschikken over meer dan 530 verslaggevers in meer dan 50 landen die bovenop het nieuws zitten. We creëren originele content en brengen nieuws over competities, teams en spelers die er toe doen.</p><p>Het is dan ook geen wonder dan meer dan 52 miljoen fans in ons vertrouwen.</p>",
-          "images": {
-            "fulllogo": "images/goal/goallogo.png",
-            "details": ["images/goal/nl1.jpg",
-                        "images/goal/nl2.jpg"],
-            "sidebarmenu": "images/goal/sidebarmenu.png",
-            "sidebarbutton": "images/goal/sidebarbutton.png"
-          }
+          "description": "<p>Voetbal, soccer, futbol, calcio, futebol - hoe je het ook noemt en welk team je ook support, wij zijn de absolute bron voor voetbal. </p><p>We beschikken over meer dan 530 verslaggevers in meer dan 50 landen die bovenop het nieuws zitten. We creëren originele content en brengen nieuws over competities, teams en spelers die er toe doen.</p><p>Het is dan ook geen wonder dan meer dan 52 miljoen fans in ons vertrouwen.</p>"
         }
       }
     },
@@ -181,16 +103,6 @@
           "tagline": "Music Feed",
           "shortDescription": "Discover fresh music and hear more of what you love.",
           "description": "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and 100% free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.",
-          "images": {
-            "fulllogo": "images/saavn/logomark.png",
-            "logo": "images/saavn/icon64.png",
-            "carousel": "images/saavn/saavn-screen.png",
-            "details": ["images/saavn/firefox-sidebar-screenshot-1.jpg",
-                        "images/saavn/firefox-sidebar-screenshot-2.jpg",
-                        "images/saavn/firefox-sidebar-screenshot-3.jpg"],
-            "sidebarmenu": "images/saavn/sidebarmenu.png",
-            "sidebarbutton": "images/saavn/sidebarbutton.png"
-          },
           "videos": {
             "youtube": ["A8Kignry0p8", "l8VlUiQ2IkQ", "aF0LyLeHk6w"]
           },
@@ -223,13 +135,6 @@
           "name": "Pocket",
           "tagline": "Save it for later",
           "shortDescription": "A convenient, beautiful place to save content you want to view later.",
-          "images": {
-            "carousel": "images/pocket/pocket.png",
-            "detail": "images/pocket/pocket.png",
-            "bookmark": "images/pocket/pocket.png",
-            "fulllogo": "images/pocket/pocket_logo.png",
-            "logo": "images/pocket/icon64.png"
-          },
           "links": {
             "learnmore": "https://getpocket.com/firefox"
           }
@@ -238,13 +143,6 @@
           "name": "Pocket",
           "tagline": "Save it for later",
           "shortDescription": "A convenient, beautiful place to save content you want to view later.",
-          "images": {
-            "carousel": "images/pocket/share-ru.png",
-            "detail": "images/pocket/share-ru.png",
-            "bookmark": "images/pocket/share-ru.png",
-            "fulllogo": "images/pocket/pocket_logo.png",
-            "logo": "images/pocket/icon64.png"
-          },
           "links": {
             "learnmore": "https://getpocket.com/firefox"
           }
@@ -254,13 +152,6 @@
           "tagline": "",
           "shortDescription": "後で見たいコンテンツを保存しておく便利で美しい場所。",
           "description": "Firefoxのためのポケットサービスは、記事、動画などを保存する最良の方法です。",
-          "images": {
-            "carousel": "images/pocket/share-ja.png",
-            "detail": "images/pocket/share-ja.png",
-            "bookmark": "images/pocket/share-ja.png",
-            "fulllogo": "images/pocket/pocket_logo.png",
-            "logo": "images/pocket/icon64.png"
-          },
           "links": {
             "learnmore": "https://getpocket.com/firefox"
           }
@@ -270,13 +161,6 @@
           "tagline": "先存後用",
           "shortDescription": "讓你能儲存任何內容，以利稍後觀看。",
           "description": "為 Firefox 打造的 Pocket 服務，是儲存文章、影片，還有更多內容的最佳方案。",
-          "images": {
-            "carousel": "images/pocket/pocket.png",
-            "detail": "images/pocket/pocket.png",
-            "bookmark": "images/pocket/pocket.png",
-            "fulllogo": "images/pocket/pocket_logo.png",
-            "logo": "images/pocket/icon64.png"
-          },
           "links": {
             "learnmore": "https://getpocket.com/firefox"
           }
@@ -303,14 +187,6 @@
           "tagline": "a discovery experience",
           "description": "",
           "shortDescription": "A new way to discover the most interesting content relevant to your interests.",
-          "images": {
-            "fulllogo": "images/sphere/sphere-logo-258x74.jpg",
-            "carousel": "images/sphere/sphere-slide.jpg",
-            "detail": "images/sphere/sphere-slide.jpg",
-            "logo": "images/sphere/icon64.png",
-            "sidebarmenu": "images/sphere/sidebarmenu.png",
-            "sidebarbutton": "images/sphere/sidebarbutton.png"
-          },
           "links": {
             "learnmore": "https://www.sphere.com/about/"
           }
@@ -347,13 +223,6 @@
           "name": "Delicious",
           "tagline": "Never lose a link again.",
           "shortDescription": "Delicious remembers so you don't have to.",
-          "images": {
-            "carousel": "images/delicious/delicious.png",
-            "detail": "images/delicious/delicious.png",
-            "share": "images/delicious/share.png",
-            "fulllogo": "images/delicious/delicious-logo.png",
-            "logo": "images/delicious/icon64.png"
-          },
           "links": {
             "learnmore": "https://delicious.com/about"
           }
@@ -363,13 +232,6 @@
           "tagline": "",
           "shortDescription": "あなたは思い出す必要はありません。Deliciousが思い出します。",
           "description": "Deliciousは、ウェブであなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。",
-          "images": {
-            "carousel": "images/delicious/share-ja.png",
-            "detail": "images/delicious/share-ja.png",
-            "share": "images/delicious/share-ja.png",
-            "fulllogo": "images/delicious/delicious-logo.png",
-            "logo": "images/delicious/icon64.png"
-          },
           "links": {
             "learnmore": "https://delicious.com/about"
           }
@@ -379,13 +241,6 @@
           "tagline": "再也不錯失任何連結",
           "shortDescription": "Delicious 為你記憶更多事。",
           "description": "精心打造的 Delicious 免費服務，可為你儲存你愛的網路內容。",
-          "images": {
-            "carousel": "images/delicious/delicious.png",
-            "detail": "images/delicious/delicious.png",
-            "share": "images/delicious/share.png",
-            "fulllogo": "images/delicious/delicious-logo.png",
-            "logo": "images/delicious/icon64.png"
-          },
           "links": {
             "learnmore": "https://delicious.com/about"
           }
@@ -423,45 +278,24 @@
         "en-US": {
           "name": "Facebook",
           "tagline": "Share the web",
-          "shortDescription": "Share any web page, anywhere, anytime.",
-          "images": {
-            "carousel": "images/facebook/facebook-share.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/facebook-share.png"
-          }
+          "shortDescription": "Share any web page, anywhere, anytime."
         },
         "ru": {
           "name": "Facebook",
           "tagline": "Share the web",
-          "shortDescription": "Share any web page, anywhere, anytime.",
-          "images": {
-            "carousel": "images/facebook/share-ru.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/share-ru.png"
-          }
+          "shortDescription": "Share any web page, anywhere, anytime."
         },
         "ja": {
           "name": "Facebook",
           "tagline": "",
           "shortDescription": "どんなウェブページも、どこでも、いつでもシェア。",
-          "description": "どこに行っても、ウェブで友達と繋がっていましょう。",
-          "images": {
-            "carousel": "images/facebook/share-ja.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/share-ja.png",
-            "share": "images/facebook/share-ja.png"
-          }
+          "description": "どこに行っても、ウェブで友達と繋がっていましょう。"
         },
         "zh-TW": {
           "name": "Facebook",
           "tagline": "",
           "shortDescription": "隨時、隨地分享任何網頁。",
-          "description": "不論你在網海何處，都能掌握朋友行蹤。",
-          "images": {
-            "carousel": "images/facebook/facebook-share.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/facebook-share.png"
-          }
+          "description": "不論你在網海何處，都能掌握朋友行蹤。"
         }
       }
     },
@@ -495,12 +329,6 @@
         "en-US": {
           "name": "Cliqz",
           "shortDescription": "Get the most relevant news based on your interests by crafting a unique information universe.",
-          "images": {
-            "fulllogo": "images/cliqz/cliqz-logo.png",
-            "detail": "images/cliqz/cliqz-detail.png",
-            "carousel": "images/cliqz/cliqz-detail.png",
-            "share": "images/cliqz/share.png"
-          },
           "links": {
             "learnmore": "https://mozsocial.cliqz.com/"
           }
@@ -529,12 +357,6 @@
           "tagline": "The largest social network in Japan.",
           "shortDescription": "Stay informed of what your friends are up to.",
           "description": "",
-          "images": {
-            "logo": "images/mixi/icon64.png",
-            "carousel": "images/mixi/FF_promo_001.png",
-            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"],
-            "share": "images/mixi/FF_promo_002.png"
-          },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
           }
@@ -544,12 +366,6 @@
           "tagline": "好きなWebサイトを見ながらmixiをチェック",
           "description": "",
           "shortDescription": "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます 。 ",
-          "images": {
-            "logo": "images/mixi/icon64.png",
-            "carousel": "images/mixi/FF_promo_001.png",
-            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"],
-            "share": "images/mixi/FF_promo_002.png"
-          },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
           }
@@ -559,12 +375,6 @@
           "tagline": "好きなWebサイトを見ながらmixiをチェック",
           "description": "",
           "shortDescription": "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます 。 ",
-          "images": {
-            "logo": "images/mixi/icon64.png",
-            "carousel": "images/mixi/FF_promo_001.png",
-            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"],
-            "share": "images/mixi/FF_promo_002.png"
-          },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
           }
@@ -595,11 +405,6 @@
           "name": "Weibo",
           "shortDescription": "Share your interesting news anytime, anywhere.",
           "description": "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when receiving new messages.",
-          "images": {
-            "fulllogo": "images/weibo/logo-large.png",
-            "details": ["images/weibo/detail1.png", "images/weibo/detail2.png"],
-            "share": "images/weibo/share.png"
-          },
           "links": {
             "learnmore": "https://www.weibo.com/"
           }
@@ -628,11 +433,6 @@
           "name": "Google+",
           "tagline": "",
           "shortDescription": "Share the web on Google+.",
-          "images": {
-            "carousel": "images/google/share.png",
-            "detail": "images/google/share.png",
-            "share": "images/google/share.png"
-          },
           "links": {
             "learnmore": "http://www.google.com/+/learnmore/"
           }
@@ -642,11 +442,6 @@
           "tagline": "",
           "shortDescription": "Google+で友達とウェブをシェア。",
           "description": "インターネットで見つけたコンテンツをGoogle+で素早くシェア。見つけたサイトはGoogle+アカウントで仲間とシェアしたり、公開したりできます。",
-          "images": {
-            "carousel": "images/google/share-ja.png",
-            "detail": "images/google/share-ja.png",
-            "share": "images/google/share-ja.png"
-          },
           "links": {
             "learnmore": "http://www.google.com/+/learnmore/"
           }
@@ -656,11 +451,6 @@
           "tagline": "",
           "shortDescription": "在 Google+ 上和朋友分享網路。",
           "description": "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。",
-          "images": {
-            "carousel": "images/google/share.png",
-            "detail": "images/google/share.png",
-            "share": "images/google/share.png"
-          },
           "links": {
             "learnmore": "http://www.google.com/+/learnmore/"
           }
@@ -673,9 +463,9 @@
       "manifest": {
         "name": "Gmail",
         "author": "Google",
-        "iconURL": "images/google/gmail16.png",
-        "icon32URL": "images/google/gmail32.png",
-        "icon64URL": "images/google/gmail64.png",
+        "iconURL": "images/gmail/icon16.png",
+        "icon32URL": "images/gmail/icon32.png",
+        "icon64URL": "images/gmail/icon64.png",
         "origin": "https://mail.google.com",
         "homepageURL": "https://mail.google.com",
         "shareURL": "https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&body=%{body}&su=%{title}",
@@ -689,11 +479,6 @@
           "name": "Gmail",
           "shortDescription": "Send web pages and images to people using Gmail.",
           "description": "",
-          "images": {
-            "carousel": "images/google/gmail-share.png",
-            "detail": "images/google/gmail-share.png",
-            "share": "images/google/gmail-share.png"
-          },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
           }
@@ -702,11 +487,6 @@
           "name": "Gmail",
           "shortDescription": "Gmailを使って、ウェブページや画像をみんなに送れます。",
           "description": "",
-          "images": {
-            "carousel": "images/google/gmail-share-ja.png",
-            "detail": "images/google/gmail-share-ja.png",
-            "share": "images/google/gmail-share-ja.png"
-          },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
           }
@@ -715,10 +495,6 @@
           "name": "Gmail",
           "shortDescription": "用 Gmail 傳送網頁與圖片給大家。",
           "description": "Gmail 是直覺且高效率的電子郵件系統。",
-          "images": {
-            "detail": "images/google/gmail-share.png",
-            "share": "images/google/gmail-share.png"
-          },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
           }
@@ -747,11 +523,6 @@
           "name": "",
           "tagline": "Tweet to your followers",
           "shortDescription": "Twitter Share lets you quickly tweet links to your followers.",
-          "images": {
-            "detail": "images/twitter/share.png",
-            "carousel": "images/twitter/share.png",
-            "share": "images/twitter/share.png"
-          },
           "links": {
             "learnmore": "https://about.twitter.com/"
           }
@@ -761,11 +532,6 @@
           "tagline": "Пошлите твит вашим читателям.",
           "shortDescription": "Twitter Share позволяет быстро слать ссылки вашим последователям.",
           "description": "Firefox Twitter Account позволяет быстро редактировать твиты о страницах которые вы найдете в Интернете. Для удобства обмена мы укорачиваем Интернетовские адреса с помощью t.co Link Shortener.",
-          "images": {
-            "detail": "images/twitter/share-ru.png",
-            "carousel": "images/twitter/share-ru.png",
-            "share": "images/twitter/share-ru.png"
-          },
           "links": {
             "learnmore": "https://about.twitter.com/"
           }
@@ -775,11 +541,6 @@
           "tagline": "",
           "shortDescription": "Twitterを使用すると、バリアなくアイディアや情報を瞬時に作成し、共有できるようになります。",
           "description": "",
-          "images": {
-            "detail": "images/twitter/share-ja.png",
-            "carousel": "images/twitter/share-ja.png",
-            "share": "images/twitter/share-ja.png"
-          },
           "links": {
             "learnmore": "https://about.twitter.com/ja"
           }
@@ -789,11 +550,6 @@
           "tagline": "推文給你的追蹤者",
           "shortDescription": "Twitter Share 可讓你迅速推文給你的追蹤者。",
           "description": "Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co 短網址功能，讓你能迅速分享縮短過的網址。",
-          "images": {
-            "detail": "images/twitter/share.png",
-            "carousel": "images/twitter/share.png",
-            "share": "images/twitter/share.png"
-          },
           "links": {
             "learnmore": "https://about.twitter.com/zh-hant"
           }
@@ -820,11 +576,6 @@
         "en-US": {
           "name": "LinkedIn",
           "shortDescription": "Share the web with your professional network.",
-          "images": {
-            "carousel": "images/linkedin/share.png",
-            "detail": "images/linkedin/share.png",
-            "share": "images/linkedin/share.png"
-          },
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
           }
@@ -832,11 +583,6 @@
         "ru": {
           "name": "LinkedIn",
           "shortDescription": "Share the web with your professional network.",
-          "images": {
-            "carousel": "images/linkedin/share-ru.png",
-            "detail": "images/linkedin/share-ru.png",
-            "share": "images/linkedin/share-ru.png"
-          },
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
           }
@@ -845,11 +591,6 @@
           "name": "LinkedIn",
           "shortDescription": "仕事で使っているネットワークでウェブをシェア。",
           "description": "仕事で使うIDを管理。仕事で使うネットワークを構築し、保証します。知識や深い洞察、そして好機にアクセスしましょう。",
-          "images": {
-            "carousel": "images/linkedin/share-ja.png",
-            "detail": "images/linkedin/share-ja.png",
-            "share": "images/linkedin/share-ja.png"
-          },
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
           }
@@ -880,12 +621,6 @@
         "en-US": {
           "name": "Tumblr",
           "shortDescription": "Tumblr lets you effortlessly share anything.",
-          "images": {
-            "fulllogo": "images/tumblr/tumblr_logotype_blue_220.png",
-            "detail": "images/tumblr/share.png",
-            "share": "images/tumblr/share.png",
-            "carousel": "images/tumblr/share.png"
-          },
           "links": {
             "learnmore": "https://www.tumblr.com/about"
           }
@@ -894,12 +629,6 @@
           "name": "Tumblr",
           "shortDescription": "Tumblrを使えば、容易になんでもシェアできます。",
           "description": "あなたのブラウザ、電話、デスクトップ、Eメール、どこで何を使っていても、テキストや写真や引用やリンクや音楽や動画を送ることができます。色からテーマのHTMLに至るまで、あなたのTumblrの全てをカスタマイズできます。",
-          "images": {
-            "fulllogo": "images/tumblr/tumblr_logotype_blue_220.png",
-            "detail": "images/tumblr/share.png",
-            "share": "images/tumblr/share.png",
-            "carousel": "images/tumblr/share.png"
-          },
           "links": {
             "learnmore": "https://www.tumblr.com/about"
           }
@@ -908,12 +637,6 @@
           "name": "Tumblr",
           "shortDescription": "Tumblr 讓你輕鬆分享大小事。",
           "description": "用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影片。從顏色到自己主題的 HTML，均可自訂任何部分。",
-          "images": {
-            "fulllogo": "images/tumblr/tumblr_logotype_blue_220.png",
-            "detail": "images/tumblr/share.png",
-            "share": "images/tumblr/share.png",
-            "carousel": "images/tumblr/share.png"
-          },
           "links": {
             "learnmore": "https://www.tumblr.com/about"
           }
@@ -943,12 +666,6 @@
           "name": "VK",
           "shortDescription": "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly.",
           "description": "",
-          "images": {
-            "logo": "images/vkontakte/icon64.png",
-            "details": ["images/vkontakte/vk-share.png", "images/vkontakte/vk-sidebar.png"],
-            "carousel": "images/vkontakte/vk-share.png",
-            "share": "images/vkontakte/vk-share.png"
-          },
           "links": {
             "learnmore": "https://vk.com/about"
           }
@@ -957,12 +674,6 @@
           "name": "ВКонтакте",
           "shortDescription": "ВКонтакте — это социальная сеть для быстрой и удобной коммуникации между людьми по всему миру.",
           "description": "",
-          "images": {
-            "logo": "images/vkontakte/bkohtakte64.png",
-            "details": ["images/vkontakte/share-ru.png", "images/vkontakte/sidebar-ru.png"],
-            "carousel": "images/vkontakte/share-ru.png",
-            "share": "images/vkontakte/share-ru.png"
-          },
           "links": {
             "learnmore": "https://vk.com/about"
           }
@@ -975,9 +686,9 @@
       "manifest": {
         "name": "Pinterest",
         "author": "Pinterest",
-        "iconURL": "images/pinterest/logo16.png",
-        "icon32URL": "images/pinterest/logo32.png",
-        "icon64URL": "images/pinterest/logo64.png",
+        "iconURL": "images/pinterest/icon16.png",
+        "icon32URL": "images/pinterest/icon32.png",
+        "icon64URL": "images/pinterest/icon64.png",
         "origin": "https://pinterest.com",
         "shareURL": "https://pinterest.com/pin/create/button/?url=%{url}&description=%{title}&media=%{previews}",
         "description": "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.",
@@ -991,12 +702,6 @@
           "name": "Pinterest",
           "shortDescription": "Discover ideas for all your projects and interests, hand-picked by people like you. ",
           "description": "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.",
-          "images": {
-            "detaillogo": "images/pinterest/logoName.png",
-            "logo": "images/pinterest/logo64.png",
-            "detail": "images/pinterest/pinterestDetail1.png",
-            "share": "images/pinterest/pinterestDetail1.png"
-          },
           "videos": {
             "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
           },
@@ -1008,12 +713,6 @@
           "name": "Pinterest",
           "shortDescription": "あなたに似た人々によって精選されたアイディアを発見しましょう。あなたのあらゆるプロジェクトや興味のあることのために。",
           "description": "Pinterestはあなたが発見し、やりたいことを計画するのを助けるツールです。興味深そうなものを見つけたら、Pinで止めるだけです！Pinは、あなた自身のやり方で整理し、シェアするためのビジュアル・ブックマークです。",
-          "images": {
-            "detaillogo": "images/pinterest/logoName.png",
-            "logo": "images/pinterest/logo64.png",
-            "detail": "images/pinterest/pinterestDetail1.png",
-            "share": "images/pinterest/pinterestDetail1.png"
-          },
           "videos": {
             "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
           },
@@ -1048,9 +747,6 @@
           "name": "StumbleUpon",
           "shortDescription": "We help you easily discover new and interesting stuff on the Web.",
           "description": "StumbleUpon is the easiest way to find cool new websites, videos, photos and images from across the Web. We make the best recommendations just for you.",
-          "images": {
-            "fulllogo": "images/stumbleupon/stumbleupon-logo.png"
-          },
           "links": {
             "learnmore": "http://www.stumbleupon.com/about"
           }
@@ -1064,9 +760,9 @@
       "manifest": {
         "origin": "https://news.ycombinator.com/",
         "name": "Y Combinator",
-        "iconURL": "images/ycombinator/yc16.png",
-        "icon32URL": "images/ycombinator/yc32.png",
-        "icon64URL": "images/ycombinator/yc64.png",
+        "iconURL": "images/ycombinator/icon16.png",
+        "icon32URL": "images/ycombinator/icon32.png",
+        "icon64URL": "images/ycombinator/icon64.png",
   
         "shareURL": "https://news.ycombinator.com/submitlink?u=%{url}&t=%{title}",
   
@@ -1083,9 +779,6 @@
           "name": "Y Combinator",
           "shortDescription": "Hacker News: technology and business news from Y Combinator.",
           "description": "",
-          "images": {
-            "fulllogo": "images/ycombinator/yc200.png"
-          },
           "links": {
             "learnmore": "http://ycombinator.com/about.html"
           }
@@ -1117,9 +810,6 @@
           "name": "reddit",
           "shortDescription": "we power awesome communities.",
           "description": "reddit is an entertainment, social networking service and news website where registered community members can submit content, such as text posts or direct links.",
-          "images": {
-            "fulllogo": "images/reddit/redditlogo.png"
-          },
           "links": {
             "learnmore": "http://www.reddit.com/about"
           }
@@ -1134,16 +824,13 @@
         "origin": "http://digg.com",
         "shareURL": "http://digg.com/submit?url=%{url}&title=%{title}",
         "iconURL": "http://digg.com/favicon.ico",
-        "icon64URL": "images/digg/digg64.png",
+        "icon64URL": "images/digg/icon64.png",
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. "
       },
       "lang": {
         "en-US": {
           "name": "Digg",
-          "shortDescription": "a design mockup showing what this service could look like.",
-          "images": {
-            "fulllogo": "images/digg/digg64.png"
-          }
+          "shortDescription": "a design mockup showing what this service could look like."
         }
       }
     },
@@ -1171,9 +858,9 @@
         "origin": "http://www.odnoklassniki.ru/",
         "name": "Odnoklassniki",
         "shareURL": "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.noresize=on&st._surl=%{url}",
-        "iconURL": "images/odnoklassniki/logo16.png",
-        "icon32URL": "images/odnoklassniki/logo32.png",
-        "icon64URL": "images/odnoklassniki/logo64.png",
+        "iconURL": "images/odnoklassniki/icon16.png",
+        "icon32URL": "images/odnoklassniki/icon32.png",
+        "icon64URL": "images/odnoklassniki/icon64.png",
         "description": "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.",
         "author": "Odnoklassniki",
         "homepageURL": "http://www.odnoklassniki.ru/",
@@ -1185,24 +872,12 @@
         "en-US": {
           "name": "Odnoklassniki",
           "shortDescription": "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.",
-          "description": "",
-          "images": {
-            "fulllogo": "images/odnoklassniki/logo-large.png",
-            "carousel": "images/odnoklassniki/share.png",
-            "detail": "images/odnoklassniki/share.png",
-            "share": "images/odnoklassniki/share.png"
-          }
+          "description": ""
         },
         "ru": {
           "name": "Одноклассники",
           "shortDescription": "Развлекательная социальная сеть для общения с друзьями, просмотра фильмов и сериалов, прослушивания музыки и многого другого.",
-          "description": "",
-          "images": {
-            "fulllogo": "images/odnoklassniki/logo-large.png",
-            "carousel": "images/odnoklassniki/share-ru.png",
-            "detail": "images/odnoklassniki/share-ru.png",
-            "share": "images/odnoklassniki/share-ru.png"
-          }
+          "description": ""
         }
       }
     },
@@ -1227,23 +902,12 @@
         "en-US": {
           "name": "XING",
           "shortDescription": "XING is the professional network for a better working life.",
-          "description": "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry.",
-          "images": {
-            "fulllogo": "images/xing/xing_large.png",
-            "detail": "images/xing/xing-en.png",
-            "share": "images/xing/xing-en.png"
-          }
+          "description": "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
         },
         "de": {
           "name": "XING",
           "shortDescription": "XING ist das soziale Netzwerk für Beruf und Karriere.",
-          "description": "Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, Events und News aus Ihrer Branche.",
-          "images": {
-            "fulllogo": "images/xing/xing_large.png",
-            "carousel": "images/xing/xing-de.png",
-            "detail": "images/xing/xing-de.png",
-            "share": "images/xing/xing-de.png"
-          }
+          "description": "Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, Events und News aus Ihrer Branche."
         }
       }
     },
@@ -1266,10 +930,7 @@
       },
       "lang": {
         "en-US": {
-          "name": "Yammer",
-          "images": {
-            "fulllogo": "images/yammer/largelogo.png"
-          }
+          "name": "Yammer"
         }
       }
     },
