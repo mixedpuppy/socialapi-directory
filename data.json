@@ -425,9 +425,9 @@
           "tagline": "Share the web",
           "shortDescription": "Share any web page, anywhere, anytime.",
           "images": {
-            "carousel": "images/facebook/facebook-share.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/facebook-share.png"
+            "carousel": "images/facebook/carousel.png",
+            "logo": "images/facebook/logo.png",
+            "detail": "images/facebook/detail.1.png"
           }
         },
         "ru": {
@@ -435,9 +435,9 @@
           "tagline": "Share the web",
           "shortDescription": "Share any web page, anywhere, anytime.",
           "images": {
-            "carousel": "images/facebook/share-ru.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/share-ru.png"
+            "carousel": "images/facebook/carousel.ru.png",
+            "logo": "images/facebook/logo.png",
+            "detail": "images/facebook/detail.1.ru.png"
           }
         },
         "ja": {
@@ -446,10 +446,10 @@
           "shortDescription": "どんなウェブページも、どこでも、いつでもシェア。",
           "description": "どこに行っても、ウェブで友達と繋がっていましょう。",
           "images": {
-            "carousel": "images/facebook/share-ja.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/share-ja.png",
-            "share": "images/facebook/share-ja.png"
+            "carousel": "images/facebook/carousel.ja.png",
+            "logo": "images/facebook/logo.png",
+            "detail": "images/facebook/detail.1.ja.png",
+            "share": "images/facebook/share.ja.png"
           }
         },
         "zh-TW": {
@@ -458,9 +458,9 @@
           "shortDescription": "隨時、隨地分享任何網頁。",
           "description": "不論你在網海何處，都能掌握朋友行蹤。",
           "images": {
-            "carousel": "images/facebook/facebook-share.png",
-            "logo": "images/facebook/FB-f-Logo__blue_58.png",
-            "detail": "images/facebook/facebook-share.png"
+            "carousel": "images/facebook/carousel.png",
+            "logo": "images/facebook/logo.png",
+            "detail": "images/facebook/detail.1.png"
           }
         }
       }
@@ -496,9 +496,9 @@
           "name": "Cliqz",
           "shortDescription": "Get the most relevant news based on your interests by crafting a unique information universe.",
           "images": {
-            "fulllogo": "images/cliqz/cliqz-logo.png",
-            "detail": "images/cliqz/cliqz-detail.png",
-            "carousel": "images/cliqz/cliqz-detail.png",
+            "fulllogo": "images/cliqz/fulllogo.png",
+            "detail": "images/cliqz/detail.1.png",
+            "carousel": "images/cliqz/carousel.png",
             "share": "images/cliqz/share.png"
           },
           "links": {
@@ -530,10 +530,10 @@
           "shortDescription": "Stay informed of what your friends are up to.",
           "description": "",
           "images": {
-            "logo": "images/mixi/icon64.png",
-            "carousel": "images/mixi/FF_promo_001.png",
-            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"],
-            "share": "images/mixi/FF_promo_002.png"
+            "logo": "images/mixi/logo.png",
+            "carousel": "images/mixi/carousel.png",
+            "details": ["images/mixi/detail.1.png", "images/mixi/detail.2.png"],
+            "share": "images/mixi/share.png"
           },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
@@ -545,10 +545,10 @@
           "description": "",
           "shortDescription": "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます 。 ",
           "images": {
-            "logo": "images/mixi/icon64.png",
-            "carousel": "images/mixi/FF_promo_001.png",
-            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"],
-            "share": "images/mixi/FF_promo_002.png"
+            "logo": "images/mixi/logo.png",
+            "carousel": "images/mixi/carousel.png",
+            "details": ["images/mixi/detail.1.png", "images/mixi/detail.2.png"],
+            "share": "images/mixi/share.png"
           },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
@@ -560,10 +560,10 @@
           "description": "",
           "shortDescription": "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます 。 ",
           "images": {
-            "logo": "images/mixi/icon64.png",
-            "carousel": "images/mixi/FF_promo_001.png",
-            "details": ["images/mixi/FF_promo_001.png", "images/mixi/FF_promo_002.png"],
-            "share": "images/mixi/FF_promo_002.png"
+            "logo": "images/mixi/logo.png",
+            "carousel": "images/mixi/carousel.png",
+            "details": ["images/mixi/detail.1.png", "images/mixi/detail.2.png"],
+            "share": "images/mixi/share.png"
           },
           "links": {
             "learnmore": "https://mixi.jp/promotion.pl?id=social_sidebar"
@@ -596,8 +596,8 @@
           "shortDescription": "Share your interesting news anytime, anywhere.",
           "description": "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when receiving new messages.",
           "images": {
-            "fulllogo": "images/weibo/logo-large.png",
-            "details": ["images/weibo/detail1.png", "images/weibo/detail2.png"],
+            "fulllogo": "images/weibo/fulllogo.png",
+            "details": ["images/weibo/detail.1.png", "images/weibo/detail.2.png"],
             "share": "images/weibo/share.png"
           },
           "links": {
@@ -673,9 +673,9 @@
       "manifest": {
         "name": "Gmail",
         "author": "Google",
-        "iconURL": "images/google/gmail16.png",
-        "icon32URL": "images/google/gmail32.png",
-        "icon64URL": "images/google/gmail64.png",
+        "iconURL": "images/gmail/gmail16.png",
+        "icon32URL": "images/gmail/gmail32.png",
+        "icon64URL": "images/gmail/gmail64.png",
         "origin": "https://mail.google.com",
         "homepageURL": "https://mail.google.com",
         "shareURL": "https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&body=%{body}&su=%{title}",
@@ -690,9 +690,9 @@
           "shortDescription": "Send web pages and images to people using Gmail.",
           "description": "",
           "images": {
-            "carousel": "images/google/gmail-share.png",
-            "detail": "images/google/gmail-share.png",
-            "share": "images/google/gmail-share.png"
+            "carousel": "images/gmail/gmail-share.png",
+            "detail": "images/gmail/gmail-share.png",
+            "share": "images/gmail/gmail-share.png"
           },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
@@ -703,9 +703,9 @@
           "shortDescription": "Gmailを使って、ウェブページや画像をみんなに送れます。",
           "description": "",
           "images": {
-            "carousel": "images/google/gmail-share-ja.png",
-            "detail": "images/google/gmail-share-ja.png",
-            "share": "images/google/gmail-share-ja.png"
+            "carousel": "images/gmail/gmail-share-ja.png",
+            "detail": "images/gmail/gmail-share-ja.png",
+            "share": "images/gmail/gmail-share-ja.png"
           },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
@@ -716,8 +716,8 @@
           "shortDescription": "用 Gmail 傳送網頁與圖片給大家。",
           "description": "Gmail 是直覺且高效率的電子郵件系統。",
           "images": {
-            "detail": "images/google/gmail-share.png",
-            "share": "images/google/gmail-share.png"
+            "detail": "images/gmail/gmail-share.png",
+            "share": "images/gmail/gmail-share.png"
           },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
