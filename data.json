@@ -304,10 +304,10 @@
           "description": "",
           "shortDescription": "A new way to discover the most interesting content relevant to your interests.",
           "images": {
-            "fulllogo": "images/sphere/sphere-logo-258x74.jpg",
-            "carousel": "images/sphere/sphere-slide.jpg",
-            "detail": "images/sphere/sphere-slide.jpg",
-            "logo": "images/sphere/icon64.png",
+            "fulllogo": "images/sphere/fulllogo.jpg",
+            "carousel": "images/sphere/carousel.jpg",
+            "detail": "images/sphere/detail.1.jpg",
+            "logo": "images/sphere/logo.png",
             "sidebarmenu": "images/sphere/sidebarmenu.png",
             "sidebarbutton": "images/sphere/sidebarbutton.png"
           },
@@ -348,11 +348,11 @@
           "tagline": "Never lose a link again.",
           "shortDescription": "Delicious remembers so you don't have to.",
           "images": {
-            "carousel": "images/delicious/delicious.png",
-            "detail": "images/delicious/delicious.png",
+            "carousel": "images/delicious/carousel.png",
+            "detail": "images/delicious/detail.1.png",
             "share": "images/delicious/share.png",
-            "fulllogo": "images/delicious/delicious-logo.png",
-            "logo": "images/delicious/icon64.png"
+            "fulllogo": "images/delicious/fulllogo.png",
+            "logo": "images/delicious/logo.png"
           },
           "links": {
             "learnmore": "https://delicious.com/about"
@@ -364,11 +364,11 @@
           "shortDescription": "あなたは思い出す必要はありません。Deliciousが思い出します。",
           "description": "Deliciousは、ウェブであなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。",
           "images": {
-            "carousel": "images/delicious/share-ja.png",
-            "detail": "images/delicious/share-ja.png",
-            "share": "images/delicious/share-ja.png",
-            "fulllogo": "images/delicious/delicious-logo.png",
-            "logo": "images/delicious/icon64.png"
+            "carousel": "images/delicious/carousel.ja.png",
+            "detail": "images/delicious/detail.1.ja.png",
+            "share": "images/delicious/share.ja.png",
+            "fulllogo": "images/delicious/fulllogo.png",
+            "logo": "images/delicious/logo.png"
           },
           "links": {
             "learnmore": "https://delicious.com/about"
@@ -380,11 +380,11 @@
           "shortDescription": "Delicious 為你記憶更多事。",
           "description": "精心打造的 Delicious 免費服務，可為你儲存你愛的網路內容。",
           "images": {
-            "carousel": "images/delicious/delicious.png",
-            "detail": "images/delicious/delicious.png",
+            "carousel": "images/delicious/carousel.png",
+            "detail": "images/delicious/detail.1.png",
             "share": "images/delicious/share.png",
-            "fulllogo": "images/delicious/delicious-logo.png",
-            "logo": "images/delicious/icon64.png"
+            "fulllogo": "images/delicious/fulllogo.png",
+            "logo": "images/delicious/logo.png"
           },
           "links": {
             "learnmore": "https://delicious.com/about"
