@@ -1,13 +1,58 @@
 import re, os, sys
 from datetime import datetime
 import flask
-from flask import Flask, Blueprint, g, request, json, render_template, redirect, url_for
+from flask import Flask, request, json, render_template, redirect, url_for, abort
 from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
-import copy
 import collections
 
-TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es']
+TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es', 'cs', 'sl', 'pt-BR', 'pt_BR']
+
+# creating a data url for an image
+import base64
+_imageCache = {}
+def createDataURL(imagePath):
+  if imagePath[:5] in ["data:", "http:"] or imagePath[:6] == "https:":
+    return imagePath
+  if imagePath in _imageCache:
+    return _imageCache[imagePath]
+  print "converting", imagePath
+  with open("static/"+imagePath, "rb") as image_file:
+      encoded_string = base64.b64encode(image_file.read())
+      if imagePath[-3:] == "png":
+        _imageCache[imagePath] = "data:image/png;base64,"+encoded_string
+      elif imagePath[-3:] == "jpg":
+        _imageCache[imagePath] = "data:image/jpg;base64,"+encoded_string
+      else:
+        raise "unknown image type"
+  return _imageCache[imagePath]
+
+def getImages(k, locale):
+  imagePath = "static/images/"+k
+  images = {}
+  names = ["logo", "fulllogo", "detaillogo", "share", "carousel", "sidebarmenu", "sidebarbutton"]
+  for name in names:
+    filenames = ["%s.%s.png" % (name, locale), "%s.%s.jpg" % (name, locale), "%s.png" % name, "%s.jpg" % name, "%s.en-US.png" % name, "%s.en-US.jpg" % name]
+    for fn in filenames:
+      fn = os.path.join("images", k, fn)
+      if os.path.exists(os.path.join("static", fn)):
+        images[name] = fn
+        break
+  # get detail images
+  details = []
+  for i in range(1,3):
+    filenames = ["detail.%d.%s.png" % (i, locale), "detail.%d.%s.jpg" % (i, locale), "detail.%d.png" % i, "detail.%d.jpg" % i, "detail.%d.en-US.png" % i, "detail.%d.en-US.jpg" % i]
+    for fn in filenames:
+      fn = os.path.join("images", k, fn)
+      if os.path.exists(os.path.join("static", fn)):
+        details.append(fn)
+        break
+  if len(details) == 1:
+    images["detail"] = details[0]
+  elif len(details) > 1:
+    images["details"] = details
+  #print k, repr(images)
+  return images
 
 # creating a data url for an image
 import base64
@@ -35,15 +80,11 @@ class RegexConverter(BaseConverter):
 
 def createapp():
   demo = '-d' in sys.argv
-  #app.config["APPLICATION_ROOT"] = "/socialapi-directory"
   app = Flask(__name__)
-  #app.debug = True
-  #app.config.from_pyfile('babel.cfg')
-  babel = Babel(app)
-
+  if '--debug' in sys.argv:
+    app.debug = True
   app.url_map.converters['regex'] = RegexConverter
-
-  bp = Blueprint('bp', __name__)
+  babel = Babel(app)
 
   config = json.load(app.open_resource('config.json'), object_pairs_hook=collections.OrderedDict)
 
@@ -55,7 +96,7 @@ def createapp():
     langs = {}
     for b in babel.list_translations():
       if not demo and str(b) not in TRANSLATIONS:
-        print str(b)," is not in ",TRANSLATIONS
+        #print str(b)," is not in ",TRANSLATIONS
         continue
       if b.territory:
         langs["%s-%s" % (b.language, b.territory)] = b.display_name
@@ -65,7 +106,7 @@ def createapp():
 
   @babel.localeselector
   def get_locale():
-    #print [str(b) for b in babel.list_translations()]
+    print [str(b) for b in babel.list_translations()]
     lang = request.path[1:].split('/', 1)[0].replace('-', '_')
     langs = {}
     for b in babel.list_translations():
@@ -75,13 +116,14 @@ def createapp():
         langs["%s_%s" % (b.language, b.territory)] = str(b)
       else:
         langs[b.language] = str(b)
-    print lang, langs
+    #print lang, langs
     if lang in langs.keys():
       return lang
     else:
       return 'en_US'
 
   def dataFixup(k, p, locale):
+    images = getImages(k, locale)
     p['key'] = k
     #if locale in p["lang"]:
     #  p["lang"]["default"] = p["lang"][locale]
@@ -99,13 +141,21 @@ def createapp():
     # various lang pack fixups, use manifest entries for missing lang entries
     #d = p["lang"]["default"]
     d = p["viewData"]
+    d['images'] = getImages(k, locale)
     if 'images' not in d:
       d['images'] = {}
     if 'logo' not in d['images']:
       d['images']['logo'] = p['manifest']['icon64URL'] or p['manifest']['icon32URL']
     if 'description' not in d:
       d['description'] = p['manifest']['description'];
-    
+
+    # make manifest icons data urls
+    for image in ["iconURL", "icon32URL", "icon64URL", "unmarkedIcon", "markedIcon"]:
+      if image in p['manifest']:
+        p['manifest'][image] = createDataURL(p['manifest'][image])
+      #else:
+      #  print "WARNING: ",image,"missing from manfiest for",p['manifest']['origin']
+
     # aid activated providers in knowing what locale a user installed from
     for n,v in p['manifest'].iteritems():
         if isinstance(v, (str, unicode)):
@@ -119,30 +169,31 @@ def createapp():
     today = datetime.today()
     last = []
     for d, a in schedule.iteritems():
-        last = a
-        if today > datetime.strptime(d, "%Y-%m-%d"):
+        if today < datetime.strptime(d, "%Y-%m-%d"):
             return a
+        last = a
     return last
 
-  def renderTemplate(template, locale, path=None, base=""):
+  def renderTemplate(template, locale, path=None):
+    locales = get_supported_locales()
+    #if locale not in locales:
+    #  abort(404)
+
     out = render_template('data-en.json')
-    data = json.loads(out)
-    #data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    data = json.loads(out, object_pairs_hook=collections.OrderedDict)
 
     data["production"] = not demo
     basehref = ""
-    if path:
-        baseurl = os.path.dirname(path)
-    if base:
-      basehref = "/".join([base, locale]) + '/'
-    elif locale:
+    if locale:
       basehref = locale + '/'
     # add localized strings
     data["locale"] = locale
 
     if path:
       path = os.path.splitext(path)[0]
-    if path and path in data["source"]:
+      if path not in data["source"]:
+        abort(404)
+    if path:
       # on a detail page, just copy the specific data we need
       d = dataFixup(path, data["source"][path], locale)
       d['translations'] = get_supported_locales()
@@ -182,9 +233,9 @@ def createapp():
       data['current_year'] = datetime.now().year
       data['config'] = config
       return render_template(template, **data)
-  
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
-  def static_proxy(base, locale=None, path=None):
+
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')
+  def static_proxy(locale=None, path=None):
     # if root is locale, capture that, but use the same local file paths
     try:
       root, path = path.split('/', 1)
@@ -197,54 +248,34 @@ def createapp():
       template = path
     else:
       template = path and "provider.html" or "index.html"
-    return renderTemplate(template, locale, path, base)
+    return renderTemplate(template, locale, path)
 
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
-  def bp_activated(base, locale=None, path=None):
-    # if root is locale, capture that, but use the same local file paths
-    template = path and "activated.html" or "activatedIndex.html"
-    return renderTemplate(template, locale, path, base=base)
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/')
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/activated/<path:path>')
   def app_activated(locale=None, path=None):
     template = path and "activated.html" or "activatedIndex.html"
     return renderTemplate(template, locale, path)
 
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
-  def bp_sharePanel(base, locale=None):
-    # if root is locale, capture that, but use the same local file paths
-    return renderTemplate('sharePanel.html', locale, base=base)
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def app_sharePanel(locale=None):
     return renderTemplate('sharePanel.html', locale)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):
-    return static_proxy(None, locale, path)
+    return static_proxy(locale, path)
 
-  @bp.route('/<path:path>')
-  def static_files(base=None, path=None):
-    if base and not path:
-      return index(None, locale)
-    if base in ["css", "images", "fonts", "js"]:
-      path = base + "/" + path
+  @app.route('/<path:path>')
+  def static_files(path=None):
+    if not path:
+      return redirectpage()
     return app.send_static_file(path)
-
-  @bp.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
-  def index(base, locale):
-    # if root is locale, capture that, but use the same local file paths
-    if not demo and locale not in TRANSLATIONS:
-        return app.send_static_file("redir.html")
-    return renderTemplate('index.html', locale, base=base)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/')
   def app_index(locale):
     if not demo and locale not in TRANSLATIONS:
         return app.send_static_file("redir.html")
-    return index(None, locale)
+    return renderTemplate('index.html', locale)
 
-  @bp.route("/redirect.html")
   @app.route("/redirect.html")
   def redirectpage(base=None):
     # the server should handle a redirect. Since the frozen static pages will be
@@ -252,16 +283,12 @@ def createapp():
     # level index page.  We use that here to ensure that works as well.
     return app.send_static_file("redirect.html")
 
-  @bp.route("/")
   @app.route("/")
   def root(base=None):
     # the server should handle a redirect. Since the frozen static pages will be
     # served on github pages for testing, we have a redirect located in the top
     # level index page.  We use that here to ensure that works as well.
     return app.send_static_file("index.html")
-
-  app.register_blueprint(bp, url_prefix="/<path:base>")
-
 
   return app
 

@@ -1,25 +1,26 @@
+<!DOCTYPE HTML>
 <html>
 <head>
   <base href="/{{basehref}}"/>
   <title>Firefox SocialAPI Services</title>
   <style>
   * {
-    font-family: "Open Sans Light","Droid Arabic Naskh","Mplus Fulah Light",sans-serif;
-    font-weight: normal;
+    font: menu;
     color: #484848;
   }
   body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to bottom, rgba(247,247,247,.99), rgba(247,247,247,.95));
-    width: 340px;
-    height: 280px;
+    background: transparent;
     border: none;
     overflow: hidden;
   }
-  .content {
-    margin: 0;
-    padding: 18px 0 0 0;
+  #share-directory {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%);
   }
   span {
     margin :0px;
@@ -28,34 +29,39 @@
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
   }
   #share-directory-grid {
-    height: 220px;
+    display: block;
     overflow: hidden;
-    padding: 0 10px;
+    width: 240px;
   }
 
-  .button {
-    width: 64px;
-    height: 64px;
-    margin: 10px;
-    padding: 11px;
-  }
-  .button:hover {
-    padding: 10px;
-    border-radius: 2px;
-    border: 1px solid #b5b5b8;
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom, #d9d9d9, #e3e3e3);
+  button {
+    width: 68px;
+    height: 68px;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid transparent;
     cursor: pointer;
+    transition: background 250ms,
+                border-color 250ms;
+    background: transparent;
   }
-  .button img {
-    max-height: 64px;
-    max-width: 64px;
+  button:hover {
+    background: hsla(210,4%,10%,.08) linear-gradient(hsla(0,0%,100%,.3), hsla(0,0%,100%,.1)) padding-box;
+    border-color: hsla(0,0%,0%,.2);
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
+                0 1px 0 hsla(0,0%,100%,.5) inset;
+  }
+  button:active {
+    background: hsla(0,0%,0%,.02) linear-gradient(hsla(0,0%,0%,.12), transparent) border-box;
+    border-color: hsla(0,0%,0%,.3);
+    box-shadow: 0 1px 0 hsla(0,0%,100%,.5),
+                0 1px 0 hsla(0,0%,0%,.05) inset,
+                0 1px 1px hsla(0,0%,0%,.2) inset;
+  }
+  button img {
+    max-height: 48px;
+    max-width: 48px;
     margin: auto;  
-    position: absolute;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
   }
   
   .col {
@@ -81,6 +87,31 @@
   .bottom {
     text-align: center;
   }
+  [data-tooltip]:after {
+    content: attr(data-tooltip);
+
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out
+                
+
+    display: block;
+    line-height: 16px;
+    background: rgb(252,255,199);
+    padding: 2px 4px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 0 0 4px hsla(210,4%,10%,.4);
+    z-index: 100000;
+    white-space: nowrap;
+  }
+  [data-tooltip]:hover:after {        
+    opacity : 1;
+    transition-delay: 500ms;
+  }
   </style>
   <script src="../js/jquery-1.11.0.min.js"></script>
   <script>
@@ -97,24 +128,29 @@
       node.dispatchEvent(event);
       ga('send', 'event', 'click', 'activation', name);
     }
+    function onfocus(event) {
+      if (event.target == window || event.target == document) {
+        var btn = document.getElementById("share-directory-grid").firstElementChild;
+        btn.focus();
+      }
+    }
+    window.addEventListener("focus", onfocus, true);
   </script>
 </head>
 
 <body class="html-ltr sky">
   <div id="wrapper" class="content">
-    <span>{{ _('Click on a service to add it to Firefox.') }}</span>
     <div id="share-directory">
-      <div id="share-directory-grid" class="row clearfix">
+      <div id="share-directory-grid" class="clearfix">
+      {% set count = 1 %}
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
-        <div class="button col clearfix" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
-        <img src="{{p['manifest']['icon64URL']}}"></img>
-        </div>
+        <button type="button" class="col clearfix" data-tooltip="{{p['manifest']['name']}}" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
+          <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
+        </button>
+        {% set count = count + 1 %}
         {% endif %}
       {% endfor %}
-      </div>
-      <div class="bottom row clearfix">
-        <a href="/" target="_blank" class="viewmore">{{ _('View more') }}</a>
       </div>
     </div>
   </div>

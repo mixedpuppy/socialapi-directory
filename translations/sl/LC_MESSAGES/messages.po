@@ -7,35 +7,50 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2014-08-26 18:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: sl <LL@li.org>\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 "
 "|| n%100==4 ? 2 : 3)\n"
+=======
+"POT-Creation-Date: 2014-08-19 10:57-0700\n"
+"PO-Revision-Date: 2014-09-30 08:52+0000\n"
+"Last-Translator: Matjaž <m@owca.info>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sl\n"
+>>>>>>> 4a8dcfbd16a57d5207841e4cb82a33436dde0e0e
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+<<<<<<< HEAD
+=======
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3);\n"
+"X-Generator: Pootle 2.5.0\n"
+>>>>>>> 4a8dcfbd16a57d5207841e4cb82a33436dde0e0e
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1412067127.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr ""
+msgstr "Domača stran"
 
 #: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "Čestitke, <strong>%(name)s</strong> je sedaj aktiviran v Firefoxu!"
 
 #: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "Dobite največ iz %(name)s"
 
 #: templates/activated.html:29
 msgid "Bookmark this page"
-msgstr ""
+msgstr "Dodaj stran med zaznamke"
 
 #: templates/activated.html:30
 #, python-format
@@ -44,11 +59,14 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
+"Če prvič uporabljate to storitev, jo dodajte med zaznamke, ker vsebuje "
+"uporabne podatke in povezave za pomoč pri uporabi in prilagoditvi Firefoxa. "
+"Nadaljujte z branjem za več o tem, kako %(name)s deluje v Firefoxu."
 
 #: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Delite vsebino, ki vam je všeč, z uporabo stortive %(name)s"
 
 #: templates/activated.html:40
 #, python-format
@@ -56,10 +74,12 @@ msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
+"S klikom na gumb lahko delite zanimivo vsebino na poljubni spletni strani s "
+"svojim družbenim omrežjem z uporabo storitve <strong>%(name)s</strong>."
 
 #: templates/activated.html:45
 msgid "Save content for later"
-msgstr ""
+msgstr "Shrani vsebino za kasneje"
 
 #: templates/activated.html:47
 #, python-format
@@ -67,11 +87,13 @@ msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
 msgstr ""
+"S klikom na gumb lahko shranite zanimivo vsebino iz poljubne spletne strani "
+"na <strong>%(name)s</strong>."
 
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "Bodite pozorni na najnovejše iz %(name)s"
 
 #: templates/activated.html:54
 #, python-format
@@ -79,10 +101,12 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
+"<strong>%(name)s</strong> vam bo omogočil najnovejše iz svoje storitve, samo "
+"kliknite na njihovo ikono v orodni vrstici."
 
 #: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "Dodajte gumb stranske vrstice v svojo orodno vrstico"
 
 #: templates/activated.html:64
 #, python-format
@@ -92,6 +116,10 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"Od Firefoxa 30 naprej lahko upravljate stranske vrstice s pomočjo gumba v "
+"orodni vrstici. Nahaja se v <a href=\"%(url)s\">meniju za prilagajanje</a>, od "
+"koder ga morate povleči v orodno vrstico in že boste lahko hitro "
+"preklapljali med stranskimi vrsticami."
 
 #: templates/activated.html:72
 msgid ""
@@ -99,14 +127,17 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Dodatno lahko preprosto spremenite storitev v svoji stranski vrstici ali pa "
+"skrijete stransko vrstico iz nje same. Uporabite lahko tudi meni "
+"<strong>Pogled->Orodne vrstice</strong> v Firefoxu."
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Spremenite nastavitve v Upravljalcu dodatkov"
 
 #: templates/activated.html:81
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Upravljalec dodatkov"
 
 #: templates/activated.html:83
 #, python-format
@@ -115,17 +146,20 @@ msgid ""
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
 msgstr ""
+"Z uporabo Upravljalca dodatkov v Firefoxu lahko preprosto <a href=\"%"
+"(url)s\">upravljate s svojimi storitvami</a> ter jih začasno onemogočite ali "
+"odstranite."
 
 #: templates/activated.html:88
 msgid "Next Steps"
-msgstr ""
+msgstr "Naslednji koraki"
 
 #: templates/activated.html:90
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Več o tem, kaj ta storitev doprinese Firefoxu</a>."
 
 #: templates/activated.html:92
 #, python-format
@@ -133,10 +167,13 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
+"<a href=\"%(url)s\">Več o tem</a>, kaj ponuja <a href=\"%(url)s\">%(name)s</a>."
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
+"<a href=\".\">Raziskujte in poiščite več storitev</a>, ki jih lahko dodate "
+"Firefoxu."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
@@ -506,50 +543,53 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
+"Deli te vsebine so avtorsko zaščiteni v obdobju 1998–%(current_year)s s "
+"strani sodelavcev mozilla.org. Vsebina je na voljo pod dovoljenjem <a href=\""
+"%(url)s\">Creative Commons</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Prispevajte k tej strani"
 
 #: templates/footer.html:20
 msgid "Contact Us"
-msgstr ""
+msgstr "Pišite nam"
 
 #: templates/footer.html:21
 msgid "Partner with Us"
-msgstr ""
+msgstr "Sodelujte z nami"
 
 #: templates/footer.html:22
 msgid "Donate"
-msgstr ""
+msgstr "Donirajte"
 
 #: templates/footer.html:23
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Politika zasebnosti"
 
 #: templates/footer.html:24
 msgid "Legal Notices"
-msgstr ""
+msgstr "Pravna obvestila"
 
 #: templates/footer.html:25
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Obvestite nas o zlorabi trgovske znamke"
 
 #: templates/footer.html:30
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI za razvijalce"
 
 #: templates/index.html:39 templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "Vključi zdaj"
 
 #: templates/index.html:40 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "Več &hellip;"
 
 #: templates/index.html:56
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Izboljšajte svojo izkušnjo s Firefoxom, iztisnite več iz spleta"
 
 #: templates/index.html:57
 msgid ""
@@ -559,144 +599,160 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
+"Preprosta uporaba, brez prenašanja in nameščanja programske opreme in "
+"dodatkov, samo kliknite Vključi in nova zmogljivost bo dostavljena iz "
+"spleta. Družbeni mediji, shranjevanje zaznamkov v oblaku, glasba, "
+"personalizirane novice in druge storitve v Firefoxu vam omogočajo, da "
+"iztisnete več iz spleta."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Ta storitev podpira deljenje vsebine"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "deli"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Ta storitev omogoča shranjevanje zaznamkov"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "zaznamki"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Ta storitev doda stransko vrstico v Firefox"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "stranska vrstica"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
+"Ta storitev doda gumb orodne vrstice v Firefox, ki lahko prikazuje obvestila"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "obvestila"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "To je predstavitvena storitev"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "predstavitev"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Ta storitev zahteva še neizdano različico Firefoxa"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Drugi jeziki:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Pojdi"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s za Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Storitve za Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Prenesi Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Nadgradi Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "zahteva Firefox 29"
 
 #: templates/layout.html:90
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "Predstavitev SocialAPI"
 
 #: templates/layout.html:95
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox za namizje"
 
 #: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Za namestitev družbenih storitev morate uporabiti Firefox."
 
 #: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
-msgstr ""
+msgstr "Prenesi"
 
 #: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
+"Namestitev družbenih storitev zahteva najmanj Firefox različice 29. "
+"Nadgradite svojo različico Firefoxa zdaj."
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Ta storitev zahteva še neizdano različico Firefoxa."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Namesti Firefox Beta"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "zahteva Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Namesti Firefox Aurora"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Namesti Firefox Nightly"
 
 #: templates/provider.html:56
 msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
+"Ta storitev je v stopnji beta, zato nekatere zmogljivosti morda ne bodo "
+"delovale pravilno."
 
 #: templates/provider.html:59
 msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
 msgstr ""
+"Ta storitev je namenjena zgolj predstavitvi, zato morda ne bo delovala "
+"pravilno."
 
 #: templates/sharePanel.html:105
 msgid "Click on a service to add it to Firefox."
-msgstr ""
+msgstr "Kliknite storitev, da jo dodate v Firefox."
 
 #: templates/sharePanel.html:117
 msgid "View more"
+<<<<<<< HEAD
 msgstr ""
 
+=======
+msgstr "Pokaži več"
+>>>>>>> 4a8dcfbd16a57d5207841e4cb82a33436dde0e0e
