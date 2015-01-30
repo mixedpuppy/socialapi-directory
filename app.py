@@ -27,6 +27,33 @@ def createDataURL(imagePath):
         raise "unknown image type"
   return _imageCache[imagePath]
 
+def getImages(k, locale):
+  imagePath = "static/images/"+k
+  images = {}
+  names = ["logo", "fulllogo", "detaillogo", "share", "carousel", "sidebarmenu", "sidebarbutton"]
+  for name in names:
+    filenames = ["%s.%s.png" % (name, locale), "%s.%s.jpg" % (name, locale), "%s.png" % name, "%s.jpg" % name, "%s.en-US.png" % name, "%s.en-US.jpg" % name]
+    for fn in filenames:
+      fn = os.path.join("images", k, fn)
+      if os.path.exists(os.path.join("static", fn)):
+        images[name] = fn
+        break
+  # get detail images
+  details = []
+  for i in range(1,3):
+    filenames = ["detail.%d.%s.png" % (i, locale), "detail.%d.%s.jpg" % (i, locale), "detail.%d.png" % i, "detail.%d.jpg" % i, "detail.%d.en-US.png" % i, "detail.%d.en-US.jpg" % i]
+    for fn in filenames:
+      fn = os.path.join("images", k, fn)
+      if os.path.exists(os.path.join("static", fn)):
+        details.append(fn)
+        break
+  if len(details) == 1:
+    images["detail"] = details[0]
+  elif len(details) > 1:
+    images["details"] = details
+  #print k, repr(images)
+  return images
+
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
         super(RegexConverter, self).__init__(url_map)
@@ -54,7 +81,7 @@ def createapp():
 
   @babel.localeselector
   def get_locale():
-    #print [str(b) for b in babel.list_translations()]
+    print [str(b) for b in babel.list_translations()]
     lang = request.path[1:].split('/', 1)[0].replace('-', '_')
     langs = {}
     for b in babel.list_translations():
@@ -71,6 +98,7 @@ def createapp():
       return 'en_US'
 
   def dataFixup(k, p, locale):
+    images = getImages(k, locale)
     p['key'] = k
     if locale in p["lang"]:
       p["lang"]["default"] = p["lang"][locale]
@@ -80,6 +108,7 @@ def createapp():
     # for demo site purposes, massage the data
     # various lang pack fixups, use manifest entries for missing lang entries
     d = p["lang"]["default"]
+    d['images'] = getImages(k, locale)
     if 'images' not in d:
       d['images'] = {}
     if 'logo' not in d['images']:
