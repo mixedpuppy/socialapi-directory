@@ -629,8 +629,8 @@
           "tagline": "",
           "shortDescription": "Share the web on Google+.",
           "images": {
-            "carousel": "images/google/share.png",
-            "detail": "images/google/share.png",
+            "carousel": "images/google/carousel.png",
+            "detail": "images/google/detail.1.png",
             "share": "images/google/share.png"
           },
           "links": {
@@ -643,9 +643,9 @@
           "shortDescription": "Google+で友達とウェブをシェア。",
           "description": "インターネットで見つけたコンテンツをGoogle+で素早くシェア。見つけたサイトはGoogle+アカウントで仲間とシェアしたり、公開したりできます。",
           "images": {
-            "carousel": "images/google/share-ja.png",
-            "detail": "images/google/share-ja.png",
-            "share": "images/google/share-ja.png"
+            "carousel": "images/google/carousel.ja.png",
+            "detail": "images/google/detail.1.ja.png",
+            "share": "images/google/share.ja.png"
           },
           "links": {
             "learnmore": "http://www.google.com/+/learnmore/"
@@ -657,8 +657,8 @@
           "shortDescription": "在 Google+ 上和朋友分享網路。",
           "description": "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。",
           "images": {
-            "carousel": "images/google/share.png",
-            "detail": "images/google/share.png",
+            "carousel": "images/google/carousel.png",
+            "detail": "images/google/detail.1.png",
             "share": "images/google/share.png"
           },
           "links": {
@@ -673,9 +673,9 @@
       "manifest": {
         "name": "Gmail",
         "author": "Google",
-        "iconURL": "images/gmail/gmail16.png",
-        "icon32URL": "images/gmail/gmail32.png",
-        "icon64URL": "images/gmail/gmail64.png",
+        "iconURL": "images/gmail/icon16.png",
+        "icon32URL": "images/gmail/icon32.png",
+        "icon64URL": "images/gmail/icon64.png",
         "origin": "https://mail.google.com",
         "homepageURL": "https://mail.google.com",
         "shareURL": "https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&body=%{body}&su=%{title}",
@@ -690,9 +690,9 @@
           "shortDescription": "Send web pages and images to people using Gmail.",
           "description": "",
           "images": {
-            "carousel": "images/gmail/gmail-share.png",
-            "detail": "images/gmail/gmail-share.png",
-            "share": "images/gmail/gmail-share.png"
+            "carousel": "images/gmail/carousel.png",
+            "detail": "images/gmail/detail.1.png",
+            "share": "images/gmail/share.png"
           },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
@@ -703,9 +703,9 @@
           "shortDescription": "Gmailを使って、ウェブページや画像をみんなに送れます。",
           "description": "",
           "images": {
-            "carousel": "images/gmail/gmail-share-ja.png",
-            "detail": "images/gmail/gmail-share-ja.png",
-            "share": "images/gmail/gmail-share-ja.png"
+            "carousel": "images/gmail/carousel.ja.png",
+            "detail": "images/gmail/detail.1.ja.png",
+            "share": "images/gmail/share.ja.png"
           },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
@@ -716,8 +716,8 @@
           "shortDescription": "用 Gmail 傳送網頁與圖片給大家。",
           "description": "Gmail 是直覺且高效率的電子郵件系統。",
           "images": {
-            "detail": "images/gmail/gmail-share.png",
-            "share": "images/gmail/gmail-share.png"
+            "detail": "images/gmail/detail.1.png",
+            "share": "images/gmail/share.png"
           },
           "links": {
             "learnmore": "https://www.gmail.com/intl/en/mail/help/about.html"
@@ -748,8 +748,8 @@
           "tagline": "Tweet to your followers",
           "shortDescription": "Twitter Share lets you quickly tweet links to your followers.",
           "images": {
-            "detail": "images/twitter/share.png",
-            "carousel": "images/twitter/share.png",
+            "detail": "images/twitter/detail.1.png",
+            "carousel": "images/twitter/carousel.png",
             "share": "images/twitter/share.png"
           },
           "links": {
@@ -762,9 +762,9 @@
           "shortDescription": "Twitter Share позволяет быстро слать ссылки вашим последователям.",
           "description": "Firefox Twitter Account позволяет быстро редактировать твиты о страницах которые вы найдете в Интернете. Для удобства обмена мы укорачиваем Интернетовские адреса с помощью t.co Link Shortener.",
           "images": {
-            "detail": "images/twitter/share-ru.png",
-            "carousel": "images/twitter/share-ru.png",
-            "share": "images/twitter/share-ru.png"
+            "detail": "images/twitter/detail.1.ru.png",
+            "carousel": "images/twitter/carousel.ru.png",
+            "share": "images/twitter/share.ru.png"
           },
           "links": {
             "learnmore": "https://about.twitter.com/"
@@ -776,9 +776,9 @@
           "shortDescription": "Twitterを使用すると、バリアなくアイディアや情報を瞬時に作成し、共有できるようになります。",
           "description": "",
           "images": {
-            "detail": "images/twitter/share-ja.png",
-            "carousel": "images/twitter/share-ja.png",
-            "share": "images/twitter/share-ja.png"
+            "detail": "images/twitter/detail.1.ja.png",
+            "carousel": "images/twitter/carousel.ja.png",
+            "share": "images/twitter/share.ja.png"
           },
           "links": {
             "learnmore": "https://about.twitter.com/ja"
@@ -790,8 +790,8 @@
           "shortDescription": "Twitter Share 可讓你迅速推文給你的追蹤者。",
           "description": "Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co 短網址功能，讓你能迅速分享縮短過的網址。",
           "images": {
-            "detail": "images/twitter/share.png",
-            "carousel": "images/twitter/share.png",
+            "detail": "images/twitter/detail.1.png",
+            "carousel": "images/twitter/carousel.png",
             "share": "images/twitter/share.png"
           },
           "links": {
@@ -821,8 +821,8 @@
           "name": "LinkedIn",
           "shortDescription": "Share the web with your professional network.",
           "images": {
-            "carousel": "images/linkedin/share.png",
-            "detail": "images/linkedin/share.png",
+            "carousel": "images/linkedin/carousel.png",
+            "detail": "images/linkedin/detail.1.png",
             "share": "images/linkedin/share.png"
           },
           "links": {
@@ -833,9 +833,9 @@
           "name": "LinkedIn",
           "shortDescription": "Share the web with your professional network.",
           "images": {
-            "carousel": "images/linkedin/share-ru.png",
-            "detail": "images/linkedin/share-ru.png",
-            "share": "images/linkedin/share-ru.png"
+            "carousel": "images/linkedin/carousel.ru.png",
+            "detail": "images/linkedin/detail.1.ru.png",
+            "share": "images/linkedin/share.ru.png"
           },
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
@@ -846,9 +846,9 @@
           "shortDescription": "仕事で使っているネットワークでウェブをシェア。",
           "description": "仕事で使うIDを管理。仕事で使うネットワークを構築し、保証します。知識や深い洞察、そして好機にアクセスしましょう。",
           "images": {
-            "carousel": "images/linkedin/share-ja.png",
-            "detail": "images/linkedin/share-ja.png",
-            "share": "images/linkedin/share-ja.png"
+            "carousel": "images/linkedin/carousel.ja.png",
+            "detail": "images/linkedin/detail.1.ja.png",
+            "share": "images/linkedin/share.ja.png"
           },
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
@@ -881,10 +881,10 @@
           "name": "Tumblr",
           "shortDescription": "Tumblr lets you effortlessly share anything.",
           "images": {
-            "fulllogo": "images/tumblr/tumblr_logotype_blue_220.png",
-            "detail": "images/tumblr/share.png",
+            "fulllogo": "images/tumblr/fulllogo.png",
+            "detail": "images/tumblr/detail.1.png",
             "share": "images/tumblr/share.png",
-            "carousel": "images/tumblr/share.png"
+            "carousel": "images/tumblr/carousel.png"
           },
           "links": {
             "learnmore": "https://www.tumblr.com/about"
@@ -895,10 +895,10 @@
           "shortDescription": "Tumblrを使えば、容易になんでもシェアできます。",
           "description": "あなたのブラウザ、電話、デスクトップ、Eメール、どこで何を使っていても、テキストや写真や引用やリンクや音楽や動画を送ることができます。色からテーマのHTMLに至るまで、あなたのTumblrの全てをカスタマイズできます。",
           "images": {
-            "fulllogo": "images/tumblr/tumblr_logotype_blue_220.png",
-            "detail": "images/tumblr/share.png",
+            "fulllogo": "images/tumblr/fulllogo.png",
+            "detail": "images/tumblr/detail.1.png",
             "share": "images/tumblr/share.png",
-            "carousel": "images/tumblr/share.png"
+            "carousel": "images/tumblr/carousel.png"
           },
           "links": {
             "learnmore": "https://www.tumblr.com/about"
@@ -909,10 +909,10 @@
           "shortDescription": "Tumblr 讓你輕鬆分享大小事。",
           "description": "用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影片。從顏色到自己主題的 HTML，均可自訂任何部分。",
           "images": {
-            "fulllogo": "images/tumblr/tumblr_logotype_blue_220.png",
-            "detail": "images/tumblr/share.png",
+            "fulllogo": "images/tumblr/fulllogo.png",
+            "detail": "images/tumblr/detail.1.png",
             "share": "images/tumblr/share.png",
-            "carousel": "images/tumblr/share.png"
+            "carousel": "images/tumblr/carousel.png"
           },
           "links": {
             "learnmore": "https://www.tumblr.com/about"
@@ -944,10 +944,10 @@
           "shortDescription": "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly.",
           "description": "",
           "images": {
-            "logo": "images/vkontakte/icon64.png",
-            "details": ["images/vkontakte/vk-share.png", "images/vkontakte/vk-sidebar.png"],
-            "carousel": "images/vkontakte/vk-share.png",
-            "share": "images/vkontakte/vk-share.png"
+            "logo": "images/vkontakte/logo.png",
+            "details": ["images/vkontakte/detail.1.png", "images/vkontakte/detail.2.png"],
+            "carousel": "images/vkontakte/carousel.png",
+            "share": "images/vkontakte/share.png"
           },
           "links": {
             "learnmore": "https://vk.com/about"
@@ -958,10 +958,10 @@
           "shortDescription": "ВКонтакте — это социальная сеть для быстрой и удобной коммуникации между людьми по всему миру.",
           "description": "",
           "images": {
-            "logo": "images/vkontakte/bkohtakte64.png",
-            "details": ["images/vkontakte/share-ru.png", "images/vkontakte/sidebar-ru.png"],
-            "carousel": "images/vkontakte/share-ru.png",
-            "share": "images/vkontakte/share-ru.png"
+            "logo": "images/vkontakte/logo.ru.png",
+            "details": ["images/vkontakte/detail.1.ru.png", "images/vkontakte/detail.2.ru.png"],
+            "carousel": "images/vkontakte/carousel.ru.png",
+            "share": "images/vkontakte/share.ru.png"
           },
           "links": {
             "learnmore": "https://vk.com/about"
