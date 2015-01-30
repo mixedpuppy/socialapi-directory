@@ -975,9 +975,9 @@
       "manifest": {
         "name": "Pinterest",
         "author": "Pinterest",
-        "iconURL": "images/pinterest/logo16.png",
-        "icon32URL": "images/pinterest/logo32.png",
-        "icon64URL": "images/pinterest/logo64.png",
+        "iconURL": "images/pinterest/icon16.png",
+        "icon32URL": "images/pinterest/icon32.png",
+        "icon64URL": "images/pinterest/icon64.png",
         "origin": "https://pinterest.com",
         "shareURL": "https://pinterest.com/pin/create/button/?url=%{url}&description=%{title}&media=%{previews}",
         "description": "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.",
@@ -992,10 +992,10 @@
           "shortDescription": "Discover ideas for all your projects and interests, hand-picked by people like you. ",
           "description": "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.",
           "images": {
-            "detaillogo": "images/pinterest/logoName.png",
-            "logo": "images/pinterest/logo64.png",
-            "detail": "images/pinterest/pinterestDetail1.png",
-            "share": "images/pinterest/pinterestDetail1.png"
+            "detaillogo": "images/pinterest/detaillogo.png",
+            "logo": "images/pinterest/logo.png",
+            "detail": "images/pinterest/detail.1.png",
+            "share": "images/pinterest/share.png"
           },
           "videos": {
             "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
@@ -1009,10 +1009,10 @@
           "shortDescription": "あなたに似た人々によって精選されたアイディアを発見しましょう。あなたのあらゆるプロジェクトや興味のあることのために。",
           "description": "Pinterestはあなたが発見し、やりたいことを計画するのを助けるツールです。興味深そうなものを見つけたら、Pinで止めるだけです！Pinは、あなた自身のやり方で整理し、シェアするためのビジュアル・ブックマークです。",
           "images": {
-            "detaillogo": "images/pinterest/logoName.png",
-            "logo": "images/pinterest/logo64.png",
-            "detail": "images/pinterest/pinterestDetail1.png",
-            "share": "images/pinterest/pinterestDetail1.png"
+            "detaillogo": "images/pinterest/detaillogo.png",
+            "logo": "images/pinterest/logo.png",
+            "detail": "images/pinterest/detail.1.png",
+            "share": "images/pinterest/share.png"
           },
           "videos": {
             "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
@@ -1049,7 +1049,7 @@
           "shortDescription": "We help you easily discover new and interesting stuff on the Web.",
           "description": "StumbleUpon is the easiest way to find cool new websites, videos, photos and images from across the Web. We make the best recommendations just for you.",
           "images": {
-            "fulllogo": "images/stumbleupon/stumbleupon-logo.png"
+            "fulllogo": "images/stumbleupon/fulllogo.png"
           },
           "links": {
             "learnmore": "http://www.stumbleupon.com/about"
@@ -1064,9 +1064,9 @@
       "manifest": {
         "origin": "https://news.ycombinator.com/",
         "name": "Y Combinator",
-        "iconURL": "images/ycombinator/yc16.png",
-        "icon32URL": "images/ycombinator/yc32.png",
-        "icon64URL": "images/ycombinator/yc64.png",
+        "iconURL": "images/ycombinator/icon16.png",
+        "icon32URL": "images/ycombinator/icon32.png",
+        "icon64URL": "images/ycombinator/icon64.png",
   
         "shareURL": "https://news.ycombinator.com/submitlink?u=%{url}&t=%{title}",
   
@@ -1084,7 +1084,7 @@
           "shortDescription": "Hacker News: technology and business news from Y Combinator.",
           "description": "",
           "images": {
-            "fulllogo": "images/ycombinator/yc200.png"
+            "fulllogo": "images/ycombinator/fulllogo.png"
           },
           "links": {
             "learnmore": "http://ycombinator.com/about.html"
@@ -1118,7 +1118,7 @@
           "shortDescription": "we power awesome communities.",
           "description": "reddit is an entertainment, social networking service and news website where registered community members can submit content, such as text posts or direct links.",
           "images": {
-            "fulllogo": "images/reddit/redditlogo.png"
+            "fulllogo": "images/reddit/fulllogo.png"
           },
           "links": {
             "learnmore": "http://www.reddit.com/about"
@@ -1134,7 +1134,7 @@
         "origin": "http://digg.com",
         "shareURL": "http://digg.com/submit?url=%{url}&title=%{title}",
         "iconURL": "http://digg.com/favicon.ico",
-        "icon64URL": "images/digg/digg64.png",
+        "icon64URL": "images/digg/icon64.png",
         "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. "
       },
       "lang": {
@@ -1142,7 +1142,7 @@
           "name": "Digg",
           "shortDescription": "a design mockup showing what this service could look like.",
           "images": {
-            "fulllogo": "images/digg/digg64.png"
+            "fulllogo": "images/digg/fulllogo.png"
           }
         }
       }
@@ -1171,9 +1171,9 @@
         "origin": "http://www.odnoklassniki.ru/",
         "name": "Odnoklassniki",
         "shareURL": "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.noresize=on&st._surl=%{url}",
-        "iconURL": "images/odnoklassniki/logo16.png",
-        "icon32URL": "images/odnoklassniki/logo32.png",
-        "icon64URL": "images/odnoklassniki/logo64.png",
+        "iconURL": "images/odnoklassniki/icon16.png",
+        "icon32URL": "images/odnoklassniki/icon32.png",
+        "icon64URL": "images/odnoklassniki/icon64.png",
         "description": "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.",
         "author": "Odnoklassniki",
         "homepageURL": "http://www.odnoklassniki.ru/",
@@ -1187,9 +1187,9 @@
           "shortDescription": "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.",
           "description": "",
           "images": {
-            "fulllogo": "images/odnoklassniki/logo-large.png",
-            "carousel": "images/odnoklassniki/share.png",
-            "detail": "images/odnoklassniki/share.png",
+            "fulllogo": "images/odnoklassniki/fulllogo.png",
+            "carousel": "images/odnoklassniki/carousel.png",
+            "detail": "images/odnoklassniki/detail.1.png",
             "share": "images/odnoklassniki/share.png"
           }
         },
@@ -1198,10 +1198,10 @@
           "shortDescription": "Развлекательная социальная сеть для общения с друзьями, просмотра фильмов и сериалов, прослушивания музыки и многого другого.",
           "description": "",
           "images": {
-            "fulllogo": "images/odnoklassniki/logo-large.png",
-            "carousel": "images/odnoklassniki/share-ru.png",
-            "detail": "images/odnoklassniki/share-ru.png",
-            "share": "images/odnoklassniki/share-ru.png"
+            "fulllogo": "images/odnoklassniki/fulllogo.png",
+            "carousel": "images/odnoklassniki/carousel.ru.png",
+            "detail": "images/odnoklassniki/detail.1.ru.png",
+            "share": "images/odnoklassniki/share.ru.png"
           }
         }
       }
@@ -1229,9 +1229,9 @@
           "shortDescription": "XING is the professional network for a better working life.",
           "description": "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry.",
           "images": {
-            "fulllogo": "images/xing/xing_large.png",
-            "detail": "images/xing/xing-en.png",
-            "share": "images/xing/xing-en.png"
+            "fulllogo": "images/xing/fulllogo.png",
+            "detail": "images/xing/detail.1.png",
+            "share": "images/xing/share.png"
           }
         },
         "de": {
@@ -1239,10 +1239,10 @@
           "shortDescription": "XING ist das soziale Netzwerk für Beruf und Karriere.",
           "description": "Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, Events und News aus Ihrer Branche.",
           "images": {
-            "fulllogo": "images/xing/xing_large.png",
-            "carousel": "images/xing/xing-de.png",
-            "detail": "images/xing/xing-de.png",
-            "share": "images/xing/xing-de.png"
+            "fulllogo": "images/xing/fulllogo.png",
+            "carousel": "images/xing/carousel.de.png",
+            "detail": "images/xing/detail.1.de.png",
+            "share": "images/xing/share.de.png"
           }
         }
       }
@@ -1268,7 +1268,7 @@
         "en-US": {
           "name": "Yammer",
           "images": {
-            "fulllogo": "images/yammer/largelogo.png"
+            "fulllogo": "images/yammer/fulllogo.png"
           }
         }
       }
