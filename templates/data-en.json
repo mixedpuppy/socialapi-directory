@@ -4,7 +4,7 @@
       "status": "release",
       "manifest": {
         "name": "GOAL.com",
-        "iconURL": "images/goal/icon.png",
+        "iconURL": "images/goal/icon16.png",
         "icon32URL": "images/goal/icon32.png",
         "icon64URL": "images/goal/icon64.png",
         "origin": "http://www.goal.com",
@@ -23,22 +23,23 @@
     "saavn": {
       "status": "release",
       "manifest": {
-        "name": "Saavn",
+        "name": "saavn",
         "origin": "http://www.saavn.com",
         "iconURL": "http://www.saavn.com/_i/firefox/firefox16.png",
         "icon32URL": "http://www.saavn.com/_i/firefox/firefox32.png",
         "icon64URL": "http://www.saavn.com/_i/firefox/firefox64.png",
         "workerURL": "http://www.saavn.com/_s/firefox/worker.js",
         "sidebarURL": "http://www.saavn.com/firefox/sidebar.php",
-        "description": "{{ _('Saavn is the best Bollywood and Indian music listening experience, online and on the go. It is a simple, beautiful, and 100 percent free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.') }}",
+        "description": "{{ _('Saavn is the best Bollywood and Indian music listening experience, online and on the go. It\'s a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.') }}",
         "author": "Saavn",
         "homepageURL": "http://www.saavn.com",
         "version": 1
       },
       "viewData": {
-        "name": "Saavn",
+        "name": "saavn",
         "tagline": "{{ _('Music Feed') }}",
         "shortDescription": "{{ _('Discover fresh music and hear more of what you love.') }}",
+        "description": "{{ _('Saavn is the best Bollywood and Indian music listening experience, online and on the go. It\'s a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.') }}",
         "videos": {
           "youtube": ["A8Kignry0p8", "l8VlUiQ2IkQ", "aF0LyLeHk6w"]
         },
@@ -51,13 +52,13 @@
       "status": "release",
       "manifest": {
         "name": "Pocket",
-        "iconURL": "images/pocket/icon.png",
+        "iconURL": "images/pocket/icon16.png",
         "icon32URL": "images/pocket/icon32.png",
         "icon64URL": "images/pocket/icon64.png",
         "workerURL": "https://getpocket.com/firefox/social/worker.js",
         "markURL": "https://getpocket.com/firefox/social/cdn/index?url=%{url}&title=%{title}&firefoxsave=1",
-        "unmarkedIcon": "images/pocket/unmarkedIcon.png",
-        "markedIcon": "images/pocket/markedIcon.png",
+        "unmarkedIcon": "images/pocket/unmarked.png",
+        "markedIcon": "images/pocket/marked.png",
         "postActivationURL": "https://getpocket.com/installed?firefoxsave=1",
         "description": "{{ _('Pocket service for Firefox - The best way to save articles, videos and more') }}",
         "author": "Read It Later Inc.",
@@ -78,7 +79,7 @@
       "status": "release",
       "manifest": {
         "name": "Sphere",
-        "iconURL": "images/sphere/icon.png",
+        "iconURL": "images/sphere/icon16.png",
         "icon32URL": "images/sphere/icon32.png",
         "icon64URL": "images/sphere/icon64.png",
         "sidebarURL": "https://firefox.sphere.com/sidebar.html",
@@ -102,7 +103,7 @@
       "status": "release",
       "manifest": {
         "name": "Delicious",
-        "iconURL": "images/delicious/icon.png",
+        "iconURL": "images/delicious/icon16.png",
         "icon32URL": "images/delicious/icon32.png",
         "icon64URL": "images/delicious/icon64.png",
         "sidebarURL": "https://delicious.com/?mozsidebar=1",
@@ -138,7 +139,7 @@
         "origin": "https://www.facebook.com",
         "name": "Facebook",
         "shareURL": "https://www.facebook.com/sharer/sharer.php?u=%{url}",
-        "iconURL": "images/facebook/icon.png",
+        "iconURL": "images/facebook/icon16.png",
         "icon32URL": "images/facebook/icon32.png",
         "icon64URL": "images/facebook/icon64.png",
         "description": "{{ _('Keep up with friends wherever you go on the web.') }}",
@@ -158,7 +159,7 @@
             "returnValue": false
           }
         }
-    },
+      },
       "viewData": {
         "name": "Facebook",
         "tagline": "{{ _('Share the web') }}",
@@ -205,13 +206,13 @@
         "version": "1.1",
         "name": "mixi",
         "author": "mixi, Inc.",
-        "description": "{{ _('The largest social network in Japan.') }}",
+        "description": "{{ _('友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます') }}",
         "origin": "https://mixi.jp",
         "sidebarURL": "https://mixi.jp/firefox_sidebar.pl",
         "homepageURL": "https://mixi.jp/promotion.pl?id=social_sidebar",
         "shareURL": "https://mixi.jp/share.pl?from=social_share&u=%{url}&k=39170634f795be8b2656924b73b9306ccd46d35c",
         "workerURL": "https://mixi.jp/static/public/js/sidebar/firefox/worker.js",
-        "iconURL": "images/mixi/icon.png",
+        "iconURL": "images/mixi/icon16.png",
         "icon32URL": "images/mixi/icon32.png",
         "icon64URL": "images/mixi/icon64.png"
       },
@@ -228,16 +229,16 @@
     "weibo": {
       "status": "release",
       "manifest": {
-        "author": "{{ _('SINA Corporation') }}",
-        "description": "{{ _('Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when receiving new messages.') }}",
+        "author": "SINA Corporation",
+        "description": "{{ _('用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯') }}",
         "homepageURL": "http://www.weibo.com",
-        "iconURL": "images/weibo/icon.png",
+        "iconURL": "images/weibo/icon16.png",
         "icon32URL": "images/weibo/icon32.png",
         "icon64URL": "images/weibo/icon64.png",
-        "name": "{{ _('Weibo.com') }}",
+        "name": "新浪微博",
         "origin": "http://m.weibo.cn",
         "sidebarURL": "http://m.weibo.cn/sidebar/",
-        "version": "1.0",
+        "version": "0.1",
         "workerURL": "http://m.weibo.cn/js/social/worker.js",
         "shareURL": "http://service.weibo.com/share/share.php?url=%{url}&title=%{title}&pic=%{previews}",
         "pageSize": {
@@ -245,7 +246,7 @@
         }
       },
       "viewData": {
-        "name": "{{ _('Weibo') }}",
+        "name": "Weibo",
         "shortDescription": "{{ _('Share your interesting news anytime, anywhere.') }}",
         "description": "{{ _('Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when receiving new messages.') }}",
         "links": {
@@ -259,12 +260,12 @@
       "manifest": {
         "name": "Google+",
         "author": "Google",
-        "iconURL": "images/google/gplus-16.png",
-        "icon32URL": "images/google/gplus-32.png",
-        "icon64URL": "images/google/gplus-64.png",
+        "iconURL": "images/google/icon16.png",
+        "icon32URL": "images/google/icon32.png",
+        "icon64URL": "images/google/icon64.png",
         "origin": "https://plus.google.com",
         "homepageURL": "https://plus.google.com",
-        "shareURL": "https://plus.google.com/share?url=%{url}",
+        "shareURL": "https://plus.google.com/share?url=%{url}&soc-app=170",
         "pageSize": {
           "share": { "width": 580, "height": 750 }
         },
@@ -285,9 +286,9 @@
       "manifest": {
         "name": "Gmail",
         "author": "Google",
-        "iconURL": "images/google/gmail-16.png",
-        "icon32URL": "images/google/gmail-32.png",
-        "icon64URL": "images/google/gmail-64.png",
+        "iconURL": "images/gmail/icon16.png",
+        "icon32URL": "images/gmail/icon32.png",
+        "icon64URL": "images/gmail/icon64.png",
         "origin": "https://mail.google.com",
         "homepageURL": "https://mail.google.com",
         "shareURL": "https://mail.google.com/mail/?view=cm&ui=2&tf=0&fs=1&body=%{body}&su=%{title}",
@@ -311,12 +312,12 @@
       "manifest": {
         "name": "Twitter",
         "author": "Twitter, Inc.",
-        "iconURL": "images/twitter/icon.png",
+        "iconURL": "images/twitter/icon16.png",
         "icon32ULR": "images/twitter/icon32.png",
         "icon64URL": "images/twitter/icon64.png",
         "origin": "https://twitter.com",
         "homepageURL": "https://twitter.com",
-        "shareURL": "https://twitter.com/intent/tweet?url=%{url}&text=%{text}&via=Firefox",
+        "shareURL": "https://twitter.com/intent/tweet?url=%{url}&text=%{text}",
         "description": "{{ _('Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener.') }}",
         "pageSize": {
           "share": { "width": 550, "height": 300 }
@@ -337,14 +338,14 @@
       "manifest": {
         "name": "LinkedIn",
         "author": "LinkedIn Corporation",
-        "iconURL": "images/linkedin/icon.png",
+        "iconURL": "images/linkedin/icon16.png",
         "icon32URL": "images/linkedin/icon32.png",
         "icon64URL": "images/linkedin/icon64.png",
         "origin": "https://www.linkedin.com",
-        "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}",
+        "shareURL": "https://www.linkedin.com/shareArticle?mini=true&url=%{url}&title=%{title}&trk=FIREFOX_ACTIVATION",
         "description": "{{ _('Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities.') }}",
         "pageSize": {
-          "share": { "width": 500, "height": 530 }
+          "share": { "width": 520, "height": 570 }
         }
       },
       "viewData": {
@@ -389,10 +390,10 @@
       "manifest": {
         "origin": "https://vk.com",
         "name": "{{ _('VK') }}",
-        "author": "{{ _('VK') }}",
-        "iconURL": "{{ _('images/vkontakte/icon16.png') }}",
-        "icon32URL": "{{ _('images/vkontakte/icon32.png') }}",
-        "icon64URL": "{{ _('images/vkontakte/icon64.png') }}",
+        "author": "VK",
+        "iconURL": "images/vkontakte/icon16.png",
+        "icon32URL": "images/vkontakte/icon32.png",
+        "icon64URL": "images/vkontakte/icon64.png",
         "shareURL": "https://vk.com/share.php?url=%{url}",
         "description": "{{ _('VK is a social network that unites people all over the world and helps them communicate comfortably and promptly.') }}",
         "homepageURL": "https://vk.com/about",
@@ -410,29 +411,6 @@
         }
       }
     },
-    "odnoklassniki": {
-      "status": "release",
-      "minver": 32,
-      "manifest": {
-        "origin": "http://www.odnoklassniki.ru/",
-        "name": "{{ _('Odnoklassniki') }}",
-        "shareURL": "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.noresize=on&st._surl=%{url}",
-        "iconURL": "{{ _('images/odnoklassniki/icon16.png') }}",
-        "icon32URL": "{{ _('images/odnoklassniki/icon32.png') }}",
-        "icon64URL": "{{ _('images/odnoklassniki/icon64.png') }}",
-        "description": "{{ _('Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.') }}",
-        "author": "{{ _('Odnoklassniki') }}",
-        "homepageURL": "http://www.odnoklassniki.ru/",
-        "pageSize": {
-          "share": { "width": 650, "height": 380 }
-        }
-      },
-      "viewData": {
-        "name": "{{ _('Odnoklassniki') }}",
-        "shortDescription": "{{ _('Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.') }}",
-        "description": ""
-      }
-    },
     "pinterest": {
       "status": "beta",
       "minver": 32,
@@ -447,12 +425,13 @@
         "description": "{{ _('Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.') }}",
         "homepageURL": "https://pinterest.com",
         "pageSize": {
-          "share": { "width": 755, "height": 320 }
+          "share": { "width": 755, "height": 420 }
         }
       },
       "viewData": {
         "name": "Pinterest",
-        "shortDescription": "{{ _('Discover ideas for all your projects and interests, hand-picked by people like you. ') }}",
+        "shortDescription": "{{ _('Discover ideas for all your projects and interests, hand-picked by people like you.') }}",
+        "description": "{{ _('Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.') }}",
         "videos": {
           "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
         },
@@ -471,7 +450,7 @@
         "icon32URL": "images/stumbleupon/icon32.png",
         "icon64URL": "images/stumbleupon/icon64.png",
   
-        "shareURL": "https://www.stumbleupon.com/submit?url=%{url}&title=%{title}&description=%{description}",
+        "shareURL": "https://www.stumbleupon.com/submit?from=moz-share-service&url=%{url}&title=%{title}&description=%{description}",
   
         "description": "StumbleUpon is the easiest way to find cool new websites, videos, photos and images from across the Web. We make the best recommendations just for you.",
         "homepageURL": "https://www.stumbleupon.com",
@@ -484,6 +463,7 @@
       "viewData": {
         "name": "StumbleUpon",
         "shortDescription": "We help you easily discover new and interesting stuff on the Web.",
+        "description": "StumbleUpon is the easiest way to find cool new websites, videos, photos and images from across the Web. We make the best recommendations just for you.",
         "links": {
           "learnmore": "http://www.stumbleupon.com/about"
         }
@@ -557,7 +537,7 @@
         "shareURL": "http://digg.com/submit?url=%{url}&title=%{title}",
         "iconURL": "http://digg.com/favicon.ico",
         "icon64URL": "images/digg/icon64.png",
-        "description": "demo mockup of digg service."
+        "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. "
       },
       "viewData": {
         "name": "Digg",
@@ -569,14 +549,81 @@
       "manifest": {
         "name": "Soundcloud",
         "iconURL": "http://soundcloud.com/favicon.ico",
-        "icon64URL": "images/soundcloud/icon64.png",
+        "icon64URL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0QUYwOTFEQzM3MjA2ODExODA4M0NFNkVDMjIxNUJBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjBFQTlEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjA3MEJEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjAyRjcwMEEyNzIwNjgxMTgwODNFODYzNzgwNTM4MEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEFGMDkxREMzNzIwNjgxMTgwODNDRTZFQzIyMTVCQUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz719pF8AAAEsUlEQVR42uxbXWwUVRT+Zn+62539tSzblRahaEpbwk/BSNKE+IA2CpYYI7ESYgKJD/rSmKgJiTwQicYHw0MTX4wmBhN/Ai9KYjQx+iAPGmlFxFLaIv2hQouFUunSlh3POTPurmVKutPZGpp7s5l8vXP37vnu951z7+ymmnEkgXu/+TA5tgRoeLAkmg+GoqFoKBqKhqKhaCga9yiNrFJD0VCmUqZSplpKagQiePgF1D2J9HroFcjexvgwRnvQ+x06PsHYxQVOrxltpedQvwOtHyKctL9LlDo/xZcHFkLGw2qU4gUNjXssvO/4nBw4BC8an8frv2JTq+OP83BulOKV3oi9R/lK2Fs2L9ft/Rjb2px9XMnUiFdzcJX1ReSepuHpd7Fp9/+hhjeIl7/m66x+XVyUWFVcJSQmre8jVr0oamg+NB9g9xOuWIO1j6GygXEwhoNdCEQZx+7nsOJVRVfCYAQtby2KGjVNaDmMVEN+1UMVkg/rkapF9WbGoWXcT5ntYF/a8lyxgjhSI5LiD4umGYfuk3CXizKrGS+vZUybA+Sug32Jatfm3aVXw1xpIpMVHajpyxgnVjJOPsi4PGY5xNkpYe32ItW4y21/GPuPUhYzDqdw6Cx8IcEFhjE3BItGlahUKTTiUkbDDmnUb0f7BN7L4GAnWg7xwjk31aot2LqH7U64ZivSdajaUGCkpGD5XSEUZ2xSiojBTDXKdIeHHY8PAR2+AKo34Kk38HYvGp8p0lRrmrD6EQaRSqvaZCUTcthcaV3S2qRBPTzepJHMmwpw5+hZHsVLnzOTItR44lU0vyJF0wx9RR4npICGhAYRmIVJB6Ynae31yT7gce3oSVvK/g8sqeelRmKF5W+z2pg5YK40kckpoCcK1IiKAtF8WpOdFpLic2nyeNu8U5wyOCIpZa50NFVAqaDfTF8rByT1g2E5+5f9J3R3n2c27rSlYfe8EYqxJThlJfSApKlekMpl5fl+f5Cx1y+7eCTfb1ICXH6eSdfaTmj39Efaebz5VTeNoUt1IgKEqYBQ8wvOhT5LAZqBp4q4rMbMlO2EdjToOUYTs2leazmzYhWzDmYl28y9NvdezWtvJJrKXRqX+2wntKtUo/248geDCfmR9tZNxjevM57KML4+wjgzwXg6w3hynDFdISMNuZsb42I7dcK2Utmp0f8bpia5f3yU/6SgCV+7wph6CN+4ypiu2X+pTt+yMBmSqBLO/M3pce2ym2rQMn1xZA5T3blaH72G2zPcPzYsOl5g/NclxnQlTMHl8NUhPEQCDjIe6UfyARaTxw8hnmIPuKWGYaB9n7WaNqa6s34NdmNYLHiph4f0/cJ4ZICx2U/hQu4SHpYxf/bK+G7Gg12CzzPu7WBMi7JQHW7gnWfxwzFHZ6qTx3F4F87/xHjoHE838LtgCbf/LOOBLsY9pxhfOM24+0fGfR2Mz3zP+EQ7DEfeImfSPJ+9iRdrcPLYXULVjJ3zPgusbMDFM+JEP9Y9itPfciHyB9DYjJ+/4lJI1WzdNg59ZhpBHXVN6PyGzVD6phk71Jef6qtopYb6fUOZSqmhTKXUUDQUDUVD0VA0FA1FYxHbEvnHh38EGAA0eV7Yr/i+2wAAAABJRU5ErkJggg==",
         "sidebarURL": "http://m.soundcloud.com/dashboard",
         "origin": "http://m.soundcloud.com/dashboard",
-        "description": "demo mockup of soundcloud service."
+        "description": "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. "
       },
       "viewData": {
         "name": "Soundcloud",
         "shortDescription": "a design mockup showing what this service could look like."
+      }
+    },
+    "odnoklassniki": {
+      "status": "release",
+      "minver": 32,
+      "manifest": {
+        "origin": "http://www.odnoklassniki.ru/",
+        "name": "Odnoklassniki",
+        "shareURL": "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.noresize=on&st._surl=%{url}",
+        "iconURL": "images/odnoklassniki/icon16.png",
+        "icon32URL": "images/odnoklassniki/icon32.png",
+        "icon64URL": "images/odnoklassniki/icon64.png",
+        "description": "{{ _('Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.') }}",
+        "author": "Odnoklassniki",
+        "homepageURL": "http://www.odnoklassniki.ru/",
+        "pageSize": {
+          "share": { "width": 650, "height": 380 }
+        }
+      },
+      "viewData": {
+        "name": "{{ _('Odnoklassniki') }}",
+        "shortDescription": "{{ _('Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.') }}",
+        "description": ""
+      }
+    },
+    "xing": {
+      "status": "release",
+      "manifest": {
+        "origin": "https://www.xing.com",
+        "name": "XING",
+        "iconURL": "images/xing/icon16.png",
+        "icon32URL": "images/xing/icon32.png",
+        "icon64URL": "images/xing/icon64.png",
+  
+        "shareURL": "https://www.xing.com/social_plugins/share/new?sc_p=xing-share&h=1&url=%{url}",
+  
+        "description": "{{ _('Xing is the social network for professional networking, business marketing and career development.') }}",
+        "author": "XING",
+        "homepageURL": "https:/www.xing.com",
+
+        "version": 1
+      },
+      "viewData": {
+        "name": "XING",
+        "shortDescription": "{{ _('XING is the professional network for a better working life.') }}",
+        "description": "{{ _('Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry.') }}"
+      }
+    },
+    "yammer": {
+      "status": "demo",
+      "manifest": {
+        "origin": "https://www.yammer.com",
+        "name": "Yammer",
+        "iconURL": "images/yammer/icon16.png",
+        "icon32URL": "images/yammer/icon32.png",
+        "icon64URL": "images/yammer/icon64.png",
+  
+        "shareURL": "https://www.yammer.com/home/bookmarklet?t=%{title}&u=%{url}",
+  
+        "description": "Yammer.",
+        "author": "Yammer",
+        "homepageURL": "https://about.yammer.com/who-we-are/",
+
+        "version": 1
+      },
+      "viewData": {
+        "name": "Yammer"
       }
     },
     "demo": {
@@ -584,9 +631,9 @@
       "manifest": {
         "origin": "https://socialapi-demo.paas.allizom.org",
         "name": "Demo Social Service",
-        "iconURL": "images/demo/firefox16.png",
-        "icon32URL": "images/demo/firefox32.png",
-        "icon64URL": "images/demo/firefox64.png",
+        "iconURL": "https://socialapi-demo.paas.allizom.org/firefox16.png",
+        "icon32URL": "https://socialapi-demo.paas.allizom.org/firefox32.png",
+        "icon64URL": "images/demo/icon64.png",
   
         "workerURL": "https://socialapi-demo.paas.allizom.org/worker.js",
         "sidebarURL": "https://socialapi-demo.paas.allizom.org/sidebar.htm?l=__T_LOCALE__",
@@ -594,8 +641,8 @@
         "shareURL": "https://socialapi-demo.paas.allizom.org/share.html?url=%{url}",
   
         "markURL": "https://socialapi-demo.paas.allizom.org/mark.html?url=%{url}",
-        "markedIcon": "images/demo/checked32.png",
-        "unmarkedIcon": "images/demo/unchecked32.png",
+        "markedIcon": "https://socialapi-demo.paas.allizom.org/checked32.png",
+        "unmarkedIcon": "https://socialapi-demo.paas.allizom.org/unchecked32.png",
   
         "description": "This is a small demonstration SocialAPI provider used primarily for manual testing and to illustrate some API usage.",
         "author": "Shane Caraveo, Mozilla",
