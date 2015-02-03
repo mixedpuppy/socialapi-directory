@@ -7,18 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-19 10:57-0700\n"
+"POT-Creation-Date: 2015-01-30 12:08-0800\n"
 "PO-Revision-Date: 2014-08-19 18:40+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: de <LL@li.org>\n"
-"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1408473628.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -50,8 +47,8 @@ msgid ""
 msgstr ""
 "Wenn Ihnen dieser Dienst neu ist, setzen Sie ein Lesezeichen für diese "
 "Seite, denn sie enthält nützliche Informationen und Links zu weiteren "
-"Anleitungen zur Nutzung und Anpassung von Firefox. Lesen Sie weiter, um mehr "
-"darüber zu erfahren, wie %(name)s in Firefox funktioniert."
+"Anleitungen zur Nutzung und Anpassung von Firefox. Lesen Sie weiter, um "
+"mehr darüber zu erfahren, wie %(name)s in Firefox funktioniert."
 
 #: templates/activated.html:35
 #, python-format
@@ -77,8 +74,8 @@ msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
 msgstr ""
-"Mit einem Klick können Sie interessante Inhalte auf einer beliebigen Website "
-"auf <strong>%(name)s</strong> speichern."
+"Mit einem Klick können Sie interessante Inhalte auf einer beliebigen "
+"Website auf <strong>%(name)s</strong> speichern."
 
 #: templates/activated.html:52
 #, python-format
@@ -106,10 +103,11 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
-"Ab Firefox 30 können Sie mit der Sidebars-Schaltfläche in der Symbolleiste "
-"Ihre Sidebars verwalten. Die Sidebars-Schaltfläche befindet sich im <a "
-"href=\"%(url)s\">Anpassen-Bereich</a>, ziehen Sie einfach die Schaltfläche in "
-"Ihre Symbolleiste, um schnell zwischen Sidebars zu wechseln."
+"Ab Firefox 30 können Sie mit der Sidebars-Schaltfläche in der "
+"Symbolleiste Ihre Sidebars verwalten. Die Sidebars-Schaltfläche befindet "
+"sich im <a href=\"%(url)s\">Anpassen-Bereich</a>, ziehen Sie einfach die "
+"Schaltfläche in Ihre Symbolleiste, um schnell zwischen Sidebars zu "
+"wechseln."
 
 #: templates/activated.html:72
 msgid ""
@@ -150,8 +148,8 @@ msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr ""
-"<a href=\"%(url)s\">Erfahren Sie mehr darüber, was dieser Dienst zu Firefox "
-"hinzufügt</a>."
+"<a href=\"%(url)s\">Erfahren Sie mehr darüber, was dieser Dienst zu "
+"Firefox hinzufügt</a>."
 
 #: templates/activated.html:92
 #, python-format
@@ -159,14 +157,246 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
-"<a href=\"%(url)s\">Erfahren Sie mehr</a> darüber, was <a href=\"%(url)s\">%"
-"(name)s</a> anbietet."
+"<a href=\"%(url)s\">Erfahren Sie mehr</a> darüber, was <a "
+"href=\"%(url)s\">%(name)s</a> anbietet."
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
-"<a href=\".\">Entdecken und finden Sie weitere Dienste</a>, die Sie zu Firefox "
-"hinzufügen können."
+"<a href=\".\">Entdecken und finden Sie weitere Dienste</a>, die Sie zu "
+"Firefox hinzufügen können."
+
+#: templates/data-en.json:12 templates/data-en.json:19
+msgid "The definitive source for football news from around the world."
+msgstr "Wir sorgen für Gesprächsstoff unter den Fußballbegeisterten auf der ganzen Welt."
+
+#: templates/data-en.json:18
+msgid "We live and breathe football - everywhere, 24/7"
+msgstr "Wir leben und atmen den Fußball, überall, 24 Stunden an sieben Tagen in der Woche"
+
+#: templates/data-en.json:20
+msgid ""
+"<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
+"whoever you support, we are your definitive football source.</p><p>We "
+"have over 530 reporters on the ground in 50+ countries, getting closer to"
+" the action.  We create original content at source to deliver the news "
+"from the leagues, teams and players that matter.</p><p>No wonder over 52 "
+"million football fans trust us to keep them ahead of the game."
+msgstr ""
+"<p>Football, Soccer, Futbol, Calcio, Futebol – wie auch immer Du es nennst "
+"und wen auch immer Du unterstützt: Wir sind Deine allererste Anlaufstelle.</p>"
+"<p>Mit mehr als 530 Journalisten sind wir in über 50 Ländern ganz nah am "
+"Geschehen dran. Bei uns findet Ihr exklusive Nachrichten über die wichtigsten "
+"Ligen, Teams und Spieler der Welt.</p><p>Über 52 Millionen Fußball-Fans "
+"schenken uns ihr Vertrauen. Wir danken euch dafür!</p>"
+
+#: templates/data-en.json:33 templates/data-en.json:42
+msgid ""
+"Saavn is the best Bollywood and Indian music listening experience, online"
+" and on the go. It's a simple, beautiful, and free way to search, "
+"discover, and listen to over a million songs, from the latest hits to "
+"hard-to-find classics."
+msgstr ""
+
+#: templates/data-en.json:40
+msgid "Music Feed"
+msgstr ""
+
+#: templates/data-en.json:41
+msgid "Discover fresh music and hear more of what you love."
+msgstr ""
+
+#: templates/data-en.json:63
+msgid ""
+"Pocket service for Firefox - The best way to save articles, videos and "
+"more"
+msgstr ""
+
+#: templates/data-en.json:71
+#, fuzzy
+msgid "Save it for later"
+msgstr "Inhalt für später speichern"
+
+#: templates/data-en.json:72
+msgid "A convenient, beautiful place to save content you want to view later."
+msgstr ""
+
+#: templates/data-en.json:86 templates/data-en.json:96
+msgid ""
+"A new way to discover the most interesting content relevant to your "
+"interests."
+msgstr ""
+
+#: templates/data-en.json:94
+msgid "a discovery experience"
+msgstr ""
+
+#: templates/data-en.json:111
+msgid ""
+"Delicious is a free service designed with care to be the best place to "
+"save what you love on the web."
+msgstr ""
+
+#: templates/data-en.json:129
+msgid "Never lose a link again."
+msgstr ""
+
+#: templates/data-en.json:130
+msgid "Delicious remembers so you don't have to."
+msgstr ""
+
+#: templates/data-en.json:145
+msgid "Keep up with friends wherever you go on the web."
+msgstr ""
+
+#: templates/data-en.json:165
+msgid "Share the web"
+msgstr ""
+
+#: templates/data-en.json:166
+msgid "Share any web page, anywhere, anytime."
+msgstr ""
+
+#: templates/data-en.json:174
+msgid ""
+"Cliqz delivers a real-time stream of the most relevant articles, stories,"
+" and videos based on your interests directly to Firefox."
+msgstr ""
+
+#: templates/data-en.json:197
+msgid ""
+"Get the most relevant news based on your interests by crafting a unique "
+"information universe."
+msgstr ""
+
+#: templates/data-en.json:209
+msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
+msgstr ""
+
+#: templates/data-en.json:221
+msgid "The largest social network in Japan."
+msgstr ""
+
+#: templates/data-en.json:222
+msgid "Stay informed of what your friends are up to."
+msgstr ""
+
+#: templates/data-en.json:233
+msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+msgstr ""
+
+#: templates/data-en.json:250
+msgid "Share your interesting news anytime, anywhere."
+msgstr ""
+
+#: templates/data-en.json:251
+msgid ""
+"Sina Weibo is the most popular microblogging service in China. Weibo for "
+"Firefox allows users to post messages with 140-character limit, images, "
+"videos, etc. And it will show the notification when receiving new "
+"messages."
+msgstr ""
+
+#: templates/data-en.json:272
+msgid ""
+"Quickly share content you discover across the web on Google+. Use your "
+"Google+ account to share sites publicly or with your Circles."
+msgstr ""
+
+#: templates/data-en.json:277
+msgid "Share the web on Google+."
+msgstr ""
+
+#: templates/data-en.json:298 templates/data-en.json:302
+msgid "Send web pages and images to people using Gmail."
+msgstr ""
+
+#: templates/data-en.json:321
+msgid ""
+"Use your Firefox Twitter Share to quickly author tweets about the pages "
+"you discover across the web.  We shorten URLs for quick sharing using the"
+" t.co link shortener."
+msgstr ""
+
+#: templates/data-en.json:328
+msgid "Tweet to your followers"
+msgstr ""
+
+#: templates/data-en.json:329
+msgid "Twitter Share lets you quickly tweet links to your followers."
+msgstr ""
+
+#: templates/data-en.json:346
+msgid ""
+"Manage your professional identity. Build and engage with your "
+"professional network. Access knowledge, insights and opportunities."
+msgstr ""
+
+#: templates/data-en.json:353
+msgid "Share the web with your professional network."
+msgstr ""
+
+#: templates/data-en.json:371
+msgid ""
+"Post text, photos, quotes, links, music, and videos from your browser, "
+"phone, desktop, email or wherever you happen to be. You can customize "
+"everything, from colors to your theme's HTML."
+msgstr ""
+
+#: templates/data-en.json:381
+msgid "Tumblr lets you effortlessly share anything."
+msgstr ""
+
+#: templates/data-en.json:392 templates/data-en.json:406
+msgid "VK"
+msgstr ""
+
+#: templates/data-en.json:398 templates/data-en.json:407
+msgid ""
+"VK is a social network that unites people all over the world and helps "
+"them communicate comfortably and promptly."
+msgstr ""
+
+#: templates/data-en.json:425 templates/data-en.json:434
+msgid ""
+"Pinterest is a tool to help you discover and plan things you want to do. "
+"When you find something that looks interesting, just Pin it! Pins are "
+"visual bookmarks that you organize and share the way you want."
+msgstr ""
+
+#: templates/data-en.json:433
+msgid ""
+"Discover ideas for all your projects and interests, hand-picked by people"
+" like you."
+msgstr ""
+
+#: templates/data-en.json:572 templates/data-en.json:581
+msgid ""
+"Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
+"service for classmates and old friends."
+msgstr ""
+
+#: templates/data-en.json:580
+msgid "Odnoklassniki"
+msgstr ""
+
+#: templates/data-en.json:596
+msgid ""
+"Xing is the social network for professional networking, business "
+"marketing and career development."
+msgstr ""
+"Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, "
+"Events und News aus Ihrer Branche."
+
+#: templates/data-en.json:604
+msgid "XING is the professional network for a better working life."
+msgstr "XING ist das soziale Netzwerk für Beruf und Karriere."
+
+#: templates/data-en.json:605
+msgid ""
+"Expand your existing network and access new contacts, groups, jobs, "
+"companies, events and news from your industry."
+msgstr ""
 
 #: templates/footer.html:12
 #, python-format
@@ -175,56 +405,57 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"Teile dieses Inhalts stehen unter einem ©1998–%(current_year)s von einzelnen "
-"Mitwirkenden an mozilla.org. Der Inhalt steht unter einer <a href=\"%(url)s"
-"\">Creative-Commons-Lizenz</a>."
+"Teile dieses Inhalts stehen unter einem ©1998–%(current_year)s von "
+"einzelnen Mitwirkenden an mozilla.org. Der Inhalt steht unter einer <a "
+"href=\"%(url)s\">Creative-Commons-Lizenz</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
 msgstr "Zu dieser Seite beitragen"
 
-#: templates/footer.html:20
+#: templates/footer.html:21
 msgid "Contact Us"
 msgstr "Kontakt"
 
-#: templates/footer.html:21
+#: templates/footer.html:22
 msgid "Partner with Us"
 msgstr "Werden Sie Partner"
 
-#: templates/footer.html:22
+#: templates/footer.html:23
 msgid "Donate"
 msgstr "Spenden"
 
-#: templates/footer.html:23
+#: templates/footer.html:24
 msgid "Privacy Policy"
 msgstr "Datenschutzrichtlinie"
 
-#: templates/footer.html:24
+#: templates/footer.html:25
 msgid "Legal Notices"
 msgstr "Rechtliche Hinweise"
 
-#: templates/footer.html:25
+#: templates/footer.html:26
 msgid "Report Trademark Abuse"
 msgstr "Markenrechtsverletzung melden"
 
-#: templates/footer.html:30
+#: templates/footer.html:31
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI für Entwickler"
 
-#: templates/index.html:40 templates/provider.html:74
+#: templates/index.html:39 templates/provider.html:74
 msgid "Activate Now"
 msgstr "Jetzt aktivieren"
 
-#: templates/index.html:41 templates/provider.html:77
+#: templates/index.html:40 templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "Erfahren Sie mehr&hellip;"
 
-#: templates/index.html:58
+#: templates/index.html:56
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr ""
-"Verbessern Sie Ihr Firefox-Erlebnis, holen Sie mehr aus dem Internet heraus"
+"Verbessern Sie Ihr Firefox-Erlebnis, holen Sie mehr aus dem Internet "
+"heraus"
 
-#: templates/index.html:59
+#: templates/index.html:57
 msgid ""
 "Easy to use, no software or Add-ons to download and install, just click "
 "Activate and new functionality is delivered to you from the Web.  "
@@ -232,12 +463,12 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
-"Einfach zu verwenden, keine Software oder Add-ons, die heruntergeladen und "
-"installiert werden müssen – klicken Sie einfach auf „Aktivieren“ und Sie "
-"erhalten neue Funktionen direkt aus dem Internet. Alles, von Diensten "
-"sozialer Medien bis zu Lesezeichen in der Cloud, Musik und personalisierten "
-"Nachrichten, wenn Sie diese Dienste zu Firefox hinzufügen, haben Sie mehr "
-"vom Internet."
+"Einfach zu verwenden, keine Software oder Add-ons, die heruntergeladen "
+"und installiert werden müssen – klicken Sie einfach auf „Aktivieren“ und "
+"Sie erhalten neue Funktionen direkt aus dem Internet. Alles, von Diensten"
+" sozialer Medien bis zu Lesezeichen in der Cloud, Musik und "
+"personalisierten Nachrichten, wenn Sie diese Dienste zu Firefox "
+"hinzufügen, haben Sie mehr vom Internet."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
@@ -266,8 +497,8 @@ msgstr "Sidebar"
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
-"Dieser Dienst fügt eine Schaltfläche zur Symbolleiste von Firefox hinzu, die "
-"Benachrichtigungen anzeigen kann"
+"Dieser Dienst fügt eine Schaltfläche zur Symbolleiste von Firefox hinzu, "
+"die Benachrichtigungen anzeigen kann"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
@@ -339,13 +570,12 @@ msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
-"Installation von sozialen Diensten erfordert mindestens die Firefox-Version "
-"29. Aktualisieren Sie jetzt Ihren Firefox."
+"Installation von sozialen Diensten erfordert mindestens die Firefox-"
+"Version 29. Aktualisieren Sie jetzt Ihren Firefox."
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
-"Dieser Dienst erfordert eine noch nicht veröffentlichte Firefox-Version."
+msgstr "Dieser Dienst erfordert eine noch nicht veröffentlichte Firefox-Version."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -379,11 +609,3 @@ msgid ""
 msgstr ""
 "Dieser Dienst existiert nur zu Demonstrationszwecken und funktioniert "
 "möglicherweise nicht wie erwartet."
-
-#: templates/sharePanel.html:105
-msgid "Click on a service to add it to Firefox."
-msgstr "Klicken Sie auf einen Dienst, um ihn zu Firefox hinzuzufügen."
-
-#: templates/sharePanel.html:117
-msgid "View more"
-msgstr "Mehr anzeigen"

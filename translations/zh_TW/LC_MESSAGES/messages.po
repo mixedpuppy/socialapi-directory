@@ -7,18 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-08-19 10:57-0700\n"
+"POT-Creation-Date: 2015-01-30 12:08-0800\n"
 "PO-Revision-Date: 2014-08-21 17:30+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
-"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1408642253.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -46,8 +43,8 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
-"若您剛了解此服務，請將此頁面加入書籤。本頁面包含了許多有用的資訊與鏈結，能幫助您使用與自訂 Firefox。請繼續閱讀，以了解如何在 Firefox "
-"中使用 %(name)s。"
+"若您剛了解此服務，請將此頁面加入書籤。本頁面包含了許多有用的資訊與鏈結，能幫助您使用與自訂 Firefox。請繼續閱讀，以了解如何在 "
+"Firefox 中使用 %(name)s。"
 
 #: templates/activated.html:35
 #, python-format
@@ -96,8 +93,8 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
-"自 Firefox 30 開始，您可以使用側邊欄工具列按鈕來管理您的側邊欄。側邊欄按鈕位於 <a href=\"%(url)s\">自訂面板畫面</a> "
-"當中，您只需要將按鈕拖曳至您的工具列擊可快速切換側邊欄。"
+"自 Firefox 30 開始，您可以使用側邊欄工具列按鈕來管理您的側邊欄。側邊欄按鈕位於 <a "
+"href=\"%(url)s\">自訂面板畫面</a> 當中，您只需要將按鈕拖曳至您的工具列擊可快速切換側邊欄。"
 
 #: templates/activated.html:72
 msgid ""
@@ -105,8 +102,8 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"另外，您可以在側邊欄中簡單地變更側邊欄中的服務，或隱藏側邊欄。您也可以使用 Firefox 的 <strong>檢視 -> 工具列</strong> "
-"選單達到一樣的目的。"
+"另外，您可以在側邊欄中簡單地變更側邊欄中的服務，或隱藏側邊欄。您也可以使用 Firefox 的 <strong>檢視 -> "
+"工具列</strong> 選單達到一樣的目的。"
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
@@ -146,6 +143,232 @@ msgstr "<a href=\"%(url)s\">了解</a><a href=\"%(url)s\">%(name)s</a> 提供什
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr "<a href=\".\">探索您還可以新增哪些服務</a> 到 Firefox。"
 
+#: templates/data-en.json:12 templates/data-en.json:19
+msgid "The definitive source for football news from around the world."
+msgstr ""
+
+#: templates/data-en.json:18
+msgid "We live and breathe football - everywhere, 24/7"
+msgstr ""
+
+#: templates/data-en.json:20
+msgid ""
+"<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
+"whoever you support, we are your definitive football source.</p><p>We "
+"have over 530 reporters on the ground in 50+ countries, getting closer to"
+" the action.  We create original content at source to deliver the news "
+"from the leagues, teams and players that matter.</p><p>No wonder over 52 "
+"million football fans trust us to keep them ahead of the game."
+msgstr ""
+
+#: templates/data-en.json:33 templates/data-en.json:42
+msgid ""
+"Saavn is the best Bollywood and Indian music listening experience, online"
+" and on the go. It's a simple, beautiful, and free way to search, "
+"discover, and listen to over a million songs, from the latest hits to "
+"hard-to-find classics."
+msgstr ""
+
+#: templates/data-en.json:40
+msgid "Music Feed"
+msgstr ""
+
+#: templates/data-en.json:41
+msgid "Discover fresh music and hear more of what you love."
+msgstr ""
+
+#: templates/data-en.json:63
+msgid ""
+"Pocket service for Firefox - The best way to save articles, videos and "
+"more"
+msgstr "為 Firefox 打造的 Pocket 服務，是儲存文章、影片，還有更多內容的最佳方案。"
+
+#: templates/data-en.json:71
+#, fuzzy
+msgid "Save it for later"
+msgstr "先存後用"
+
+#: templates/data-en.json:72
+msgid "A convenient, beautiful place to save content you want to view later."
+msgstr "讓你能儲存任何內容，以利稍後觀看。"
+
+#: templates/data-en.json:86 templates/data-en.json:96
+msgid ""
+"A new way to discover the most interesting content relevant to your "
+"interests."
+msgstr ""
+
+#: templates/data-en.json:94
+msgid "a discovery experience"
+msgstr ""
+
+#: templates/data-en.json:111
+msgid ""
+"Delicious is a free service designed with care to be the best place to "
+"save what you love on the web."
+msgstr "精心打造的 Delicious 免費服務，可為你儲存你愛的網路內容。"
+
+#: templates/data-en.json:129
+msgid "Never lose a link again."
+msgstr "再也不錯失任何連結"
+
+#: templates/data-en.json:130
+msgid "Delicious remembers so you don't have to."
+msgstr "Delicious 為你記憶更多事。"
+
+#: templates/data-en.json:145
+msgid "Keep up with friends wherever you go on the web."
+msgstr "不論你在網海何處，都能掌握朋友行蹤。"
+
+#: templates/data-en.json:165
+msgid "Share the web"
+msgstr " "
+
+#: templates/data-en.json:166
+msgid "Share any web page, anywhere, anytime."
+msgstr "隨時、隨地分享任何網頁。"
+
+#: templates/data-en.json:174
+msgid ""
+"Cliqz delivers a real-time stream of the most relevant articles, stories,"
+" and videos based on your interests directly to Firefox."
+msgstr ""
+
+#: templates/data-en.json:197
+msgid ""
+"Get the most relevant news based on your interests by crafting a unique "
+"information universe."
+msgstr ""
+
+#: templates/data-en.json:209
+msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
+msgstr ""
+
+#: templates/data-en.json:221
+msgid "The largest social network in Japan."
+msgstr ""
+
+#: templates/data-en.json:222
+msgid "Stay informed of what your friends are up to."
+msgstr ""
+
+#: templates/data-en.json:233
+msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+msgstr ""
+
+#: templates/data-en.json:250
+msgid "Share your interesting news anytime, anywhere."
+msgstr ""
+
+#: templates/data-en.json:251
+msgid ""
+"Sina Weibo is the most popular microblogging service in China. Weibo for "
+"Firefox allows users to post messages with 140-character limit, images, "
+"videos, etc. And it will show the notification when receiving new "
+"messages."
+msgstr ""
+
+#: templates/data-en.json:272
+msgid ""
+"Quickly share content you discover across the web on Google+. Use your "
+"Google+ account to share sites publicly or with your Circles."
+msgstr "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。"
+
+#: templates/data-en.json:277
+msgid "Share the web on Google+."
+msgstr "在 Google+ 上和朋友分享網路。"
+
+#: templates/data-en.json:298 templates/data-en.json:302
+msgid "Send web pages and images to people using Gmail."
+msgstr "Gmail 是直覺且高效率的電子郵件系統。"
+
+#: templates/data-en.json:321
+msgid ""
+"Use your Firefox Twitter Share to quickly author tweets about the pages "
+"you discover across the web.  We shorten URLs for quick sharing using the"
+" t.co link shortener."
+msgstr ""
+"Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co "
+"短網址功能，讓你能迅速分享縮短過的網址。"
+
+#: templates/data-en.json:328
+msgid "Tweet to your followers"
+msgstr "推文給你的追蹤者"
+
+#: templates/data-en.json:329
+msgid "Twitter Share lets you quickly tweet links to your followers."
+msgstr "Twitter Share 可讓你迅速推文給你的追蹤者。"
+
+#: templates/data-en.json:346
+msgid ""
+"Manage your professional identity. Build and engage with your "
+"professional network. Access knowledge, insights and opportunities."
+msgstr ""
+
+#: templates/data-en.json:353
+msgid "Share the web with your professional network."
+msgstr ""
+
+#: templates/data-en.json:371
+msgid ""
+"Post text, photos, quotes, links, music, and videos from your browser, "
+"phone, desktop, email or wherever you happen to be. You can customize "
+"everything, from colors to your theme's HTML."
+msgstr "用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影片。從顏色到自己主題的 HTML，均可自訂任何部分。"
+
+#: templates/data-en.json:381
+msgid "Tumblr lets you effortlessly share anything."
+msgstr "Tumblr 讓你輕鬆分享大小事。"
+
+#: templates/data-en.json:392 templates/data-en.json:406
+msgid "VK"
+msgstr ""
+
+#: templates/data-en.json:398 templates/data-en.json:407
+msgid ""
+"VK is a social network that unites people all over the world and helps "
+"them communicate comfortably and promptly."
+msgstr ""
+
+#: templates/data-en.json:425 templates/data-en.json:434
+msgid ""
+"Pinterest is a tool to help you discover and plan things you want to do. "
+"When you find something that looks interesting, just Pin it! Pins are "
+"visual bookmarks that you organize and share the way you want."
+msgstr ""
+
+#: templates/data-en.json:433
+msgid ""
+"Discover ideas for all your projects and interests, hand-picked by people"
+" like you."
+msgstr ""
+
+#: templates/data-en.json:572 templates/data-en.json:581
+msgid ""
+"Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
+"service for classmates and old friends."
+msgstr ""
+
+#: templates/data-en.json:580
+msgid "Odnoklassniki"
+msgstr ""
+
+#: templates/data-en.json:596
+msgid ""
+"Xing is the social network for professional networking, business "
+"marketing and career development."
+msgstr ""
+
+#: templates/data-en.json:604
+msgid "XING is the professional network for a better working life."
+msgstr ""
+
+#: templates/data-en.json:605
+msgid ""
+"Expand your existing network and access new contacts, groups, jobs, "
+"companies, events and news from your industry."
+msgstr ""
+
 #: templates/footer.html:12
 #, python-format
 msgid ""
@@ -153,54 +376,54 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"本頁當中的部分內容著作權係 ©1998–%(current_year)s 由各 mozilla.org 貢獻者所有，並以 <a href=\"%"
-"(url)s\">創用 CC</a> 授權條款進行授權。"
+"本頁當中的部分內容著作權係 ©1998–%(current_year)s 由各 mozilla.org 貢獻者所有，並以 <a "
+"href=\"%(url)s\">創用 CC</a> 授權條款進行授權。"
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
 msgstr "貢獻至此頁面"
 
-#: templates/footer.html:20
+#: templates/footer.html:21
 msgid "Contact Us"
 msgstr "聯絡我們"
 
-#: templates/footer.html:21
+#: templates/footer.html:22
 msgid "Partner with Us"
 msgstr "成為我們的夥伴"
 
-#: templates/footer.html:22
+#: templates/footer.html:23
 msgid "Donate"
 msgstr "捐獻給我們"
 
-#: templates/footer.html:23
+#: templates/footer.html:24
 msgid "Privacy Policy"
 msgstr "隱私權保護政策"
 
-#: templates/footer.html:24
+#: templates/footer.html:25
 msgid "Legal Notices"
 msgstr "法律資訊"
 
-#: templates/footer.html:25
+#: templates/footer.html:26
 msgid "Report Trademark Abuse"
 msgstr "回報商標濫用"
 
-#: templates/footer.html:30
+#: templates/footer.html:31
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI 開發資訊"
 
-#: templates/index.html:40 templates/provider.html:74
+#: templates/index.html:39 templates/provider.html:74
 msgid "Activate Now"
 msgstr "立刻啟用"
 
-#: templates/index.html:41 templates/provider.html:77
+#: templates/index.html:40 templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "了解更多&hellip;"
 
-#: templates/index.html:58
+#: templates/index.html:56
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "擴充您的 Firefox 使用體驗，更完美使用 Web"
 
-#: templates/index.html:59
+#: templates/index.html:57
 msgid ""
 "Easy to use, no software or Add-ons to download and install, just click "
 "Activate and new functionality is delivered to you from the Web.  "
@@ -208,8 +431,8 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
-"很簡單就能使用，不需要下載安裝任何軟體或附加元件。只需要點下「啟用」就會把 Web 的新功能帶來給您。不論是社交網路、雲端書籤、音樂與個人化新聞，在 "
-"Firefox 安裝這些服務讓您能更好地使用 Web。"
+"很簡單就能使用，不需要下載安裝任何軟體或附加元件。只需要點下「啟用」就會把 Web "
+"的新功能帶來給您。不論是社交網路、雲端書籤、音樂與個人化新聞，在 Firefox 安裝這些服務讓您能更好地使用 Web。"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
@@ -342,11 +565,3 @@ msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
 msgstr "此服務只是展示用，可能會怪怪的。"
-
-#: templates/sharePanel.html:105
-msgid "Click on a service to add it to Firefox."
-msgstr "點擊服務以將其新增至 Firefox。"
-
-#: templates/sharePanel.html:117
-msgid "View more"
-msgstr "檢視更多"

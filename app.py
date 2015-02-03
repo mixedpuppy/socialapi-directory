@@ -54,6 +54,25 @@ def getImages(k, locale):
   #print k, repr(images)
   return images
 
+# creating a data url for an image
+import base64
+_imageCache = {}
+def createDataURL(imagePath):
+  if imagePath[:5] in ["data:", "http:"] or imagePath[:6] == "https:":
+    return imagePath
+  if imagePath in _imageCache:
+    return _imageCache[imagePath]
+  #print "converting", imagePath
+  with open("static/"+imagePath, "rb") as image_file:
+      encoded_string = base64.b64encode(image_file.read())
+      if imagePath[-3:] == "png":
+        _imageCache[imagePath] = "data:image/png;base64,"+encoded_string
+      elif imagePath[-3:] == "jpg":
+        _imageCache[imagePath] = "data:image/jpg;base64,"+encoded_string
+      else:
+        raise "unknown image type"
+  return _imageCache[imagePath]
+
 class RegexConverter(BaseConverter):
     def __init__(self, url_map, *items):
         super(RegexConverter, self).__init__(url_map)
@@ -66,6 +85,12 @@ def createapp():
     app.debug = True
   app.url_map.converters['regex'] = RegexConverter
   babel = Babel(app)
+
+  config = json.load(app.open_resource('config.json'), object_pairs_hook=collections.OrderedDict)
+
+  @app.context_processor
+  def utility_processor():
+    return dict(createDataURL=createDataURL)
 
   def get_supported_locales():
     langs = {}
@@ -100,14 +125,22 @@ def createapp():
   def dataFixup(k, p, locale):
     images = getImages(k, locale)
     p['key'] = k
-    if locale in p["lang"]:
-      p["lang"]["default"] = p["lang"][locale]
-    else:
-      p["lang"]["default"] = p["lang"]["en-US"]
+    #if locale in p["lang"]:
+    #  p["lang"]["default"] = p["lang"][locale]
+    #else:
+    #  p["lang"]["default"] = p["lang"]["en-US"]
+
+    # make manifest icons data urls
+    for image in ["iconURL", "icon32URL", "icon64URL", "unmarkedIcon", "markedIcon"]:
+      if image in p['manifest']:
+        p['manifest'][image] = createDataURL(p['manifest'][image])
+      #else:
+      #  print "WARNING: ",image,"missing from manfiest for",p['manifest']['origin']
 
     # for demo site purposes, massage the data
     # various lang pack fixups, use manifest entries for missing lang entries
-    d = p["lang"]["default"]
+    #d = p["lang"]["default"]
+    d = p["viewData"]
     d['images'] = getImages(k, locale)
     if 'images' not in d:
       d['images'] = {}
@@ -146,7 +179,8 @@ def createapp():
     #if locale not in locales:
     #  abort(404)
 
-    data = json.load(app.open_resource('data.json'), object_pairs_hook=collections.OrderedDict)
+    out = render_template('data-en.json')
+    data = json.loads(out, object_pairs_hook=collections.OrderedDict)
 
     data["production"] = not demo
     basehref = ""
@@ -167,25 +201,26 @@ def createapp():
       d['production'] = data['production']
       d["basehref"] = basehref
       #print >> sys.stdout, json.dumps(d)
-      d["releases"] = firefoxReleases(data["firefox-releases"])
+      d["releases"] = firefoxReleases(config["firefox-releases"])
       d['current_year'] = datetime.now().year
+      d['config'] = config
       return render_template(template, **d)
     else:
       for k, p in data["source"].iteritems():
         dataFixup(k, p, locale)
-      if locale in data["carousel"]:
-        names = data["carousel"][locale]
+      if locale in config["carousel"]:
+        names = config["carousel"][locale]
       else:
-        names = data["carousel"]["en-US"]
+        names = config["carousel"]["en-US"]
       data["slider"] = []
       for name in names:
         data["slider"].append(data["source"][name])
 
       data["shareProviders"] = []
-      if locale in data["sharePanel"]:
-        names = data["sharePanel"][locale]
+      if locale in config["sharePanel"]:
+        names = config["sharePanel"][locale]
       else:
-        names = data["sharePanel"]["en-US"]
+        names = config["sharePanel"]["en-US"]
       for name in names:
         data["shareProviders"].append(data["source"][name])
 
@@ -193,9 +228,10 @@ def createapp():
       keys.sort()
       data["source"] = [data["source"][key] for key in keys]
       data["basehref"] = basehref
-      data["releases"] = firefoxReleases(data["firefox-releases"])
+      data["releases"] = firefoxReleases(config["firefox-releases"])
       data['translations'] = get_supported_locales()
       data['current_year'] = datetime.now().year
+      data['config'] = config
       return render_template(template, **data)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path:path>')

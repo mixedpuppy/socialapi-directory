@@ -1,7 +1,7 @@
 <html>
 <head>
   <base href="/{{basehref}}"/>
-  <title>{% if lang %}{{ _("%(name)s for Firefox", name=lang['default']['name'] or manifest['name'])}}{% else %}{{ _("Services for Firefox") }}{% endif %}</title>
+  <title>{% if viewData %}{{ _("%(name)s for Firefox", name=viewData['name'])}}{% else %}{{ _("Services for Firefox") }}{% endif %}</title>
   <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-min.css?build=0d2a0a0" rel="stylesheet" media="screen,projection,tv"  />
   <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">

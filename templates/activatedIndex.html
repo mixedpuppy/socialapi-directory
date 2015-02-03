@@ -16,7 +16,7 @@
 
 {% for p in source %}
 {% if not production or p['status'] == 'release' %}
-  <li><a href="/{{basehref}}activated/{{p['key']}}.html">{{p['lang']['default']['name']}}</a></li>
+  <li><a href="/{{basehref}}activated/{{p['key']}}.html">{{p['viewData']['name']}}</a></li>
 {% endif %}
 {% endfor %}
 
