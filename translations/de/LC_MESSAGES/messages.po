@@ -168,15 +168,11 @@ msgstr ""
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
-"Wir leben und atmen den Fußball, überall, 24 Stunden an sieben Tagen in "
-"der Woche"
+msgstr "Wir sorgen für Gesprächsstoff unter den Fußballbegeisterten auf der ganzen Welt."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
-"Wir sorgen für Gesprächsstoff unter den Fußballbegeisterten auf der "
-"ganzen Welt."
+msgstr "Wir leben und atmen den Fußball, überall, 24 Stunden an sieben Tagen in der Woche"
 
 #: templates/data-en.json:20
 msgid ""
@@ -187,13 +183,12 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
-"<p>Football, Soccer, Futbol, Calcio, Futebol – wie auch immer Du es "
-"nennst und wen auch immer Du unterstützt: Wir sind Deine allererste "
-"Anlaufstelle.</p><p>Mit mehr als 530 Journalisten sind wir in über 50 "
-"Ländern ganz nah am Geschehen dran. Bei uns findet Ihr exklusive "
-"Nachrichten über die wichtigsten Ligen, Teams und Spieler der "
-"Welt.</p><p>Über 52 Millionen Fußball-Fans schenken uns ihr Vertrauen. "
-"Wir danken euch dafür!</p>"
+"<p>Football, Soccer, Futbol, Calcio, Futebol – wie auch immer Du es nennst "
+"und wen auch immer Du unterstützt: Wir sind Deine allererste Anlaufstelle.</p>"
+"<p>Mit mehr als 530 Journalisten sind wir in über 50 Ländern ganz nah am "
+"Geschehen dran. Bei uns findet Ihr exklusive Nachrichten über die wichtigsten "
+"Ligen, Teams und Spieler der Welt.</p><p>Über 52 Millionen Fußball-Fans "
+"schenken uns ihr Vertrauen. Wir danken euch dafür!</p>"
 
 #: templates/data-en.json:33 templates/data-en.json:42
 msgid ""
@@ -390,10 +385,12 @@ msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr ""
+"Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, "
+"Events und News aus Ihrer Branche."
 
 #: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING ist das soziale Netzwerk für Beruf und Karriere."
 
 #: templates/data-en.json:605
 msgid ""
@@ -612,141 +609,3 @@ msgid ""
 msgstr ""
 "Dieser Dienst existiert nur zu Demonstrationszwecken und funktioniert "
 "möglicherweise nicht wie erwartet."
-
-#~ msgid "images/goal/us1.jpg"
-#~ msgstr "images/goal/de1.jpg"
-
-#~ msgid "images/goal/us2.jpg"
-#~ msgstr "images/goal/de2.jpg"
-
-#~ msgid ""
-#~ "Saavn is the best Bollywood and "
-#~ "Indian music listening experience, online "
-#~ "and on the go. It is a "
-#~ "simple, beautiful, and 100 percent free"
-#~ " way to search, discover, and listen"
-#~ " to over a million songs, from "
-#~ "the latest hits to hard-to-find"
-#~ " classics."
-#~ msgstr ""
-
-#~ msgid "images/saavn/saavn-screen.png"
-#~ msgstr ""
-
-#~ msgid "images/saavn/firefox-sidebar-screenshot-1.jpg"
-#~ msgstr ""
-
-#~ msgid "images/saavn/firefox-sidebar-screenshot-2.jpg"
-#~ msgstr ""
-
-#~ msgid "images/saavn/firefox-sidebar-screenshot-3.jpg"
-#~ msgstr ""
-
-#~ msgid "images/pocket/pocket.png"
-#~ msgstr ""
-
-#~ msgid "images/sphere/sphere-slide.jpg"
-#~ msgstr ""
-
-#~ msgid "images/delicious/delicious.png"
-#~ msgstr ""
-
-#~ msgid "images/delicious/share.png"
-#~ msgstr ""
-
-#~ msgid "images/facebook/facebook-share.png"
-#~ msgstr ""
-
-#~ msgid "images/cliqz/cliqz-detail.png"
-#~ msgstr ""
-
-#~ msgid "images/cliqz/share.png"
-#~ msgstr ""
-
-#~ msgid "images/mixi/FF_promo_001.png"
-#~ msgstr ""
-
-#~ msgid "images/mixi/FF_promo_002.png"
-#~ msgstr ""
-
-#~ msgid "SINA Corporation"
-#~ msgstr ""
-
-#~ msgid "Weibo.com"
-#~ msgstr ""
-
-#~ msgid "Weibo"
-#~ msgstr ""
-
-#~ msgid "images/weibo/logo-large.png"
-#~ msgstr ""
-
-#~ msgid "images/weibo/detail1.png"
-#~ msgstr ""
-
-#~ msgid "images/weibo/detail2.png"
-#~ msgstr ""
-
-#~ msgid "images/weibo/share.png"
-#~ msgstr ""
-
-#~ msgid "images/google/share.png"
-#~ msgstr ""
-
-#~ msgid "images/google/gmail-share.png"
-#~ msgstr ""
-
-#~ msgid "images/twitter/share.png"
-#~ msgstr ""
-
-#~ msgid "images/linkedin/share.png"
-#~ msgstr ""
-
-#~ msgid "images/tumblr/share.png"
-#~ msgstr ""
-
-#~ msgid "images/vkontakte/icon16.png"
-#~ msgstr ""
-
-#~ msgid "images/vkontakte/icon32.png"
-#~ msgstr ""
-
-#~ msgid "images/vkontakte/icon64.png"
-#~ msgstr ""
-
-#~ msgid "images/vkontakte/vk-share.png"
-#~ msgstr ""
-
-#~ msgid "images/vkontakte/vk-sidebar.png"
-#~ msgstr ""
-
-#~ msgid "images/odnoklassniki/logo.png"
-#~ msgstr ""
-
-#~ msgid "images/odnoklassniki/logo32.png"
-#~ msgstr ""
-
-#~ msgid "images/odnoklassniki/logo64.png"
-#~ msgstr ""
-
-#~ msgid "images/odnoklassniki/logo-large.png"
-#~ msgstr ""
-
-#~ msgid "images/odnoklassniki/share.png"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Discover ideas for all your projects "
-#~ "and interests, hand-picked by people "
-#~ "like you. "
-#~ msgstr ""
-
-#~ msgid "images/pinterest/pinterestDetail1.png"
-#~ msgstr ""
-
-#~ msgid "Click on a service to add it to Firefox."
-#~ msgstr "Klicken Sie auf einen Dienst, um ihn zu Firefox hinzuzufügen."
-
-#~ msgid "View more"
-#~ msgstr "Mehr anzeigen"
-
