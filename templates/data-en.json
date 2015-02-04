@@ -206,7 +206,7 @@
         "version": "1.1",
         "name": "mixi",
         "author": "mixi, Inc.",
-        "description": "{{ _('友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます') }}",
+        "description": "{{ _('The largest social network in Japan.') }}",
         "origin": "https://mixi.jp",
         "sidebarURL": "https://mixi.jp/firefox_sidebar.pl",
         "homepageURL": "https://mixi.jp/promotion.pl?id=social_sidebar",
@@ -230,7 +230,7 @@
       "status": "release",
       "manifest": {
         "author": "SINA Corporation",
-        "description": "{{ _('用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯') }}",
+        "description": "{{ _('Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when receiving new messages.') }}",
         "homepageURL": "http://www.weibo.com",
         "iconURL": "images/weibo/icon16.png",
         "icon32URL": "images/weibo/icon32.png",
