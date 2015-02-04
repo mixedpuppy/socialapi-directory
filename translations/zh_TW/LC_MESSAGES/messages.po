@@ -7,15 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-02-03 12:48-0800\n"
-"PO-Revision-Date: 2014-08-21 17:30+0000\n"
+"POT-Creation-Date: 2015-01-30 12:08-0800\n"
+"PO-Revision-Date: 2015-02-04 04:54+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1423025683.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -145,11 +148,11 @@ msgstr "<a href=\".\">探索您還可以新增哪些服務</a> 到 Firefox。"
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "世界各地足球消息的重要消息來源。"
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "We live and breathe football - everywhere, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -160,6 +163,10 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
+"<p>不論是足球、Football、soccer、futbol、calcio 還是 "
+"futebol，不論您怎麼叫它，又支持哪一隊，我們都是您最重要的消息來源。</p><p>我們在超過 50 個國家中有超過 530 位記者，讓您可以隨時貼"
+"近各類賽事。我們在各種足球活動現場撰寫原創內容，把各聯盟、各團隊與各個球員的相關新聞帶給您。</p><p>有超過五千兩百萬足球粉絲信任我們，從我們取得最"
+"新消息。"
 
 #: templates/data-en.json:33 templates/data-en.json:42
 msgid ""
@@ -168,14 +175,16 @@ msgid ""
 "discover, and listen to over a million songs, from the latest hits to "
 "hard-to-find classics."
 msgstr ""
+"Saavn 能讓您在不論是在線上或移動時，都能有最棒的寶萊塢與印度音樂聆聽體驗。很簡單、很美好、可以自由搜尋、探索，可聆聽超過一百萬首不論是最新熱門專輯"
+"，或很難尋找的經典歌曲。"
 
 #: templates/data-en.json:40
 msgid "Music Feed"
-msgstr ""
+msgstr "Music Feed"
 
 #: templates/data-en.json:41
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "探索全新的音樂，聽更多您喜愛的音樂。"
 
 #: templates/data-en.json:63
 msgid ""
@@ -184,9 +193,8 @@ msgid ""
 msgstr "為 Firefox 打造的 Pocket 服務，是儲存文章、影片，還有更多內容的最佳方案。"
 
 #: templates/data-en.json:71
-#, fuzzy
 msgid "Save it for later"
-msgstr "先存後用"
+msgstr "Save it for later"
 
 #: templates/data-en.json:72
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -196,11 +204,11 @@ msgstr "讓你能儲存任何內容，以利稍後觀看。"
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
-msgstr ""
+msgstr "探索與您的興趣最相關的內容的全新方式。"
 
 #: templates/data-en.json:94
 msgid "a discovery experience"
-msgstr ""
+msgstr "一個探索體驗"
 
 #: templates/data-en.json:111
 msgid ""
@@ -232,33 +240,33 @@ msgstr "隨時、隨地分享任何網頁。"
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
-msgstr ""
+msgstr "Cliqz 能依照您的興趣，直接在 Firefox 中帶來最相關的文章、故事與影片的即時串流。"
 
 #: templates/data-en.json:197
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
-msgstr ""
+msgstr "透過打造獨特的資訊空間，來依照您的興趣取得最相關的新聞。"
 
 #: templates/data-en.json:209
 msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-msgstr ""
+msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
 
 #: templates/data-en.json:221
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "日本最大的社交網路。"
 
 #: templates/data-en.json:222
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "隨時掌握您的好友喜歡什麼東西。"
 
 #: templates/data-en.json:233
 msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-msgstr ""
+msgstr "用一句話隨意記錄生活，用 Firefox 隨時隨地發微博，迅速獲取最熱最火最快最酷最新的資訊"
 
 #: templates/data-en.json:250
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "隨時隨地分享您有興趣的消息。"
 
 #: templates/data-en.json:251
 msgid ""
@@ -267,6 +275,7 @@ msgid ""
 "videos, etc. And it will show the notification when receiving new "
 "messages."
 msgstr ""
+"新浪微博是中國最知名的微網誌服務。Weibo for Firefox 可讓使用者張貼 140 字以內的訊息、圖片、影片等等，並會在收到新訊息時通知您。"
 
 #: templates/data-en.json:272
 msgid ""
@@ -303,11 +312,11 @@ msgstr "Twitter Share 可讓你迅速推文給你的追蹤者。"
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "管理您的專業身分。打造並認識您的專業網路。得到知識與機會。"
 
 #: templates/data-en.json:353
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "分享 Web 到您的專業網路中。"
 
 #: templates/data-en.json:371
 msgid ""
@@ -322,13 +331,13 @@ msgstr "Tumblr 讓你輕鬆分享大小事。"
 
 #: templates/data-en.json:392 templates/data-en.json:406
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
 #: templates/data-en.json:398 templates/data-en.json:407
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
-msgstr ""
+msgstr "VK 是一個結合全世界的人們，幫助他們能舒服地、敏捷地溝通的社交網路。"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
@@ -336,38 +345,40 @@ msgid ""
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
+"Pinterest 是一個能幫助您探索與規畫想做的事情的工具。當您找到一些有興趣的東西，Pin 下去就好！Pin "
+"是能夠讓您用您想要的方式整理、分享的視覺化書籤。"
 
 #: templates/data-en.json:433
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
-msgstr ""
+msgstr "探索由像您這樣的人親自挑選，可讓您放在的專案與興趣的新點子。"
 
 #: templates/data-en.json:572 templates/data-en.json:581
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
-msgstr ""
+msgstr "Odnoklassniki（俄文: Одноклассники 同學）是給同學與老朋友使用的社交網路。"
 
 #: templates/data-en.json:580
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:596
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
-msgstr ""
+msgstr "Xing 是專業網絡、商業行銷與職涯發展的社交網路。"
 
 #: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING 是您能有更好的職涯的專業網絡。"
 
 #: templates/data-en.json:605
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
-msgstr ""
+msgstr "拓展您現有的網絡，並認識新的聯絡人、群組、職位、公司、活動，以及您的產業中的最新消息。"
 
 #: templates/footer.html:12
 #, python-format
@@ -565,4 +576,3 @@ msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
 msgstr "此服務只是展示用，可能會怪怪的。"
-
