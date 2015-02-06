@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-01-30 12:08-0800\n"
-"PO-Revision-Date: 2015-02-05 11:56+0000\n"
+"PO-Revision-Date: 2015-02-06 15:10+0000\n"
 "Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: es <LL@li.org>\n"
 "Language: es\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1423137386.0\n"
+"X-POOTLE-MTIME: 1423235440.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -168,11 +168,11 @@ msgstr ""
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr " "
+msgstr "Vivimos y respiramos fútbol, en todas partes, las 24 horas del día"
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr "Vivimos y respiramos fútbol - en todas partes, 24/7."
+msgstr "Vivimos y respiramos fútbol, en todas partes, las 24 horas del día"
 
 #: templates/data-en.json:20
 msgid ""
@@ -183,13 +183,10 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
-"<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted"
-" siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más "
-"de 530 periodistas sobre el terreno en más de 50 países, cada vez más "
-"cerca de la acción. Creamos contenido original allá donde se producen las"
-" noticias de las ligas, equipos y jugadores que importan.</p><p>No es de "
-"extrañar que más de 52 millones de aficionados al fútbol confíen en "
-"nosotros para estar al tanto de todo lo que sucede.</p>"
+"Saavn es la mejor experiencia para escuchar música india y de Bollywood, en "
+"línea y sobre la marcha. Es una manera simple, atractiva y gratuita de "
+"buscar, descubrir y escuchar más de un millón de canciones, desde los "
+"últimos éxitos hasta los clásicos difíciles de encontrar."
 
 #: templates/data-en.json:33 templates/data-en.json:42
 msgid ""
@@ -246,8 +243,8 @@ msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
 msgstr ""
-"Delicious es un servicio gratuito diseñado con cuidado para ser el mejor "
-"lugar para guardar lo que amas en la Web."
+"Delicious es un servicio gratuito con un cuidado diseño que lo convierte en "
+"el mejor lugar donde guardar lo que te encanta de la Web."
 
 #: templates/data-en.json:129
 msgid "Never lose a link again."
@@ -282,8 +279,8 @@ msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
 msgstr ""
-"Recibe las noticias más relevantes basadas en tus intereses al construir un "
-"universo de información único."
+"Recibe las noticias más relevantes basadas en tus intereses construyendo un "
+"original universo de información."
 
 # ?
 #: templates/data-en.json:209
@@ -340,9 +337,9 @@ msgid ""
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
 msgstr ""
-"Usa tu Twitter Share de Firefox para escribir tuits rápidamente sobre las "
-"páginas que descubres en la Web. Acordamos URLs para compartir rápidamente "
-"usando el servicio de acortamiento t.co."
+"Usa Twitter Share de Firefox para escribir tuits rápidamente sobre las "
+"páginas que descubres en la Web.  Acordamos las URL con el servicio de "
+"acortamiento t.co para que compartas contenidos al instante."
 
 #: templates/data-en.json:328
 msgid "Tweet to your followers"
@@ -350,7 +347,7 @@ msgstr "Tuitea a tus seguidores"
 
 #: templates/data-en.json:329
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr "Twitter Share te permite tuitear vínculos rápidamente a tus usuarios."
+msgstr "Twitter Share te permite tuitear vínculos a tus seguidores al instante."
 
 #: templates/data-en.json:346
 msgid ""
@@ -431,7 +428,7 @@ msgstr ""
 
 #: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
-msgstr "Xing es la red profesional para una mejor vida laboral."
+msgstr "XING es la red profesional que mejora la vida laboral."
 
 #: templates/data-en.json:605
 msgid ""
@@ -490,11 +487,11 @@ msgstr "Activar ahora"
 
 #: templates/index.html:40 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr "Saber más&hellip;"
+msgstr "Descubre más&hellip;"
 
 #: templates/index.html:56
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr "Mejora tu experiencia Firefox, consigue más de la Red"
+msgstr "Mejora tu experiencia Firefox, consigue más de la Web"
 
 #: templates/index.html:57
 msgid ""
@@ -504,11 +501,11 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
-"Fácil de usar, no hay que descargar ni instalar software ni complementos,"
-" sólo tienes que pulsar Activar y obtendrás nueva funcionalidad "
-"directamente desde la Red.  Cualquier cosa desde servicios de medios "
-"sociales a marcadores en la nube, música y noticias personalizadas, "
-"añadir estos servicios a Firefox te permite obtener más de la Red."
+"Fácil de usar, no hay que descargar ni instalar software ni complementos, "
+"sólo tienes que pulsar Activar y obtendrás nueva funcionalidad directamente "
+"desde la Web.  Cualquier cosa desde servicios de medios sociales a "
+"marcadores en la nube, música y noticias personalizadas, añadir estos "
+"servicios a Firefox te permite obtener más de la Red."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
