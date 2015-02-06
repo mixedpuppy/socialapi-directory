@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-01-30 12:08-0800\n"
-"PO-Revision-Date: 2015-02-04 23:31+0000\n"
+"PO-Revision-Date: 2015-02-06 08:17+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1423092688.0\n"
+"X-POOTLE-MTIME: 1423210650.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -342,11 +342,13 @@ msgstr ""
 
 #: templates/data-en.json:328
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Tweet para seus seguidores"
 
 #: templates/data-en.json:329
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr ""
+"O Twitter Share permite que você tweet rapidamente links para os seus "
+"seguidores."
 
 #: templates/data-en.json:346
 msgid ""
@@ -356,7 +358,7 @@ msgstr ""
 
 #: templates/data-en.json:353
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Compartilhe a web com a sua rede profissional."
 
 #: templates/data-en.json:371
 msgid ""
@@ -364,10 +366,13 @@ msgid ""
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
+"Publique texto, fotos, citações, links, música e vídeos a partir de seu "
+"navegador, telefone, área de trabalho, e-mail de onde quer que esteja. Você "
+"pode personalizar tudo, de cores ao tema HTML."
 
 #: templates/data-en.json:381
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "O Tumblr permite que você compartilhe qualquer coisa facilmente."
 
 #: templates/data-en.json:392 templates/data-en.json:406
 msgid "VK"
@@ -378,6 +383,8 @@ msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
 msgstr ""
+"VK é uma rede social que reúne e ajuda pessoas de todo o mundo a se "
+"comunicarem de forma confortável e prontamente."
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
@@ -385,38 +392,50 @@ msgid ""
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
+"Pinterest é uma ferramenta para ajudá-lo a descobrir e planejar as coisas "
+"que deseja fazer. Quando encontrar algo que parece interessante, apenas Pin "
+"it! Os pinos são indicadores visuais que você organizar e compartilhar da "
+"maneira que quiser."
 
 #: templates/data-en.json:433
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
 msgstr ""
+"Descubra ideias para todos os seus projetos e interesses, escolhidos a dedo "
+"por pessoas como você."
 
 #: templates/data-en.json:572 templates/data-en.json:581
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
+"Odnoklassniki (Russo: Одноклассники Classmates) é um serviço de rede social "
+"para colegas e velhos amigos."
 
 #: templates/data-en.json:580
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:596
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr ""
+"Xing é a rede social para networking profissional, marketing empresarial e "
+"desenvolvimento de carreira."
 
 #: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING é a rede profissional para uma vida melhor de trabalho."
 
 #: templates/data-en.json:605
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr ""
+"Expande a sua rede existente e acesse novos contatos, grupos, trabalhos, "
+"empresas, eventos e notícias de sua indústria."
 
 #: templates/footer.html:12
 #, python-format
