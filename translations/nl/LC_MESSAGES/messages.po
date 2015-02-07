@@ -2,40 +2,41 @@
 # Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-02-03 12:48-0800\n"
-"PO-Revision-Date: 2014-08-27 13:11-0700\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-01-30 12:08-0800\n"
+"PO-Revision-Date: 2015-02-07 14:41+0000\n"
+"Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1423320107.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr ""
+msgstr "Start"
 
 #: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "Gefeliciteerd, <strong>%(name)s</strong> is nu in Firefox geactiveerd!"
 
 #: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "Haal het meeste uit %(name)s"
 
 #: templates/activated.html:29
 msgid "Bookmark this page"
-msgstr ""
+msgstr "Bladwijzer voor deze pagina maken"
 
 #: templates/activated.html:30
 #, python-format
@@ -44,11 +45,15 @@ msgid ""
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
+"Als deze service nieuw voor u is, maak dan een bladwijzer voor deze pagina; "
+"deze bevat nuttige informatie en koppelingen voor meer hulp bij het "
+"gebruiken en aanpassen van Firefox. Lees verder voor meer info over hoe %"
+"(name)s in Firefox werkt."
 
 #: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Deel inhoud die u leuk vindt via %(name)s"
 
 #: templates/activated.html:40
 #, python-format
@@ -56,10 +61,12 @@ msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
+"Met een klik op een knop kunt u interessante inhoud op websites delen met uw "
+"sociale netwerk via <strong>%(name)s</strong>."
 
 #: templates/activated.html:45
 msgid "Save content for later"
-msgstr ""
+msgstr "Inhoud voor later opslaan"
 
 #: templates/activated.html:47
 #, python-format
@@ -67,11 +74,13 @@ msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
 msgstr ""
+"Met een klik op een knop kunt u interessante inhoud op websites opslaan naar "
+"<strong>%(name)s</strong>."
 
 #: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "Houd het nieuwste in de gaten vanaf %(name)s"
 
 #: templates/activated.html:54
 #, python-format
@@ -79,10 +88,12 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
+"<strong>%(name)s</strong> voorziet u van het nieuwste van hun service; klik "
+"gewoon op het pictogram in de werkbalk."
 
 #: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "Voeg de knop Zijbalken toe aan uw werkbalk"
 
 #: templates/activated.html:64
 #, python-format
@@ -92,6 +103,10 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"Vanaf Firefox 30 kunt u uw zijbalken beheren via de werkbalkknop ZIjbalken. "
+"De knop Zijbalken bevindt zich in het <a href=\"%"
+"(url)s\">aanpassingenpalet</a>; sleep gewoon de knop naar uw werkbalk om snel "
+"tussen zijbalken te kunnen schakelen."
 
 #: templates/activated.html:72
 msgid ""
@@ -99,14 +114,17 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Daarnaast kunt u eenvoudig de service in uw zijbalk wijzigen, of de zijbalk "
+"verbergen, vanuit de zijbalk zelf. U kunt ook het menu "
+"<strong>Beeld->Werkbalken</strong> in Firefox gebruiken."
 
 #: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Wijzig instellingen vanuit de add-onbeheerder"
 
 #: templates/activated.html:81
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Add-onbeheerder"
 
 #: templates/activated.html:83
 #, python-format
@@ -115,10 +133,12 @@ msgid ""
 "them temporarily or removing them, by viewing the Add-ons Manager in "
 "Firefox."
 msgstr ""
+"U kunt eenvoudig <a href=\"%(url)s\">uw services beheren</a>, tijdelijk "
+"uitschakelen of verwijderen door de add-onbeheerder in Firefox te bekijken."
 
 #: templates/activated.html:88
 msgid "Next Steps"
-msgstr ""
+msgstr "Volgende stappen"
 
 #: templates/activated.html:90
 #, python-format
@@ -126,6 +146,7 @@ msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr ""
+"<a href=\"%(url)s\">Lees meer over wat deze service aan Firefox toevoegt</a>."
 
 #: templates/activated.html:92
 #, python-format
@@ -133,14 +154,18 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
+"<a href=\"%(url)s\">Lees meer</a> over wat <a href=\"%(url)s\">%(name)s</a> "
+"biedt."
 
 #: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
+"<a href=\".\">Verken en vind meer services</a> die u aan Firefox kunt "
+"toevoegen."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr " "
+msgstr "De onbetwiste bron voor voetbalnieuws uit de hele wereld."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
@@ -155,13 +180,12 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
-"<p>Voetbal, soccer, futbol, calcio, futebol - hoe je het ook noemt en "
-"welk team je ook support, wij zijn de absolute bron voor voetbal. "
-"</p><p>We beschikken over meer dan 530 verslaggevers in meer dan 50 "
-"landen die bovenop het nieuws zitten. We creëren originele content en "
-"brengen nieuws over competities, teams en spelers die er toe "
-"doen.</p><p>Het is dan ook geen wonder dan meer dan 52 miljoen fans in "
-"ons vertrouwen.</p>"
+"<p>Voetbal, soccer, futbol, calcio, futebol - hoe u het ook noemt en welk "
+"team u ook steunt, wij zijn uw onbetwiste bron voor voetbal.</p><p>We "
+"beschikken over meer dan 530 verslaggevers in meer dan 50 landen die boven "
+"op het nieuws zitten. We maken originele inhoud en brengen nieuws over "
+"competities, teams en spelers die ertoe doen.</p><p>Het is dan ook geen "
+"wonder dan meer dan 52 miljoen fans in ons vertrouwen.</p>"
 
 #: templates/data-en.json:33 templates/data-en.json:42
 msgid ""
@@ -170,96 +194,111 @@ msgid ""
 "discover, and listen to over a million songs, from the latest hits to "
 "hard-to-find classics."
 msgstr ""
+"Saavn is de beste luisterervaring voor Bollywood- en Indian-muziek, online "
+"en onderweg. Het is een eenvoudige, mooie en gratis manier om meer dan een "
+"miljoen nummers te zoeken, te ontdekken en te beluisteren, van de nieuwste "
+"hits tot moeilijk te vinden klassiekers."
 
 #: templates/data-en.json:40
 msgid "Music Feed"
-msgstr ""
+msgstr "Muziekfeed"
 
 #: templates/data-en.json:41
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "Ontdek nieuwe muziek en hoor meer waarvan u houdt."
 
 #: templates/data-en.json:63
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
 msgstr ""
+"Pocket-service voor Firefox – De beste manier om artikelen, video’s en meer "
+"op te slaan"
 
 #: templates/data-en.json:71
 msgid "Save it for later"
-msgstr ""
+msgstr "Opslaan voor later"
 
 #: templates/data-en.json:72
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr ""
+"Een handige, mooie plek om inhoud die u later wilt bekijken op te slaan."
 
 #: templates/data-en.json:86 templates/data-en.json:96
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
 msgstr ""
+"Een nieuwe manier om de meest interessante en voor uw interesses relevante "
+"inhoud te ontdekken."
 
 #: templates/data-en.json:94
 msgid "a discovery experience"
-msgstr ""
+msgstr "een ontdekkingservaring"
 
 #: templates/data-en.json:111
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
 msgstr ""
+"Delicious is een gratis service, met zorg ontworpen om de beste plek te zijn "
+"voor het opslaan van dingen op het web waarvan u houdt."
 
 #: templates/data-en.json:129
 msgid "Never lose a link again."
-msgstr ""
+msgstr "Raak nooit meer een koppeling kwijt."
 
 #: templates/data-en.json:130
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious onthoudt ze, zodat u dat niet hoeft."
 
 #: templates/data-en.json:145
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "Blijf bij met vrienden, waar op het web u ook bent."
 
 #: templates/data-en.json:165
 msgid "Share the web"
-msgstr ""
+msgstr "Deel het web"
 
 #: templates/data-en.json:166
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Deel webpagina’s, overal en altijd."
 
 #: templates/data-en.json:174
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
 msgstr ""
+"Cliqz levert een realtime-stream van de meest relevante artikelen, verhalen "
+"en video’s, gebaseerd op uw interesses, rechtstreeks aan Firefox."
 
 #: templates/data-en.json:197
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
 msgstr ""
+"Ontvang het meest relevante nieuws op basis van uw interesses door een uniek "
+"informatie-universum samen te stellen."
 
 #: templates/data-en.json:209
 msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-msgstr ""
+msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
 
 #: templates/data-en.json:221
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Het grootste sociale netwerk in Japan."
 
 #: templates/data-en.json:222
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Blijf geïnformeerd over waar uw vrienden mee bezig zijn."
 
 #: templates/data-en.json:233
 msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-msgstr ""
+msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
 
 #: templates/data-en.json:250
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Deel uw interessante nieuws, altijd en overal."
 
 #: templates/data-en.json:251
 msgid ""
@@ -268,20 +307,26 @@ msgid ""
 "videos, etc. And it will show the notification when receiving new "
 "messages."
 msgstr ""
+"Sina Weibo is de meest populaire microbloggingservice in China. Met Weibo "
+"voor Firefox kunnen gebruikers berichten met een limiet van 140 tekens, "
+"afbeeldingen, video’s, etc. plaatsen. Bij de ontvangst van nieuwe berichten "
+"wordt een melding getoond."
 
 #: templates/data-en.json:272
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
 msgstr ""
+"Deel snel inhoud die u op het web ontdekt op Google+. Gebruik uw "
+"Google+-account om websites openbaar of met uw Kringen te delen."
 
 #: templates/data-en.json:277
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Deel het web op Google+."
 
 #: templates/data-en.json:298 templates/data-en.json:302
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Stuur webpagina’s en afbeeldingen naar mensen die Gmail gebruiken."
 
 #: templates/data-en.json:321
 msgid ""
@@ -289,24 +334,29 @@ msgid ""
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
 msgstr ""
+"Gebruik uw Twitter Share in Firefox om snel tweets over de pagina ’s die u "
+"op het web ontdekt samen te stellen. We korten URL’s in voor snel delen via "
+"de koppelingsverkorter t.co."
 
 #: templates/data-en.json:328
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Tweet naar uw volgers"
 
 #: templates/data-en.json:329
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Via Twitter Share kunt u snel koppelingen naar uw volgers tweeten."
 
 #: templates/data-en.json:346
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
 msgstr ""
+"Beheer uw professionele identiteit. Bouw en benader uw professionele "
+"netwerk. Bereik kennis, inzichten en mogelijkheden."
 
 #: templates/data-en.json:353
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Deel het web met uw professionele netwerk."
 
 #: templates/data-en.json:371
 msgid ""
@@ -314,20 +364,25 @@ msgid ""
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
+"Plaats tekst, foto’s, citaten, koppelingen, muziek en video’s vanuit uw "
+"browser, telefoon, desktop, e-mail of waar u zich toevallig bevindt. U kunt "
+"alles aanpassen, van kleuren tot de HTML van uw thema."
 
 #: templates/data-en.json:381
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Met Tumblr kunt u alles moeiteloos delen."
 
 #: templates/data-en.json:392 templates/data-en.json:406
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
 #: templates/data-en.json:398 templates/data-en.json:407
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
 msgstr ""
+"VK is een sociaal netwerk dat mensen over de hele wereld verenigt en hen "
+"helpt comfortabel en vlot te communiceren."
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
@@ -335,38 +390,49 @@ msgid ""
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
+"Pinterest is een hulpmiddel dat u helpt dingen die u wilt doen te ontdekken "
+"en te plannen. Als u iets vindt dat interessant lijkt, Pin het dan! Pins "
+"zijn visuele bladwijzers die u op uw eigen manier ordent en deelt."
 
 #: templates/data-en.json:433
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
 msgstr ""
+"Ontdek ideeën voor al uw projecten en interesses, geselecteerd door mensen "
+"zoals u."
 
 #: templates/data-en.json:572 templates/data-en.json:581
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
+"Odnoklassniki (Russisch: Одноклассники Classmates) is een "
+"sociaalnetwerkservice voor klasgenoten en oude vrienden."
 
 #: templates/data-en.json:580
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:596
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr ""
+"Xing is het sociale netwerk voor professioneel netwerken, businessmarketing "
+"en carrièreontwikkeling."
 
 #: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING is het professionele netwerk voor een beter beroepsleven."
 
 #: templates/data-en.json:605
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr ""
+"Vergroot uw bestaande netwerk en benader nieuwe contacten, groepen, banen, "
+"bedrijven, evenementen en nieuws uit uw industrie."
 
 #: templates/footer.html:12
 #, python-format
@@ -375,50 +441,53 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
+"Delen van deze inhoud zijn ©1998–%(current_year)s door individuele mozilla"
+".org-medewerkers. Inhoud is beschikbaar onder een <a href=\"%(url)s\">Creative "
+"Commons-licentie</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Bijdragen aan deze pagina"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "Contact"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "Partner worden"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "Doneren"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Privacybeleid"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr ""
+msgstr "Juridische kennisgevingen"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Misbruik van handelsmerk melden"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI voor ontwikkelaars"
 
 #: templates/index.html:39 templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "Nu activeren"
 
 #: templates/index.html:40 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "Meer info&hellip;"
 
 #: templates/index.html:56
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Verbeter uw Firefox-ervaring, haal meer uit het web"
 
 #: templates/index.html:57
 msgid ""
@@ -428,136 +497,148 @@ msgid ""
 "personalized news, adding these services to Firefox lets you get more out"
 " of the web."
 msgstr ""
+"Eenvoudig te gebruiken, zonder software of add-ons te downloaden en te "
+"installeren; klik gewoon op Activeren en vanaf het web worden nieuwe "
+"functionaliteiten toegevoegd. Alles van socialemediaservices tot bladwijzers "
+"in de cloud, muziek en gepersonaliseerd nieuws, u haalt meer uit het web "
+"door deze services aan Firefox toe te voegen."
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Deze service ondersteunt het delen van inhoud"
 
 #: templates/index_entry.html:13 templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "delen"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Deze service biedt bladwijzerfunctionaliteit"
 
 #: templates/index_entry.html:14 templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "bladwijzers"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Deze service voegt een zijbalk aan Firefox toe"
 
 #: templates/index_entry.html:15 templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "zijbalk"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
+"Deze service voegt een werkbalkknop aan Firefox toe die meldingen kan "
+"bevatten"
 
 #: templates/index_entry.html:16 templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "meldingen"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Dit is een demoservice"
 
 #: templates/index_entry.html:18 templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "demo"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Deze service vereist een niet-vrijgegeven versie van Firefox"
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "bèta"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Andere talen:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Gaan"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s voor Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Services voor Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Download Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Firefox upgraden"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "vereist Firefox 29"
 
 #: templates/layout.html:90
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI-demo"
 
 #: templates/layout.html:95
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox voor desktop"
 
 #: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "U moet Firefox gebruiken om sociale services te installeren."
 
 #: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
-msgstr ""
+msgstr "Downloaden"
 
 #: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
+"Het installeren van sociale services vereist minstens versie 29 van Firefox. "
+"Upgrade nu uw versie van Firefox."
 
 #: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Deze service vereist een niet-vrijgegeven versie van Firefox."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Firefox Bèta installeren"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "vereist Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Firefox Aurora installeren"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Firefox Nightly installeren"
 
 #: templates/provider.html:56
 msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
+"Deze service bevindt zich in de bètatestfase; mogelijk werken sommige "
+"functionaliteiten niet zoals verwacht."
 
 #: templates/provider.html:59
 msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
 msgstr ""
-
+"Deze service dient alleen voor demonstratiedoeleinden en werkt mogelijk niet "
+"zoals verwacht."
