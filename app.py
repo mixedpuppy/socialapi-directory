@@ -6,7 +6,7 @@ from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
 import collections
 
-TRANSLATIONS = ['en-US', 'en_US', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW', 'fr', 'gl', 'de', 'it', 'ja', 'ru', 'es', 'cs', 'sl', 'pt-BR', 'pt_BR']
+TRANSLATIONS = ['cs', 'de', 'en-US', 'en_US', 'es', 'fr', 'gl', 'it', 'ja', 'nl', 'pt-BR', 'pt_BR', 'ru', 'sl', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW']
 
 # creating a data url for an image
 import base64
