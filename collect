@@ -1,17 +1,18 @@
 #!/bin/sh
 pushd .
 cd ../socialapi-pages
-rm -rf jp-JP es-AR pt-BR nl css js images index.html
+rm -rf jp-JP es-AR css js images index.html
 wget -nH -erobots=off -p http://localhost:8888/index.html
 wget -nH -erobots=off -p http://localhost:8888/sharePanel.html
 wget -nH -erobots=off -p http://localhost:8888/redirect.html
-for __LOCALE in en-US zh-TW fr gl de it ja ru es cs sl
+for __LOCALE in cs de en-US es fr gl it ja nl pt-BR ru sl zh-TW
 do
   rm -rf $__LOCALE
   wget -r -nH -erobots=off http://localhost:8888/$__LOCALE/activated/
   rm $__LOCALE/activated/index.html
   wget -r -nH -erobots=off http://localhost:8888/$__LOCALE/
   wget -nH -erobots=off -p http://localhost:8888/$__LOCALE/sharePanel.html
+  git add -A --ignore-removal $__LOCALE
 done
 
 # old goal.com pages
@@ -21,9 +22,7 @@ wget -nH -erobots=off -p http://localhost:8888/es-AR/goal.html
 wget -nH -erobots=off -p http://localhost:8888/es-AR/
 wget -nH -erobots=off -p http://localhost:8888/es-ES/goal.html
 wget -nH -erobots=off -p http://localhost:8888/es-ES/
-wget -nH -erobots=off -p http://localhost:8888/pt-BR/goal.html
-wget -nH -erobots=off -p http://localhost:8888/pt-BR/
-wget -nH -erobots=off -p http://localhost:8888/nl/goal.html
-wget -nH -erobots=off -p http://localhost:8888/nl/
+git add -A --ignore-removal id es-AR es-ES
+git add *.html
 
 popd
