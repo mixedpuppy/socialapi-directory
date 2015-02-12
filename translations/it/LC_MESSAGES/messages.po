@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-01-30 12:08-0800\n"
-"PO-Revision-Date: 2015-02-09 16:24+0000\n"
-"Last-Translator: Francesco <francesco.lodolo@mozillaitalia.org>\n"
+"PO-Revision-Date: 2015-02-12 12:59+0000\n"
+"Last-Translator: Sandro <gialloporpora@mozillaitalia.org>\n"
 "Language-Team: it <LL@li.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1423499053.0\n"
+"X-POOTLE-MTIME: 1423745985.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -417,6 +417,8 @@ msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
+"Odnoklassniki o Одноклассники in russo (compagni di scuola) è un social "
+"network per rimanere in contatto con ex compagni di scuola e vecchi amici."
 
 #: templates/data-en.json:580
 msgid "Odnoklassniki"
@@ -427,16 +429,23 @@ msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr ""
+"Xing è il social network dedicato all’interazione coi propri contatti "
+"lavorativi e lo sviluppo di attività di marketing e opportunità di carriera."
 
 #: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
 msgstr ""
+"XING è un network professionale per una gestione più semplice della vita "
+"lavorativa."
 
 #: templates/data-en.json:605
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr ""
+"Estendi la tua rete di contatti accedendo a nuove relazioni professionali, "
+"gruppi, opportunità occupazionali, aziende, eventi e novità nel tuo settore "
+"di competenza."
 
 #: templates/footer.html:12
 #, python-format
