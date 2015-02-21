@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-01-30 12:08-0800\n"
-"PO-Revision-Date: 2015-02-06 08:17+0000\n"
+"PO-Revision-Date: 2015-02-21 13:49+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1423210650.0\n"
+"X-POOTLE-MTIME: 1424526548.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -205,7 +205,7 @@ msgstr ""
 
 #: templates/data-en.json:40
 msgid "Music Feed"
-msgstr ""
+msgstr "Feed de músicas"
 
 #: templates/data-en.json:41
 msgid "Discover fresh music and hear more of what you love."
@@ -339,6 +339,9 @@ msgid ""
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
 msgstr ""
+"Use o botão compartilhar no Twitter Firefox para enviar tweets das páginas "
+"que encontra na Web. Vamos encurtar os endereços para compartilhá-los "
+"rapidamente, utilizando o sistema de abreviatura t.co. "
 
 #: templates/data-en.json:328
 msgid "Tweet to your followers"
@@ -355,6 +358,8 @@ msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
 msgstr ""
+"Gerencie sua identidade profissional. Crie e interaja com sua rede "
+"profissional. Acesse conhecimento, \"insights\" e oportunidades."
 
 #: templates/data-en.json:353
 msgid "Share the web with your professional network."
@@ -444,9 +449,9 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"Partes deste conteúdo são ©1998-%(current_year)s de colaboradores "
-"individuais da mozilla. O conteúdo está disponível sob uma <a "
-"href=\"%(url)s\">Licença Creative Commons</a>."
+"Partes deste conteúdo são ©1998–%(current_year)s de colaboradores "
+"individuais da mozilla. O conteúdo está disponível sob uma <a href=\"%"
+"(url)s\">Licença Creative Commons</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
