@@ -24,15 +24,14 @@
       "status": "release",
       "manifest": {
         "name": "saavn",
-        "origin": "http://www.saavn.com",
-        "iconURL": "http://www.saavn.com/_i/firefox/firefox16.png",
-        "icon32URL": "http://www.saavn.com/_i/firefox/firefox32.png",
-        "icon64URL": "http://www.saavn.com/_i/firefox/firefox64.png",
-        "workerURL": "http://www.saavn.com/_s/firefox/worker.js",
-        "sidebarURL": "http://www.saavn.com/firefox/sidebar.php",
+        "origin": "https://www.saavn.com",
+        "iconURL": "https://www.saavn.com/_i/firefox/firefox16.png",
+        "icon32URL": "https://www.saavn.com/_i/firefox/firefox32.png",
+        "icon64URL": "https://www.saavn.com/_i/firefox/firefox64.png",
+        "sidebarURL": "https://www.saavn.com/firefox/sidebar.php",
         "description": "{{ _('Saavn is the best Bollywood and Indian music listening experience, online and on the go. It\'s a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the latest hits to hard-to-find classics.') }}",
         "author": "Saavn",
-        "homepageURL": "http://www.saavn.com",
+        "homepageURL": "https://www.saavn.com",
         "version": 1
       },
       "viewData": {
@@ -44,7 +43,7 @@
           "youtube": ["A8Kignry0p8", "l8VlUiQ2IkQ", "aF0LyLeHk6w"]
         },
         "links": {
-          "learnmore": "http://www.saavn.com/corporate/"
+          "learnmore": "https://www.saavn.com/corporate/"
         }
       }
     },
@@ -563,15 +562,15 @@
       "status": "release",
       "minver": 32,
       "manifest": {
-        "origin": "http://www.odnoklassniki.ru/",
+        "origin": "http://www.ok.ru/",
         "name": "Odnoklassniki",
-        "shareURL": "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.noresize=on&st._surl=%{url}",
+        "shareURL": "https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.noresize=on&st.shareUrl=%{url}",
         "iconURL": "images/odnoklassniki/icon16.png",
         "icon32URL": "images/odnoklassniki/icon32.png",
         "icon64URL": "images/odnoklassniki/icon64.png",
         "description": "{{ _('Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends.') }}",
         "author": "Odnoklassniki",
-        "homepageURL": "http://www.odnoklassniki.ru/",
+        "homepageURL": "http://www.ok.ru/",
         "pageSize": {
           "share": { "width": 650, "height": 380 }
         }
