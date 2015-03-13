@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-01-30 12:08-0800\n"
-"PO-Revision-Date: 2015-02-04 19:59+0000\n"
-"Last-Translator: Michal <michal.stanke@mikk.cz>\n"
+"PO-Revision-Date: 2015-03-13 10:44+0000\n"
+"Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: cs <LL@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1423079975.0\n"
+"X-POOTLE-MTIME: 1426243474.0\n"
 
 #: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -284,7 +284,7 @@ msgstr ""
 
 #: templates/data-en.json:209
 msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-msgstr ""
+msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
 
 #: templates/data-en.json:221
 msgid "The largest social network in Japan."
@@ -296,7 +296,7 @@ msgstr "Buďte v obraze, co zrovna dělají vaši přátelé."
 
 #: templates/data-en.json:233
 msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-msgstr ""
+msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
 
 #: templates/data-en.json:250
 msgid "Share your interesting news anytime, anywhere."
