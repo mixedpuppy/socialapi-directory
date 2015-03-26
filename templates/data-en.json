@@ -383,6 +383,34 @@
         }
       }
     },
+    "known": {
+      "status": "release",
+      "minver": 32,
+      "manifest": {
+        "origin": "https://withknown.com",
+        "name": "Known",
+        "author": "Known, Inc.",
+        "iconURL": "images/known/icon16.png",
+        "icon32URL": "images/known/icon32.png",
+        "icon64URL": "images/known/icon64.png",  
+        "shareURL": "https://withknown.com/share/?url=%{url}&title=%{title}",
+  
+        "description": "{{ _('Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web.') }}",
+        "homepageURL": "https://withknown.com/",
+  
+        "version": 1,
+        "pageSize": {
+          "share": { "width": 550, "height": 430 }
+        }
+      },
+      "viewData": {
+        "name": "Known",
+        "shortDescription": "{{ _('Known lets you create a single website for all your content.') }}",
+        "links": {
+          "learnmore": "https://withknown.com/"
+        }
+      }
+    },
     "vkontakte": {
       "status": "release",
       "minver": 32,
