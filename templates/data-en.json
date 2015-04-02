@@ -405,7 +405,7 @@
       },
       "viewData": {
         "name": "Known",
-        "shortDescription": "{{ _('Known lets you create a single website for all your content.') }}",
+        "shortDescription": "{{ _('Share interesting content from your own site.') }}",
         "links": {
           "learnmore": "https://withknown.com/"
         }
