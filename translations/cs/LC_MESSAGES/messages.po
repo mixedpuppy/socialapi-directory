@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-04-02 10:30-0700\n"
+"POT-Creation-Date: 2015-04-02 12:52-0700\n"
 "PO-Revision-Date: 2015-03-13 10:44+0000\n"
 "Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: cs <LL@li.org>\n"
@@ -17,26 +17,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/activated.html:8 templates/activatedIndex.html:9
+#: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
 msgstr "Domů"
 
-#: templates/activated.html:22
+#: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr "Gratulujeme. <strong>%(name)s</strong> je nyní aktivován ve Firefoxu!"
 
-#: templates/activated.html:27
+#: templates/activated.html:51
 #, python-format
 msgid "Get the most from %(name)s"
 msgstr "Získejte co nejvíce z %(name)s"
 
-#: templates/activated.html:29
+#: templates/activated.html:53
 msgid "Bookmark this page"
 msgstr "Přidat stránku do záložek"
 
-#: templates/activated.html:30
+#: templates/activated.html:54
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
@@ -48,12 +48,12 @@ msgstr ""
 "přizpůsobit svůj Firefox. Níže se dozvíte více informací o tom, jak "
 "%(name)s ve Firefoxu funguje."
 
-#: templates/activated.html:35
+#: templates/activated.html:59
 #, python-format
 msgid "Share content you like through %(name)s"
 msgstr "Sdílejte obsah, který máte rádi, skrze %(name)s"
 
-#: templates/activated.html:40
+#: templates/activated.html:64
 #, python-format
 msgid ""
 "With the click of a button, you can Share interesting content on any "
@@ -62,11 +62,11 @@ msgstr ""
 "Jedním klepnutím na tlačítko můžete sdílet zajímavý obsah z jakékoliv "
 "stránky na vaší sociální síti pomocí <strong>%(name)s</strong>."
 
-#: templates/activated.html:45
+#: templates/activated.html:69
 msgid "Save content for later"
 msgstr "Uložit obsah pro příště"
 
-#: templates/activated.html:47
+#: templates/activated.html:71
 #, python-format
 msgid ""
 "With the click of a button, you can save interesting content on any "
@@ -75,12 +75,12 @@ msgstr ""
 "Jedním klepnutím na tlačítko můžete ukládat vybraný obsah na jakékoliv "
 "stránce do <strong>%(name)s</strong>."
 
-#: templates/activated.html:52
+#: templates/activated.html:76
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
 msgstr "Hlídejte si to nejnovější od %(name)s"
 
-#: templates/activated.html:54
+#: templates/activated.html:78
 #, python-format
 msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
@@ -89,11 +89,11 @@ msgstr ""
 "<strong>%(name)s</strong> vám poskytne to nejnovější ze svých služeb, "
 "stačí klepnou na tlačítko na liště."
 
-#: templates/activated.html:59
+#: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
 msgstr "Přidá tlačítko pro Postranní lišty do vaší lišty"
 
-#: templates/activated.html:64
+#: templates/activated.html:88
 #, python-format
 msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars"
@@ -107,7 +107,7 @@ msgstr ""
 "přetáhnout na nástrojovou lištu, kde pak budete moci snadno přepínat "
 "zobrazení postranních lišt."
 
-#: templates/activated.html:72
+#: templates/activated.html:96
 msgid ""
 "Additionally, you can easily change the service in your sidebar, or hide "
 "the sidebar, from the sidebar itself. You can also use the "
@@ -117,15 +117,15 @@ msgstr ""
 "skrýt. Použít můžete také nabídku <strong>Zobrazit -> Nástrojové "
 "lišty</strong> ve Firefoxu."
 
-#: templates/activated.html:79
+#: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
 msgstr "Změna nastavení je možná ve Správci doplňků"
 
-#: templates/activated.html:81
+#: templates/activated.html:105
 msgid "Add-ons Manager"
 msgstr "Správce doplňků"
 
-#: templates/activated.html:83
+#: templates/activated.html:107
 #, python-format
 msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
@@ -135,11 +135,11 @@ msgstr ""
 "<a href=\"%(url)s\">Spravovat své služby</a>, blokovat je dočasně nebo "
 "trvale, můžete pomocí Správce doplňků ve Firefoxu."
 
-#: templates/activated.html:88
+#: templates/activated.html:112
 msgid "Next Steps"
 msgstr "Další kroky"
 
-#: templates/activated.html:90
+#: templates/activated.html:114
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
@@ -148,7 +148,7 @@ msgstr ""
 "<a href=\"%(url)s\">Dozvědět se více o tom, co tato služba přidává do "
 "Firefoxu</a>."
 
-#: templates/activated.html:92
+#: templates/activated.html:116
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
@@ -157,7 +157,7 @@ msgstr ""
 "<a href=\"%(url)s\">Dozvědět se více</a> a tom, co <a "
 "href=\"%(url)s\">%(name)s</a> poskytuje."
 
-#: templates/activated.html:94
+#: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
 "<a href=\".\">Prozkoumejte a najděte více služeb</a>, které můžete přidat"
@@ -371,7 +371,7 @@ msgid ""
 msgstr ""
 
 #: templates/data-en.json:408
-msgid "Known lets you create a single website for all your content."
+msgid "Share interesting content from your own site."
 msgstr ""
 
 #: templates/data-en.json:419 templates/data-en.json:433
@@ -585,23 +585,23 @@ msgstr "Aktualizace Firefoxu"
 msgid "requires Firefox 29"
 msgstr "vyžaduje Firefox 29"
 
-#: templates/layout.html:90
+#: templates/layout.html:82
 msgid "SocialAPI Demo"
 msgstr "Demoverze SocialAPI"
 
-#: templates/layout.html:95
+#: templates/layout.html:87
 msgid "Firefox for desktop"
 msgstr "Firefox pro desktop"
 
-#: templates/layout.html:113
+#: templates/layout.html:105
 msgid "You must use Firefox to install Social services."
 msgstr "Pro instalaci sociálních služeb musíte používat Firefox."
 
-#: templates/layout.html:113 templates/layout.html:114
+#: templates/layout.html:105 templates/layout.html:106
 msgid "Download"
 msgstr "Stáhnout"
 
-#: templates/layout.html:114
+#: templates/layout.html:106
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
@@ -609,7 +609,7 @@ msgstr ""
 "Instalace sociálních služeb vyžaduje alespoň Firefox ve verzi 29. "
 "Aktualizujte nyní svou verzi Firefoxu."
 
-#: templates/layout.html:115
+#: templates/layout.html:107
 msgid "This service requires an unreleased version of Firefox."
 msgstr "Tato služba vyžaduje dosud nevydanou verzi Firefoxu."
 
@@ -651,4 +651,7 @@ msgstr ""
 
 #~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
 #~ msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+
+#~ msgid "Known lets you create a single website for all your content."
+#~ msgstr ""
 

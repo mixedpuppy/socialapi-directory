@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-04-02 10:30-0700\n"
+"POT-Creation-Date: 2015-04-02 12:52-0700\n"
 "PO-Revision-Date: 2015-03-10 08:42+0000\n"
 "Last-Translator: Matjaž <m@owca.info>\n"
 "Language-Team: sl <LL@li.org>\n"
@@ -18,26 +18,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 1.3\n"
 
-#: templates/activated.html:8 templates/activatedIndex.html:9
+#: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
 msgstr "Domača stran"
 
-#: templates/activated.html:22
+#: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr "Čestitke, <strong>%(name)s</strong> je sedaj omogočen v Firefoxu!"
 
-#: templates/activated.html:27
+#: templates/activated.html:51
 #, python-format
 msgid "Get the most from %(name)s"
 msgstr "Dobite največ iz %(name)s"
 
-#: templates/activated.html:29
+#: templates/activated.html:53
 msgid "Bookmark this page"
 msgstr "Dodaj stran med zaznamke"
 
-#: templates/activated.html:30
+#: templates/activated.html:54
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
@@ -49,12 +49,12 @@ msgstr ""
 "prilagoditvi Firefoxa.  Nadaljujte z branjem za več o tem, kako %(name)s "
 "deluje v Firefoxu."
 
-#: templates/activated.html:35
+#: templates/activated.html:59
 #, python-format
 msgid "Share content you like through %(name)s"
 msgstr "Delite vsebino, ki vam je všeč, z uporabo stortive %(name)s"
 
-#: templates/activated.html:40
+#: templates/activated.html:64
 #, python-format
 msgid ""
 "With the click of a button, you can Share interesting content on any "
@@ -64,11 +64,11 @@ msgstr ""
 " s svojim družbenim omrežjem z uporabo storitve "
 "<strong>%(name)s</strong>."
 
-#: templates/activated.html:45
+#: templates/activated.html:69
 msgid "Save content for later"
 msgstr "Shrani vsebino za kasneje"
 
-#: templates/activated.html:47
+#: templates/activated.html:71
 #, python-format
 msgid ""
 "With the click of a button, you can save interesting content on any "
@@ -77,12 +77,12 @@ msgstr ""
 "S klikom na gumb lahko shranite zanimivo vsebino iz poljubne spletne "
 "strani na <strong>%(name)s</strong>."
 
-#: templates/activated.html:52
+#: templates/activated.html:76
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
 msgstr "Bodite pozorni na najnovejše iz %(name)s"
 
-#: templates/activated.html:54
+#: templates/activated.html:78
 #, python-format
 msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
@@ -91,11 +91,11 @@ msgstr ""
 "<strong>%(name)s</strong> vam bo omogočil najnovejše iz svoje storitve, "
 "samo kliknite na njihovo ikono v orodni vrstici."
 
-#: templates/activated.html:59
+#: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
 msgstr "Dodajte gumb stranske vrstice v svojo orodno vrstico"
 
-#: templates/activated.html:64
+#: templates/activated.html:88
 #, python-format
 msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars"
@@ -108,7 +108,7 @@ msgstr ""
 "prilagajanje</a>, od koder ga morate povleči v orodno vrstico in že boste"
 " lahko hitro preklapljali med stranskimi vrsticami."
 
-#: templates/activated.html:72
+#: templates/activated.html:96
 msgid ""
 "Additionally, you can easily change the service in your sidebar, or hide "
 "the sidebar, from the sidebar itself. You can also use the "
@@ -118,15 +118,15 @@ msgstr ""
 "pa skrijete stransko vrstico iz nje same. Uporabite lahko tudi meni "
 "<strong>Pogled->Orodne vrstice</strong> v Firefoxu."
 
-#: templates/activated.html:79
+#: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
 msgstr "Spremenite nastavitve v Upravljalcu dodatkov"
 
-#: templates/activated.html:81
+#: templates/activated.html:105
 msgid "Add-ons Manager"
 msgstr "Upravitelj dodatkov"
 
-#: templates/activated.html:83
+#: templates/activated.html:107
 #, python-format
 msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
@@ -137,18 +137,18 @@ msgstr ""
 "href=\"%(url)s\">upravljate s svojimi storitvami</a> ter jih začasno "
 "onemogočite ali odstranite."
 
-#: templates/activated.html:88
+#: templates/activated.html:112
 msgid "Next Steps"
 msgstr "Naslednji koraki"
 
-#: templates/activated.html:90
+#: templates/activated.html:114
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr "<a href=\"%(url)s\">Več o tem, kaj ta storitev doprinese Firefoxu</a>."
 
-#: templates/activated.html:92
+#: templates/activated.html:116
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
@@ -157,7 +157,7 @@ msgstr ""
 "<a href=\"%(url)s\">Več o tem</a>, kaj ponuja <a "
 "href=\"%(url)s\">%(name)s</a>."
 
-#: templates/activated.html:94
+#: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
 "<a href=\".\">Raziskujte in poiščite več storitev</a>, ki jih lahko "
@@ -371,7 +371,7 @@ msgid ""
 msgstr ""
 
 #: templates/data-en.json:408
-msgid "Known lets you create a single website for all your content."
+msgid "Share interesting content from your own site."
 msgstr ""
 
 #: templates/data-en.json:419 templates/data-en.json:433
@@ -585,23 +585,23 @@ msgstr "Nadgradi Firefox"
 msgid "requires Firefox 29"
 msgstr "zahteva Firefox 29"
 
-#: templates/layout.html:90
+#: templates/layout.html:82
 msgid "SocialAPI Demo"
 msgstr "Predstavitev SocialAPI"
 
-#: templates/layout.html:95
+#: templates/layout.html:87
 msgid "Firefox for desktop"
 msgstr "Firefox za namizje"
 
-#: templates/layout.html:113
+#: templates/layout.html:105
 msgid "You must use Firefox to install Social services."
 msgstr "Za namestitev družbenih storitev morate uporabiti Firefox."
 
-#: templates/layout.html:113 templates/layout.html:114
+#: templates/layout.html:105 templates/layout.html:106
 msgid "Download"
 msgstr "Prenesi"
 
-#: templates/layout.html:114
+#: templates/layout.html:106
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
@@ -609,7 +609,7 @@ msgstr ""
 "Namestitev družbenih storitev zahteva najmanj Firefox različice 29.  "
 "Nadgradite svojo različico Firefoxa zdaj."
 
-#: templates/layout.html:115
+#: templates/layout.html:107
 msgid "This service requires an unreleased version of Firefox."
 msgstr "Ta storitev zahteva še neizdano različico Firefoxa."
 
@@ -651,4 +651,7 @@ msgstr ""
 
 #~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
 #~ msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+
+#~ msgid "Known lets you create a single website for all your content."
+#~ msgstr ""
 
