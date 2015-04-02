@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-02-03 12:48-0800\n"
+"POT-Creation-Date: 2015-04-02 10:30-0700\n"
 "PO-Revision-Date: 2015-02-03 20:46+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: de <LL@li.org>\n"
@@ -195,7 +195,7 @@ msgstr ""
 "Welt.</p><p>Über 52 Millionen Fußball-Fans schenken uns ihr Vertrauen. "
 "Wir danken euch dafür!</p>"
 
-#: templates/data-en.json:33 templates/data-en.json:42
+#: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online"
 " and on the go. It's a simple, beautiful, and free way to search, "
@@ -207,15 +207,15 @@ msgstr ""
 "nach über einer Million Titeln zu suchen, sie zu entdecken und anzuhören,"
 " von den neuesten Hits bis zu schwer zu findenden Klassikern."
 
-#: templates/data-en.json:40
+#: templates/data-en.json:39
 msgid "Music Feed"
 msgstr "Music Feed"
 
-#: templates/data-en.json:41
+#: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
 msgstr "Entdecken Sie neue Musik und hören Sie mehr von dem, was Ihnen gefällt."
 
-#: templates/data-en.json:63
+#: templates/data-en.json:62
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
@@ -223,17 +223,17 @@ msgstr ""
 "Pocket service für Firefox – Die beste Möglichkeit, Artikel, Videos und "
 "mehr zu speichern"
 
-#: templates/data-en.json:71
+#: templates/data-en.json:70
 msgid "Save it for later"
 msgstr "Save it for later"
 
-#: templates/data-en.json:72
+#: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr ""
 "Eine praktischer und schöner Ort, um Inhalte zu speichern, die Sie sich "
 "später ansehen möchten."
 
-#: templates/data-en.json:86 templates/data-en.json:96
+#: templates/data-en.json:85 templates/data-en.json:95
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
@@ -241,11 +241,11 @@ msgstr ""
 "Eine neue Möglichkeit, die interessantesten Inhalte zu finden, die Ihren "
 "Interessen entsprechen."
 
-#: templates/data-en.json:94
+#: templates/data-en.json:93
 msgid "a discovery experience"
 msgstr "Eine echte Entdeckung"
 
-#: templates/data-en.json:111
+#: templates/data-en.json:110
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
@@ -253,29 +253,29 @@ msgstr ""
 "Delicious ist ein kostenloser Dienst, der entwickelt wurde, um "
 "bestmöglich die Internet-Inhalte zu speichern, die Ihnen gefallen."
 
-#: templates/data-en.json:129
+#: templates/data-en.json:128
 msgid "Never lose a link again."
 msgstr "Verlieren Sie nie wieder einen Link."
 
-#: templates/data-en.json:130
+#: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
 msgstr "Delicious merkt sich den Link, damit Sie es nicht tun müssen."
 
-#: templates/data-en.json:145
+#: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
 msgstr ""
 "Bleiben Sie mit Ihren Freunden in Kontakt, egal wo Sie im Internet "
 "hingehen."
 
-#: templates/data-en.json:165
+#: templates/data-en.json:164
 msgid "Share the web"
 msgstr "Teilen Sie das Internet"
 
-#: templates/data-en.json:166
+#: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
 msgstr "Teilen Sie eine beliebige Webseite, egal wo, egal wann."
 
-#: templates/data-en.json:174
+#: templates/data-en.json:173
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
@@ -283,7 +283,7 @@ msgstr ""
 "Cliqz liefert in Echtzeit einen Strom der wichtigsten Artikel, "
 "Geschichten und Videos, basierend auf Ihren Interessen direkt an Firefox."
 
-#: templates/data-en.json:197
+#: templates/data-en.json:196
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
@@ -291,27 +291,15 @@ msgstr ""
 "Erhalten Sie die wichtigsten Nachrichten basierend auf Ihren Interessen, "
 "indem Sie sich eine einzigartige Welt der Informationen schaffen."
 
-#: templates/data-en.json:209
-msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-
-#: templates/data-en.json:221
+#: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
 msgstr "Das größte soziale Netzwerk in Japan."
 
-#: templates/data-en.json:222
+#: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
 msgstr "Damit Sie immer wissen, was Ihre Freunde vorhaben."
 
-#: templates/data-en.json:233
-msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-
-#: templates/data-en.json:250
-msgid "Share your interesting news anytime, anywhere."
-msgstr "Teilen Sie jederzeit und überall Ihre interessanten Neuigkeiten."
-
-#: templates/data-en.json:251
+#: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
@@ -323,7 +311,11 @@ msgstr ""
 "Videos, usw. posten. Außerdem wird eine Benachrichtigung angezeigt, wenn "
 "Sie neue Nachrichten erhalten."
 
-#: templates/data-en.json:272
+#: templates/data-en.json:249
+msgid "Share your interesting news anytime, anywhere."
+msgstr "Teilen Sie jederzeit und überall Ihre interessanten Neuigkeiten."
+
+#: templates/data-en.json:271
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
@@ -332,15 +324,15 @@ msgstr ""
 "Verwenden Sie Ihr Google+-Konto, um Websites in der Öffentlichkeit oder "
 "mit Ihren Kreisen zu teilen."
 
-#: templates/data-en.json:277
+#: templates/data-en.json:276
 msgid "Share the web on Google+."
 msgstr "Teilen Sie das Web auf Google+."
 
-#: templates/data-en.json:298 templates/data-en.json:302
+#: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
 msgstr "Senden Sie per Gmail Webseiten und Bilder an andere Menschen."
 
-#: templates/data-en.json:321
+#: templates/data-en.json:320
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
@@ -350,15 +342,15 @@ msgstr ""
 " schreiben, die Sie im Internet finden. Wir kürzen URLs zum schnellen "
 "Teilen mit dem t.co-Link-Kürzer."
 
-#: templates/data-en.json:328
+#: templates/data-en.json:327
 msgid "Tweet to your followers"
 msgstr "Twittern Sie an Ihre Follower"
 
-#: templates/data-en.json:329
+#: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr "Mit Twitter Share können Sie schnell Link an Ihre Follower twittern."
 
-#: templates/data-en.json:346
+#: templates/data-en.json:345
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
@@ -367,11 +359,11 @@ msgstr ""
 "professionelles Netzwerk auf und interagieren Sie damit. Greifen Sie auf "
 "Wissen, Einsichten und Chancen zu."
 
-#: templates/data-en.json:353
+#: templates/data-en.json:352
 msgid "Share the web with your professional network."
 msgstr "Teilen Sie das Web mit Ihrem professionellen Netzwerk."
 
-#: templates/data-en.json:371
+#: templates/data-en.json:370
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
 "phone, desktop, email or wherever you happen to be. You can customize "
@@ -381,15 +373,25 @@ msgstr ""
 "Browser, Handy, Desktop, E-Mail oder egal wo Sie sind. Sie können alles "
 "anpassen, von der Farbe bis zum HTML Ihres Themes."
 
-#: templates/data-en.json:381
+#: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
 msgstr "Mit Tumblr können Sie mühelos alles teilen."
 
-#: templates/data-en.json:392 templates/data-en.json:406
+#: templates/data-en.json:398
+msgid ""
+"Create a single website for all your content. Publish on your own site "
+"from any device and share with your audiences across the web."
+msgstr ""
+
+#: templates/data-en.json:408
+msgid "Known lets you create a single website for all your content."
+msgstr ""
+
+#: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
 msgstr "VK"
 
-#: templates/data-en.json:398 templates/data-en.json:407
+#: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
@@ -397,7 +399,7 @@ msgstr ""
 "VK ist ein soziales Netzwerk, das Menschen auf der ganzen Welt "
 "zusammenbringt und ihnen hilft, bequem und schnell zu kommunizieren."
 
-#: templates/data-en.json:425 templates/data-en.json:434
+#: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
 "When you find something that looks interesting, just Pin it! Pins are "
@@ -408,7 +410,7 @@ msgstr ""
 "aussieht, pinnen Sie es einfach an! Pins sind visuelle Lesezeichen, die "
 "Sie so organisieren und teilen, wie Sie es möchten."
 
-#: templates/data-en.json:433
+#: templates/data-en.json:460
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
@@ -416,7 +418,7 @@ msgstr ""
 "Entdecken Sie Ideen für alle Ihre Projekte und Interessen, handverlesen "
 "von Menschen wie Ihnen."
 
-#: templates/data-en.json:572 templates/data-en.json:581
+#: templates/data-en.json:599 templates/data-en.json:608
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
@@ -424,11 +426,11 @@ msgstr ""
 "Odnoklassniki (russisch: Одноклассники Klassenkameraden) ist ein soziales"
 " Netzwerk für Klassenkameraden und alte Freunde."
 
-#: templates/data-en.json:580
+#: templates/data-en.json:607
 msgid "Odnoklassniki"
 msgstr "Odnoklassniki"
 
-#: templates/data-en.json:596
+#: templates/data-en.json:623
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
@@ -436,11 +438,11 @@ msgstr ""
 "Entdecken Sie neue und bestehende Kontakte, Gruppen, Jobs, Unternehmen, "
 "Events und News aus Ihrer Branche."
 
-#: templates/data-en.json:604
+#: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
 msgstr "XING ist das soziale Netzwerk für Beruf und Karriere."
 
-#: templates/data-en.json:605
+#: templates/data-en.json:632
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
@@ -660,4 +662,10 @@ msgid ""
 msgstr ""
 "Dieser Dienst existiert nur zu Demonstrationszwecken und funktioniert "
 "möglicherweise nicht wie erwartet."
+
+#~ msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
+#~ msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
+
+#~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+#~ msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
 
