@@ -594,6 +594,19 @@
           "links": {
             "learnmore": "https://www.linkedin.com/about-us"
           }
+        },
+        "zh-TW": {
+          "name": "LinkedIn",
+          "shortDescription": "在網路上分享你所屬的專業領域與技能。",
+          "description": "管理自己的專業認同。打造自己的專業網路並和他人交流。取得相關知識、增加己身見識、獲得絕佳機會。",
+          "images": {
+            "carousel": "images/linkedin/share-zh-TW.png",
+            "detail": "images/linkedin/share-zh-TW.png",
+            "share": "images/linkedin/share-zh-TW.png"
+          },
+          "links": {
+            "learnmore": "https://www.linkedin.com/about-us"
+          }
         }
       }
     },
@@ -713,6 +726,23 @@
           "name": "Pinterest",
           "shortDescription": "あなたに似た人々によって精選されたアイディアを発見しましょう。あなたのあらゆるプロジェクトや興味のあることのために。",
           "description": "Pinterestはあなたが発見し、やりたいことを計画するのを助けるツールです。興味深そうなものを見つけたら、Pinで止めるだけです！Pinは、あなた自身のやり方で整理し、シェアするためのビジュアル・ブックマークです。",
+          "videos": {
+            "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
+          },
+          "links": {
+            "learnmore": "http://about.pinterest.com/"
+          }
+        },
+        "zh-TW": {
+          "name": "Pinterest",
+          "shortDescription": "由興趣和你相近的人精挑細選，讓你幫自己的專案與興趣發掘更多想法。",
+          "description": "Pinterest 可協助你尋找並規劃自己想做的事情。一旦找到有趣的東西，只管「釘選」起來吧！「釘選」就是書籤功能，讓你能照自己的習慣整理並分享之。",
+          "images": {
+            "detaillogo": "images/pinterest/logoName.png",
+            "logo": "images/pinterest/logo64.png",
+            "detail": "images/pinterest/pinterestDetail1.png",
+            "share": "images/pinterest/pinterestDetail1.png"
+          },
           "videos": {
             "youtube": ["qyYVI0ySDvk", "2DHxkoXR0RM", "1QkMOdW0Kyc"]
           },
