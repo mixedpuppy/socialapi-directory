@@ -1,0 +1,274 @@
+
+<html>
+<head>
+  <base href="/nl/"/>
+  <title>Known voor Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Download Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Firefox upgraden <span>&raquo;</span><br/><span class=\"smaller\">vereist Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/nl/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox voor desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">U moet Firefox gebruiken om sociale services te installeren.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Downloaden.</a>
+  </p><p id="upgrade-required" hidden="true">Het installeren van sociale services vereist minstens versie 29 van Firefox. Upgrade nu uw versie van Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Downloaden.</a>
+  </p><p id="beta-required" hidden="true">Deze service vereist een niet-vrijgegeven versie van Firefox.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Start</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEQzQjMwNkZDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEQzQjMwNzBDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDNCMzA2RENCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0RDNCMzA2RUNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqgEJYMAAAgQSURBVHja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"></img> Known</h1>
+    
+    <h3>Gefeliciteerd, <strong>Known</strong> is nu in Firefox geactiveerd!</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>Deel inhoud die u leuk vindt via Known</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> Met een klik op een knop kunt u interessante inhoud op websites delen met uw sociale netwerk via <strong>Known</strong>.</p>
+    </div>
+
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Wijzig instellingen vanuit de add-onbeheerder</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Add-onbeheerder" style="float: right;"/>
+      </div>
+      <p class="lead">U kunt eenvoudig <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">uw services beheren</a>, tijdelijk uitschakelen of verwijderen door de add-onbeheerder in Firefox te bekijken.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Volgende stappen</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">Lees meer over wat deze service aan Firefox toevoegt</a>.</li>
+
+      <li><a href="https://withknown.com/">Lees meer</a> over wat <a href="https://withknown.com/">Known</a> biedt.</li>
+
+      <li><a href=".">Verken en vind meer services</a> die u aan Firefox kunt toevoegen.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Delen van deze inhoud zijn ©1998–2015 door individuele mozilla.org-medewerkers. Inhoud is beschikbaar onder een <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons-licentie</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Bijdragen aan deze pagina</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contact</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partner worden</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Doneren</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Privacybeleid</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Juridische kennisgevingen</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Misbruik van handelsmerk melden</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI voor ontwikkelaars</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Andere talen:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" selected>Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Gaan</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/nl/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

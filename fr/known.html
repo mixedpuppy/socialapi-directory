@@ -1,0 +1,314 @@
+<html>
+<head>
+  <base href="/fr/"/>
+  <title>Known pour Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.min.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Télécharger Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Mettre à jour Firefox <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [37, 38, 39, 40];
+    var minver = 32;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Installer Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Installer Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Installer Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Mettre à jour Firefox <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/fr/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox pour ordinateurs"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Vous devez utiliser Firefox pour installer des services.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Télécharger.</a>
+  </p><p id="upgrade-required" hidden="true">Installer des services nécessite au minimum la version 29 de Firefox. Veuillez mettre Firefox à jour.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Télécharger.</a>
+  </p><p id="beta-required" hidden="true">Ce service nécessite une version de Firefox qui n'est pas encore disponible.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Accueil</a>
+        </div>
+        <div>
+        <span>Known</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEQzQjMwNkZDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEQzQjMwNzBDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDNCMzA2RENCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0RDNCMzA2RUNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqgEJYMAAAgQSURBVHja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"></img> Known</h1>
+
+              <h3 class="tagline"></h3>
+              <p class="lead">Known lets you create a single website for all your content.</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'known')" data-service="{&#34;author&#34;: &#34;Known, Inc.&#34;, &#34;description&#34;: &#34;Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web.&#34;, &#34;homepageURL&#34;: &#34;https://withknown.com/&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEQzQjMwNzNDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEQzQjMwNzRDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDNCMzA3MUNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0RDNCMzA3MkNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrTPjG4AAAPoSURBVHjapJd7aI1hHMffvefM4syYMWuMbOayTI3RXMIm+QNLkpQpl0KKsFzKfyiR0bRIUpbcEhnxh1zn9gdbmM0Ymku7tNlMRsPZfH/r++rx9J5znm2/+vSe9znP5fc+z+/2eL0REZahDADzwFQwHsSDfiAMtIAa8AI8AtfAF5NJwwwUGAc2gKUgylDZ7+A8OEyluq3AXrBDa/sInoA3oB60gxiQCCaD0Vr/A2A7+xkrMAJcABOVttOgENwBf4IonQ6Wg9XAx7bnYDF4a6LAWHAPDOL7DbATPLW6JglgF1jB9yYwE7xUO9naoCHgobL4ZjC3G4uLfAIrabgdNGKZe5jayasNugWi+Xs9OErD0/uFgzbwle/RbNOPRha+DjJAMee6DZL5338T71MMaCMXl+1K4mKqyLm9o4d4aOkDA/Rr4FdncQdkvoPc3X82IEb3noPugkx+0a9QbsyP+B2inxxpIz0il22jQJXH9nZuQh5I47aIoXyjAk10n2RtwsuggO7YQdeMpCuqcoze9JgfIwa9FvSlTVySHYiidrLgSRqOKr2okOMu4vtxLl8p7jmLv6X/7ADGu4aK+UGseMECLi6S7zKgj2ZcP7T/5QNeKYs3M1wH8pxCziG2k21TU4tG9cxlQATPWvUcR+HeNKwxfG/g4uVB7KGNuUIky2bgEXlg6N+q0RXTE0RKwRRQaTDHfT5TbWY1i9toIrV8XmTYdeQ4d9FEqvgcajOlOttnIn4uvkhr3w0GG87RzKfPVs7Xbzh4ksviFgPRWcM5Opw4YrOYsLqQ6x2RkJqjtWW6uLEVwLM6PcpmJWO5BJtgUgbmM0UXuQSfmBDjh/P5WRSoULbWRGTHpoOffF+lheJwg6NwjLfMZgSzWM3EBTC6DuW9npHOUvL8Jm3MHLAsiALZzjGKAlf5BbZSPKjSqNUNkS59jrAGVOUEDVOXGUpNUGQzp59hQ67iFeG09gJGPEfimbyylYy4MEAqloCzTlNkD5/npHJ20nGSUq/tZxHpY3UbKh17QtSIzpHcZN65opR+lbaSB/L4extIAa2KoblJk6JEewgFKhjCT/G9wAnZalEaxlJ7JC8VGTyeRJcFvMzvpRyXTjvRg5lNG6pl3pB+1VzD71YVJ7AMi2JoTmex0VMpZcEjR5pKJVyrYqlkp3F7pYz64OJiXREx1Dou3sK5q4OV5RZ3IEO5Uh3ifW+JS3UcSLIYIYuYoMq1OY2uZh56xBalrYaTloDXtBWxj/60lTTeA1KUMVJlbQ1UuJpcTtNYpud0YQcsWnw+le3R7diRWCYgKbkmMKH46AWtNNYS5XpeZzLpXwEGAA2T4JIWFcQyAAAAAElFTkSuQmCC&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEQzQjMwNkZDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEQzQjMwNzBDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDNCMzA2RENCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0RDNCMzA2RUNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqgEJYMAAAgQSURBVHjazFsLsE1VGF53u/LM9X6lmkgeoTyuCBONFPe6GRVKRsRMEoZSaqpRTYnSNKKRJGUKeTZeEypkMimDUJoIk65HhHu5XM/+f3y7tnX+tR9n732cb+abe89e++y11r//9b/WOhmZpUqpmFGP2Jx4O7Eu8TpidWJFot15MfEE8TDxL+Ie4hbiZuLvcQ4uIyYB3EnsQbyLmM39hHjWJuJa4iLi+nQWAL/RR4kDiC1iemE/Ez8hziL+nS4CuJY4gjicWE2lBseJk4kT8f9VE8ATxBexroPgBHiWeJFYklgWArQCPOcgcRxxUqoFcDNxCrGLj3v/IX6PtcxGbReM3UniOeIlYiaxNLES8XoYzWbE9sQGPvpYQ3yKuCMVAuhD/AhvzITTMFoLiKuIhSG0jI1oHvEReBETzhMHE2fGKYA3iM+7tB+BZvAg9ka87llLesPeZLvcNwn3RC6AT4n9PDp+lXg0BUawD/qqb2ifR+wVpQDmEx8wtP1EfJL4o0ot2Ga8ThxlaF9GzPV6iB+LO8tl8u8SW1+FyTPOEJ8mdjO4whzYoFACeBPBjQR+6yNhxa8mVhBbGjxAT8QLSS0BNjhzDG25ULF0Ai+JlcQOQttA4sdBBMCBzT5iCaGtC1xbRQQwQTXAgv8/pl2rhL9Bn5eBYOoo/t9IbGWIXXb7FQAnHe2E648hFucvbSPWSHLAvxDbOq5VQqBUJcnnFSL/4ACrAvFXYm0hqWol+VZpktLk38bk7TdWh1gmSXWtLlyrA41KBhUc9qwAWrpdu6closXJbkawDCy7Dg5hRzs+XwqZhBRon8M+rxDLwMYORIU6JmDpGgUwhpglfPFBQe2yQmaQUT9Pn8t04jfCC37JJIByxGcM4e8fwhvLJ54KOFD+XpEhl89HghQEp/GdP4kXhPb+wrXhTi1wCmCAkOBwJjdWeEgxMrWGxCbEJT4GOxX3N0Jyo6fHbZH5tUCa7AY2ot3xvIZY31IIvl9Y0mz3hkheYKeQenKk9Y6PydWVXIwDJwW1d4vzZxkMtIKvz4Ur9VupOoA4wQZrzA1ODcgWJl+At+YHRQYVdKq3H3DAMttl8kuJ9waYvF090lNkrjl0dAqgt/DFzzAxvzinwsGuM5iwAGqfDCYbIt3/BNDFkAQFie4yPIIVt/aeePMmzBY8URCwW9yqXetsD/xGGDLdeGxIUQzfzSNr+xzVoLBYLITGjS1YX/3tfJ2iyXfySKp4SfSNqK9VwrU2LIBbhYZUvP02xNUeFaZBEfa3GW7diSYsgFsMN8cJ3iZbZ6hHcLDE9f4REfdZBFfvRH0eQC3tIkd3e2OcPO8VrnFJfBYbItIooO8z1mIB6Ls5hwRVCQu7blADyyvLY2nUi0kAu7TPVS09O0Kh4nwMHfPk1yrv7TPWyEUxCeCYnhxZ6v8taucSiBo14Vka+Ly/KfHZGMZRrOcFkhG6GEPHTQzexg3jY1gKerieYQmZV6ZKH3wRgy26Iny3hEpMVoomx4nPRo97ODUeFWGfegnvjCUUJ6pqqWMc4NCWy9Sjfdw70U5dI7JFThyx4PacqA6LHRd6ORIfDoYW+vjO3Ij61o3wARbAb9rFEgGsdVBw1jdPuzZIsM5SbDA0gv71zdTdlpK3lLIjnjjv4+UY/Dv75uE+nvGeSqz1B0EN4cVuswyJT7uIBcCh9XKX9mnq8i6z8qgpzAkxhnaCF/iBBbBH0AI+3lY+QgH42YXu5+Me3vd7PMkxdNU+77E1QAlpKVeHcwM8/JJy39LyqggpZGpv+ehrqmDNlQ/tyZNqHpaLlQ0q6RIeEZifPb/n1OVqlBsyUSUKgu4qcTturlMAbAf0snZnZT6CIhk5t329igE0ic8jeBVYOwX0Cnowla9rAGOK8MWxPjvwWr+ssvf7fNZa5e98MFd6/RRKW8GmOfGBrZHOjRHeYT0sZIfSvvo1xPcxsQpKPpQgYSXeLk9wpOM6b5pMgquqjIqR39Nbm1C/GK/kWuY6bXwXsRyO6gJg8KnLMcIb6SjE1EUqefCAqzg+8/9HQnoaaReLDd+XguYMM7kn3gg9KbjEvsJaPRBisPsEIxn28HOBoKX6Rgtnvq+4+edCSFLHdJVYOwxzBN4yuKow0L8/E4mdEy/ommYZojI9TeXscKnWWc0Qg60juNCqIQVQzvE/n2B7WGvfjszySqkZzgjdpBLPBNgFCnsfsQdqB8UBB1oK6r5cu5YDY1icxOT5+99hzF0NYXcjlVgWdz0m11/JB485Ehui0hNsrL8Vrg+F10qM3qxMYwVsK6zzHYJf5WN0S9Js8vcRvxJsAduvl43hq4sAGHwKkwuajbXrfCKjOezC2TSY/GCEtvrklwm2IHCW9pCSNzA5stsSQ+ocBKXh6qYJbatVRIelFR40X7jOZev1CKBKpnjyeVimA4U2Xp73+MrgPJaAE/PgqloLbe2hasUITeNEM0Rzr2nRpI0ZXmrv1wuYwBL/0EV7tqOd1+ShCCfOb3SAx+SGKY/T4VEIgNEU2aNbEnQKqrgC+cS+gH3w+eHbYN1zVOIpFic2YPKBtS/sz+ZGIXny2vC8gPW6E8xHNnYc2VlZqHM11CAaYPJe0eExVJHGJR0/R/DDycqo5HD4WV6lBmcQkHEKfDBUAhHhT2drY41yRadhTBPfhXLYjCSWVOwCcOJudfl3Rh1gL8JgB1ztQvj2SHevM1Lw8/mmiBz5b11kgtVQVMlE9MZVotOwC/uR1GyDUdsa5+D+FWAAAPSWuKY/AhcAAAAASUVORK5CYII=&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NUIyMjNEMjRDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NUIyMjNEMjVDQjdFMTFFNEI4RjlBRjQ5OTlFMzQ5MEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0RDNCMzA3NUNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0RDNCMzA3NkNCN0UxMUU0QjhGOUFGNDk5OUUzNDkwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgDWK/cAAAGRSURBVHjadNPLK8RRFMDxmWk8skFN5BFl4xULFClJNoONKGwksrRT/AOyYykl2SAiJVFKyqMxsvDayIiGsqK8xZgZ36Pzq9uvn1ufufc3986Z373nXLc3Kcllaw0YRD0SEccXAhjDlrnYbQuwiA6EMIsTxFCOLpRhFa1OAS6Qq4tuXM4tU4N+osAMsIwm9CIDqcjGNBLQiUdEcIoZHKNFAtQwOEAecnRsNTmHe92S1RoRxPvfeRFgByF5EzWCOIb1uUqfA/AZ6/YR9BClGpPGP0S1P0QWjrCCWjwY6yZQ5NE0nRsTydq3G68+5XCgcuguK0DUmPjRfgC3Op5Hmi1AzAogg0KHAFITJVhAOuZsASSNEY+mpc8embauvaQ2jGb0GOtkfC1prGOwCymISi1Zq0mKP3BmfNetVSpb93v52MMGLtGPUd2vT+9Civ7gFS+407fexqZZymHdfwWe/yllrxZarhZdzGNM5mvannT/cnlKUYw2LOEbb1ofMafbKM2PIc1Msu5VLs8VxrFmLv4VYACxfGHuib7vkAAAAABJRU5ErkJggg==&#34;, &#34;name&#34;: &#34;Known&#34;, &#34;origin&#34;: &#34;https://withknown.com&#34;, &#34;pageSize&#34;: {&#34;share&#34;: {&#34;height&#34;: 430, &#34;width&#34;: 550}}, &#34;shareURL&#34;: &#34;https://withknown.com/share/?url=%{url}&amp;title=%{title}&#34;, &#34;version&#34;: 1}">Activer maintenant <span>&raquo;</span></a>
+              <div class="provider-description">Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web.</div>
+
+              <a href="https://withknown.com/" class="moreinfo" target="_blank">En savoir plus&hellip;</a>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            
+            <div id="carousel-details">
+              <div class="cycle-slideshow carousel-inner"
+                  data-cycle-loader="true"
+                  data-cycle-center-horz="true"
+                  data-cycle-center-vert="true"
+                  data-cycle-pager="#detail-pager">
+                
+              </div>
+              <div id="detail-pager" class="cycle-pager center external"></div>
+            </div>
+
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span class="supported" title="Ce service prend en charge le partage de contenu">partage</span> 
+          <span  title="Ce service fournit une fonctionnalité de marque-page">marque-page</span> 
+          <span  title="Ce service ajoute un panneau latéral à Firefox">panneau latéral</span> 
+          <span  title="Ce service ajoute un bouton susceptible d'afficher des notifications dans la barre d'outils de Firefox">notifications</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Certaines parties de ce contenu sont ©1998–2015 par les contributeurs individuels de mozilla.org. Le contenu est disponible sous <a href="http://www.mozilla.org/foundation/licensing/website-content/">licence Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Contribuer à cette page</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Nous contacter</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partenariats</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Faire un don</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Respect de la vie privée</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Avertissement légal</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Signaler un abus de marque déposée</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI pour les développeurs</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Autres langues&nbsp;:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" selected>français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">C'est parti&nbsp;!</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/fr/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

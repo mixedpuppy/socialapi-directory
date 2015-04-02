@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <base href="/es/"/>
@@ -50,15 +51,7 @@
       var data = JSON.parse(node.getAttribute("data-service"));
       var loc = location.href;
       var baseurl = loc.substring(0,loc.lastIndexOf('/'));
-      if (data.postActivationURL) {
-        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
-        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
-      }
-
-      else {
-        data.postActivationURL = baseurl + "/activated/"+name+".html";
-      }
-
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
       node.setAttribute("data-service", JSON.stringify(data));
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
