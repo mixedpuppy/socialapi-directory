@@ -390,7 +390,7 @@
         "origin": "https://withknown.com",
         "name": "Known",
         "author": "Known, Inc.",
-        "iconURL": "images/known/icon16.png",
+        "iconURL": "images/known/icon.png",
         "icon32URL": "images/known/icon32.png",
         "icon64URL": "images/known/icon64.png",  
         "shareURL": "https://withknown.com/share/?url=%{url}&title=%{title}",
