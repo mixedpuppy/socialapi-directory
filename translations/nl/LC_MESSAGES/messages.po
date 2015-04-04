@@ -7,14 +7,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-04-02 12:52-0700\n"
-"PO-Revision-Date: 2015-02-20 09:57+0000\n"
+"PO-Revision-Date: 2015-04-04 19:42+0000\n"
 "Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1428176528.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -368,10 +371,12 @@ msgid ""
 "Create a single website for all your content. Publish on your own site "
 "from any device and share with your audiences across the web."
 msgstr ""
+"Maak één website voor al uw inhoud. Publiceer op uw eigen website vanaf "
+"willekeurige apparaten en deel met uw publiek op het web."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Deel interessante inhoud van uw eigen website."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -653,4 +658,3 @@ msgstr ""
 
 #~ msgid "Known lets you create a single website for all your content."
 #~ msgstr ""
-
