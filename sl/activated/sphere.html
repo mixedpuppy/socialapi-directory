@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <base href="/sl/"/>
@@ -50,15 +51,7 @@
       var data = JSON.parse(node.getAttribute("data-service"));
       var loc = location.href;
       var baseurl = loc.substring(0,loc.lastIndexOf('/'));
-      if (data.postActivationURL) {
-        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
-        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
-      }
-
-      else {
-        data.postActivationURL = baseurl + "/activated/"+name+".html";
-      }
-
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
       node.setAttribute("data-service", JSON.stringify(data));
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
@@ -87,7 +80,7 @@
   
 
   <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Za namestitev družbenih storitev morate uporabiti Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
-  </p><p id="upgrade-required" hidden="true">Namestitev družbenih storitev zahteva najmanj Firefox različice 29. Nadgradite svojo različico Firefoxa zdaj.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
+  </p><p id="upgrade-required" hidden="true">Namestitev družbenih storitev zahteva najmanj Firefox različice 29.  Nadgradite svojo različico Firefoxa zdaj.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
   </p><p id="beta-required" hidden="true">Ta storitev zahteva še neizdano različico Firefoxa.</p>
   </div>
 
@@ -107,7 +100,7 @@
     
     <h1><img src="images/sphere/fulllogo.jpg"></img></h1>
     
-    <h3>Čestitke, <strong>Sphere</strong> je sedaj aktiviran v Firefoxu!</h3>
+    <h3>Čestitke, <strong>Sphere</strong> je sedaj omogočen v Firefoxu!</h3>
     <a id="documentation"></a>
     <ol>
 
@@ -138,9 +131,9 @@
       <div class="section clearfix">
       <h4><li>Spremenite nastavitve v Upravljalcu dodatkov</li></h4>
       <div style="width:50%; float: right; margin-left: 20px;">
-      <img src="../images/addonsmanager.jpg" alt="Upravljalec dodatkov" style="float: right;"/>
+      <img src="../images/addonsmanager.jpg" alt="Upravitelj dodatkov" style="float: right;"/>
       </div>
-      <p class="lead">Z uporabo Upravljalca dodatkov v Firefoxu lahko preprosto <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">upravljate s svojimi storitvami</a> ter jih začasno onemogočite ali odstranite.</p>
+      <p class="lead">Z uporabo Upravitelja dodatkov v Firefoxu lahko preprosto <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">upravljate s svojimi storitvami</a> ter jih začasno onemogočite ali odstranite.</p>
       </div>
     </div>
 

@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <base href="/sl/"/>
@@ -50,15 +51,7 @@
       var data = JSON.parse(node.getAttribute("data-service"));
       var loc = location.href;
       var baseurl = loc.substring(0,loc.lastIndexOf('/'));
-      if (data.postActivationURL) {
-        var root = baseurl.substring(0,baseurl.lastIndexOf('/'));
-        data.postActivationURL = root + "/redirect.html?redirect="+encodeURIComponent(data.postActivationURL);
-      }
-
-      else {
-        data.postActivationURL = baseurl + "/activated/"+name+".html";
-      }
-
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
       node.setAttribute("data-service", JSON.stringify(data));
       var event = new CustomEvent("ActivateSocialFeature");
       node.dispatchEvent(event);
@@ -87,7 +80,7 @@
   
 
   <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Za namestitev družbenih storitev morate uporabiti Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
-  </p><p id="upgrade-required" hidden="true">Namestitev družbenih storitev zahteva najmanj Firefox različice 29. Nadgradite svojo različico Firefoxa zdaj.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
+  </p><p id="upgrade-required" hidden="true">Namestitev družbenih storitev zahteva najmanj Firefox različice 29.  Nadgradite svojo različico Firefoxa zdaj.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
   </p><p id="beta-required" hidden="true">Ta storitev zahteva še neizdano različico Firefoxa.</p>
   </div>
 
@@ -107,7 +100,7 @@
     
     <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAFgElEQVR42u2Za2wUVRSApy1CFWvBYkARrMZgor9MJRgfkR/8MJEfxPjHYIBE0YTE9w9DYkIkYtQYY2I0QdFoCBV2Z3d2l+5SKC2FKg/7gLZItbS0hZY+5t47M7uz89yZ8dzdhqYJyI47UyWZk5NJNp3mnu+ce8695wzDxPAtrQFAABAABAABQAAQAAQAAcDcKoeZKGIiiD65WwgAbGURE+KZMF/JoYUxvICDn6A8wFznZUroIQB1WwnWw/+GUU2SbDiT/uSiuu+KHhnT9l7Rd/Wr637LlMcQ/JXhrplOX56fIJUNhOE8ApgXx1UNNPTuracGlbPoxdNSM28Ihu3MlgnN3jeqPXE8zYTyGCyqSZBNnfL3w2ptk0iDFi8RII4h6HVt0v5RbVWjwBzgXfoelbFo2zkZ67ZzYxmQcxs70s+dkLZfUNqQqebsb4fVymJ2UTGbpyyEdvSpsEzkqr48SairuGI3Hli/pTNDHX8zyeZsrFuF91KTxjJw3H6eSZQOEMGVcRy9qheWaZw0Hj4iQOYVxcCix5qFoWzOKVps22mZMh5tFuuahNe75RVNAhMtFQDdmSItvHFtjd+J8fRxiWFvFt8oBfhiQHHcSNqwI2P6zyPakGJ9PahUx7AHAFUpIQ8wI5cV662ebDVND8BANwrd3UncLpquAEzbKWyj+iv6ojh1gQdb6PYEgU3pzBbVcg5PGutPpmmqHZiu5bMqRohf0yqNKJbjUgDguyHtngYC3vHiHIjiChZ9c0m97mJIt3cPaevapKoERAOMRpSEmwZYfzrDQ/FxI7rlfHZRqaK+5z06iePUlBdOZaQbVxKiWw0Txvt/KE+2inAAlbG08jL7JteeEK+q7gDGNbv2iAi+9/QqwaJqDh+avMluBksvZa0W3twzpH3Qm91wSnqzWx7XXAM80AwVAnsKAEH4ZeqRJvGcVGxBNCxHNCxiWDnbcSVjKgCIs25HpSfxkkbyRo9c1yJu7syMQ1L6KefT1r1HBE8BWHRfo9Ah5rBhJ8eNgUzOVwA4KKuh/kQ93EIcvo1DUJWdOZHdI9o8uqi3ORDit3XLpu279bDC2+cVhvUcgEXLU6RdyPkNAFfr539NQw31oSMLoY0dspKz/U2AKWNJEsqGHwARXMHxO/9UND+L0K6/shBt33riKKqM4Vc6MqewiXTb8joYcAI8BZfcMO9jU18Rw4uTpK5V/GpARarHsYAWeX6Epq9vABG0uAH/OKJ1S7lOwRQNL0MwrlprqPuhA/YPgENlEfTqWdnxQb4cVMtpB+z3XCiKF8TIDyOat9afk6yHDhNI3zkZbIXRiqQQHtO9qqhYt186IxeabL8BZhhqEvjjfuWiXOrRZljOhxeUCjrVQnM7Wszv19Wt0s5+FQYWA5l/GY/6UWNRnBSmV3MIEJ8+Fujcpp5ffUw8iU3HvSQnDLjnzm4d3Wuxw2QOwZNqBBVmtPB8MEXe7cl2EBMaWbejhz3D2tJD0773F6A8DgwI/ARaFkXQbq9MkWfa0p/2K12iqbo/kHnd2tGXvSufS/5/H+DIsqPie73Zj/qV7X3Zzwe0+lG9W8xJpj3jdDdTt2O8ue6kVA6mRwpL+A6AFx4kL7dnYGHVKqXa2NBPv9Oj3J8iriqmN3MhuGDBkGzD6czey/pg1iq+5OiWPaFZMFWH8UQt5GuI5s9/8okpv/ABdEcUP35U2NyV+WlEO0PMQdmCsY9o2OnctMLWmtLs4azVK5kNEzrMyteekJYmaDtBNVqoYJ6q69IZpiWokuVrDpKVTcKzbdLG9vTWLvm1LnnrWXlThwwt1apmYWmKVHF5u8MzU8f/00c+jup0SWX5WQqEbD5HueAzawAQAAQAAUAAEAAEAAFAAPCP+jdTEm8kfrK2ewAAAABJRU5ErkJggg=="></img> </h1>
     
-    <h3>Čestitke, <strong>Twitter</strong> je sedaj aktiviran v Firefoxu!</h3>
+    <h3>Čestitke, <strong>Twitter</strong> je sedaj omogočen v Firefoxu!</h3>
     <a id="documentation"></a>
     <ol>
 
@@ -130,9 +123,9 @@
       <div class="section clearfix">
       <h4><li>Spremenite nastavitve v Upravljalcu dodatkov</li></h4>
       <div style="width:50%; float: right; margin-left: 20px;">
-      <img src="../images/addonsmanager.jpg" alt="Upravljalec dodatkov" style="float: right;"/>
+      <img src="../images/addonsmanager.jpg" alt="Upravitelj dodatkov" style="float: right;"/>
       </div>
-      <p class="lead">Z uporabo Upravljalca dodatkov v Firefoxu lahko preprosto <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">upravljate s svojimi storitvami</a> ter jih začasno onemogočite ali odstranite.</p>
+      <p class="lead">Z uporabo Upravitelja dodatkov v Firefoxu lahko preprosto <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">upravljate s svojimi storitvami</a> ter jih začasno onemogočite ali odstranite.</p>
       </div>
     </div>
 
