@@ -218,11 +218,18 @@ def createapp():
 
       data["shareProviders"] = []
       if locale in config["sharePanel"]:
-        names = config["sharePanel"][locale]
+        names = config["sharePanel"][locale]["providers"]
       else:
-        names = config["sharePanel"]["en-US"]
+        names = config["sharePanel"]["en-US"]["providers"]
       for name in names:
         data["shareProviders"].append(data["source"][name])
+      data["featured"] = []
+      if locale in config["sharePanel"]:
+        names = config["sharePanel"][locale]["featured"]
+      else:
+        names = config["sharePanel"]["en-US"]["featured"]
+      for name in names:
+        data["featured"].append(data["source"][name])
 
       keys = data["source"].keys()
       keys.sort()
@@ -259,6 +266,10 @@ def createapp():
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/sharePanel.html')
   def app_sharePanel(locale=None):
     return renderTemplate('sharePanel.html', locale)
+
+  @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/index2.html')
+  def app_testindex(locale=None):
+    return renderTemplate('index2.html', locale)
 
   @app.route('/<regex("\w{2}(?:-\w{2})?"):locale>/<path>')
   def app_static_proxy(locale=None, path=None):

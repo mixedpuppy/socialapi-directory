@@ -1,26 +1,15 @@
 <div class="provider-entry col-2 clearfix">
-  <a href="{{p['key']}}.html">
-  <div class="provider-entry-inner clearfix">
+  <div class="provider-entry-inner clearfix" onclick="location='{{p['key']}}.html'">
     {% if p['viewData']['images']['fulllogo'] %}
     <h2><img src="{{createDataURL(p['viewData']['images']['fulllogo'])}}"></img></h2>
     {% else %}
     <h2><img src="{{createDataURL(p['viewData']['images']['logo'])}}"></img> {{p['viewData']['name']}}</h2>
     {% endif %}
+          <div class="activation" style="float: right; z-index: 10000; padding-top: 10px; margin-left: 10px;">
+          <a class="button gutter-bottom-24 small" onclick="activateProvider(this, '{{p['key']}}');event.stopPropagation();" data-service="{{p['manifestData']}}">{{ _('Activate Now') }} <span>&raquo;</span></a>
+          <br/><a href="{{p['key']}}.html" class="moreinfo">{{ _('Learn More&hellip;') }}</a>
+          </div>
     <p class="provider-description">{{p['viewData']['shortDescription'] or p['viewData']['tagline']}}</p>
 
-    {% if p['manifest'] %}
-    <span class="provider-features">
-    <span {% if p['manifest']['shareURL'] %}class="supported"{% endif %} title="{{ _('This service supports sharing content') }}">{{ _('share') }}</span> 
-    <span {% if p['manifest']['markURL'] %}class="supported"{% endif %} title="{{ _('This service provides bookmarking functionality') }}">{{ _('bookmarking') }}</span> 
-    <span {% if p['manifest']['sidebarURL'] %}class="supported"{% endif %} title="{{ _('This service adds a sidebar to Firefox') }}">{{ _('sidebar') }}</span> 
-    <span {% if p['manifest']['statusURL'] %}class="supported"{% endif %} title="{{ _('This service adds a toolbar button to Firefox that may have notifications') }}">{{ _('notifications') }}</span>
-    {% if p['status'] == "demo" %}
-    <span class="supported" title="{{ _('This is a demo service') }}">{{ _('demo') }}</span>
-    {% elif p['minver'] and p['minver'] > releases[0] or p['status'] == "beta" %}
-    <span class="supported" title="{{ _('This service requires an unreleased version of Firefox') }}">{{ _('beta') }}</span>
-    {% endif %}
-    </span>
-    {% endif %}
   </div>
-  </a>
 </div>

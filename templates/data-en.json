@@ -1,5 +1,28 @@
 {
   "source": {
+    "yahoomail": {
+      "status": "demo",
+      "manifest": {
+        "name": "Yahoo! Mail",
+        "iconURL": "https://mail.yahoo.com/favicon.ico",
+        "icon32URL": "https://mail.yahoo.com/favicon.ico",
+        "icon64URL": "https://mail.yahoo.com/favicon.ico",
+        "origin": "https://mail.yahoo.com",
+        "shareURL": "https://compose.mail.yahoo.com/?body=%{url}&title=%{title}",
+        "description": "{{ _('Your Email, Anywhere!') }}",
+        "homepageURL": "https://overview.mail.yahoo.com/",
+        "author": "Yahoo!",
+        "pageSize": {
+          "share": { "width": 650, "height": 380 }
+        }
+      },
+      "viewData": {
+        "name": "",
+        "tagline": "{{ _('Your Email, Anywhere!') }}",
+        "shortDescription": "{{ _('Fast, simple to use email with 1TB of free mail storage that comes with all the goodness of Yahoo!') }}",
+        "description": "{{ _('There’s a time and a place for plain old emails – and then there’s everything else.') }}"
+      }
+    },
     "goal": {
       "status": "release",
       "manifest": {

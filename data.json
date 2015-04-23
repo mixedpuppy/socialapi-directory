@@ -986,7 +986,7 @@
     "de": ["xing", "cliqz", "facebook", "twitter", "google", "tumblr"]
   },
   "carousel": {
-    "en-US": ["linkedin", "twitter", "pocket"],
+    "en-US": ["facebook", "yahoo", "twitter"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "jp-JP": ["mixi", "twitter", "tumblr"],
     "zh-TW": ["twitter", "google", "tumblr"],

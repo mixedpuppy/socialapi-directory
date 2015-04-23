@@ -10,14 +10,14 @@
     "2015-03-31": [37,38,39,40]
   },
   "sharePanel": {
-    "en-US": ["delicious", "facebook", "google", "linkedin", "tumblr", "twitter"],
-    "jp-JP": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
-    "ja": ["mixi", "twitter", "google", "facebook", "tumblr", "gmail"],
-    "tw": ["twitter", "google", "facebook", "tumblr", "gmail"],
-    "ru": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "tumblr"]
+    "en-US": {"featured": ["yahoomail"], "providers": ["delicious", "facebook", "google", "linkedin", "tumblr", "twitter"]},
+    "jp-JP": {"featured": ["mixi"], "providers": ["linkedin", "twitter", "google", "facebook", "tumblr", "gmail"]},
+    "ja": {"featured": ["mixi"], "providers": ["linkedin", "twitter", "google", "facebook", "tumblr", "gmail"]},
+    "tw": {"featured": ["twitter"], "providers": ["linkedin", "google", "facebook", "tumblr", "gmail"]},
+    "ru": {"featured": ["odnoklassniki"], "providers": ["linkedin", "vkontakte", "twitter", "google", "facebook", "tumblr"]}
   },
   "carousel": {
-    "en-US": ["linkedin", "twitter", "facebook"],
+    "en-US": ["facebook", "yahoomail", "twitter"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "zh-TW": ["twitter", "google", "tumblr"],
     "ja": ["mixi", "twitter", "tumblr", "google"],
