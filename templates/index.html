@@ -20,8 +20,8 @@
       data-cycle-fx="carousel"
       data-cycle-timeout="5000"
       data-cycle-slides="&gt; div">
-      <span class="cycle-prev">&lsaquo;</span>
-      <span class="cycle-next">&rsaquo;</span>
+      <span class="cycle-prev"><div class="circle button">&lsaquo;</div></span>
+      <span class="cycle-next"><div class="circle button">&rsaquo;</div></span>
       {% for p in slider %}
       <div class="item">
         <div class="item-inner">
@@ -50,17 +50,7 @@
   <div id="wrapper" class="content">
     <div id="directory">
       <div class="directory-header">
-      <h3>{{ _('Enhance your Firefox experience, get more out of the Web') }}</h3>
-      <p class="lead">{% trans %}Easy to use, no software or Add-ons to download and install, just click Activate and new functionality is delivered to you from the Web.  Anything from social media services, to cloud bookmarking, music and personalized news, adding these services to Firefox lets you get more out of the web.{% endtrans %}
-      </p>
-{% if not production %}
-      <p class="lead"><b>You are on a test version of this website.</b> Some
-      entries on this site are mockups and do not work as expected. If you did
-      not intend to use the test site go to the <a
-      href="https://activations.mozilla.org"><b>production site</b></a>. otherwise,
-      please <a href="#" data-featherlight="#aboutModel"><b>read the
-      instructions</b></a> so it will work correctly for you.</p>
-{% endif %}
+      <h3>{{ _('Get more out of the Web with these great services.') }}</h3>
       </div>
       <div id="directory-grid" class="row">
       {% for p in source %}
