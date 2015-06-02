@@ -3,15 +3,16 @@
     "yahoomail": {
       "status": "demo",
       "manifest": {
-        "name": "Yahoo! Mail",
-        "iconURL": "https://mail.yahoo.com/favicon.ico",
-        "icon32URL": "https://mail.yahoo.com/favicon.ico",
-        "icon64URL": "https://mail.yahoo.com/favicon.ico",
-        "origin": "https://mail.yahoo.com",
-        "shareURL": "https://compose.mail.yahoo.com/?body=%{url}&title=%{title}",
-        "description": "{{ _('Your Email, Anywhere!') }}",
+        "name": "Yahoo Mail",
+        "iconURL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail16.png",
+        "icon32URL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail16.png",
+        "icon64URL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail64.png",
+        "origin": "https://mail.rc.staging.manhattan.gq1.yahoo.com",
+        "shareURL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/d/app/compose?url=%{url}",
+        "description": "{{ _('Quickly send web pages using Yahoo Mail.') }}",
         "homepageURL": "https://overview.mail.yahoo.com/",
-        "author": "Yahoo!",
+        "author": "Yahoo, Inc",
+        "version": "0.8 Beta",
         "pageSize": {
           "share": { "width": 650, "height": 380 }
         }
