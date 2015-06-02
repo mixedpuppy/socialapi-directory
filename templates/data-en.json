@@ -8,7 +8,7 @@
         "icon32URL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail16.png",
         "icon64URL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail64.png",
         "origin": "https://mail.rc.staging.manhattan.gq1.yahoo.com",
-        "shareURL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/d/app/compose?url=%{url}",
+        "shareURL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/d/app/compose?url=%{url}&title=%{title}",
         "description": "{{ _('Quickly send web pages using Yahoo Mail.') }}",
         "homepageURL": "https://overview.mail.yahoo.com/",
         "author": "Yahoo, Inc",
