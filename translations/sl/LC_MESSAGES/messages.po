@@ -390,8 +390,8 @@ msgid ""
 msgstr ""
 "Pinterest je orodje za pomoč pri odkrivanju in načrtovanju svari, ki jih "
 "želite narediti. Ko najdete nekaj, kar je videti zanimivo, si to pripnite! "
-"Bucike (angl. \\\"pin\\\") so vidni zaznamki, ki si jih organizirate in delite "
-"po svoji želji."
+"Bucike (angl. \\\"pin\\\") so vidni zaznamki, ki si jih organizirate in "
+"delite po svoji želji."
 
 #: templates/data-en.json:433
 msgid ""
