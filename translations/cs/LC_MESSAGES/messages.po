@@ -164,6 +164,7 @@ msgstr ""
 " do svého Firefoxu."
 
 #: templates/data-en.json:6
+# do not translate
 msgid "Yahoo! Mail"
 msgstr ""
 
@@ -172,6 +173,8 @@ msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
 msgstr ""
+"Pošlete rychle webové stránky sobě i jiným uživatelům díky zdokonaleným "
+"náhledům odkazů. A nejen to."
 
 #: templates/data-en.json:33 templates/data-en.json:40
 msgid "The definitive source for football news from around the world."

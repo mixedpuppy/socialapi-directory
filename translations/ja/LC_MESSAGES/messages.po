@@ -154,7 +154,7 @@ msgstr "Firefox へ追加できる <a href=\".\">その他のサービスを見�
 
 #: templates/data-en.json:6
 msgid "Yahoo! Mail"
-msgstr ""
+msgstr "Yahoo! メール"
 
 #: templates/data-en.json:11 templates/data-en.json:21
 msgid ""

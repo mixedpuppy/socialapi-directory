@@ -167,6 +167,7 @@ msgstr ""
 "Firefox hinzufügen können."
 
 #: templates/data-en.json:6
+# do not translate
 msgid "Yahoo! Mail"
 msgstr ""
 
@@ -175,6 +176,8 @@ msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
 msgstr ""
+"Sende ganz einfach Webseiten mit erweiterter Link-Vorschau und mehr an dich "
+"selbst und andere."
 
 #: templates/data-en.json:33 templates/data-en.json:40
 msgid "The definitive source for football news from around the world."

@@ -144,6 +144,7 @@ msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr "<a href=\".\">探索您還可以新增哪些服務</a> 到 Firefox。"
 
 #: templates/data-en.json:6
+# do not translate
 msgid "Yahoo! Mail"
 msgstr ""
 
@@ -152,6 +153,7 @@ msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
 msgstr ""
+"有了更強大的連結預覽和其他精彩功能，傳送網頁給自己和他人的速度皆可提升。"
 
 #: templates/data-en.json:33 templates/data-en.json:40
 msgid "The definitive source for football news from around the world."
