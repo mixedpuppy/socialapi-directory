@@ -3,22 +3,21 @@
     "yahoomail": {
       "status": "beta",
       "manifest": {
-          "name": "{{ _('Yahoo! Mail') }}",
-          "iconURL": "https://s.yimg.com/nq/nr/icons/ymail16.png",
-          "icon32URL": "https://s.yimg.com/nq/nr/icons/ymail32.png",
-          "icon64URL": "https://s.yimg.com/nq/nr/icons/ymail64.png",
-          "shareURL": "https://mg.mail.yahoo.com/d/app/compose?url=%{url}&title=%{title}",
-          "description": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}",
-          "author": "Yahoo! Inc",
-          "homepageURL": "http://mail.yahoo.com",
-          "version": "1.0"
-        }
+        "name": "{{ _('Yahoo! Mail') }}",
+        "iconURL": "https://s.yimg.com/nq/nr/icons/ymail16.png",
+        "icon32URL": "https://s.yimg.com/nq/nr/icons/ymail32.png",
+        "icon64URL": "https://s.yimg.com/nq/nr/icons/ymail64.png",
+        "shareURL": "https://mg.mail.yahoo.com/d/app/compose?url=%{url}&title=%{title}",
+        "description": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}",
+        "author": "Yahoo! Inc",
+        "homepageURL": "http://mail.yahoo.com",
+        "version": "1.0"
       },
       "viewData": {
         "name": "",
         "tagline": "",
-        "shortDescription": "",
-        "description": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}"
+        "shortDescription": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}",
+        "description": ""
       }
     },
     "goal": {
