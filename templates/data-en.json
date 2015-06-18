@@ -1,27 +1,24 @@
 {
   "source": {
     "yahoomail": {
-      "status": "demo",
+      "status": "beta",
       "manifest": {
-        "name": "Yahoo Mail",
-        "iconURL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail16.png",
-        "icon32URL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail16.png",
-        "icon64URL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/public/img/ymail64.png",
-        "origin": "https://mail.rc.staging.manhattan.gq1.yahoo.com",
-        "shareURL": "https://mail.rc.staging.manhattan.gq1.yahoo.com/d/app/compose?url=%{url}&title=%{title}",
-        "description": "{{ _('Quickly send web pages using Yahoo Mail.') }}",
-        "homepageURL": "https://overview.mail.yahoo.com/",
-        "author": "Yahoo, Inc",
-        "version": "0.8 Beta",
-        "pageSize": {
-          "share": { "width": 650, "height": 380 }
+          "name": "{{ _('Yahoo! Mail') }}",
+          "iconURL": "https://s.yimg.com/nq/nr/icons/ymail16.png",
+          "icon32URL": "https://s.yimg.com/nq/nr/icons/ymail32.png",
+          "icon64URL": "https://s.yimg.com/nq/nr/icons/ymail64.png",
+          "shareURL": "https://mg.mail.yahoo.com/d/app/compose?url=%{url}&title=%{title}",
+          "description": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}",
+          "author": "Yahoo! Inc",
+          "homepageURL": "http://mail.yahoo.com",
+          "version": "1.0"
         }
       },
       "viewData": {
         "name": "",
-        "tagline": "{{ _('Your Email, Anywhere!') }}",
-        "shortDescription": "{{ _('Fast, simple to use email with 1TB of free mail storage that comes with all the goodness of Yahoo!') }}",
-        "description": "{{ _('There’s a time and a place for plain old emails – and then there’s everything else.') }}"
+        "tagline": "",
+        "shortDescription": "",
+        "description": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}"
       }
     },
     "goal": {

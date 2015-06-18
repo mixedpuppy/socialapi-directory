@@ -7,39 +7,36 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-01-30 12:08-0800\n"
+"POT-Creation-Date: 2015-06-18 10:07-0700\n"
 "PO-Revision-Date: 2015-03-13 10:44+0000\n"
 "Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
 "Language-Team: cs <LL@li.org>\n"
-"Language: cs\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1426243474.0\n"
 
-#: templates/activated.html:8 templates/activatedIndex.html:9
+#: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
 msgstr "Domů"
 
-#: templates/activated.html:22
+#: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr "Gratulujeme. <strong>%(name)s</strong> je nyní aktivován ve Firefoxu!"
 
-#: templates/activated.html:27
+#: templates/activated.html:51
 #, python-format
 msgid "Get the most from %(name)s"
 msgstr "Získejte co nejvíce z %(name)s"
 
-#: templates/activated.html:29
+#: templates/activated.html:53
 msgid "Bookmark this page"
 msgstr "Přidat stránku do záložek"
 
-#: templates/activated.html:30
+#: templates/activated.html:54
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
@@ -51,12 +48,12 @@ msgstr ""
 "přizpůsobit svůj Firefox. Níže se dozvíte více informací o tom, jak "
 "%(name)s ve Firefoxu funguje."
 
-#: templates/activated.html:35
+#: templates/activated.html:59
 #, python-format
 msgid "Share content you like through %(name)s"
 msgstr "Sdílejte obsah, který máte rádi, skrze %(name)s"
 
-#: templates/activated.html:40
+#: templates/activated.html:64
 #, python-format
 msgid ""
 "With the click of a button, you can Share interesting content on any "
@@ -65,11 +62,11 @@ msgstr ""
 "Jedním klepnutím na tlačítko můžete sdílet zajímavý obsah z jakékoliv "
 "stránky na vaší sociální síti pomocí <strong>%(name)s</strong>."
 
-#: templates/activated.html:45
+#: templates/activated.html:69
 msgid "Save content for later"
 msgstr "Uložit obsah pro příště"
 
-#: templates/activated.html:47
+#: templates/activated.html:71
 #, python-format
 msgid ""
 "With the click of a button, you can save interesting content on any "
@@ -78,12 +75,12 @@ msgstr ""
 "Jedním klepnutím na tlačítko můžete ukládat vybraný obsah na jakékoliv "
 "stránce do <strong>%(name)s</strong>."
 
-#: templates/activated.html:52
+#: templates/activated.html:76
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
 msgstr "Hlídejte si to nejnovější od %(name)s"
 
-#: templates/activated.html:54
+#: templates/activated.html:78
 #, python-format
 msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
@@ -92,11 +89,11 @@ msgstr ""
 "<strong>%(name)s</strong> vám poskytne to nejnovější ze svých služeb, "
 "stačí klepnou na tlačítko na liště."
 
-#: templates/activated.html:59
+#: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
 msgstr "Přidá tlačítko pro Postranní lišty do vaší lišty"
 
-#: templates/activated.html:64
+#: templates/activated.html:88
 #, python-format
 msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars"
@@ -110,7 +107,7 @@ msgstr ""
 "přetáhnout na nástrojovou lištu, kde pak budete moci snadno přepínat "
 "zobrazení postranních lišt."
 
-#: templates/activated.html:72
+#: templates/activated.html:96
 msgid ""
 "Additionally, you can easily change the service in your sidebar, or hide "
 "the sidebar, from the sidebar itself. You can also use the "
@@ -120,15 +117,15 @@ msgstr ""
 "skrýt. Použít můžete také nabídku <strong>Zobrazit -> Nástrojové "
 "lišty</strong> ve Firefoxu."
 
-#: templates/activated.html:79
+#: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
 msgstr "Změna nastavení je možná ve Správci doplňků"
 
-#: templates/activated.html:81
+#: templates/activated.html:105
 msgid "Add-ons Manager"
 msgstr "Správce doplňků"
 
-#: templates/activated.html:83
+#: templates/activated.html:107
 #, python-format
 msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
@@ -138,11 +135,11 @@ msgstr ""
 "<a href=\"%(url)s\">Spravovat své služby</a>, blokovat je dočasně nebo "
 "trvale, můžete pomocí Správce doplňků ve Firefoxu."
 
-#: templates/activated.html:88
+#: templates/activated.html:112
 msgid "Next Steps"
 msgstr "Další kroky"
 
-#: templates/activated.html:90
+#: templates/activated.html:114
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
@@ -151,7 +148,7 @@ msgstr ""
 "<a href=\"%(url)s\">Dozvědět se více o tom, co tato služba přidává do "
 "Firefoxu</a>."
 
-#: templates/activated.html:92
+#: templates/activated.html:116
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
@@ -160,21 +157,31 @@ msgstr ""
 "<a href=\"%(url)s\">Dozvědět se více</a> a tom, co <a "
 "href=\"%(url)s\">%(name)s</a> poskytuje."
 
-#: templates/activated.html:94
+#: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
 "<a href=\".\">Prozkoumejte a najděte více služeb</a>, které můžete přidat"
 " do svého Firefoxu."
 
-#: templates/data-en.json:12 templates/data-en.json:19
+#: templates/data-en.json:6
+msgid "Yahoo! Mail"
+msgstr ""
+
+#: templates/data-en.json:11 templates/data-en.json:21
+msgid ""
+"Quickly send web pages to yourself and others with enhanced link previews"
+" and more."
+msgstr ""
+
+#: templates/data-en.json:33 templates/data-en.json:40
 msgid "The definitive source for football news from around the world."
 msgstr "Hlavní zdroj fotbalových zpráv z celého světa."
 
-#: templates/data-en.json:18
+#: templates/data-en.json:39
 msgid "We live and breathe football - everywhere, 24/7"
 msgstr "Žijeme a dýcháme fotbale - všude a 24/7."
 
-#: templates/data-en.json:20
+#: templates/data-en.json:41
 msgid ""
 "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
 "whoever you support, we are your definitive football source.</p><p>We "
@@ -184,89 +191,89 @@ msgid ""
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
 "<p>Fotbal, soccer, futbol, calcio, futebol - jakkoliv jej nazýváte a "
-"jakémukoliv týmu fandíte, jsme pro vás hlavím zdrojem informací.</p><p>Máme "
-"přes 530 reportérů ve více než 50 zemích, kteří sledují všechny akce na "
-"trávníku. Vytváříme originální obsah  s cílem doručit vám informace z každé "
-"ligy, týmu nebo o každém hráči, který vás zajímá.</p><p>Není divu, že nám "
-"důvěřuje 52 milionů fotbalových fanoušků."
+"jakémukoliv týmu fandíte, jsme pro vás hlavím zdrojem "
+"informací.</p><p>Máme přes 530 reportérů ve více než 50 zemích, kteří "
+"sledují všechny akce na trávníku. Vytváříme originální obsah  s cílem "
+"doručit vám informace z každé ligy, týmu nebo o každém hráči, který vás "
+"zajímá.</p><p>Není divu, že nám důvěřuje 52 milionů fotbalových fanoušků."
 
-#: templates/data-en.json:33 templates/data-en.json:42
+#: templates/data-en.json:53 templates/data-en.json:62
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online"
 " and on the go. It's a simple, beautiful, and free way to search, "
 "discover, and listen to over a million songs, from the latest hits to "
 "hard-to-find classics."
 msgstr ""
-"Saavn je nejlepší služba, pokud chcete zažít Bollywod nebo si poslechnout "
-"indickou hudbu on-line. Je to jednoduše úžasný a dostupný způsob, jak najít "
-"a poslechnout si miliony nahrávek od nejaktuálnějších hitů po klasiku, která "
-"je jinak těžko k sehnání."
+"Saavn je nejlepší služba, pokud chcete zažít Bollywod nebo si poslechnout"
+" indickou hudbu on-line. Je to jednoduše úžasný a dostupný způsob, jak "
+"najít a poslechnout si miliony nahrávek od nejaktuálnějších hitů po "
+"klasiku, která je jinak těžko k sehnání."
 
-#: templates/data-en.json:40
+#: templates/data-en.json:60
 msgid "Music Feed"
 msgstr "Hudební zdroj"
 
-#: templates/data-en.json:41
+#: templates/data-en.json:61
 msgid "Discover fresh music and hear more of what you love."
 msgstr "Objevujte novou hudbu a poslouchejte více té, kterou máte rádi."
 
-#: templates/data-en.json:63
+#: templates/data-en.json:83
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
 msgstr ""
-"Pocket je služba pro Firefox a nejlepší způsob jak si ukládat články, videa "
-"a další"
+"Pocket je služba pro Firefox a nejlepší způsob jak si ukládat články, "
+"videa a další"
 
-#: templates/data-en.json:71
+#: templates/data-en.json:91
 msgid "Save it for later"
 msgstr "Uložte si na později"
 
-#: templates/data-en.json:72
+#: templates/data-en.json:92
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr ""
 "Úžasně praktické místa pro ukládání obsahu, na který se chcete později "
 "podívat."
 
-#: templates/data-en.json:86 templates/data-en.json:96
+#: templates/data-en.json:106 templates/data-en.json:116
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
 msgstr "Nový způsob jak objevit nejzajímavější obsah podle svých zájmů."
 
-#: templates/data-en.json:94
+#: templates/data-en.json:114
 msgid "a discovery experience"
 msgstr "a discovery experience"
 
-#: templates/data-en.json:111
+#: templates/data-en.json:131
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
 msgstr ""
-"Delicious je zdarma dostupná služba navržená s velkou péčí a snahou stát se "
-"nejlepším místem pro ukládání toho, co máte na webu nejraději."
+"Delicious je zdarma dostupná služba navržená s velkou péčí a snahou stát "
+"se nejlepším místem pro ukládání toho, co máte na webu nejraději."
 
-#: templates/data-en.json:129
+#: templates/data-en.json:149
 msgid "Never lose a link again."
 msgstr "Nikdy už znovu neztratíte zajímavý odkaz."
 
-#: templates/data-en.json:130
+#: templates/data-en.json:150
 msgid "Delicious remembers so you don't have to."
 msgstr "Delicious si zapamatuje, co vy už nemusíte."
 
-#: templates/data-en.json:145
+#: templates/data-en.json:165
 msgid "Keep up with friends wherever you go on the web."
 msgstr "Buďte se svými přáteli, ať jdete na webu kamkoliv."
 
-#: templates/data-en.json:165
+#: templates/data-en.json:185
 msgid "Share the web"
 msgstr "Sdílejte web"
 
-#: templates/data-en.json:166
+#: templates/data-en.json:186
 msgid "Share any web page, anywhere, anytime."
 msgstr "Sdílejte jakoukoliv stránku kdekoliv a kdykoliv."
 
-#: templates/data-en.json:174
+#: templates/data-en.json:194
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
@@ -274,111 +281,114 @@ msgstr ""
 "Cliqz přináší v reálném čase články, příběhy a videa podle vašich zájmů "
 "přímo do vašeho Firefoxu."
 
-#: templates/data-en.json:197
+#: templates/data-en.json:217
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
 msgstr ""
-"Získejte nejrelevantnější novinky z celého univerza unikátních informací na "
-"základě svých vlastních zájmů."
+"Získejte nejrelevantnější novinky z celého univerza unikátních informací "
+"na základě svých vlastních zájmů."
 
-#: templates/data-en.json:209
-msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-
-#: templates/data-en.json:221
+#: templates/data-en.json:229 templates/data-en.json:241
 msgid "The largest social network in Japan."
 msgstr "Největší sociální síť v Japonsku."
 
-#: templates/data-en.json:222
+#: templates/data-en.json:242
 msgid "Stay informed of what your friends are up to."
 msgstr "Buďte v obraze, co zrovna dělají vaši přátelé."
 
-#: templates/data-en.json:233
-msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-
-#: templates/data-en.json:250
-msgid "Share your interesting news anytime, anywhere."
-msgstr "Sdílejte zajímavé novinky kdykoliv a kdekoliv."
-
-#: templates/data-en.json:251
+#: templates/data-en.json:253 templates/data-en.json:271
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
 "videos, etc. And it will show the notification when receiving new "
 "messages."
 msgstr ""
-"Sina Weibo je nejoblíbenější mikroblogovací služba v Číně. Weibo pro Firefox "
-"umožňuje svým uživatelům přidávat 140 znaků dlouhé zprávy, obrázky nebo "
-"videa, apod. A zobrazí také vám upozornění, pokud obdržíte novou zprávu."
+"Sina Weibo je nejoblíbenější mikroblogovací služba v Číně. Weibo pro "
+"Firefox umožňuje svým uživatelům přidávat 140 znaků dlouhé zprávy, "
+"obrázky nebo videa, apod. A zobrazí také vám upozornění, pokud obdržíte "
+"novou zprávu."
 
-#: templates/data-en.json:272
+#: templates/data-en.json:270
+msgid "Share your interesting news anytime, anywhere."
+msgstr "Sdílejte zajímavé novinky kdykoliv a kdekoliv."
+
+#: templates/data-en.json:292
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
 msgstr ""
-"Rychle sdílejte obsah, který na webu objevíte, s Google+. Použijte svůj účet "
-"Google+ pro veřejné sdílení stránek s vašimi Kruhy."
+"Rychle sdílejte obsah, který na webu objevíte, s Google+. Použijte svůj "
+"účet Google+ pro veřejné sdílení stránek s vašimi Kruhy."
 
-#: templates/data-en.json:277
+#: templates/data-en.json:297
 msgid "Share the web on Google+."
 msgstr "Sdílejte stránky na Google+."
 
-#: templates/data-en.json:298 templates/data-en.json:302
+#: templates/data-en.json:318 templates/data-en.json:322
 msgid "Send web pages and images to people using Gmail."
 msgstr "Posílejte webové stránky a obrázky pomocí Gmailu."
 
-#: templates/data-en.json:321
+#: templates/data-en.json:341
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
 msgstr ""
-"Použijte Firefox Twitter Share pro rychlé psaní tweetů o stránkách, které "
-"objevíte na webu. Pro rychlé sdílení zkracujeme URL adresy pomocí t.co."
+"Použijte Firefox Twitter Share pro rychlé psaní tweetů o stránkách, které"
+" objevíte na webu. Pro rychlé sdílení zkracujeme URL adresy pomocí t.co."
 
-#: templates/data-en.json:328
+#: templates/data-en.json:348
 msgid "Tweet to your followers"
 msgstr "Tweetujte uživatelů, kteří vás sledují"
 
-#: templates/data-en.json:329
+#: templates/data-en.json:349
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr ""
 "S Twitter Share můžete rychle tweetovat odkazy pro uživatele, kteří vás "
 "sledují."
 
-#: templates/data-en.json:346
+#: templates/data-en.json:366
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
 msgstr ""
-"Spravujte svou profesionální identitu. Postavte svou profesní síť. Mějte na "
-"dosah všechny znalosti, postřehy a příležitosti."
+"Spravujte svou profesionální identitu. Postavte svou profesní síť. Mějte "
+"na dosah všechny znalosti, postřehy a příležitosti."
 
-#: templates/data-en.json:353
+#: templates/data-en.json:373
 msgid "Share the web with your professional network."
 msgstr "Sdílejte web se svou profesní sítí."
 
-#: templates/data-en.json:371
+#: templates/data-en.json:391
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
-"Posílejte texty, obrázky, citáty, odkazy, hudbu a videa ze svého prohlížeče, "
-"telefonu, počítače, e-mailu nebo odkudkoliv se vám zrovna hodí. Vše si "
-"můžete přizpůsobit, od barev po HTML šablonu."
+"Posílejte texty, obrázky, citáty, odkazy, hudbu a videa ze svého "
+"prohlížeče, telefonu, počítače, e-mailu nebo odkudkoliv se vám zrovna "
+"hodí. Vše si můžete přizpůsobit, od barev po HTML šablonu."
 
-#: templates/data-en.json:381
+#: templates/data-en.json:401
 msgid "Tumblr lets you effortlessly share anything."
 msgstr "Tumblr vás nechá bez námahy sdílet cokoliv budete chtít."
 
-#: templates/data-en.json:392 templates/data-en.json:406
+#: templates/data-en.json:419
+msgid ""
+"Create a single website for all your content. Publish on your own site "
+"from any device and share with your audiences across the web."
+msgstr ""
+
+#: templates/data-en.json:429
+msgid "Share interesting content from your own site."
+msgstr ""
+
+#: templates/data-en.json:440 templates/data-en.json:454
 msgid "VK"
 msgstr "VK"
 
-#: templates/data-en.json:398 templates/data-en.json:407
+#: templates/data-en.json:446 templates/data-en.json:455
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
@@ -386,56 +396,56 @@ msgstr ""
 "VK je sociální síť, která sjednocuje lidé po celém světě a pomáhá jim "
 "komunikovat pohodlně a rychle."
 
-#: templates/data-en.json:425 templates/data-en.json:434
+#: templates/data-en.json:473 templates/data-en.json:482
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
 "Pinterest je nástroj, který vám pomůže objevit a naplánovat věci, které "
-"byste rádi udělali. Když najde nějakou zajímavost, jednoduše si ji připněte "
-"(Pin it)! Piny jsou vizuální záložky, které můžete organizovat a sdílet "
-"způsobem, jakým budete chtít."
+"byste rádi udělali. Když najde nějakou zajímavost, jednoduše si ji "
+"připněte (Pin it)! Piny jsou vizuální záložky, které můžete organizovat a"
+" sdílet způsobem, jakým budete chtít."
 
-#: templates/data-en.json:433
+#: templates/data-en.json:481
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
 msgstr ""
-"Objevte nápady pro všechny vaše projekty a zájmy vybrané lidmi, jako jste "
-"vy."
+"Objevte nápady pro všechny vaše projekty a zájmy vybrané lidmi, jako jste"
+" vy."
 
-#: templates/data-en.json:572 templates/data-en.json:581
+#: templates/data-en.json:620 templates/data-en.json:629
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
-"Odnoklassniki (rusky: Одноклассники Spolužáci) je sociální síť pro spolužáky "
-"a staré přátele."
+"Odnoklassniki (rusky: Одноклассники Spolužáci) je sociální síť pro "
+"spolužáky a staré přátele."
 
-#: templates/data-en.json:580
+#: templates/data-en.json:628
 msgid "Odnoklassniki"
 msgstr "Odnoklassniki"
 
-#: templates/data-en.json:596
+#: templates/data-en.json:644
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr ""
-"Xing je sociální síť pro tvorbu profesní sítě, business marketing a budování "
-"kariéry."
+"Xing je sociální síť pro tvorbu profesní sítě, business marketing a "
+"budování kariéry."
 
-#: templates/data-en.json:604
+#: templates/data-en.json:652
 msgid "XING is the professional network for a better working life."
 msgstr "XING je profesní síť pro lepší pracovní život."
 
-#: templates/data-en.json:605
+#: templates/data-en.json:653
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr ""
-"Rozšiřte svou existující síť a získejte nové kontakty, skupiny, zaměstnání, "
-"společnosti, události a novinky z vašeho odvětví."
+"Rozšiřte svou existující síť a získejte nové kontakty, skupiny, "
+"zaměstnání, společnosti, události a novinky z vašeho odvětví."
 
 #: templates/footer.html:12
 #, python-format
@@ -480,19 +490,27 @@ msgstr "Nahlásit zneužití obchodní známky"
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI pro vývojáře"
 
-#: templates/index.html:39 templates/provider.html:74
+#: templates/index.html:37 templates/index2.html:37
+#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/provider.html:74
 msgid "Activate Now"
 msgstr "Aktivovat"
 
-#: templates/index.html:40 templates/provider.html:77
+#: templates/index.html:38 templates/index2.html:38
+#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "Dozvědět se více&hellip;"
 
-#: templates/index.html:56
+#: templates/index.html:53
+msgid "Get more out of the Web with these great services."
+msgstr ""
+
+#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "Získejte více ze svého Firefoxu, získejte více z webu"
 
-#: templates/index.html:57
+#: templates/index2.html:54
 msgid ""
 "Easy to use, no software or Add-ons to download and install, just click "
 "Activate and new functionality is delivered to you from the Web.  "
@@ -505,56 +523,6 @@ msgstr ""
 "rázem k dispozici. Vše od sociálních služeb přes práci se záložkami, "
 "hudbou či personalizované zpravodajství, to všem vám poskytují služby pro"
 " Firefox, které vám dávají více z webu."
-
-#: templates/index_entry.html:13 templates/provider.html:106
-msgid "This service supports sharing content"
-msgstr "Tato služba podporuje sdílení obsahu"
-
-#: templates/index_entry.html:13 templates/provider.html:106
-msgid "share"
-msgstr "sdílení"
-
-#: templates/index_entry.html:14 templates/provider.html:107
-msgid "This service provides bookmarking functionality"
-msgstr "Tato služba podporuje záložky"
-
-#: templates/index_entry.html:14 templates/provider.html:107
-msgid "bookmarking"
-msgstr "záložky"
-
-#: templates/index_entry.html:15 templates/provider.html:108
-msgid "This service adds a sidebar to Firefox"
-msgstr "Tato služba přidávání do Firefoxu postranní lištu"
-
-#: templates/index_entry.html:15 templates/provider.html:108
-msgid "sidebar"
-msgstr "postranní lišta"
-
-#: templates/index_entry.html:16 templates/provider.html:109
-msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
-"Tato služba přidává do Firefoxu tlačítko na lištu, které může obsahovat "
-"upozornění"
-
-#: templates/index_entry.html:16 templates/provider.html:109
-msgid "notifications"
-msgstr "upozornění"
-
-#: templates/index_entry.html:18 templates/provider.html:111
-msgid "This is a demo service"
-msgstr "Jedná se o demo službu"
-
-#: templates/index_entry.html:18 templates/provider.html:111
-msgid "demo"
-msgstr "demo"
-
-#: templates/index_entry.html:20 templates/provider.html:113
-msgid "This service requires an unreleased version of Firefox"
-msgstr "Tato služba vyžaduje dosud nevydanou verzi Firefoxu"
-
-#: templates/index_entry.html:20 templates/provider.html:113
-msgid "beta"
-msgstr "beta"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -585,23 +553,23 @@ msgstr "Aktualizace Firefoxu"
 msgid "requires Firefox 29"
 msgstr "vyžaduje Firefox 29"
 
-#: templates/layout.html:90
+#: templates/layout.html:82
 msgid "SocialAPI Demo"
 msgstr "Demoverze SocialAPI"
 
-#: templates/layout.html:95
+#: templates/layout.html:87
 msgid "Firefox for desktop"
 msgstr "Firefox pro desktop"
 
-#: templates/layout.html:113
+#: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
 msgstr "Pro instalaci sociálních služeb musíte používat Firefox."
 
-#: templates/layout.html:113 templates/layout.html:114
+#: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
 msgstr "Stáhnout"
 
-#: templates/layout.html:114
+#: templates/layout.html:110
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
@@ -609,7 +577,7 @@ msgstr ""
 "Instalace sociálních služeb vyžaduje alespoň Firefox ve verzi 29. "
 "Aktualizujte nyní svou verzi Firefoxu."
 
-#: templates/layout.html:115
+#: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
 msgstr "Tato služba vyžaduje dosud nevydanou verzi Firefoxu."
 
@@ -645,3 +613,78 @@ msgid ""
 msgstr ""
 "Tato služba je pouze pro demonstrativní účely a nebude tak fungovat dle "
 "očekávání."
+
+#: templates/provider.html:106
+msgid "This service supports sharing content"
+msgstr "Tato služba podporuje sdílení obsahu"
+
+#: templates/provider.html:106
+msgid "share"
+msgstr "sdílení"
+
+#: templates/provider.html:107
+msgid "This service provides bookmarking functionality"
+msgstr "Tato služba podporuje záložky"
+
+#: templates/provider.html:107
+msgid "bookmarking"
+msgstr "záložky"
+
+#: templates/provider.html:108
+msgid "This service adds a sidebar to Firefox"
+msgstr "Tato služba přidávání do Firefoxu postranní lištu"
+
+#: templates/provider.html:108
+msgid "sidebar"
+msgstr "postranní lišta"
+
+#: templates/provider.html:109
+msgid "This service adds a toolbar button to Firefox that may have notifications"
+msgstr ""
+"Tato služba přidává do Firefoxu tlačítko na lištu, které může obsahovat "
+"upozornění"
+
+#: templates/provider.html:109
+msgid "notifications"
+msgstr "upozornění"
+
+#: templates/provider.html:111
+msgid "This is a demo service"
+msgstr "Jedná se o demo službu"
+
+#: templates/provider.html:111
+msgid "demo"
+msgstr "demo"
+
+#: templates/provider.html:113
+msgid "This service requires an unreleased version of Firefox"
+msgstr "Tato služba vyžaduje dosud nevydanou verzi Firefoxu"
+
+#: templates/provider.html:113
+msgid "beta"
+msgstr "beta"
+
+#~ msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
+#~ msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
+
+#~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+#~ msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
+
+#~ msgid "Yahoo Mail"
+#~ msgstr ""
+
+#~ msgid "Your Email, Anywhere!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fast, simple to use email with 1TB"
+#~ " of free mail storage that comes "
+#~ "with all the goodness of Yahoo!"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "There’s a time and a place for "
+#~ "plain old emails – and then "
+#~ "there’s everything else."
+#~ msgstr ""
+
