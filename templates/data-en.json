@@ -3,6 +3,7 @@
     "yahoomail": {
       "status": "beta",
       "manifest": {
+        "origin": "https://mg.mail.yahoo.com",
         "name": "{{ _('Yahoo! Mail') }}",
         "iconURL": "https://s.yimg.com/nq/nr/icons/ymail16.png",
         "icon32URL": "https://s.yimg.com/nq/nr/icons/ymail32.png",
