@@ -10,18 +10,18 @@
     "2015-03-31": [37,38,39,40]
   },
   "sharePanel": {
-    "en-US": {"featured": ["yahoomail"], "providers": ["delicious", "facebook", "google", "linkedin", "tumblr", "twitter"]},
-    "jp-JP": {"featured": ["mixi"], "providers": ["linkedin", "twitter", "google", "facebook", "tumblr", "gmail"]},
-    "ja": {"featured": ["mixi"], "providers": ["linkedin", "twitter", "google", "facebook", "tumblr", "gmail"]},
-    "tw": {"featured": ["twitter"], "providers": ["linkedin", "google", "facebook", "tumblr", "gmail"]},
-    "ru": {"featured": ["odnoklassniki"], "providers": ["linkedin", "vkontakte", "twitter", "google", "facebook", "tumblr"]}
+    "en-US": {"featured": ["yahoomail"], "providers": ["yahoomail", "facebook", "google", "linkedin", "tumblr", "twitter"]},
+    "jp-JP": {"featured": ["mixi"], "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]},
+    "ja": {"featured": ["mixi"], "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]},
+    "tw": {"featured": ["twitter"], "providers": ["twitter", "google", "facebook", "yahoomail", "gmail"]},
+    "ru": {"featured": ["odnoklassniki"], "providers": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "yahoomail"]}
   },
   "carousel": {
     "en-US": ["facebook", "yahoomail", "twitter"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "zh-TW": ["twitter", "google", "tumblr"],
-    "ja": ["mixi", "twitter", "tumblr", "google"],
-    "ru": ["odnoklassniki", "vkontakte"],
-    "de": ["cliqz", "goal", "twitter"]
+    "ja": ["mixi", "twitter", "yahoomail", "google"],
+    "ru": ["odnoklassniki", "vkontakte", "twitter"],
+    "de": ["cliqz", "yahoomail", "twitter"]
   }
 }
