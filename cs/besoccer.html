@@ -1,0 +1,306 @@
+<html>
+<head>
+  <base href="/cs/"/>
+  <title>BeSoccer pro Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Získat Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Aktualizace Firefoxu <span>&raquo;</span><br/><span class=\"smaller\">vyžaduje Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [37, 38, 39, 40];
+    var minver = 29;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Instalovat Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">vyžaduje Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Instalovat Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">vyžaduje Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Instalovat Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">vyžaduje Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Aktualizace Firefoxu <span>&raquo;</span><br/><span class=\"smaller\">vyžaduje Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/cs/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox pro desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Pro instalaci sociálních služeb musíte používat Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Stáhnout.</a>
+  </p><p id="upgrade-required" hidden="true">Instalace sociálních služeb vyžaduje alespoň Firefox ve verzi 29. Aktualizujte nyní svou verzi Firefoxu.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Stáhnout.</a>
+  </p><p id="beta-required" hidden="true">Tato služba vyžaduje dosud nevydanou verzi Firefoxu.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Domů</a>
+        </div>
+        <div>
+        <span>BeSoccer</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="https://m.besoccer.com/media/images/favicon-ffx-64.png"></img> BeSoccer</h1>
+
+              <h3 class="tagline">The quickest way to get your soccer scores</h3>
+              <p class="lead">Enjoy our detailed soccer livescores while surfing the web with your Firefox browser.</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'besoccer')" data-service="{&#34;author&#34;: &#34;BeSoccer.com&#34;, &#34;description&#34;: &#34;Don&#39;t miss the most important football matches while navigating as usual through the pages of your choice.&#34;, &#34;homepageURL&#34;: &#34;http://www.besoccer.com/&#34;, &#34;icon32URL&#34;: &#34;https://m.besoccer.com/media/images/favicon-ffx-32.png&#34;, &#34;icon64URL&#34;: &#34;https://m.besoccer.com/media/images/favicon-ffx-64.png&#34;, &#34;iconURL&#34;: &#34;https://m.besoccer.com/media/images/favicon-ffx-16.png&#34;, &#34;name&#34;: &#34;BeSoccer&#34;, &#34;origin&#34;: &#34;https://m.besoccer.com&#34;, &#34;sidebarURL&#34;: &#34;https://m.besoccer.com/responsive/livescore&#34;, &#34;version&#34;: &#34;1.0&#34;}">Aktivovat <span>&raquo;</span></a>
+              <div class="provider-description">Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser.</div>
+
+              <a href="https://www.besoccer.com/extension/firefox" class="moreinfo" target="_blank">Dozvědět se více&hellip;</a>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            <div class="clearfix"><img src="images/besoccer/detail.1.png" class="provider-primary-image" /></div>
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span  title="Tato služba podporuje sdílení obsahu">sdílení</span> 
+          <span  title="Tato služba podporuje záložky">záložky</span> 
+          <span class="supported" title="Tato služba přidávání do Firefoxu postranní lištu">postranní lišta</span> 
+          <span  title="Tato služba přidává do Firefoxu tlačítko na lištu, které může obsahovat upozornění">upozornění</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Část z tohoto obsahu je  ©1998–2015 jednotlivých přispěvatelů mozilla.org. Obsah je dostupný pod <a href="http://www.mozilla.org/foundation/licensing/website-content/">licencí Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Přispět do této stránky</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Kontaktujte nás</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Buďte s námi partneři</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Přispět</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Zásady ochrany soukromí</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Právní upozornění</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Nahlásit zneužití obchodní známky</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI pro vývojáře</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Ostatní jazyky:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" selected>čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Přejít</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/cs/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+<html>
+<head>
+  <base href="/sl/"/>
+  <title>BeSoccer za Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Prenesi Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Nadgradi Firefox <span>&raquo;</span><br/><span class=\"smaller\">zahteva Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/sl/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox za namizje"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Za namestitev družbenih storitev morate uporabiti Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
+  </p><p id="upgrade-required" hidden="true">Namestitev družbenih storitev zahteva najmanj Firefox različice 29.  Nadgradite svojo različico Firefoxa zdaj.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Prenesi.</a>
+  </p><p id="beta-required" hidden="true">Ta storitev zahteva še neizdano različico Firefoxa.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Domača stran</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="https://m.besoccer.com/media/images/favicon-ffx-64.png"></img> BeSoccer</h1>
+    
+    <h3>Čestitke, <strong>BeSoccer</strong> je sedaj omogočen v Firefoxu!</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+
+
+
+      <div class="section clearfix">
+      <h4><li>Dodajte gumb stranske vrstice v svojo orodno vrstico</li></h4>
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarbutton.png"
+      alt="[sidebar button image]" style="float: right;"/>
+      </div>
+      <p class="lead">Od Firefoxa 30 naprej lahko upravljate stranske vrstice s pomočjo gumba v orodni vrstici. Nahaja se v <a href="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s">meniju za prilagajanje</a>, od koder ga morate povleči v orodno vrstico in že boste lahko hitro preklapljali med stranskimi vrsticami.</p>
+      </div>
+
+      <div class="section clearfix">
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarselect.png"
+      alt="[sidebar selection image]" style="float: right;"/>
+      </div>
+      <p class="lead">Dodatno lahko preprosto spremenite storitev v svoji stranski vrstici ali pa skrijete stransko vrstico iz nje same. Uporabite lahko tudi meni <strong>Pogled->Orodne vrstice</strong> v Firefoxu.</p>
+      </div>
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Spremenite nastavitve v Upravljalcu dodatkov</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Upravitelj dodatkov" style="float: right;"/>
+      </div>
+      <p class="lead">Z uporabo Upravitelja dodatkov v Firefoxu lahko preprosto <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">upravljate s svojimi storitvami</a> ter jih začasno onemogočite ali odstranite.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Naslednji koraki</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">Več o tem, kaj ta storitev doprinese Firefoxu</a>.</li>
+
+      <li><a href="http://www.besoccer.com/">Več o tem</a>, kaj ponuja <a href="http://www.besoccer.com/">BeSoccer</a>.</li>
+
+      <li><a href=".">Raziskujte in poiščite več storitev</a>, ki jih lahko dodate Firefoxu.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Deli te vsebine so avtorsko zaščiteni v obdobju 1998–2015 s strani sodelavcev mozilla.org. Vsebina je na voljo pod dovoljenjem <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Prispevajte k tej strani</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Pišite nam</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Sodelujte z nami</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Donirajte</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Politika zasebnosti</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Pravna obvestila</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Obvestite nas o zlorabi trgovske znamke</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI za razvijalce</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Drugi jeziki:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" selected>slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Pojdi</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/sl/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>
