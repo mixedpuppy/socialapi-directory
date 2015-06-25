@@ -1,5 +1,30 @@
 {
   "source": {
+    "besoccer": {
+      "status": "release",
+      "manifest": {
+        "origin": "https://m.besoccer.com",
+        "name": "BeSoccer",
+        "iconURL": "https://m.besoccer.com/media/images/favicon-ffx-16.png",
+        "icon32URL": "https://m.besoccer.com/media/images/favicon-ffx-32.png",
+        "icon64URL": "https://m.besoccer.com/media/images/favicon-ffx-64.png",
+
+        "sidebarURL": "https://m.besoccer.com/responsive/livescore",
+        "description": "Don't miss the most important football matches while navigating as usual through the pages of your choice.",
+        "author": "BeSoccer.com",
+        "homepageURL": "http://www.besoccer.com/",
+        "version": "1.0"
+	  },
+      "viewData": {
+        "name": "BeSoccer",
+        "tagline": "{{ _('The quickest way to get your soccer scores') }}",
+        "shortDescription": "{{ _('Enjoy our detailed soccer livescores while surfing the web with your Firefox browser.') }}",
+        "description": "{{ _('Thanks to BeSoccer widget, you\'ll get real-time soccer scores as quick as possible while navigating with your Firefox browser.') }}",
+        "links": {
+          "learnmore": "https://www.besoccer.com/extension/firefox"
+        }
+      }
+    },
     "yahoomail": {
       "status": "beta",
       "manifest": {
