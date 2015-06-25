@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-18 10:07-0700\n"
+"POT-Creation-Date: 2015-06-25 11:47-0700\n"
 "PO-Revision-Date: 2015-05-10 18:49+0000\n"
 "Last-Translator: Gábor <kelemeng@ubuntu.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
@@ -164,28 +164,35 @@ msgstr ""
 "<a href=\".\">Fedezzen fel további szolgáltatásokat</a>, amelyeket a "
 "Firefoxhoz adhat."
 
-#: templates/data-en.json:6
-# do not translate
-msgid "Yahoo! Mail"
+#: templates/data-en.json:7
+msgid "Yahoo Mail"
 msgstr ""
 
-#: templates/data-en.json:11 templates/data-en.json:21
+#: templates/data-en.json:12 templates/data-en.json:20
 msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
 msgstr ""
-"Könnyedén küldhet weboldalakat másoknak és saját magának továbbfejlesztett "
-"hivatkozás-előnézetek és sok más funkció használatával."
+"Könnyedén küldhet weboldalakat másoknak és saját magának "
+"továbbfejlesztett hivatkozás-előnézetek és sok más funkció használatával."
 
-#: templates/data-en.json:33 templates/data-en.json:40
+#: templates/data-en.json:21
+msgid ""
+"Fast, simple to use email with 1 TB of free mail storage and smarter "
+"tools to help you get more done."
+msgstr ""
+"Gyors, könnyen kezelhető e-mail szolgáltatás 1 TB ingyenes levelezési "
+"tárhellyel és intelligensebb, a hatékony munkát segítő eszközökkel."
+
+#: templates/data-en.json:36 templates/data-en.json:43
 msgid "The definitive source for football news from around the world."
 msgstr "Az egész világ focihíreinek alapvető forrása."
 
-#: templates/data-en.json:39
+#: templates/data-en.json:42
 msgid "We live and breathe football - everywhere, 24/7"
 msgstr "A foci az életünk – mindenhol, folyamatosan"
 
-#: templates/data-en.json:41
+#: templates/data-en.json:44
 msgid ""
 "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
 "whoever you support, we are your definitive football source.</p><p>We "
@@ -202,7 +209,7 @@ msgstr ""
 "játékosokról.</p><p>Ennek köszönhetően világszerte több, mint 52 millió "
 "focirajongó választ bennünket, hogy kövesse az eseményeket."
 
-#: templates/data-en.json:53 templates/data-en.json:62
+#: templates/data-en.json:56 templates/data-en.json:65
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online"
 " and on the go. It's a simple, beautiful, and free way to search, "
@@ -214,15 +221,15 @@ msgstr ""
 "annak, hogy keressen, felfedezzen, meghallgasson több millió számot az "
 "örökzöldektől a legújabb slágerekig."
 
-#: templates/data-en.json:60
+#: templates/data-en.json:63
 msgid "Music Feed"
 msgstr "Music Feed"
 
-#: templates/data-en.json:61
+#: templates/data-en.json:64
 msgid "Discover fresh music and hear more of what you love."
 msgstr "Fedezzen fel új zenéket, vagy hallgassa megszokott kedvenceit."
 
-#: templates/data-en.json:83
+#: templates/data-en.json:86
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
@@ -230,17 +237,17 @@ msgstr ""
 "Pocket szolgáltatás Firefoxhoz – A legjobb módszer cikkek, videók és "
 "minden más elmentésére"
 
-#: templates/data-en.json:91
+#: templates/data-en.json:94
 msgid "Save it for later"
 msgstr "Mentse el későbbre"
 
-#: templates/data-en.json:92
+#: templates/data-en.json:95
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr ""
 "Egy jól használható, tetszetős felület ahhoz, hogy elmentsen tartalmakat,"
 " amiket később szeretnél megnézni."
 
-#: templates/data-en.json:106 templates/data-en.json:116
+#: templates/data-en.json:109 templates/data-en.json:119
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
@@ -248,11 +255,11 @@ msgstr ""
 "Új módszer az érdeklődési köreihez illő új, érdekes tartalmak "
 "felfedezésére."
 
-#: templates/data-en.json:114
+#: templates/data-en.json:117
 msgid "a discovery experience"
 msgstr "a felfedezés élménye"
 
-#: templates/data-en.json:131
+#: templates/data-en.json:134
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
@@ -260,27 +267,27 @@ msgstr ""
 "A Delicious egy ingyenes szolgáltató, ami segítségével elmentheti azokat "
 "a tartalmakat, amelyek megtetszettek böngészés közben."
 
-#: templates/data-en.json:149
+#: templates/data-en.json:152
 msgid "Never lose a link again."
 msgstr "Hogy minden hivatkozás megmaradjon."
 
-#: templates/data-en.json:150
+#: templates/data-en.json:153
 msgid "Delicious remembers so you don't have to."
 msgstr "A Delicious ön helyett is emlékszik."
 
-#: templates/data-en.json:165
+#: templates/data-en.json:168
 msgid "Keep up with friends wherever you go on the web."
 msgstr "Legyen folyamatosan kapcsolatban másokkal böngészés közben."
 
-#: templates/data-en.json:185
+#: templates/data-en.json:188
 msgid "Share the web"
 msgstr "Ossza meg a webet"
 
-#: templates/data-en.json:186
+#: templates/data-en.json:189
 msgid "Share any web page, anywhere, anytime."
 msgstr "Osszon meg bármilyen weboldalt bárhol és bármikor."
 
-#: templates/data-en.json:194
+#: templates/data-en.json:197
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
@@ -289,7 +296,7 @@ msgstr ""
 "cikkekből, történetekből, videókból az érdeklődési köreinek megfelelően, "
 "közvetlenül a Firefoxban."
 
-#: templates/data-en.json:217
+#: templates/data-en.json:220
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
@@ -297,15 +304,15 @@ msgstr ""
 "Jusson hozzá az érdeklődési körei alapján legérdekesebb hírekhez, hozzon "
 "létre egy egyedi információs univerzumot."
 
-#: templates/data-en.json:229 templates/data-en.json:241
+#: templates/data-en.json:232 templates/data-en.json:244
 msgid "The largest social network in Japan."
 msgstr "A legnagyobb közösségi hálózat Japánban."
 
-#: templates/data-en.json:242
+#: templates/data-en.json:245
 msgid "Stay informed of what your friends are up to."
 msgstr "Maradjon képben arról, hogy mivel foglalkoznak épp az ismerősei."
 
-#: templates/data-en.json:253 templates/data-en.json:271
+#: templates/data-en.json:256 templates/data-en.json:274
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
@@ -316,11 +323,11 @@ msgstr ""
 "Firefoxszal a felhasználók 140 karakteres limit mellett oszthatnak meg "
 "szövegeket, képeket, videókat stb. és jelez, amikor új üzenet érkezik."
 
-#: templates/data-en.json:270
+#: templates/data-en.json:273
 msgid "Share your interesting news anytime, anywhere."
 msgstr "Ossza meg az Ön számára érdekes híreket bármikor, bárhol."
 
-#: templates/data-en.json:292
+#: templates/data-en.json:295
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
@@ -329,15 +336,15 @@ msgstr ""
 "Használja a Google+ fiókját a hivatkozások megosztására nyilvánosan, vagy"
 " a körein belül."
 
-#: templates/data-en.json:297
+#: templates/data-en.json:300
 msgid "Share the web on Google+."
 msgstr "Ossza meg a webet a Google+-on."
 
-#: templates/data-en.json:318 templates/data-en.json:322
+#: templates/data-en.json:321 templates/data-en.json:325
 msgid "Send web pages and images to people using Gmail."
 msgstr "Küldjön hivatkozásokat vagy képeket a Gmail segítségével."
 
-#: templates/data-en.json:341
+#: templates/data-en.json:344
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
@@ -347,15 +354,15 @@ msgstr ""
 "azt, amire böngészés közben ráakad. A t.co linkrövidítővel rögtön "
 "megoszthatóvá tesszük a hosszú URL-eket is."
 
-#: templates/data-en.json:348
+#: templates/data-en.json:351
 msgid "Tweet to your followers"
 msgstr "Tweeteljen a követőinek"
 
-#: templates/data-en.json:349
+#: templates/data-en.json:352
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr "A Twitter Share segítségével gyorsan megoszthat bármit a követőivel."
 
-#: templates/data-en.json:366
+#: templates/data-en.json:369
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
@@ -363,11 +370,11 @@ msgstr ""
 "Kezelje és bővítse egyszerűen szakmai kapcsolatait, szerezzen új "
 "ismereteket, ötleteket, találjon rá új lehetőségekre."
 
-#: templates/data-en.json:373
+#: templates/data-en.json:376
 msgid "Share the web with your professional network."
 msgstr "Osszon meg értékes tartalmakat szakmabéli ismerőseivel."
 
-#: templates/data-en.json:391
+#: templates/data-en.json:394
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
 "phone, desktop, email or wherever you happen to be. You can customize "
@@ -378,25 +385,25 @@ msgstr ""
 "máshonnan. Testre szabhat szinte bármit a színektől kezdve az oldala "
 "témájának HTML kódjáig."
 
-#: templates/data-en.json:401
+#: templates/data-en.json:404
 msgid "Tumblr lets you effortlessly share anything."
 msgstr "A Tumblr segítségével könnyedén megoszthat bármit."
 
-#: templates/data-en.json:419
+#: templates/data-en.json:422
 msgid ""
 "Create a single website for all your content. Publish on your own site "
 "from any device and share with your audiences across the web."
 msgstr ""
 
-#: templates/data-en.json:429
+#: templates/data-en.json:432
 msgid "Share interesting content from your own site."
 msgstr ""
 
-#: templates/data-en.json:440 templates/data-en.json:454
+#: templates/data-en.json:443 templates/data-en.json:457
 msgid "VK"
 msgstr "VK"
 
-#: templates/data-en.json:446 templates/data-en.json:455
+#: templates/data-en.json:449 templates/data-en.json:458
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
@@ -404,7 +411,7 @@ msgstr ""
 "A Vkontakte egy közösségi oldal, amely segítségével gyorsan és egyszerűen"
 " érintkezhet másokkal az egész világon."
 
-#: templates/data-en.json:473 templates/data-en.json:482
+#: templates/data-en.json:476 templates/data-en.json:485
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
 "When you find something that looks interesting, just Pin it! Pins are "
@@ -415,13 +422,13 @@ msgstr ""
 "kattintson a Pin it! gombra, így képes könyvjelzőkkel rendezgetheti és "
 "oszthatja meg azt, ami érdekli."
 
-#: templates/data-en.json:481
+#: templates/data-en.json:484
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
 msgstr "Fedezzen fel új ötleteket, új módszereket mások válogatásait böngészve."
 
-#: templates/data-en.json:620 templates/data-en.json:629
+#: templates/data-en.json:623 templates/data-en.json:632
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
@@ -429,21 +436,21 @@ msgstr ""
 "Az Odnoklassiki (orosz, jelentése: osztálytársak) egy közösségi oldal "
 "régi barátok, osztálytársak megtalálására."
 
-#: templates/data-en.json:628
+#: templates/data-en.json:631
 msgid "Odnoklassniki"
 msgstr "Odnoklassniki"
 
-#: templates/data-en.json:644
+#: templates/data-en.json:647
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr "A Xing egy közösségi oldal a szakmai, üzleti kapcsolatteremtéshez."
 
-#: templates/data-en.json:652
+#: templates/data-en.json:655
 msgid "XING is the professional network for a better working life."
 msgstr "A XING segít, hogy jobb munkája legyen, jobban érezze magát munka közben."
 
-#: templates/data-en.json:653
+#: templates/data-en.json:656
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
@@ -668,28 +675,3 @@ msgstr "Ez a szolgáltatás a Firefox még kiadatlan verzióját igényli"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "béta"
-
-#~ msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-#~ msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-
-#~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-#~ msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-
-#~ msgid "Yahoo Mail"
-#~ msgstr ""
-
-#~ msgid "Your Email, Anywhere!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Fast, simple to use email with 1TB"
-#~ " of free mail storage that comes "
-#~ "with all the goodness of Yahoo!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "There’s a time and a place for "
-#~ "plain old emails – and then "
-#~ "there’s everything else."
-#~ msgstr ""
-

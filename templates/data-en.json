@@ -4,7 +4,7 @@
       "status": "beta",
       "manifest": {
         "origin": "https://mg.mail.yahoo.com",
-        "name": "{{ _('Yahoo! Mail') }}",
+        "name": "{{ _('Yahoo Mail') }}",
         "iconURL": "https://s.yimg.com/nq/nr/icons/ymail16.png",
         "icon32URL": "https://s.yimg.com/nq/nr/icons/ymail32.png",
         "icon64URL": "https://s.yimg.com/nq/nr/icons/ymail64.png",
@@ -18,7 +18,10 @@
         "name": "",
         "tagline": "",
         "shortDescription": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}",
-        "description": ""
+        "description": "{{ _('Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done.') }}",
+        "links": {
+          "learnmore": "http://mail.yahoo.com"
+        }
       }
     },
     "goal": {

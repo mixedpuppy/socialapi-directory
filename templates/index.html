@@ -38,7 +38,11 @@
           <br/><a href="{{p['key']}}.html" class="moreinfo">{{ _('Learn More&hellip;') }}</a>
           </div>
           <div class="carousel-image">
+{% if 'carousel' in p['viewData']['images'] %}
           <img src="{{p['viewData']['images']['carousel']}}" style="float:right;"></img>
+{% else %}
+          <img src="{{p['viewData']['images']['detail']}}" style="float:right;"></img>
+{% endif %}
           </div>
         </div>
       </div>
