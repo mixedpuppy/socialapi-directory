@@ -26,7 +26,7 @@
       }
     },
     "yahoomail": {
-      "status": "beta",
+      "status": "release",
       "manifest": {
         "origin": "https://mg.mail.yahoo.com",
         "name": "{{ _('Yahoo Mail') }}",
