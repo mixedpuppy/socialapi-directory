@@ -40,7 +40,7 @@
         "version": "1.0"
       },
       "viewData": {
-        "name": "",
+        "name": "{{ _('Yahoo Mail') }}",
         "tagline": "",
         "shortDescription": "{{ _('Quickly send web pages to yourself and others with enhanced link previews and more.') }}",
         "description": "{{ _('Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done.') }}",
