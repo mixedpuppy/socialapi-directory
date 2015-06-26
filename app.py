@@ -41,7 +41,7 @@ def getImages(k, locale):
   # get detail images
   details = []
   for i in range(1,3):
-    filenames = ["detail.%d.%s.png" % (i, locale), "detail.%d.%s.jpg" % (i, locale), "detail.%d.png" % i, "detail.%d.jpg" % i, "detail.%d.en-US.png" % i, "detail.%d.en-US.jpg" % i]
+    filenames = ["detail.%d.%s.png" % (i, locale), "detail.%d.%s.jpg" % (i, locale), "detail.%d.png" % i, "detail.%d.jpg" % i, "detail.%d.gif" % i, "detail.%d.en-US.png" % i, "detail.%d.en-US.jpg" % i]
     for fn in filenames:
       fn = os.path.join("images", k, fn)
       if os.path.exists(os.path.join("static", fn)):

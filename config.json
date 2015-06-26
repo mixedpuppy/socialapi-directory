@@ -20,8 +20,8 @@
     "en-US": ["facebook", "yahoomail", "twitter"],
     "en-IN": ["saavn", "pocket", "facebook"],
     "zh-TW": ["yahoomail", "twitter", "google"],
-    "ja": ["mixi", "twitter", "yahoomail", "google"],
-    "ru": ["odnoklassniki", "vkontakte", "twitter"],
+    "ja": ["mixi", "twitter", "yahoomail"],
+    "ru": ["odnoklassniki", "vkontakte", "yahoomail"],
     "de": ["cliqz", "yahoomail", "twitter"]
   }
 }

@@ -177,6 +177,7 @@ msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
 msgstr ""
+"強化されたリンクプレビューその他が掲載されたウェブページを、自分と他のユーザーに素早く送信します。"
 
 #: templates/data-en.json:46
 msgid ""
