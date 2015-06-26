@@ -1,89 +1,98 @@
-# Turkish translations for PACKAGE.
+# Translations template for PROJECT.
 # Copyright (C) 2015 ORGANIZATION
-# This file is distributed under the same license as the PACKAGE project.
+# This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-04-02 12:52-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: tr <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"POT-Creation-Date: 2015-01-30 12:08-0800\n"
+"PO-Revision-Date: 2015-02-13 13:58+0000\n"
+"Last-Translator: Mert Salih <mail@mertskaplan.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1423835884.0\n"
 
-#: templates/activated.html:32 templates/activatedIndex.html:9
+#: templates/activated.html:8 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr ""
+msgstr "Ana sayfa"
 
-#: templates/activated.html:46
+#: templates/activated.html:22
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "Tebrikler, <strong>%(name)s</strong> Firefox'ta etkinleştirildi!"
 
-#: templates/activated.html:51
+#: templates/activated.html:27
 #, python-format
 msgid "Get the most from %(name)s"
 msgstr ""
 
-#: templates/activated.html:53
+#: templates/activated.html:29
 msgid "Bookmark this page"
-msgstr ""
+msgstr "Bu sayfayı yer imlerine ekle"
 
-#: templates/activated.html:54
+#: templates/activated.html:30
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
 "information and links to further help using and customizing Firefox.  "
 "Keep reading to learn more about how %(name)s works in Firefox."
 msgstr ""
+"Bu servisi kullanmaya yeni başladıysanız, Firefox'u kullanma ve "
+"özelleştirmeyle ilgili kullanışlı bilgiler içeren bu sayfayı yer imlerinize "
+"ekleyebilirsiniz. %(name)s servisinin Firefox'ta nasıl çalıştığını öğrenmek "
+"için okumaya devam edin."
 
-#: templates/activated.html:59
+#: templates/activated.html:35
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Beğendiğiniz içerikleri %(name)s aracılığıyla paylaşın"
 
-#: templates/activated.html:64
+#: templates/activated.html:40
 #, python-format
 msgid ""
 "With the click of a button, you can Share interesting content on any "
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
+"Tek bir tıklamayla, tüm web sitelerindeki ilginç içerikleri <strong>%"
+"(name)s</strong> aracılığıyla sosyal ağınızda paylaşabilirsiniz."
 
-#: templates/activated.html:69
+#: templates/activated.html:45
 msgid "Save content for later"
 msgstr ""
 
-#: templates/activated.html:71
+#: templates/activated.html:47
 #, python-format
 msgid ""
 "With the click of a button, you can save interesting content on any "
 "website to <strong>%(name)s</strong>."
 msgstr ""
 
-#: templates/activated.html:76
+#: templates/activated.html:52
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
 msgstr ""
 
-#: templates/activated.html:78
+#: templates/activated.html:54
 #, python-format
 msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
 
-#: templates/activated.html:83
+#: templates/activated.html:59
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "Araç çubuğunuza \"kenar çubukları\" düğmesini ekleyin"
 
-#: templates/activated.html:88
+#: templates/activated.html:64
 #, python-format
 msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars"
@@ -91,23 +100,30 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
+"Firefox 30'dan itibaren kenar çubuklarınızı \"kenar çubukları\" araç "
+"düğmesiyle yönetebilirsiniz. Kenar çubukları düğmesi <a href=\"%"
+"(url)s\">özelleştirme paletinden</a> yer alır. Kenar çubukları arasında hızlı "
+"geçiş yapmak için bu düğmeyi sürükleyip araç çubuğunuza bırakmanız yeterli."
 
-#: templates/activated.html:96
+#: templates/activated.html:72
 msgid ""
 "Additionally, you can easily change the service in your sidebar, or hide "
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Ayrıca, kenar çubuğu üzerinden de kenar çubuğundaki servisi değiştirebilir "
+"veya çubuğu gizleyebilirsiniz. Firefox'ta <strong>Görünüm->Araç "
+"çubukları</strong> menüsünü de kullanabilirsiniz."
 
-#: templates/activated.html:103
+#: templates/activated.html:79
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Eklenti Yöneticisi'nden ayarları değiştirin"
 
-#: templates/activated.html:105
+#: templates/activated.html:81
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Eklenti Yöneticisi"
 
-#: templates/activated.html:107
+#: templates/activated.html:83
 #, python-format
 msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
@@ -115,35 +131,39 @@ msgid ""
 "Firefox."
 msgstr ""
 
-#: templates/activated.html:112
+#: templates/activated.html:88
 msgid "Next Steps"
-msgstr ""
+msgstr "Sonraki adımlar"
 
-#: templates/activated.html:114
+#: templates/activated.html:90
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more about what this service adds to "
 "Firefox</a>."
 msgstr ""
+"<a href=\"%(url)s\">Bu servisin Firefox'ne eklediği hakkında daha fazla bilgi "
+"alın</a>."
 
-#: templates/activated.html:116
+#: templates/activated.html:92
 #, python-format
 msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
 
-#: templates/activated.html:118
+#: templates/activated.html:94
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr ""
+"Firefox'a ekleyebileceğiniz <a href=\".\">diğer servisleri keşfedin</a>. "
+"               "
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "Tüm dünyadan futbol haberleri için en kapsamlı kaynaklardan biri."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Her yerde, 7 gün 24 saat futbolla yaşıyor, futbol soluyoruz."
 
 #: templates/data-en.json:20
 msgid ""
@@ -155,7 +175,7 @@ msgid ""
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
 
-#: templates/data-en.json:32 templates/data-en.json:41
+#: templates/data-en.json:33 templates/data-en.json:42
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online"
 " and on the go. It's a simple, beautiful, and free way to search, "
@@ -163,85 +183,97 @@ msgid ""
 "hard-to-find classics."
 msgstr ""
 
-#: templates/data-en.json:39
+#: templates/data-en.json:40
 msgid "Music Feed"
 msgstr ""
 
-#: templates/data-en.json:40
+#: templates/data-en.json:41
 msgid "Discover fresh music and hear more of what you love."
 msgstr ""
 
-#: templates/data-en.json:62
+#: templates/data-en.json:63
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
 msgstr ""
 
-#: templates/data-en.json:70
+#: templates/data-en.json:71
 msgid "Save it for later"
 msgstr ""
 
-#: templates/data-en.json:71
+#: templates/data-en.json:72
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr ""
 
-#: templates/data-en.json:85 templates/data-en.json:95
+#: templates/data-en.json:86 templates/data-en.json:96
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
 msgstr ""
 
-#: templates/data-en.json:93
+#: templates/data-en.json:94
 msgid "a discovery experience"
 msgstr ""
 
-#: templates/data-en.json:110
+#: templates/data-en.json:111
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
 msgstr ""
 
-#: templates/data-en.json:128
-msgid "Never lose a link again."
-msgstr ""
-
 #: templates/data-en.json:129
+msgid "Never lose a link again."
+msgstr "Bir daha asla bir bağlantıyı kaybetmeyin."
+
+#: templates/data-en.json:130
 msgid "Delicious remembers so you don't have to."
 msgstr ""
 
-#: templates/data-en.json:144
+#: templates/data-en.json:145
 msgid "Keep up with friends wherever you go on the web."
 msgstr ""
 
-#: templates/data-en.json:164
-msgid "Share the web"
-msgstr ""
-
 #: templates/data-en.json:165
+msgid "Share the web"
+msgstr "Web'i paylaşın"
+
+#: templates/data-en.json:166
 msgid "Share any web page, anywhere, anytime."
 msgstr ""
 
-#: templates/data-en.json:173
+#: templates/data-en.json:174
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
 msgstr ""
 
-#: templates/data-en.json:196
+#: templates/data-en.json:197
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
 msgstr ""
 
-#: templates/data-en.json:208 templates/data-en.json:220
-msgid "The largest social network in Japan."
+#: templates/data-en.json:209
+msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
 msgstr ""
 
 #: templates/data-en.json:221
+msgid "The largest social network in Japan."
+msgstr "Japonya'nın en büyük sosyal ağı."
+
+#: templates/data-en.json:222
 msgid "Stay informed of what your friends are up to."
+msgstr "Arkadaşlarınızın yaptıklarından haberdar olun."
+
+#: templates/data-en.json:233
+msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
 msgstr ""
 
-#: templates/data-en.json:232 templates/data-en.json:250
+#: templates/data-en.json:250
+msgid "Share your interesting news anytime, anywhere."
+msgstr ""
+
+#: templates/data-en.json:251
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
@@ -249,114 +281,100 @@ msgid ""
 "messages."
 msgstr ""
 
-#: templates/data-en.json:249
-msgid "Share your interesting news anytime, anywhere."
-msgstr ""
-
-#: templates/data-en.json:271
+#: templates/data-en.json:272
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
 msgstr ""
 
-#: templates/data-en.json:276
+#: templates/data-en.json:277
 msgid "Share the web on Google+."
 msgstr ""
 
-#: templates/data-en.json:297 templates/data-en.json:301
+#: templates/data-en.json:298 templates/data-en.json:302
 msgid "Send web pages and images to people using Gmail."
 msgstr ""
 
-#: templates/data-en.json:320
+#: templates/data-en.json:321
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
 " t.co link shortener."
 msgstr ""
 
-#: templates/data-en.json:327
+#: templates/data-en.json:328
 msgid "Tweet to your followers"
 msgstr ""
 
-#: templates/data-en.json:328
+#: templates/data-en.json:329
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr ""
 
-#: templates/data-en.json:345
+#: templates/data-en.json:346
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
 msgstr ""
 
-#: templates/data-en.json:352
+#: templates/data-en.json:353
 msgid "Share the web with your professional network."
 msgstr ""
 
-#: templates/data-en.json:370
+#: templates/data-en.json:371
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
 
-#: templates/data-en.json:380
+#: templates/data-en.json:381
 msgid "Tumblr lets you effortlessly share anything."
 msgstr ""
 
-#: templates/data-en.json:398
-msgid ""
-"Create a single website for all your content. Publish on your own site "
-"from any device and share with your audiences across the web."
-msgstr ""
-
-#: templates/data-en.json:408
-msgid "Share interesting content from your own site."
-msgstr ""
-
-#: templates/data-en.json:419 templates/data-en.json:433
+#: templates/data-en.json:392 templates/data-en.json:406
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
-#: templates/data-en.json:425 templates/data-en.json:434
+#: templates/data-en.json:398 templates/data-en.json:407
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
 msgstr ""
 
-#: templates/data-en.json:452 templates/data-en.json:461
+#: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
 "When you find something that looks interesting, just Pin it! Pins are "
 "visual bookmarks that you organize and share the way you want."
 msgstr ""
 
-#: templates/data-en.json:460
+#: templates/data-en.json:433
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
 msgstr ""
 
-#: templates/data-en.json:599 templates/data-en.json:608
+#: templates/data-en.json:572 templates/data-en.json:581
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
 
-#: templates/data-en.json:607
+#: templates/data-en.json:580
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
-#: templates/data-en.json:623
+#: templates/data-en.json:596
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr ""
 
-#: templates/data-en.json:631
+#: templates/data-en.json:604
 msgid "XING is the professional network for a better working life."
 msgstr ""
 
-#: templates/data-en.json:632
+#: templates/data-en.json:605
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
@@ -469,20 +487,20 @@ msgstr ""
 
 #: templates/index_entry.html:20 templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Diğer diller:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Git"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "Firefox için %(name)s"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
@@ -494,41 +512,41 @@ msgstr ""
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Firefox'u yükseltin"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
 msgstr ""
 
-#: templates/layout.html:82
+#: templates/layout.html:90
 msgid "SocialAPI Demo"
 msgstr ""
 
-#: templates/layout.html:87
+#: templates/layout.html:95
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Masaüstü için Firefox"
 
-#: templates/layout.html:105
+#: templates/layout.html:113
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Sosyal servisleri kurmak için Firefox kullanmalısınız."
 
-#: templates/layout.html:105 templates/layout.html:106
+#: templates/layout.html:113 templates/layout.html:114
 msgid "Download"
-msgstr ""
+msgstr "İndir"
 
-#: templates/layout.html:106
+#: templates/layout.html:114
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade"
 " your version of Firefox now."
 msgstr ""
 
-#: templates/layout.html:107
+#: templates/layout.html:115
 msgid "This service requires an unreleased version of Firefox."
 msgstr ""
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Firefox Beta'yı kur"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
@@ -537,11 +555,11 @@ msgstr ""
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Firefox Aurora'yı kur"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Firefox Nightly'yi kur"
 
 #: templates/provider.html:56
 msgid ""
@@ -554,13 +572,3 @@ msgid ""
 "This service is for demonstration purposes only and may not work as "
 "expected."
 msgstr ""
-
-#~ msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-#~ msgstr ""
-
-#~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-#~ msgstr ""
-
-#~ msgid "Known lets you create a single website for all your content."
-#~ msgstr ""
-
