@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-25 13:40-0700\n"
+"POT-Creation-Date: 2015-06-29 09:27-0700\n"
 "PO-Revision-Date: 2015-05-10 18:49+0000\n"
 "Last-Translator: Gábor <kelemeng@ubuntu.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
@@ -180,7 +180,7 @@ msgid ""
 " possible while navigating with your Firefox browser."
 msgstr ""
 
-#: templates/data-en.json:32
+#: templates/data-en.json:32 templates/data-en.json:43
 msgid "Yahoo Mail"
 msgstr ""
 
@@ -518,39 +518,19 @@ msgstr "Védjeggyel való visszaélés jelentése"
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI fejlesztőknek"
 
-#: templates/index.html:37 templates/index2.html:37
-#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
 msgstr "Aktiválás most"
 
-#: templates/index.html:38 templates/index2.html:38
-#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "További tudnivalók&hellip;"
 
 #: templates/index.html:57
-msgid "Get more out of the Web with these great services."
-msgstr ""
-
-#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "Bővítse a Firefox élményt, hozzon ki többet az internetből"
-
-#: templates/index2.html:54
-msgid ""
-"Easy to use, no software or Add-ons to download and install, just click "
-"Activate and new functionality is delivered to you from the Web.  "
-"Anything from social media services, to cloud bookmarking, music and "
-"personalized news, adding these services to Firefox lets you get more out"
-" of the web."
-msgstr ""
-"Egyszerűen használható, nem kell programokat vagy kiegészítőket letölteni"
-" és telepíteni, csak kattintson az Aktiválás gombra, és megkapja az új "
-"funkcionalitást az internetről. Bármi a közösségi oldalaktól a felhőalapú"
-" könyvjelzőkön át a zenéig és személyre szabott hírekig – ezen "
-"szolgáltatások Firefoxhoz adásával többet hozhat ki az internetből."
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -691,4 +671,29 @@ msgstr "Ez a szolgáltatás a Firefox még kiadatlan verzióját igényli"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "béta"
+
+#~ msgid "Get more out of the Web with these great services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Easy to use, no software or "
+#~ "Add-ons to download and install, just"
+#~ " click Activate and new functionality "
+#~ "is delivered to you from the Web."
+#~ "  Anything from social media services, "
+#~ "to cloud bookmarking, music and "
+#~ "personalized news, adding these services "
+#~ "to Firefox lets you get more out"
+#~ " of the web."
+#~ msgstr ""
+#~ "Egyszerűen használható, nem kell programokat"
+#~ " vagy kiegészítőket letölteni és "
+#~ "telepíteni, csak kattintson az Aktiválás "
+#~ "gombra, és megkapja az új "
+#~ "funkcionalitást az internetről. Bármi a "
+#~ "közösségi oldalaktól a felhőalapú "
+#~ "könyvjelzőkön át a zenéig és személyre"
+#~ " szabott hírekig – ezen szolgáltatások "
+#~ "Firefoxhoz adásával többet hozhat ki az"
+#~ " internetből."
 

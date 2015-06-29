@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-25 13:40-0700\n"
+"POT-Creation-Date: 2015-06-29 09:27-0700\n"
 "PO-Revision-Date: 2015-04-30 14:30-0400\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -168,7 +168,7 @@ msgid ""
 " possible while navigating with your Firefox browser."
 msgstr ""
 
-#: templates/data-en.json:32
+#: templates/data-en.json:32 templates/data-en.json:43
 msgid "Yahoo Mail"
 msgstr "Yahoo メール"
 
@@ -176,8 +176,7 @@ msgstr "Yahoo メール"
 msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
-msgstr ""
-"強化されたリンクプレビューその他が掲載されたウェブページを、自分と他のユーザーに素早く送信します。"
+msgstr "強化されたリンクプレビューその他が掲載されたウェブページを、自分と他のユーザーに素早く送信します。"
 
 #: templates/data-en.json:46
 msgid ""
@@ -471,39 +470,19 @@ msgstr "商標不正使用報告"
 msgid "SocialAPI for Developers"
 msgstr "開発者向け Social API"
 
-#: templates/index.html:37 templates/index2.html:37
-#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
 msgstr "今すぐ追加"
 
-#: templates/index.html:38 templates/index2.html:38
-#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "詳細..."
 
 #: templates/index.html:57
-msgid "Get more out of the Web with these great services."
-msgstr ""
-
-#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "あなたの Firefox 体験を深め、Web をさらに活用しましょう"
-
-#: templates/index2.html:54
-msgid ""
-"Easy to use, no software or Add-ons to download and install, just click "
-"Activate and new functionality is delivered to you from the Web.  "
-"Anything from social media services, to cloud bookmarking, music and "
-"personalized news, adding these services to Firefox lets you get more out"
-" of the web."
-msgstr ""
-"Firefox "
-"向けの各種サービスは、使いやすく、ソフトウェアやアドオンを新たにダウンロードしたりインストールしたりする必要もありません。「今すぐ追加」ボタンをクリックするだけで"
-" Web から Firefox "
-"へ自動的に新機能が追加されます。ソーシャルメディアから、クラウドブックマーク、音楽、パーソナライズドニュースに至るまで、あらゆるサービスを追加して、Web"
-" をより一層活用できます。"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -636,4 +615,24 @@ msgstr "このサービスを使用するには Firefox の開発版が必要で
 #: templates/provider.html:113
 msgid "beta"
 msgstr "ベータ"
+
+#~ msgid "Get more out of the Web with these great services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Easy to use, no software or "
+#~ "Add-ons to download and install, just"
+#~ " click Activate and new functionality "
+#~ "is delivered to you from the Web."
+#~ "  Anything from social media services, "
+#~ "to cloud bookmarking, music and "
+#~ "personalized news, adding these services "
+#~ "to Firefox lets you get more out"
+#~ " of the web."
+#~ msgstr ""
+#~ "Firefox "
+#~ "向けの各種サービスは、使いやすく、ソフトウェアやアドオンを新たにダウンロードしたりインストールしたりする必要もありません。「今すぐ追加」ボタンをクリックするだけで"
+#~ " Web から Firefox "
+#~ "へ自動的に新機能が追加されます。ソーシャルメディアから、クラウドブックマーク、音楽、パーソナライズドニュースに至るまで、あらゆるサービスを追加して、Web"
+#~ " をより一層活用できます。"
 

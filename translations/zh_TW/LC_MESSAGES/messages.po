@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-25 13:40-0700\n"
+"POT-Creation-Date: 2015-06-29 09:27-0700\n"
 "PO-Revision-Date: 2015-04-06 05:22+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
@@ -159,7 +159,7 @@ msgid ""
 " possible while navigating with your Firefox browser."
 msgstr ""
 
-#: templates/data-en.json:32
+#: templates/data-en.json:32 templates/data-en.json:43
 msgid "Yahoo Mail"
 msgstr "Yahoo 電子郵箱"
 
@@ -453,36 +453,19 @@ msgstr "回報商標濫用"
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI 開發資訊"
 
-#: templates/index.html:37 templates/index2.html:37
-#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
 msgstr "立刻啟用"
 
-#: templates/index.html:38 templates/index2.html:38
-#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "了解更多&hellip;"
 
 #: templates/index.html:57
-msgid "Get more out of the Web with these great services."
-msgstr ""
-
-#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "擴充您的 Firefox 使用體驗，更完美使用 Web"
-
-#: templates/index2.html:54
-msgid ""
-"Easy to use, no software or Add-ons to download and install, just click "
-"Activate and new functionality is delivered to you from the Web.  "
-"Anything from social media services, to cloud bookmarking, music and "
-"personalized news, adding these services to Firefox lets you get more out"
-" of the web."
-msgstr ""
-"很簡單就能使用，不需要下載安裝任何軟體或附加元件。只需要點下「啟用」就會把 Web "
-"的新功能帶來給您。不論是社交網路、雲端書籤、音樂與個人化新聞，在 Firefox 安裝這些服務讓您能更好地使用 Web。"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -632,5 +615,8 @@ msgstr "beta"
 #~ msgstr ""
 
 #~ msgid ""
+#~ msgstr ""
+
+#~ msgid "Get more out of the Web with these great services."
 #~ msgstr ""
 

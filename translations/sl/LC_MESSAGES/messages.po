@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-25 13:40-0700\n"
+"POT-Creation-Date: 2015-06-29 09:27-0700\n"
 "PO-Revision-Date: 2015-03-10 08:42+0000\n"
 "Last-Translator: Matjaž <m@owca.info>\n"
 "Language-Team: sl <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgid ""
 " possible while navigating with your Firefox browser."
 msgstr ""
 
-#: templates/data-en.json:32
+#: templates/data-en.json:32 templates/data-en.json:43
 msgid "Yahoo Mail"
 msgstr ""
 
@@ -516,39 +516,19 @@ msgstr "Obvestite nas o zlorabi trgovske znamke"
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI za razvijalce"
 
-#: templates/index.html:37 templates/index2.html:37
-#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
 msgstr "Vključi zdaj"
 
-#: templates/index.html:38 templates/index2.html:38
-#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "Več &hellip;"
 
 #: templates/index.html:57
-msgid "Get more out of the Web with these great services."
-msgstr ""
-
-#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "Izboljšajte svojo izkušnjo s Firefoxom, iztisnite več iz spleta"
-
-#: templates/index2.html:54
-msgid ""
-"Easy to use, no software or Add-ons to download and install, just click "
-"Activate and new functionality is delivered to you from the Web.  "
-"Anything from social media services, to cloud bookmarking, music and "
-"personalized news, adding these services to Firefox lets you get more out"
-" of the web."
-msgstr ""
-"Preprosta uporaba, brez prenašanja in nameščanja programske opreme in "
-"dodatkov, samo kliknite Vključi in nova zmogljivost bo dostavljena iz "
-"spleta.  Družbeni mediji, shranjevanje zaznamkov v oblaku, glasba, "
-"prilagojene novice in druge storitve v Firefoxu vam omogočajo, da "
-"iztisnete več iz spleta."
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -689,4 +669,27 @@ msgstr "Ta storitev zahteva še neizdano različico Firefoxa"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
+
+#~ msgid "Get more out of the Web with these great services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Easy to use, no software or "
+#~ "Add-ons to download and install, just"
+#~ " click Activate and new functionality "
+#~ "is delivered to you from the Web."
+#~ "  Anything from social media services, "
+#~ "to cloud bookmarking, music and "
+#~ "personalized news, adding these services "
+#~ "to Firefox lets you get more out"
+#~ " of the web."
+#~ msgstr ""
+#~ "Preprosta uporaba, brez prenašanja in "
+#~ "nameščanja programske opreme in dodatkov, "
+#~ "samo kliknite Vključi in nova "
+#~ "zmogljivost bo dostavljena iz spleta.  "
+#~ "Družbeni mediji, shranjevanje zaznamkov v "
+#~ "oblaku, glasba, prilagojene novice in "
+#~ "druge storitve v Firefoxu vam omogočajo,"
+#~ " da iztisnete več iz spleta."
 

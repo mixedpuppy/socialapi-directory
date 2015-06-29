@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-25 13:40-0700\n"
+"POT-Creation-Date: 2015-06-29 09:27-0700\n"
 "PO-Revision-Date: 2015-04-02 23:34+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgid ""
 " possible while navigating with your Firefox browser."
 msgstr ""
 
-#: templates/data-en.json:32
+#: templates/data-en.json:32 templates/data-en.json:43
 msgid "Yahoo Mail"
 msgstr ""
 
@@ -524,39 +524,19 @@ msgstr "Abuso de marca registada"
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI para desenvolvedores"
 
-#: templates/index.html:37 templates/index2.html:37
-#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
 msgstr "Ativar agora"
 
-#: templates/index.html:38 templates/index2.html:38
-#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "Saber mais&hellip;"
 
 #: templates/index.html:57
-msgid "Get more out of the Web with these great services."
-msgstr ""
-
-#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "Melhore a sua experiência com o Firefox, tire mais proveito da Web"
-
-#: templates/index2.html:54
-msgid ""
-"Easy to use, no software or Add-ons to download and install, just click "
-"Activate and new functionality is delivered to you from the Web.  "
-"Anything from social media services, to cloud bookmarking, music and "
-"personalized news, adding these services to Firefox lets you get more out"
-" of the web."
-msgstr ""
-"Fácil de usar, nenhum aplicativo ou complemento para baixar e instalar, "
-"basta clicar em Ativar, essa é a nova funcionalidade oferecida "
-"instantaneamente a partir da web. Serviços de redes sociais, favoritos na"
-" nuvem, música e notícias personalizadas. O Firefox adiciona esses "
-"serviços para que você possa obter o máximo da Web."
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -697,4 +677,29 @@ msgstr "Esse serviço requer uma versão ainda não lançada do Firefox"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
+
+#~ msgid "Get more out of the Web with these great services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Easy to use, no software or "
+#~ "Add-ons to download and install, just"
+#~ " click Activate and new functionality "
+#~ "is delivered to you from the Web."
+#~ "  Anything from social media services, "
+#~ "to cloud bookmarking, music and "
+#~ "personalized news, adding these services "
+#~ "to Firefox lets you get more out"
+#~ " of the web."
+#~ msgstr ""
+#~ "Fácil de usar, nenhum aplicativo ou "
+#~ "complemento para baixar e instalar, "
+#~ "basta clicar em Ativar, essa é a"
+#~ " nova funcionalidade oferecida instantaneamente"
+#~ " a partir da web. Serviços de "
+#~ "redes sociais, favoritos na nuvem, "
+#~ "música e notícias personalizadas. O "
+#~ "Firefox adiciona esses serviços para que"
+#~ " você possa obter o máximo da "
+#~ "Web."
 

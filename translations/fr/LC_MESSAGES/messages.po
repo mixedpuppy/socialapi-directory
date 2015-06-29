@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-25 13:40-0700\n"
+"POT-Creation-Date: 2015-06-29 09:27-0700\n"
 "PO-Revision-Date: 2015-02-15 10:34+0000\n"
 "Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -189,7 +189,7 @@ msgid ""
 " possible while navigating with your Firefox browser."
 msgstr ""
 
-#: templates/data-en.json:32
+#: templates/data-en.json:32 templates/data-en.json:43
 msgid "Yahoo Mail"
 msgstr ""
 
@@ -531,46 +531,19 @@ msgstr "Signaler un abus de marque déposée"
 msgid "SocialAPI for Developers"
 msgstr "SocialAPI pour les développeurs"
 
-#: templates/index.html:37 templates/index2.html:37
-#: templates/index_entry.html:9 templates/index_entry2.html:4
+#: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
 msgstr "Activer maintenant"
 
-#: templates/index.html:38 templates/index2.html:38
-#: templates/index_entry.html:10 templates/index_entry2.html:5
+#: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "En savoir plus&hellip;"
 
 #: templates/index.html:57
-msgid "Get more out of the Web with these great services."
-msgstr ""
-
-#: templates/index2.html:53
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr "Navigation facilitée dans Firefox pour accéder au meilleur du Web"
-
-#: templates/index2.html:54
-msgid ""
-"Easy to use, no software or Add-ons to download and install, just click "
-"Activate and new functionality is delivered to you from the Web.  "
-"Anything from social media services, to cloud bookmarking, music and "
-"personalized news, adding these services to Firefox lets you get more out"
-" of the web."
-msgstr ""
-"Facile d'utilisation, aucun logiciel ou module complémentaire à "
-"télécharger et installer, cliquez simplement sur Activer et la nouvelle "
-"fonctionnalité vous est fournie instantanément depuis le Web. Des "
-"services de réseaux sociaux, en passant par les marque-pages dans les "
-"nuages, la musique ou encore les actualités personnalisées&nbsp;; ajouter"
-" ces services à Firefox vous permet de tirer le meilleur du Web.C'est "
-"facile à utiliser : aucun logiciel ni module complémentaire à télécharger"
-" et installer. Cliquez simplement sur Activer et la nouvelle "
-"fonctionnalité vous est fournie instantanément depuis le Web. Des "
-"services de réseaux sociaux, des marque-pages en ligne, de la musique ou "
-"encore des actualités personnalisées… Ajouter ces services à Firefox vous"
-" permet de tirer le meilleur parti du Web."
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -715,4 +688,41 @@ msgstr ""
 #: templates/provider.html:113
 msgid "beta"
 msgstr "bêta"
+
+#~ msgid "Get more out of the Web with these great services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Easy to use, no software or "
+#~ "Add-ons to download and install, just"
+#~ " click Activate and new functionality "
+#~ "is delivered to you from the Web."
+#~ "  Anything from social media services, "
+#~ "to cloud bookmarking, music and "
+#~ "personalized news, adding these services "
+#~ "to Firefox lets you get more out"
+#~ " of the web."
+#~ msgstr ""
+#~ "Facile d'utilisation, aucun logiciel ou "
+#~ "module complémentaire à télécharger et "
+#~ "installer, cliquez simplement sur Activer "
+#~ "et la nouvelle fonctionnalité vous est"
+#~ " fournie instantanément depuis le Web. "
+#~ "Des services de réseaux sociaux, en "
+#~ "passant par les marque-pages dans "
+#~ "les nuages, la musique ou encore "
+#~ "les actualités personnalisées&nbsp;; ajouter "
+#~ "ces services à Firefox vous permet "
+#~ "de tirer le meilleur du Web.C'est "
+#~ "facile à utiliser : aucun logiciel "
+#~ "ni module complémentaire à télécharger "
+#~ "et installer. Cliquez simplement sur "
+#~ "Activer et la nouvelle fonctionnalité "
+#~ "vous est fournie instantanément depuis "
+#~ "le Web. Des services de réseaux "
+#~ "sociaux, des marque-pages en ligne, "
+#~ "de la musique ou encore des "
+#~ "actualités personnalisées… Ajouter ces "
+#~ "services à Firefox vous permet de "
+#~ "tirer le meilleur parti du Web."
 
