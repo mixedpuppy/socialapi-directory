@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-04-02 20:29+0000\n"
+"PO-Revision-Date: 2015-06-29 21:03+0000\n"
 "Last-Translator: Michael <michael.koehler1@gmx.de>\n"
 "Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1435611783.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -457,23 +460,27 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Der schnellste Weg zu Ihren Fußball-Ergebnissen"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
 msgstr ""
+"Genießen Sie unsere detaillierten Fußball-Liveberichte, während Sie mit "
+"Ihrem Firefox-Browser im Internet surfen."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
 msgstr ""
+"Dank dem BeSoccer-Widget erhalten Sie Fußballergebnisse in Echtzeit und so "
+"schnell wie möglich, während Sie mit Ihrem Firefox-Browser surfen."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
@@ -696,4 +703,3 @@ msgstr "Beta"
 
 #~ msgid ""
 #~ msgstr ""
-
