@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-29 09:27-0700\n"
+"POT-Creation-Date: 2015-06-29 09:32-0700\n"
 "PO-Revision-Date: 2015-04-06 05:22+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
@@ -143,47 +143,15 @@ msgstr "<a href=\"%(url)s\">了解</a><a href=\"%(url)s\">%(name)s</a> 提供什
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
 msgstr "<a href=\".\">探索您還可以新增哪些服務</a> 到 Firefox。"
 
-#: templates/data-en.json:20
-msgid "The quickest way to get your soccer scores"
-msgstr ""
-
-#: templates/data-en.json:21
-msgid ""
-"Enjoy our detailed soccer livescores while surfing the web with your "
-"Firefox browser."
-msgstr ""
-
-#: templates/data-en.json:22
-msgid ""
-"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
-" possible while navigating with your Firefox browser."
-msgstr ""
-
-#: templates/data-en.json:32 templates/data-en.json:43
-msgid "Yahoo Mail"
-msgstr "Yahoo 電子郵箱"
-
-#: templates/data-en.json:37 templates/data-en.json:45
-msgid ""
-"Quickly send web pages to yourself and others with enhanced link previews"
-" and more."
-msgstr "有了更強大的連結預覽和其他精彩功能，傳送網頁給自己和他人的速度皆可提升。"
-
-#: templates/data-en.json:46
-msgid ""
-"Fast, simple to use email with 1 TB of free mail storage and smarter "
-"tools to help you get more done."
-msgstr "提供更快速簡便的電子信箱服務，配備多達 1 TB 免費信件儲存空間和更智慧貼心的工具，事半功倍，使命必達。"
-
-#: templates/data-en.json:61 templates/data-en.json:68
+#: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
 msgstr "世界各地足球消息的重要消息來源。"
 
-#: templates/data-en.json:67
+#: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
 msgstr "We live and breathe football - everywhere, 24/7"
 
-#: templates/data-en.json:69
+#: templates/data-en.json:20
 msgid ""
 "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
 "whoever you support, we are your definitive football source.</p><p>We "
@@ -196,7 +164,7 @@ msgstr ""
 "futebol，不論您怎麼叫它，又支持哪一隊，我們都是您最重要的消息來源。</p><p>我們在超過 50 個國家中有超過 530 "
 "位記者，讓您可以隨時貼近各類賽事。我們在各種足球活動現場撰寫原創內容，把各聯盟、各團隊與各個球員的相關新聞帶給您。</p><p>有超過五千兩百萬足球粉絲信任我們，從我們取得最新消息。"
 
-#: templates/data-en.json:81 templates/data-en.json:90
+#: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online"
 " and on the go. It's a simple, beautiful, and free way to search, "
@@ -206,85 +174,85 @@ msgstr ""
 "Saavn "
 "能讓您在不論是在線上或移動時，都能有最棒的寶萊塢與印度音樂聆聽體驗。很簡單、很美好、可以自由搜尋、探索，可聆聽超過一百萬首不論是最新熱門專輯，或很難尋找的經典歌曲。"
 
-#: templates/data-en.json:88
+#: templates/data-en.json:39
 msgid "Music Feed"
 msgstr "Music Feed"
 
-#: templates/data-en.json:89
+#: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
 msgstr "探索全新的音樂，聽更多您喜愛的音樂。"
 
-#: templates/data-en.json:111
+#: templates/data-en.json:62
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and "
 "more"
 msgstr "為 Firefox 打造的 Pocket 服務，是儲存文章、影片，還有更多內容的最佳方案。"
 
-#: templates/data-en.json:119
+#: templates/data-en.json:70
 msgid "Save it for later"
 msgstr "Save it for later"
 
-#: templates/data-en.json:120
+#: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr "讓你能儲存任何內容，以利稍後觀看。"
 
-#: templates/data-en.json:134 templates/data-en.json:144
+#: templates/data-en.json:85 templates/data-en.json:95
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
 msgstr "探索與您的興趣最相關的內容的全新方式。"
 
-#: templates/data-en.json:142
+#: templates/data-en.json:93
 msgid "a discovery experience"
 msgstr "一個探索體驗"
 
-#: templates/data-en.json:159
+#: templates/data-en.json:110
 msgid ""
 "Delicious is a free service designed with care to be the best place to "
 "save what you love on the web."
 msgstr "精心打造的 Delicious 免費服務，可為你儲存你愛的網路內容。"
 
-#: templates/data-en.json:177
+#: templates/data-en.json:128
 msgid "Never lose a link again."
 msgstr "再也不錯失任何連結"
 
-#: templates/data-en.json:178
+#: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
 msgstr "Delicious 為你記憶更多事。"
 
-#: templates/data-en.json:193
+#: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
 msgstr "不論你在網海何處，都能掌握朋友行蹤。"
 
-#: templates/data-en.json:213
+#: templates/data-en.json:164
 msgid "Share the web"
 msgstr " "
 
-#: templates/data-en.json:214
+#: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
 msgstr "隨時、隨地分享任何網頁。"
 
-#: templates/data-en.json:222
+#: templates/data-en.json:173
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories,"
 " and videos based on your interests directly to Firefox."
 msgstr "Cliqz 能依照您的興趣，直接在 Firefox 中帶來最相關的文章、故事與影片的即時串流。"
 
-#: templates/data-en.json:245
+#: templates/data-en.json:196
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
 msgstr "透過打造獨特的資訊空間，來依照您的興趣取得最相關的新聞。"
 
-#: templates/data-en.json:257 templates/data-en.json:269
+#: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
 msgstr "日本最大的社交網路。"
 
-#: templates/data-en.json:270
+#: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
 msgstr "隨時掌握您的好友喜歡什麼東西。"
 
-#: templates/data-en.json:281 templates/data-en.json:299
+#: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
@@ -294,25 +262,25 @@ msgstr ""
 "新浪微博是中國最知名的微網誌服務。Weibo for Firefox 可讓使用者張貼 140 "
 "字以內的訊息、圖片、影片等等，並會在收到新訊息時通知您。"
 
-#: templates/data-en.json:298
+#: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
 msgstr "隨時隨地分享您有興趣的消息。"
 
-#: templates/data-en.json:320
+#: templates/data-en.json:271
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
 msgstr "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。"
 
-#: templates/data-en.json:325
+#: templates/data-en.json:276
 msgid "Share the web on Google+."
 msgstr "在 Google+ 上和朋友分享網路。"
 
-#: templates/data-en.json:346 templates/data-en.json:350
+#: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
 msgstr "Gmail 是直覺且高效率的電子郵件系統。"
 
-#: templates/data-en.json:369
+#: templates/data-en.json:320
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages "
 "you discover across the web.  We shorten URLs for quick sharing using the"
@@ -321,56 +289,56 @@ msgstr ""
 "Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co "
 "短網址功能，讓你能迅速分享縮短過的網址。"
 
-#: templates/data-en.json:376
+#: templates/data-en.json:327
 msgid "Tweet to your followers"
 msgstr "推文給你的追蹤者"
 
-#: templates/data-en.json:377
+#: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr "Twitter Share 可讓你迅速推文給你的追蹤者。"
 
-#: templates/data-en.json:394
+#: templates/data-en.json:345
 msgid ""
 "Manage your professional identity. Build and engage with your "
 "professional network. Access knowledge, insights and opportunities."
 msgstr "管理您的專業身分。打造並認識您的專業網路。得到知識與機會。"
 
-#: templates/data-en.json:401
+#: templates/data-en.json:352
 msgid "Share the web with your professional network."
 msgstr "分享 Web 到您的專業網路中。"
 
-#: templates/data-en.json:419
+#: templates/data-en.json:370
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, "
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr "用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影片。從顏色到自己主題的 HTML，均可自訂任何部分。"
 
-#: templates/data-en.json:429
+#: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
 msgstr "Tumblr 讓你輕鬆分享大小事。"
 
-#: templates/data-en.json:447
+#: templates/data-en.json:398
 msgid ""
 "Create a single website for all your content. Publish on your own site "
 "from any device and share with your audiences across the web."
 msgstr "為您的任何內容建立網站。透過您的任何裝置發布內容到網站上，並與 Web 中的不同觀眾分享。"
 
-#: templates/data-en.json:457
+#: templates/data-en.json:408
 msgid "Share interesting content from your own site."
 msgstr "從您的網站分享有興趣的內容。"
 
-#: templates/data-en.json:468 templates/data-en.json:482
+#: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
 msgstr "VK"
 
-#: templates/data-en.json:474 templates/data-en.json:483
+#: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
 msgstr "VK 是一個結合全世界的人們，幫助他們能舒服地、敏捷地溝通的社交網路。"
 
-#: templates/data-en.json:501 templates/data-en.json:510
+#: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
 "When you find something that looks interesting, just Pin it! Pins are "
@@ -379,37 +347,69 @@ msgstr ""
 "Pinterest 是一個能幫助您探索與規畫想做的事情的工具。當您找到一些有興趣的東西，Pin 下去就好！Pin "
 "是能夠讓您用您想要的方式整理、分享的視覺化書籤。"
 
-#: templates/data-en.json:509
+#: templates/data-en.json:460
 msgid ""
 "Discover ideas for all your projects and interests, hand-picked by people"
 " like you."
 msgstr "探索由像您這樣的人親自挑選，可讓您放在的專案與興趣的新點子。"
 
-#: templates/data-en.json:648 templates/data-en.json:657
+#: templates/data-en.json:599 templates/data-en.json:608
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr "Odnoklassniki（俄文: Одноклассники 同學）是給同學與老朋友使用的社交網路。"
 
-#: templates/data-en.json:656
+#: templates/data-en.json:607
 msgid "Odnoklassniki"
 msgstr "Odnoklassniki"
 
-#: templates/data-en.json:672
+#: templates/data-en.json:623
 msgid ""
 "Xing is the social network for professional networking, business "
 "marketing and career development."
 msgstr "Xing 是專業網絡、商業行銷與職涯發展的社交網路。"
 
-#: templates/data-en.json:680
+#: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
 msgstr "XING 是您能有更好的職涯的專業網絡。"
 
-#: templates/data-en.json:681
+#: templates/data-en.json:632
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr "拓展您現有的網絡，並認識新的聯絡人、群組、職位、公司、活動，以及您的產業中的最新消息。"
+
+#: templates/data-en.json:702
+msgid "The quickest way to get your soccer scores"
+msgstr ""
+
+#: templates/data-en.json:703
+msgid ""
+"Enjoy our detailed soccer livescores while surfing the web with your "
+"Firefox browser."
+msgstr ""
+
+#: templates/data-en.json:704
+msgid ""
+"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
+" possible while navigating with your Firefox browser."
+msgstr ""
+
+#: templates/data-en.json:714 templates/data-en.json:725
+msgid "Yahoo Mail"
+msgstr "Yahoo 電子郵箱"
+
+#: templates/data-en.json:719 templates/data-en.json:727
+msgid ""
+"Quickly send web pages to yourself and others with enhanced link previews"
+" and more."
+msgstr "有了更強大的連結預覽和其他精彩功能，傳送網頁給自己和他人的速度皆可提升。"
+
+#: templates/data-en.json:728
+msgid ""
+"Fast, simple to use email with 1 TB of free mail storage and smarter "
+"tools to help you get more done."
+msgstr "提供更快速簡便的電子信箱服務，配備多達 1 TB 免費信件儲存空間和更智慧貼心的工具，事半功倍，使命必達。"
 
 #: templates/footer.html:12
 #, python-format
