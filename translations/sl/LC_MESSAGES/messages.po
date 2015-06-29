@@ -366,10 +366,12 @@ msgid ""
 "Create a single website for all your content. Publish on your own site from "
 "any device and share with your audiences across the web."
 msgstr ""
+"Za vso svojo vsebino ustvarite eno spletno stran. Objavljajte na svoji "
+"strani iz katerekoli naprave in delite s svojim občinstvom na spletu."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Delite zanimivo vsebino iz svoje strani."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
