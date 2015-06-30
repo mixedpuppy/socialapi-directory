@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-06-30 13:43+0000\n"
+"PO-Revision-Date: 2015-06-30 13:44+0000\n"
 "Last-Translator: Ton <tonnes.mb@gmail.com>\n"
 "Language-Team: nl <LL@li.org>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1435671821.0\n"
+"X-POOTLE-MTIME: 1435671851.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -447,8 +447,8 @@ msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
 msgstr ""
-"Geniet van onze gedetailleerde live voetbaluitslagen terwijl u met uw "
-"Firefox-browser op het web surft."
+"Geniet van onze gedetailleerde live voetbalstanden terwijl u met uw Firefox-"
+"browser op het web surft."
 
 #: templates/data-en.json:704
 msgid ""
