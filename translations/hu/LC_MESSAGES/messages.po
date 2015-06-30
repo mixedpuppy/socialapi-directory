@@ -671,10 +671,3 @@ msgstr "Ez a szolgáltatás a Firefox még kiadatlan verzióját igényli"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "béta"
-
-#~ msgid "Get more out of the Web with these great services."
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-

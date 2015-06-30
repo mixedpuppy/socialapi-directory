@@ -670,33 +670,3 @@ msgstr "Este servicio requiere una versión no publicada de Firefox"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
-
-# ?
-#~ msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-#~ msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-
-#~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-#~ msgstr "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-
-#~ msgid ""
-#~ "Easy to use, no software or "
-#~ "Add-ons to download and install, just"
-#~ " click Activate and new functionality "
-#~ "is delivered to you from the Web."
-#~ "  Anything from social media services, "
-#~ "to cloud bookmarking, music and "
-#~ "personalized news, adding these services "
-#~ "to Firefox lets you get more out"
-#~ " of the web."
-#~ msgstr ""
-#~ "Fácil de usar, no hay que "
-#~ "descargar ni instalar software ni "
-#~ "complementos, sólo tienes que pulsar "
-#~ "Activar y obtendrás nueva funcionalidad "
-#~ "directamente desde la Web.  Cualquier "
-#~ "cosa desde servicios de medios sociales"
-#~ " a marcadores en la nube, música "
-#~ "y noticias personalizadas, añadir estos "
-#~ "servicios a Firefox te permite obtener"
-#~ " más de la Red."
-

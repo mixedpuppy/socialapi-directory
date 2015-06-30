@@ -629,10 +629,3 @@ msgstr "Эта служба требует ещё не выпущенную ве
 #: templates/provider.html:113
 msgid "beta"
 msgstr "бета"
-
-#~ msgid "Get more out of the Web with these great services."
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-

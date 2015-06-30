@@ -1,0 +1,16 @@
+***************
+*** 677,686 ****
+  #: templates/provider.html:113
+  msgid "beta"
+  msgstr "beta"
+- 
+- #~ msgid "Get more out of the Web with these great services."
+- #~ msgstr ""
+- 
+- #~ msgid ""
+- #~ msgstr ""
+- 
+--- 677,679 ----
+  #: templates/provider.html:113
+  msgid "beta"
+  msgstr "beta"

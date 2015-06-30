@@ -615,10 +615,3 @@ msgstr "このサービスを使用するには Firefox の開発版が必要で
 #: templates/provider.html:113
 msgid "beta"
 msgstr "ベータ"
-
-#~ msgid "Get more out of the Web with these great services."
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-

@@ -598,25 +598,3 @@ msgstr "此服務需要使用測試版本的 Firefox"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
-
-#~ msgid "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-#~ msgstr "友人が今何をしているかをいつでも確認できます。また、チェックボタンがないページでも簡単に友人に共有できます"
-
-#~ msgid "用一句话随意记录生活，用火狐随时随地发微博，迅速获取最热最火最快最酷最新的资讯"
-#~ msgstr "用一句話隨意記錄生活，用 Firefox 隨時隨地發微博，迅速獲取最熱最火最快最酷最新的資訊"
-
-#~ msgid "Known lets you create a single website for all your content."
-#~ msgstr ""
-
-#~ msgid "Yahoo Mail"
-#~ msgstr ""
-
-#~ msgid "Your Email, Anywhere!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""
-
-#~ msgid "Get more out of the Web with these great services."
-#~ msgstr ""
-

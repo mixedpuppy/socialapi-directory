@@ -668,9 +668,3 @@ msgstr "Ta storitev zahteva še neizdano različico Firefoxa"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
-
-#~ msgid "Get more out of the Web with these great services."
-#~ msgstr ""
-
-#~ msgid ""
-#~ msgstr ""

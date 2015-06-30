@@ -680,3 +680,9 @@ msgstr "Esse serviço requer uma versão ainda não lançada do Firefox"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
+
+#~ msgid "Get more out of the Web with these great services."
+#~ msgstr ""
+
+#~ msgid ""
+#~ msgstr ""
