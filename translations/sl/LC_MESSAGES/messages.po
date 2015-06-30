@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-06-29 14:49:17\n"
+"PO-Revision-Date: 2015-06-30 10:38:43\n"
 "Last-Translator: Matjaz Horvat <matjaz.horvat@gmail.com>\n"
 "Language-Team: sl <LL@li.org>\n"
 "Language: sl\n"
@@ -438,23 +438,27 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr "Najhitrejši način za spremljanje rezultatov nogometa."
+msgstr "Najhitrejši način za spremljanje izidov nogometa"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your Firefox"
 " browser."
 msgstr ""
+"Uživajte v trenutnih izidih nogometnih tekem med brskanjem po spletu s "
+"Firefoxom."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as "
 "possible while navigating with your Firefox browser."
 msgstr ""
+"Z gradnikom BeSoccer lahko spremljate nogometne izide v realnem času, medtem"
+" ko uporabljate Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
