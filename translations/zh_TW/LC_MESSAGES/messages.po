@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-04-06 05:22+0000\n"
+"PO-Revision-Date: 2015-07-01 01:57+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1435715852.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -381,35 +384,35 @@ msgstr "拓展您現有的網絡，並認識新的聯絡人、群組、職位、
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "最快能得到足球比賽分數的方式"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
-msgstr ""
+msgstr "在使用 Firefox 瀏覽器上網同時接收詳細的足球賽分數。"
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
-msgstr ""
+msgstr "透過 BeSoccer 小工具，您將可以在使用 Firefox 瀏覽器上網的同時，即時接收足球賽分數。"
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr "Yahoo 電子郵箱"
+msgstr "Yahoo 電子信箱"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews"
 " and more."
-msgstr "有了更強大的連結預覽和其他精彩功能，傳送網頁給自己和他人的速度皆可提升。"
+msgstr "透過更強大的預覽鏈結和其他精彩功能，讓您能快速傳送網頁給自己和他人。"
 
 #: templates/data-en.json:728
 msgid ""
 "Fast, simple to use email with 1 TB of free mail storage and smarter "
 "tools to help you get more done."
-msgstr "提供更快速簡便的電子信箱服務，配備多達 1 TB 免費信件儲存空間和更智慧貼心的工具，事半功倍，使命必達。"
+msgstr "更快、更簡便的電子信箱服務，提供 1 TB 免費郵件儲存空間和更智慧貼心的工具，事半功倍，使命必達。"
 
 #: templates/footer.html:12
 #, python-format
