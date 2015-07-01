@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-04-30 14:30-0400\n"
+"PO-Revision-Date: 2015-06-30 23:31-0400\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0\n"
@@ -398,19 +398,19 @@ msgstr "既存のネットワークを広げ、あなたの業界内の新たな
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "サッカーの得点を最も素早く確認できる方法。"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
-msgstr ""
+msgstr "Firefox で Web ブラウジングしながら、サッカーの試合の詳しい途中経過をチェックしましょう。"
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
-msgstr ""
+msgstr "BeSoccer ウィジェットのおかげで、Firefox でブラウジングしつつ、サッカー試合のリアルタイム途中経過を即座に確認できます。"
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
