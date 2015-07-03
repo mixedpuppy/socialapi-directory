@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-03-13 10:44+0000\n"
-"Last-Translator: Pavel <jasnapaka@jasnapaka.com>\n"
+"PO-Revision-Date: 2015-07-03 17:53+0000\n"
+"Last-Translator: Michal <michal.stanke@mikk.cz>\n"
 "Language-Team: cs <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1435945985.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -25,7 +28,7 @@ msgstr "Domů"
 #: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr "Gratulujeme. <strong>%(name)s</strong> je nyní aktivován ve Firefoxu!"
+msgstr "Gratulujeme, <strong>%(name)s</strong> je nyní aktivován ve Firefoxu!"
 
 #: templates/activated.html:51
 #, python-format
@@ -113,9 +116,9 @@ msgid ""
 "the sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"Navíc můžete snadno změnit službu v postranní liště, nebo tuto lištu "
-"skrýt. Použít můžete také nabídku <strong>Zobrazit -> Nástrojové "
-"lišty</strong> ve Firefoxu."
+"Navíc můžete snadno změnit službu v postranní liště, nebo tuto lištu skrýt. "
+"Použít můžete také nabídku <strong>Zobrazit->Nástrojové lišty</strong> ve "
+"Firefoxu."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
@@ -169,7 +172,7 @@ msgstr "Hlavní zdroj fotbalových zpráv z celého světa."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr "Žijeme a dýcháme fotbale - všude a 24/7."
+msgstr "Žijeme a dýcháme fotbale - všude a 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -369,10 +372,12 @@ msgid ""
 "Create a single website for all your content. Publish on your own site "
 "from any device and share with your audiences across the web."
 msgstr ""
+"Vytvořte si jedinou stránku pro všechen váš obsah. Publikujte na své vlastní "
+"stránce z jakéhokoliv zařízení a sdílejte pro celý internet."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Sdílejte zajímavý obsah na vaší vlastní stránce."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -439,23 +444,27 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Nejrychlejší způsob jak sledovat fotbalové výsledky"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
 msgstr ""
+"Užijte si detailní a živé fotbalové informace během procházení internetu s "
+"vaší prohlížečem Firefox."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
 msgstr ""
+"Díky widget BeSoccer můžete naživo sledovat fotbalové výsledky i během "
+"používání vašeho prohlížeče Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
@@ -463,7 +472,7 @@ msgid ""
 " and more."
 msgstr ""
 "Pošlete rychle webové stránky sobě i jiným uživatelům díky zdokonaleným "
-"náhledům odkazů. A nejen to."
+"náhledům odkazů, a nejen to."
 
 #: templates/data-en.json:728
 msgid ""
@@ -480,8 +489,8 @@ msgid ""
 "mozilla.org contributors. Content available under a <a "
 "href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"Část z tohoto obsahu je  ©1998–%(current_year)s jednotlivých přispěvatelů"
-" mozilla.org. Obsah je dostupný pod <a href=\"%(url)s\">licencí Creative "
+"Část z tohoto obsahu je ©1998–%(current_year)s jednotlivých přispěvatelů "
+"mozilla.org. Obsah je dostupný pod <a href=\"%(url)s\">licencí Creative "
 "Commons</a>."
 
 #: templates/footer.html:15
@@ -609,8 +618,8 @@ msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
-"Tato služba je ve fázi beta testování. Některé funkce nemusí pracovat dle"
-" očekávání."
+"Tato služba je ve fázi beta testování, některé funkce tedy nemusí pracovat "
+"podle očekávání."
 
 #: templates/provider.html:59
 msgid ""
