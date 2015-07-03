@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-02-06 15:10+0000\n"
+"PO-Revision-Date: 2015-07-03 07:21+0000\n"
 "Last-Translator: Inma <inma.barrios@mozilla-hispano.org>\n"
 "Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1435908099.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -180,10 +183,13 @@ msgid ""
 "from the leagues, teams and players that matter.</p><p>No wonder over 52 "
 "million football fans trust us to keep them ahead of the game."
 msgstr ""
-"Saavn es la mejor experiencia para escuchar música india y de Bollywood, "
-"en línea y sobre la marcha. Es una manera simple, atractiva y gratuita de"
-" buscar, descubrir y escuchar más de un millón de canciones, desde los "
-"últimos éxitos hasta los clásicos difíciles de encontrar."
+"<p>Fútbol, soccer, calcio, futebol... lo llames como lo llames y apoyes a "
+"quien apoyes, somos tu fuente de noticias deportivas.</p> <p>Tenemos a más "
+"de 530 periodistas sobre el terreno de juego, narrando la acción, en más de "
+"50 países.  Creamos contenido original en la fuente y contamos las últimas "
+"novedades de las ligas, los equipos y los jugadores más "
+"importantes.</p><p>Normal que más de 52 millones de aficionados al fútbol "
+"confíen en nosotros para jugar con ventaja."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
@@ -356,23 +362,25 @@ msgid ""
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
-"Publica texto, fotos, citas, vínculos, música, y vídeos desde tu "
-"navegador, teléfono, escritorio, correo electrónico o desde donde sea que"
-" estés. Puedes personalizar todo, desde colores a tus temas HTML."
+"Publica texto, fotos, citas, vínculos, música y vídeos desde tu navegador, "
+"teléfono, escritorio, correo electrónico o dondequiera que estés. Puedes "
+"personalizar todo, desde colores hasta el HTML de tus temas."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr "Tumblr te permite compartir lo que sea sin ningún esfuerzo."
+msgstr "Tumblr te permite compartir lo que quieras sin ningún esfuerzo."
 
 #: templates/data-en.json:398
 msgid ""
 "Create a single website for all your content. Publish on your own site "
 "from any device and share with your audiences across the web."
 msgstr ""
+"Crea un único sitio web para todo tu contenido. Publica en él desde "
+"cualquier dispositivo y comparte con tu audiencia en toda la Web."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Comparte contenido interesante desde tu propio sitio."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -439,23 +447,27 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "La forma más rápida de conocer los resultados de fútbol"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
 msgstr ""
+"Disfruta de los últimos resultados de fútbol mientras navegas por la Web con "
+"tu navegador Firefox."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
 msgstr ""
+"Gracias al widget BeSoccer, conocerás en tiempo real los resultados de "
+"fútbol mientras navegas con tu Firefox"
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
