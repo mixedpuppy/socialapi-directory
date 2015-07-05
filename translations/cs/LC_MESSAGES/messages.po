@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-07-03 17:53+0000\n"
+"PO-Revision-Date: 2015-07-05 12:14+0000\n"
 "Last-Translator: Michal <michal.stanke@mikk.cz>\n"
 "Language-Team: cs <LL@li.org>\n"
 "Language: cs\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1435945985.0\n"
+"X-POOTLE-MTIME: 1436098489.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -236,7 +236,7 @@ msgstr "Nový způsob jak objevit nejzajímavější obsah podle svých zájmů.
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr "a discovery experience"
+msgstr "zážitek z objevování"
 
 #: templates/data-en.json:110
 msgid ""
