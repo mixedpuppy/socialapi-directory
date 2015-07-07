@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-29 09:50-0700\n"
+"POT-Creation-Date: 2015-07-06 17:45-0700\n"
 "PO-Revision-Date: 2015-06-30 23:31-0400\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
@@ -615,3 +615,8 @@ msgstr "このサービスを使用するには Firefox の開発版が必要で
 #: templates/provider.html:113
 msgid "beta"
 msgstr "ベータ"
+
+#: templates/sharePanel.html:149
+msgid "Activate %(name)"
+msgstr ""
+

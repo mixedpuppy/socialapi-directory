@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-29 09:50-0700\n"
+"POT-Creation-Date: 2015-07-06 17:45-0700\n"
 "PO-Revision-Date: 2015-05-10 18:49+0000\n"
 "Last-Translator: Gábor <kelemeng@ubuntu.com>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
@@ -671,3 +671,8 @@ msgstr "Ez a szolgáltatás a Firefox még kiadatlan verzióját igényli"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "béta"
+
+#: templates/sharePanel.html:149
+msgid "Activate %(name)"
+msgstr ""
+

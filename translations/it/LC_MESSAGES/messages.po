@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-29 09:50-0700\n"
+"POT-Creation-Date: 2015-07-06 17:45-0700\n"
 "PO-Revision-Date: 2015-06-03 08:38+0000\n"
 "Last-Translator: Francesco <francesco.lodolo@mozillaitalia.org>\n"
 "Language-Team: it <LL@li.org>\n"
@@ -684,3 +684,8 @@ msgstr "Questo servizio richiede una versione di Firefox non ancora distribuita"
 #: templates/provider.html:113
 msgid "beta"
 msgstr "beta"
+
+#: templates/sharePanel.html:149
+msgid "Activate %(name)"
+msgstr ""
+

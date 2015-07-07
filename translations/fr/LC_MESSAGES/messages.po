@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-06-29 09:50-0700\n"
+"POT-Creation-Date: 2015-07-06 17:45-0700\n"
 "PO-Revision-Date: 2015-02-15 10:34+0000\n"
 "Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
 "Language-Team: fr <LL@li.org>\n"
@@ -688,3 +688,8 @@ msgstr ""
 #: templates/provider.html:113
 msgid "beta"
 msgstr "bêta"
+
+#: templates/sharePanel.html:149
+msgid "Activate %(name)"
+msgstr ""
+
