@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-07-06 13:44+0800\n"
+"PO-Revision-Date: 2015-07-07 17:27+0800\n"
 "Last-Translator: 刘星 <liuxingmatt@gmail.com>\n"
 "Language-Team: en_US <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -86,7 +86,7 @@ msgstr "您只要点下工具列的图示，就可收到来自 <strong>%(name)s<
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
-msgstr "新增側邊欄按鈕至您的工具列"
+msgstr "新增侧边栏按钮至您的工具列"
 
 #: templates/activated.html:88
 #, python-format
@@ -95,24 +95,24 @@ msgid ""
 "Sidebars button is located in the <a href=\"%(url)s\">customization palette</a>, just drag the "
 "button to your toolbar for fast switching between sidebars."
 msgstr ""
-"自 Firefox 30 開始，您可以使用側邊欄工具列按鈕來管理您的側邊欄。側邊欄按鈕位於 <a href="
-"\"%(url)s\">自訂面板畫面</a> 當中，您只需要將按鈕拖曳至您的工具列擊可快速切換側邊欄。"
+"自 Firefox 30 开始，您可以使用侧边栏工具列按钮来管理您的侧边栏。侧边栏按钮位于 <a href="
+"\"%(url)s\">自订面板画面</a> 当中，您只需要将按钮拖曳至您的工具列击可快速切换侧边栏。"
 
 #: templates/activated.html:96
 msgid ""
 "Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the "
 "sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"另外，您可以在側邊欄中簡單地變更側邊欄中的服務，或隱藏側邊欄。您也可以使用 Firefox 的 <strong>"
-"檢視 -> 工具列</strong> 選單達到一樣的目的。"
+"另外，您可以在侧边栏中简单地变更侧边栏中的服务，或隐藏侧边栏。您也可以使用 Firefox 的 <strong>"
+"检视 -> 工具列</strong> 选单达到一样的目的。"
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr "在附加元件管理員中變更設定"
+msgstr "在附加组件管理器中变更设定"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
-msgstr "附加元件管理員"
+msgstr "附加组件管理器"
 
 #: templates/activated.html:107
 #, python-format
@@ -120,7 +120,7 @@ msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or "
 "removing them, by viewing the Add-ons Manager in Firefox."
 msgstr ""
-"您可以透過 Firefox 的附加元件管理員簡單地 <a href=\"%(url)s\">管理、停用或移除</a> 某個服務。"
+"您可以透过 Firefox 的附加元件管理员简单地 <a href=\"%(url)s\">管理、停用或移除</a> 某个服务。"
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -129,24 +129,24 @@ msgstr "接下來"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr "<a href=\"%(url)s\">了解這個服務到底新增了什麼東西到 Firefox</a>。"
+msgstr "<a href=\"%(url)s\">了解这个服务到底新增了什么东西到 Firefox</a>。"
 
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr "<a href=\"%(url)s\">了解</a><a href=\"%(url)s\">%(name)s</a> 提供什麼。"
+msgstr "<a href=\"%(url)s\">了解</a><a href=\"%(url)s\">%(name)s</a> 提供什么。"
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr "<a href=\".\">探索您還可以新增哪些服務</a> 到 Firefox。"
+msgstr "<a href=\".\">探索您还可以新增哪些服务</a> 到 Firefox。"
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr "世界各地足球消息的重要消息來源。"
+msgstr "世界各地足球消息的重要消息来源。"
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr "We live and breathe football - everywhere, 24/7"
+msgstr "我们感受足球无处不在, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -156,10 +156,10 @@ msgid ""
 "news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football "
 "fans trust us to keep them ahead of the game."
 msgstr ""
-"<p>足球、Football、soccer、futbol、calcio 還是 futebol，不論您怎麼叫它，又支持哪一隊，我們都是"
-"您最重要的消息來源。</p><p>我們在超過 50 個國家中有超過 530 位記者，讓您可以隨時貼近各類賽事。"
-"我們在各種足球活動現場撰寫原創內容，把各聯盟、各團隊與各個球員的相關新聞帶給您。</p><p>有超過五"
-"千兩百萬足球粉絲信任我們，從我們取得最新消息。"
+"<p>足球、Football、soccer、futbol、calcio 还是 futebol，不论您怎麽叫它，又支持哪一队，我们都是"
+"您最重要的消息来源。</p><p>我们在超过 50 个国家中有超过 530 位记者，让您可以随时贴近各类赛事。"
+"我们在各种足球活动现场撰写原创内容，把各联盟、各团队与各个球员的相关新闻带给您。</p><p>有超过五"
+"千两百万足球粉丝信任我们，从我们取得最新消息。"
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
@@ -167,8 +167,8 @@ msgid ""
 "a simple, beautiful, and free way to search, discover, and listen to over a million songs, "
 "from the latest hits to hard-to-find classics."
 msgstr ""
-"Saavn 能讓您在不論是在線上或移動時，都能有最棒的寶萊塢與印度音樂聆聽體驗。很簡單、很美好、可以"
-"自由搜尋、探索，可聆聽超過一百萬首不論是最新熱門專輯，或很難尋找的經典歌曲。"
+"Saavn 能让您在不论是在线上或移动时，都能有最棒的宝莱坞与印度音乐聆听体验。很简单、很美好、可以"
+"自由搜寻、探索，可聆听超过一百万首不论是最新热门专辑，或很难寻找的经典歌曲。"
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -176,11 +176,11 @@ msgstr "Music Feed"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr "探索全新的音樂，聽更多您喜愛的音樂。"
+msgstr "探索全新的音乐，听更多您喜爱的音乐。"
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr "為 Firefox 打造的 Pocket 服務，是儲存文章、影片，還有更多內容的最佳方案。"
+msgstr "为 Firefox 打造的 Pocket 服务，是储存文章、影片，还有更多内容的最佳方案。"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -188,60 +188,60 @@ msgstr "Save it for later"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr "讓你能儲存任何內容，以利稍後觀看。"
+msgstr "让你能储存任何内容，以便稍后观看。"
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
-msgstr "探索與您的興趣最相關的內容的全新方式。"
+msgstr "探索与您的兴趣最相关的内容的全新方式。"
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr "一個探索體驗"
+msgstr "一个探索体验"
 
 #: templates/data-en.json:110
 msgid ""
 "Delicious is a free service designed with care to be the best place to save what you love on "
 "the web."
-msgstr "精心打造的 Delicious 免費服務，可為你儲存你愛的網路內容。"
+msgstr "精心打造的 Delicious 免费服务，可为你储存你喜欢的网络内容。"
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr "再也不錯失任何連結"
+msgstr "再也不错失任何连结"
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr "Delicious 為你記憶更多事。"
+msgstr "Delicious 为你记忆更多事。"
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr "不論你在網海何處，都能掌握朋友行蹤。"
+msgstr "不论你在网海何处，都能掌握朋友行踪。"
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr " "
+msgstr "分享网页"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr "隨時、隨地分享任何網頁。"
+msgstr "随时、随地分享任何网页。"
 
 #: templates/data-en.json:173
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on "
 "your interests directly to Firefox."
-msgstr "Cliqz 能依照您的興趣，直接在 Firefox 中帶來最相關的文章、故事與影片的即時串流。"
+msgstr "Cliqz 能依照您的兴趣，直接在 Firefox 中带来最相关的文章、故事与影片的即时串流。"
 
 #: templates/data-en.json:196
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique information universe."
-msgstr "透過打造獨特的資訊空間，來依照您的興趣取得最相關的新聞。"
+msgstr "透过打造独特的资讯空间，来依照您的兴趣取得最相关的新闻。"
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr "日本最大的社交網路。"
+msgstr "日本最大的社交网路。"
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr "隨時掌握您的好友喜歡什麼東西。"
+msgstr "随时掌握您的好友喜欢什么东西。"
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
@@ -249,74 +249,74 @@ msgid ""
 "to post messages with 140-character limit, images, videos, etc. And it will show the "
 "notification when receiving new messages."
 msgstr ""
-"新浪微博是中國最知名的微網誌服務。Weibo for Firefox 可讓使用者張貼 140 字以內的訊息、圖片、影片"
-"等等，並會在收到新訊息時通知您。"
+"新浪微博是中国最知名的微网志服务。Weibo for Firefox 可让使用者张贴 140 字以内的讯息、图片、影片"
+"等等，并会在收到新讯息时通知您。"
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr "隨時隨地分享您有興趣的消息。"
+msgstr "随时随地分享您有兴趣的消息。"
 
 #: templates/data-en.json:271
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your Google+ account to "
 "share sites publicly or with your Circles."
-msgstr "透過 Google+ 快速分享你發現的內容。用自己的 Google+ 帳戶分享網站到你的社交圈。"
+msgstr "透过 Google+ 快速分享你发现的内容。用自己的 Google+ 帐户分享网站到你的社交圈。"
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr "在 Google+ 上和朋友分享網路。"
+msgstr "在 Google+ 上和朋友分享网络。"
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr "Gmail 是直覺且高效率的電子郵件系統。"
+msgstr "分享网页和照片给使用Gmail的朋友"
 
 #: templates/data-en.json:320
 msgid ""
 "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across "
 "the web.  We shorten URLs for quick sharing using the t.co link shortener."
 msgstr ""
-"Firefox 的 Twitter Share 功能，能讓你迅速針對自己發現的網頁撰寫推文。我們另透過 t.co 短網址功"
-"能，讓你能迅速分享縮短過的網址。"
+"Firefox 的 Twitter Share 功能，能让你迅速针对自己发现的网页撰写推文。我们另透过 t.co 短网址功"
+"能，让你能迅速分享缩短过的网址。"
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr "推文給你的追蹤者"
+msgstr "推文给你的粉丝"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr "Twitter Share 可讓你迅速推文給你的追蹤者。"
+msgstr "Twitter Share 可让你迅速推文给你的追踪者。"
 
 #: templates/data-en.json:345
 msgid ""
 "Manage your professional identity. Build and engage with your professional network. Access "
 "knowledge, insights and opportunities."
-msgstr "管理您的專業身分。打造並認識您的專業網路。得到知識與機會。"
+msgstr "管理您的专业身分。打造并认识您的专业网路。得到知识与机会。"
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr "分享 Web 到您的專業網路中。"
+msgstr "分享 Web 到您的专业网络中。"
 
 #: templates/data-en.json:370
 msgid ""
 "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email "
 "or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
 msgstr ""
-"用自己的手機、桌機、瀏覽器、電子郵件，或任何手邊設備，就能張貼文字、照片、引言、連結、音樂、影"
-"片。從顏色到自己主題的 HTML，均可自訂任何部分。"
+"用自己的手机、桌机、浏览器、电子邮件，或任何手边设备，就能张贴文字、照片、引言、连结、音乐、影"
+"片。从颜色到自己主题的 HTML，均可自订任何部分。"
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr "Tumblr 讓你輕鬆分享大小事。"
+msgstr "Tumblr 让你轻松分享大小事。"
 
 #: templates/data-en.json:398
 msgid ""
 "Create a single website for all your content. Publish on your own site from any device and "
 "share with your audiences across the web."
-msgstr "為您的任何內容建立網站。透過您的任何裝置發布內容到網站上，並與 Web 中的不同觀眾分享。"
+msgstr "为您的任何内容建立网站。透过您的任何装置发布内容到网站上，并与 Web 中的不同观众分享。"
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr "從您的網站分享有興趣的內容。"
+msgstr "从您的网站分享有兴趣的内容。"
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -326,7 +326,7 @@ msgstr "VK"
 msgid ""
 "VK is a social network that unites people all over the world and helps them communicate "
 "comfortably and promptly."
-msgstr "VK 是一個結合全世界的人們，幫助他們能舒服地、敏捷地溝通的社交網路。"
+msgstr "VK 是一个结合全世界的人们，帮助他们能舒服地、敏捷地沟通的社交网路。"
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
@@ -334,18 +334,18 @@ msgid ""
 "something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and "
 "share the way you want."
 msgstr ""
-"Pinterest 是一個能幫助您探索與規畫想做的事情的工具。當您找到一些有興趣的東西，Pin 下去就好！"
-"Pin 是能夠讓您用您想要的方式整理、分享的視覺化書籤。"
+"Pinterest 是一个能帮助您探索与规画想做的事情的工具。当您找到一些有兴趣的东西，Pin 下去就好！"
+"Pin 是能够让您用您想要的方式整理、分享的视觉化书籤。"
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
-msgstr "探索由像您這樣的人親自挑選，可讓您放在的專案與興趣的新點子。"
+msgstr "探索由像您这样的人亲自挑选，可让您放在的专案与兴趣的新点子。"
 
 #: templates/data-en.json:599 templates/data-en.json:608
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates "
 "and old friends."
-msgstr "Odnoklassniki（俄文: Одноклассники 同學）是給同學與老朋友使用的社交網路。"
+msgstr "Odnoklassniki（俄文: Одноклассники 同学）是给同学与老朋友使用的社交网路。"
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
@@ -355,46 +355,46 @@ msgstr "Odnoklassniki"
 msgid ""
 "Xing is the social network for professional networking, business marketing and career "
 "development."
-msgstr "Xing 是專業網絡、商業行銷與職涯發展的社交網路。"
+msgstr "Xing 是专业网络、商业行销与职涯发展的社交网路。"
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr "XING 是您能有更好的職涯的專業網絡。"
+msgstr "XING 是您能有更好的职涯的专业网络。"
 
 #: templates/data-en.json:632
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, companies, events and news "
 "from your industry."
-msgstr "拓展您現有的網絡，並認識新的聯絡人、群組、職位、公司、活動，以及您的產業中的最新消息。"
+msgstr "拓展您现有的网络，并认识新的联络人、群组、职位、公司、活动，以及您的产业中的最新消息。"
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr "最快能得到足球比賽分數的方式"
+msgstr "最快能得到足球比赛分数的方式"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr "在使用 Firefox 瀏覽器上網同時接收詳細的足球賽分數。"
+msgstr "在使用 Firefox 浏览器上网同时接收详细的足球赛分数。"
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while "
 "navigating with your Firefox browser."
-msgstr "透過 BeSoccer 小工具，您將可以在使用 Firefox 瀏覽器上網的同時，即時接收足球賽分數。"
+msgstr "透过 BeSoccer 小工具，您将可以在使用 Firefox 浏览器上网的同时，即时接收足球赛分数。"
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr "Yahoo 電子信箱"
+msgstr "Yahoo 电子信箱"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
-msgstr "透過更強大的預覽鏈結和其他精彩功能，讓您能快速傳送網頁給自己和他人。"
+msgstr "透过更强大的预览链结和其他精彩功能，让您能快速传送网页给自己和他人。"
 
 #: templates/data-en.json:728
 msgid ""
 "Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get "
 "more done."
 msgstr ""
-"更快、更簡便的電子信箱服務，提供 1 TB 免費郵件儲存空間和更智慧貼心的工具，事半功倍，使命必達。"
+"更快、更简便的电子信箱服务，提供 1 TB 免费邮件储存空间和更智慧贴心的工具，事半功倍，使命必达。"
 
 #: templates/footer.html:12
 #, python-format
@@ -402,44 +402,44 @@ msgid ""
 "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. "
 "Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
-"本頁當中的部分內容著作權係 ©1998–%(current_year)s 由各 mozilla.org 貢獻者所有，並以 <a href="
-"\"%(url)s\">創用 CC</a> 授權條款進行授權。"
+"本页当中的部分内容着作权系 ©1998–%(current_year)s 由各 mozilla.org 贡献者所有，并以 <a href="
+"\"%(url)s\">创用 CC</a> 授权条款进行授权。"
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr "貢獻至此頁面"
+msgstr "贡献至此页面"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr "聯絡我們"
+msgstr "联络我们"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr "成為我們的夥伴"
+msgstr "成为我们的伙伴"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr "捐獻給我們"
+msgstr "捐献给我们"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr "隱私權保護政策"
+msgstr "隐私权保护政策"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr "法律資訊"
+msgstr "法律资讯"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr "回報商標濫用"
+msgstr "回报商标滥用"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr "SocialAPI 開發資訊"
+msgstr "SocialAPI 开发资讯"
 
 #: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
-msgstr "立刻啟用"
+msgstr "立刻启用"
 
 #: templates/index.html:38 templates/index_entry.html:10 templates/provider.html:77
 msgid "Learn More&hellip;"
@@ -447,11 +447,11 @@ msgstr "了解更多&hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr "擴充您的 Firefox 使用體驗，更完美使用 Web"
+msgstr "扩充您的 Firefox 使用体验，更完美使用 Web"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr "其他語言:"
+msgstr "其他语言:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
@@ -468,15 +468,15 @@ msgstr "Services for Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr "下載 Firefox"
+msgstr "下载 Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr "升級 Firefox"
+msgstr "升级 Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr "必須使用 Firefox 29"
+msgstr "必须使用 Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
@@ -488,25 +488,25 @@ msgstr "Firefox 桌面版"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr "您必須使用 Firefox 才能安裝社交服務。"
+msgstr "您必须使用 Firefox 才能安装社交服务。"
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr "下載"
+msgstr "下载"
 
 #: templates/layout.html:110
 msgid ""
 "Installing Social Services requires at least Firefox version 29.  Upgrade your version of "
 "Firefox now."
-msgstr "您必須使用 Firefox 29 或更新版本才能安裝社交服務。立刻升級您的 Firefox。"
+msgstr "您必须使用 Firefox 29 或更新版本才能安装社交服务。立刻升级您的 Firefox。"
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr "此服務需要 Firefox 測試版。"
+msgstr "此服务需要 Firefox 测试版。"
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr "安裝 Firefox Beta 測試版"
+msgstr "安装 Firefox Beta 测试版"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30
 #: templates/provider.html:34
@@ -515,23 +515,23 @@ msgstr "需要 Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr "安裝 Firefox Aurora 測試版"
+msgstr "安装 Firefox Aurora 测试版"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr "安裝 Firefox Nightly 測試版"
+msgstr "安装 Firefox Nightly 测试版"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr "此服務正在測試中，某些功能可能會怪怪的。"
+msgstr "此服务正在测试中，某些功能可能会怪怪的。"
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr "此服務只是展示用，可能會怪怪的。"
+msgstr "此服务只是展示用，可能会怪怪的。"
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr "此服務支援內容分享"
+msgstr "此服务支援内容分享"
 
 #: templates/provider.html:106
 msgid "share"
@@ -539,23 +539,23 @@ msgstr "分享"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr "此服務提供書籤功能"
+msgstr "此服务提供书签功能"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr "書籤"
+msgstr "书签"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr "此服務會新增側邊欄至 Firefox"
+msgstr "此服务会新增侧边栏至 Firefox"
 
 #: templates/provider.html:108
 msgid "sidebar"
-msgstr "側邊欄"
+msgstr "侧边栏"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr "此服務會新增工具列按鈕到 Firefox，可能會有通知功能"
+msgstr "此服务会新增工具列按钮到 Firefox，可能会有通知功能"
 
 #: templates/provider.html:109
 msgid "notifications"
@@ -563,7 +563,7 @@ msgstr "通知"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr "這是展示用的服務"
+msgstr "这是展示用的服务"
 
 #: templates/provider.html:111
 msgid "demo"
@@ -571,7 +571,7 @@ msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr "此服務需要使用測試版本的 Firefox"
+msgstr "此服务需要使用测试版本的 Firefox"
 
 #: templates/provider.html:113
 msgid "beta"
