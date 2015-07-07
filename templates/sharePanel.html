@@ -146,7 +146,7 @@
       {% for p in shareProviders %}
         {% if p['manifest']['shareURL'] %}
         <button type="button" class="col clearfix" data-tooltip="{{p['manifest']['name']}}" onclick="activateProvider(this, '{{p['key']}}')" data-service="{{p['manifestData']}}">
-          <img alt="{{p['manifest']['name']}}" src="{{p['manifest']['icon64URL']}}"></img>
+          <img alt="{{ _('Activate %(name)s', name=p['manifest']['name']) }}" src="{{p['manifest']['icon64URL']}}"></img>
         </button>
         {% set count = count + 1 %}
         {% endif %}
