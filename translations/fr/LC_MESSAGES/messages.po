@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-07-06 17:45-0700\n"
-"PO-Revision-Date: 2015-07-16 04:40+0000\n"
-"Last-Translator: Théo <theo.chevalier11@gmail.com>\n"
+"PO-Revision-Date: 2015-07-25 14:12+0000\n"
+"Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1437021634.0\n"
+"X-POOTLE-MTIME: 1437833538.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -387,10 +387,13 @@ msgid ""
 "Create a single website for all your content. Publish on your own site "
 "from any device and share with your audiences across the web."
 msgstr ""
+"Créez un seul site web pour tout votre contenu. Publiez sur votre propre "
+"site depuis n'importe quel appareil et partages avec votre public sur le "
+"web."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Partagez du contenu intéressant depuis votre propre site."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -457,23 +460,26 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "La manière la plus rapide de connaître les résultats du football"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
 msgstr ""
+"Profitez des résultats du foot en direct tout en naviguant avec Firefox."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
 msgstr ""
+"Grâce au widget BeSoccer, vous verrez les résultats du foot en direct aussi "
+"vite que possible tout en naviguant avec Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
