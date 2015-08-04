@@ -29,7 +29,7 @@ msgstr "Kezdőlap"
 #: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr "Gratulálunk, a(z) <strong>%(name)s</strong> aktiválva van a Firefoxban!"
+msgstr "Gratulálunk, <strong>%(name)s</strong> aktiválva van a Firefoxban!"
 
 #: templates/activated.html:51
 #, python-format
@@ -49,7 +49,7 @@ msgid ""
 msgstr ""
 "Ha új felhasználó, készítsen könyvjelzőt az oldalra, mert hasznos "
 "információkat és hivatkozásokat tartalmaz a Firefox használatához és "
-"személyre szabásához. Olvasson tovább a(z) %s Firefoxon belüli működésének "
+"személyre szabásához. Olvasson tovább %(name)s Firefoxon belüli működésének "
 "megismeréséhez."
 
 #: templates/activated.html:59
@@ -64,7 +64,7 @@ msgid ""
 "website with your social network through <strong>%(name)s</strong>."
 msgstr ""
 "Egy gombnyomással megoszthat érdekes tartalmakat bármely weboldalról az "
-"ismerőseivel a(z) <strong>%(name)s</strong> használatával."
+"ismerőseivel <strong>%(name)s</strong> használatával."
 
 #: templates/activated.html:69
 msgid "Save content for later"
@@ -77,7 +77,7 @@ msgid ""
 "website to <strong>%(name)s</strong>."
 msgstr ""
 "Egy gombnyomással elmenthet érdekes tartalmakat bármely weboldalról az "
-"ismerőseivel a(z) <strong>%(name)s</strong> használatával."
+"ismerőseivel <strong>%(name)s</strong> használatával."
 
 #: templates/activated.html:76
 #, python-format
@@ -90,7 +90,7 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
-"A(z) <strong>%(name)s</strong> elérhetővé teszi legfrissebb "
+"<strong>%(name)s</strong> elérhetővé teszi legfrissebb "
 "szolgáltatásukat, csak kattintson az ikonjára az eszköztáron."
 
 #: templates/activated.html:83
@@ -158,8 +158,8 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
-"<a href=\"%(url)s\">Tudjon meg többet</a> arról, hogy a(z) <a href=\"%(url)s\">%"
-"(name)s</a> mit biztosít."
+"<a href=\"%(url)s\">Tudjon meg többet</a> arról, hogy <a href=\"%(url)s\">"
+"%(name)s</a> mit biztosít."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
