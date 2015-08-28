@@ -13,12 +13,14 @@
     "en-US": {"featured": ["yahoomail"], "providers": ["yahoomail", "facebook", "google", "linkedin", "tumblr", "twitter"]},
     "jp-JP": {"featured": ["mixi"], "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]},
     "ja": {"featured": ["mixi"], "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]},
-    "tw": {"featured": ["twitter"], "providers": ["twitter", "google", "facebook", "yahoomail", "gmail"]},
+    "tw": {"featured": ["twitter"], "providers": ["twitter", "google", "facebook", "yahoomail", "gmail", "tumblr"]},
+    "zh-CN": {"featured": ["weibo"], "providers": ["weibo", "yahoomail", "twitter", "facebook", "gmail", "tumblr"]},
     "ru": {"featured": ["odnoklassniki"], "providers": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "yahoomail"]}
   },
   "carousel": {
     "en-US": ["facebook", "yahoomail", "twitter"],
     "en-IN": ["saavn", "pocket", "facebook"],
+    "zh-CN": ["twitter", "weibo", "yahoomail"],
     "zh-TW": ["yahoomail", "twitter", "google"],
     "ja": ["mixi", "twitter", "yahoomail"],
     "ru": ["odnoklassniki", "vkontakte", "yahoomail"],
