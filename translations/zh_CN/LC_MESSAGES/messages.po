@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-06-29 09:50-0700\n"
-"PO-Revision-Date: 2015-08-28 11:30\n"
-"Last-Translator: Liu Xing <liuxingmatt@gmail.com>\n"
+"PO-Revision-Date: 2015-08-29 03:53\n"
+"Last-Translator: YFdyh000 <yfdyh000@gmail.com>\n"
 "Language-Team: en_US <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -29,12 +29,12 @@ msgstr "首页"
 #, python-format
 msgid ""
 "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr "恭喜,  已在Firefox中启用 <strong>%(name)s</strong>！"
+msgstr "恭喜，<strong>%(name)s</strong> 已在 Firefox 中激活！"
 
 #: templates/activated.html:51
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr "完整使用 %(name)s"
+msgstr "充分使用 %(name)s"
 
 #: templates/activated.html:53
 msgid "Bookmark this page"
@@ -47,8 +47,8 @@ msgid ""
 "information and links to further help using and customizing Firefox.  Keep "
 "reading to learn more about how %(name)s works in Firefox."
 msgstr ""
-"若您刚了解此服务, 请将此页面假如书签. 本页面包含了许多有用的资讯和链接, 能帮助你使用Firefox. 请继续阅读, 以了解如何在 Firefox "
-"中使用 %(name)s"
+"若您刚了解此服务，请将此页面加入书签。本页面包含了许多有用的资讯和链接，能帮助您使用和定制 Firefox。请继续阅读，以了解如何在 Firefox "
+"中使用 %(name)s。"
 
 #: templates/activated.html:59
 #, python-format
@@ -60,18 +60,18 @@ msgstr "将你喜欢的内容分享到 %(name)s"
 msgid ""
 "With the click of a button, you can Share interesting content on any website"
 " with your social network through <strong>%(name)s</strong>."
-msgstr "只要点一下按钮，您就可以分享任何网站上有趣的内容到您的 <strong>%(name)s</strong> 社交网路上。"
+msgstr "只要点一下按钮，您就可以分享任何网站上有趣的内容到您的 <strong>%(name)s</strong> 社交网络上。"
 
 #: templates/activated.html:69
 msgid "Save content for later"
-msgstr "储存内容稍后阅读"
+msgstr "保存内容供稍后阅读"
 
 #: templates/activated.html:71
 #, python-format
 msgid ""
 "With the click of a button, you can save interesting content on any website "
 "to <strong>%(name)s</strong>."
-msgstr "只要点一下按钮，您就可以将任何网站上的有趣内容储存到您的 <strong>%(name)s</strong>。"
+msgstr "只要点一下按钮，您就可以将任何网站上的有趣内容保存到您的 <strong>%(name)s</strong>。"
 
 #: templates/activated.html:76
 #, python-format
@@ -83,11 +83,11 @@ msgstr "随时收到来自 %(name)s 的最新资讯"
 msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
-msgstr "您只要点下工具列的图示，就可收到来自 <strong>%(name)s</strong> 的最新更新。"
+msgstr "您只要点下工具栏上的图标，<strong>%(name)s</strong> 即可为您提供他们的服务的最新资讯。"
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
-msgstr "新增侧边栏按钮至您的工具列"
+msgstr "添加侧栏按钮至您的工具栏"
 
 #: templates/activated.html:88
 #, python-format
@@ -97,8 +97,8 @@ msgid ""
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
-"自 Firefox 30 开始，您可以使用侧边栏工具列按钮来管理您的侧边栏。侧边栏按钮位于 <a href=\"%(url)s\">自订面板画面</a>"
-" 当中，您只需要将按钮拖曳至您的工具列击可快速切换侧边栏。"
+"自 Firefox 30 开始，您可以使用侧栏的工具栏按钮来管理您的侧栏。侧栏按钮位于<a "
+"href=\"%(url)s\">定制</a>界面，您只需要将按钮拖拽至您的工具栏，即可快速切换侧边栏。"
 
 #: templates/activated.html:96
 msgid ""
@@ -106,12 +106,11 @@ msgid ""
 " sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"另外，您可以在侧边栏中简单地变更侧边栏中的服务，或隐藏侧边栏。您也可以使用 Firefox 的 <strong>检视 -> 工具列</strong> "
-"选单达到一样的目的。"
+"另外，您可以轻松地更改您的侧栏中的服务，或者隐藏侧栏。您也可以使用 Firefox 的 <strong>查看 -> 工具栏</strong> 菜单。"
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr "在附加组件管理器中变更设定"
+msgstr "在附加组件管理器中更改设置"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
@@ -122,7 +121,7 @@ msgstr "附加组件管理器"
 msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them "
 "temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr "您可以透过 Firefox 的附加元件管理员简单地 <a href=\"%(url)s\">管理、停用或移除</a> 某个服务。"
+msgstr "您可以通过 Firefox 的附加组件管理器轻松地<a href=\"%(url)s\">管理、禁用或移除</a>某个服务。"
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -143,15 +142,15 @@ msgstr "<a href=\"%(url)s\">了解</a><a href=\"%(url)s\">%(name)s</a> 提供什
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr "<a href=\".\">探索您还可以新增哪些服务</a> 到 Firefox。"
+msgstr "<a href=\".\">探索您还可以新增哪些服务</a>到 Firefox。"
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr "世界各地足球消息的重要消息来源。"
+msgstr "世界各地足球新闻的权威消息。"
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr "我们感受足球无处不在, 24/7"
+msgstr "我们热爱并关注足球 - 世界各地，全天候消息"
 
 #: templates/data-en.json:20
 msgid ""
@@ -162,9 +161,9 @@ msgid ""
 "leagues, teams and players that matter.</p><p>No wonder over 52 million "
 "football fans trust us to keep them ahead of the game."
 msgstr ""
-"<p>足球、Football、soccer、futbol、calcio 还是 "
-"futebol，不论您怎麽叫它，又支持哪一队，我们都是您最重要的消息来源。</p><p>我们在超过 50 个国家中有超过 530 "
-"位记者，让您可以随时贴近各类赛事。我们在各种足球活动现场撰写原创内容，把各联盟、各团队与各个球员的相关新闻带给您。</p><p>有超过五千两百万足球粉丝信任我们，从我们取得最新消息。"
+"<p>足球、Football、soccer、futbol、calcio、futebol，不论您怎么叫它，又或者支持哪一队，我们都是您最权威的消息来源。</p><p>我们在超过"
+" 50 个国家中有超过 530 "
+"位记者，让您可以随时贴近各类赛事。我们在各种足球活动现场撰写原创内容，把各联盟、各团队与各个球员的相关新闻带给您。</p><p>有超过五千两百万足球粉丝信任我们，从我们这里取得最新消息。"
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
@@ -174,7 +173,7 @@ msgid ""
 "classics."
 msgstr ""
 "Saavn "
-"能让您在不论是在线上或移动时，都能有最棒的宝莱坞与印度音乐聆听体验。很简单、很美好、可以自由搜寻、探索，可聆听超过一百万首不论是最新热门专辑，或很难寻找的经典歌曲。"
+"能让您在不论是在线上还是旅途中，都能有最棒的宝莱坞与印度音乐聆听体验。简单、美好、高速搜索、发现，可聆听超过一百万首音乐，不论是最新的热门专辑，还是很难寻找的经典歌曲。"
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -182,48 +181,48 @@ msgstr "Music Feed"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr "探索全新的音乐，听更多您喜爱的音乐。"
+msgstr "发现新鲜的音乐，听更多您喜欢的音乐。"
 
 #: templates/data-en.json:62
 msgid ""
 "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr "为 Firefox 打造的 Pocket 服务，是储存文章、影片，还有更多内容的最佳方案。"
+msgstr "为 Firefox 打造的 Pocket 服务，是保存文章、视频等等内容的最佳方案。"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr "Save it for later"
+msgstr "保存供稍后阅读"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr "让你能储存任何内容，以便稍后观看。"
+msgstr "方便、美观的工具，保存任何内容，以便稍后观看。"
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
-msgstr "探索与您的兴趣最相关的内容的全新方式。"
+msgstr "一种全新的方式，发现与您的兴趣最相关的内容。"
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr "一个探索体验"
+msgstr "体验发现"
 
 #: templates/data-en.json:110
 msgid ""
 "Delicious is a free service designed with care to be the best place to save "
 "what you love on the web."
-msgstr "精心打造的 Delicious 免费服务，可为你储存你喜欢的网络内容。"
+msgstr "精心打造的 Delicious 免费服务，可为您保存你喜欢的网络内容。"
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr "再也不错失任何连结"
+msgstr "再也不遗失任何链接。"
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr "Delicious 为你记忆更多事。"
+msgstr "Delicious 为你记住更多不想丢掉的东西。"
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr "不论你在网海何处，都能掌握朋友行踪。"
+msgstr "不论你在网海何处，保持与朋友的联系。"
 
 #: templates/data-en.json:164
 msgid "Share the web"
@@ -237,13 +236,13 @@ msgstr "随时、随地分享任何网页。"
 msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories, "
 "and videos based on your interests directly to Firefox."
-msgstr "Cliqz 能依照您的兴趣，直接在 Firefox 中带来最相关的文章、故事与影片的即时串流。"
+msgstr "Cliqz 能基于您的兴趣，直接在 Firefox 中提供最相关的文章、故事与视频。"
 
 #: templates/data-en.json:196
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
-msgstr "透过打造独特的资讯空间，来依照您的兴趣取得最相关的新闻。"
+msgstr "打造独特的资讯空间，依照您的兴趣取得最相关的新闻。"
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
@@ -251,7 +250,7 @@ msgstr "日本最大的社交网路。"
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr "随时掌握您的好友喜欢什么东西。"
+msgstr "随时了解您的好友喜欢什么东西。"
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
@@ -259,25 +258,25 @@ msgid ""
 "Firefox allows users to post messages with 140-character limit, images, "
 "videos, etc. And it will show the notification when receiving new messages."
 msgstr ""
-"新浪微博是中国最知名的微网志服务。Weibo for Firefox 可让使用者张贴 140 字以内的讯息、图片、影片等等，并会在收到新讯息时通知您。"
+"新浪微博是中国最知名的微博服务。Weibo for Firefox 可让使用者发布 140 字以内的信息、图像、视频等等，并会在收到新信息时通知您。"
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr "随时随地分享您有兴趣的消息。"
+msgstr "随时随地分享您感兴趣的消息。"
 
 #: templates/data-en.json:271
 msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
-msgstr "透过 Google+ 快速分享你发现的内容。用自己的 Google+ 帐户分享网站到你的社交圈。"
+msgstr "快速分享你发现的内容到 Google+。使用您的 Google+ 帐户分享网站到你的社交圈子。"
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr "在 Google+ 上和朋友分享网络。"
+msgstr "在 Google+ 上与朋友分享网络内容。"
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr "分享网页和照片给使用Gmail的朋友"
+msgstr "发送网页和图片给使用 Gmail 的朋友。"
 
 #: templates/data-en.json:320
 msgid ""
@@ -285,8 +284,7 @@ msgid ""
 "discover across the web.  We shorten URLs for quick sharing using the t.co "
 "link shortener."
 msgstr ""
-"Firefox 的 Twitter Share 功能，能让你迅速针对自己发现的网页撰写推文。我们另透过 t.co "
-"短网址功能，让你能迅速分享缩短过的网址。"
+"Firefox 的 Twitter 分享功能，能让你迅速针对自己发现的网页撰写推文。我们还使用 t.co 短网址功能，便于您快捷分享缩短过的网址。"
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
@@ -294,13 +292,13 @@ msgstr "推文给你的粉丝"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr "Twitter Share 可让你迅速推文给你的追踪者。"
+msgstr "Twitter 分享 让您可以快速的推文给你的粉丝。"
 
 #: templates/data-en.json:345
 msgid ""
 "Manage your professional identity. Build and engage with your professional "
 "network. Access knowledge, insights and opportunities."
-msgstr "管理您的专业身分。打造并认识您的专业网路。得到知识与机会。"
+msgstr "管理您的专业身份。打造和结识您的专业网路。获得知识、见解和机会。"
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
