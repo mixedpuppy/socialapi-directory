@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-06 17:45-0700\n"
+"POT-Creation-Date: 2015-08-31 16:48-0700\n"
 "PO-Revision-Date: 2014-08-08 14:04-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: es_AR <LL@li.org>\n"
@@ -407,6 +407,20 @@ msgstr ""
 "gratuito para correos y herramientas inteligentes que te permiten mejorar"
 " tu productividad."
 
+#: templates/data-en.json:740
+msgid ""
+"diaspora* is a distributed social network where you keep control over "
+"your data."
+msgstr ""
+
+#: templates/data-en.json:750
+msgid "Share with diaspora*"
+msgstr ""
+
+#: templates/data-en.json:751
+msgid "The diaspora* share widget lets you share your favorite links."
+msgstr ""
+
 #: templates/footer.html:12
 #, python-format
 msgid ""
@@ -594,6 +608,10 @@ msgid "beta"
 msgstr ""
 
 #: templates/sharePanel.html:149
-msgid "Activate %(name)"
+#, python-format
+msgid "Activate %(name)s"
 msgstr ""
+
+#~ msgid "Activate %(name)"
+#~ msgstr ""
 
