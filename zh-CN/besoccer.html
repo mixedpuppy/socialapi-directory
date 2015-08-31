@@ -1,0 +1,312 @@
+<html>
+<head>
+  <base href="/zh-CN/"/>
+  <title>BeSoccer for Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("下载 Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("升级 Firefox <span>&raquo;</span><br/><span class=\"smaller\">需要 Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [37, 38, 39, 40];
+    var minver = 29;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("安装 Firefox Beta 测试版 <span>&raquo;</span><br/><span class=\"smaller\">需要 Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("安装 Firefox Aurora 测试版 <span>&raquo;</span><br/><span class=\"smaller\">需要 Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("安装 Firefox Nightly 测试版 <span>&raquo;</span><br/><span class=\"smaller\">需要 Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("升级 Firefox <span>&raquo;</span><br/><span class=\"smaller\">需要 Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/zh-CN/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox 桌面版"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">您必须使用 Firefox 才能安装社交服务。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">下载.</a>
+  </p><p id="upgrade-required" hidden="true">您必须使用 Firefox 29 或更新版本才能安装社交服务。立刻升级您的 Firefox。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">下载.</a>
+  </p><p id="beta-required" hidden="true">此服务需要一个尚未正式发布的 Firefox 测试版本。</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">首页</a>
+        </div>
+        <div>
+        <span>BeSoccer</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="https://m.besoccer.com/media/images/favicon-ffx-64.png"></img> BeSoccer</h1>
+
+              <h3 class="tagline">最快获知足球比赛分数的方式</h3>
+              <p class="lead">在使用您的 Firefox 浏览器上网冲浪的同时，接收详细的足球赛比分。</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'besoccer')" data-service="{&#34;author&#34;: &#34;BeSoccer.com&#34;, &#34;description&#34;: &#34;Don&#39;t miss the most important football matches while navigating as usual through the pages of your choice.&#34;, &#34;homepageURL&#34;: &#34;http://www.besoccer.com/&#34;, &#34;icon32URL&#34;: &#34;https://m.besoccer.com/media/images/favicon-ffx-32.png&#34;, &#34;icon64URL&#34;: &#34;https://m.besoccer.com/media/images/favicon-ffx-64.png&#34;, &#34;iconURL&#34;: &#34;https://m.besoccer.com/media/images/favicon-ffx-16.png&#34;, &#34;name&#34;: &#34;BeSoccer&#34;, &#34;origin&#34;: &#34;https://m.besoccer.com&#34;, &#34;sidebarURL&#34;: &#34;https://m.besoccer.com/responsive/livescore&#34;, &#34;version&#34;: &#34;1.0&#34;}">立刻激活 <span>&raquo;</span></a>
+              <div class="provider-description">通过 BeSoccer 小工具，您可以在使用您的 Firefox 浏览器上网的同时，即时接收足球赛比分。</div>
+
+              <a href="https://www.besoccer.com/extension/firefox" class="moreinfo" target="_blank">了解更多&hellip;</a>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            <div class="clearfix"><img src="images/besoccer/detail.1.png" class="provider-primary-image" /></div>
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span  title="此服务支持内容分享">分享</span> 
+          <span  title="此服务提供书签功能">书签</span> 
+          <span class="supported" title="此服务会新增侧栏至 Firefox">侧栏</span> 
+          <span  title="此服务会新增工具栏按钮到 Firefox，可能会有通知功能">通知</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              本页当中的部分内容系由 ©1998–2015 各 mozilla.org 贡献者所有，可在<a href="http://www.mozilla.org/foundation/licensing/website-content/">知识共享许可协议</a>下授权。
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">为此页面出力</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">联系我们</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">与我们合作</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">捐赠</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">隐私政策</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">法律声明</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">报告商标滥用</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI 对开发者的信息</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">其他语言：</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-GB" value="en-GB" >English (United Kingdom)</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-CN" value="zh-CN" selected>中文 (简体中文, 中国)</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">前往</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/zh-CN/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

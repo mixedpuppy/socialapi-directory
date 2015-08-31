@@ -1,0 +1,300 @@
+
+<html>
+<head>
+  <base href="/zh-CN/"/>
+  <title>Delicious for Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("下载 Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("升级 Firefox <span>&raquo;</span><br/><span class=\"smaller\">需要 Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/zh-CN/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox 桌面版"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">您必须使用 Firefox 才能安装社交服务。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">下载.</a>
+  </p><p id="upgrade-required" hidden="true">您必须使用 Firefox 29 或更新版本才能安装社交服务。立刻升级您的 Firefox。<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">下载.</a>
+  </p><p id="beta-required" hidden="true">此服务需要一个尚未正式发布的 Firefox 测试版本。</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">首页</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="images/delicious/fulllogo.png"></img></h1>
+    
+    <h3>恭喜，<strong>Delicious</strong> 已在 Firefox 中激活！</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>将你喜欢的内容分享到 Delicious</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="images/delicious/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> 只要点一下按钮，您就可以分享任何网站上有趣的内容到您的 <strong>Delicious</strong> 社交网络上。</p>
+    </div>
+
+
+
+
+      <div class="section clearfix">
+      <h4><li>添加侧栏按钮至您的工具栏</li></h4>
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarbutton.png"
+      alt="[sidebar button image]" style="float: right;"/>
+      </div>
+      <p class="lead">自 Firefox 30 开始，您可以使用侧栏的工具栏按钮来管理您的侧栏。侧栏按钮位于<a href="https://support.mozilla.org/kb/use-firefox-sidebar-access-bookmarks-history-and-s">定制</a>界面，您只需要将按钮拖拽至您的工具栏，即可快速切换侧边栏。</p>
+      </div>
+
+      <div class="section clearfix">
+      <div style="width:40%; float: right; margin-left: 20px;">
+      <img src="../images/sidebarselect.png"
+      alt="[sidebar selection image]" style="float: right;"/>
+      </div>
+      <p class="lead">另外，您可以轻松地更改您的侧栏中的服务，或者隐藏侧栏。您也可以使用 Firefox 的 <strong>查看 -> 工具栏</strong> 菜单。</p>
+      </div>
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>在附加组件管理器中更改设置</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="附加组件管理器" style="float: right;"/>
+      </div>
+      <p class="lead">您可以通过 Firefox 的附加组件管理器轻松地<a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">管理、禁用或移除</a>某个服务。</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>接下來</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">了解这个服务到底新增了什么东西到 Firefox</a>。</li>
+
+      <li><a href="https://delicious.com">了解</a><a href="https://delicious.com">Delicious</a> 提供什么。</li>
+
+      <li><a href=".">探索您还可以新增哪些服务</a>到 Firefox。</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              本页当中的部分内容系由 ©1998–2015 各 mozilla.org 贡献者所有，可在<a href="http://www.mozilla.org/foundation/licensing/website-content/">知识共享许可协议</a>下授权。
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">为此页面出力</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">联系我们</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">与我们合作</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">捐赠</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">隐私政策</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">法律声明</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">报告商标滥用</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI 对开发者的信息</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">其他语言：</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-GB" value="en-GB" >English (United Kingdom)</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-CN" value="zh-CN" selected>中文 (简体中文, 中国)</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">前往</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/zh-CN/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+
+<html>
+<head>
+  <base href="/gl/"/>
+  <title>StumbleUpon para o Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      $("#directory-domain").text(location.origin);
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Obteña Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Anove Firefox <span>&raquo;</span><br/><span class=\"smaller\">require Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/gl/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+          <li><a id="about" href="#" data-featherlight="#aboutModel">Demostración de SocialAPI</a></li>
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox para o escritorio"></h2>
+    </header>
+  </div>
+
+  
+  <div id="aboutModel" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" hidden="true">
+    <h4 id="myModalLabel">Firefox SocialAPI Demo Instructions</h4>
+    <div>
+      <p class="lead"><b>You are on a test version of this website.</b> Some
+    entries on this site are mockups and do not work as expected. If you did
+    not intend to use the test site go to the <a
+    href="https://activations.mozilla.org"><b>production site</b></a>.</p>
+      <p class="lead"><span class="bold-italic">To
+    install from this directory</span> you must modify the <span
+    class="bold-italic">social.directories</span>
+    preference in Firefox to include the domain <span id="directory-domain"
+    class="bold-italic"></span>, you can do that in
+    about:config.</p>
+    </div>
+  </div>
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Debe usar Firefox para instalar os servizos sociais.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Descargar.</a>
+  </p><p id="upgrade-required" hidden="true">Instalar os servizos socias require como mínimo a versión 29 do Firefox.  Anove agora a súa versión do Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Descargar.</a>
+  </p><p id="beta-required" hidden="true">Este servizo require unha versión do Firefox que aínda non está dispoñíbel.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">Inicio</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="images/stumbleupon/fulllogo.png"></img></h1>
+    
+    <h3>Parabéns, <strong>StumbleUpon</strong> agora está activado no Firefox!</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>Comparta o contido que lle gusta a través de StumbleUpon</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> Con premer nun botón, vostede pode compartir contido interesante de calquera sitio web coa súa rede social a través de <strong>StumbleUpon</strong>.</p>
+    </div>
+
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Cambiar a configuración dende o Xestor de complementos</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Xestor de complementos" style="float: right;"/>
+      </div>
+      <p class="lead">Pode <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">xestionar os seus servizos</a> facilmente, desactivalos temporalmente ou eliminalos, accedendo ao xestor de complementos no Firefox.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>Seguintes pasos</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">Máis información sobre o que engade este servizo ao Firefox</a>.</li>
+
+      <li><a href="https://www.stumbleupon.com">Máis información</a> sobre o que fornece o <a href="https://www.stumbleupon.com">StumbleUpon</a>.</li>
+
+      <li><a href=".">Explore e atope máis servizos</a> que pode engadir ao Firefox.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Algúns contidos están protexidos polos dereitos de autor ©1998–2015 de determinados colaboradores en mozilla.org. O resto do contido está dispoñíbel con licenza <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Colaborar nesta páxina</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Contacta connosco</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Sexa o noso socio</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Doazóns</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Política de privacidade</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Avisos legais</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Informar de abusos de marca</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI para desenvolvedores</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Outros idiomas:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-GB" value="en-GB" >English (United Kingdom)</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="es-AR" value="es-AR" >español (Argentina)</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" selected>galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="id" value="id" >Bahasa Indonesia</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pl" value="pl" >polski</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="tr" value="tr" >Türkçe</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-CN" value="zh-CN" >中文 (简体中文, 中国)</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Ir</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/gl/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>

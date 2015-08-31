@@ -1,0 +1,357 @@
+<html>
+<head>
+  <base href="/fr/"/>
+  <title>Soundcloud pour Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      $("#directory-domain").text(location.origin);
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Télécharger Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Mettre à jour Firefox <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [37, 38, 39, 40];
+    var minver = 29;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Installer Firefox Beta <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Installer Firefox Aurora <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Installer Firefox Nightly <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Mettre à jour Firefox <span>&raquo;</span><br/><span class=\"smaller\">nécessite Firefox </span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/fr/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+          <li><a id="about" href="#" data-featherlight="#aboutModel">Démonstration SocialAPI</a></li>
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox pour ordinateurs"></h2>
+    </header>
+  </div>
+
+  
+  <div id="aboutModel" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" hidden="true">
+    <h4 id="myModalLabel">Firefox SocialAPI Demo Instructions</h4>
+    <div>
+      <p class="lead"><b>You are on a test version of this website.</b> Some
+    entries on this site are mockups and do not work as expected. If you did
+    not intend to use the test site go to the <a
+    href="https://activations.mozilla.org"><b>production site</b></a>.</p>
+      <p class="lead"><span class="bold-italic">To
+    install from this directory</span> you must modify the <span
+    class="bold-italic">social.directories</span>
+    preference in Firefox to include the domain <span id="directory-domain"
+    class="bold-italic"></span>, you can do that in
+    about:config.</p>
+    </div>
+  </div>
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Vous devez utiliser Firefox pour installer des services.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Télécharger.</a>
+  </p><p id="upgrade-required" hidden="true">Installer des services nécessite au minimum la version 29 de Firefox. Veuillez mettre Firefox à jour.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Télécharger.</a>
+  </p><p id="beta-required" hidden="true">Ce service nécessite une version de Firefox qui n'est pas encore disponible.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Accueil</a>
+        </div>
+        <div>
+        <span>Soundcloud</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+        <p id="demo-service" style="font-weight: bold; font-style: italic; color: red">Ce service n'est proposé qu'à des fins de démonstration et peut ne pas fonctionner correctement.</p>
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0QUYwOTFEQzM3MjA2ODExODA4M0NFNkVDMjIxNUJBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjBFQTlEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjA3MEJEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjAyRjcwMEEyNzIwNjgxMTgwODNFODYzNzgwNTM4MEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEFGMDkxREMzNzIwNjgxMTgwODNDRTZFQzIyMTVCQUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz719pF8AAAEsUlEQVR42uxbXWwUVRT+Zn+62539tSzblRahaEpbwk/BSNKE+IA2CpYYI7ESYgKJD/rSmKgJiTwQicYHw0MTX4wmBhN/Ai9KYjQx+iAPGmlFxFLaIv2hQouFUunSlh3POTPurmVKutPZGpp7s5l8vXP37vnu951z7+ymmnEkgXu/+TA5tgRoeLAkmg+GoqFoKBqKhqKhaCga9yiNrFJD0VCmUqZSplpKagQiePgF1D2J9HroFcjexvgwRnvQ+x06PsHYxQVOrxltpedQvwOtHyKctL9LlDo/xZcHFkLGw2qU4gUNjXssvO/4nBw4BC8an8frv2JTq+OP83BulOKV3oi9R/lK2Fs2L9ft/Rjb2px9XMnUiFdzcJX1ReSepuHpd7Fp9/+hhjeIl7/m66x+XVyUWFVcJSQmre8jVr0oamg+NB9g9xOuWIO1j6GygXEwhoNdCEQZx+7nsOJVRVfCYAQtby2KGjVNaDmMVEN+1UMVkg/rkapF9WbGoWXcT5ntYF/a8lyxgjhSI5LiD4umGYfuk3CXizKrGS+vZUybA+Sug32Jatfm3aVXw1xpIpMVHajpyxgnVjJOPsi4PGY5xNkpYe32ItW4y21/GPuPUhYzDqdw6Cx8IcEFhjE3BItGlahUKTTiUkbDDmnUb0f7BN7L4GAnWg7xwjk31aot2LqH7U64ZivSdajaUGCkpGD5XSEUZ2xSiojBTDXKdIeHHY8PAR2+AKo34Kk38HYvGp8p0lRrmrD6EQaRSqvaZCUTcthcaV3S2qRBPTzepJHMmwpw5+hZHsVLnzOTItR44lU0vyJF0wx9RR4npICGhAYRmIVJB6Ynae31yT7gce3oSVvK/g8sqeelRmKF5W+z2pg5YK40kckpoCcK1IiKAtF8WpOdFpLic2nyeNu8U5wyOCIpZa50NFVAqaDfTF8rByT1g2E5+5f9J3R3n2c27rSlYfe8EYqxJThlJfSApKlekMpl5fl+f5Cx1y+7eCTfb1ICXH6eSdfaTmj39Efaebz5VTeNoUt1IgKEqYBQ8wvOhT5LAZqBp4q4rMbMlO2EdjToOUYTs2leazmzYhWzDmYl28y9NvdezWtvJJrKXRqX+2wntKtUo/248geDCfmR9tZNxjevM57KML4+wjgzwXg6w3hynDFdISMNuZsb42I7dcK2Utmp0f8bpia5f3yU/6SgCV+7wph6CN+4ypiu2X+pTt+yMBmSqBLO/M3pce2ym2rQMn1xZA5T3blaH72G2zPcPzYsOl5g/NclxnQlTMHl8NUhPEQCDjIe6UfyARaTxw8hnmIPuKWGYaB9n7WaNqa6s34NdmNYLHiph4f0/cJ4ZICx2U/hQu4SHpYxf/bK+G7Gg12CzzPu7WBMi7JQHW7gnWfxwzFHZ6qTx3F4F87/xHjoHE838LtgCbf/LOOBLsY9pxhfOM24+0fGfR2Mz3zP+EQ7DEfeImfSPJ+9iRdrcPLYXULVjJ3zPgusbMDFM+JEP9Y9itPfciHyB9DYjJ+/4lJI1WzdNg59ZhpBHXVN6PyGzVD6phk71Jef6qtopYb6fUOZSqmhTKXUUDQUDUVD0VA0FA1FYxHbEvnHh38EGAA0eV7Yr/i+2wAAAABJRU5ErkJggg=="></img> Soundcloud</h1>
+
+              <h3 class="tagline"></h3>
+              <p class="lead">a design mockup showing what this service could look like.</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'soundcloud')" data-service="{&#34;description&#34;: &#34;Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. &#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAIAAABsNpe/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0QUYwOTFEQzM3MjA2ODExODA4M0NFNkVDMjIxNUJBQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2QjBFQTlEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2QjA3MEJEQTlFQzUxMUUyQjdCMEY4QUM3QzYzMjA0QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RjAyRjcwMEEyNzIwNjgxMTgwODNFODYzNzgwNTM4MEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEFGMDkxREMzNzIwNjgxMTgwODNDRTZFQzIyMTVCQUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz719pF8AAAEsUlEQVR42uxbXWwUVRT+Zn+62539tSzblRahaEpbwk/BSNKE+IA2CpYYI7ESYgKJD/rSmKgJiTwQicYHw0MTX4wmBhN/Ai9KYjQx+iAPGmlFxFLaIv2hQouFUunSlh3POTPurmVKutPZGpp7s5l8vXP37vnu951z7+ymmnEkgXu/+TA5tgRoeLAkmg+GoqFoKBqKhqKhaCga9yiNrFJD0VCmUqZSplpKagQiePgF1D2J9HroFcjexvgwRnvQ+x06PsHYxQVOrxltpedQvwOtHyKctL9LlDo/xZcHFkLGw2qU4gUNjXssvO/4nBw4BC8an8frv2JTq+OP83BulOKV3oi9R/lK2Fs2L9ft/Rjb2px9XMnUiFdzcJX1ReSepuHpd7Fp9/+hhjeIl7/m66x+XVyUWFVcJSQmre8jVr0oamg+NB9g9xOuWIO1j6GygXEwhoNdCEQZx+7nsOJVRVfCYAQtby2KGjVNaDmMVEN+1UMVkg/rkapF9WbGoWXcT5ntYF/a8lyxgjhSI5LiD4umGYfuk3CXizKrGS+vZUybA+Sug32Jatfm3aVXw1xpIpMVHajpyxgnVjJOPsi4PGY5xNkpYe32ItW4y21/GPuPUhYzDqdw6Cx8IcEFhjE3BItGlahUKTTiUkbDDmnUb0f7BN7L4GAnWg7xwjk31aot2LqH7U64ZivSdajaUGCkpGD5XSEUZ2xSiojBTDXKdIeHHY8PAR2+AKo34Kk38HYvGp8p0lRrmrD6EQaRSqvaZCUTcthcaV3S2qRBPTzepJHMmwpw5+hZHsVLnzOTItR44lU0vyJF0wx9RR4npICGhAYRmIVJB6Ynae31yT7gce3oSVvK/g8sqeelRmKF5W+z2pg5YK40kckpoCcK1IiKAtF8WpOdFpLic2nyeNu8U5wyOCIpZa50NFVAqaDfTF8rByT1g2E5+5f9J3R3n2c27rSlYfe8EYqxJThlJfSApKlekMpl5fl+f5Cx1y+7eCTfb1ICXH6eSdfaTmj39Efaebz5VTeNoUt1IgKEqYBQ8wvOhT5LAZqBp4q4rMbMlO2EdjToOUYTs2leazmzYhWzDmYl28y9NvdezWtvJJrKXRqX+2wntKtUo/248geDCfmR9tZNxjevM57KML4+wjgzwXg6w3hynDFdISMNuZsb42I7dcK2Utmp0f8bpia5f3yU/6SgCV+7wph6CN+4ypiu2X+pTt+yMBmSqBLO/M3pce2ym2rQMn1xZA5T3blaH72G2zPcPzYsOl5g/NclxnQlTMHl8NUhPEQCDjIe6UfyARaTxw8hnmIPuKWGYaB9n7WaNqa6s34NdmNYLHiph4f0/cJ4ZICx2U/hQu4SHpYxf/bK+G7Gg12CzzPu7WBMi7JQHW7gnWfxwzFHZ6qTx3F4F87/xHjoHE838LtgCbf/LOOBLsY9pxhfOM24+0fGfR2Mz3zP+EQ7DEfeImfSPJ+9iRdrcPLYXULVjJ3zPgusbMDFM+JEP9Y9itPfciHyB9DYjJ+/4lJI1WzdNg59ZhpBHXVN6PyGzVD6phk71Jef6qtopYb6fUOZSqmhTKXUUDQUDUVD0VA0FA1FYxHbEvnHh38EGAA0eV7Yr/i+2wAAAABJRU5ErkJggg==&#34;, &#34;iconURL&#34;: &#34;http://soundcloud.com/favicon.ico&#34;, &#34;name&#34;: &#34;Soundcloud&#34;, &#34;origin&#34;: &#34;http://m.soundcloud.com/dashboard&#34;, &#34;sidebarURL&#34;: &#34;http://m.soundcloud.com/dashboard&#34;}">Activer maintenant <span>&raquo;</span></a>
+              <div class="provider-description">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis. </div>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            
+            <div id="carousel-details">
+              <div class="cycle-slideshow carousel-inner"
+                  data-cycle-loader="true"
+                  data-cycle-center-horz="true"
+                  data-cycle-center-vert="true"
+                  data-cycle-pager="#detail-pager">
+                
+              </div>
+              <div id="detail-pager" class="cycle-pager center external"></div>
+            </div>
+
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span  title="Ce service prend en charge le partage de contenu">partage</span> 
+          <span  title="Ce service fournit une fonctionnalité de marque-page">marque-page</span> 
+          <span class="supported" title="Ce service ajoute un panneau latéral à Firefox">panneau latéral</span> 
+          <span  title="Ce service ajoute un bouton susceptible d'afficher des notifications dans la barre d'outils de Firefox">notifications</span>
+
+          <span class="supported" title="Ce service est un service de démonstration">démo</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Certaines parties de ce contenu sont ©1998–2015 par les contributeurs individuels de mozilla.org. Le contenu est disponible sous <a href="http://www.mozilla.org/foundation/licensing/website-content/">licence Creative Commons</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Contribuer à cette page</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Nous contacter</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Partenariats</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Faire un don</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Respect de la vie privée</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Avertissement légal</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Signaler un abus de marque déposée</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI pour les développeurs</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Autres langues&nbsp;:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-GB" value="en-GB" >English (United Kingdom)</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="es-AR" value="es-AR" >español (Argentina)</option>
+
+
+<option lang="fr" value="fr" selected>français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="id" value="id" >Bahasa Indonesia</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pl" value="pl" >polski</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="tr" value="tr" >Türkçe</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-CN" value="zh-CN" >中文 (简体中文, 中国)</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">C'est parti&nbsp;!</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/fr/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>
