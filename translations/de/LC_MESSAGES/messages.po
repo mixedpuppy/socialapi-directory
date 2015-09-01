@@ -500,15 +500,16 @@ msgstr ""
 msgid ""
 "diaspora* is a distributed social network where you keep control over "
 "your data."
-msgstr ""
+msgstr "diaspora* ist ein verteiltes soziales Netzwerk, in dem Sie "
+"die Kontrolle über Ihre Daten behalten."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "Auf diaspora* teilen"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "Über das Teilen-Widget von diaspora* können Sie Ihre Lieblings-Links teilen."
 
 #: templates/footer.html:12
 #, python-format
@@ -710,7 +711,7 @@ msgid "beta"
 msgstr "Beta"
 
 #: templates/sharePanel.html:149
-#, fuzzy, python-format
+#, python-format
 msgid "Activate %(name)s"
 msgstr "%(name) aktivieren"
 
