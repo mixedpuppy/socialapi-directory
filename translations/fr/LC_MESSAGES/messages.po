@@ -7,18 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-06 17:45-0700\n"
+"POT-Creation-Date: 2015-08-31 16:48-0700\n"
 "PO-Revision-Date: 2015-07-25 14:12+0000\n"
 "Last-Translator: Benoit <benoit.leseul@gmail.com>\n"
 "Language-Team: fr <LL@li.org>\n"
-"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1437833538.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -466,16 +463,15 @@ msgstr "La manière la plus rapide de connaître les résultats du football"
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
-msgstr ""
-"Profitez des résultats du foot en direct tout en naviguant avec Firefox."
+msgstr "Profitez des résultats du foot en direct tout en naviguant avec Firefox."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
 " possible while navigating with your Firefox browser."
 msgstr ""
-"Grâce au widget BeSoccer, vous verrez les résultats du foot en direct aussi "
-"vite que possible tout en naviguant avec Firefox."
+"Grâce au widget BeSoccer, vous verrez les résultats du foot en direct "
+"aussi vite que possible tout en naviguant avec Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
@@ -496,6 +492,20 @@ msgid ""
 msgstr ""
 "Une messagerie efficace et conviviale, avec 1 To de stockage gratuit et "
 "des outils intelligents pour des performances accrues."
+
+#: templates/data-en.json:740
+msgid ""
+"diaspora* is a distributed social network where you keep control over "
+"your data."
+msgstr ""
+
+#: templates/data-en.json:750
+msgid "Share with diaspora*"
+msgstr ""
+
+#: templates/data-en.json:751
+msgid "The diaspora* share widget lets you share your favorite links."
+msgstr ""
 
 #: templates/footer.html:12
 #, python-format
@@ -699,5 +709,7 @@ msgid "beta"
 msgstr "bêta"
 
 #: templates/sharePanel.html:149
-msgid "Activate %(name)"
+#, fuzzy, python-format
+msgid "Activate %(name)s"
 msgstr "Activer %(name)"
+

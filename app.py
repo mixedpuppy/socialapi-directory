@@ -6,7 +6,10 @@ from flask.ext.babel import Babel
 from werkzeug.routing import BaseConverter
 import collections
 
-TRANSLATIONS = ['cs', 'de', 'en-US', 'en_US', 'en-GB', 'en_GB', 'es', 'fr', 'gl', 'hu', 'it', 'ja', 'nl', 'pt-BR', 'pt_BR', 'ru', 'sl', 'uk', 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW']
+TRANSLATIONS = ['cs', 'de', 'en-US', 'en_US', 'en-GB', 'en_GB', 'es', 'fr', 'gl',
+                'hu', 'it', 'ja', 'nl', 'pt-BR', 'pt_BR', 'ru', 'sl', 'uk',
+                'zh-CN', 'zh_CN', 'zh-Hans-CN', 'zh_Hans_CN',
+                'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW']
 
 # creating a data url for an image
 import base64
@@ -96,7 +99,7 @@ def createapp():
     langs = {}
     for b in babel.list_translations():
       if not demo and str(b) not in TRANSLATIONS:
-        #print str(b)," is not in ",TRANSLATIONS
+        # print str(b)," is not in ",TRANSLATIONS
         continue
       if b.territory:
         langs["%s-%s" % (b.language, b.territory)] = b.display_name

@@ -6,20 +6,17 @@
 # Gabor Kelemen <kelemeng at ubuntu dot com>, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-06 17:45-0700\n"
+"POT-Creation-Date: 2015-08-31 16:48-0700\n"
 "PO-Revision-Date: 2015-07-22 08:59+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
-"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n !=1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n !=1);\n"
-"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1437555584.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -49,8 +46,8 @@ msgid ""
 msgstr ""
 "Ha új felhasználó, készítsen könyvjelzőt az oldalra, mert hasznos "
 "információkat és hivatkozásokat tartalmaz a Firefox használatához és "
-"személyre szabásához. Olvasson tovább %(name)s Firefoxon belüli működésének "
-"megismeréséhez."
+"személyre szabásához. Olvasson tovább %(name)s Firefoxon belüli "
+"működésének megismeréséhez."
 
 #: templates/activated.html:59
 #, python-format
@@ -90,8 +87,8 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
-"<strong>%(name)s</strong> elérhetővé teszi legfrissebb "
-"szolgáltatásukat, csak kattintson az ikonjára az eszköztáron."
+"<strong>%(name)s</strong> elérhetővé teszi legfrissebb szolgáltatásukat, "
+"csak kattintson az ikonjára az eszköztáron."
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
@@ -158,8 +155,8 @@ msgid ""
 "<a href=\"%(url)s\">Learn more</a> about what <a "
 "href=\"%(url)s\">%(name)s</a> provides."
 msgstr ""
-"<a href=\"%(url)s\">Tudjon meg többet</a> arról, hogy <a href=\"%(url)s\">"
-"%(name)s</a> mit biztosít."
+"<a href=\"%(url)s\">Tudjon meg többet</a> arról, hogy <a "
+"href=\"%(url)s\">%(name)s</a> mit biztosít."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
@@ -378,8 +375,8 @@ msgid ""
 "from any device and share with your audiences across the web."
 msgstr ""
 "Készítsen egyetlen weboldalt minden tartalmának. Publikáljon saját "
-"weboldalán bármely eszközről, és ossza meg tartalmait közönségével az egész "
-"interneten."
+"weboldalán bármely eszközről, és ossza meg tartalmait közönségével az "
+"egész interneten."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
@@ -454,7 +451,8 @@ msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your "
 "Firefox browser."
 msgstr ""
-"Érje el részletes élő focieredményeinket, miközben a Firefoxszal böngészik."
+"Érje el részletes élő focieredményeinket, miközben a Firefoxszal "
+"böngészik."
 
 #: templates/data-en.json:704
 msgid ""
@@ -483,6 +481,20 @@ msgid ""
 msgstr ""
 "Gyors, könnyen kezelhető e-mail szolgáltatás 1 TB ingyenes levelezési "
 "tárhellyel és intelligensebb, a hatékony munkát segítő eszközökkel."
+
+#: templates/data-en.json:740
+msgid ""
+"diaspora* is a distributed social network where you keep control over "
+"your data."
+msgstr ""
+
+#: templates/data-en.json:750
+msgid "Share with diaspora*"
+msgstr ""
+
+#: templates/data-en.json:751
+msgid "The diaspora* share widget lets you share your favorite links."
+msgstr ""
 
 #: templates/footer.html:12
 #, python-format
@@ -682,5 +694,7 @@ msgid "beta"
 msgstr "béta"
 
 #: templates/sharePanel.html:149
-msgid "Activate %(name)"
+#, fuzzy, python-format
+msgid "Activate %(name)s"
 msgstr "%(name) aktiválása"
+

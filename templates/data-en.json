@@ -730,6 +730,29 @@
           "learnmore": "http://mail.yahoo.com"
         }
       }
+    },
+    "diaspora": {
+      "status": "release",
+      "minver": 32,
+      "manifest": {
+        "name": "diaspora*",
+        "author": "The diaspora* project",
+        "description": "{{ _('diaspora* is a distributed social network where you keep control over your data.') }}",
+        "iconURL": "images/diaspora/icon16.png",
+        "icon32URL": "images/diaspora/icon32.png",
+        "icon64URL": "images/diaspora/icon64.png",
+        "origin": "https://share.diasporafoundation.org",
+        "homepageURL": "https://diasporafoundation.org",
+        "shareURL": "https://share.diasporafoundation.org/?url=%{url}&title=%{title}&notes=%{text}"
+      },
+      "viewData": {
+        "name": "diaspora*",
+        "tagline": "{{ _('Share with diaspora*') }}",
+        "shortDescription": "{{ _('The diaspora* share widget lets you share your favorite links.') }}",
+        "links": {
+          "learnmore": "https://diasporafoundation.org/"
+        }
+      }
     }
   }
 }
