@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-07-08 04:09-0700\n"
+"PO-Revision-Date: 2015-09-01 08:11\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -488,14 +488,16 @@ msgid ""
 "diaspora* is a distributed social network where you keep control over your "
 "data."
 msgstr ""
+"diáspora* é uma rede social distribuída onde você mantém o controle sobre "
+"seus dados."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "Compartilhar com o diáspora"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "O widget diáspora* permite compartilhar seus links favoritos."
 
 #: templates/footer.html:12
 #, python-format
