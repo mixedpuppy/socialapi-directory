@@ -646,7 +646,3 @@ msgstr "beta"
 #, python-format
 msgid "Activate %(name)s"
 msgstr ""
-
-#~ msgid "Activate %(name)"
-#~ msgstr ""
-

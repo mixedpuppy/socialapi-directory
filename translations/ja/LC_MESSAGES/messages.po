@@ -633,5 +633,5 @@ msgstr "ベータ"
 #: templates/sharePanel.html:149
 #, fuzzy, python-format
 msgid "Activate %(name)s"
-msgstr "%(name) を追加"
+msgstr "%(name)s を追加"
 

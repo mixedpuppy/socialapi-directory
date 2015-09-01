@@ -713,5 +713,5 @@ msgstr "Beta"
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr "%(name) aktivieren"
+msgstr "%(name)s aktivieren"
 
