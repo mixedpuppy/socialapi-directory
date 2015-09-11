@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-07-10 16:07+0000\n"
+"PO-Revision-Date: 2015-09-03 01:56+0000\n"
 "Last-Translator: Peter <petercpg@mail.moztw.org>\n"
 "Language-Team: zh_Hant_TW <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1441245380.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -415,15 +418,15 @@ msgstr "更快、更簡便的電子信箱服務，提供 1 TB 免費郵件儲存
 msgid ""
 "diaspora* is a distributed social network where you keep control over "
 "your data."
-msgstr ""
+msgstr "diaspora* 是一個可讓您自行控制資料的分散式社交網路。"
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "透過 diaspora* 分享"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "diaspora* 分享小工具可讓您分享最愛的鏈結。"
 
 #: templates/footer.html:12
 #, python-format
@@ -614,7 +617,6 @@ msgid "beta"
 msgstr "beta"
 
 #: templates/sharePanel.html:149
-#, fuzzy, python-format
+#, python-format
 msgid "Activate %(name)s"
 msgstr "啟用 %(name)s"
-

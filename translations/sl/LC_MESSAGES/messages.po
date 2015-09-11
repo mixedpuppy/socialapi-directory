@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-07-07 23:11-0700\n"
+"PO-Revision-Date: 2015-09-02 05:59\n"
 "Last-Translator: Matjaž Horvat <matjaz.horvat@gmail.com>\n"
 "Language-Team: sl <LL@li.org>\n"
 "Language: sl\n"
@@ -481,14 +481,16 @@ msgid ""
 "diaspora* is a distributed social network where you keep control over your "
 "data."
 msgstr ""
+"diaspora* je porazdeljeno družbeno omrežje, v katerem ohranjate nadzor nad "
+"svojimi podatki."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "Delite na diaspori*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "Gradnik diaspora* vam omogoča deljenje priljubljenih povezav."
 
 #: templates/footer.html:12
 #, python-format
