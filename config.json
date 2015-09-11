@@ -1,21 +1,47 @@
 {
   "firefox-releases": {
-    "2014-06-10": [30,31,32,33],
-    "2014-07-22": [31,32,33,34],
-    "2014-09-02": [32,33,34,35],
-    "2014-10-14": [33,34,35,36],
-    "2014-11-25": [34,35,36,37],
-    "2015-01-06": [35,36,37,38],
-    "2015-02-17": [36,37,38,39],
-    "2015-03-31": [37,38,39,40]
+    "2014-06-10": [30, 31, 32, 33],
+    "2014-07-22": [31, 32, 33, 34],
+    "2014-09-02": [32, 33, 34, 35],
+    "2014-10-14": [33, 34, 35, 36],
+    "2014-11-25": [34, 35, 36, 37],
+    "2015-01-06": [35, 36, 37, 38],
+    "2015-02-17": [36, 37, 38, 39],
+    "2015-03-31": [37, 38, 39, 40],
+    "2015-05-11": [38, 39, 40, 41],
+    "2015-06-29": [39, 40, 41, 42],
+    "2015-08-10": [40, 41, 42, 43],
+    "2015-09-21": [41, 42, 43, 44],
+    "2015-11-02": [42, 43, 44, 45],
+    "2015-12-14": [43, 44, 45, 46],
+    "2016-01-25": [44, 45, 46, 47],
+    "2016-03-07": [45, 46, 47, 48]
   },
   "sharePanel": {
-    "en-US": {"featured": ["yahoomail"], "providers": ["yahoomail", "facebook", "google", "linkedin", "tumblr", "twitter"]},
-    "jp-JP": {"featured": ["mixi"], "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]},
-    "ja": {"featured": ["mixi"], "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]},
-    "tw": {"featured": ["twitter"], "providers": ["twitter", "google", "facebook", "yahoomail", "gmail", "tumblr"]},
-    "zh-CN": {"featured": ["weibo"], "providers": ["weibo", "yahoomail", "twitter", "facebook", "gmail", "tumblr"]},
-    "ru": {"featured": ["odnoklassniki"], "providers": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "yahoomail"]}
+    "en-US": {
+      "featured": ["yahoomail"],
+      "providers": ["yahoomail", "facebook", "google", "linkedin", "tumblr", "twitter"]
+    },
+    "jp-JP": {
+      "featured": ["mixi"],
+      "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]
+    },
+    "ja": {
+      "featured": ["mixi"],
+      "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]
+    },
+    "zh-TW": {
+      "featured": ["twitter"],
+      "providers": ["twitter", "google", "facebook", "yahoomail", "gmail", "tumblr"]
+    },
+    "zh-CN": {
+      "featured": ["weibo"],
+      "providers": ["weibo", "yahoomail", "twitter", "facebook", "gmail", "tumblr"]
+    },
+    "ru": {
+      "featured": ["odnoklassniki"],
+      "providers": ["odnoklassniki", "vkontakte", "twitter", "google", "facebook", "yahoomail"]
+    }
   },
   "carousel": {
     "en-US": ["facebook", "yahoomail", "twitter"],
