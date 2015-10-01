@@ -18,12 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1443708555.0\n"
+"X-POOTLE-MTIME: 1443708573.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
 msgid "Home"
-msgstr "Home "
+msgstr "Home"
 
 #: templates/activated.html:46
 #, python-format
