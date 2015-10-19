@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-02-13 13:58+0000\n"
-"Last-Translator: Mert Salih <mail@mertskaplan.com>\n"
+"PO-Revision-Date: 2015-10-19 12:35+0000\n"
+"Last-Translator: egeorhan <egelila@gmail.com>\n"
 "Language-Team: tr <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
+"X-POOTLE-MTIME: 1445258109.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -64,7 +67,7 @@ msgstr ""
 
 #: templates/activated.html:69
 msgid "Save content for later"
-msgstr ""
+msgstr "İçeriği daha sonrası için kaydet"
 
 #: templates/activated.html:71
 #, python-format
@@ -181,7 +184,7 @@ msgstr ""
 
 #: templates/data-en.json:39
 msgid "Music Feed"
-msgstr ""
+msgstr "Müzik Akışı"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
@@ -195,7 +198,7 @@ msgstr ""
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr ""
+msgstr "Daha sonrası için kaydedin"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -277,7 +280,7 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Web'i Google+'da paylaşın."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
@@ -317,7 +320,7 @@ msgstr ""
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr her şeyi zahmetsizce paylaşmanıza izin verir."
 
 #: templates/data-en.json:398
 msgid ""
@@ -338,6 +341,8 @@ msgid ""
 "VK is a social network that unites people all over the world and helps "
 "them communicate comfortably and promptly."
 msgstr ""
+"VK tüm dünyadaki insanları birleştiren ve onları rahatça ve hızlıca iletişim "
+"kurmalarına yardımcı olan bir sosyal ağdır."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
@@ -438,19 +443,19 @@ msgstr ""
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Bu sayfaya katkıda bulunun"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "Bize ulaşın"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "Ortağımız olun"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "Bağış yapın"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
@@ -462,16 +467,16 @@ msgstr ""
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Marka ihlali bildir"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "Geliştiriciler için SocialAPI"
 
 #: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "Şimdi etkinleştir"
 
 #: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
@@ -572,11 +577,11 @@ msgstr ""
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "paylaş"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Bu hizmet yer imleri işlevini sağlar"
 
 #: templates/provider.html:107
 msgid "bookmarking"
@@ -596,7 +601,7 @@ msgstr ""
 
 #: templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "bildirimler"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
@@ -612,7 +617,7 @@ msgstr ""
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/sharePanel.html:149
 #, python-format
