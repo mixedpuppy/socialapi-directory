@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-09-01 07:15-0700\n"
+"PO-Revision-Date: 2015-10-16 21:39+0000\n"
 "Last-Translator: Michal Stanke <michal.stanke@mikk.cz>\n"
 "Language-Team: cs <LL@li.org>\n"
 "Language: cs\n"
@@ -195,7 +195,7 @@ msgid ""
 "and listen to over a million songs, from the latest hits to hard-to-find "
 "classics."
 msgstr ""
-"Saavn je nejlepší služba, pokud chcete zažít Bollywod nebo si poslechnout "
+"Saavn je nejlepší služba, pokud chcete prožít Bollywod nebo si poslechnout "
 "indickou hudbu on-line. Je to jednoduše úžasný a dostupný způsob, jak najít "
 "a poslechnout si miliony nahrávek od nejaktuálnějších hitů po klasiku, která"
 " je jinak těžko k sehnání."
@@ -233,7 +233,7 @@ msgstr "Nový způsob jak objevit nejzajímavější obsah podle svých zájmů.
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr "zážitek z objevování"
+msgstr "prožitek z objevování"
 
 #: templates/data-en.json:110
 msgid ""

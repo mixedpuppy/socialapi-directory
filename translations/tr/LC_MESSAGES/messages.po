@@ -2,20 +2,23 @@
 # Copyright (C) 2015 ORGANIZATION
 # This file is distributed under the same license as the PACKAGE project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-02-13 13:58+0000\n"
-"Last-Translator: Mert Salih <mail@mertskaplan.com>\n"
+"PO-Revision-Date: 2015-10-19 12:35+0000\n"
+"Last-Translator: egeorhan <egelila@gmail.com>\n"
 "Language-Team: tr <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Generated-By: Babel 1.3\n"
+"X-Generator: Pontoon\n"
+"X-POOTLE-MTIME: 1445258109.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -24,7 +27,8 @@ msgstr "Ana sayfa"
 
 #: templates/activated.html:46
 #, python-format
-msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
+msgid ""
+"Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr "Tebrikler, <strong>%(name)s</strong> Firefox'ta etkinleştirildi!"
 
 #: templates/activated.html:51
@@ -40,13 +44,13 @@ msgstr "Bu sayfayı yer imlerine ekle"
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
-"information and links to further help using and customizing Firefox.  "
-"Keep reading to learn more about how %(name)s works in Firefox."
+"information and links to further help using and customizing Firefox.  Keep "
+"reading to learn more about how %(name)s works in Firefox."
 msgstr ""
 "Bu servisi kullanmaya yeni başladıysanız, Firefox'u kullanma ve "
-"özelleştirmeyle ilgili kullanışlı bilgiler içeren bu sayfayı yer "
-"imlerinize ekleyebilirsiniz. %(name)s servisinin Firefox'ta nasıl "
-"çalıştığını öğrenmek için okumaya devam edin."
+"özelleştirmeyle ilgili kullanışlı bilgiler içeren bu sayfayı yer imlerinize "
+"ekleyebilirsiniz. %(name)s servisinin Firefox'ta nasıl çalıştığını öğrenmek "
+"için okumaya devam edin."
 
 #: templates/activated.html:59
 #, python-format
@@ -56,21 +60,21 @@ msgstr "Beğendiğiniz içerikleri %(name)s aracılığıyla paylaşın"
 #: templates/activated.html:64
 #, python-format
 msgid ""
-"With the click of a button, you can Share interesting content on any "
-"website with your social network through <strong>%(name)s</strong>."
+"With the click of a button, you can Share interesting content on any website"
+" with your social network through <strong>%(name)s</strong>."
 msgstr ""
 "Tek bir tıklamayla, tüm web sitelerindeki ilginç içerikleri "
 "<strong>%(name)s</strong> aracılığıyla sosyal ağınızda paylaşabilirsiniz."
 
 #: templates/activated.html:69
 msgid "Save content for later"
-msgstr ""
+msgstr "İçeriği daha sonrası için kaydet"
 
 #: templates/activated.html:71
 #, python-format
 msgid ""
-"With the click of a button, you can save interesting content on any "
-"website to <strong>%(name)s</strong>."
+"With the click of a button, you can save interesting content on any website "
+"to <strong>%(name)s</strong>."
 msgstr ""
 
 #: templates/activated.html:76
@@ -92,8 +96,8 @@ msgstr "Araç çubuğunuza \"kenar çubukları\" düğmesini ekleyin"
 #: templates/activated.html:88
 #, python-format
 msgid ""
-"Starting with Firefox 30, you can manage your sidebars using the Sidebars"
-" toolbar button. The Sidebars button is located in the <a "
+"Starting with Firefox 30, you can manage your sidebars using the Sidebars "
+"toolbar button. The Sidebars button is located in the <a "
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
@@ -105,13 +109,13 @@ msgstr ""
 
 #: templates/activated.html:96
 msgid ""
-"Additionally, you can easily change the service in your sidebar, or hide "
-"the sidebar, from the sidebar itself. You can also use the "
+"Additionally, you can easily change the service in your sidebar, or hide the"
+" sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"Ayrıca, kenar çubuğu üzerinden de kenar çubuğundaki servisi "
-"değiştirebilir veya çubuğu gizleyebilirsiniz. Firefox'ta "
-"<strong>Görünüm->Araç çubukları</strong> menüsünü de kullanabilirsiniz."
+"Ayrıca, kenar çubuğu üzerinden de kenar çubuğundaki servisi değiştirebilir "
+"veya çubuğu gizleyebilirsiniz. Firefox'ta <strong>Görünüm->Araç "
+"çubukları</strong> menüsünü de kullanabilirsiniz."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
@@ -124,9 +128,8 @@ msgstr "Eklenti Yöneticisi"
 #: templates/activated.html:107
 #, python-format
 msgid ""
-"You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
-"them temporarily or removing them, by viewing the Add-ons Manager in "
-"Firefox."
+"You can easily <a href=\"%(url)s\">manage your services</a>, disabling them "
+"temporarily or removing them, by viewing the Add-ons Manager in Firefox."
 msgstr ""
 
 #: templates/activated.html:112
@@ -136,8 +139,7 @@ msgstr "Sonraki adımlar"
 #: templates/activated.html:114
 #, python-format
 msgid ""
-"<a href=\"%(url)s\">Learn more about what this service adds to "
-"Firefox</a>."
+"<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
 msgstr ""
 "<a href=\"%(url)s\">Bu servisin Firefox'ne eklediği hakkında daha fazla "
 "bilgi alın</a>."
@@ -164,24 +166,24 @@ msgstr "Her yerde, 7 gün 24 saat futbolla yaşıyor, futbol soluyoruz."
 #: templates/data-en.json:20
 msgid ""
 "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
-"whoever you support, we are your definitive football source.</p><p>We "
-"have over 530 reporters on the ground in 50+ countries, getting closer to"
-" the action.  We create original content at source to deliver the news "
-"from the leagues, teams and players that matter.</p><p>No wonder over 52 "
-"million football fans trust us to keep them ahead of the game."
+"whoever you support, we are your definitive football source.</p><p>We have "
+"over 530 reporters on the ground in 50+ countries, getting closer to the "
+"action.  We create original content at source to deliver the news from the "
+"leagues, teams and players that matter.</p><p>No wonder over 52 million "
+"football fans trust us to keep them ahead of the game."
 msgstr ""
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
-"Saavn is the best Bollywood and Indian music listening experience, online"
-" and on the go. It's a simple, beautiful, and free way to search, "
-"discover, and listen to over a million songs, from the latest hits to "
-"hard-to-find classics."
+"Saavn is the best Bollywood and Indian music listening experience, online "
+"and on the go. It's a simple, beautiful, and free way to search, discover, "
+"and listen to over a million songs, from the latest hits to hard-to-find "
+"classics."
 msgstr ""
 
 #: templates/data-en.json:39
 msgid "Music Feed"
-msgstr ""
+msgstr "Müzik Akışı"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
@@ -189,13 +191,12 @@ msgstr ""
 
 #: templates/data-en.json:62
 msgid ""
-"Pocket service for Firefox - The best way to save articles, videos and "
-"more"
+"Pocket service for Firefox - The best way to save articles, videos and more"
 msgstr ""
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr ""
+msgstr "Daha sonrası için kaydedin"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -213,8 +214,8 @@ msgstr ""
 
 #: templates/data-en.json:110
 msgid ""
-"Delicious is a free service designed with care to be the best place to "
-"save what you love on the web."
+"Delicious is a free service designed with care to be the best place to save "
+"what you love on the web."
 msgstr ""
 
 #: templates/data-en.json:128
@@ -239,8 +240,8 @@ msgstr ""
 
 #: templates/data-en.json:173
 msgid ""
-"Cliqz delivers a real-time stream of the most relevant articles, stories,"
-" and videos based on your interests directly to Firefox."
+"Cliqz delivers a real-time stream of the most relevant articles, stories, "
+"and videos based on your interests directly to Firefox."
 msgstr ""
 
 #: templates/data-en.json:196
@@ -261,8 +262,7 @@ msgstr "Arkadaşlarınızın yaptıklarından haberdar olun."
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
-"videos, etc. And it will show the notification when receiving new "
-"messages."
+"videos, etc. And it will show the notification when receiving new messages."
 msgstr ""
 
 #: templates/data-en.json:249
@@ -277,7 +277,7 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Web'i Google+'da paylaşın."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
@@ -285,9 +285,9 @@ msgstr ""
 
 #: templates/data-en.json:320
 msgid ""
-"Use your Firefox Twitter Share to quickly author tweets about the pages "
-"you discover across the web.  We shorten URLs for quick sharing using the"
-" t.co link shortener."
+"Use your Firefox Twitter Share to quickly author tweets about the pages you "
+"discover across the web.  We shorten URLs for quick sharing using the t.co "
+"link shortener."
 msgstr ""
 
 #: templates/data-en.json:327
@@ -300,8 +300,8 @@ msgstr ""
 
 #: templates/data-en.json:345
 msgid ""
-"Manage your professional identity. Build and engage with your "
-"professional network. Access knowledge, insights and opportunities."
+"Manage your professional identity. Build and engage with your professional "
+"network. Access knowledge, insights and opportunities."
 msgstr ""
 
 #: templates/data-en.json:352
@@ -317,12 +317,12 @@ msgstr ""
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr her şeyi zahmetsizce paylaşmanıza izin verir."
 
 #: templates/data-en.json:398
 msgid ""
-"Create a single website for all your content. Publish on your own site "
-"from any device and share with your audiences across the web."
+"Create a single website for all your content. Publish on your own site from "
+"any device and share with your audiences across the web."
 msgstr ""
 
 #: templates/data-en.json:408
@@ -335,21 +335,23 @@ msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
-"VK is a social network that unites people all over the world and helps "
-"them communicate comfortably and promptly."
+"VK is a social network that unites people all over the world and helps them "
+"communicate comfortably and promptly."
 msgstr ""
+"VK tüm dünyadaki insanları birleştiren ve onları rahatça ve hızlıca iletişim"
+" kurmalarına yardımcı olan bir sosyal ağdır."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
-"When you find something that looks interesting, just Pin it! Pins are "
-"visual bookmarks that you organize and share the way you want."
+"When you find something that looks interesting, just Pin it! Pins are visual"
+" bookmarks that you organize and share the way you want."
 msgstr ""
 
 #: templates/data-en.json:460
 msgid ""
-"Discover ideas for all your projects and interests, hand-picked by people"
-" like you."
+"Discover ideas for all your projects and interests, hand-picked by people "
+"like you."
 msgstr ""
 
 #: templates/data-en.json:599 templates/data-en.json:608
@@ -364,8 +366,8 @@ msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid ""
-"Xing is the social network for professional networking, business "
-"marketing and career development."
+"Xing is the social network for professional networking, business marketing "
+"and career development."
 msgstr ""
 
 #: templates/data-en.json:631
@@ -384,14 +386,14 @@ msgstr ""
 
 #: templates/data-en.json:703
 msgid ""
-"Enjoy our detailed soccer livescores while surfing the web with your "
-"Firefox browser."
+"Enjoy our detailed soccer livescores while surfing the web with your Firefox"
+" browser."
 msgstr ""
 
 #: templates/data-en.json:704
 msgid ""
-"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
-" possible while navigating with your Firefox browser."
+"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as "
+"possible while navigating with your Firefox browser."
 msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
@@ -400,24 +402,24 @@ msgstr ""
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
-"Quickly send web pages to yourself and others with enhanced link previews"
-" and more."
+"Quickly send web pages to yourself and others with enhanced link previews "
+"and more."
 msgstr ""
-"Geliştirilmiş bağlantı önizlemeleri ve daha fazlası bulunan web "
-"sayfalarını kendinize ve diğer kişilere hızlıca gönderin."
+"Geliştirilmiş bağlantı önizlemeleri ve daha fazlası bulunan web sayfalarını "
+"kendinize ve diğer kişilere hızlıca gönderin."
 
 #: templates/data-en.json:728
 msgid ""
-"Fast, simple to use email with 1 TB of free mail storage and smarter "
-"tools to help you get more done."
+"Fast, simple to use email with 1 TB of free mail storage and smarter tools "
+"to help you get more done."
 msgstr ""
-"1 TB ücretsiz posta depolama ile hızlı ve basit e-posta kullanımı ve daha"
-" fazlasını yapmanıza yardımcı olan daha akıllı araçlar."
+"1 TB ücretsiz posta depolama ile hızlı ve basit e-posta kullanımı ve daha "
+"fazlasını yapmanıza yardımcı olan daha akıllı araçlar."
 
 #: templates/data-en.json:740
 msgid ""
-"diaspora* is a distributed social network where you keep control over "
-"your data."
+"diaspora* is a distributed social network where you keep control over your "
+"data."
 msgstr ""
 
 #: templates/data-en.json:750
@@ -438,19 +440,19 @@ msgstr ""
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Bu sayfaya katkıda bulunun"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "Bize ulaşın"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "Ortağımız olun"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "Bağış yapın"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
@@ -462,16 +464,16 @@ msgstr ""
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Marka ihlali bildir"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "Geliştiriciler için SocialAPI"
 
 #: templates/index.html:37 templates/index_entry.html:9
 #: templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "Şimdi etkinleştir"
 
 #: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
@@ -529,8 +531,8 @@ msgstr "İndir"
 
 #: templates/layout.html:110
 msgid ""
-"Installing Social Services requires at least Firefox version 29.  Upgrade"
-" your version of Firefox now."
+"Installing Social Services requires at least Firefox version 29.  Upgrade "
+"your version of Firefox now."
 msgstr ""
 
 #: templates/layout.html:111
@@ -572,11 +574,11 @@ msgstr ""
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "paylaş"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Bu hizmet yer imleri işlevini sağlar"
 
 #: templates/provider.html:107
 msgid "bookmarking"
@@ -591,12 +593,13 @@ msgid "sidebar"
 msgstr ""
 
 #: templates/provider.html:109
-msgid "This service adds a toolbar button to Firefox that may have notifications"
+msgid ""
+"This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
 
 #: templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "bildirimler"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
@@ -612,7 +615,7 @@ msgstr ""
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/sharePanel.html:149
 #, python-format
