@@ -167,7 +167,7 @@ def createapp():
 
     p['manifestData'] = json.dumps(p['manifest'])
     return p
-  
+
   def firefoxReleases(schedule):
     today = datetime.today()
     last = []
@@ -296,6 +296,6 @@ def createapp():
   return app
 
 
+app = createapp()
 if __name__ == '__main__':
-  app = createapp()
   app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 8888)))
