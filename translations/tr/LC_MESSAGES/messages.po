@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-10-19 12:35+0000\n"
-"Last-Translator: egeorhan <egelila@gmail.com>\n"
+"PO-Revision-Date: 2015-11-19 11:10+0000\n"
+"Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: tr <LL@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -207,10 +207,11 @@ msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
 msgstr ""
+"İlgi alanlarınızla alakalı en ilginç içeriği keşfetmenin yeni bir yolu."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "bir keşif deneyimi"
 
 #: templates/data-en.json:110
 msgid ""
@@ -292,7 +293,7 @@ msgstr ""
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Takipçilerine Tweet'le"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
@@ -398,7 +399,7 @@ msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
@@ -456,11 +457,11 @@ msgstr "Bağış yapın"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Gizlilik İlkeleri"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr ""
+msgstr "Yasal Uyarılar"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
@@ -478,7 +479,7 @@ msgstr "Şimdi etkinleştir"
 #: templates/index.html:38 templates/index_entry.html:10
 #: templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "Daha fazla bilgi alın&hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
@@ -499,11 +500,11 @@ msgstr "Firefox için %(name)s"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Firefox Hizmetleri"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Firefox'u indirin"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
@@ -511,11 +512,11 @@ msgstr "Firefox'u yükseltin"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "Firefox 29 gerektirir"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI demosu"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
@@ -537,7 +538,7 @@ msgstr ""
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Bu hizmet Firefox'un yayımlanmamış bir sürümünü gerektirir."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -546,7 +547,7 @@ msgstr "Firefox Beta'yı kur"
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "Firefox gerektirir"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
@@ -582,7 +583,7 @@ msgstr "Bu hizmet yer imleri işlevini sağlar"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "yer imleri"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
@@ -590,7 +591,7 @@ msgstr ""
 
 #: templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "kenar çubuğu"
 
 #: templates/provider.html:109
 msgid ""
@@ -603,11 +604,11 @@ msgstr "bildirimler"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Bu bir demo hizmetidir"
 
 #: templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
