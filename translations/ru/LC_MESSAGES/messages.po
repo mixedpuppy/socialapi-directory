@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-10-31 22:39+0000\n"
-"Last-Translator: Vladimir <waldemar.yan@gmail.com>\n"
+"PO-Revision-Date: 2015-11-28 15:16+0000\n"
+"Last-Translator: bychek.ru <a@bychek.ru>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Pootle 2.5.0\n"
 "Generated-By: Babel 1.3\n"
-"X-POOTLE-MTIME: 1446331140.0\n"
+"X-POOTLE-MTIME: 1448723811.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
 #: templates/provider.html:48
@@ -214,16 +214,18 @@ msgstr "Сохраните это на будущее"
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
 msgstr ""
+"Надежное и красивое место, чтобы сохранить контент, который вы хотите "
+"посмотреть позже."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid ""
 "A new way to discover the most interesting content relevant to your "
 "interests."
-msgstr ""
+msgstr "Новый способ открытия самого интересного для вас контента."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "процесс открытия"
 
 #: templates/data-en.json:110
 msgid ""
@@ -245,11 +247,11 @@ msgstr ""
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Поделитесь веб-страницей"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Поделитесь любой веб-страницей, в любом месте, в любое время."
 
 #: templates/data-en.json:173
 msgid ""
@@ -265,7 +267,7 @@ msgstr ""
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Самая большая социальная сеть в Японии."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
@@ -291,11 +293,11 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Поделитесь веб-страницей на Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Отправляйте веб-страницы и картинки людям, используя Gmail."
 
 #: templates/data-en.json:320
 msgid ""
@@ -334,7 +336,7 @@ msgstr ""
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumbr позволяет без усилий обмениваться чем угодно."
 
 #: templates/data-en.json:398
 msgid ""
@@ -344,7 +346,7 @@ msgstr ""
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Поделитесь интересным контентом с вашего сайта."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -391,13 +393,15 @@ msgstr ""
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING - профессиональная сеть, улучшающая вашу жизнь на работе."
 
 #: templates/data-en.json:632
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr ""
+"Расширьте вашу существующую сеть и получите доступ к новым контактам, "
+"группам, работе, компаниям, событиям и новостям из вашей индустрии."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
@@ -417,7 +421,7 @@ msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Почта Yahoo"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
@@ -443,11 +447,11 @@ msgstr ""
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "Поделиться с diaspora*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "Виджет diaspora*, позволяющий поделиться своими любимыми ссылками."
 
 #: templates/footer.html:12
 #, python-format
@@ -649,4 +653,4 @@ msgstr "бета"
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "Активировать %(name)s"
