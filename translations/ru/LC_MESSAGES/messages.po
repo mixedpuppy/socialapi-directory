@@ -1,19 +1,19 @@
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-11-28 15:16+0000\n"
-"Last-Translator: bychek.ru <a@bychek.ru>\n"
+"PO-Revision-Date: 2015-12-26 15:47+0000\n"
+"Last-Translator: Alexander Slovesnik <unghost@mozilla-russia.org>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.5.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "Generated-By: Babel 1.3\n"
+"X-Generator: Pontoon\n"
 "X-POOTLE-MTIME: 1448723811.0\n"
 
 #: templates/activated.html:32 templates/activatedIndex.html:9
@@ -23,7 +23,8 @@ msgstr "Каталог"
 
 #: templates/activated.html:46
 #, python-format
-msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
+msgid ""
+"Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr "Поздравляем, <strong>%(name)s</strong> теперь активирован в Firefox!"
 
 #: templates/activated.html:51
@@ -39,13 +40,13 @@ msgstr "Добавьте эту страницу в закладки"
 #, python-format
 msgid ""
 "If you're new to this service, bookmark this page, it contains useful "
-"information and links to further help using and customizing Firefox.  "
-"Keep reading to learn more about how %(name)s works in Firefox."
+"information and links to further help using and customizing Firefox.  Keep "
+"reading to learn more about how %(name)s works in Firefox."
 msgstr ""
 "Если вы новичок в этой службе, добавьте эту страницу в закладки - она "
-"содержит полезную информацию и ссылки для дальнейшей помощи по "
-"использованию и настройке Firefox. Продолжайте читать, чтобы узнать "
-"больше о том, как %(name)s работает в Firefox."
+"содержит полезную информацию и ссылки для дальнейшей помощи по использованию"
+" и настройке Firefox. Продолжайте читать, чтобы узнать больше о том, как "
+"%(name)s работает в Firefox."
 
 #: templates/activated.html:59
 #, python-format
@@ -55,8 +56,8 @@ msgstr "Поделитесь тем, что вам понравилось, че�
 #: templates/activated.html:64
 #, python-format
 msgid ""
-"With the click of a button, you can Share interesting content on any "
-"website with your social network through <strong>%(name)s</strong>."
+"With the click of a button, you can Share interesting content on any website"
+" with your social network through <strong>%(name)s</strong>."
 msgstr ""
 "Одним щелчком кнопки вы можете поделиться интересным содержимым на любом "
 "веб-сайте с вашей социальной сетью через <strong>%(name)s</strong>."
@@ -68,8 +69,8 @@ msgstr "Сохраните содержимое на будущее"
 #: templates/activated.html:71
 #, python-format
 msgid ""
-"With the click of a button, you can save interesting content on any "
-"website to <strong>%(name)s</strong>."
+"With the click of a button, you can save interesting content on any website "
+"to <strong>%(name)s</strong>."
 msgstr ""
 "Одним нажатием кнопки вы можете сохранить интересное содержимое на любом "
 "веб-сайте в <strong>%(name)s</strong>."
@@ -85,8 +86,8 @@ msgid ""
 "<strong>%(name)s</strong> will provide you with the latest from their "
 "service, just click on their icon in the toolbar."
 msgstr ""
-"<strong>%(name)s</strong> будет сообщать вам последние новости с их "
-"службы, просто щёлкните по его значку на панели инструментов."
+"<strong>%(name)s</strong> будет сообщать вам последние новости с их службы, "
+"просто щёлкните по его значку на панели инструментов."
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
@@ -95,25 +96,25 @@ msgstr "Добавьте кнопку Боковых панелей на пан�
 #: templates/activated.html:88
 #, python-format
 msgid ""
-"Starting with Firefox 30, you can manage your sidebars using the Sidebars"
-" toolbar button. The Sidebars button is located in the <a "
+"Starting with Firefox 30, you can manage your sidebars using the Sidebars "
+"toolbar button. The Sidebars button is located in the <a "
 "href=\"%(url)s\">customization palette</a>, just drag the button to your "
 "toolbar for fast switching between sidebars."
 msgstr ""
-"Начиная с Firefox 30, вы можете управлять боковыми панелями с помощью "
-"кнопки Боковые панели. Кнопка Боковые панели находится на <a "
+"Начиная с Firefox 30, вы можете управлять боковыми панелями с помощью кнопки"
+" Боковые панели. Кнопка Боковые панели находится на <a "
 "href=\"%(url)s\">панели настройки</a>, вы можете просто перетащить её на "
 "панель инструментов для быстрого переключения между боковыми панелями."
 
 #: templates/activated.html:96
 msgid ""
-"Additionally, you can easily change the service in your sidebar, or hide "
-"the sidebar, from the sidebar itself. You can also use the "
+"Additionally, you can easily change the service in your sidebar, or hide the"
+" sidebar, from the sidebar itself. You can also use the "
 "<strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
-"Кроме этого, вы можете легко сменить службу на боковой панели, или скрыть"
-" боковую панель, из самой боковой панели. Вы также можете использовать "
-"меню <strong>Вид-> Панели инструментов</strong> в Firefox."
+"Кроме этого, вы можете легко сменить службу на боковой панели, или скрыть "
+"боковую панель, из самой боковой панели. Вы также можете использовать меню "
+"<strong>Вид-> Панели инструментов</strong> в Firefox."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
@@ -126,12 +127,11 @@ msgstr "Менеджер дополнений"
 #: templates/activated.html:107
 #, python-format
 msgid ""
-"You can easily <a href=\"%(url)s\">manage your services</a>, disabling "
-"them temporarily or removing them, by viewing the Add-ons Manager in "
-"Firefox."
+"You can easily <a href=\"%(url)s\">manage your services</a>, disabling them "
+"temporarily or removing them, by viewing the Add-ons Manager in Firefox."
 msgstr ""
-"Вы можете легко <a href=\"%(url)s\">управлять вашими службами</a>, "
-"временно их отключить или удалить, через Менеджер дополнений Firefox."
+"Вы можете легко <a href=\"%(url)s\">управлять вашими службами</a>, временно "
+"их отключить или удалить, через Менеджер дополнений Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -140,8 +140,7 @@ msgstr "Следующие шаги"
 #: templates/activated.html:114
 #, python-format
 msgid ""
-"<a href=\"%(url)s\">Learn more about what this service adds to "
-"Firefox</a>."
+"<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
 msgstr ""
 "<a href=\"%(url)s\">Узнайте больше о том, что эта служба добавляет в "
 "Firefox</a>."
@@ -172,25 +171,25 @@ msgstr "Мы живём футболом - круглосуточно в люб�
 #: templates/data-en.json:20
 msgid ""
 "<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
-"whoever you support, we are your definitive football source.</p><p>We "
-"have over 530 reporters on the ground in 50+ countries, getting closer to"
-" the action.  We create original content at source to deliver the news "
-"from the leagues, teams and players that matter.</p><p>No wonder over 52 "
-"million football fans trust us to keep them ahead of the game."
+"whoever you support, we are your definitive football source.</p><p>We have "
+"over 530 reporters on the ground in 50+ countries, getting closer to the "
+"action.  We create original content at source to deliver the news from the "
+"leagues, teams and players that matter.</p><p>No wonder over 52 million "
+"football fans trust us to keep them ahead of the game."
 msgstr ""
 "<p>Неважно, как называют футбол в вашей стране - мы предлагаем новости о "
 "футболе со всего мира.</p><p>Свыше 530 репортёров более чем в 50 странах "
-"находятся прямо в центре событий.  Мы создаём оригинальный местный "
-"контент и передаём актуальные новости от футбольных лиг, команд и "
-"игроков.</p><p>Неудивительно, что свыше 52 миллионов болельщиков доверяют"
-" нам держать их в курсе свежих новостей."
+"находятся прямо в центре событий.  Мы создаём оригинальный местный контент и"
+" передаём актуальные новости от футбольных лиг, команд и "
+"игроков.</p><p>Неудивительно, что свыше 52 миллионов болельщиков доверяют "
+"нам держать их в курсе свежих новостей."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
-"Saavn is the best Bollywood and Indian music listening experience, online"
-" and on the go. It's a simple, beautiful, and free way to search, "
-"discover, and listen to over a million songs, from the latest hits to "
-"hard-to-find classics."
+"Saavn is the best Bollywood and Indian music listening experience, online "
+"and on the go. It's a simple, beautiful, and free way to search, discover, "
+"and listen to over a million songs, from the latest hits to hard-to-find "
+"classics."
 msgstr ""
 
 #: templates/data-en.json:39
@@ -203,9 +202,10 @@ msgstr "Откройте для себя свежую музыку и больш
 
 #: templates/data-en.json:62
 msgid ""
-"Pocket service for Firefox - The best way to save articles, videos and "
-"more"
+"Pocket service for Firefox - The best way to save articles, videos and more"
 msgstr ""
+"Сервис Pocket для Firefox - Лучший способ сохранять статьи, видео и многое "
+"другое"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -229,9 +229,11 @@ msgstr "процесс открытия"
 
 #: templates/data-en.json:110
 msgid ""
-"Delicious is a free service designed with care to be the best place to "
-"save what you love on the web."
+"Delicious is a free service designed with care to be the best place to save "
+"what you love on the web."
 msgstr ""
+"Delicious - бесплатный сервис, с заботой созданный быть лучшим местом для "
+"сохранения того, что вы любите в Интернете."
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
@@ -239,11 +241,11 @@ msgstr "Больше никогда не потеряйте ссылку."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious помнит, поэтому вам не нужно."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "Оставайтесь с друзьями, где вы бы ни были в Интернете."
 
 #: templates/data-en.json:164
 msgid "Share the web"
@@ -255,8 +257,8 @@ msgstr "Поделитесь любой веб-страницей, в любом
 
 #: templates/data-en.json:173
 msgid ""
-"Cliqz delivers a real-time stream of the most relevant articles, stories,"
-" and videos based on your interests directly to Firefox."
+"Cliqz delivers a real-time stream of the most relevant articles, stories, "
+"and videos based on your interests directly to Firefox."
 msgstr ""
 
 #: templates/data-en.json:196
@@ -271,19 +273,18 @@ msgstr "Самая большая социальная сеть в Японии.
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Будьте в курсе того, что делают ваши друзья."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for "
 "Firefox allows users to post messages with 140-character limit, images, "
-"videos, etc. And it will show the notification when receiving new "
-"messages."
+"videos, etc. And it will show the notification when receiving new messages."
 msgstr ""
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Поделитесь интересными новостями - всегда и везде."
 
 #: templates/data-en.json:271
 msgid ""
@@ -301,9 +302,9 @@ msgstr "Отправляйте веб-страницы и картинки лю�
 
 #: templates/data-en.json:320
 msgid ""
-"Use your Firefox Twitter Share to quickly author tweets about the pages "
-"you discover across the web.  We shorten URLs for quick sharing using the"
-" t.co link shortener."
+"Use your Firefox Twitter Share to quickly author tweets about the pages you "
+"discover across the web.  We shorten URLs for quick sharing using the t.co "
+"link shortener."
 msgstr ""
 "Firefox Twitter Account позволяет быстро редактировать твиты о страницах "
 "которые вы найдете в Интернете. Для удобства обмена мы укорачиваем "
@@ -319,8 +320,8 @@ msgstr "Twitter Share позволяет быстро слать ссылки в
 
 #: templates/data-en.json:345
 msgid ""
-"Manage your professional identity. Build and engage with your "
-"professional network. Access knowledge, insights and opportunities."
+"Manage your professional identity. Build and engage with your professional "
+"network. Access knowledge, insights and opportunities."
 msgstr ""
 
 #: templates/data-en.json:352
@@ -340,8 +341,8 @@ msgstr "Tumbr позволяет без усилий обмениваться ч
 
 #: templates/data-en.json:398
 msgid ""
-"Create a single website for all your content. Publish on your own site "
-"from any device and share with your audiences across the web."
+"Create a single website for all your content. Publish on your own site from "
+"any device and share with your audiences across the web."
 msgstr ""
 
 #: templates/data-en.json:408
@@ -354,8 +355,8 @@ msgstr "ВКонтакте"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid ""
-"VK is a social network that unites people all over the world and helps "
-"them communicate comfortably and promptly."
+"VK is a social network that unites people all over the world and helps them "
+"communicate comfortably and promptly."
 msgstr ""
 "ВКонтакте — это социальная сеть для быстрой и удобной коммуникации между "
 "людьми по всему миру."
@@ -363,23 +364,25 @@ msgstr ""
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. "
-"When you find something that looks interesting, just Pin it! Pins are "
-"visual bookmarks that you organize and share the way you want."
+"When you find something that looks interesting, just Pin it! Pins are visual"
+" bookmarks that you organize and share the way you want."
 msgstr ""
 
 #: templates/data-en.json:460
 msgid ""
-"Discover ideas for all your projects and interests, hand-picked by people"
-" like you."
+"Discover ideas for all your projects and interests, hand-picked by people "
+"like you."
 msgstr ""
+"Исследуйте идеи для всех ваших проектов и интересов, отобранные людьми, "
+"такими как вы."
 
 #: templates/data-en.json:599 templates/data-en.json:608
 msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
-"Развлекательная социальная сеть для общения с друзьями, просмотра фильмов"
-" и сериалов, прослушивания музыки и многого другого."
+"Развлекательная социальная сеть для общения с друзьями, просмотра фильмов и "
+"сериалов, прослушивания музыки и многого другого."
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
@@ -387,8 +390,8 @@ msgstr "Одноклассники"
 
 #: templates/data-en.json:623
 msgid ""
-"Xing is the social network for professional networking, business "
-"marketing and career development."
+"Xing is the social network for professional networking, business marketing "
+"and career development."
 msgstr ""
 
 #: templates/data-en.json:631
@@ -409,14 +412,14 @@ msgstr ""
 
 #: templates/data-en.json:703
 msgid ""
-"Enjoy our detailed soccer livescores while surfing the web with your "
-"Firefox browser."
+"Enjoy our detailed soccer livescores while surfing the web with your Firefox"
+" browser."
 msgstr ""
 
 #: templates/data-en.json:704
 msgid ""
-"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as"
-" possible while navigating with your Firefox browser."
+"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as "
+"possible while navigating with your Firefox browser."
 msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
@@ -425,25 +428,27 @@ msgstr "Почта Yahoo"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid ""
-"Quickly send web pages to yourself and others with enhanced link previews"
-" and more."
+"Quickly send web pages to yourself and others with enhanced link previews "
+"and more."
 msgstr ""
 "Функция предварительного просмотра ссылок и другие возможности позволяют "
 "быстро отправлять веб-страницы себе и другим пользователям."
 
 #: templates/data-en.json:728
 msgid ""
-"Fast, simple to use email with 1 TB of free mail storage and smarter "
-"tools to help you get more done."
+"Fast, simple to use email with 1 TB of free mail storage and smarter tools "
+"to help you get more done."
 msgstr ""
-"Выполняйте больше задач благодаря быстрой и удобной электронной почте "
-"(1 ТБ пространства предоставляется бесплатно) и умным инструментам."
+"Выполняйте больше задач благодаря быстрой и удобной электронной почте (1 ТБ "
+"пространства предоставляется бесплатно) и умным инструментам."
 
 #: templates/data-en.json:740
 msgid ""
-"diaspora* is a distributed social network where you keep control over "
-"your data."
+"diaspora* is a distributed social network where you keep control over your "
+"data."
 msgstr ""
+"diaspora* - распределенная социальная сеть, где вы можете взять под контроль"
+" ваши данные."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
@@ -557,8 +562,8 @@ msgstr "Загрузить"
 
 #: templates/layout.html:110
 msgid ""
-"Installing Social Services requires at least Firefox version 29.  Upgrade"
-" your version of Firefox now."
+"Installing Social Services requires at least Firefox version 29.  Upgrade "
+"your version of Firefox now."
 msgstr ""
 "Для установки Социальных служб необходим Firefox версии 29 или выше. "
 "Обновите вашу версию Firefox."
@@ -589,8 +594,8 @@ msgid ""
 "This service is in beta testing, some functionality may not work as "
 "expected."
 msgstr ""
-"Эта служба находится в стадии бета-тестирования, некоторые функции могут "
-"не работать, как ожидалось."
+"Эта служба находится в стадии бета-тестирования, некоторые функции могут не "
+"работать, как ожидалось."
 
 #: templates/provider.html:59
 msgid ""
@@ -625,10 +630,11 @@ msgid "sidebar"
 msgstr "боковая панель"
 
 #: templates/provider.html:109
-msgid "This service adds a toolbar button to Firefox that may have notifications"
+msgid ""
+"This service adds a toolbar button to Firefox that may have notifications"
 msgstr ""
-"Эта служба добавляет кнопку на панели инструментов Firefox, которая может"
-" выдавать уведомления"
+"Эта служба добавляет кнопку на панели инструментов Firefox, которая может "
+"выдавать уведомления"
 
 #: templates/provider.html:109
 msgid "notifications"
