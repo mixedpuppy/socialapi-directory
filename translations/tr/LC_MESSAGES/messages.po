@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-11-19 11:10+0000\n"
+"PO-Revision-Date: 2015-12-30 08:18+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: tr <LL@li.org>\n"
 "Language: tr\n"
@@ -360,6 +360,8 @@ msgid ""
 "Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
 "service for classmates and old friends."
 msgstr ""
+"Odnoklassniki (Rusça: Одноклассники sınıf arkadaşları) sınıf arkadaşlarınız "
+"ve eski arkadaşlarınız için bir sosyal ağ hizmetidir."
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
@@ -425,7 +427,7 @@ msgstr ""
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "diaspora* ile paylaşın"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
@@ -587,7 +589,7 @@ msgstr "yer imleri"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Bu servis Firefox'a kenar çubuğu ekler"
 
 #: templates/provider.html:108
 msgid "sidebar"
