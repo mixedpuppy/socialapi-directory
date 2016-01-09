@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-12-26 15:47+0000\n"
+"PO-Revision-Date: 2016-01-09 19:39+0000\n"
 "Last-Translator: Alexander Slovesnik <unghost@mozilla-russia.org>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Language: ru\n"
@@ -191,6 +191,10 @@ msgid ""
 "and listen to over a million songs, from the latest hits to hard-to-find "
 "classics."
 msgstr ""
+"Saavn является лучшим источником для прослушивания музыки Болливуда и Индии,"
+" как в онлайн, так и в пути. Это простой, красивый и бесплатный способ "
+"поиска, нахождения и прослушивания более миллиона песен, от последних хитов "
+"до труднодоступной классики."
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -260,12 +264,16 @@ msgid ""
 "Cliqz delivers a real-time stream of the most relevant articles, stories, "
 "and videos based on your interests directly to Firefox."
 msgstr ""
+"Cliqz предоставляет в реальном времени поток наиболее релевантных статей, "
+"рассказов и видео на основе ваших интересов прямо в Firefox."
 
 #: templates/data-en.json:196
 msgid ""
 "Get the most relevant news based on your interests by crafting a unique "
 "information universe."
 msgstr ""
+"Получите наиболее актуальные, основанные на ваших интересах новости, путем "
+"создания уникальной информационной Вселенной."
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
@@ -281,6 +289,10 @@ msgid ""
 "Firefox allows users to post messages with 140-character limit, images, "
 "videos, etc. And it will show the notification when receiving new messages."
 msgstr ""
+"Sina Weibo является наиболее популярной службой микроблогов в Китае. Weibo "
+"для Firefox позволяет пользователям отправлять изображения, видео, сообщения"
+" длиной до 140 символов и многое другое. И при получении новых сообщений оно"
+" покажет уведомление."
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
@@ -291,6 +303,8 @@ msgid ""
 "Quickly share content you discover across the web on Google+. Use your "
 "Google+ account to share sites publicly or with your Circles."
 msgstr ""
+"Быстро поделитесь найденным вами контентом на Google+. Используйте аккаунт "
+"Google+, чтобы делиться сайтами с публикой или с вашими кругами."
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
@@ -323,10 +337,12 @@ msgid ""
 "Manage your professional identity. Build and engage with your professional "
 "network. Access knowledge, insights and opportunities."
 msgstr ""
+"Управляйте вашим профессиональным образом. Выстраивайте и взаимодействуйте с"
+" вашей профессиональной сетью. Доступ к знаниям, идеям и возможностям."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Поделитесь веб-сайтом с вашей профессиональной сетью."
 
 #: templates/data-en.json:370
 msgid ""
@@ -334,6 +350,9 @@ msgid ""
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
+"Размещайте текст, фото, цитаты, ссылки, музыку и видео из вашего браузера, "
+"телефона, десктопа, электронной почты, или из любого места, где бы вы ни "
+"были. Вы можете настроить всё, от цветов до HTML вашей темы."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
@@ -344,6 +363,8 @@ msgid ""
 "Create a single website for all your content. Publish on your own site from "
 "any device and share with your audiences across the web."
 msgstr ""
+"Создайте единый веб-сайт для всего вашего контента. Публикуйте контент на "
+"вашем сайте с любого устройства и делитесь им с вашей аудитории в Интернете."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
@@ -367,6 +388,10 @@ msgid ""
 "When you find something that looks interesting, just Pin it! Pins are visual"
 " bookmarks that you organize and share the way you want."
 msgstr ""
+"Pinterest является инструментом, помогающим вам открыть и запланировать "
+"вещи, которые вы хотите сделать. Когда вы найдете то, что выглядит "
+"интересно, просто Пиньте это! Пины являются визуальными закладками, которые "
+"вы организоваете и делитесь так, как вы того хотите."
 
 #: templates/data-en.json:460
 msgid ""
@@ -393,6 +418,8 @@ msgid ""
 "Xing is the social network for professional networking, business marketing "
 "and career development."
 msgstr ""
+"Xing — это социальная сеть для профессионалов, бизнес-маркетинга и "
+"карьерного роста."
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
@@ -408,19 +435,23 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Самый быстрый способ узнать счёт футбольного матча"
 
 #: templates/data-en.json:703
 msgid ""
 "Enjoy our detailed soccer livescores while surfing the web with your Firefox"
 " browser."
 msgstr ""
+"Насладитесь нашим подробным освещением хода футбольных матчей при серфинге в"
+" Интернете через браузер Firefox."
 
 #: templates/data-en.json:704
 msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as "
 "possible while navigating with your Firefox browser."
 msgstr ""
+"Благодаря виджету BeSoccer вы будете получать счета в футбольных матчах в "
+"реальном времени — так же быстро, как и при навигации через Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
