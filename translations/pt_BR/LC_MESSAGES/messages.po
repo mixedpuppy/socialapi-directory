@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-01-11 02:03+0000\n"
+"PO-Revision-Date: 2016-01-11 02:14+0000\n"
 "Last-Translator: Marco Aurélio <ouesten@me.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -75,8 +75,8 @@ msgid ""
 "With the click of a button, you can save interesting content on any website "
 "to <strong>%(name)s</strong>."
 msgstr ""
-"Com o clique de um botão, você pode salvar o conteúdo interessante de "
-"qualquer site em <strong>%(name)s</strong>."
+"Com o clique de um botão, salve o conteúdo interessante de qualquer site em "
+"<strong>%(name)s</strong>."
 
 #: templates/activated.html:76
 #, python-format
@@ -133,9 +133,9 @@ msgid ""
 "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them "
 "temporarily or removing them, by viewing the Add-ons Manager in Firefox."
 msgstr ""
-"Você pode facilmente <a href=\"%(url)s\">gerenciar seus serviços</a>, "
-"desativá-los temporariamente ou removê-los, visualizando o gerenciador de "
-"complementos do Firefox."
+"Pode <a href=\"%(url)s\">gerenciar seus serviços</a> facilmente, desativá-"
+"los temporariamente ou removê-los, através do gerenciador de complementos do"
+" Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -254,7 +254,7 @@ msgstr "Delicious lembra para você não precisar lembrar."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr "Manter-se em contato com amigos onde quer que você vá na web."
+msgstr "Fique em contato com seus amigos onde quer que vá na web."
 
 #: templates/data-en.json:164
 msgid "Share the web"
@@ -336,8 +336,7 @@ msgstr "Tweet para seus seguidores"
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr ""
-"O Twitter Share permite que você tweet rapidamente links para os seus "
-"seguidores."
+"O Twitter Share permite tuitar rapidamente links para os seus seguidores."
 
 #: templates/data-en.json:345
 msgid ""
@@ -357,13 +356,13 @@ msgid ""
 "phone, desktop, email or wherever you happen to be. You can customize "
 "everything, from colors to your theme's HTML."
 msgstr ""
-"Publique texto, fotos, citações, links, música e vídeos a partir de seu "
-"navegador, telefone, área de trabalho, e-mail de onde quer que esteja. Você "
-"pode personalizar tudo, de cores ao tema HTML."
+"Publique texto, fotos, citações, links, música e vídeos a partir do seu "
+"navegador, telefone, computador, e-mail de onde quer que esteja. Você pode "
+"personalizar tudo, de cores ao tema HTML."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr "O Tumblr permite que você compartilhe qualquer coisa facilmente."
+msgstr "O Tumblr permite compartilhar qualquer coisa facilmente."
 
 #: templates/data-en.json:398
 msgid ""
@@ -457,8 +456,8 @@ msgid ""
 "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as "
 "possible while navigating with your Firefox browser."
 msgstr ""
-"Graças ao widget BeSoccer, você obterá os resultados do futebol em tempo "
-"real o mais rápido possível enquanto navega no Firefox."
+"Graças ao widget BeSoccer, obterá os resultados do futebol em tempo real o "
+"mais rápido possível enquanto navega no Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
@@ -469,8 +468,8 @@ msgid ""
 "Quickly send web pages to yourself and others with enhanced link previews "
 "and more."
 msgstr ""
-"Envie rapidamente páginas da web para você mesmo e para outras pessoas com "
-"visualizações aprimoradas de links e muito mais."
+"Envie páginas web para você mesmo e para outras pessoas com visualizações "
+"aprimoradas de links e muito mais."
 
 #: templates/data-en.json:728
 msgid ""
