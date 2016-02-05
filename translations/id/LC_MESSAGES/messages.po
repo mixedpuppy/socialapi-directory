@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-01-23 03:47+0000\n"
+"PO-Revision-Date: 2016-02-05 07:43+0000\n"
 "Last-Translator: Timothy Aditya Sutantyo <timisutantyo@gmail.com>\n"
 "Language-Team: id <LL@li.org>\n"
 "Language: id\n"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: templates/activated.html:53
 msgid "Bookmark this page"
-msgstr ""
+msgstr "Markah laman ini"
 
 #: templates/activated.html:54
 #, python-format
@@ -105,11 +105,11 @@ msgstr ""
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Ganti Setelan dari Pengelola Pengaya"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Pengelola Pengaya"
 
 #: templates/activated.html:107
 #, python-format
@@ -120,7 +120,7 @@ msgstr ""
 
 #: templates/activated.html:112
 msgid "Next Steps"
-msgstr ""
+msgstr "Langkah Berikutnya"
 
 #: templates/activated.html:114
 #, python-format
@@ -214,11 +214,11 @@ msgstr ""
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr ""
+msgstr "Jangan pernah kehilangan tautan lagi."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious mengingat jadi Anda tidak perlu mengingatnya."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
@@ -230,7 +230,7 @@ msgstr "Bagikan situs"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Bagikan laman web apapun, di mana saja, kapan saja."
 
 #: templates/data-en.json:173
 msgid ""
@@ -271,11 +271,11 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Bagikan web di Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Kirim laman web dan gambar ke orang melalui Gmail."
 
 #: templates/data-en.json:320
 msgid ""
@@ -354,7 +354,7 @@ msgstr ""
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid ""
@@ -374,7 +374,7 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Cara tercepat untuk mengetahui skor sepak bola"
 
 #: templates/data-en.json:703
 msgid ""
@@ -448,7 +448,7 @@ msgstr "Donasi"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Kebijakan Privasi"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
@@ -478,7 +478,7 @@ msgstr ""
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Bahasa lainnya:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
@@ -487,7 +487,7 @@ msgstr ""
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s untuk Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
@@ -533,16 +533,16 @@ msgstr ""
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Pasang Firefox Beta"
 
 #: templates/provider.html:22 templates/provider.html:26
 #: templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "membutuhkan Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Pasang Firefox Aurora"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
@@ -566,7 +566,7 @@ msgstr ""
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "bagikan"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
