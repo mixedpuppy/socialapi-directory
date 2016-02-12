@@ -165,40 +165,6 @@
         "shortDescription": "{{ _('Share any web page, anywhere, anytime.') }}"
       }
     },
-    "cliqz": {
-      "status": "release",
-      "manifest": {
-        "origin": "https://mozsocial.cliqz.com",
-        "name": "Cliqz",
-        "description": "{{ _('Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox.') }}",
-        "author": "Cliqz",
-        "homepageURL": "https://mozsocial.cliqz.com/",
-        "version": "2",
-        "workerURL": "https://mozsocial.cliqz.com/worker?version=2",
-        "sidebarURL": "https://mozsocial.cliqz.com/sidebar?version=2",
-        "shareURL": "https://mozsocial.cliqz.com/share-panel?url=%{url}&title=%{title}&version=2",
-        "iconURL": "images/cliqz/icon16.png",
-        "icon32URL": "images/cliqz/icon32.png",
-        "icon64URL": "images/cliqz/icon64.png",
-        "activities": {
-          "share": {
-            "href": "https://mozsocial.cliqz.com/share-panel?url=%{url}&title=%{title}&version=2",
-            "disposition": "inline",
-            "filters": {
-              "type": ["*"]
-            },
-            "returnValue": false
-          }
-        }
-      },
-      "viewData": {
-        "name": "Cliqz",
-        "shortDescription": "{{ _('Get the most relevant news based on your interests by crafting a unique information universe.') }}",
-        "links": {
-          "learnmore": "https://mozsocial.cliqz.com/"
-        }
-      }
-    },
     "mixi": {
       "status": "release",
       "manifest": {
