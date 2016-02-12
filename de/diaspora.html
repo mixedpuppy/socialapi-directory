@@ -1,0 +1,312 @@
+<html>
+<head>
+  <base href="/de/"/>
+  <title>diaspora* für Firefox</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="//mozorg.cdn.mozilla.net/media/css/firefox_new-bundle.a865834d5211.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Holen Sie sich Firefox <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("Firefox aktualisieren <span>&raquo;</span><br/><span class=\"smaller\">Erfordert Firefox 29</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+  <script>
+    var releases = [45, 46, 47, 48];
+    var minver = 32;
+    $(document).ready(function($) {
+      // check the minver of this provider against firefox
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 1; // we're only doing minver compare
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (ffVersion < minver) {
+        if (minver > releases[0]) {
+          $("#beta-required").removeAttr("hidden");
+          $("#incompatibility-banner").removeAttr("hidden");
+        }
+        $(".button").removeAttr("onclick");
+        switch (releases.indexOf(minver)) {
+          case 1:
+            $(".button").html("Firefox Beta installieren <span>&raquo;</span><br/><span class=\"smaller\">Erfordert Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/beta/");
+            break;
+          case 2:
+            $(".button").html("Firefox Aurora installieren <span>&raquo;</span><br/><span class=\"smaller\">Erfordert Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/aurora/");
+            break;
+          case 3:
+            $(".button").html("Firefox Nightly installieren <span>&raquo;</span><br/><span class=\"smaller\">Erfordert Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/nightly/");
+            break;
+          default:
+            $(".button").html("Firefox aktualisieren <span>&raquo;</span><br/><span class=\"smaller\">Erfordert Firefox 32</span>");
+            $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+            break;
+        }
+      }
+    });
+  </script>
+
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/de/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="Firefox für Desktop"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">Sie müssen Firefox verwenden, um soziale Dienste zu installieren.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Herunterladen.</a>
+  </p><p id="upgrade-required" hidden="true">Installation von sozialen Diensten erfordert mindestens die Firefox-Version 29. Aktualisieren Sie jetzt Ihren Firefox.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">Herunterladen.</a>
+  </p><p id="beta-required" hidden="true">Dieser Dienst erfordert eine noch nicht veröffentlichte Firefox-Version.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+    <div id="detail">
+      <div class="detail-header clearfix">
+        <div>
+        <a href=".">Startseite</a>
+        </div>
+        <div>
+        <span>diaspora*</span>
+        </div>
+      </div>
+      <div class="detail-content">
+
+
+
+        <div class="row">
+          <div class="col-2">
+            <div class="provider-item-detail">
+
+            <h1><img src="data:image/png;base64,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"></img></h1>
+
+              <h3 class="tagline">Auf diaspora* teilen</h3>
+              <p class="lead">Über das Teilen-Widget von diaspora* können Sie Ihre Lieblings-Links teilen.</p>
+              <a class="button gutter-bottom-12" onclick="activateProvider(this, 'diaspora')" data-service="{&#34;author&#34;: &#34;The diaspora* project&#34;, &#34;description&#34;: &#34;diaspora* ist ein verteiltes soziales Netzwerk, in dem Sie die Kontrolle \u00fcber Ihre Daten behalten.&#34;, &#34;homepageURL&#34;: &#34;https://diasporafoundation.org&#34;, &#34;icon32URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAABSUlEQVRIx62VLZKFMAzHOco7AkfhCKhoLK4z2KexT6OxzOCwaOzqzqCq/yv6CkkbPnaHRLXT/JqkSZplilBOhkYC05EM5dkdoZJmYcp1pvLc+BXdq+lIryPzgtZLcxBopUJ3HX/QMr09OfTB8tVBQxQydsX5HkEWPZA9F3rqlnMAaLyI/hIQMnH07jcAs6+6bWPCgEYBWGb0xocj8oxMWNTbcY/ZAQCB0GCA3VZfNSyBHbhYOLYKpl5ansid9oO7MjEfNkCF++I0QI1JOH0mFnUK8NpeYKx4JwUQME5xOzY9AXTq3ZVaTEof1AdBTHo/7IWUVmAsbQowopRT93tRHS4NI4+aqRHms7oTNZNs50lJW3ccRpkMlIoh3kpWBm2gxCPNV0HPjlZwAJy8fRXjXQ7VOhmjLZY4gcWzY/2Bj+WBr+2Bz/U/3/svuLkdhvuw9/EAAAAASUVORK5CYII=&#34;, &#34;icon64URL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAClElEQVRo3s1ZK5KDQBDlCBxhj5AjcIQcAdUai6MKi44djYrAUhWHRceiqYpC9wo2uyx0z/QMTYUel0nRb/r/iSJPggQKuEMPuDo93KGAJDqKIIYU7hu21LlDCrEu8wSMiPXyGLhoMX94M3+fx06VQBzw8q0kQtUBV3jtZo+A8IJrCHujwvxXDr6i71XZz24af5K9HAJ8KWmetoZY6fUNcXINKUiFT1ElVISK5VPU7PUIuMq1uQsAknEBYrnxVXsBUMboE3h2A9iqARIfd1IAgKs05ZfxVAA8luwvfgFFBcBSBr6JRwmA+bN/4rrEG2bHAsAfX4CUuuwQEbFHQ8CgATyRfkiNAxoaQDoDIEvNafHpNQwZgBxrHH+/QJevMwDi6kYw6NH8JBwXgBxrHFa3tBLYCNAhRwPWaFgAFOuZbpwnQEFdjOhPI8N6po4GUJAWUKI+TZwVUBVAi0dQSVcHWgpwU0ub4fanHI+hUQqgPEgCSFaNETDxq1WG8SRjKgtAE8aAtaVijtwpIxyGnbUYQAgMCWtPAPL40ApZvwH0+8oQcdTn2hTh3AczsQImtpChQ3GhKX5r9meSUaIp/jfVPoWpRPyTd+4T+gBfki1PHxT5RBbAF6X28uzvneMeNaSWslwi/spavAjUEAsak6czvzehajCC1rS2BFsJSGuzcnE2pzkr/v/izS1qKiXNKSeDiv3wTWyoraw95+wgI12wE3cSjXxOxI9o6pUcBjLWb3PFxM/N6HkhP6QqFy3HxGq1XHlA5jekcrljIwgvjSwImcBBZYWjM889EXHkLd81qHSNajNnps+ws/+nl0yLjxxWf51/XH+ChcUJVjanWFqdYG13gsXlYpQbsrrVXWR/dHl95Pr+G8eHIUSueAGgAAAAAElFTkSuQmCC&#34;, &#34;iconURL&#34;: &#34;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAABkklEQVQoUwXBPUhUAQAA4O/de5737qfS89AoEsEhFIciiiYjCAohCNrbWtpLcM1ojaCgVYcGJyGoLcekP4IGQbKUrqQ0z5877873Xt8XDIBQr1I+nsyP0FltLrWStkSGiECPSlib7puOyyESrcbO87+zjf2uTDAgrzpy8mX1YlGmJVOQc2h7pX7jy1pNMKgvP/x+cKJXYNd9mXkNoY7N1fUL241crDbTPxFJpA6dc14olYlUR2sPC3Llof6ZXrFBW5qga1dLQeTE3XJ/rng9DhNjHnnqqg1k7pk3qSvOx9ei/JlQoIxTHoAnYBSh/EgUxIEebyw4645xNLywZktZW5CPuj8TobLAoXFw3Hf/HJPT1F3PNV+3pRKpWTwzh8dIpTpaS7n91Z2FtsQVFXVvLaqrmJLq2H11sBYMqdWGv1ZrbcNCGzitalnBTuPHpT8rYeyomX2ObpYKTQd6RPZsCjX267c/LReERanVb4W5bCw3SipxpGVr6detj+8oCgYQiJRULpemohrd383FvQ9NXRn+A1iPlomQUIqjAAAAAElFTkSuQmCC&#34;, &#34;name&#34;: &#34;diaspora*&#34;, &#34;origin&#34;: &#34;https://share.diasporafoundation.org&#34;, &#34;shareURL&#34;: &#34;https://share.diasporafoundation.org/?url=%{url}&amp;title=%{title}&amp;notes=%{text}&#34;}">Jetzt aktivieren <span>&raquo;</span></a>
+              <div class="provider-description">diaspora* ist ein verteiltes soziales Netzwerk, in dem Sie die Kontrolle über Ihre Daten behalten.</div>
+
+              <a href="https://diasporafoundation.org/" class="moreinfo" target="_blank">Erfahren Sie mehr&hellip;</a>
+
+            </div>
+  
+          </div>
+          <div class="col-2 clearfix">
+            <div class="clearfix"><img src="images/diaspora/detail.1.png" class="provider-primary-image" /></div>
+
+          </div>
+  
+        </div>
+
+
+        <div class="features col-2 clearfix">
+          <span class="supported" title="Dieser Dienst unterstützt das Teilen von Inhalten">Teilen</span> 
+          <span  title="Dieser Dienst bietet eine Funktion für Lesezeichen">Lesezeichen</span> 
+          <span  title="Dieser Dienst fügt Firefox eine Sidebar hinzu">Sidebar</span> 
+          <span  title="Dieser Dienst fügt eine Schaltfläche zur Symbolleiste von Firefox hinzu, die Benachrichtigungen anzeigen kann">Benachrichtigungen</span>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              Teile dieses Inhalts stehen unter einem ©1998–2016 von einzelnen Mitwirkenden an mozilla.org. Der Inhalt steht unter einer <a href="http://www.mozilla.org/foundation/licensing/website-content/">Creative-Commons-Lizenz</a>.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">Zu dieser Seite beitragen</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">Kontakt</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">Werden Sie Partner</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">Spenden</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">Datenschutzrichtlinie</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">Rechtliche Hinweise</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">Markenrechtsverletzung melden</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">SocialAPI für Entwickler</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">Andere Sprachen:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" selected>Deutsch</option>
+
+
+<option lang="en-GB" value="en-GB" >English (United Kingdom)</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-CN" value="zh-CN" >中文 (简体中文, 中国)</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體中文, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">Los</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/de/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>
