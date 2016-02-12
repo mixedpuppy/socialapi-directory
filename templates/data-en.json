@@ -48,7 +48,7 @@
       }
     },
     "pocket": {
-      "status": "release",
+      "status": "demo",
       "manifest": {
         "name": "Pocket",
         "iconURL": "images/pocket/icon16.png",
