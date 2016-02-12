@@ -22,6 +22,10 @@
       "featured": ["yahoomail"],
       "providers": ["yahoomail", "facebook", "google", "linkedin", "tumblr", "twitter"]
     },
+    "de": {
+      "featured": ["xing"],
+      "providers": ["xing", "yahoomail", "facebook", "google", "linkedin", "twitter"]
+    },
     "jp-JP": {
       "featured": ["mixi"],
       "providers": ["mixi", "yahoomail", "twitter", "google", "facebook", "gmail"]
@@ -45,11 +49,11 @@
   },
   "carousel": {
     "en-US": ["facebook", "yahoomail", "twitter"],
-    "en-IN": ["saavn", "pocket", "facebook"],
+    "en-IN": ["saavn", "yahoomail", "facebook"],
     "zh-CN": ["twitter", "weibo", "yahoomail"],
     "zh-TW": ["yahoomail", "twitter", "google"],
     "ja": ["mixi", "twitter", "yahoomail"],
     "ru": ["odnoklassniki", "vkontakte", "yahoomail"],
-    "de": ["cliqz", "yahoomail", "twitter"]
+    "de": ["xing", "yahoomail", "twitter"]
   }
 }
