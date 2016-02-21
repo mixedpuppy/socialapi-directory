@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-09-01 17:11+0000\n"
+"PO-Revision-Date: 2016-02-21 00:23+0000\n"
 "Last-Translator: Théo Chevalier <theo.chevalier11@gmail.com>\n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -175,7 +175,7 @@ msgstr ""
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr " "
+msgstr "La source par excellence pour tout ce qui concerne le football."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
