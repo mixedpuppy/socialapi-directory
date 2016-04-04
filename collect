@@ -2,9 +2,9 @@
 pushd .
 cd ../socialapi-pages
 rm -rf jp-JP es-AR css js images index.html
+wget -nH -erobots=off -p http://localhost:8888/favicon.ico
 wget -nH -erobots=off -p http://localhost:8888/index.html
 wget -nH -erobots=off -p http://localhost:8888/sharePanel.html
-wget -nH -erobots=off -p http://localhost:8888/redirect.html
 for __LOCALE in cs de en-US en-GB es fr gl hu it ja nl pt-BR ru sl uk zh-CN zh-TW
 do
   rm -rf $__LOCALE
