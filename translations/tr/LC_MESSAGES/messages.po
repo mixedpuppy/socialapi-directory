@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-12-30 08:18+0000\n"
+"PO-Revision-Date: 2016-05-07 11:35+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: tr <LL@li.org>\n"
 "Language: tr\n"
@@ -237,7 +237,7 @@ msgstr "Web'i paylaşın"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "İstediğiniz web sayfasını her zaman, her yerde paylaşın."
 
 #: templates/data-en.json:173
 msgid ""
@@ -375,17 +375,19 @@ msgstr ""
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING daha iyi bir iş yaşamı için profesyonel sosyal ağdır."
 
 #: templates/data-en.json:632
 msgid ""
 "Expand your existing network and access new contacts, groups, jobs, "
 "companies, events and news from your industry."
 msgstr ""
+"Çevrenizi genişletin ve sektörünüzle ilgili yeni kişilere, gruplara, iş "
+"olanaklarına, şirketlere, etkinliklere ve haberlere ulaşın."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Futbol sonuçlarını almanın en hızlı yolu"
 
 #: templates/data-en.json:703
 msgid ""
