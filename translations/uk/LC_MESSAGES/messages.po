@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-05-17 14:09+0000\n"
+"PO-Revision-Date: 2016-05-17 14:18+0000\n"
 "Last-Translator: Tymur Faradzhev <faradzhev.timur@gmail.com>\n"
 "Language-Team: uk <LL@li.org>\n"
 "Language: uk\n"
@@ -322,9 +322,9 @@ msgid ""
 "discover across the web.  We shorten URLs for quick sharing using the t.co "
 "link shortener."
 msgstr ""
-"Використовуйте свій Firefox Twitter Share для швидкого редагування твітів "
-"про сторінки, які ви знайдете в Інтернеті. Ми скорочуємо URL за допомогою "
-"t.co link shortener для зручності обміну."
+"Використовуйте Firefox Twitter Share для швидкого написання твітів про "
+"сторінки, які ви знаходите в Інтернеті. Для зручності ми скорочуємо "
+"посилання за допомогою сервісу \"t.co\"."
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
@@ -339,12 +339,12 @@ msgid ""
 "Manage your professional identity. Build and engage with your professional "
 "network. Access knowledge, insights and opportunities."
 msgstr ""
-"Керуйте своїми професійними даними. Створюйте та розширюйте свою професійну "
-"мережу. Отримуйте доступ до знань, розуміння та нових можливостей."
+"Керуйте своїми професійними даними. Створюйте та збільшуйте свою професійну "
+"мережу. Отримуйте доступ до знань, ідей та нових можливостей."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr "Діліться Інтернетом зі своєю професійною мережею."
+msgstr "Діліться зі своєю професійною мережею."
 
 #: templates/data-en.json:370
 msgid ""
@@ -353,12 +353,12 @@ msgid ""
 "everything, from colors to your theme's HTML."
 msgstr ""
 "Розміщуйте текст, фото, цитати, посилання, музику та відео зі свого "
-"браузера, телефону, електронної пошти, або звідки ви захочете. Ви можете "
-"налаштувати що завгодно, від кольорів до тем HTML."
+"браузера, телефону, електронної пошти, і більше. Ви можете налаштувати що "
+"завгодно, від кольорів до HTML вашої теми."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr "Tumblr дає вам змогу зручно ділитись чим завгодно."
+msgstr "Tumblr дозволяє без зусиль поширювати що завгодно."
 
 #: templates/data-en.json:398
 msgid ""
@@ -371,7 +371,7 @@ msgstr ""
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr "Діліться цікавим вмістом зі свого власного сайту."
+msgstr "Поширюйте цікавий вміст зі свого власного сайту."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -550,7 +550,7 @@ msgstr "Докладніше&hellip;"
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
 msgstr ""
-"Підвищіть ефективність свого Firefox, отримайте повну віддачу від Інтернету"
+"Підвищіть ефективність свого Firefox, отримайте максимум від Інтернету"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -583,11 +583,11 @@ msgstr "потребує Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr "Демо SocialAPI"
+msgstr "Демонстрація SocialAPI"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
-msgstr "Настільний Firefox"
+msgstr "Firefox для робочого столу"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
