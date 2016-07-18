@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-07-18 12:01+0000\n"
+"PO-Revision-Date: 2016-07-18 12:14+0000\n"
 "Last-Translator: Dinesh <dineshmv38@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
@@ -113,24 +113,24 @@ msgstr "తరువాతి దశలు"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">ఈ సేవ ఫైర్ఫాక్స్ కు జోడించడాన్ని గురించి మరింత తెలుసుకోండి</a>."
 
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr ""
+msgstr "<a href=\"%(url)s\">మరింత తెలుసుకోండి</a> ఏమి అందిస్తుందో <a href=\"%(url)s\">%(name)s</a> గురించి."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr ""
+msgstr "<a href=\".\">అన్వేషించండి మరియు మీరు Firefox జోడించవచ్చు</a> మరిన్ని సేవలను కనుగొనండి."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "ప్రపంచవ్యాప్తంగా ఫుట్బాల్ వార్తలకు కచ్చితమైన ఆధారం."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "మేము నివసిస్తున్నాము మరియు ఫుట్బాల్ ఊపిరిగా - ప్రతిచోటా, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -138,6 +138,9 @@ msgid ""
 "getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to "
 "keep them ahead of the game."
 msgstr ""
+"<p> ఫుట్బాల్, సాకర్, ఫుట్బాల్, కాలసియో, ఫుట్బాల్ -. మీరు కాల్ మరియు మీరు మద్దతు ఎవరైతే, మేము మీ నిశ్చయాత్మక ఫుట్బాల్ మూలం సంసార</p><p>పొందడానికి, 50+ దేశాలు లో మైదానంలో 530 పైగా విలేకరులతో కలిగి "
+"చర్య దగ్గరగా.  మేము ఆ విషయం లీగ్లు, జట్లు మరియు క్రీడాకారులు నుండి వార్తలు బట్వాడా మూలం వద్ద అసలు కంటెంట్ సృష్టించడానికి. ఆట ముందుకు ఉంచడానికి</p><p> 52 మిలియన్లకు పైగా ఆశ్చర్యపోనవసరం ఫుట్బాల్ "
+"అభిమానులు మమ్మల్ని నమ్మండి."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
@@ -147,7 +150,7 @@ msgstr ""
 
 #: templates/data-en.json:39
 msgid "Music Feed"
-msgstr ""
+msgstr "మ్యూసిక్ ఫీడ్"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
@@ -159,7 +162,7 @@ msgstr ""
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr ""
+msgstr "తరువాత కొరకు సేవ్ చేయండి"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -352,92 +355,92 @@ msgstr ""
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "ఈ సైటుకి తోడ్పడండి"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "మమ్ముల్ని సంప్రదించండి"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "మాతో భాగస్వాములవ్వండి"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "విరాళమివ్వండి"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr ""
+msgstr "ప్రైవసీ విధానం"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr ""
+msgstr "చట్టపరమైన గమనికలు"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "ట్రేడ్‌మార్క్ దుర్వినియోగాన్ని నివేదించండి"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "డెవలెపర్ల కోసం SocialAPI"
 
 #: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "ఇప్పుడే క్రియాశీలం చేయి"
 
 #: templates/index.html:38 templates/index_entry.html:10 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "మరింత తెలుసుకోండి &hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "మీ Firefox అనుభవాన్ని మెరుగుపరచడానికి, వెబ్ నుండి మరిన్ని పొందండి"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "ఇతర భాషలు:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "వెళ్ళు"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "Firefox కోసం %(name)s"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Firefox కోసం సేవలు"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "ఫైర్ఫాక్సును పొందండి"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "ఫైర్ఫాక్స్ అప్గ్రేడ్"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "Firefox 29 అవసరం"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI డెమో"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "డెస్క్టాప్ కోసం Firefox"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "మీరు సామాజిక సేవలు ఇన్స్టాల్ చేయడానికి ఫైర్ఫాక్సు ఉపయోగించాలి."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr ""
+msgstr "డౌనులోడు"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
@@ -449,19 +452,19 @@ msgstr ""
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Firefox బీటా ఇన్స్టాల్ చేయండి"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "Firefox అవసరం"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Firefox అరోరా ఇన్స్టాల్ చేయండి"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Firefox నైట్లీ ఇన్స్టాల్ చేయండి"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
@@ -477,7 +480,7 @@ msgstr ""
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "షేర్ చేయ్యి"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
@@ -493,7 +496,7 @@ msgstr ""
 
 #: templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "సైడ్‌బార్‌"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
@@ -501,15 +504,15 @@ msgstr ""
 
 #: templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "ప్రకటనలు"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "ఇది ఒక డెమో సేవ"
 
 #: templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "డెమో"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
@@ -517,9 +520,9 @@ msgstr ""
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "బీటా"
 
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "%(name)s ఆక్టివేట్ చేయండి"
