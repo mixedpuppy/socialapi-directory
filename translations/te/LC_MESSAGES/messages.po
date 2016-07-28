@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-07-18 12:14+0000\n"
+"PO-Revision-Date: 2016-07-28 04:42+0000\n"
 "Last-Translator: Dinesh <dineshmv38@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
@@ -147,6 +147,8 @@ msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the "
 "latest hits to hard-to-find classics."
 msgstr ""
+"Saavn, ఉత్తమ బాలీవుడ్, భారతీయ సంగీతం వినే అనుభవం కలిగించు ఆన్లైన్ సైటు. ఇది తాజా హిట్స్ నుండి కష్టపడి కనుగొనే క్లాసిక్ వరకు, అన్వేషణ కనుగొనడంలో, మరియు ఒక మిలియన్ పైగా పాటలు వినండి, సాధారణ, "
+"అందమైన, మరియు ఉచిత మార్గం."
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -154,11 +156,11 @@ msgstr "మ్యూసిక్ ఫీడ్"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "తాజా సంగీతాన్ని కనుగొని మీరు ప్రేమించే మరిన్ని వినండి."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Firefox కోసం పాకెట్ సేవ - వ్యాసాలు, వీడియోలు మరియు మరింత సేవ్ చేయడానికి ఉత్తమ మార్గం"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -166,89 +168,91 @@ msgstr "తరువాత కొరకు సేవ్ చేయండి"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "ఒక అనుకూలమైన, అందమైన ప్రదేశం మీరు తర్వాత చూడాలనే కంటెంట్ సేవ్ చేయవచ్చు."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
-msgstr ""
+msgstr "మీ ఆసక్తులకు సంబంధించిన అత్యంత ఆసక్తికరమైన విషయాన్ని తెలుసుకొనుటకు ఒక కొత్త మార్గం."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "ఒక ఆవిష్కరణ అనుభవం"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr ""
+msgstr "Delicious వెబ్లో మీరు ఇష్టపడే ఏమి సేవ్ ఉత్తమ ప్రదేశంగా జాగ్రత్తగా రూపొందించిన ఒక ఉచిత సేవ."
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr ""
+msgstr "మళ్ళీ ఒక లింక్ కోల్పోవద్దు."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious గుర్తుంచుకుటుంది కాబట్టి మీరు అవసరం లేదు."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "వెబ్ లో ఎక్కడికి వెళ్ళినా మీ స్నేహితులతో మాట్లాడుతూ ఉండవచ్చు."
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "వెబ్ ను పంచుకోండి"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "ఏ వెబ్ పేజీ ఎప్పుడైనా, ఎక్కడైనా, షేర్ చేయండి."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
-msgstr ""
+msgstr "Cliqz అత్యంత సంబంధిత వ్యాసాలు, కథలు, మరియు నేరుగా ఫైర్ఫాక్స్ మీ ఆసక్తుల ఆధారంగా వీడియోలను ఒక వాస్తవ కాల ప్రవాహంలో అందిస్తుంది."
 
 #: templates/data-en.json:196
 msgid "Get the most relevant news based on your interests by crafting a unique information universe."
-msgstr ""
+msgstr "ఒక ఏకైక సమాచార విశ్వం క్రాఫ్టింగ్ మీ ఆసక్తుల ఆధారంగా అత్యంత సంబంధిత వార్తలు పొందండి."
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "జపాన్లో అతిపెద్ద సామాజిక నెట్వర్క్."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "మీ స్నేహితులు ఎంత వరకు ఏమిటో తెలుసుకుంటూ ఉండండి."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when "
 "receiving new messages."
 msgstr ""
+"సిన Weibo చైనా అత్యంత ప్రాచుర్యం సూక్ష్మ బ్లాగింగు సేవ. Firefox కోసం Weibo 140-అక్షరాల పరిమితి తో, చిత్రాలు, వీడియోలు, మొదలైన సందేశాలను పోస్ట్ చేయడానికి వినియోగదారులను అనుమతిస్తుంది. మరియు నూతన "
+"సందేశాలను అందుకున్నప్పుడే అది నోటిఫికేషన్ చూపిస్తుంది."
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "ఎక్కడైనా, ఎప్పుడైనా మీ ఆసక్తికరమైన వార్తలను భాగస్వామ్యం చేసుకోండి."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "మీరు Google+ లో వెబ్ లో కనుగొనడంలో త్వరగా కంటెంట్ షేర్ చేయవచ్చు. పబ్లిక్గా లేదా మీ వలయాలు తో సైట్లు భాగస్వామ్యం చేయడానికి మీ Google+ ఖాతాను ఉపయోగించండి."
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Google+లో వెబ్ ను షేర్ చేయండి."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Gmail ని ఉపయోగించి ప్రజలకు వెబ్ పేజీలు మరియు చిత్రాలను పంపండి."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
-msgstr ""
+msgstr "త్వరగా మీరు వెబ్లో కనుగొనడంలో పేజీల గురించి ట్వీట్లు రచయిత మీ Firefox Twitter కు భాగస్వామ్యం ఉపయోగించండి. మేము t.co లింక్ Shortener ఉపయోగించి శీఘ్ర భాగస్వామ్యం కోసం URL లు షార్ట్నర్."
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "మీ అనుచరులకు ట్వీట్ చేయండి"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter కు షేర్ మీరు మీ అనుచరులకు ట్వీట్ లింకులు త్వరగా అనుమతిస్తుంది."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
@@ -272,15 +276,15 @@ msgstr ""
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "మీ సొంత సైట్ నుండి ఆసక్తికరమైన కంటెంట్ షేర్ చేయండి."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
-msgstr ""
+msgstr "VK ప్రపంచవ్యాప్తంగా ప్రజలు కలుస్తుంది మరియు వాటిని హాయిగా మరియు వెంటనే కమ్యూనికేట్ సహాయపడుతుంది ఒక సామాజిక నెట్వర్క్."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
@@ -290,15 +294,15 @@ msgstr ""
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
-msgstr ""
+msgstr "మీ అన్ని ప్రాజెక్టులు మరియు ఆసక్తులు ఆలోచనలు కనుగొనండి, మీరు వంటి ప్రజలు, చేతితో ఎన్నుకున్నవి."
 
 #: templates/data-en.json:599 templates/data-en.json:608
 msgid "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends."
-msgstr ""
+msgstr "Odnoklassniki (Russian: Одноклассники Classmates) సహచరులు మరియు పాత స్నేహితుల కోసం ఒక సామాజిక నెట్వర్క్ సేవ."
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
