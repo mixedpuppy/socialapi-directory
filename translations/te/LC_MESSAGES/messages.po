@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-07-28 04:42+0000\n"
+"PO-Revision-Date: 2016-08-03 11:39+0000\n"
 "Last-Translator: Dinesh <dineshmv38@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
@@ -256,7 +256,7 @@ msgstr "Twitter కు షేర్ మీరు మీ అనుచరులక
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "మీ వృత్తిపరమైన గుర్తింపు నిర్వహించండి. బిల్డ్ మరియు మీ ప్రొఫెషనల్ నెట్వర్క్ సన్నిహితంగా. జ్ఞానం, దూరదృష్టి మరియు అవకాశాలు యాక్సెస్ చేయాలి."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
@@ -330,7 +330,7 @@ msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "యాహూ మెయిల్"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
@@ -346,7 +346,7 @@ msgstr ""
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "డయాస్పోరా తో పంచుకో"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
@@ -492,7 +492,7 @@ msgstr ""
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "బుక్ మార్కింగ్"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
