@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-08-03 11:39+0000\n"
-"Last-Translator: Dinesh <dineshmv38@gmail.com>\n"
+"PO-Revision-Date: 2016-08-03 15:00+0000\n"
+"Last-Translator: Sai Karthik Karra <kskarthik91@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -260,19 +260,19 @@ msgstr "మీ వృత్తిపరమైన గుర్తింపు 
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "మీ వృత్తిపరమైన నెట్వర్క్తో వెబ్ భాగస్వామ్యం."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
-msgstr ""
+msgstr "పోస్ట్ మీ బ్రౌజర్, ఫోన్, డెస్క్టాప్, ఇమెయిల్ లేదా చోట మీరు కావడం టెక్స్ట్, ఫోటోలు, కోట్స్, లింకులు, సంగీతం మరియు వీడియోలను. మీరు మీ థీమ్ యొక్క HTML రంగు నుండి, ప్రతిదీ అనుకూలీకరించవచ్చు."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "టంబ్లర్ మీరు అప్రయత్నంగా ఏదైనా పంచుకునేందుకు అనుమతిస్తుంది."
 
 #: templates/data-en.json:398
 msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
-msgstr ""
+msgstr "అన్ని మీ కంటెంట్ కోసం ఒక వెబ్ సైట్ సృష్టించడానికి. ఏ పరికరం నుండి మీ స్వంత సైట్ లో ప్రచురించు మరియు వెబ్లో మీ ప్రేక్షకులలో భాగస్వామ్యం."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
@@ -291,6 +291,8 @@ msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way "
 "you want."
 msgstr ""
+"పింట్రెస్ట్ మీరు కనుగొనడంలో మరియు మీరు చేయాలనుకుంటున్నారా విషయాలు ప్లాన్ సహాయం ఒక సాధనం. మీరు ఆసక్తికరమైన కనిపించే ఏదో చూసినప్పుడు, దాన్ని పిన్! పిన్స్ మీరు నిర్వహించడానికి మరియు మీకు కావలసిన "
+"విధంగా పంచుకునే దృశ్య బుక్మార్క్లు."
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
@@ -306,27 +308,27 @@ msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
-msgstr ""
+msgstr "జింగ్ ప్రొఫెషనల్ నెట్వర్కింగ్, వ్యాపార మార్కెటింగ్ మరియు వృత్తి అభివృద్ధి కోసం సామాజిక నెట్వర్క్."
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING ఒక మంచి పని కాల జీవితం కోసం ప్రొఫెషనల్ నెట్వర్క్."
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
-msgstr ""
+msgstr "మీ ఇప్పటికే నెట్వర్క్ను విస్తరించేందుకు మరియు మీ పరిశ్రమలో నుండి కొత్త పరిచయాలు, సమూహాలు, ఉద్యోగాలు, కంపెనీలు, ఈవెంట్స్ మరియు వార్తా యాక్సెస్."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "మీ సాకర్ స్కోర్లు పొందడానికి వేగవంతమైన మార్గం"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr ""
+msgstr "మీ ఫైర్ఫాక్స్ బ్రౌజర్ తో వెబ్ సర్ఫింగ్ చేస్తున్న సమయంలో మా వివరణాత్మక సాకర్ ప్రత్యక్ష స్కోర్లు ఆనందించండి."
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
-msgstr ""
+msgstr "BeSoccer విడ్జెట్ కు ధన్యవాదాలు, మీ ఫైర్ఫాక్స్ బ్రౌజర్ తో నావిగేట్ మీరు వీలైనంత త్వరగా వాస్తవ కాల సాకర్ స్కోర్లు పొందుతారు."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
@@ -334,15 +336,15 @@ msgstr "యాహూ మెయిల్"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
-msgstr ""
+msgstr "త్వరగా మెరుగైన లింక్ ప్రివ్యూలు మరియు మరింత మిమ్మల్ని వెబ్ పేజీలు మరియు ఇతరులు పంపండి."
 
 #: templates/data-en.json:728
 msgid "Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done."
-msgstr ""
+msgstr "ఫాస్ట్, మీరు మరింత పూర్తి సహాయ ఉచిత మెయిల్ నిల్వ మరియు తెలివిగా సాధనాలను 1TB ఇమెయిల్ ఉపయోగించడానికి సులభమైనది."
 
 #: templates/data-en.json:740
 msgid "diaspora* is a distributed social network where you keep control over your data."
-msgstr ""
+msgstr "డయాస్పోరా* తో మీరు మీ సమాచారం పై నియంత్రణ ఉంచేందుకు పేరు ఒక పంపిణీ సామాజిక నెట్వర్క్."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
@@ -350,12 +352,12 @@ msgstr "డయాస్పోరా తో పంచుకో"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "డయాస్పోరా* షేర్ విడ్జెట్ మీరు మీ ఇష్టమైన లింకులు పంచుకునేందుకు అనుమతించే."
 
 #: templates/footer.html:12
 #, python-format
 msgid "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
-msgstr ""
+msgstr "ఈ కంటెంట్ భాగాలు © 1998 - %(current_year)s వ్యక్తిగత mozilla.org సహాయకులు ద్వారా ఉంది. ఒక <a href=\"%(url)s\"> క్రియేటివ్ కామన్స్ లైసెన్సు </a> క్రింద లభ్యం."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
@@ -448,11 +450,11 @@ msgstr "డౌనులోడు"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "సామాజిక సేవలు సంస్థాపిస్తోంది కనీసం ఫైర్ఫాక్స్ వెర్షన్ 29. అవసరం ఇప్పుడే ఫైర్ఫాక్స్ యొక్క మీ వెర్షన్ అప్గ్రేడ్ చేయండి."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "ఈ సేవ ఫైర్ఫాక్స్ యొక్క విడుదలకు నోచుకోని వెర్షన్ అవసరం."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -472,15 +474,15 @@ msgstr "Firefox నైట్లీ ఇన్స్టాల్ చేయండ�
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr ""
+msgstr "ఈ సేవ కొన్ని కార్యాచరణ అనుకున్న పని చేయకపోవచ్చు, బీటా పరీక్షలో ఉంది."
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "ఈ సేవ ప్రదర్శన ప్రయోజనాల కోసం మరియు అనుకున్న పని చేయకపోవచ్చు."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "ఈ సేవ భాగస్వామ్య కంటెంట్ మద్దతిస్తుంది"
 
 #: templates/provider.html:106
 msgid "share"
@@ -488,7 +490,7 @@ msgstr "షేర్ చేయ్యి"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "ఈ సేవ బుక్మార్కింగ్ కార్యాచరణను అందిస్తుంది"
 
 #: templates/provider.html:107
 msgid "bookmarking"
@@ -496,7 +498,7 @@ msgstr "బుక్ మార్కింగ్"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "ఈ సేవ ఫైర్ఫాక్స్ ఒక సైడ్బార్ జోడింస్తుంది"
 
 #: templates/provider.html:108
 msgid "sidebar"
@@ -504,7 +506,7 @@ msgstr "సైడ్‌బార్‌"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "ఈ సేవ ప్రకటనలను కలిగి ఉండవచ్చు ఫైర్ఫాక్స్ ఒక టూల్బార్ బటన్ జతచేస్తుంది"
 
 #: templates/provider.html:109
 msgid "notifications"
@@ -520,7 +522,7 @@ msgstr "డెమో"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "ఈ సేవ ఫైర్ఫాక్స్ యొక్క విడుదలకు నోచుకోని వెర్షన్ అవసరం"
 
 #: templates/provider.html:113
 msgid "beta"
