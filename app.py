@@ -7,7 +7,7 @@ from werkzeug.routing import BaseConverter
 import collections
 
 TRANSLATIONS = ['cs', 'de', 'en-US', 'en_US', 'en-GB', 'en_GB', 'es', 'fr', 'gl',
-                'hu', 'it', 'ja', 'nl', 'pt-BR', 'pt_BR', 'ru', 'sl', 'uk',
+                'hu', 'it', 'ja', 'nl', 'pt-BR', 'pt_BR', 'ru', 'sl', 'te', 'uk',
                 'zh-CN', 'zh_CN', 'zh-Hans-CN', 'zh_Hans_CN',
                 'zh-Hant-TW', 'zh_Hant_TW', 'zh-TW', 'zh_TW']
 
