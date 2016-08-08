@@ -1,0 +1,287 @@
+
+<html>
+<head>
+  <base href="/te/"/>
+  <title>Firefox కోసం diaspora*</title>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+  <link href="../media/css/responsive-bundle.0f68d27337ef.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link href="../media/css/firefox_all-bundle.a24127c90798.css" rel="stylesheet" media="screen,projection,tv"  />
+  <link rel="shortcut icon" href="//mozorg.cdn.mozilla.net/media/img/favicon.ico">
+  <link href="../css/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
+  <link href="../css/directory.css" rel="stylesheet" media="screen,projection,tv" />
+  <script src="../js/bundled.js"></script>
+  <script>
+    function init_lang_switcher() {
+      $('#language').change(function(event) {
+        location = "/"+$('#language option:selected').val()+"/";
+      });
+    }
+
+    $(document).ready(function($) {
+      init_lang_switcher();
+
+
+      window.scrollTo(0, 0);
+
+
+      // requires firefox 29 to activate
+      var uMatch = navigator.userAgent.match(/Firefox\/(.*)$/),
+        ffVersion = 0;
+      if (uMatch && uMatch.length > 1) {
+        ffVersion = parseInt(uMatch[1]);
+      }
+      if (!ffVersion) {
+        // cannot activate from non-firefox browsers
+        $("#firefox-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("ఫైర్ఫాక్సును పొందండి <span>&raquo;</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      } else
+      if (ffVersion < 29) {
+        $("#upgrade-required").removeAttr("hidden");
+        $("#incompatibility-banner").removeAttr("hidden");
+        $(".button").html("ఫైర్ఫాక్స్ అప్గ్రేడ్ <span>&raquo;</span><br/><span class=\"smaller\">Firefox 29 అవసరం</span>");
+        $(".button").removeAttr("onclick");
+        $(".button").attr("href", "https://www.mozilla.org/firefox/new/");
+      }
+    });
+
+    function activateProvider(node, name) {
+      // fixup the service data with a postActivationURL if one doesn't exist.
+      var data = JSON.parse(node.getAttribute("data-service"));
+      var loc = location.href;
+      var baseurl = loc.substring(0,loc.lastIndexOf('/'));
+      data.postActivationURL = baseurl + "/activated/"+name+".html";
+      node.setAttribute("data-service", JSON.stringify(data));
+      var event = new CustomEvent("ActivateSocialFeature");
+      node.dispatchEvent(event);
+      ga('send', 'event', 'click', 'activation', name);
+    }
+  </script>
+  
+</head>
+<body class="html-ltr sky">
+  <div id="outer-wrapper">
+
+  <div id="wrapper" class="shadow">
+    <header id="masthead">
+      <a href="/te/" id="tabzilla" data-infobar="translation">Mozilla</a>
+
+      <nav id="nav-main" role="navigation">
+        <ul id="nav-main-menu">
+          
+        </ul>
+      </nav>
+
+      <h2><img src="//mozorg.cdn.mozilla.net/media/img/firefox/new/header-firefox.png?2013-06" alt="డెస్క్టాప్ కోసం Firefox"></h2>
+    </header>
+  </div>
+
+  
+
+  <div id="incompatibility-banner" hidden="true"><p id="firefox-required" hidden="true">మీరు సామాజిక సేవలు ఇన్స్టాల్ చేయడానికి ఫైర్ఫాక్సు ఉపయోగించాలి.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">డౌనులోడు.</a>
+  </p><p id="upgrade-required" hidden="true">సామాజిక సేవలు సంస్థాపిస్తోంది కనీసం ఫైర్ఫాక్స్ వెర్షన్ 29. అవసరం ఇప్పుడే ఫైర్ఫాక్స్ యొక్క మీ వెర్షన్ అప్గ్రేడ్ చేయండి.<a href="https://www.mozilla.org/firefox/new/" class="firefox-download">డౌనులోడు.</a>
+  </p><p id="beta-required" hidden="true">ఈ సేవ ఫైర్ఫాక్స్ యొక్క విడుదలకు నోచుకోని వెర్షన్ అవసరం.</p>
+  </div>
+
+  
+
+  <div id="wrapper" class="content">
+  <div id="detail">
+    <div class="detail-header clearfix">
+      <div>
+      <a href=".">హోం</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+    <div class="detail-content">
+    
+    <h1><img src="images/diaspora/fulllogo.png"></img></h1>
+    
+    <h3>అభినందనలు, <strong>diaspora*</strong> ఇప్పుడు Firefox లో ఆక్టివేట్ చేయబడింది!</h3>
+    <a id="documentation"></a>
+    <ol>
+
+
+    <div class="section clearfix">
+      <h4><li>diaspora* ద్వారా మీకు నచ్చిన కంటెంట్ షేర్ చేయండి</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="images/diaspora/share.png" alt="Share" style="float: right; max-width: 400px; margin-left: 20px;"/>
+      </div>
+      <p class="lead"><img src="../images/sharebutton.png"
+      alt="[share button image]"/> ఒక నొక్కుతో, మీరు <strong>diaspora*</strong> ద్వారా మీ సామాజిక నెట్వర్క్ తో ఏ వెబ్సైట్ లో ఆసక్తికర కంటెంట్ పంచుకోవచ్చు.</p>
+    </div>
+
+
+
+
+
+    <div class="section clearfix">
+
+      <div class="section clearfix">
+      <h4><li>Add-ons మేనేజర్ నుండి సెట్టింగ్లు మార్చండి</li></h4>
+      <div style="width:50%; float: right; margin-left: 20px;">
+      <img src="../images/addonsmanager.jpg" alt="Add-ons మానేజర్" style="float: right;"/>
+      </div>
+      <p class="lead">మీరు సులభంగా Firefox లో add-ons మేనేజర్ వీక్షించడం ద్వారా, తాత్కాలికంగా వాటిని నిలిపివేయడం లేదా వాటిని తొలగించడం, <a href="https://support.mozilla.org/kb/disable-or-remove-add-ons">మీ సేవలు నిర్వహించండి</a>.</p>
+      </div>
+    </div>
+
+    <div class="section clearfix">
+    <h4><li>తరువాతి దశలు</li></h4>
+    <ul>
+      <li><a href="https://support.mozilla.org/kb/add-social-features-firefox-sidebar">ఈ సేవ ఫైర్ఫాక్స్ కు జోడించడాన్ని గురించి మరింత తెలుసుకోండి</a>.</li>
+
+      <li><a href="https://diasporafoundation.org">మరింత తెలుసుకోండి</a> ఏమి అందిస్తుందో <a href="https://diasporafoundation.org">diaspora*</a> గురించి.</li>
+
+      <li><a href=".">అన్వేషించండి మరియు మీరు Firefox జోడించవచ్చు</a> మరిన్ని సేవలను కనుగొనండి.</li>
+    </ul>
+    </div>
+    </div>
+    </ol>
+
+  </div>
+  </div>
+
+
+  
+  <div id="colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col col1">
+          <div class="footer-logo">
+              <a href="http://www.mozilla.org/"><img src="//mozorg.cdn.mozilla.net/media/img/sandstone/footer-mozilla.png" alt="mozilla"></a>
+          </div>
+
+          <div class="footer-license">
+              <p>
+              ఈ కంటెంట్ భాగాలు © 1998 - 2016 వ్యక్తిగత mozilla.org సహాయకులు ద్వారా ఉంది. ఒక <a href="http://www.mozilla.org/foundation/licensing/website-content/"> క్రియేటివ్ కామన్స్ లైసెన్సు </a> క్రింద లభ్యం.
+              </p>
+              <p>
+                <a href="http://www.mozilla.org/contribute/page/">ఈ సైటుకి తోడ్పడండి</a>
+              </p>
+          </div>
+        </div>
+        <div class="col col2">
+          <ul class="footer-nav">
+            <li><a href="http://www.mozilla.org/contact/spaces/">మమ్ముల్ని సంప్రదించండి</a></li>
+            <li><a href="http://www.mozilla.org/about/partnerships/">మాతో భాగస్వాములవ్వండి</a></li>
+            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-tabzilla?source=mozillaorg_footer&amp;amount=20" class="donate">విరాళమివ్వండి</a></li>
+            <li><a href="http://www.mozilla.org/privacy/">ప్రైవసీ విధానం</a></li>
+            <li><a href="http://www.mozilla.org/about/legal.html">చట్టపరమైన గమనికలు</a></li>
+            <li><a href="http://www.mozilla.org/legal/fraud-report/index.html">ట్రేడ్‌మార్క్ దుర్వినియోగాన్ని నివేదించండి</a></li>
+          </ul>
+        </div>
+        <div class="col col3">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Social_API">డెవలెపర్ల కోసం SocialAPI</a></li>
+            </ul>
+            <ul class="links-social">
+              <li class="links-social">
+                Mozilla:
+                <ul>
+                  <li><a href="https://twitter.com/mozilla">Twitter<span> (@mozilla)</span></a></li>
+                  <li><a href="https://www.facebook.com/mozilla">Facebook<span> (Mozilla)</span></a></li>
+                </ul>
+              </li>
+              <li>
+                Firefox:
+                <ul>
+                  <li><a href="https://twitter.com/firefox">Twitter<span> (@firefox)</span></a></li>
+                  <li><a href="https://www.facebook.com/Firefox">Facebook<span> (Firefox)</span></a></li>
+                  <li><a href="https://www.youtube.com/firefoxchannel">YouTube<span> (firefoxchannel)</span></a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="lang-switcher">
+              
+<form id="lang_form" method="get" action="#">
+<label for="language">ఇతర భాషలు:</label>
+<select id="language" name="lang" dir="ltr">
+
+
+<option lang="cs" value="cs" >čeština</option>
+
+
+<option lang="de" value="de" >Deutsch</option>
+
+
+<option lang="en-GB" value="en-GB" >English (United Kingdom)</option>
+
+
+<option lang="en-US" value="en-US" >English (United States)</option>
+
+
+<option lang="es" value="es" >español</option>
+
+
+<option lang="fr" value="fr" >français</option>
+
+
+<option lang="gl" value="gl" >galego</option>
+
+
+<option lang="hu" value="hu" >magyar</option>
+
+
+<option lang="it" value="it" >italiano</option>
+
+
+<option lang="ja" value="ja" >日本語</option>
+
+
+<option lang="nl" value="nl" >Nederlands</option>
+
+
+<option lang="pt-BR" value="pt-BR" >português (Brasil)</option>
+
+
+<option lang="ru" value="ru" >русский</option>
+
+
+<option lang="sl" value="sl" >slovenščina</option>
+
+
+<option lang="te" value="te" selected>తెలుగు</option>
+
+
+<option lang="uk" value="uk" >українська</option>
+
+
+<option lang="zh-CN" value="zh-CN" >中文 (简体, 中国)</option>
+
+
+<option lang="zh-TW" value="zh-TW" >中文 (繁體, 台灣)</option>
+
+</select>
+<noscript>
+<button type="submit">వెళ్ళు</button>
+</noscript>
+</form>
+
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="//mozorg.cdn.mozilla.net/te/tabzilla/tabzilla.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-35433268-59', 'mozilla.net');
+    ga('send', 'pageview');
+  
+  </script>
+</body>
+</html>
