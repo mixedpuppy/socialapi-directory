@@ -1,7 +1,7 @@
 {
   "source": {
     "goal": {
-      "status": "release",
+      "status": "demo",
       "manifest": {
         "name": "GOAL.com",
         "iconURL": "images/goal/icon16.png",
@@ -21,7 +21,7 @@
       }
     },
     "saavn": {
-      "status": "release",
+      "status": "demo",
       "manifest": {
         "name": "saavn",
         "origin": "https://www.saavn.com",
@@ -75,7 +75,7 @@
       }
     },
     "sphere": {
-      "status": "release",
+      "status": "demo",
       "manifest": {
         "name": "Sphere",
         "iconURL": "images/sphere/icon16.png",
@@ -418,7 +418,7 @@
         "description": "{{ _('Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way you want.') }}",
         "homepageURL": "https://pinterest.com",
         "pageSize": {
-          "share": { "width": 755, "height": 420 }
+          "share": { "width": 755, "height": 820 }
         }
       },
       "viewData": {
@@ -649,7 +649,7 @@
       }
     },
     "besoccer": {
-      "status": "release",
+      "status": "demo",
       "manifest": {
         "origin": "https://m.besoccer.com",
         "name": "BeSoccer",
