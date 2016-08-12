@@ -278,7 +278,7 @@
         "name": "Twitter",
         "author": "Twitter, Inc.",
         "iconURL": "images/twitter/icon16.png",
-        "icon32ULR": "images/twitter/icon32.png",
+        "icon32URL": "images/twitter/icon32.png",
         "icon64URL": "images/twitter/icon64.png",
         "origin": "https://twitter.com",
         "homepageURL": "https://twitter.com",
