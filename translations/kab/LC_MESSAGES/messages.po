@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-10 13:32+0000\n"
+"PO-Revision-Date: 2016-09-10 14:20+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -95,20 +95,20 @@ msgstr ""
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Snifel iɣewwaṛen seg umsefrak n izegrar"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Amsefrak n izegrar"
 
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
+msgstr "Tzemreḍ s wudem fessusen <a href=\"%(url)s\">ad tesferkeḍ imeẓla yinek</a>, ad tekkseḍ armad nsens wudem askudan, neɣ ad ten-tekkseḍ, s useqdec n umsefrak n izegrar n Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
-msgstr ""
+msgstr "Imecwaṛen d-iteddun"
 
 #: templates/activated.html:114
 #, python-format
@@ -229,7 +229,7 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Bḍu Web di Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
@@ -241,11 +241,11 @@ msgstr ""
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Twiti i wid ik-yeṭṭafaṛen"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Abeṭṭu n Twetter ak-yeǧǧ ad tetwitiḍ iseɣwan s zreb i wid ik-yeṭṭafaṛen."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
@@ -253,7 +253,7 @@ msgstr ""
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Bḍu di Web akked uẓeṭṭa yinek asedri."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
@@ -477,23 +477,23 @@ msgstr ""
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "bḍu"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Ameẓlu agi yettmuddu-d tamahilt n ucrraḍ n isebtar"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "acraḍ n isebtar"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Ameẓlu agi ad yernu agalis adisan i Firefox"
 
 #: templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "agalis adisan"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
@@ -517,7 +517,7 @@ msgstr ""
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/sharePanel.html:149
 #, python-format
