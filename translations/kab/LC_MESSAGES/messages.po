@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-11 12:51+0000\n"
+"PO-Revision-Date: 2016-09-11 15:15+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -113,12 +113,12 @@ msgstr "Imecwaṛen d-iteddun"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Issin ugar ɣef wayen id-irennu u meẓlu agi i Firefox</a>."
 
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Issin ugar </a> ɣef ayen i d-yettmuddu <a href=\"%(url)s\">%(name)s</a> ."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
@@ -130,7 +130,7 @@ msgstr ""
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Nettidir u nettneffis adal n uḍaṛ - di yal amdiq, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -159,7 +159,7 @@ msgstr ""
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr ""
+msgstr "Sekles-it akke ad tesqedceṭ ticki"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -191,11 +191,11 @@ msgstr ""
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Bḍu web"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Bḍu yal asebter web, anida tebɣiḍ, melmi tebɣiḍ."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
@@ -273,7 +273,7 @@ msgstr ""
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
@@ -295,7 +295,7 @@ msgstr ""
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
@@ -323,7 +323,7 @@ msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
@@ -352,43 +352,43 @@ msgstr ""
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Ttekki deg usebter agi"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "Nermes-aɣ-d"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "Amendid yid-neɣ"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "Mudd tawsa"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Tasertit n tbaḍnit"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr ""
+msgstr "Alɣu ɣef usaḍuf"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Mmel-d aggad iseqdacen tacreṭ yersen"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI i yineflayen"
 
 #: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "Rmed tura"
 
 #: templates/index.html:38 templates/index_entry.html:10 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "Issin ugar ɣef &hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
@@ -396,32 +396,32 @@ msgstr ""
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Tutlayin nniḍen:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Bdu"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s i Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Imezla i Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Awi-d Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Leqqem Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "yesra Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
@@ -429,39 +429,39 @@ msgstr ""
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox i uselkim"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "YEssef ad tesqedceḍ Firefox akken ad tesbeddeḍ imeẓla n tmetti."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr ""
+msgstr "Sider"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "Asebded n imeẓla n tmetti yesra ɣarṣum lqem Firefox 29.  Leqqem Firefox inek tura."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Ameẓlu agi yesra lqem n Firefox ur d-neffiɣ ara yakan."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Sebded Firefox Beta"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "yesra Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Sebded Firefox Aurora"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Sebded Firefox Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
@@ -501,7 +501,7 @@ msgstr ""
 
 #: templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "alɣu"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
