@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-11 15:15+0000\n"
+"PO-Revision-Date: 2016-09-11 15:26+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -55,7 +55,7 @@ msgstr "Bḍu agbur itebɣiḍ s %(name)s"
 #: templates/activated.html:64
 #, python-format
 msgid "With the click of a button, you can Share interesting content on any website with your social network through <strong>%(name)s</strong>."
-msgstr ""
+msgstr "S usiti ɣef tqeffalt, tzemreḍ ad tebḍuḍ agbur yelhan ɣef yal asmel web akked uẓeṭṭa yinek n tmetti s <strong>%(name)s</strong>."
 
 #: templates/activated.html:69
 msgid "Save content for later"
@@ -64,7 +64,7 @@ msgstr "Sekles agbur i ticki"
 #: templates/activated.html:71
 #, python-format
 msgid "With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>."
-msgstr ""
+msgstr "S usiti ɣef tqeffalt, tzemreḍ ad tesseklseḍ agbur yelhan ɣef yal asmel web akked uẓeṭṭa yinek n tmetti s <strong>%(name)s</strong>."
 
 #: templates/activated.html:76
 #, python-format
@@ -92,6 +92,8 @@ msgstr ""
 #: templates/activated.html:96
 msgid "Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Daɣen, tzemreḍ ad tesnifleḍ s wudem fessusen ameẓlu deg ugalis inek adisan, neɣ ffer agalis adisan, seg ugalis adisan iman-is. Tzemreḍ daɣen ad tesqedceḍ  umuɣ <strong> Timeẓriwt -> Ifeggagen n "
+"ifecka</strong> di Firefox."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
@@ -126,7 +128,7 @@ msgstr "<a href=\".\">Nadi udiɣ af-d imeẓla nniḍen</a> i tzemreḍ ad ternu
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "Aɣbalu unṣib n isallen ɣef wadddal n uḍaṛ deg umaḍal."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
@@ -425,7 +427,7 @@ msgstr "yesra Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "Akayad SocialAPI"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
@@ -465,15 +467,15 @@ msgstr "Sebded Firefox Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr ""
+msgstr "Ameẓlu yettwasekyad akka tura, kra n tmahilin zemrent ur teddunt ara akken iwata."
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "Ameẓlu d akayad, yezmer ur iteddu ara akken iwata."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Ameẓlu isefrak beṭṭu n ugbur"
 
 #: templates/provider.html:106
 msgid "share"
@@ -497,7 +499,7 @@ msgstr "agalis adisan"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "Ameẓlu agi ad yernu afegga n ifecka ɣer Firefox i yezemren ad sɛun alɣu"
 
 #: templates/provider.html:109
 msgid "notifications"
@@ -505,15 +507,15 @@ msgstr "alɣu"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Wagi d ameẓlu akayad"
 
 #: templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "akayad"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Ameẓlu agi yesra lqem n Firefox ur d-neffiɣ ara yakan"
 
 #: templates/provider.html:113
 msgid "beta"
@@ -522,4 +524,4 @@ msgstr "beta"
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "Rmed %(name)s"
