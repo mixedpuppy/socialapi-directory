@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-12 15:17+0000\n"
+"PO-Revision-Date: 2016-09-12 19:43+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -140,6 +140,9 @@ msgid ""
 "getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to "
 "keep them ahead of the game."
 msgstr ""
+"<p>Addal n uḍaṛ, soccer, futbol, calcio, futebol - akken yebɣu wamek id s-tsemmam neɣ wid teṭṭafaṛeḍ, d nekwni i d aɣbalu nwen ɣef wayen d-itezzin ɣef waddal n uḍaṛ.</p><p>Ɣur-neɣ ugar n 530 n "
+"ineɣmasen deg annar deg ugar n 50 tmura, rrif n tigawt. Nesnulfuy-d agbur aneẓli akken ak d-nmudd isallen ineggura ɣef teluɣiwin yemgaraden , tirebbaɛ akken imyurareb.</p><p>Ɣef aya imi  52 n yefḍan"
+" n wid iḥemlen ččir, rran deg-neɣ laman."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
@@ -345,7 +348,7 @@ msgstr "Bḍu akked diaspora*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "Azegrir n beṭṭu n diaspora* ak yeǧǧ ad tebḍuḍ iseɣwan inek inurifen."
 
 #: templates/footer.html:12
 #, python-format
@@ -394,7 +397,7 @@ msgstr "Issin ugar ɣef &hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Tunigin tettwassifsus di Firefox akken ad tkecmeḍ ɣer wayen yella d ufrin di web"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
