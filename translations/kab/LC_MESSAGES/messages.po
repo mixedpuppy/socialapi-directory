@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-11 15:26+0000\n"
+"PO-Revision-Date: 2016-09-12 15:17+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -181,7 +181,7 @@ msgstr ""
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr ""
+msgstr "Ur sṛuḥuy ara aseɣwen tikelt nniḍen."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
@@ -209,7 +209,7 @@ msgstr ""
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Aẓeṭṭa n tmetti ameqqṛan di Japun."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
@@ -223,7 +223,7 @@ msgstr ""
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Bḍu isallen i tḥemled melmi tebɣiḍ, anda tebɣiḍ."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
@@ -235,11 +235,11 @@ msgstr "Bḍu Web di Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Azen isebtar web akke tigintin i yemdanen iseqdacen Gmail."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
-msgstr ""
+msgstr "Seqdec beṭṭu n Twitter di Firefox akken ad taruḍ itwiten s zreb ɣef isebtar i tettwaliḍ di web. Nessiwzil iseɣwan URLs i beṭṭu arurad s useqdec n umeẓlu t.co."
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
@@ -341,7 +341,7 @@ msgstr ""
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "Bḍu akked diaspora*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
