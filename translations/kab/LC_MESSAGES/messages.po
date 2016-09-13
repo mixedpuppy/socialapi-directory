@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-12 19:43+0000\n"
+"PO-Revision-Date: 2016-09-13 13:25+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -149,6 +149,8 @@ msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the "
 "latest hits to hard-to-find classics."
 msgstr ""
+"Saavn d tarrayt tufrint akken ad tesleḍ i uẓawan ahendi akked Bollywood, s srid neɣ ma yella tettedduḍ. Nadi, wali udiɣe sɣed s wudem fessusen, abaḥan i wugar n yifeḍ n tezlatin, tizlatin tufrinin "
+"tineggura, akked iklasiken ur tettafeḍ ara anida nniḍen."
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -156,11 +158,11 @@ msgstr "Asuddem aẓawnan"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "Wali amaynut n uẓawan udiɣ sɣed i wayen i tḥemleḍ."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Ameẓlu Pocket i Firefox – Tarrayt tufrint akken ad sekkelseḍ imagraden, tividyutin, atg"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -168,15 +170,15 @@ msgstr "Sekles-it akke ad tesqedceṭ ticki"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "Amḍiq yelhan, abaḥăn akken ad tḥerzeḍ agbur i tebɣiḍ ad twaliḍ ticki."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
-msgstr ""
+msgstr "Tarrayt tamaynut amek ara twaliḍ agbur ifazen icudden ɣer wayen i tḥemleḍ."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "tarmit n tifin"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
