@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-13 16:09+0000\n"
+"PO-Revision-Date: 2016-09-13 16:36+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -319,19 +319,19 @@ msgstr "XING d aẓeṭṭa asedri i tudert tufrint deg uxeddim."
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
-msgstr ""
+msgstr "Semɣeṛ aẓeṭṭa yinek yellan yakan udiɣ kcem tikelt nniḍen ɣer inermisen imaynuten, igrawen, imeḍqan n uxeddim, tikebbaniyin, tidyanin akked umaynut deg taɣult inek."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Tarrayt taruraṭ akken ad tissineḍ agmuḍ n waddal n uḍaṛ"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr ""
+msgstr "Faṛes tagnitt seg igmaḍ n waddal n uḍaṛ s srid di tunigin di web s useqdec n iming Firefox."
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
-msgstr ""
+msgstr "S useqdec n uzegrir BeSoccer, ad twalim igmaḍ n waddal n uḍaṛ s srid melmi i tzemreḍ di tunigin inek s Firefox."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
@@ -339,15 +339,15 @@ msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
-msgstr ""
+msgstr "Azen s zreb isebtar web i yiman-ik neɣ i wiyaḍ s useqdec n teskant tanernant n useɣwen akked wayen nniḍen."
 
 #: templates/data-en.json:728
 msgid "Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done."
-msgstr ""
+msgstr "D arurad, d afessas i useqdec n yimayl s 1 TAṬ n usekles baṭel akked ifecka uḥricen akken ad txedmeḍ ugar."
 
 #: templates/data-en.json:740
 msgid "diaspora* is a distributed social network where you keep control over your data."
-msgstr ""
+msgstr "diaspora* d aẓeṭṭa n tmetti awzawaz anida ad tesneqdeḍ isefka yinek."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
@@ -360,7 +360,7 @@ msgstr "Azegrir n beṭṭu n diaspora* ak yeǧǧ ad tebḍuḍ iseɣwan inek in
 #: templates/footer.html:12
 #, python-format
 msgid "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
-msgstr ""
+msgstr "Kra n yeḥricen n ugbur d ©1998–%(current_year)s sɣur imttekkiyen n mozilla.org. Agbur yella yakan daw n <a href=\"%(url)s\">turagt Creative Commons</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
