@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-13 14:20+0000\n"
+"PO-Revision-Date: 2016-09-13 16:09+0000\n"
 "Last-Translator: belkacem77 <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -218,13 +218,15 @@ msgstr "Aẓeṭṭa n tmetti ameqqṛan di Japun."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Ẓeṛ ayen xedmen yemdukal inek."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when "
 "receiving new messages."
 msgstr ""
+"Sina Weibo d ameẓlu amikrublug yettwasnen aṭas di tmurt n Ccin. Weibo i Firefox ad izireg taẓrigt n yeznan ma yella aṭas s 140 n isekkilen, tignitin, tividyutin, atg. Ad d-yesken daɣen alɣu ticki "
+"tremseḍ-d iznan imaynuten."
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
@@ -232,7 +234,7 @@ msgstr "Bḍu isallen i tḥemled melmi tebɣiḍ, anda tebɣiḍ."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "Bḍu s zreb agbur i d-ufiḍ di web s Google+. Seqdec amiḍan inek Google+ akken ad tebḍuḍ ismal s wudem azayez gar yemdukal inek."
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
@@ -256,7 +258,7 @@ msgstr "Abeṭṭu n Twetter ak-yeǧǧ ad tetwitiḍ iseɣwan s zreb i wid ik-ye
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "Sefrek tamagit inek tasedrit. Bnu udiɣ myeg akked uẓeṭṭa yinek asedri. Kcem ɣer tmusni, tiktiwin, akked tegnatin."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
@@ -265,18 +267,19 @@ msgstr "Bḍu di Web akked uẓeṭṭa yinek asedri."
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
 msgstr ""
+"Ẓreg aḍris, tiwlafin, asimmel, aẓawan akked t vidyutin seg iming inek, tiliɣri, aselkim, imayl neɣ yal amḍiq anida telliḍ. Yal taɣawsa tezmer ad tuɣal tudmawant, seg initen ɣer HTML n usentel inek."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr yessirig beṭṭu n ugbur s war ussis."
 
 #: templates/data-en.json:398
 msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
-msgstr ""
+msgstr "Rnu yiwen n usmel web i ugbur inek imeṛṛa. Ẓreg asmel inek seg yal ibenk akked beṭṭu akked uzayez inek di web."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Bḍu agbur yelhan seg usmel inek."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -284,21 +287,23 @@ msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
-msgstr ""
+msgstr "VK d aẓeṭṭa n tmetti i d-yesdukklen imdanen n umaḍal udiɣ i d-yettmuddun tallalt n teywalt s zreb akked tarrayt yelhan."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way "
 "you want."
 msgstr ""
+"Pinterest d afecku ak-d-imudden tallalt akken ad twalid udiɣ ad tesqiwseḍ tiɣawsiwin ara txedmeḍ. Ticki tufiḍ taɣawsa i twalaḍ telha, senteḍ-itt! Iferdisen inetḍen d isɣalen imwalanen i temreḍ ad "
+"tsuddseḍ udiɣ ad tebḍuḍ akken tebɣiḍ."
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
-msgstr ""
+msgstr "Wali tiktiwin i yisenfaṛen inek akked wayen i tḥemleḍ, i d-fernen yemdanen am kečč."
 
 #: templates/data-en.json:599 templates/data-en.json:608
 msgid "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends."
-msgstr ""
+msgstr "Odnoklassniki (s trusit: Одноклассники imdukal n uɣerbaz) d aẓeṭṭa n tmetti i yemdukal n tneɣrit akked yemdukal iqbuṛen."
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
@@ -306,11 +311,11 @@ msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
-msgstr ""
+msgstr "Xing d aẓeṭṭa n tmetti i unermes asedri, talzuzit di tkebbanit akked tnfelit deg uxeddim."
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING d aẓeṭṭa asedri i tudert tufrint deg uxeddim."
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
