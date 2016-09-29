@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-07-13 14:37+0000\n"
+"PO-Revision-Date: 2016-09-29 11:37+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: tr <LL@li.org>\n"
 "Language: tr\n"
@@ -513,7 +513,7 @@ msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Bu servis Firefox'un yayınlammamış bir sürümünü gerektirir"
 
 #: templates/provider.html:113
 msgid "beta"
