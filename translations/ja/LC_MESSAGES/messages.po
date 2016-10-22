@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-10-22 07:52+0000\n"
+"PO-Revision-Date: 2016-10-22 09:07+0000\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -171,7 +171,7 @@ msgstr "発見体験"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr "Delicious は、Web であなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。"
+msgstr "Delicious は、ウェブであなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。"
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
@@ -183,15 +183,15 @@ msgstr "あなたは思い出す必要はありません。Delicious が思い�
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr "どこに行っても、Web で友達と繋がっていましょう。"
+msgstr "どこに行っても、ウェブで友達と繋がっていましょう。"
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr "Web で共有"
+msgstr "ウェブで共有"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr "どんな Web ページも、どこでも、いつでもシェア。"
+msgstr "どんなウェブページも、どこでも、いつでもシェア。"
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
@@ -203,7 +203,7 @@ msgstr "固有の情報領域を作り上げることで、あなたの興味に
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr "好きな Web サイトを見ながら mixi をチェック"
+msgstr "好きなウェブサイトを見ながら mixi をチェック"
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
@@ -225,15 +225,15 @@ msgstr "インターネットで見つけたコンテンツを Google+ で素早
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr "Google+ で友達と Web をシェア。"
+msgstr "Google+ で友達とウェブをシェア。"
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr "Gmail を使って、Web ページや画像をみんなに送れます。"
+msgstr "Gmail を使って、ウェブページや画像をみんなに送れます。"
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
-msgstr "Firefox Twitter Share を買って、Web 上で発見したページに関するツイートを素早く作成しましょう。URL は素早く共有できるよう t.co リンク短縮サービスを使って短縮されます。"
+msgstr "Firefox Twitter Share を買って、ウェブ上で発見したページに関するツイートを素早く作成しましょう。URL は素早く共有できるよう t.co リンク短縮サービスを使って短縮されます。"
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
@@ -249,7 +249,7 @@ msgstr "仕事で使う ID を管理。仕事で使うネットワークを構�
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr "仕事で使っているネットワークで Web をシェア。"
+msgstr "仕事で使っているネットワークでウェブをシェア。"
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
@@ -261,7 +261,7 @@ msgstr "Tumblr を使えば、容易になんでもシェアできます。"
 
 #: templates/data-en.json:398
 msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
-msgstr "すべてのコンテンツを載せられるひとつの Web サイトを作成しましょう。あらゆる端末から独自のサイトに投稿し、Web 中の読者と共有できます。"
+msgstr "すべてのコンテンツを載せられるひとつのウェブサイトを作成しましょう。あらゆる端末から独自のサイトに投稿し、ウェブ中の読者と共有できます。"
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
@@ -311,7 +311,7 @@ msgstr "サッカーの得点を最も素早く確認できる方法。"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr "Firefox で Web ブラウジングしながら、サッカーの試合の詳しい途中経過をチェックしましょう。"
+msgstr "Firefox でウェブブラウジングしながら、サッカーの試合の詳しい途中経過をチェックしましょう。"
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
@@ -388,7 +388,7 @@ msgstr "詳細..."
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr "あなたの Firefox 体験を深め、Web をさらに活用しましょう"
+msgstr "あなたの Firefox 体験を深め、ウェブをさらに活用しましょう"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
