@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2015-09-11 15:03-0400\n"
+"PO-Revision-Date: 2016-10-22 07:06+0000\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -18,15 +18,13 @@ msgstr ""
 "Generated-By: Babel 1.3\n"
 "X-Generator: Pontoon\n"
 
-#: templates/activated.html:32 templates/activatedIndex.html:9
-#: templates/provider.html:48
+#: templates/activated.html:32 templates/activatedIndex.html:9 templates/provider.html:48
 msgid "Home"
 msgstr "ホーム"
 
 #: templates/activated.html:46
 #, python-format
-msgid ""
-"Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
+msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
 msgstr "Firefox に <strong>%(name)s</strong> が追加されました！"
 
 #: templates/activated.html:51
@@ -41,13 +39,9 @@ msgstr "このページをブックマーク"
 #: templates/activated.html:54
 #, python-format
 msgid ""
-"If you're new to this service, bookmark this page, it contains useful "
-"information and links to further help using and customizing Firefox.  Keep "
-"reading to learn more about how %(name)s works in Firefox."
-msgstr ""
-"このサービスを初めてお使いになる場合は、まずこのページをブックマークしてください。Firefox "
-"の活用とカスタマイズに関する役立つ情報やリンクが載っています。Firefox で %(name)s "
-"がどのように動作するかについてはこの続きを読んでください。"
+"If you're new to this service, bookmark this page, it contains useful information and links to further help using and customizing Firefox.  Keep reading to learn more about how %(name)s works in "
+"Firefox."
+msgstr "このサービスを初めてお使いになる場合は、まずこのページをブックマークしてください。Firefox の活用とカスタマイズに関する役立つ情報やリンクが載っています。Firefox で %(name)s がどのように動作するかについてはこの続きを読んでください。"
 
 #: templates/activated.html:59
 #, python-format
@@ -56,12 +50,8 @@ msgstr "%(name)s を通じて気に入ったコンテンツを共有"
 
 #: templates/activated.html:64
 #, python-format
-msgid ""
-"With the click of a button, you can Share interesting content on any website"
-" with your social network through <strong>%(name)s</strong>."
-msgstr ""
-"ボタンをクリックするだけで、<strong>%(name)s</strong> "
-"を通じ、あなたのソーシャルネットワーク上であらゆるサイト上の興味深いコンテンツを共有できます。"
+msgid "With the click of a button, you can Share interesting content on any website with your social network through <strong>%(name)s</strong>."
+msgstr "ボタンをクリックするだけで、<strong>%(name)s</strong> を通じ、あなたのソーシャルネットワーク上であらゆるサイト上の興味深いコンテンツを共有できます。"
 
 #: templates/activated.html:69
 msgid "Save content for later"
@@ -69,9 +59,7 @@ msgstr "コンテンツを後で見るために保存"
 
 #: templates/activated.html:71
 #, python-format
-msgid ""
-"With the click of a button, you can save interesting content on any website "
-"to <strong>%(name)s</strong>."
+msgid "With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>."
 msgstr "ボタンをクリックするだけで、あらゆるサイト上の興味深いコンテンツを <strong>%(name)s</strong> へ保存できます。"
 
 #: templates/activated.html:76
@@ -81,12 +69,8 @@ msgstr "%(name)s の最新情報を見逃さない"
 
 #: templates/activated.html:78
 #, python-format
-msgid ""
-"<strong>%(name)s</strong> will provide you with the latest from their "
-"service, just click on their icon in the toolbar."
-msgstr ""
-"<strong>%(name)s</strong> "
-"は、そのサービスからの最新情報を提供します。使い方は簡単、ツールバー上のアイコンをクリックするだけです。"
+msgid "<strong>%(name)s</strong> will provide you with the latest from their service, just click on their icon in the toolbar."
+msgstr "<strong>%(name)s</strong> は、そのサービスからの最新情報を提供します。使い方は簡単、ツールバー上のアイコンをクリックするだけです。"
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
@@ -95,23 +79,13 @@ msgstr "ツールバーへサイドバーボタンを追加"
 #: templates/activated.html:88
 #, python-format
 msgid ""
-"Starting with Firefox 30, you can manage your sidebars using the Sidebars "
-"toolbar button. The Sidebars button is located in the <a "
-"href=\"%(url)s\">customization palette</a>, just drag the button to your "
-"toolbar for fast switching between sidebars."
-msgstr ""
-"Firefox 30 以降、「サイドバー」ツールバーボタンを使ってサイドバーを管理できるようになりました。「サイドバー」ボタンは <a "
-"href=\"%(url)s\">カスタマイズパレット</a> "
-"に含まれていて、このボタンをツールバーへドラッグして追加すれば、サイドバーが複数あっても素早く切り替えられます。"
+"Starting with Firefox 30, you can manage your sidebars using the Sidebars toolbar button. The Sidebars button is located in the <a href=\"%(url)s\">customization palette</a>, just drag the button to"
+" your toolbar for fast switching between sidebars."
+msgstr "Firefox 30 以降、「サイドバー」ツールバーボタンを使ってサイドバーを管理できるようになりました。「サイドバー」ボタンは <a href=\"%(url)s\">カスタマイズパレット</a> に含まれていて、このボタンをツールバーへドラッグして追加すれば、サイドバーが複数あっても素早く切り替えられます。"
 
 #: templates/activated.html:96
-msgid ""
-"Additionally, you can easily change the service in your sidebar, or hide the"
-" sidebar, from the sidebar itself. You can also use the "
-"<strong>View->Toolbars</strong> menu in Firefox."
-msgstr ""
-"さらに、サイドバー自体から、サイドバー内のサービスを変更したり、サイドバーを隠したりすることも簡単にできます。Firefox の <strong>表示 "
-"> ツールバー</strong> メニューを使っても同じことが可能です。"
+msgid "Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox."
+msgstr "さらに、サイドバー自体から、サイドバー内のサービスを変更したり、サイドバーを隠したりすることも簡単にできます。Firefox の <strong>表示 > ツールバー</strong> メニューを使っても同じことが可能です。"
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
@@ -123,12 +97,8 @@ msgstr "アドオンマネージャ"
 
 #: templates/activated.html:107
 #, python-format
-msgid ""
-"You can easily <a href=\"%(url)s\">manage your services</a>, disabling them "
-"temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
-"Firefox のアドオンマネージャを開けば、<a href=\"%(url)s\">お使いのサービスを管理</a> "
-"したり、一時的に無効化したり、あるいは削除したりできます。"
+msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
+msgstr "Firefox のアドオンマネージャを開けば、<a href=\"%(url)s\">お使いのサービスを管理</a> したり、一時的に無効化したり、あるいは削除したりできます。"
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -136,15 +106,12 @@ msgstr "次の手順"
 
 #: templates/activated.html:114
 #, python-format
-msgid ""
-"<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
+msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
 msgstr "<a href=\"%(url)s\">このサービスが Firefox へ追加する機能について説明を見る</a>"
 
 #: templates/activated.html:116
 #, python-format
-msgid ""
-"<a href=\"%(url)s\">Learn more</a> about what <a "
-"href=\"%(url)s\">%(name)s</a> provides."
+msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
 msgstr "<a href=\"%(url)s\">%(name)s</a> が提供する機能についての <a href=\"%(url)s\">説明を見る</a>"
 
 #: templates/activated.html:118
@@ -161,27 +128,18 @@ msgstr "週 7 日、1 日 24 時間。どこにいてもサッカーを呼吸す
 
 #: templates/data-en.json:20
 msgid ""
-"<p>Football, soccer, futbol, calcio, futebol - whatever you call it and "
-"whoever you support, we are your definitive football source.</p><p>We have "
-"over 530 reporters on the ground in 50+ countries, getting closer to the "
-"action.  We create original content at source to deliver the news from the "
-"leagues, teams and players that matter.</p><p>No wonder over 52 million "
-"football fans trust us to keep them ahead of the game."
+"<p>Football, soccer, futbol, calcio, futebol - whatever you call it and whoever you support, we are your definitive football source.</p><p>We have over 530 reporters on the ground in 50+ countries, "
+"getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to "
+"keep them ahead of the game."
 msgstr ""
-"<p>フットボール、サッカー、フトボル、カルチョ、フチボウ…どんな言葉を使っていても、どのチームを応援していても、サッカーは世界の共通言語。</p><p>50"
-" 以上の国で活動する 530 "
-"名以上の記者が、サッカー界の動きをすぐそばで追っています。</p><p>気になるリーグやチーム、選手たちの最新情報をオリジナルコンテンツでお届けします。</p><p>5,200"
-" 万人以上のサッカーファンに、最新の情報源として信頼されていることには理由があります。</p>"
+"<p>フットボール、サッカー、フトボル、カルチョ、フチボウ…どんな言葉を使っていても、どのチームを応援していても、サッカーは世界の共通言語。</p><p>50 以上の国で活動する 530 名以上の記者が、サッカー界の動きをすぐそばで追っています。</p><p>気になるリーグやチーム、選手たちの最新情報をオリジナルコンテンツでお届けします。</p><p>5,200 "
+"万人以上のサッカーファンに、最新の情報源として信頼されていることには理由があります。</p>"
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
-"Saavn is the best Bollywood and Indian music listening experience, online "
-"and on the go. It's a simple, beautiful, and free way to search, discover, "
-"and listen to over a million songs, from the latest hits to hard-to-find "
-"classics."
-msgstr ""
-"Saavn は、ボリウッド映画とインド音楽に関する最高の体験をオンラインとモバイルの双方で提供します。最新のヒット曲から希少なクラシックまで、100 "
-"万以上の楽曲をシンプルで美しく自由に検索、発見、試聴できます。"
+"Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the "
+"latest hits to hard-to-find classics."
+msgstr "Saavn は、ボリウッド映画とインド音楽に関する最高の体験をオンラインとモバイルの双方で提供します。最新のヒット曲から希少なクラシックまで、100 万以上の楽曲をシンプルで美しく自由に検索、発見、試聴できます。"
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -192,8 +150,7 @@ msgid "Discover fresh music and hear more of what you love."
 msgstr "最新の音楽を発見して、気に入った曲をもっと聴いてみましょう。"
 
 #: templates/data-en.json:62
-msgid ""
-"Pocket service for Firefox - The best way to save articles, videos and more"
+msgid "Pocket service for Firefox - The best way to save articles, videos and more"
 msgstr "Firefox のためのポケットサービスは、記事、動画などを保存する最良の方法です。"
 
 #: templates/data-en.json:70
@@ -205,9 +162,7 @@ msgid "A convenient, beautiful place to save content you want to view later."
 msgstr "後で見たいコンテンツを保存しておく便利で美しい場所。"
 
 #: templates/data-en.json:85 templates/data-en.json:95
-msgid ""
-"A new way to discover the most interesting content relevant to your "
-"interests."
+msgid "A new way to discover the most interesting content relevant to your interests."
 msgstr "あなたの興味に関連した最も面白いコンテンツを見つける新しい方法です。"
 
 #: templates/data-en.json:93
@@ -215,9 +170,7 @@ msgid "a discovery experience"
 msgstr "発見体験"
 
 #: templates/data-en.json:110
-msgid ""
-"Delicious is a free service designed with care to be the best place to save "
-"what you love on the web."
+msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
 msgstr "Delicious は、Web であなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。"
 
 #: templates/data-en.json:128
@@ -241,15 +194,11 @@ msgid "Share any web page, anywhere, anytime."
 msgstr "どんな Web ページも、どこでも、いつでもシェア。"
 
 #: templates/data-en.json:173
-msgid ""
-"Cliqz delivers a real-time stream of the most relevant articles, stories, "
-"and videos based on your interests directly to Firefox."
+msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
 msgstr "Cliqz は、あなたの興味に基づいた最も関連性の高い記事や動画のリアルタイムストリームを Firefox へ直接お届けします。"
 
 #: templates/data-en.json:196
-msgid ""
-"Get the most relevant news based on your interests by crafting a unique "
-"information universe."
+msgid "Get the most relevant news based on your interests by crafting a unique information universe."
 msgstr "固有の情報領域を作り上げることで、あなたの興味に基づいた最も関連性の高いニュースを入手できます。"
 
 #: templates/data-en.json:208 templates/data-en.json:220
@@ -262,24 +211,17 @@ msgstr "友人が今何をしているかをいつでも確認できます。ま
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
-"Sina Weibo is the most popular microblogging service in China. Weibo for "
-"Firefox allows users to post messages with 140-character limit, images, "
-"videos, etc. And it will show the notification when receiving new messages."
-msgstr ""
-"Sina Weibo は中国で最も人気のあるマイクロブログサービスです。Weibo for Firefox を使って、最長 140 "
-"文字のメッセージと、画像や動画などを投稿することができます。新着メッセージを受け取った場合には通知を表示します。"
+"Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when "
+"receiving new messages."
+msgstr "Sina Weibo は中国で最も人気のあるマイクロブログサービスです。Weibo for Firefox を使って、最長 140 文字のメッセージと、画像や動画などを投稿することができます。新着メッセージを受け取った場合には通知を表示します。"
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
 msgstr "興味のあるニュースをいつでもどこでも共有しましょう。"
 
 #: templates/data-en.json:271
-msgid ""
-"Quickly share content you discover across the web on Google+. Use your "
-"Google+ account to share sites publicly or with your Circles."
-msgstr ""
-"インターネットで見つけたコンテンツを Google+ で素早くシェア。見つけたサイトは Google+ "
-"アカウントで仲間とシェアしたり、公開したりできます。"
+msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
+msgstr "インターネットで見つけたコンテンツを Google+ で素早くシェア。見つけたサイトは Google+ アカウントで仲間とシェアしたり、公開したりできます。"
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
@@ -290,13 +232,8 @@ msgid "Send web pages and images to people using Gmail."
 msgstr "Gmail を使って、Web ページや画像をみんなに送れます。"
 
 #: templates/data-en.json:320
-msgid ""
-"Use your Firefox Twitter Share to quickly author tweets about the pages you "
-"discover across the web.  We shorten URLs for quick sharing using the t.co "
-"link shortener."
-msgstr ""
-"Firefox Twitter Share を買って、Web 上で発見したページに関するツイートを素早く作成しましょう。URL は素早く共有できるよう "
-"t.co リンク短縮サービスを使って短縮されます。"
+msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
+msgstr "Firefox Twitter Share を買って、Web 上で発見したページに関するツイートを素早く作成しましょう。URL は素早く共有できるよう t.co リンク短縮サービスを使って短縮されます。"
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
@@ -307,9 +244,7 @@ msgid "Twitter Share lets you quickly tweet links to your followers."
 msgstr "Twitter を使用すると、バリアなくアイデアや情報を瞬時に作成し、共有できるようになります。"
 
 #: templates/data-en.json:345
-msgid ""
-"Manage your professional identity. Build and engage with your professional "
-"network. Access knowledge, insights and opportunities."
+msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
 msgstr "仕事で使う ID を管理。仕事で使うネットワークを構築し、保証します。知識や深い洞察、そして好機にアクセスしましょう。"
 
 #: templates/data-en.json:352
@@ -317,24 +252,16 @@ msgid "Share the web with your professional network."
 msgstr "仕事で使っているネットワークで Web をシェア。"
 
 #: templates/data-en.json:370
-msgid ""
-"Post text, photos, quotes, links, music, and videos from your browser, "
-"phone, desktop, email or wherever you happen to be. You can customize "
-"everything, from colors to your theme's HTML."
-msgstr ""
-"あなたのブラウザ、電話、デスクトップ、メール、どこで何を使っていても、テキストや写真や引用やリンクや音楽や動画を送ることができます。色からテーマの "
-"HTML に至るまで、あなたの Tumblr のすべてをカスタマイズできます。"
+msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
+msgstr "あなたのブラウザー、電話、デスクトップ、メール、どこで何を使っていても、テキストや写真や引用やリンクや音楽や動画を送ることができます。色からテーマの HTML に至るまで、あなたの Tumblr のすべてをカスタマイズできます。"
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
 msgstr "Tumblr を使えば、容易になんでもシェアできます。"
 
 #: templates/data-en.json:398
-msgid ""
-"Create a single website for all your content. Publish on your own site from "
-"any device and share with your audiences across the web."
-msgstr ""
-"すべてのコンテンツを載せられるひとつの Web サイトを作成しましょう。あらゆる端末から独自のサイトに投稿し、Web 中の読者と共有できます。"
+msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
+msgstr "すべてのコンテンツを載せられるひとつの Web サイトを作成しましょう。あらゆる端末から独自のサイトに投稿し、Web 中の読者と共有できます。"
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
@@ -345,42 +272,29 @@ msgid "VK"
 msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
-msgid ""
-"VK is a social network that unites people all over the world and helps them "
-"communicate comfortably and promptly."
+msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
 msgstr "VK は、世界中の人々をつなぎ、快適かつ即座にコミュニケーションを取れるようにするソーシャルネットワークです。"
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
-"Pinterest is a tool to help you discover and plan things you want to do. "
-"When you find something that looks interesting, just Pin it! Pins are visual"
-" bookmarks that you organize and share the way you want."
-msgstr ""
-"Pinterest はあなたが発見し、やりたいことを計画するのを助けるツールです。興味深そうなものを見つけたら、ピンで止めるだけです！ "
-"ピンは、あなた自身のやり方で整理し、シェアするためのビジュアル・ブックマークです。"
+"Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way "
+"you want."
+msgstr "Pinterest はあなたが発見し、やりたいことを計画するのを助けるツールです。興味深そうなものを見つけたら、ピンで止めるだけです！ ピンは、あなた自身のやり方で整理し、シェアするためのビジュアル・ブックマークです。"
 
 #: templates/data-en.json:460
-msgid ""
-"Discover ideas for all your projects and interests, hand-picked by people "
-"like you."
+msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
 msgstr "あなたと似た人々によって厳選されたアイデアを発見しましょう。あなたのあらゆるプロジェクトや興味のあることのために。"
 
 #: templates/data-en.json:599 templates/data-en.json:608
-msgid ""
-"Odnoklassniki (Russian: Одноклассники Classmates) is a social network "
-"service for classmates and old friends."
-msgstr ""
-"Odnoklassniki (Russian: Одноклассники Classmates) "
-"はクラスメートや旧友とつながるためのソーシャルネットワークサービスです。"
+msgid "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends."
+msgstr "Odnoklassniki (Russian: Одноклассники Classmates) はクラスメートや旧友とつながるためのソーシャルネットワークサービスです。"
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
 msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
-msgid ""
-"Xing is the social network for professional networking, business marketing "
-"and career development."
+msgid "Xing is the social network for professional networking, business marketing and career development."
 msgstr "Xing は、プロフェッショナルネットワーキング、ビジネスマーケティング、キャリア開発のためのソーシャルネットワークです。"
 
 #: templates/data-en.json:631
@@ -388,9 +302,7 @@ msgid "XING is the professional network for a better working life."
 msgstr "XING はより良い職業人生のためのプロフェッショナルネットワークです。"
 
 #: templates/data-en.json:632
-msgid ""
-"Expand your existing network and access new contacts, groups, jobs, "
-"companies, events and news from your industry."
+msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
 msgstr "既存のネットワークを広げ、あなたの業界内の新たな人脈、グループ、求人、企業、イベント、ニュースにアクセスしましょう。"
 
 #: templates/data-en.json:702
@@ -398,15 +310,11 @@ msgid "The quickest way to get your soccer scores"
 msgstr "サッカーの得点を最も素早く確認できる方法。"
 
 #: templates/data-en.json:703
-msgid ""
-"Enjoy our detailed soccer livescores while surfing the web with your Firefox"
-" browser."
+msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
 msgstr "Firefox で Web ブラウジングしながら、サッカーの試合の詳しい途中経過をチェックしましょう。"
 
 #: templates/data-en.json:704
-msgid ""
-"Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as "
-"possible while navigating with your Firefox browser."
+msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
 msgstr "BeSoccer ウィジェットのおかげで、Firefox でブラウジングしつつ、サッカー試合のリアルタイム途中経過を即座に確認できます。"
 
 #: templates/data-en.json:714 templates/data-en.json:725
@@ -414,21 +322,15 @@ msgid "Yahoo Mail"
 msgstr "Yahoo メール"
 
 #: templates/data-en.json:719 templates/data-en.json:727
-msgid ""
-"Quickly send web pages to yourself and others with enhanced link previews "
-"and more."
+msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
 msgstr "強化されたリンクプレビューその他が掲載されたウェブページを、自分と他のユーザーに素早く送信します。"
 
 #: templates/data-en.json:728
-msgid ""
-"Fast, simple to use email with 1 TB of free mail storage and smarter tools "
-"to help you get more done."
+msgid "Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done."
 msgstr "1TBのストレージを無料で利用できる高速で簡単なメールとスマートなツールで、生産性が向上します。"
 
 #: templates/data-en.json:740
-msgid ""
-"diaspora* is a distributed social network where you keep control over your "
-"data."
+msgid "diaspora* is a distributed social network where you keep control over your data."
 msgstr "diaspora* は、ユーザが自分自信のデータを管理できる、分散型ソーシャルネットワークです。"
 
 #: templates/data-en.json:750
@@ -441,13 +343,8 @@ msgstr "diaspora* 共有ウィジェットで、気に入ったページのリ�
 
 #: templates/footer.html:12
 #, python-format
-msgid ""
-"Portions of this content are ©1998–%(current_year)s by individual "
-"mozilla.org contributors. Content available under a <a "
-"href=\"%(url)s\">Creative Commons license</a>."
-msgstr ""
-"当サイト上のコンテンツの一部は貢献者によって mozilla.org へ提供されたものです。©1998–%(current_year)s コンテンツは "
-"<a href=\"%(url)s\">Creative Commons ライセンス</a> で使用可能です。"
+msgid "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
+msgstr "当サイト上のコンテンツの一部は貢献者によって mozilla.org へ提供されたものです。©1998–%(current_year)s コンテンツは <a href=\"%(url)s\">Creative Commons ライセンス</a> で使用可能です。"
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
@@ -481,13 +378,11 @@ msgstr "商標不正使用報告"
 msgid "SocialAPI for Developers"
 msgstr "開発者向け Social API"
 
-#: templates/index.html:37 templates/index_entry.html:9
-#: templates/provider.html:74
+#: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
 msgstr "今すぐ追加"
 
-#: templates/index.html:38 templates/index_entry.html:10
-#: templates/provider.html:77
+#: templates/index.html:38 templates/index_entry.html:10 templates/provider.html:77
 msgid "Learn More&hellip;"
 msgstr "詳細..."
 
@@ -541,11 +436,8 @@ msgid "Download"
 msgstr "ダウンロード"
 
 #: templates/layout.html:110
-msgid ""
-"Installing Social Services requires at least Firefox version 29.  Upgrade "
-"your version of Firefox now."
-msgstr ""
-"ソーシャルサービスをインストールするにはバージョン 29 以上の Firefox が必要です。今すぐお使いの Firefox を更新しましょう。"
+msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
+msgstr "ソーシャルサービスをインストールするにはバージョン 29 以上の Firefox が必要です。今すぐお使いの Firefox を更新しましょう。"
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
@@ -555,8 +447,7 @@ msgstr "このサービスを使用するには Firefox の開発版が必要で
 msgid "Install Firefox Beta"
 msgstr "Firefox Beta をインストール"
 
-#: templates/provider.html:22 templates/provider.html:26
-#: templates/provider.html:30 templates/provider.html:34
+#: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
 msgstr "動作環境: Firefox"
 
@@ -569,15 +460,11 @@ msgid "Install Firefox Nightly"
 msgstr "Firefox Nightly をインストール"
 
 #: templates/provider.html:56
-msgid ""
-"This service is in beta testing, some functionality may not work as "
-"expected."
+msgid "This service is in beta testing, some functionality may not work as expected."
 msgstr "このサービスはベータテスト中のため、一部の機能が期待通りに動作しない可能性があります。"
 
 #: templates/provider.html:59
-msgid ""
-"This service is for demonstration purposes only and may not work as "
-"expected."
+msgid "This service is for demonstration purposes only and may not work as expected."
 msgstr "このサービスはデモ用のため、期待通りに動作しない可能性があります。"
 
 #: templates/provider.html:106
@@ -605,8 +492,7 @@ msgid "sidebar"
 msgstr "サイドバー"
 
 #: templates/provider.html:109
-msgid ""
-"This service adds a toolbar button to Firefox that may have notifications"
+msgid "This service adds a toolbar button to Firefox that may have notifications"
 msgstr "このサービスはツールバーボタンを Firefox へ追加し、通知を行います"
 
 #: templates/provider.html:109
