@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-10-22 09:07+0000\n"
+"PO-Revision-Date: 2016-10-22 10:38+0000\n"
 "Last-Translator: Kohei Yoshino <kohei.yoshino@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -89,16 +89,16 @@ msgstr "さらに、サイドバー自体から、サイドバー内のサービ
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr "アドオンマネージャで設定を変更"
+msgstr "アドオンマネージャーで設定を変更"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
-msgstr "アドオンマネージャ"
+msgstr "アドオンマネージャー"
 
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr "Firefox のアドオンマネージャを開けば、<a href=\"%(url)s\">お使いのサービスを管理</a> したり、一時的に無効化したり、あるいは削除したりできます。"
+msgstr "Firefox のアドオンマネージャーを開けば、<a href=\"%(url)s\">お使いのサービスを管理</a> したり、一時的に無効化したり、あるいは削除したりできます。"
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -151,7 +151,7 @@ msgstr "最新の音楽を発見して、気に入った曲をもっと聴いて
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr "Firefox のためのポケットサービスは、記事、動画などを保存する最良の方法です。"
+msgstr "Firefox のための Pocket サービスは、記事、動画などを保存する最良の方法です。"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -171,7 +171,7 @@ msgstr "発見体験"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr "Delicious は、ウェブであなたが大好きなものを保存する、最良の場所となるようデザインされたフリーサービスです。"
+msgstr "Delicious は、ウェブであなたが大好きなものを保存する、最良の場所となるようデザインされた無料サービスです。"
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
