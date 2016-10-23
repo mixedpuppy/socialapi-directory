@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-29 20:49+0000\n"
+"PO-Revision-Date: 2016-09-29 21:09+0000\n"
 "Last-Translator: darío hereñú <magallania@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
@@ -170,7 +170,7 @@ msgstr ""
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "una experiencia de descubrimiento"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
@@ -272,11 +272,11 @@ msgstr ""
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
-msgstr ""
+msgstr "VK es una red social que une gente de todo el mundo y los ayuda a comunicar de una manera amena y rápida."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
@@ -294,7 +294,7 @@ msgstr ""
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
@@ -322,7 +322,7 @@ msgstr ""
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Correo de Yahoo"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
@@ -363,7 +363,7 @@ msgstr ""
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "Donar"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
@@ -371,11 +371,11 @@ msgstr ""
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr ""
+msgstr "Avisos legales"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Informar acerca de abuso de marca registrada"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
@@ -395,16 +395,16 @@ msgstr ""
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Otros idiomas:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Ir"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s para Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
@@ -412,15 +412,15 @@ msgstr ""
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Obtener Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Actualizar Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "necesita Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
@@ -428,7 +428,7 @@ msgstr ""
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox para escritorio"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
@@ -436,7 +436,7 @@ msgstr ""
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr ""
+msgstr "Descargar"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
@@ -448,19 +448,19 @@ msgstr ""
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Instalar Firefox Beta"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "necesita Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Instalar Firefox Aurora"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Instalar Firefox Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
@@ -521,4 +521,4 @@ msgstr ""
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "Activar %(name)s"
