@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-16 20:30+0000\n"
+"PO-Revision-Date: 2016-11-08 23:57+0000\n"
 "Last-Translator: Marco Aurélio <fxhelp@yahoo.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -35,7 +35,7 @@ msgstr "Obtenha o máximo de %(name)s"
 
 #: templates/activated.html:53
 msgid "Bookmark this page"
-msgstr "Adicionar aos favoritos"
+msgstr "Adicione aos favoritos"
 
 #: templates/activated.html:54
 #, python-format
@@ -43,8 +43,8 @@ msgid ""
 "If you're new to this service, bookmark this page, it contains useful information and links to further help using and customizing Firefox.  Keep reading to learn more about how %(name)s works in "
 "Firefox."
 msgstr ""
-"Se esta é a primeira vez que visita este site, recomendamo adicioná-lo aos seus favoritos, ele contém links e informações para ajudá-lo a usar e personalizar o Firefox. Leia mais para descobrir como"
-" %(name)s funciona no Firefox."
+"Se é novo neste serviço, recomendamo adicionar esta página aos seus favoritos, ela contém links e informações para ajudá-lo a usar e personalizar o Firefox. Continue lendo para saber mais como "
+"%(name)s funciona no Firefox."
 
 #: templates/activated.html:59
 #, python-format
@@ -427,11 +427,11 @@ msgstr "Baixe o Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr "Atualizar o Firefox"
+msgstr "Atualize o Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr "requer Firefox 29"
+msgstr "requer o Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
@@ -447,7 +447,7 @@ msgstr "É necessário o Firefox para instalar serviços sociais."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr "Baixar"
+msgstr "Baixe"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
