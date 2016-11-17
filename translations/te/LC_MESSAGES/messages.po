@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-08-03 15:00+0000\n"
-"Last-Translator: Sai Karthik Karra <kskarthik91@gmail.com>\n"
+"PO-Revision-Date: 2016-11-17 03:54+0000\n"
+"Last-Translator: Dinesh <dineshmv38@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
 "MIME-Version: 1.0\n"
@@ -422,7 +422,7 @@ msgstr "Firefox కోసం సేవలు"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr "ఫైర్ఫాక్సును పొందండి"
+msgstr "Firefoxను పొందండి"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
@@ -442,7 +442,7 @@ msgstr "డెస్క్టాప్ కోసం Firefox"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr "మీరు సామాజిక సేవలు ఇన్స్టాల్ చేయడానికి ఫైర్ఫాక్సు ఉపయోగించాలి."
+msgstr "మీరు సామాజిక సేవలు ఇన్స్టాల్ చేయడానికి Firefox ఉపయోగించాలి."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
@@ -458,7 +458,7 @@ msgstr "ఈ సేవ ఫైర్ఫాక్స్ యొక్క విడ�
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr "Firefox బీటా ఇన్స్టాల్ చేయండి"
+msgstr "Firefox Beta ఇన్స్టాల్ చేయండి"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
@@ -526,7 +526,7 @@ msgstr "ఈ సేవ ఫైర్ఫాక్స్ యొక్క విడ�
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr "బీటా"
+msgstr "beta"
 
 #: templates/sharePanel.html:149
 #, python-format
