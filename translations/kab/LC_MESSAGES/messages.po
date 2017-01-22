@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-10 13:27+0000\n"
+"PO-Revision-Date: 2017-01-22 20:38+0000\n"
 "Last-Translator: Moḥend Belqasem <belkacem77@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: kab\n"
@@ -44,6 +44,8 @@ msgid ""
 "If you're new to this service, bookmark this page, it contains useful information and links to further help using and customizing Firefox.  Keep reading to learn more about how %(name)s works in "
 "Firefox."
 msgstr ""
+"Ma d amaynut i tellid deg umeẓlu-agi, creḍ asebter-agi, acku yegber talɣut yelhan akked iseɣwan ɣer wugar n tallalt iseqdacen neɣ i saganen Firefox.  Ɣaṛ ugar akken ad tissineḍ ɣef wamek %(name)s "
+"iteddu di Firefox."
 
 #: templates/activated.html:59
 #, python-format
