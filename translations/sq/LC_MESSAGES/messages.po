@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-01-25 11:31+0000\n"
+"PO-Revision-Date: 2017-01-25 11:47+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -132,7 +132,7 @@ msgstr "Burimi definitiv për lajme futbolli nga anembanë bota."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Thithim futboll, rrojmë me futboll - kudo, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -140,12 +140,17 @@ msgid ""
 "getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to "
 "keep them ahead of the game."
 msgstr ""
+"<p>Futboll, soccer, futbol, calcio, futebol - sido që ta quani dhe me këdo që të jeni, jemi burimi juaj definitiv mbi futbollin.</p><p>Kemi mbi 530 reporterë në terren në mbi 50 vende, sa më afër "
+"goditjes.  Krijojmë lëndë origjinale drejt e nga burimi, për të dhënë lajme rreth kategorive, ekipeve dhe lojtarëve që vlejnë.</p><p>S’ka asgjë për t’u habitur pse mbi 52 milionë tifozë na e besojnë"
+" neve informimin e tyre."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the "
 "latest hits to hard-to-find classics."
 msgstr ""
+"Saavn është shërbimi më i mirë për muzikë Bollywood-i dhe indiane, në internet dhe në lëvizje. Është rrugë e thjeshtë, e hijshme, dhe e lirë për të kërkuar, zbuluar dhe dëgjuar mbi një milion këngë,"
+" që nga sukseset më të freskëta e deri te pjesë legjendare që mezi gjendet."
 
 #: templates/data-en.json:39
 msgid "Music Feed"
@@ -153,11 +158,11 @@ msgstr "Prurje Muzike"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "Zbuloni muzikë të re dhe dëgjoni më tepër prej atyre që doni."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Shërbimi Pocket për Firefox - Mënyra më e mirë për të ruajtur diku për më vonë artikuj, video, etj"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -165,11 +170,11 @@ msgstr "Ruajeni për më vonë"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "Një vend i përshtatshëm, i bukur për të ruajtur lëndë që doni ta shihni më vonë."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
-msgstr ""
+msgstr "Një rrugë e re për të zbuluar lëndën më interesante dhe më me vlerë për interesat tuaja."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
@@ -177,39 +182,39 @@ msgstr ""
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr ""
+msgstr "Delicious është një shërbim falas i konceptuar me kujdes për të qenë vendi më i mirë për të ruajtur ato që doni në web."
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr ""
+msgstr "Mos humbni në asnjë lidhje."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "I mban mend Delicious-i, s’keni pse t’i mbani ju."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "Mbani kontakte me shokët kudo që shkoni në web."
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Ndajeni web-in me të tjerët"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Ndani me të tjerët çfarëdo faqeje web, kudo, kurdo."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
-msgstr ""
+msgstr "Cliqz ju sjell një rrjedhë të atypëratyshme të artikujve, historive, dhe videove më me rëndësi, bazuar në interesat tuaja, drejt e te Firefox-i."
 
 #: templates/data-en.json:196
 msgid "Get the most relevant news based on your interests by crafting a unique information universe."
-msgstr ""
+msgstr "Merrni lajmet më me rëndësi, bazuar në interesat tuaja, duke realizuar një univers unik informacioni."
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Rrjeti më i madh shoqëror në Japoni."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
