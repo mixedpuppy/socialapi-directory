@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-01-25 15:56+0000\n"
+"PO-Revision-Date: 2017-01-25 16:50+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -115,7 +115,7 @@ msgstr "Hapat Pasues"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr "<a href=\"%(url)s\">Mësoni më tepër mbi ç’shton ky shërbim te Firefox-i</a>."
+msgstr "<a href=\"%(url)s\">Mësoni më tepër rreth se ç’shton te Firefox-i ky shërbim</a>."
 
 #: templates/activated.html:116
 #, python-format
@@ -178,7 +178,7 @@ msgstr "Një rrugë e re për të zbuluar lëndën më interesante dhe më me vl
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "një eksperiencë zbulimesh"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
@@ -295,14 +295,16 @@ msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way "
 "you want."
 msgstr ""
+"Pinterest është një mjet që ju ndihmon të zbuloni dhe planifikoni gjëra që doni të bëni. Kur gjeni diçka që ju duket me interes, thjesht… Pin it! Kunjat janë faqerojtës pamorë që ju lejojnë të "
+"sistemoni dhe ndani me të tjerët gjërat që doni."
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
-msgstr ""
+msgstr "Zbuloni ide për krejt projektet dhe interesat tuaj, zgjedhur enkas nga njerëz si ju."
 
 #: templates/data-en.json:599 templates/data-en.json:608
 msgid "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends."
-msgstr ""
+msgstr "Odnoklassniki (Rusisht: Одноклассники Shokë klase) është një shërbim rrjeti shoqëror për shokë klase dhe miq të vjetër."
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
@@ -310,7 +312,7 @@ msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
-msgstr ""
+msgstr "Xing është rrjeti shoqëror për profesionistë, marketing biznesi dhe zhvillim karrierash."
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
@@ -318,19 +320,19 @@ msgstr ""
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
-msgstr ""
+msgstr "Zgjerojini rrjetin tuaj aktual dhe lidhuni me kontakte të reja, grupe, punësime, kompani, veprimtari dhe lajme nga industria juaj."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Rruga më e lehtë për të mësuar përfundimet e ndeshjeve të futbollit"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr ""
+msgstr "Shijoni përfundimet e ndeshjeve drejtpërdrejt, teksa shfletoni në web me shfletuesin Firefox."
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
-msgstr ""
+msgstr "Falë widget-it BeSoccer , do të merrni përfundime të drejtpërdrejta ndeshjesh sa më shpejt që të jetë e mundur, ndërkohë që shfletoni me Firefox-in."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
@@ -338,15 +340,15 @@ msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
-msgstr ""
+msgstr "Dërgoni shpejt faqe web te vetja dhe të tjerët, me paraparje të thelluar lidhjesh, dhe më tepër se kaq."
 
 #: templates/data-en.json:728
 msgid "Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done."
-msgstr ""
+msgstr "Email i shpejtë, i thjeshtë për t’u përdorur, me 1 TB depozitë email-esh falas dhe mjete më të mençura për t’ju ndihmuar të mbaroni punë."
 
 #: templates/data-en.json:740
 msgid "diaspora* is a distributed social network where you keep control over your data."
-msgstr ""
+msgstr "diaspora* është një rrjet shoqëror i shpërndarë, në të cilin ruani kontrollin e të dhënave tuaja."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
@@ -354,12 +356,13 @@ msgstr "Ndajeni me të tjerët në diaspora*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "Mekanizmi i ndarjes me të tjerët i diaspora* ju lejon të ndani lidhjet tuaja të parapëlqyera."
 
 #: templates/footer.html:12
 #, python-format
 msgid "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
 msgstr ""
+"Pjesë të kësaj lënde janë nën të drejta kopjimi ©1998–%(current_year)s nga kontribues individualë te mozilla.org. Lënda mund të përdoret sipas një <a href=\"%(url)s\">licence Creative Commons</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
@@ -403,7 +406,7 @@ msgstr "Mësoni Më Tepër&hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Thelloni punimin e Firefox-it, përfitoni më tepër nga Web-i"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -452,7 +455,7 @@ msgstr "Shkarkojeni"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "Instalimi i Shërbimeve Shoqërore lyp Firefox-in të paktën në version 29.  Përmirësojeni tani versionin e Firefox-it tuaj."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
@@ -476,11 +479,11 @@ msgstr "Instaloni Firefox-in Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr ""
+msgstr "Ky shërbim është nën testim beta, disa prej anëve mund të mos funksionojnë siç pritet."
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "Ky shërbim është vetëm për qëllime demonstrimi dhe mund të mos punojë siç pritet."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
@@ -508,7 +511,7 @@ msgstr "anështyllë"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "Ky shërbim shton te Firefox-i një buton paneli që mund të përmbajë njoftime"
 
 #: templates/provider.html:109
 msgid "notifications"
@@ -533,4 +536,4 @@ msgstr "beta"
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "Aktivizoni %(name)s"
