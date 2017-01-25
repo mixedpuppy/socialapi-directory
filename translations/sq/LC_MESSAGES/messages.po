@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-01-25 11:11+0000\n"
+"PO-Revision-Date: 2017-01-25 11:31+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -115,7 +115,7 @@ msgstr "Hapat Pasues"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Mësoni më tepër mbi ç’shton ky shërbim te Firefox-i</a>."
 
 #: templates/activated.html:116
 #, python-format
@@ -124,11 +124,11 @@ msgstr "<a href=\"%(url)s\">Mësoni më tepër</a> rreth asaj që ofron <a href=
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr ""
+msgstr "<a href=\".\">Eksploroni dhe gjeni më tepër shërbime</a> që mund t’i shtoni te Firefox-i."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "Burimi definitiv për lajme futbolli nga anembanë bota."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
