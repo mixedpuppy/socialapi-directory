@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-01-25 11:47+0000\n"
+"PO-Revision-Date: 2017-01-25 15:50+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -218,37 +218,39 @@ msgstr "Rrjeti më i madh shoqëror në Japoni."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Jini në dijeni rreth me se merren shokët tuaj."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when "
 "receiving new messages."
 msgstr ""
+"Sina Weibo është shërbimi më popullor për mikroblogje në Kinë. Weibo për Firefox u lejon përdoruesve të postojnë mesazhe deri në 140 shenja, figura, video, etj. Dhe do të shfaqë njoftim kur merren "
+"mesazhe të rinj."
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Ndajini me të tjerët lajmet tuaj interesante kurdo, kudo."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "Ndani shpejt me të tjerët në Google+ lëndë që zbuloni në Internet. Përdoreni llogarinë tuaj Google+ që të ndani sajte publikisht ose me Rrethet tuaj."
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Ndajeni web-in me të tjerët në Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Ndani faqe dhe figura web me persona që përdorin Gmail."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
-msgstr ""
+msgstr "Përdoreni Firefox Twitter Share tuaj që të prodhoni shpejt cicërima rreth faqesh që zbuloni në web.  Për ndarje të shpejtë, URL-të i shkurtojmë duke përdorur shkurtuesin t.co të lidhjeve."
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Cicëroni për ndjekësit tuaj"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
