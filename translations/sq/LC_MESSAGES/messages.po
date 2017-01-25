@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-01-24 22:52+0000\n"
+"PO-Revision-Date: 2017-01-25 11:11+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -27,12 +27,12 @@ msgstr "Hyrje"
 #: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "Përgëzime, <strong>%(name)s</strong> tani është e aktivizuar në Firefox!"
 
 #: templates/activated.html:51
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "Përfitoni maksimumin prej %(name)s"
 
 #: templates/activated.html:53
 msgid "Bookmark this page"
@@ -44,16 +44,18 @@ msgid ""
 "If you're new to this service, bookmark this page, it contains useful information and links to further help using and customizing Firefox.  Keep reading to learn more about how %(name)s works in "
 "Firefox."
 msgstr ""
+"Nëse jeni i ri në këtë shërbim, faqeruajeni këtë faqe, përmban të dhëna dhe lidhje të dobishme për t’ju ndihmuar më tej lidhur me përdorimin dhe përshtatjen si e doni të Firefox-it.  Vazhdoni "
+"leximin që të mësoni më tepër rreth se si funksionon në Firefox %(name)s."
 
 #: templates/activated.html:59
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Ndani me të tjerët përmes %(name)s lëndë që ju pëlqen"
 
 #: templates/activated.html:64
 #, python-format
 msgid "With the click of a button, you can Share interesting content on any website with your social network through <strong>%(name)s</strong>."
-msgstr ""
+msgstr "Me klikimin e një butoni, mund të ndani me të tjerët lëndë interesante nga cilido sajt, në rrjetin tuaj shoqëror, përmes <strong>%(name)s</strong>."
 
 #: templates/activated.html:69
 msgid "Save content for later"
@@ -62,21 +64,21 @@ msgstr "Ruajeni lëndën për më vonë"
 #: templates/activated.html:71
 #, python-format
 msgid "With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>."
-msgstr ""
+msgstr "Me klikimin e një butoni, mund të ruani në <strong>%(name)s</strong> lëndë interesante nga cilido sajt."
 
 #: templates/activated.html:76
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "Mbajeni një vesh te lajmet më të reja nga %(name)s"
 
 #: templates/activated.html:78
 #, python-format
 msgid "<strong>%(name)s</strong> will provide you with the latest from their service, just click on their icon in the toolbar."
-msgstr ""
+msgstr "<strong>%(name)s</strong> do t’ju furnizojë lajmet më të reja mbi shërbimin e tyre, thjesht klikoni mbi ikonën përkatëse te paneli."
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "Shtoni te paneli juaj butona Anështyllash"
 
 #: templates/activated.html:88
 #, python-format
@@ -84,14 +86,18 @@ msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars toolbar button. The Sidebars button is located in the <a href=\"%(url)s\">customization palette</a>, just drag the button to"
 " your toolbar for fast switching between sidebars."
 msgstr ""
+"Që prej Firefox 30-s, mund të administroni anështyllat tuaja duke përdorur butonin e paneli Anështyllash. Butoni i Anështyllave gjendet te <a href=\"%(url)s\">paleta e përshtatjve</a>, thjesht "
+"tërhiqeni butonin te paneli juaj, që të hidheni me shpejtësi nga një panel në tjetrin."
 
 #: templates/activated.html:96
 msgid "Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox."
 msgstr ""
+"Për më tepër, mundeni ta ndryshoni lehtësisht shërbimin te anështylla juaj, ose ta fshihni anështyllën, nga vetë anështylla. Mund të përdorni edhe menunë <strong>Shihni->Panele</strong> të Firefox-"
+"it."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Nryshojini Rregullimet që nga Përgjegjësi i Shtesave"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
@@ -100,7 +106,7 @@ msgstr "Përgjegjës  Shtesash"
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
+msgstr "Mundeni t’i <a href=\"%(url)s\">administroni shërbimet tuaja</a> lehtësisht, duke i çaktivizuar përkohësisht ose duke i hequr, duke hapur Përgjegjësin e Shtesave në Firefox-it."
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -396,12 +402,12 @@ msgstr "Gjuhë të tjera:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Shko"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s për Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
@@ -421,7 +427,7 @@ msgstr "lyp Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "Demo e SocialAPI-t"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
@@ -429,7 +435,7 @@ msgstr "Firefox për desktop"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Duhet të përdorni Firefox-in që të instaloni shërbime Shoqërore."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
@@ -441,7 +447,7 @@ msgstr ""
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Ky shërbim lyp një version Firefox-i që s’është hedhur në qarkullim."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -469,19 +475,19 @@ msgstr ""
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Ky shërbim mbulon ndarje lënde me të tjerët"
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "ndajeni me të tjerët"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Ky shërbim ofron funksionin e faqeruajtjes"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "faqeruajtje"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
@@ -505,11 +511,11 @@ msgstr "Ky është një shërbim demo"
 
 #: templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Ky shërbim lyp një version Firefox-i që s’është hedhur në qarkullim"
 
 #: templates/provider.html:113
 msgid "beta"
