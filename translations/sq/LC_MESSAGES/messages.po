@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-01-25 15:50+0000\n"
+"PO-Revision-Date: 2017-01-25 15:56+0000\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sq\n"
@@ -254,31 +254,33 @@ msgstr "Cicëroni për ndjekësit tuaj"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Share ju lejon të ndani shpejt lidhje me ndjekësit tuaj."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "Administroni identitetin tuaj profesional. Ndërtoni rrjetin tuaj profesionale dhe ndani gjëra me të. Hyni në burime dijeje, idesh dhe mundësish."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Ndajeni web-in me rrjetin tuaj profesional."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
 msgstr ""
+"Postoni tekste, foto, citime, lidhje, muzikë, dhe video prej shfletuesit tuaj, telefonit, dekstopit, email-it apo prej kudo që gjendeni. Mund të përshtatni gjithçka, nga ngjyrat e deri te HTML-ja e "
+"temës tuaj."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr ju lejon të ndani pa mundim çfarëdo gjëje."
 
 #: templates/data-en.json:398
 msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
-msgstr ""
+msgstr "Krijoni një sajt të vetëm për krejt lëndën tuaj. Botoni te sajti juaj prej çfarëdo pajisjeje dhe ndani gjëra me publikun tuaj nëpër web."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Ndani me të tjerët lëndë interesante që prej sajtit tuaj."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -286,7 +288,7 @@ msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
-msgstr ""
+msgstr "VK është një rrjet shoqëror që bën tok njerëz nga anembanë bota dhe i ndihmon ata të komunikojnë me rehati dhe pa humbje kohe."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
