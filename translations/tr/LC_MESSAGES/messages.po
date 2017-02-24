@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-29 11:37+0000\n"
+"PO-Revision-Date: 2017-02-24 09:20+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: tr <LL@li.org>\n"
 "Language: tr\n"
@@ -104,7 +104,7 @@ msgstr "Eklenti Yöneticisi"
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
+msgstr "Firefox'taki Eklenti Yöneticisi'nden kolayca <a href=\"%(url)s\">servislerinizi yönetebilir</a>, geçici olarak devre dışı bırakabilir veya silebilirsiniz."
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -118,7 +118,7 @@ msgstr "<a href=\"%(url)s\">Bu servisin Firefox'ne eklediği hakkında daha fazl
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr ""
+msgstr "<a href=\"%(url)s\">%(name)s</a> servisinin sağladıkları hakkında <a href=\"%(url)s\">daha fazla bilgi</a> alın."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
@@ -284,6 +284,8 @@ msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way "
 "you want."
 msgstr ""
+"Pinterest yapmak istediğiniz şeyleri keşfetmeye ve planlamaya yarayan bir araçtır. Size ilginç gelen bir şey bulduğunuzda Pin'leyin! Pin'ler, istediğiniz şekilde düzenleyip paylaşabildiğiniz görsel "
+"yer imleridir."
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
@@ -299,7 +301,7 @@ msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
-msgstr ""
+msgstr "Xing iş amaçlı bağlantılar, pazarlama ve kariyer gelişimi amaçlı bir sosyal ağdır."
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
@@ -469,7 +471,7 @@ msgstr "Bu servis beta testindedir bazı işlevler beklendiği gibi çalışmaya
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "Bu servis sadece gösteri amaçlıdır umduğunuz gibi çalışmayabilir."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
