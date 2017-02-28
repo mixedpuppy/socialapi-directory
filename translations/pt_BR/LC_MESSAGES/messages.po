@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-11-08 23:57+0000\n"
+"PO-Revision-Date: 2017-02-28 00:54+0000\n"
 "Last-Translator: Marco Aurélio <fxhelp@yahoo.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -94,16 +94,16 @@ msgstr "Além disso, pode selecionar um serviço diferente para o painel ou ocul
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr "Alterar configurações do gerenciador de complementos"
+msgstr "Alterar as configurações a partir do gerenciador de extensões"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
-msgstr "Gerenciador de complementos"
+msgstr "Gerenciador de extensões"
 
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr "Pode <a href=\"%(url)s\">gerenciar seus serviços</a> facilmente, desativá-los temporariamente ou removê-los, através do gerenciador de complementos do Firefox."
+msgstr "Pode <a href=\"%(url)s\">gerenciar seus serviços</a> facilmente, desativá-los temporariamente ou removê-los, através do gerenciador de extensões do Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
