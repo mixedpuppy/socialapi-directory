@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-29 21:09+0000\n"
-"Last-Translator: darío hereñú <magallania@gmail.com>\n"
+"PO-Revision-Date: 2016-07-19 21:41+0000\n"
+"Last-Translator: Luis Arturo Jacobo <luisartjacobo@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr "Inicio"
 #: templates/activated.html:46
 #, python-format
 msgid "Congratulations, <strong>%(name)s</strong> is now activated in Firefox!"
-msgstr ""
+msgstr "¡Felicidades, <strong>%(name)s</strong> ya está activado en Firefox!"
 
 #: templates/activated.html:51
 #, python-format
