@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-12 11:10+0000\n"
+"PO-Revision-Date: 2017-04-12 11:15+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv_SE\n"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: templates/activated.html:69
 msgid "Save content for later"
-msgstr ""
+msgstr "Spara innehåll till senare"
 
 #: templates/activated.html:71
 #, python-format
@@ -91,7 +91,7 @@ msgstr ""
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Ändra inställningar från Tilläggshanteraren"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
@@ -151,11 +151,11 @@ msgstr ""
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Pocket tjänsten för Firefox - det bästa sättet att spara artiklar, videos och mer"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr ""
+msgstr "Spara den till senare"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -191,7 +191,7 @@ msgstr ""
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Dela en webbsida, var som helst, när som helst."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
@@ -203,7 +203,7 @@ msgstr ""
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Det största sociala nätverket i Japan."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
@@ -217,7 +217,7 @@ msgstr ""
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Dela din intressanta nyheter närsomhelst, varsomhelst."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
@@ -229,7 +229,7 @@ msgstr ""
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Skicka webbsidor och bilder till folk som använder Gmail."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
@@ -291,7 +291,7 @@ msgstr ""
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
@@ -429,7 +429,7 @@ msgstr "Firefox för datorer"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Du måste använda Firefox för att installera sociala tjänster."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
@@ -437,7 +437,7 @@ msgstr "Ladda ner"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "Installation av sociala tjänster kräver minst Firefox version 29.  Uppgradera din version av Firefox nu."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
@@ -481,7 +481,7 @@ msgstr ""
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "bokmärken"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
