@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-12 15:20+0000\n"
+"PO-Revision-Date: 2017-04-13 10:35+0000\n"
 "Last-Translator: Luna Jernberg <bittin@cafe8bitar.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sv_SE\n"
@@ -32,7 +32,7 @@ msgstr "Grattis, <strong>%(name)s</strong> är nu aktiverat i Firefox!"
 #: templates/activated.html:51
 #, python-format
 msgid "Get the most from %(name)s"
-msgstr ""
+msgstr "Få ut det mesta från %(name)s"
 
 #: templates/activated.html:53
 msgid "Bookmark this page"
@@ -48,7 +48,7 @@ msgstr ""
 #: templates/activated.html:59
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Dela innehåll du gillar via %(name)s"
 
 #: templates/activated.html:64
 #, python-format
@@ -67,7 +67,7 @@ msgstr ""
 #: templates/activated.html:76
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "Håll ett öga på senaste nyheterna från %(name)s"
 
 #: templates/activated.html:78
 #, python-format
@@ -109,16 +109,16 @@ msgstr "Nästa steg"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Läs mer om vad denna tjänst lägger till i Firefox</a>."
 
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Läs mer</a> om vad <a href=\"%(url)s\">%(name)s</a> ger."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr ""
+msgstr "<a href=\".\">Utforska och hitta fler tjänster</a> Som du kan lägga till i Firefox."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
@@ -126,7 +126,7 @@ msgstr "Den definitiva källan för fotbolls nyheter från hela världen."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Vi lever och andas fotboll - överallt, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -143,11 +143,11 @@ msgstr ""
 
 #: templates/data-en.json:39
 msgid "Music Feed"
-msgstr ""
+msgstr "Musik flöde"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "Upptäck ny musik och hör mer av vad du älskar."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
@@ -175,11 +175,11 @@ msgstr ""
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr ""
+msgstr "Förlora aldrig en länk igen."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious kommer ihåg så att du inte behöver."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
@@ -187,7 +187,7 @@ msgstr ""
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Dela på webben"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
@@ -225,7 +225,7 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Dela på webben med Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
@@ -237,11 +237,11 @@ msgstr ""
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Twittra till dina följare"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Share låter dig snabbt twittra länkar till dina följare."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
@@ -249,7 +249,7 @@ msgstr ""
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Dela på webben med ditt professionella nätverk."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
@@ -265,7 +265,7 @@ msgstr ""
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Dela intressant innehåll från din egen webbplats."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -299,7 +299,7 @@ msgstr ""
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING är det professionella nätverket för ett bättre arbetsliv."
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
@@ -307,11 +307,11 @@ msgstr ""
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Det snabbaste sättet att få dina fotbollsresultat"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr ""
+msgstr "Njut av vår detaljerada fotbolls livescores medan du surfar på webben med webbläsaren Firefox."
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
@@ -388,7 +388,7 @@ msgstr "Läs mer &hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Förbättra din Firefox erfarenhet, få ut mer av webben"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
@@ -441,7 +441,7 @@ msgstr "Installation av sociala tjänster kräver minst Firefox version 29.  Upp
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Denna tjänsten kräver en osläppt version av Firefox."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -461,11 +461,11 @@ msgstr "Installera Firefox Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr ""
+msgstr "Denna tjänsten är i beta-testning, vissa funktioner fungerar inte som förväntat."
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "Denna tjänst är endast i demonstrationssyfte och kanske inte fungerar som förväntat."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
@@ -477,7 +477,7 @@ msgstr "dela"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Denna tjänsten ger bokmärkes funktionalitet"
 
 #: templates/provider.html:107
 msgid "bookmarking"
@@ -509,7 +509,7 @@ msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Denna tjänsten kräver en osläppt version av Firefox"
 
 #: templates/provider.html:113
 msgid "beta"
