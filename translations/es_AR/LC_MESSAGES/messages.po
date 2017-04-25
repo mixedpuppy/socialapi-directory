@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-25 13:09+0000\n"
+"PO-Revision-Date: 2017-04-25 14:59+0000\n"
 "Last-Translator: gmontagu <gmontagu@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
@@ -91,11 +91,11 @@ msgstr ""
 
 #: templates/activated.html:96
 msgid "Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox."
-msgstr ""
+msgstr "Además, puede cambiar fácilmente el servicio en la barra lateral u ocultar la misma. Puede también optar por la opción del menú en Firefox <strong>Vista->Barra de herramientas</strong>."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Cambie los Ajustes desde el Administrador de Complementos"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
@@ -104,7 +104,7 @@ msgstr "Administrador de complementos"
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
+msgstr "Puede gestionar fácilmente <a href=\"%(url)s\">los servicios</a>, deshabilitándolos temporariamente o quitándolos, desde el Administrador de Complementos de Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
@@ -113,16 +113,16 @@ msgstr "Próximos pasos"
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr "<a href=\"%(url)s\">Conocer más acerca de lo que este servicio agrega a Firefox</a>."
+msgstr "<a href=\"%(url)s\">Aprenda más acerca de lo que este servicio agrega a Firefox</a>."
 
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr "<a href=\"%(url)s\">Conocer más</a> sobre lo que <a href=\"%(url)s\">%(name)s</a> proporciona."
+msgstr "<a href=\"%(url)s\"> Aprenda más</a> sobre lo que <a href=\"%(url)s\">% brinda (name)s</a>."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr "<a href=\".\">Explorar y encontrar más servicios</a> que se pueden agregar a Firefox."
+msgstr "<a href=\".\">Explore y encuentre más servicios</a> que se pueden agregar a Firefox."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
