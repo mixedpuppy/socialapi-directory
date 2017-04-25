@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-25 16:31+0000\n"
+"PO-Revision-Date: 2017-04-25 16:38+0000\n"
 "Last-Translator: gmontagu <gmontagu@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
@@ -164,7 +164,7 @@ msgstr "Servicio Pocket para Firefox - La mejor manera de guardar artículos, vi
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr "Guardar para más tarde"
+msgstr "Guarde para más tarde"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
@@ -180,7 +180,7 @@ msgstr "una experiencia de descubrimiento"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr "Delicious es un servicio gratuito diseñado con cuidado para ser el mejor lugar para guardar lo que más te gusta de Internet."
+msgstr "Delicious es un servicio gratuito diseñado con cuidado para ser el mejor lugar para guardar lo que más le gusta de Internet."
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
@@ -192,23 +192,23 @@ msgstr "Delicious lo recuerda, así que usted no tiene que hacerlo."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "Mantenga el contacto con sus amigos donde quiera que vaya en la red."
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr "Compartir la internet"
+msgstr "Comparta Internet"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Comparta cualquier página de Internet, en cualquier lugar, en todo momento."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
-msgstr ""
+msgstr "Cliqz envía un flujo en tiempo real de los artículos, historias y videos más relevantes basados en sus intereses directamente a Firefox."
 
 #: templates/data-en.json:196
 msgid "Get the most relevant news based on your interests by crafting a unique information universe."
-msgstr ""
+msgstr "Reciba las noticias más relevantes basadas en sus intereses simplemente creando un universo personal de información."
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
