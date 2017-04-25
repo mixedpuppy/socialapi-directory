@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-25 16:11+0000\n"
+"PO-Revision-Date: 2017-04-25 16:31+0000\n"
 "Last-Translator: gmontagu <gmontagu@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
@@ -168,11 +168,11 @@ msgstr "Guardar para más tarde"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "Un lugar cómodo y hermoso para guardar el contenido que quiere ver más adelante."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
-msgstr ""
+msgstr "Una nueva forma de descubrir el contenido más interesante de acuerdo a sus intereses."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
@@ -180,15 +180,15 @@ msgstr "una experiencia de descubrimiento"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr ""
+msgstr "Delicious es un servicio gratuito diseñado con cuidado para ser el mejor lugar para guardar lo que más te gusta de Internet."
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr "Nunca más perdás un enlace."
+msgstr "Nunca más perderá un enlace."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious lo recuerda, así que usted no tiene que hacerlo."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
