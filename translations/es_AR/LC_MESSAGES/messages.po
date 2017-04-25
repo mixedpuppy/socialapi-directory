@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-25 14:59+0000\n"
+"PO-Revision-Date: 2017-04-25 16:11+0000\n"
 "Last-Translator: gmontagu <gmontagu@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
@@ -126,11 +126,11 @@ msgstr "<a href=\".\">Explore y encuentre más servicios</a> que se pueden agreg
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr " "
+msgstr "La fuente definitiva de noticias futbolísticas de todo el mundo."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr "Vivimos y respiramos fútbol - en todas partes, 24/7."
+msgstr "Vivimos y respiramos fútbol en todas partes, 24/7."
 
 #: templates/data-en.json:20
 msgid ""
@@ -138,25 +138,25 @@ msgid ""
 "getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to "
 "keep them ahead of the game."
 msgstr ""
-"<p>Fútbol, fútbol, futbol, calcio, futebol - como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva.</p><p>Tenemos más de 530 periodistas sobre el terreno en más de 50 "
-"países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan.</p><p>No es de extrañar que más de 52 millones"
-" de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede.</p>"
+"<p> Fútbol, fútbol, fútbol, calcio, fútbol. Como se llame y el que usted siga, porque esta es su fuente de fútbol definitiva. </p><p> Tenemos más de 530 periodistas sobre el terreno en más de 50 "
+"países, cada vez más cerca de la acción. Creamos contenido original allá donde se producen las noticias de las ligas, equipos y jugadores que importan. </p> <p> No es de extrañar que más de 52 "
+"millones de aficionados al fútbol confíen en nosotros para estar al tanto de todo lo que sucede."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the "
 "latest hits to hard-to-find classics."
 msgstr ""
-"Saavn es la mejor experiencia sonora para apreciar música india y de las bandas sonoras de las películas Bollywood. Es una manera simple, hermosa y simple de buscar, descubrir y escuchar más de un "
-"millón de canciones, sean estos los últimos éxitos a clásicos difíciles de encontrar."
+"Saavn es la mejor experiencia sonora para apreciar música india y las bandas sonoras de las películas Bollywood. Es una manera simple, hermosa y gratuita de buscar, descubrir y escuchar más de un "
+"millón de canciones, desde los últimos éxitos hasta los clásicos difíciles de encontrar."
 
 #: templates/data-en.json:39
 msgid "Music Feed"
-msgstr ""
+msgstr "Canal de música"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr "Descubrí música nueva y escucha más de aquellos que amás."
+msgstr "Descubra música nueva y escuche más de aquellos que ama."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
