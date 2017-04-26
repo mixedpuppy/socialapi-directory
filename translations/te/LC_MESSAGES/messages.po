@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-11-22 07:34+0000\n"
+"PO-Revision-Date: 2017-04-26 09:01+0000\n"
 "Last-Translator: వీవెన్ <veeven@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: te\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: templates/activated.html:32 templates/activatedIndex.html:9 templates/provider.html:48
 msgid "Home"
-msgstr "హోం"
+msgstr "ముంగిలి"
 
 #: templates/activated.html:46
 #, python-format
@@ -108,7 +108,7 @@ msgstr "మీరు సులభంగా Firefox లో add-ons మేనే�
 
 #: templates/activated.html:112
 msgid "Next Steps"
-msgstr "తరువాతి దశలు"
+msgstr "తరువాతి అంచెలు"
 
 #: templates/activated.html:114
 #, python-format
@@ -426,7 +426,7 @@ msgstr "Firefoxను పొందండి"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr "ఫైర్ఫాక్స్ అప్గ్రేడ్"
+msgstr "Firefoxని తాజాకరించు"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
@@ -486,7 +486,7 @@ msgstr "ఈ సేవ భాగస్వామ్య కంటెంట్ మ�
 
 #: templates/provider.html:106
 msgid "share"
-msgstr "షేర్ చేయ్యి"
+msgstr "పంచుకోండి"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
