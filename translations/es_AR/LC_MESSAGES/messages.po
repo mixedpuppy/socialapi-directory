@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-25 16:38+0000\n"
-"Last-Translator: gmontagu <gmontagu@gmail.com>\n"
+"PO-Revision-Date: 2016-09-29 21:51+0000\n"
+"Last-Translator: darío hereñú <magallania@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -212,7 +212,7 @@ msgstr "Reciba las noticias más relevantes basadas en sus intereses simplemente
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "La red social más grande en Japón."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
@@ -223,10 +223,12 @@ msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when "
 "receiving new messages."
 msgstr ""
+"Sina Weibo es el servicio más popular de microblogging en China. Weibo para Firefox le permite a los usuarios publicar mensajes, imágenes, videos, etc. con un límite de 140 caracteres. Y mostrará "
+"una notificación cuando reciba nuevos mensajes."
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Compartir sus noticias más relevantes, en cualquier momento, en cualquier lugar."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
@@ -387,7 +389,7 @@ msgstr "Informar acerca de abuso de marca registrada"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI para Desarrolladores"
 
 #: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
