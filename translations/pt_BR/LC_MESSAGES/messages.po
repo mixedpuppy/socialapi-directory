@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-04-10 04:01+0000\n"
+"PO-Revision-Date: 2017-05-12 02:18+0000\n"
 "Last-Translator: Marco Aurélio <fxhelp@yahoo.com>\n"
 "Language-Team: pt_BR <LL@li.org>\n"
 "Language: pt_BR\n"
@@ -43,7 +43,7 @@ msgid ""
 "If you're new to this service, bookmark this page, it contains useful information and links to further help using and customizing Firefox.  Keep reading to learn more about how %(name)s works in "
 "Firefox."
 msgstr ""
-"Se é novo neste serviço, recomendamo adicionar esta página aos seus favoritos, ela contém links e informações para ajudá-lo a usar e personalizar o Firefox. Continue lendo para saber mais como "
+"Se é novo neste serviço, recomendamos adicionar esta página aos seus favoritos, ela contém links e informações para ajudá-lo a usar e personalizar o Firefox. Continue lendo para saber mais como "
 "%(name)s funciona no Firefox."
 
 #: templates/activated.html:59
@@ -398,7 +398,7 @@ msgstr "Ativar agora"
 
 #: templates/index.html:38 templates/index_entry.html:10 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr "Saber mais&hellip;"
+msgstr "Saiba mais&hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
