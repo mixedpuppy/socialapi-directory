@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-29 21:51+0000\n"
-"Last-Translator: darío hereñú <magallania@gmail.com>\n"
+"PO-Revision-Date: 2017-05-21 17:44+0000\n"
+"Last-Translator: Marcelo Poli <enzomatrix@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -216,7 +216,7 @@ msgstr "La red social más grande en Japón."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Mantenete informado de lo que tus amigos están haciendo."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
