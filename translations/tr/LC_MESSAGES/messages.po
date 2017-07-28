@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-05-06 10:20+0000\n"
+"PO-Revision-Date: 2017-07-28 11:23+0000\n"
 "Last-Translator: Selim Şumlu <selim@sum.lu>\n"
 "Language-Team: tr <LL@li.org>\n"
 "Language: tr\n"
@@ -151,11 +151,11 @@ msgstr "Müzik Akışı"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "Yeni müzikleri kesfedin ve sevdiginiz müzikleri dinleyin."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Firefox için Pocket servisi - Makaleleri, videoları ve daha fazlasını kaydetmek için en iyi yol"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -163,7 +163,7 @@ msgstr "Daha sonrası için kaydedin"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "Daha sonra görüntülemek istediğiniz içeriği kaydetmek için kullanışlı ve güzel bir yer."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
@@ -187,7 +187,7 @@ msgstr "Unutmak istemediklerinizi Delicious hatırlar."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "Web'de gezinirken arkadaşlarınızla iletişim kurun."
 
 #: templates/data-en.json:164
 msgid "Share the web"
@@ -221,7 +221,7 @@ msgstr ""
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "İlginç haberlerinizi istediğiniz zaman, istediğiniz yerde paylaşın."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
@@ -233,7 +233,7 @@ msgstr "Web'i Google+'da paylaşın."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Web sayfalarını ve resimleri Gmail aracılığıyla başkalarına gönderin."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
@@ -245,7 +245,7 @@ msgstr "Takipçilerine Tweet'le"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Paylaşımı, takipçilerinize bağlantıları hızla tweetlemenizi sağlar."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
@@ -253,7 +253,7 @@ msgstr ""
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Web'i profesyonel ağınız ile paylaşın."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
@@ -269,7 +269,7 @@ msgstr ""
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "İlginç içerikleri kendi sitenizden paylaşın."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -394,7 +394,7 @@ msgstr "Daha fazla bilgi alın&hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Firefox deneyiminizi geliştirin, Web'den daha fazla yararlanın"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
