@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-07-31 23:29+0000\n"
+"PO-Revision-Date: 2017-07-31 23:46+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -64,12 +64,12 @@ msgstr "Simpan kandungan untuk dibaca nanti"
 #: templates/activated.html:71
 #, python-format
 msgid "With the click of a button, you can save interesting content on any website to <strong>%(name)s</strong>."
-msgstr ""
+msgstr "Dengan hanya mengklik satu butang, anda boleh simpan kandungan mana-mana laman web yang menarik ke <strong>%(name)s</strong>."
 
 #: templates/activated.html:76
 #, python-format
 msgid "Keep an eye on the latest from %(name)s"
-msgstr ""
+msgstr "Teruskan ikuti perkembangan terkini %(name)s"
 
 #: templates/activated.html:78
 #, python-format
