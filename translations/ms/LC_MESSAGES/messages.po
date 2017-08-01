@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 03:30+0000\n"
+"PO-Revision-Date: 2017-08-01 03:33+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -508,29 +508,29 @@ msgstr "bar sisi"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "Perkhidmatan ini menambah butang bar alatan ke Firefox yang mungkin ada notifikasi"
 
 #: templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "notifikasi"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Ini adalah perkhidmatan demo"
 
 #: templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Perkhidmatan ini memerlukan versi Firefox yang masih belum dikeluarkan"
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "Aktifkan %(name)s"
