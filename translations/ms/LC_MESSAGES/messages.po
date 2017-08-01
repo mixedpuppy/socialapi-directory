@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 02:49+0000\n"
+"PO-Revision-Date: 2017-08-01 03:30+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -363,148 +363,148 @@ msgstr "Sebahagian kandungan ini ©1998–%(current_year)s dihasilkan oleh indiv
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Beri sumbangan untuk halaman ini"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "Hubungi Kami"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "Jadilah Rakan Kongsi Kami"
 
 #: templates/footer.html:23
 msgid "Donate"
-msgstr ""
+msgstr "Derma"
 
 #: templates/footer.html:24
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Polisi Privasi"
 
 #: templates/footer.html:25
 msgid "Legal Notices"
-msgstr ""
+msgstr "Notis Undang-undang"
 
 #: templates/footer.html:26
 msgid "Report Trademark Abuse"
-msgstr ""
+msgstr "Lapor Penyalahgunaan Cap Dagangan"
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI untuk Pembangun"
 
 #: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
-msgstr ""
+msgstr "Aktifkan Sekarang"
 
 #: templates/index.html:38 templates/index_entry.html:10 templates/provider.html:77
 msgid "Learn More&hellip;"
-msgstr ""
+msgstr "Ketahui selanjutnya&hellip;"
 
 #: templates/index.html:57
 msgid "Enhance your Firefox experience, get more out of the Web"
-msgstr ""
+msgstr "Tingkatkan pengalaman Firefox anda, dapatkan manfaat penuh Web"
 
 #: templates/lang_switcher.html:6
 msgid "Other languages:"
-msgstr ""
+msgstr "Bahasa lain:"
 
 #: templates/lang_switcher.html:15
 msgid "Go"
-msgstr ""
+msgstr "Teruskan"
 
 #: templates/layout.html:4
 #, python-format
 msgid "%(name)s for Firefox"
-msgstr ""
+msgstr "%(name)s untuk Firefox"
 
 #: templates/layout.html:4
 msgid "Services for Firefox"
-msgstr ""
+msgstr "Perkhidmatan untuk Firefox"
 
 #: templates/layout.html:45
 msgid "Get Firefox"
-msgstr ""
+msgstr "Dapatkan Firefox"
 
 #: templates/layout.html:52 templates/provider.html:34
 msgid "Upgrade Firefox"
-msgstr ""
+msgstr "Naiktaraf Firefox"
 
 #: templates/layout.html:52
 msgid "requires Firefox 29"
-msgstr ""
+msgstr "perlukan Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI Demo"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox untuk desktop"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Anda mesti guna Firefox untuk pasang perkhidmatan Sosial."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr ""
+msgstr "Muat turun"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "Pemasangan Social Services memerlukan sekurang-kurangnya Firefox versi 29.  Naiktaraf versi Firefox anda sekarang."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Perkhidmatan ini memerlukan versi Firefox yang masih belum dikeluarkan."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Pasang Firefox Beta"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "perlukan Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Pasang Firefox Aurora"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Pasang Firefox Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr ""
+msgstr "Perkhidmatan ini dalam ujian beta, beberapa fungsi mungkin tidak berfungsi seperti yang dijangkakan."
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "Perkhidmatan ini untuk tujuan demostrasi sahaja dan mungkin tidak berfungsi seperti yang dijangkakan."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Perkhidmatan ini menyokong perkongsian kandungan"
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "kongsi"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Perkhidmatan ini menyediakan fungsi penandabuku"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "penandabuku"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Perkhidmatan ini menambah bar sisi ke Firefox"
 
 #: templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "bar sisi"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
