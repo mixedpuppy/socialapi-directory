@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 01:30+0000\n"
+"PO-Revision-Date: 2017-08-01 01:38+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -184,23 +184,23 @@ msgstr "Delicious ialah perkhidmatan percuma yang direka dengan teliti supaya me
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
-msgstr ""
+msgstr "Jangan sampai hilang pautan lagi."
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Delicious mengingatinya bagi pihak anda."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
-msgstr ""
+msgstr "Sentiasa berhubungan dengan rakan di mana sahaja anda berada dalam web."
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Kongsi web"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
-msgstr ""
+msgstr "Kongsi halaman web, di mana-mana sahaja, pada bila-bila masa."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
