@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 01:07+0000\n"
+"PO-Revision-Date: 2017-08-01 01:30+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -138,44 +138,49 @@ msgid ""
 "getting closer to the action.  We create original content at source to deliver the news from the leagues, teams and players that matter.</p><p>No wonder over 52 million football fans trust us to "
 "keep them ahead of the game."
 msgstr ""
+"<p>Bola sepak, soccer, futbol, calcio, futebol - apa sahaja panggilannya dan sesiapa sahaja yang anda sokong, kami adalah sumber bola sepak muktamad anda.</p><p>Kami ada lebih 530 pemberita di atas "
+"padang di 50+ buah negara, semakin dekat dengan aksi.  Kita menyediakan kandungan asal pada sumber untuk menyampaikan berita dari liga, pasukan dan pemain yang menjadi tumpuan.</p><p>Tidak hairanlah"
+" lebih 52 juta peminat bola sepak mempercayai kami untuk memaklumkan mereka sebelum permainan bermula."
 
 #: templates/data-en.json:32 templates/data-en.json:41
 msgid ""
 "Saavn is the best Bollywood and Indian music listening experience, online and on the go. It's a simple, beautiful, and free way to search, discover, and listen to over a million songs, from the "
 "latest hits to hard-to-find classics."
 msgstr ""
+"Saavn ialah pengalaman mendengarkan muzik Bollywood dan India yang terbaik, dalam talian dan di mana sahaja. Cara yang mudah, indah, dan percuma untuk mencari, meneroka, dan mendengarkan lebih "
+"daripada satu juta lagu, daripada lagu hit terkini hingga lagu klasik yang sukar-dicari."
 
 #: templates/data-en.json:39
 msgid "Music Feed"
-msgstr ""
+msgstr "Suapan Muzik"
 
 #: templates/data-en.json:40
 msgid "Discover fresh music and hear more of what you love."
-msgstr ""
+msgstr "Teroka muzik baru dan dengar lagu kegemaran anda."
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Perkhidmatan Pocket untuk Firefox - Cara terbaik untuk simpan artikel, video dan banyak lagi"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
-msgstr ""
+msgstr "Simpan untuk masa lain"
 
 #: templates/data-en.json:71
 msgid "A convenient, beautiful place to save content you want to view later."
-msgstr ""
+msgstr "Tempat yang sesuai dan cantik untuk menyimpan kandungan yang anda mahu memaparkannya nanti."
 
 #: templates/data-en.json:85 templates/data-en.json:95
 msgid "A new way to discover the most interesting content relevant to your interests."
-msgstr ""
+msgstr "Satu cara baru untuk meneroka kandungan paling menarik yang ada kaitan dengan minat anda."
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "pengalaman meneroka"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
-msgstr ""
+msgstr "Delicious ialah perkhidmatan percuma yang direka dengan teliti supaya menjadi tempat terbaik untuk anda simpan kandungan web yang anda."
 
 #: templates/data-en.json:128
 msgid "Never lose a link again."
