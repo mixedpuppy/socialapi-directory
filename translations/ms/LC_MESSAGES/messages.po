@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 02:08+0000\n"
+"PO-Revision-Date: 2017-08-01 02:29+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -244,73 +244,77 @@ msgstr "Hantar halaman web dan imej ke sesiapa sahaja menggunakan Gmail."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
-msgstr ""
+msgstr "Guna Firefox Twitter Share anda untuk mengarang tweets perihal halaman yang anda temukan di serata web.  Kami ringkaskan URLs untuk perkongsian pantas menggunakan peringkas pautan t.co."
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
-msgstr ""
+msgstr "Tweet kepada pengikut anda"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Share membolehkan anda tweet pautan kepada pengikut anda dengan pantas."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "Urus identiti profesional anda. Bina dan libatkan diri dengan rangkaian profesional anda. Akses ilmu, wawasan dan peluang."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Kongsi web dengan rangkaian profesional anda."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
 msgstr ""
+"Post teks, foto, petikan, pautan, muzik, dan video dari pelayar, telefon, desktop, e-mel atau dari mana-mana sahaja anda berada. Anda boleh menyesuaikan segala-galanya, daripada warna hingga tema "
+"HTML anda."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr membolehkan anda berkongsi apa sahaja dengan mudah."
 
 #: templates/data-en.json:398
 msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
-msgstr ""
+msgstr "Cipta sebuah laman web untuk semua kandungan anda. Terbitkan dalam laman anda sendiri dari mana-mana peranti dan kongsi dengan pengunjung web anda."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Kongsi kandungan menarik dari laman anda sendiri."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
-msgstr ""
+msgstr "VK"
 
 #: templates/data-en.json:425 templates/data-en.json:434
 msgid "VK is a social network that unites people all over the world and helps them communicate comfortably and promptly."
-msgstr ""
+msgstr "VK adalah rangkaian sosial yang menyatukan pengguna di seluruh dunia dan membantu mereka berkomunikasi dengan selesa dan segera."
 
 #: templates/data-en.json:452 templates/data-en.json:461
 msgid ""
 "Pinterest is a tool to help you discover and plan things you want to do. When you find something that looks interesting, just Pin it! Pins are visual bookmarks that you organize and share the way "
 "you want."
 msgstr ""
+"Pinterest adalah alat untuk membantu anda mencari dan merancang perkara yang anda mahu lakukan. Apabila anda jumpa sesuatu yang nampak menarik, Pin sahaja! Pin ialah tandabuku visual yang anda susun"
+" dan kongsi mengikut cara yang anda mahu."
 
 #: templates/data-en.json:460
 msgid "Discover ideas for all your projects and interests, hand-picked by people like you."
-msgstr ""
+msgstr "Teroka idea bagi semua projek dan minat anda, dipilih oleh peminat seperti anda."
 
 #: templates/data-en.json:599 templates/data-en.json:608
 msgid "Odnoklassniki (Russian: Одноклассники Classmates) is a social network service for classmates and old friends."
-msgstr ""
+msgstr "Odnoklassniki (Russian: Одноклассники Classmates) adalah perkhidmatan rangkaian sosial untuk rakan sekolah dan teman lama."
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
-msgstr ""
+msgstr "Xing adalah rangkaian sosial untuk rangkaian profesional, pemasaran perniagaan dan pembangunan kerjaya."
 
 #: templates/data-en.json:631
 msgid "XING is the professional network for a better working life."
-msgstr ""
+msgstr "XING adalah rangkaian profesional untuk kehidupan bekerja yang lebih baik."
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
