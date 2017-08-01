@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 01:38+0000\n"
+"PO-Revision-Date: 2017-08-01 02:08+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -204,41 +204,43 @@ msgstr "Kongsi halaman web, di mana-mana sahaja, pada bila-bila masa."
 
 #: templates/data-en.json:173
 msgid "Cliqz delivers a real-time stream of the most relevant articles, stories, and videos based on your interests directly to Firefox."
-msgstr ""
+msgstr "Cliqz menyampaikan strim masa-sebenar artikel, cerita, dan video yang paling relevan dengan minat anda terus ke Firefox."
 
 #: templates/data-en.json:196
 msgid "Get the most relevant news based on your interests by crafting a unique information universe."
-msgstr ""
+msgstr "Dapatkan berita yang paling relevan berdasarkan minat anda dengan kemahiran menghasilkan maklumat yang unik."
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Rangkaian sosial terbesar di Jepun."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Makluman aktiviti semasa rakan anda."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
 "Sina Weibo is the most popular microblogging service in China. Weibo for Firefox allows users to post messages with 140-character limit, images, videos, etc. And it will show the notification when "
 "receiving new messages."
 msgstr ""
+"Sina Weibo adalah perkhidmatan micko-blogging yang paling popular di China. Weibo untuk Firefox membolehkan pengguna menghantar mesej dengan had 140 aksara, imej, video, dsb. Dan akan memaparkan "
+"notifikasi apabila menerima mesej baru."
 
 #: templates/data-en.json:249
 msgid "Share your interesting news anytime, anywhere."
-msgstr ""
+msgstr "Kongsi berita menarik pada bila-bila masa, di mana-mana sahaja."
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "Kongsi kandungan web yang anda temukan ke Google+ dengan pantas. Gunakan akaun Google+ untuk berkongsi laman kepada umum atau dengan Circles anda."
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Kongsi kandungan web ke Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
-msgstr ""
+msgstr "Hantar halaman web dan imej ke sesiapa sahaja menggunakan Gmail."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
