@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 00:47+0000\n"
+"PO-Revision-Date: 2017-08-01 01:07+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -86,51 +86,51 @@ msgid ""
 "Starting with Firefox 30, you can manage your sidebars using the Sidebars toolbar button. The Sidebars button is located in the <a href=\"%(url)s\">customization palette</a>, just drag the button to"
 " your toolbar for fast switching between sidebars."
 msgstr ""
-"Bermula Firefox 30, anda boleh urus bar sisi menggunakan butang bar alatan Bar sisi. Butang Bar Sisi terletak di dalam <a href=\"%(url)s\">pelet penyesuaian</a>, hanya seret butang tersebut ke dalam"
-" bar alatan anda untuk pertukaran antara bar sisi dengan pantas."
+"Bermula Firefox 30, anda boleh urus bar sisi menggunakan butang bar alatan Bar sisi. Butang Bar Sisi ini terletak di dalam <a href=\"%(url)s\">pelet penyesuaian</a>, hanya seret butang ini ke dalam "
+"bar alatan anda untuk pertukaran antara bar sisi yang pantas."
 
 #: templates/activated.html:96
 msgid "Additionally, you can easily change the service in your sidebar, or hide the sidebar, from the sidebar itself. You can also use the <strong>View->Toolbars</strong> menu in Firefox."
-msgstr ""
+msgstr "Tambahan pula, anda boleh tukar perkhidmatan dalam bar sisi anda ini dengan mudah, dari dalam bar sisi itu sendiri. Anda juga boleh guna menu <strong>Papar->Bar Alatan</strong> dalam Firefox."
 
 #: templates/activated.html:103
 msgid "Change Settings from the Add-ons Manager"
-msgstr ""
+msgstr "Tukar Tetapan dari Pengurus Add-ons"
 
 #: templates/activated.html:105
 msgid "Add-ons Manager"
-msgstr ""
+msgstr "Pengurus Add-ons"
 
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
+msgstr "Dengan mudah anda boleh <a href=\"%(url)s\">urus perkhidmatan anda</a>, menyahdayakannya sementara waktu atau menghapuskannya, dengan memaparkan Pengurus Add-ons dalam Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
-msgstr ""
+msgstr "Langkah Berikut"
 
 #: templates/activated.html:114
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more about what this service adds to Firefox</a>."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Ketahui selanjutnya perihal tambahan yang disediakan oleh perkhidmatan ini kepada Firefox</a>."
 
 #: templates/activated.html:116
 #, python-format
 msgid "<a href=\"%(url)s\">Learn more</a> about what <a href=\"%(url)s\">%(name)s</a> provides."
-msgstr ""
+msgstr "<a href=\"%(url)s\">Ketahui selanjutnya</a> perihal tambahan yang disediakan oleh <a href=\"%(url)s\">%(name)s</a>."
 
 #: templates/activated.html:118
 msgid "<a href=\".\">Explore and find more services</a> you can add to Firefox."
-msgstr ""
+msgstr "<a href=\".\">Teroka dan cari lebih banyak perkhidmatan</a> yang anda boleh tambah ke Firefox."
 
 #: templates/data-en.json:12 templates/data-en.json:19
 msgid "The definitive source for football news from around the world."
-msgstr ""
+msgstr "Sumber paling sahih untuk berita bola sepak dari seluruh dunia."
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Hidup dan bernafas dalam dunia bola sepak - di mana-mana sahaja 24/7"
 
 #: templates/data-en.json:20
 msgid ""
