@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 02:29+0000\n"
+"PO-Revision-Date: 2017-08-01 02:49+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -318,48 +318,48 @@ msgstr "XING adalah rangkaian profesional untuk kehidupan bekerja yang lebih bai
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
-msgstr ""
+msgstr "Kembangkan rangkaian sedia ada anda dan akses kenalan, kumpulan, pekerjaan, syarikat, aktiviti dan berita baru dalam industri anda."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "Cara paling pantas untuk mengetahui skor bola sepak anda"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr ""
+msgstr "Nikmati perincian skor-langsung bola sepak kami semasa melayari web dengan pelayar Firefox anda."
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
-msgstr ""
+msgstr "Terima kasih kepada widget BeSoccer, anda akan dapat tahu skor bola sepak masa-nyata sepantas yang mungkin semasa melayar dengan pelayar Firefox anda."
 
 #: templates/data-en.json:714 templates/data-en.json:725
 msgid "Yahoo Mail"
-msgstr ""
+msgstr "Yahoo Mail"
 
 #: templates/data-en.json:719 templates/data-en.json:727
 msgid "Quickly send web pages to yourself and others with enhanced link previews and more."
-msgstr ""
+msgstr "Pantas menghantar halaman web kepada diri sendiri dan orang lain dengan previu pautan yang dipertingkatkan dan banyak lagi."
 
 #: templates/data-en.json:728
 msgid "Fast, simple to use email with 1 TB of free mail storage and smarter tools to help you get more done."
-msgstr ""
+msgstr "Cara pantas dan mudah untuk menggunakan e-mel dengan storan mel percuma 1 TB dan alatan yang lebih bijak, untuk membantu anda supaya dapat melakukan lebih banyak perkara."
 
 #: templates/data-en.json:740
 msgid "diaspora* is a distributed social network where you keep control over your data."
-msgstr ""
+msgstr "diaspora* adalah satu rangkaian sosial menyeluruh untuk anda dapat kawal data anda."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
-msgstr ""
+msgstr "Kongsi dengan diaspora*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "Widget kongsi diaspora* membolehkan anda berkongsi pautan kegemaran anda."
 
 #: templates/footer.html:12
 #, python-format
 msgid "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
-msgstr ""
+msgstr "Sebahagian kandungan ini ©1998–%(current_year)s dihasilkan oleh individu penyumbang mozilla.org. Kandungan tersedia di bawah <a href=\"%(url)s\">Lesen Creative Commons</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
