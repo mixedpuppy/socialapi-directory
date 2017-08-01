@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-01 00:08+0000\n"
+"PO-Revision-Date: 2017-08-01 00:18+0000\n"
 "Last-Translator: manxmensch <manxmensch@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ms\n"
@@ -74,11 +74,11 @@ msgstr "Dapatkan makluman perkembangan semasa daripada %(name)s"
 #: templates/activated.html:78
 #, python-format
 msgid "<strong>%(name)s</strong> will provide you with the latest from their service, just click on their icon in the toolbar."
-msgstr ""
+msgstr "<strong>%(name)s</strong> akan memaklumkan anda perkembangan semasa dengan perkhidmatan yang disediakan oleh mereka, hanya klik pada ikon mereka dalam bar alatan."
 
 #: templates/activated.html:83
 msgid "Add the Sidebars button to your toolbar"
-msgstr ""
+msgstr "Tambah butang Bar sisi ke bar alatan anda"
 
 #: templates/activated.html:88
 #, python-format
