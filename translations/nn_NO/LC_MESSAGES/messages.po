@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-06 11:30+0000\n"
+"PO-Revision-Date: 2017-08-06 11:40+0000\n"
 "Last-Translator: Bjørn I. <bjorn.svindseth@online.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nn_NO\n"
@@ -203,11 +203,11 @@ msgstr ""
 
 #: templates/data-en.json:208 templates/data-en.json:220
 msgid "The largest social network in Japan."
-msgstr ""
+msgstr "Det største sosiale nettverket i Japan."
 
 #: templates/data-en.json:221
 msgid "Stay informed of what your friends are up to."
-msgstr ""
+msgstr "Hald deg informert om kva vennar held på med."
 
 #: templates/data-en.json:232 templates/data-en.json:250
 msgid ""
@@ -225,7 +225,7 @@ msgstr ""
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
-msgstr ""
+msgstr "Dela på nettet med Google+."
 
 #: templates/data-en.json:297 templates/data-en.json:301
 msgid "Send web pages and images to people using Gmail."
@@ -421,75 +421,75 @@ msgstr "krev Firefox 29"
 
 #: templates/layout.html:82
 msgid "SocialAPI Demo"
-msgstr ""
+msgstr "SocialAPI-demo"
 
 #: templates/layout.html:87
 msgid "Firefox for desktop"
-msgstr ""
+msgstr "Firefox for datamaskiner"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Du må bruke Firefox for å installere sosiale tenester."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
-msgstr ""
+msgstr "Last ned"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "Installering av sosiale tenester krev minst Firefox versjon 29.  Oppgrader versjonen din av Firefox no."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Denne tenesta krev ein enno ikkje-sleppt versjon av Firefox."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
-msgstr ""
+msgstr "Installer Firefox Beta"
 
 #: templates/provider.html:22 templates/provider.html:26 templates/provider.html:30 templates/provider.html:34
 msgid "requires Firefox"
-msgstr ""
+msgstr "krev Firefox"
 
 #: templates/provider.html:26
 msgid "Install Firefox Aurora"
-msgstr ""
+msgstr "Installer Firefox Aurora"
 
 #: templates/provider.html:30
 msgid "Install Firefox Nightly"
-msgstr ""
+msgstr "Installer Firefox Nightly"
 
 #: templates/provider.html:56
 msgid "This service is in beta testing, some functionality may not work as expected."
-msgstr ""
+msgstr "Denne servicen er i beta-testning, visse funksjonar fungerer ikkje som forventa."
 
 #: templates/provider.html:59
 msgid "This service is for demonstration purposes only and may not work as expected."
-msgstr ""
+msgstr "Denne tenesta er berre for demonstrasjonsformål og fungerer kanskje ikkje som forventa."
 
 #: templates/provider.html:106
 msgid "This service supports sharing content"
-msgstr ""
+msgstr "Denne tenesta støttar deleinnhald"
 
 #: templates/provider.html:106
 msgid "share"
-msgstr ""
+msgstr "dele"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Denne tenesta gjev deg bokmerke funksjonalitet"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "bokmerke"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
-msgstr ""
+msgstr "Denne tenesta legg til ein sidestolpe i Firefox"
 
 #: templates/provider.html:108
 msgid "sidebar"
-msgstr ""
+msgstr "sidestolpe"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
@@ -501,19 +501,19 @@ msgstr ""
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Dette er ei demoteneste"
 
 #: templates/provider.html:111
 msgid "demo"
-msgstr ""
+msgstr "demo"
 
 #: templates/provider.html:113
 msgid "This service requires an unreleased version of Firefox"
-msgstr ""
+msgstr "Denne tenesta krev ein enno ikkje-sleppt versjon av Firefox"
 
 #: templates/provider.html:113
 msgid "beta"
-msgstr ""
+msgstr "beta"
 
 #: templates/sharePanel.html:149
 #, python-format
