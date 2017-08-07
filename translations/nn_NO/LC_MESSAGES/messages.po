@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-06 16:36+0000\n"
+"PO-Revision-Date: 2017-08-07 23:15+0000\n"
 "Last-Translator: Bjørn I. <bjorn.svindseth@online.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nn_NO\n"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Del på nettet"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
@@ -291,7 +291,7 @@ msgstr ""
 
 #: templates/data-en.json:607
 msgid "Odnoklassniki"
-msgstr ""
+msgstr "Odnoklassniki"
 
 #: templates/data-en.json:623
 msgid "Xing is the social network for professional networking, business marketing and career development."
@@ -497,7 +497,7 @@ msgstr ""
 
 #: templates/provider.html:109
 msgid "notifications"
-msgstr ""
+msgstr "beskjedar"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
