@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-05 20:07+0000\n"
+"PO-Revision-Date: 2017-08-11 21:09+0000\n"
 "Last-Translator: Jim Spentzos <jamesspentzos@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: el\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: templates/activated.html:59
 #, python-format
 msgid "Share content you like through %(name)s"
-msgstr ""
+msgstr "Μοιραστείτε το περιεχόμενο που σάς αρέσει μέσω του %(name)s"
 
 #: templates/activated.html:64
 #, python-format
@@ -126,7 +126,7 @@ msgstr ""
 
 #: templates/data-en.json:18
 msgid "We live and breathe football - everywhere, 24/7"
-msgstr ""
+msgstr "Ζούμε για το ποδόσφαιρο - παντού, 24/7"
 
 #: templates/data-en.json:20
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: templates/data-en.json:62
 msgid "Pocket service for Firefox - The best way to save articles, videos and more"
-msgstr ""
+msgstr "Υπηρεσία Pocket για το Firefox - Ο καλύτερος τρόπος για αποθήκευση άρθρων, βίντεο και πολλών άλλων"
 
 #: templates/data-en.json:70
 msgid "Save it for later"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: templates/data-en.json:93
 msgid "a discovery experience"
-msgstr ""
+msgstr "μία εμπειρία ανακάλυψης"
 
 #: templates/data-en.json:110
 msgid "Delicious is a free service designed with care to be the best place to save what you love on the web."
@@ -179,7 +179,7 @@ msgstr ""
 
 #: templates/data-en.json:129
 msgid "Delicious remembers so you don't have to."
-msgstr ""
+msgstr "Το Delicious θυμάται για εσάς."
 
 #: templates/data-en.json:144
 msgid "Keep up with friends wherever you go on the web."
@@ -187,7 +187,7 @@ msgstr ""
 
 #: templates/data-en.json:164
 msgid "Share the web"
-msgstr ""
+msgstr "Μοιραστείτε το διαδίκτυο"
 
 #: templates/data-en.json:165
 msgid "Share any web page, anywhere, anytime."
@@ -265,7 +265,7 @@ msgstr ""
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Κοινοποιήστε ενδιαφέρον περιεχόμενο από την ιστοσελίδα σας."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -376,7 +376,7 @@ msgstr ""
 
 #: templates/footer.html:31
 msgid "SocialAPI for Developers"
-msgstr ""
+msgstr "SocialAPI για προγραμματιστές"
 
 #: templates/index.html:37 templates/index_entry.html:9 templates/provider.html:74
 msgid "Activate Now"
@@ -518,4 +518,4 @@ msgstr "beta"
 #: templates/sharePanel.html:149
 #, python-format
 msgid "Activate %(name)s"
-msgstr ""
+msgstr "Ενεργοποίηση του %(name)s"
