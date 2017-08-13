@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-05-21 17:44+0000\n"
-"Last-Translator: Marcelo Poli <enzomatrix@gmail.com>\n"
+"PO-Revision-Date: 2017-08-13 19:05+0000\n"
+"Last-Translator: deimidis <deimidis@deimidis.me>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -232,7 +232,7 @@ msgstr "Compartir sus noticias más relevantes, en cualquier momento, en cualqui
 
 #: templates/data-en.json:271
 msgid "Quickly share content you discover across the web on Google+. Use your Google+ account to share sites publicly or with your Circles."
-msgstr ""
+msgstr "Rápidamente comparta contenido que descubre a través de la red en Google+. Use su cuenta Google+ para compartir sitios de internet públicamente o dentro de sus Círculos."
 
 #: templates/data-en.json:276
 msgid "Share the web on Google+."
@@ -244,7 +244,7 @@ msgstr "Envíá páginas de internet e imágenes a personas usando Gmail."
 
 #: templates/data-en.json:320
 msgid "Use your Firefox Twitter Share to quickly author tweets about the pages you discover across the web.  We shorten URLs for quick sharing using the t.co link shortener."
-msgstr ""
+msgstr "Use su Twitter Share en Firefox para tuitear acerca de las páginas que descubre en la red. Acortamos las URLs para rápidamente compartirlas usando la modalidad t.co."
 
 #: templates/data-en.json:327
 msgid "Tweet to your followers"
@@ -252,31 +252,33 @@ msgstr "Tuiteá a tus seguidores"
 
 #: templates/data-en.json:328
 msgid "Twitter Share lets you quickly tweet links to your followers."
-msgstr ""
+msgstr "Twitter Share le permite rápidamente tuitear enlaces a sus seguidores."
 
 #: templates/data-en.json:345
 msgid "Manage your professional identity. Build and engage with your professional network. Access knowledge, insights and opportunities."
-msgstr ""
+msgstr "Gestione su identidad profesional. Construya e interactúe con su red profesional. Acceda a formación, ideas y oportunidades."
 
 #: templates/data-en.json:352
 msgid "Share the web with your professional network."
-msgstr ""
+msgstr "Comparta la red con su red profesional."
 
 #: templates/data-en.json:370
 msgid "Post text, photos, quotes, links, music, and videos from your browser, phone, desktop, email or wherever you happen to be. You can customize everything, from colors to your theme's HTML."
 msgstr ""
+"Publique textos, fotos, citas, música y videos desde su navegador, teléfono móvil, escritorio, correo electrónico o donde quiera que esté. Puede personalizar todo, desde los colores al HTML del "
+"tema."
 
 #: templates/data-en.json:380
 msgid "Tumblr lets you effortlessly share anything."
-msgstr ""
+msgstr "Tumblr le permite compartir sin esfuerzo casi todo."
 
 #: templates/data-en.json:398
 msgid "Create a single website for all your content. Publish on your own site from any device and share with your audiences across the web."
-msgstr ""
+msgstr "Cree un sitio de internet para alojar todo su contenido. Publíquelo en el mismo desde cualquier dispositivo y compártalo con su audiencia."
 
 #: templates/data-en.json:408
 msgid "Share interesting content from your own site."
-msgstr ""
+msgstr "Comparta contenido relevante desde su propio sitio de internet."
 
 #: templates/data-en.json:419 templates/data-en.json:433
 msgid "VK"
@@ -316,15 +318,15 @@ msgstr "XING es la red profesional para una mejor vida laboral."
 
 #: templates/data-en.json:632
 msgid "Expand your existing network and access new contacts, groups, jobs, companies, events and news from your industry."
-msgstr ""
+msgstr "Expanda su actual red y acceda a nuevos contactos, grupos, empleos, compañías, eventos y noticias acorde a su perfil laboral."
 
 #: templates/data-en.json:702
 msgid "The quickest way to get your soccer scores"
-msgstr ""
+msgstr "La forma más rápida de obtener sus resultados de fútbol"
 
 #: templates/data-en.json:703
 msgid "Enjoy our detailed soccer livescores while surfing the web with your Firefox browser."
-msgstr ""
+msgstr "Disfrute de nuestros pormenorizados marcadores de fùtbol en tiempo real mientras navega en internet con su Firefox."
 
 #: templates/data-en.json:704
 msgid "Thanks to BeSoccer widget, you'll get real-time soccer scores as quick as possible while navigating with your Firefox browser."
@@ -344,7 +346,7 @@ msgstr "Correo electrónico rápido y fácil de usar con 1 TB de almacenamiento 
 
 #: templates/data-en.json:740
 msgid "diaspora* is a distributed social network where you keep control over your data."
-msgstr ""
+msgstr "diaspora* es una red social distribuida donde cada cual controla sus datos."
 
 #: templates/data-en.json:750
 msgid "Share with diaspora*"
@@ -352,24 +354,24 @@ msgstr "Compartir con diaspora*"
 
 #: templates/data-en.json:751
 msgid "The diaspora* share widget lets you share your favorite links."
-msgstr ""
+msgstr "El widget de compartir de diaspora* le permite compartir sus enlaces favoritos."
 
 #: templates/footer.html:12
 #, python-format
 msgid "Portions of this content are ©1998–%(current_year)s by individual mozilla.org contributors. Content available under a <a href=\"%(url)s\">Creative Commons license</a>."
-msgstr ""
+msgstr "Porciones de este contenido son ©1998–%(current_year)s de colaboradores personales vía mozilla.org. Contenido disponible bajo una <a href=\"%(url)s\">licencia Creative Commons</a>."
 
 #: templates/footer.html:15
 msgid "Contribute to this page"
-msgstr ""
+msgstr "Contribuya a esta página"
 
 #: templates/footer.html:21
 msgid "Contact Us"
-msgstr ""
+msgstr "Contáctenos"
 
 #: templates/footer.html:22
 msgid "Partner with Us"
-msgstr ""
+msgstr "Asóciese a nosotros"
 
 #: templates/footer.html:23
 msgid "Donate"
