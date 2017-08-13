@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-13 19:05+0000\n"
-"Last-Translator: deimidis <deimidis@deimidis.me>\n"
+"PO-Revision-Date: 2016-09-29 20:12+0000\n"
+"Last-Translator: darío hereñú <magallania@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -444,7 +444,7 @@ msgstr "Firefox para escritorio"
 
 #: templates/layout.html:109
 msgid "You must use Firefox to install Social services."
-msgstr ""
+msgstr "Debe usar Firefox para instalar los servicios sociales."
 
 #: templates/layout.html:109 templates/layout.html:110
 msgid "Download"
