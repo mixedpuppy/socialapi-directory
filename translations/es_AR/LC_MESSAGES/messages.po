@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2016-09-29 20:12+0000\n"
-"Last-Translator: darío hereñú <magallania@gmail.com>\n"
+"PO-Revision-Date: 2017-08-13 19:59+0000\n"
+"Last-Translator: deimidis <deimidis@deimidis.me>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -452,7 +452,7 @@ msgstr "Descargar"
 
 #: templates/layout.html:110
 msgid "Installing Social Services requires at least Firefox version 29.  Upgrade your version of Firefox now."
-msgstr ""
+msgstr "Instalar Servicios Sociales necesita de al menos Firefox versión 29.  Actualice su versión de Firefox."
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
