@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-13 19:59+0000\n"
-"Last-Translator: deimidis <deimidis@deimidis.me>\n"
+"PO-Revision-Date: 2017-08-15 18:27+0000\n"
+"Last-Translator: gmontagu <gmontagu@gmail.com>\n"
 "Language-Team: es_AR <LL@li.org>\n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
@@ -456,7 +456,7 @@ msgstr "Instalar Servicios Sociales necesita de al menos Firefox versión 29.  A
 
 #: templates/layout.html:111
 msgid "This service requires an unreleased version of Firefox."
-msgstr ""
+msgstr "Este servicio necesita de una versión no lanzada de Firefox."
 
 #: templates/provider.html:22
 msgid "Install Firefox Beta"
@@ -492,11 +492,11 @@ msgstr "compartir"
 
 #: templates/provider.html:107
 msgid "This service provides bookmarking functionality"
-msgstr ""
+msgstr "Este servicio permite la posibilidad de marcar favoritos"
 
 #: templates/provider.html:107
 msgid "bookmarking"
-msgstr ""
+msgstr "marcar favoritos"
 
 #: templates/provider.html:108
 msgid "This service adds a sidebar to Firefox"
@@ -508,7 +508,7 @@ msgstr "barra lateral"
 
 #: templates/provider.html:109
 msgid "This service adds a toolbar button to Firefox that may have notifications"
-msgstr ""
+msgstr "Este servicio agrega un botón a la barra de herramientas de Firefox que puede contener notificaciones"
 
 #: templates/provider.html:109
 msgid "notifications"
@@ -516,7 +516,7 @@ msgstr "notificaciones"
 
 #: templates/provider.html:111
 msgid "This is a demo service"
-msgstr ""
+msgstr "Este es un servicio de demostración"
 
 #: templates/provider.html:111
 msgid "demo"
