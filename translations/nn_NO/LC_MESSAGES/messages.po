@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2015-08-31 16:48-0700\n"
-"PO-Revision-Date: 2017-08-07 23:15+0000\n"
+"PO-Revision-Date: 2017-08-16 12:25+0000\n"
 "Last-Translator: Bjørn I. <bjorn.svindseth@online.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nn_NO\n"
@@ -100,7 +100,7 @@ msgstr "Utvidingshandterar"
 #: templates/activated.html:107
 #, python-format
 msgid "You can easily <a href=\"%(url)s\">manage your services</a>, disabling them temporarily or removing them, by viewing the Add-ons Manager in Firefox."
-msgstr ""
+msgstr "Du kan enkelt <a href=\"%(url)s\">handtere tenestene dine</a>, slå dei mellombels av eller fjerne, ved å gå til Utvidingshandteraren i Firefox."
 
 #: templates/activated.html:112
 msgid "Next Steps"
